@@ -1,0 +1,276 @@
+<MsgFile>
+
+  <Msg>
+    <Id>1</Id>
+    <CDNUSR_DEFINE_NAME>ALPULSE_COPY_AS</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Sub-Category>P</Sub-Category>
+    <Desc>Performing Copy As.</Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>2</Id>
+    <CDNUSR_DEFINE_NAME>ALPULSE_UID_STORE_ERR_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>Unable to register the design with the Pulse Platform because of an internal error. To resolve the issue, reopen the design. If the issue persists, restart %s and Pulse.</Desc>
+    <ExtDesc>Failed to store the UID in the design.</ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>3</Id>
+    <CDNUSR_DEFINE_NAME>ALPULSE_COMMIT_SUCCESS</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Sub-Category>P</Sub-Category>
+    <Desc>Commit completed successfully.</Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>4</Id>
+    <CDNUSR_DEFINE_NAME>ALPULSE_ROLLBACK_SUCCESS</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Sub-Category>P</Sub-Category>
+    <Desc>Rollback completed successfully.</Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>5</Id>
+    <CDNUSR_DEFINE_NAME>ALPULSE_ROLLBACK_ERR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>Rollback operation failed.</Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>6</Id>
+    <CDNUSR_DEFINE_NAME>ALPULSE_SAVE_PRECOMMIT</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Sub-Category>P</Sub-Category>
+    <Desc>Saving design for Commit.</Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>7</Id>
+    <CDNUSR_DEFINE_NAME>ALPULSE_COMMIT_ARGS_MANY</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>The 'pulse commit' command supports only three arguments.</Desc>
+    <ExtDesc>The syntax of the command is: 'pulse_commit [minor/major] "comment" "tags"' where "tags" is a comma-separated list of tags.</ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>8</Id>
+    <CDNUSR_DEFINE_NAME>ALPULSE_COMMIT_ARGS_REV</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>A value of 'minor' or 'major' is expected as the first argument for 'pulse commit'.</Desc>
+    <ExtDesc>The syntax of the command is: 'pulse_commit [minor/major] "comment" "tags"' where "tags" is a comma-separated list of tags.</ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>9</Id>
+    <CDNUSR_DEFINE_NAME>ALPULSE_COMMIT_ARGS_REQ</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>A comment is required when committing a design in no-graphics mode.</Desc>
+    <ExtDesc>The syntax of the command is: 'pulse_commit [minor/major] "comment" "tags"' where "tags" is a comma-separated list of tags.</ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>10</Id>
+    <CDNUSR_DEFINE_NAME>ALPULSE_VERGRAPH_NOGRAPH</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>Version Graph is not supported in no-graphics mode.</Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>11</Id>
+    <CDNUSR_DEFINE_NAME>ALPULSE_VMGR_INIT_ERR_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>Unable to register the design with the Version on Commit service on the Pulse Platform. To resolve the issue, restart %s and Pulse.</Desc>
+    <ExtDesc>Initialization of the Version Manager failed.</ExtDesc>
+    <Output>C</Output>
+</Msg>
+
+  <Msg>
+    <Id>12</Id>
+    <CDNUSR_DEFINE_NAME>ALPULSE_VMGR_CLEANUP_ERR_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>Unable to deregister the design from the Version on Commit service on the Pulse Platform. To resolve the issue, restart %s and Pulse.</Desc>
+    <ExtDesc>Cleanup of the Version Manager failed.</ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>13</Id>
+    <CDNUSR_DEFINE_NAME>ALPULSE_UID_GEN_ERR_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>Unable to register the design with the Pulse Platform. Reopen the design. If the issue persists, restart %s and Pulse.</Desc>
+    <ExtDesc>Failed to generate a new UID.</ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>14</Id>
+    <CDNUSR_DEFINE_NAME>ALPULSE_COMMIT_ERR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>Commit operation failed.</Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>15</Id>
+    <CDNUSR_DEFINE_NAME>ALPULSE_GETREVISION_SUCCESS</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Sub-Category>P</Sub-Category>
+    <Desc>Get Revision completed successfully.</Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+  
+  <Msg>
+    <Id>16</Id>
+    <CDNUSR_DEFINE_NAME>ALPULSE_GETREVISION_ERR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>Get Revision operation failed.</Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>17</Id>
+    <CDNUSR_DEFINE_NAME>ALPULSE_GETREVISION_SYNTAX</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>The syntax of the command is: 'pulse_getrevision [latest/current/rev #].</Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>18</Id>
+    <CDNUSR_DEFINE_NAME>ALPULSE_LOCK_ERR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>Unable to lock the design. Ensure the following: you are logged in, the design is shared with you, you have write permission, and that the design is not already locked.</Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>19</Id>
+    <CDNUSR_DEFINE_NAME>ALPULSE_FORCE_UNLOCK_CHK_2</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc> Object %s is locked by %s. Unlocking might cause the current lock holder to lose changes. Do you want to continue?</Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>20</Id>
+    <CDNUSR_DEFINE_NAME>ALPULSE_FORCE_UNLOCK_ERR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>Unable to unlock the design. Ensure that you are logged in and own either the lock or the design.</Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>21</Id>
+    <CDNUSR_DEFINE_NAME>ALPULSE_GETREV_CHK</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>The Get Revision Operation will overwrite the current design. Do you want to write a copy of the current version as a backup before getting the specified revision?</Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>22</Id>
+    <CDNUSR_DEFINE_NAME>ALPULSE_ROLLBACK_CHK</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>The Roll Back Operation will overwrite the current design. Do you want a copy of the current version on disk, as a backup, before getting the specified revision?</Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>23</Id>
+    <CDNUSR_DEFINE_NAME>ALPULSE_SELECT_DIFF_FILE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>The original design file will be overwritten by the Roll Back Operation. Select another filename.</Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>24</Id>
+    <CDNUSR_DEFINE_NAME>ALPULSE_ENTERPRISE_ONLY</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>Unable to run this operation because this Pulse feature is only enabled in the remote server configuration.</Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>25</Id>
+    <CDNUSR_DEFINE_NAME>ALPULSE_COMMIT_READONLY</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>Cannot commit the design because it is marked as read only by Pulse. To commit, ensure the following: you are logged in, the design is shared with you, you have write permission, and hold the lock for the design.</Desc>
+    <Output>C</Output>
+  </Msg>
+    
+  <Msg>
+    <Id>26</Id>
+    <CDNUSR_DEFINE_NAME>ALPULSE_USER_REMOVED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>You have been removed from the project and cannot view or continue working with this design on Pulse. You can use File - Copy As to copy and work with the design locally.</Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>27</Id>
+    <CDNUSR_DEFINE_NAME>ALPULSE_DESIGN_FORCE_UNLOCKED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>This design has been unlocked by another design owner. To continue working with it on Pulse, contact the owner or acquire the lock for the design. You can also use File - Copy As to work with the copied design locally.</Desc>
+    <Output>C</Output>
+  </Msg>    
+
+  <Msg>
+    <Id>28</Id>
+    <CDNUSR_DEFINE_NAME>ALPULSE_INSUFF_RESOURCES_2</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>Pulse features have been disabled because this machine does not meet the minimum system requirements. Pulse requires a minimum of %d GB of RAM and %d CPU cores to run.</Desc>
+    <Output>C</Output>
+  </Msg>
+
+ <Msg>
+    <Id>29</Id>
+    <CDNUSR_DEFINE_NAME>ALPULSE_NETLIST_FOR_NON_SYSCAP_DESIGN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>Cannot commit the changes because 'Ready for Schematic' is selected but the logic type is not specified for design. Either remove 'Ready for Schematic' or import the logic to use this option.</Desc>
+    <Output>C</Output>
+  </Msg>
+
+ <Msg>
+    <Id>30</Id>
+    <CDNUSR_DEFINE_NAME>ALPULSE_NETLIST_GENFEED_SINGLE_FILE_2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>Failed to generate netlist archive '%s' at '%s'. See the log file for more details.</Desc>
+    <Output>C</Output>
+  </Msg>
+
+ <Msg>
+    <Id>31</Id>
+    <CDNUSR_DEFINE_NAME>ALPULSE_NETLIST_GENFEED_FAILED_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>Failed to generate netlist at '%s'. See the log file for more details.</Desc>
+    <Output>C</Output>
+  </Msg>
+
+ <Msg>
+    <Id>32</Id>
+    <CDNUSR_DEFINE_NAME>ALPULSE_SCH_NETLIST_NOT_ACCESSIBLE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>Cannot import logic from Pulse because the selected schematic netlist is not accessible. Ensure that the schematic exists on the Pulse server and that you have at least read-only access to the schematic.</Desc>
+    <Output>C</Output>
+  </Msg>
+  
+</MsgFile>

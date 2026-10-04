@@ -1,0 +1,127 @@
+FILE_TYPE=FORM_DEFN VERSION=2
+FORM
+FIXED
+PORT 67 13
+HEADER "Component Alignment Form"
+POPUP <CURSPOP>"Any""1","IC""2","IO""3","DISCRETE""4".
+POPUP <PRINTP>"to File""0","to Printer""1","to Script""2".
+
+TILE
+
+TEXT "Class:"
+TLOC 32 18
+TGROUP "Select Mode"
+ENDTEXT
+FIELD top
+FLOC 3 12
+ FGROUP"Alignment Layer"
+CHECKLIST"Top" "alg"
+ ENDFIELD
+
+FIELD bottom
+FLOC 3 14
+FGROUP "Alignment Layer"
+CHECKLIST "Bottom" "alg"
+ENDFIELD
+
+FIELD both
+FLOC 3 16
+FGROUP "Alignment Layer"
+CHECKLIST "Both" "alg"
+ENDFIELD
+
+FIELD horizontal
+FLOC 3 5
+FGROUP "Direction"
+CHECKLIST "Horizontal" "dirg"
+ENDFIELD
+
+FIELD vertical
+FLOC 3 7
+FGROUP "Direction"
+CHECKLIST "Vertical" "dirg"
+ENDFIELD
+
+FIELD origin
+FLOC  35 7
+FGROUP "Alignment Point" 
+CHECKLIST "Origin" "alpg"
+ENDFIELD
+
+FIELD pin
+FLOC  35 5
+FGROUP "Alignment Point" 
+CHECKLIST "Pin 1" "alpg"
+ENDFIELD
+
+FIELD group
+FLOC  25 12
+FGROUP "Select Mode"
+CHECKLIST "Group" "slmg"
+ENDFIELD
+
+FIELD window
+FLOC  25 14
+FGROUP "Select Mode"
+CHECKLIST "Window" "slmg"
+ENDFIELD
+
+FIELD tolerance
+FLOC  25 16
+FGROUP "Select Mode"
+CHECKLIST "Tolerance" "slmg"
+ENDFIELD
+
+FIELD tol
+FLOC  40 16
+FGROUP "Select Mode"
+REALFILLIN 10 10
+ DECIMAL 4
+ENDFIELD
+
+FIELD class
+FLOC 40 18
+FGROUP "Select Mode"
+ENUMSET 12
+POP "CURSPOP"
+ENDFIELD
+
+FIELD done
+FLOC 2 22
+ MENUBUTTON "Done" 9 3
+ENDFIELD
+
+FIELD print
+FLOC 28 22
+ MENUBUTTON "Print" 9 3
+ POP "PRINTP"
+ENDFIELD
+
+FIELD cancel
+FLOC 55 22
+ MENUBUTTON "Cancel" 9 3
+ENDFIELD
+
+GROUP "Alignment Layer"
+GLOC 2 10
+GSIZE 20 11
+ENDGROUP
+
+GROUP "Direction"
+GLOC 2 2
+GSIZE 30 8
+ENDGROUP
+
+GROUP "Alignment Point"
+GLOC 34 2
+GSIZE 30  8
+ENDGROUP
+GROUP "Select Mode"
+GLOC 24 10
+GSIZE 40 11
+ENDGROUP
+
+
+ENDTILE
+
+ENDFORM

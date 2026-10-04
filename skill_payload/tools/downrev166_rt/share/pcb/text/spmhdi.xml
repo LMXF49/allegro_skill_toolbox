@@ -1,0 +1,1345 @@
+<MsgFile>
+
+  <Msg>
+    <Id>1</Id>
+    <CDNUSR_DEFINE_NAME>DIM_NO_ELEMENT</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No other element found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>2</Id>
+    <CDNUSR_DEFINE_NAME>DIM_PICK_ELE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick an element or point to dimension ...
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>3</Id>
+    <CDNUSR_DEFINE_NAME>DIM_VAL_OUTSIDE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Dimension value is outside the drawing.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>4</Id>
+    <CDNUSR_DEFINE_NAME>DIM_VERTEX</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+First point found ... pick the second point.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>5</Id>
+    <CDNUSR_DEFINE_NAME>DIM_XORY</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Indicate the X or Y direction first.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>6</Id>
+    <CDNUSR_DEFINE_NAME>DIM_VAL_POINT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick location for the dimension value.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>7</Id>
+    <CDNUSR_DEFINE_NAME>DIM_BAD_TEXT</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal text ... check the text block sizes.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>8</Id>
+    <CDNUSR_DEFINE_NAME>DIM_ADD_VAL</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Add dimension value on the 'Options' tab.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>9</Id>
+    <CDNUSR_DEFINE_NAME>CHFMSG_PICKSEG1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick first segment to be chamfered ...
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>10</Id>
+    <CDNUSR_DEFINE_NAME>CHFMSG_PICKSEG2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick second segment ...
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>11</Id>
+    <CDNUSR_DEFINE_NAME>CHFMSG_NULLFIND</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+No element found ... pick again.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>12</Id>
+    <CDNUSR_DEFINE_NAME>CHFMSG_NEEDLINE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Picked element must be a line segment ... pick again.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>13</Id>
+    <CDNUSR_DEFINE_NAME>CHFMSG_NO_INTERSECT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Picked segments do not intersect ... pick again.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>14</Id>
+    <CDNUSR_DEFINE_NAME>CHFMSG_TRIM_TOO_LONG</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Trim length is longer than the segment ... pick again.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>15</Id>
+    <CDNUSR_DEFINE_NAME>CHFMSG_ANGLE_TOO_BIG</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Angle between the segments is too large ... pick again.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>16</Id>
+    <CDNUSR_DEFINE_NAME>CHFMSG_SAME_CLASS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Segments must be on the same CLASS/SUBCLASS ... pick again.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>17</Id>
+    <CDNUSR_DEFINE_NAME>CHFMSG_BAD_DATA</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Angle and trim value or both trim values are required.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>18</Id>
+    <CDNUSR_DEFINE_NAME>FILMSG_PICKSEG1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick first segment to be filleted ...
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>19</Id>
+    <CDNUSR_DEFINE_NAME>FILMSG_BAD_DATA</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Fillet radius value is required.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>20</Id>
+    <CDNUSR_DEFINE_NAME>ALMSG_OUTSIDE_DRAWING</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Dimension is outside of the drawing extents ... pick again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>21</Id>
+    <CDNUSR_DEFINE_NAME>ALMSG_NO_ELEMENT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No element was found ... pick again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>22</Id>
+    <CDNUSR_DEFINE_NAME>DDMSG_FIRST_EXT_VERTEX</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick first extension line vertex ...
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>23</Id>
+    <CDNUSR_DEFINE_NAME>DDMSG_PICK_ZERO_DATUM</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick an element or point for a (0,0) datum location ...
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>24</Id>
+    <CDNUSR_DEFINE_NAME>DDMSG_PICK_NEW_ZERO_DATUM</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick an element or point for a new (0,0) datum location ...
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>25</Id>
+    <CDNUSR_DEFINE_NAME>DDMSG_PICK_HV_BOUNDARIES</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick horizontal/vertical boundaries for dimensions ...
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>26</Id>
+    <CDNUSR_DEFINE_NAME>DDMSG_NO_MORE_ELEMENTS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No more elements found ... using pick point.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>27</Id>
+    <CDNUSR_DEFINE_NAME>DDMSG_PICK_EXT_VERTICES</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick extension line vertices ...
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>28</Id>
+    <CDNUSR_DEFINE_NAME>ALMSG_LEADER_ORIGIN</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick point or element for leader origin ...
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>29</Id>
+    <CDNUSR_DEFINE_NAME>DIMMSG_VALUE_ROUNDED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Input value has been rounded to the primary units accuracy.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>30</Id>
+    <CDNUSR_DEFINE_NAME>ADMSG_NO_MORE_SEGMENTS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+No more line segments found. Pick again ...
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>31</Id>
+    <CDNUSR_DEFINE_NAME>ADMSG_SEGMENT_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Line segment not found. Pick again ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>32</Id>
+    <CDNUSR_DEFINE_NAME>ADMSG_PICK_FIRST</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick first line segment for dimension ...
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>33</Id>
+    <CDNUSR_DEFINE_NAME>ADMSG_PICK_FIRST_FOR_NEXT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick first line segment for next dimension ...
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>34</Id>
+    <CDNUSR_DEFINE_NAME>ADMSG_SEGMENTS_PARALLEL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No dimension was created as the picked segments are parallel.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>35</Id>
+    <CDNUSR_DEFINE_NAME>ADMSG_INTERSECTION_OUTSIDE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No dimension was created as the segment intersection is outside the drawing extents.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>36</Id>
+    <CDNUSR_DEFINE_NAME>ADMSG_REPICK_SECOND_SEGMENT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Re-pick the second line segment ...
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>37</Id>
+    <CDNUSR_DEFINE_NAME>ADMSG_PICK_FIRST_EXTENSION</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick the first extension line ...
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>38</Id>
+    <CDNUSR_DEFINE_NAME>ADMSG_PICK_SECOND</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick second segment ...
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>39</Id>
+    <CDNUSR_DEFINE_NAME>ADMSG_REPICK_FIRST_SEGMENT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Re-pick the first line segment ...
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>40</Id>
+    <CDNUSR_DEFINE_NAME>ADMSG_PICK_SECOND_EXTENSION</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick the second extension line ...
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>41</Id>
+    <CDNUSR_DEFINE_NAME>ADMSG_PICK_TEXT_LOCATION</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick the text location ...
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>42</Id>
+    <CDNUSR_DEFINE_NAME>ADMSG_DIMENSION_OUTSIDE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Dimension is outside of the drawing extents. Pick again ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>43</Id>
+    <CDNUSR_DEFINE_NAME>ADMSG_PICK_AGAIN</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick again ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>44</Id>
+    <CDNUSR_DEFINE_NAME>DIM_GENERAL_PARAMETERS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Dimension general parameters setting mode:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>45</Id>
+    <CDNUSR_DEFINE_NAME>DIM_GLOBAL_WARNING_APPLY</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Applying global parameter changes to existing dimensioning ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>46</Id>
+    <CDNUSR_DEFINE_NAME>DIM_GLOBAL_WARNING_DONE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Done.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>47</Id>
+    <CDNUSR_DEFINE_NAME>DIM_SUPPRESSION_EXTENTS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+%s dimension extends beyond the design extents ... suppressed.
+    </Desc>
+    <ExtDesc>
+Due to an object being edited, a dimension associated with that object can
+not be re-created as the new dimension would violate the design extents. The
+dimension in this case is suppressed and is not visible. Any further
+future editing of the object such that the dimension again fits within the
+extents results in the dimension being appropriately re-created and
+visible again.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>48</Id>
+    <CDNUSR_DEFINE_NAME>DIM_EDIT_ENTRY_1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Entering the dimension environment ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>49</Id>
+    <CDNUSR_DEFINE_NAME>DIM_EDIT_ENTRY_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Use the right mouse button menu to change the dimension mode.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>50</Id>
+    <CDNUSR_DEFINE_NAME>DIM_EDIT_SWITCHING_MODE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%s dimension creation mode:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>51</Id>
+    <CDNUSR_DEFINE_NAME>DIM_EDIT_SWITCHING_MODE_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%s mode:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>52</Id>
+    <CDNUSR_DEFINE_NAME>DIM_EDIT_DIMENSION_INFO</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%s dimension %s at (%s %s) ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>53</Id>
+    <CDNUSR_DEFINE_NAME>DIM_EDIT_ANGULAR_WARNING</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Angular dimensions cannot be aligned ... ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>54</Id>
+    <CDNUSR_DEFINE_NAME>DIM_EDIT_NOT_SAME_TYPE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Dimension is not of the same general type for alignment ... ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>55</Id>
+    <CDNUSR_DEFINE_NAME>DIM_EDIT_NO_DIM_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No dimension found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>56</Id>
+    <CDNUSR_DEFINE_NAME>DIM_EDIT_NOT_ASSOCIATIVE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+This is an old style non-associative dimension that cannot be edited this way ... ignored.
+    </Desc>
+    <ExtDesc>
+Only the newer style of associative dimensions may generally be edited. The only
+editing of an old style non-associative dimension that is allowed is that it
+may be deleted.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>57</Id>
+    <CDNUSR_DEFINE_NAME>DIM_EDIT_SITUATION</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+* * * SITUATION NOT PROPERLY DETERMINED FOR DATUM DIMENSION VERTEX EDITING * * *
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>58</Id>
+    <CDNUSR_DEFINE_NAME>DIM_EDIT_TEXT_MOVED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Dimension text moved to (%s %s) ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>59</Id>
+    <CDNUSR_DEFINE_NAME>DIM_EDIT_START_VERTEX</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cannot delete the start vertex ... ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>60</Id>
+    <CDNUSR_DEFINE_NAME>DIM_EDIT_SECOND_VERTEX</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cannot delete the second vertex of a datum dimension ... ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>61</Id>
+    <CDNUSR_DEFINE_NAME>DIM_EDIT_ALIGNMENT</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+At least 2 dimensions are needed for alignment.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>62</Id>
+    <CDNUSR_DEFINE_NAME>DIM_EDIT_NOT_SAME_AXIS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Dimension is not on the same axis ... ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>63</Id>
+    <CDNUSR_DEFINE_NAME>DIM_EDIT_NOT_CHAMFER</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Only segments at a 45 degree angle can be chamfer dimensioned ... ignored.
+    </Desc>
+    <ExtDesc>
+Only segments at a 45 degree angle can be dimensioned with a chamfer leader note.
+Non-45 degree segments, that are also not horizontal or vertical, should be
+appropriately dimensioned with angular and/or linear dimensions.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>64</Id>
+    <CDNUSR_DEFINE_NAME>CHFMSG_NOT_REASONABLE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Requested chamfer or fillet is not reasonable.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>65</Id>
+    <CDNUSR_DEFINE_NAME>CHFMSG_NOT_LONG_ENOUGH</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Picked segment is not long enough for the fillet or chamfer ... pick again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>66</Id>
+    <CDNUSR_DEFINE_NAME>CHFMSG_OUTSIDE_EXTENTS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+New segments would be outside of the drawing extents.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>67</Id>
+    <CDNUSR_DEFINE_NAME>DIM_EDIT_ALIGN_MASTER</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick master dimension that other dimensions are to be aligned with ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>68</Id>
+    <CDNUSR_DEFINE_NAME>DIM_EDIT_ALIGN_DIM</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick dimensions to be aligned with the master dimension ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>69</Id>
+    <CDNUSR_DEFINE_NAME>DIM_EDIT_LINEAR_LOCKED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Linear dimension is currently locked and will have a new lock point set for it.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>70</Id>
+    <CDNUSR_DEFINE_NAME>DIM_EDIT_ANGULAR_LOCKED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Angular dimension is currently locked and will have a new lock point set for it.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>71</Id>
+    <CDNUSR_DEFINE_NAME>DIM_EDIT_LOCKED_ALIGN</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Dimension is currently locked. Dimension will have a new lock point set for it.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>72</Id>
+    <CDNUSR_DEFINE_NAME>DIM_EDIT_LOCKED_VERTEX</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Dimension is currently locked and the dimension end vertex has been selected. Dimension will have a new lock point set for it.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>73</Id>
+    <CDNUSR_DEFINE_NAME>DIM_EDIT_ALREADY_LOCKED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Dimension is already locked ... ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>74</Id>
+    <CDNUSR_DEFINE_NAME>DIM_EDIT_ALREADY_UNLOCKED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Dimension is already unlocked ... ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>75</Id>
+    <CDNUSR_DEFINE_NAME>DIM_EDIT_NOW_LOCKED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Dimension has now been locked.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>76</Id>
+    <CDNUSR_DEFINE_NAME>DIM_EDIT_NOW_UNLOCKED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Dimension has now been unlocked.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>77</Id>
+    <CDNUSR_DEFINE_NAME>DIM_EDIT_CLASS_SUBCLASS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Dimension is already on the specified class and subclass ... ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>78</Id>
+    <CDNUSR_DEFINE_NAME>DIM_EDIT_ZMOVED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Dimension has been moved to the specified class and subclass.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>79</Id>
+    <CDNUSR_DEFINE_NAME>DIM_EDIT_TEXT_LEADER</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Leader line dimensions do not have any text to edit ... ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>80</Id>
+    <CDNUSR_DEFINE_NAME>DIM_EDIT_TEXT_DATUMREF</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Datum reference dimension text cannot be edited ... ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>81</Id>
+    <CDNUSR_DEFINE_NAME>DIM_EDIT_INVALID_VALUE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Dimension is only allowed to have a positive non-zero value.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>82</Id>
+    <CDNUSR_DEFINE_NAME>DIM_EDIT_INVALID_ANGLE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Dimension angle must be greater than 0 and less than 360.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>83</Id>
+    <CDNUSR_DEFINE_NAME>DIM_EDIT_CURRENTLY_FIXED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Dimension value is currently a fixed override. Change text with a value of 0 to reset to automatic value determination.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>84</Id>
+    <CDNUSR_DEFINE_NAME>DIM_EDIT_TEXT_CHANGED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Dimension balloon text has been changed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>85</Id>
+    <CDNUSR_DEFINE_NAME>DIM_EDIT_VALUE_RESET</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Dimension value fixed override has been reset. Value will now be computed automatically.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>86</Id>
+    <CDNUSR_DEFINE_NAME>DIM_EDIT_VALUE_FIXED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Dimension value is now a fixed override.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>87</Id>
+    <CDNUSR_DEFINE_NAME>DIM_OBJECT_SELECTED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%s selected for dimensioning ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>88</Id>
+    <CDNUSR_DEFINE_NAME>DIM_OBJECT_SELECTED2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%s on class %s and subclass %s selected for dimensioning ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>89</Id>
+    <CDNUSR_DEFINE_NAME>DIM_NO_OBJECT_SELECTED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Dimension point at (%s, %s) is not being associated with an object.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>90</Id>
+    <CDNUSR_DEFINE_NAME>DIM_INSTANCE_PARAMETERS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Dimension-specific instance parameters setting mode:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>91</Id>
+    <CDNUSR_DEFINE_NAME>DIM_INSTANCE_PARAMETERS_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Only the instance parameters highlighted in BLUE can be changed for a dimension.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>92</Id>
+    <CDNUSR_DEFINE_NAME>DIM_GENERAL_PARAMETERS_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Changes to parameters highlighted in BLUE is applied to future dimensions.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>93</Id>
+    <CDNUSR_DEFINE_NAME>DIM_GENERAL_PARAMETERS_3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Changes to other parameters is applied to future dimensions and also to all existing dimensions.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>94</Id>
+    <CDNUSR_DEFINE_NAME>DIM_PICK_EDIT_LEADERS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick dimension for leader vertex editing ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>95</Id>
+    <CDNUSR_DEFINE_NAME>DIM_PICK_MOVE_TEXT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick dimension text to move ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>96</Id>
+    <CDNUSR_DEFINE_NAME>DIM_PICK_DELETE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick dimension to delete ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>97</Id>
+    <CDNUSR_DEFINE_NAME>DIM_PICK_ZMOVE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick dimension to move to another class/subclass ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>98</Id>
+    <CDNUSR_DEFINE_NAME>DIM_PICK_CHANGE_TEXT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick dimension text to change ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>99</Id>
+    <CDNUSR_DEFINE_NAME>DIM_PICK_SHOW</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick dimension to show/query ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>100</Id>
+    <CDNUSR_DEFINE_NAME>DIM_PICK_INSTANCE_PARAMETERS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick dimension for editing the instance parameters ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>101</Id>
+    <CDNUSR_DEFINE_NAME>DIM_PICK_LOCK</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick dimension to lock the text location or leader end point ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>102</Id>
+    <CDNUSR_DEFINE_NAME>DIM_PICK_UNLOCK</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick dimension to unlock the text location or leader end point ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>103</Id>
+    <CDNUSR_DEFINE_NAME>DIM_EDIT_ALREADY_MASTER</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Dimension ignored as it has already been picked as the master dimension for alignment.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>104</Id>
+    <CDNUSR_DEFINE_NAME>DIM_CURRENT_REFERENCE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Using reference datum at (%s %s) on %s/%s ... right mouse button 'Change Reference Datum' to change.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>105</Id>
+    <CDNUSR_DEFINE_NAME>DIM_EDIT_BALLOON_INCREMENT</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Unable to properly auto increment the balloon value '%s'. Forcing it to the value '%s' instead.
+    </Desc>
+    <ExtDesc>
+The last character of the balloon value string could not be incremented.
+Any numeric character '0' through '9' should be no problem, with '9' even
+being auto incremented to the two character '10'. 'A' will even increment
+to 'B', 'C', etc. A last character of 'Z' however will fail to increment.
+Whatever the last character was however that failed to increment, an
+incremented value is being forced that is simply '1' appended to the string
+that failed. There should be no subsequent problem then with incrementing
+if you accept what is being forced. If it is not acceptable then you
+should change the value on the MSM Options tab to something that is.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>106</Id>
+    <CDNUSR_DEFINE_NAME>ADMSG_ZERO_ANGLE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Second extension line picked is the same as the first for a 0 angle ... rejected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>107</Id>
+    <CDNUSR_DEFINE_NAME>DIM_TEXT_TIPS_1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Tips for text (substitution characters applies to leader line text only):
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>108</Id>
+    <CDNUSR_DEFINE_NAME>DIM_TEXT_TIPS_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+- Text can be any characters and overrides any computed or specified value.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>109</Id>
+    <CDNUSR_DEFINE_NAME>DIM_TEXT_TIPS_3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+- '%s' within the text is substituted with the computed or specified value.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>110</Id>
+    <CDNUSR_DEFINE_NAME>DIM_TEXT_TIPS_4</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+- '%s' within the text is substituted with a units indicator of 'IN' or 'MM'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>111</Id>
+    <CDNUSR_DEFINE_NAME>DIM_TEXT_TIPS_5</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+- '%s' within the text forces a '%' in the text.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>112</Id>
+    <CDNUSR_DEFINE_NAME>DIM_TEXT_TIPS_6</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+- '%s' within the text of leader line dimensions starts subsequent text on a new line.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>113</Id>
+    <CDNUSR_DEFINE_NAME>DIM_TEXT_TIPS_7</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+EXAMPLE: 'Length is %s %s.' results in 'Length is 1.0 IN.'
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>114</Id>
+    <CDNUSR_DEFINE_NAME>DIM_EDIT_FIRST_VERTEX</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cannot edit the very first vertex of the dimension.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+</MsgFile>

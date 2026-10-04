@@ -1,0 +1,740 @@
+;========================================================================
+; 文件名    : util_layerview.il
+; 作者      : SkillGroup / ASTB 项目组(整合)
+; 创建日期  : 2026-07-17
+; 版本      : 2.8
+; 功能描述  : 切层与视图管理模块, 提供活动层切换和预设视图功能
+;             切层支持: 输入单个层号切层, 输入多个层号(如"1 2 3")显示多层,
+;             输入"a"打开所有走线层, 输入"b"切换到底层
+;             相邻层切换: qu 上一层, qd 下一层(循环, 顶层的上一层是底层,
+;             底层的下一层是顶层)
+;             预设视图: 丝印顶层/丝印底层/装配顶层/装配底层
+;             命令: ql 切层, qu 上一层, qd 下一层,
+;                  vst 丝印顶, vsb 丝印底, vat 装配顶, vab 装配底
+; 依赖模块  : core/trans.il (ASTB_RegisterCommand, 可选; 独立加载时退化为
+;             axlCmdRegister)
+; 来源      : 整合自 G:/allegro/layer_view (v1.1), 纳入 ASTB 工具箱
+; 修改记录  :
+;   2026-07-17 v1.0 SkillGroup 初始创建
+;   2026-07-17 v1.1 SkillGroup 切层支持多层号输入和"a"显示全部层
+;   2026-07-18 v2.0 ASTB 项目组 整合入工具箱: 命令经 ASTB_RegisterCommand
+;                注册并带冲突降级, 新增 ASTB_Util_* 菜单包装函数
+;   2026-07-19 v2.1 ASTB 项目组 实机修复: 臆造 API axlGetLayerList 改为
+;                axlGetParam("paramLayerGroup:Etch")->groupMembers,
+;                axlSetCurrentLayer 改为 axlDBControl('activeLayer ...)
+;                (实证见 pkg_createovalflash.il), axlVisibleLayer 参数
+;                顺序修正为(层名 开关), axlUIRedraw 改 axlVisibleUpdate,
+;                保留字 t 形参改名 tok
+;   2026-07-19 v2.2 ASTB 项目组 实机修复: 层名 class 部分改用数据库内部
+;                带空格形式(BOARD GEOMETRY/PACKAGE GEOMETRY/REF DES/
+;                VIA CLASS), 修复丝印/装配视图仅 PIN 层生效的问题
+;   2026-07-19 v2.3 ASTB 项目组 功能增强: 新增 qu/qd 上下层循环切换;
+;                ql 的"a"改为只打开所有走线层(ETCH+PIN+VIA CLASS+板框),
+;                新增"b"直接切到底层; 抽取 _LayerView_ShowSingleEtchLayer
+;   2026-08-28 v2.4 ASTB 项目组 功能增强: 所有切层始终显示全部板框
+;                (设计板框DESIGN_OUTLINE + CUT板框CUTOUT + 板框OUTLINE);
+;                顶层/底层切层附加对应丝印框(BOARD GEOMETRY/PACKAGE
+;                GEOMETRY/REF DES 三处丝印)
+;   2026-08-28 v2.5 ASTB 项目组 缺陷修复: ql 数字分支(ql 1/ql 1 2 3等)
+;                与 a 分支(全部走线层)此前未附加丝印框, 补齐顶/底层丝印框
+;   2026-08-29 v2.6 ASTB 项目组 缺陷修复: 顶/底层丝印框不再包含
+;                REF DES(位号字符), 仅显示封装/板子丝印框; 修复
+;                输入 "1 b" 混合数字+字母时 atoi 产生 nil 导致
+;                greaterp: can't handle (nil > 0) 报错
+;   2026-08-29 v2.7 ASTB 项目组 语义修正: 混合输入 "1 b" 不再忽略 b,
+;                而是同时显示第1层 + 底层(含各自丝印框和板框)
+;   2026-10-01 v2.8 ASTB 项目组 交互修正: 切层结果与错误提示全部由模态
+;                弹窗 axlUIConfirm 改为命令行消息 axlMsgPut, 切层不再弹窗
+; 编码      : GBK (含中文注释)
+;========================================================================
+
+;------------------------------------------------------------------------
+; 全局变量初始化
+;------------------------------------------------------------------------
+unless(boundp('g_layerViewVersion)
+    g_layerViewVersion = "2.8"
+)
+
+unless(boundp('g_layerViewEnabled)
+    g_layerViewEnabled = t
+)
+
+;------------------------------------------------------------------------
+; 模块常量
+;------------------------------------------------------------------------
+C_LAYER_VIEW_MODULE = "LayerView"
+
+; 板框层列表: 所有切层视图始终显示(设计板框+CUT板框+板框轮廓)
+; (16.6/17.4 实机 BOARD GEOMETRY subclass 实证命名)
+C_LAYERVIEW_OUTLINE_LAYERS = list(
+    "BOARD GEOMETRY/DESIGN_OUTLINE"
+    "BOARD GEOMETRY/CUTOUT"
+    "BOARD GEOMETRY/OUTLINE"
+)
+
+;------------------------------------------------------------------------
+; 函数名  : _LayerView_RegisterCmd
+; 功能    : 命令注册包装: 优先走 ASTB 框架注册, 框架不存在时退化为
+;           axlCmdRegister(独立加载场景), 注册失败仅告警不中断
+; 参数    :
+;   @param cmdName - 命令名字符串
+;   @param procSym - 目标函数 symbol
+; 返回值  : t/nil
+;------------------------------------------------------------------------
+procedure( _LayerView_RegisterCmd(cmdName procSym)
+    let((ret)
+        if( fboundp('ASTB_RegisterCommand) then
+            ; 框架内部已对注册失败做 LogWarn, 此处直接透传返回值
+            ret = ASTB_RegisterCommand(cmdName procSym
+                      ?cmdType "general" ?undo nil)
+        else
+            ret = errset(axlCmdRegister(cmdName procSym
+                      ?cmdType "general") t)
+            unless( ret
+                printf("[%s][WARN] 命令注册失败(可能已被占用): %s\n"
+                       C_LAYER_VIEW_MODULE cmdName)
+            )
+        )
+        ret
+    )
+)
+
+;------------------------------------------------------------------------
+; 函数名  : Init_LayerView
+; 功能    : 模块初始化入口, 注册命令
+; 参数    : 无
+; 返回值  : t - 初始化成功
+;------------------------------------------------------------------------
+procedure( Init_LayerView()
+    ; 注册命令快捷键(显示/查询类, 不修改数据库, cmdType 用 general)
+    _LayerView_RegisterCmd("ql"  'LayerView_SwitchLayer)
+    _LayerView_RegisterCmd("qu"  'LayerView_LayerUp)
+    _LayerView_RegisterCmd("qd"  'LayerView_LayerDown)
+    _LayerView_RegisterCmd("vst" 'LayerView_ViewSilkTop)
+    _LayerView_RegisterCmd("vsb" 'LayerView_ViewSilkBottom)
+    _LayerView_RegisterCmd("vat" 'LayerView_ViewAssyTop)
+    _LayerView_RegisterCmd("vab" 'LayerView_ViewAssyBottom)
+
+    printf("[%s] 模块初始化完成，版本 %s\n"
+           C_LAYER_VIEW_MODULE g_layerViewVersion)
+    t
+)
+
+;------------------------------------------------------------------------
+; 函数名  : LayerView_GetEtchLayers
+; 功能    : 获取所有ETCH层名称列表("ETCH/TOP" ... "ETCH/BOTTOM"),
+;           顺序即叠层物理顺序(groupMembers 自 TOP 至 BOTTOM)
+; 参数    : 无
+; 返回值  : list - ETCH层全名("CLASS/SUBCLASS")字符串列表
+;           nil  - 当前设计无ETCH层
+; 备注    : v2.1 用 axlGetParam 实现(手册实证方式, 同 02_etch_layerview)
+;------------------------------------------------------------------------
+procedure( LayerView_GetEtchLayers()
+    let((param members)
+        param = axlGetParam("paramLayerGroup:Etch")
+        members = param->groupMembers
+        if( null(members) then
+            nil
+        else
+            mapcar(lambda((sc) sprintf(nil "ETCH/%s" sc)) members)
+        )
+    )
+)
+
+;------------------------------------------------------------------------
+; 函数名  : LayerView_GetSubclass
+; 功能    : 从"CLASS/SUBCLASS"格式中提取SUBCLASS部分
+; 参数    :
+;   @param layerName - 层名称字符串，格式为"CLASS/SUBCLASS"
+; 返回值  : string - SUBCLASS名称
+;------------------------------------------------------------------------
+procedure( LayerView_GetSubclass( layerName )
+    cadr(parseString(layerName "/"))
+)
+
+;------------------------------------------------------------------------
+; 函数名  : LayerView_ShowAllLayers
+; 功能    : 显示所有图层并刷新显示
+; 参数    : 无
+; 返回值  : t - 操作成功
+; 备注    : v2.1 改用 axlVisibleDesign(t) 整体显示 + axlVisibleUpdate
+;------------------------------------------------------------------------
+procedure( LayerView_ShowAllLayers()
+    axlVisibleDesign(t)
+    axlVisibleUpdate(t)
+    t
+)
+
+;------------------------------------------------------------------------
+; 函数名  : _LayerView_IsTopLayer / _LayerView_IsBottomLayer
+; 功能    : 判断 ETCH subclass 是否为顶层/底层(依据其在叠层中的位置)
+; 参数    :
+;   @param subclass - ETCH subclass 名(如 "TOP"/"BOTTOM"/"L2")
+; 返回值  : t/nil
+; 备注    : v2.4 新增; 顶层=叠层第1层, 底层=叠层最后层
+;------------------------------------------------------------------------
+procedure( _LayerView_IsTopLayer( subclass )
+    let((etchLayers)
+        etchLayers = LayerView_GetEtchLayers()
+        etchLayers &&
+        equal(upperCase(LayerView_GetSubclass(car(etchLayers))) upperCase(subclass))
+    )
+)
+
+procedure( _LayerView_IsBottomLayer( subclass )
+    let((etchLayers)
+        etchLayers = LayerView_GetEtchLayers()
+        etchLayers &&
+        equal(upperCase(LayerView_GetSubclass(car(last(etchLayers)))) upperCase(subclass))
+    )
+)
+
+;------------------------------------------------------------------------
+; 函数名  : _LayerView_SilkLayersFor
+; 功能    : 按 subclass 生成对应丝印框层列表(BOARD GEOMETRY/PACKAGE
+;           GEOMETRY/REF DES 三处丝印); 非顶/底层返回 nil
+; 参数    :
+;   @param subclass - ETCH subclass 名
+; 返回值  : list - 丝印层全名列表; nil - 非顶/底层
+; 备注    : v2.4 新增; 顶层->SILKSCREEN_TOP, 底层->SILKSCREEN_BOTTOM
+;------------------------------------------------------------------------
+procedure( _LayerView_SilkLayersFor( subclass )
+    let((silkSub)
+        silkSub = cond(
+            ( _LayerView_IsTopLayer(subclass)    "SILKSCREEN_TOP" )
+            ( _LayerView_IsBottomLayer(subclass) "SILKSCREEN_BOTTOM" )
+            ( t nil )
+        )
+        if( silkSub then
+            ; v2.6: 去掉 REF DES(位号字符), 只保留封装/板子丝印框
+            list( sprintf(nil "BOARD GEOMETRY/%s" silkSub)
+                  sprintf(nil "PACKAGE GEOMETRY/%s" silkSub) )
+        else
+            nil
+        )
+    )
+)
+
+;------------------------------------------------------------------------
+; 函数名  : _LayerView_AppendOutlines
+; 功能    : 把全部板框层(设计板框+CUT+板框轮廓)追加到显示列表
+; 参数    :
+;   @param layerList - 已有显示层列表
+; 返回值  : list - 追加板框层后的列表(去重)
+; 备注    : v2.4 新增; 保证任何切层视图都带全部板框
+;------------------------------------------------------------------------
+procedure( _LayerView_AppendOutlines( layerList )
+    foreach(ol C_LAYERVIEW_OUTLINE_LAYERS
+        unless( member(ol layerList)
+            layerList = append1(layerList ol)
+        )
+    )
+    layerList
+)
+;------------------------------------------------------------------------
+; 函数名  : _LayerView_SetActiveLayer
+; 功能    : 设置当前活动层(ministatus 显示), 失败仅告警不中断
+;           (活动层设置是装饰性操作, 不影响视图切换主功能)
+; 参数    :
+;   @param layerName - 层全名, 格式"CLASS/SUBCLASS"(大小写不敏感)
+; 返回值  : t/nil
+; 备注    : v2.1 新增, 替代臆造的 axlSetCurrentLayer; 手册标注
+;           axlSetActiveLayer 已废弃, 推荐 axlDBControl(实证写法见
+;           pkg_createovalflash.il: axlDBControl('activeLayer "etch/top"))
+;------------------------------------------------------------------------
+procedure( _LayerView_SetActiveLayer( layerName )
+    let((ret)
+        ret = errset(axlDBControl('activeLayer layerName) t)
+        unless( ret
+            printf("[%s][WARN] 设置活动层失败(忽略, 不影响视图): %s\n"
+                   C_LAYER_VIEW_MODULE layerName)
+        )
+        ret
+    )
+)
+
+;------------------------------------------------------------------------
+; 函数名  : _LayerView_ShowSingleEtchLayer
+; 功能    : 单层显示指定 ETCH 层: 隐藏全部后显示 全部板框+ETCH+PIN+
+;           VIA CLASS, 顶/底层再加对应丝印框, 并把该层设为活动层
+; 参数    :
+;   @param targetLayer - ETCH 层全名(如 "ETCH/TOP")
+; 返回值  : t
+; 备注    : v2.3 抽取(ql 的 b 分支与 qu/qd 共用);
+;           v2.4 顶/底层附加丝印框, 所有单层切层始终含全部板框
+;------------------------------------------------------------------------
+procedure( _LayerView_ShowSingleEtchLayer( targetLayer )
+    let((showLayers subclassName silkLayers)
+        LayerView_HideAllLayers()
+        subclassName = LayerView_GetSubclass(targetLayer)
+        ; 基础: ETCH + PIN + VIA CLASS
+        showLayers = list(targetLayer
+                          sprintf(nil "PIN/%s" subclassName)
+                          sprintf(nil "VIA CLASS/%s" subclassName))
+        ; 顶层/底层附加对应丝印框(v2.4)
+        silkLayers = _LayerView_SilkLayersFor(subclassName)
+        when( silkLayers
+            foreach(sl silkLayers
+                showLayers = append1(showLayers sl)
+            )
+        )
+        ; 始终附加全部板框(设计板框+CUT+板框轮廓)(v2.4)
+        showLayers = _LayerView_AppendOutlines(showLayers)
+        LayerView_ShowLayers(showLayers)
+        _LayerView_SetActiveLayer(targetLayer)
+        t
+    )
+)
+
+;------------------------------------------------------------------------
+; 函数名  : _LayerView_FindLayerIndex
+; 功能    : 在 ETCH 层列表中按 subclass 名定位(大小写不敏感)
+; 参数    :
+;   @param etchLayers - ETCH 层全名列表
+;   @param subclass   - 要查找的 subclass 名(如 "TOP")
+; 返回值  : int  - 1-based 位置
+;           nil  - 未找到
+; 备注    : v2.3 新增
+;------------------------------------------------------------------------
+procedure( _LayerView_FindLayerIndex( etchLayers subclass )
+    let((idx result upper)
+        idx = 1
+        result = nil
+        upper = upperCase(subclass)
+        foreach(l etchLayers
+            when( null(result) &&
+                  upperCase(LayerView_GetSubclass(l)) == upper
+                result = idx
+            )
+            idx++
+        )
+        result
+    )
+)
+
+;------------------------------------------------------------------------
+; 函数名  : LayerView_CycleLayer
+; 功能    : 相邻走线层循环切换(上一层/下一层):
+;           顶层的上一层是底层, 底层的下一层是顶层;
+;           切换后单层显示该层并设为活动层
+; 参数    :
+;   @param dir - 1 = 下一层(TOP->BOTTOM 方向), -1 = 上一层
+; 返回值  : t/nil
+; 备注    : v2.3 新增; 当前活动层不在 ETCH 时, qd 落到 TOP, qu 落到 BOTTOM
+;------------------------------------------------------------------------
+procedure( LayerView_CycleLayer( dir )
+    prog((etchLayers curActive curSubclass idx total newIdx targetLayer)
+        etchLayers = LayerView_GetEtchLayers()
+        if( null(etchLayers) then
+            axlMsgPut("当前设计中没有ETCH层")
+            return(nil)
+        )
+        total = length(etchLayers)
+
+        ; 读取当前活动层(单参=读取, errset 保底)
+        curActive = errset(axlDBControl('activeLayer) t)
+        curSubclass = if( curActive && car(curActive)
+                          then cadr(parseString(car(curActive) "/"))
+                          else nil )
+
+        ; 定位当前层在叠层中的位置(1-based)
+        idx = if( curSubclass
+                  then _LayerView_FindLayerIndex(etchLayers curSubclass)
+                  else nil )
+        unless( idx
+            ; 活动层不在 ETCH: 让 +/-1 后分别落到 TOP/BOTTOM
+            idx = if( dir == 1 then 0 else 1 )
+        )
+
+        ; 1-based 循环索引
+        newIdx = mod(idx - 1 + dir + total total) + 1
+        targetLayer = nth(newIdx - 1 etchLayers)
+
+        _LayerView_ShowSingleEtchLayer(targetLayer)
+        printf("[%s] 活动层: %s (%d/%d)\n"
+               C_LAYER_VIEW_MODULE targetLayer newIdx total)
+        t
+    )
+)
+
+;------------------------------------------------------------------------
+; 函数名  : LayerView_LayerUp / LayerView_LayerDown
+; 功能    : qu/qd 命令入口: 切换到上一层/下一层走线层(循环)
+; 参数    : 无
+; 返回值  : t/nil
+;------------------------------------------------------------------------
+procedure( LayerView_LayerUp()
+    LayerView_CycleLayer(-1)
+)
+
+procedure( LayerView_LayerDown()
+    LayerView_CycleLayer(1)
+)
+
+;------------------------------------------------------------------------
+; 函数名  : LayerView_SwitchLayer
+; 功能    : 切换活动层与显示层 - 支持多种输入格式:
+;           输入单个层号(如"1"): 切到该层为活动层，仅显示该层及关联层
+;           输入多个层号(如"1 2 3"): 显示指定多层及关联层，活动层为首个
+;           输入"a": 打开所有走线层(ETCH+PIN+VIA CLASS+板框)
+;           输入"b": 切换到底层
+; 参数    : 无(通过axlUIPrompt对话框获取用户输入)
+; 返回值  : t   - 操作成功
+;           nil - 操作失败或用户取消
+;------------------------------------------------------------------------
+procedure( LayerView_SwitchLayer()
+    prog((input tokens etchLayers totalLayers layerNums
+         validNums targetLayer showLayers subclassName
+         activeLayer msgStr)
+        ; 获取ETCH层列表
+        etchLayers = LayerView_GetEtchLayers()
+        totalLayers = length(etchLayers)
+
+        if( null(etchLayers) then
+            axlMsgPut("当前设计中没有ETCH层")
+            return(nil)
+        )
+
+        ; 弹出输入对话框
+        input = axlUIPrompt(
+            sprintf(nil "输入层号(1~%d, 空格分隔多层, a=所有走线层, b=底层):"
+                    totalLayers)
+            "1"
+        )
+
+        ; 用户取消输入
+        if( null(input) || input == "" then
+            return(nil)
+        )
+
+        ; 去除前后空格
+        input = buildString(parseString(input " "), " ")
+
+        ; ========== 处理"a"输入: 打开所有走线层(v2.3 起不再全图显示) ==========
+        if( lowerCase(input) == "a" then
+            LayerView_HideAllLayers()
+            showLayers = nil
+            foreach(l etchLayers
+                subclassName = LayerView_GetSubclass(l)
+                showLayers = append1(showLayers l)
+                showLayers = append1(showLayers
+                    sprintf(nil "PIN/%s" subclassName))
+                showLayers = append1(showLayers
+                    sprintf(nil "VIA CLASS/%s" subclassName))
+                ; 顶/底层附加对应丝印框(v2.5)
+                foreach(sl _LayerView_SilkLayersFor(subclassName)
+                    unless( member(sl showLayers)
+                        showLayers = append1(showLayers sl)
+                    )
+                )
+            )
+            showLayers = _LayerView_AppendOutlines(showLayers)
+            LayerView_ShowLayers(showLayers)
+            axlMsgPut("已显示所有走线层")
+            printf("[%s] 显示所有走线层\n" C_LAYER_VIEW_MODULE)
+            return(t)
+        )
+
+        ; ========== 处理"b"输入: 切换到底层(v2.3 新增) ==========
+        if( lowerCase(input) == "b" then
+            targetLayer = car(last(etchLayers))
+            _LayerView_ShowSingleEtchLayer(targetLayer)
+            msgStr = sprintf(nil "活动层: %s (底层)" targetLayer)
+            axlMsgPut(msgStr)
+            printf("[%s] %s\n" C_LAYER_VIEW_MODULE msgStr)
+            return(t)
+        )
+
+        ; ========== 处理数字输入: 解析层号 ==========
+        ; (v2.1: 形参保留字 t 改名 tok)
+        tokens = parseString(input " ")
+        ; v2.7: 混合输入(如 "1 b")时, b 表示附加底层
+        addBottom = nil
+        foreach( tok tokens
+            when( lowerCase(tok) == "b" addBottom = t )
+        )
+        layerNums = mapcar(lambda((tok) atoi(tok)) tokens)
+        ; v2.6: 剔除 atoi 失败的 nil(如 "1 b" 里的 b), 防 greaterp 报错
+        layerNums = setof(n layerNums n)
+
+        ; 验证每个层号
+        validNums = setof(n layerNums n > 0 && n <= totalLayers)
+
+        if( null(validNums) && null(addBottom) then
+            axlMsgPut(
+                sprintf(nil "无效层号，请输入1~%d之间的正整数"
+                        totalLayers)
+            )
+            return(nil)
+        )
+
+        ; 检查是否有超出范围的层号
+        if( validNums && length(validNums) != length(layerNums) then
+            axlMsgPut(
+                sprintf(nil "部分层号超出1~%d范围，仅显示有效层号"
+                        totalLayers)
+            )
+        )
+
+        ; v2.7: 混合输入含 b 时, 把底层加入显示列表
+        when( addBottom
+            bottomNum = length(etchLayers)
+            unless( member(bottomNum validNums)
+                validNums = append1(validNums bottomNum)
+            )
+        )
+
+        ; ========== 构建需要显示的层列表 ==========
+        ; 隐藏所有层
+        LayerView_HideAllLayers()
+
+        ; 基础层: 全部板框(设计板框+CUT+板框轮廓, 始终显示)(v2.4)
+        ; (v2.2: class 名用数据库内部带空格形式)
+        showLayers = nil
+
+        ; 为每个有效层号添加ETCH/PIN/VIA CLASS层, 顶/底层再加对应丝印框(v2.5)
+        foreach(n validNums
+            subclassName = LayerView_GetSubclass(nth(n - 1 etchLayers))
+            showLayers = append1(showLayers
+                sprintf(nil "ETCH/%s" subclassName))
+            showLayers = append1(showLayers
+                sprintf(nil "PIN/%s" subclassName))
+            showLayers = append1(showLayers
+                sprintf(nil "VIA CLASS/%s" subclassName))
+            ; 顶层/底层附加对应丝印框
+            foreach(sl _LayerView_SilkLayersFor(subclassName)
+                unless( member(sl showLayers)
+                    showLayers = append1(showLayers sl)
+                )
+            )
+        )
+
+        ; 始终附加全部板框(v2.4)
+        showLayers = _LayerView_AppendOutlines(showLayers)
+
+        ; 显示指定层
+        LayerView_ShowLayers(showLayers)
+
+        ; 设置活动层为第一个有效层号对应的ETCH层
+        activeLayer = nth(car(validNums) - 1 etchLayers)
+        _LayerView_SetActiveLayer(activeLayer)
+
+        ; 构建结果提示消息
+        if( length(validNums) == 1 then
+            msgStr = sprintf(nil "活动层: %s (第%d层)"
+                             activeLayer car(validNums))
+        else
+            msgStr = sprintf(nil "活动层: %s，显示层号: %s"
+                             activeLayer
+                             buildString(
+                                 mapcar(lambda((n)
+                                     sprintf(nil "%d" n)) validNums)
+                                 " "))
+        )
+
+        axlMsgPut(msgStr)
+        printf("[%s] %s\n" C_LAYER_VIEW_MODULE msgStr)
+        t
+    )
+)
+
+;------------------------------------------------------------------------
+; 函数名  : LayerView_HideAllLayers
+; 功能    : 隐藏所有图层，为视图切换做准备(不刷新, 由调用方统一刷新)
+; 参数    : 无
+; 返回值  : t - 操作成功
+; 备注    : v2.1 改用 axlVisibleDesign(nil) 整体隐藏
+;------------------------------------------------------------------------
+procedure( LayerView_HideAllLayers()
+    axlVisibleDesign(nil)
+    t
+)
+
+;------------------------------------------------------------------------
+; 函数名  : LayerView_ShowLayers
+; 功能    : 显示指定层列表中的所有图层并刷新显示
+; 参数    :
+;   @param layerList - 要显示的层名称列表 (list of strings)
+; 返回值  : t - 操作成功
+; 备注    : v2.1 修正 axlVisibleLayer 参数顺序为(层名 开关),
+;           axlUIRedraw 改 axlVisibleUpdate(t)
+;------------------------------------------------------------------------
+procedure( LayerView_ShowLayers( layerList )
+    foreach(layerName layerList
+        axlVisibleLayer(layerName t)
+    )
+    axlVisibleUpdate(t)
+    t
+)
+
+;------------------------------------------------------------------------
+; 函数名  : LayerView_ViewSilkTop
+; 功能    : 切换到丝印顶层视图 - 仅显示顶层丝印相关图层
+;           显示: 板框, 顶层丝印外形, 顶层位号丝印, 顶层焊盘, 顶层过孔
+; 参数    : 无
+; 返回值  : t - 操作成功
+; 备注    : v2.2 class 名改带空格形式(BOARD/PACKAGE/REF DES/VIA CLASS)
+;------------------------------------------------------------------------
+procedure( LayerView_ViewSilkTop()
+    let((silkTopLayers)
+        silkTopLayers = list(
+            "BOARD GEOMETRY/OUTLINE"
+            "PACKAGE GEOMETRY/SILKSCREEN_TOP"
+            "REF DES/SILKSCREEN_TOP"
+            "PIN/TOP"
+            "VIA CLASS/TOP"
+        )
+        LayerView_HideAllLayers()
+        LayerView_ShowLayers(silkTopLayers)
+        printf("[%s] 已切换到丝印顶层视图\n" C_LAYER_VIEW_MODULE)
+        t
+    )
+)
+
+;------------------------------------------------------------------------
+; 函数名  : LayerView_ViewSilkBottom
+; 功能    : 切换到丝印底层视图 - 仅显示底层丝印相关图层
+;           显示: 板框, 底层丝印外形, 底层位号丝印, 底层焊盘, 底层过孔
+; 参数    : 无
+; 返回值  : t - 操作成功
+;------------------------------------------------------------------------
+procedure( LayerView_ViewSilkBottom()
+    let((silkBotLayers)
+        silkBotLayers = list(
+            "BOARD GEOMETRY/OUTLINE"
+            "PACKAGE GEOMETRY/SILKSCREEN_BOTTOM"
+            "REF DES/SILKSCREEN_BOTTOM"
+            "PIN/BOTTOM"
+            "VIA CLASS/BOTTOM"
+        )
+        LayerView_HideAllLayers()
+        LayerView_ShowLayers(silkBotLayers)
+        printf("[%s] 已切换到丝印底层视图\n" C_LAYER_VIEW_MODULE)
+        t
+    )
+)
+
+;------------------------------------------------------------------------
+; 函数名  : LayerView_ViewAssyTop
+; 功能    : 切换到装配顶层视图 - 仅显示顶层装配相关图层
+;           显示: 板框, 顶层装配外形, 顶层装配位号, 顶层焊盘, 顶层过孔
+; 参数    : 无
+; 返回值  : t - 操作成功
+;------------------------------------------------------------------------
+procedure( LayerView_ViewAssyTop()
+    let((assyTopLayers)
+        assyTopLayers = list(
+            "BOARD GEOMETRY/OUTLINE"
+            "PACKAGE GEOMETRY/ASSEMBLY_TOP"
+            "REF DES/ASSEMBLY_TOP"
+            "PIN/TOP"
+            "VIA CLASS/TOP"
+        )
+        LayerView_HideAllLayers()
+        LayerView_ShowLayers(assyTopLayers)
+        printf("[%s] 已切换到装配顶层视图\n" C_LAYER_VIEW_MODULE)
+        t
+    )
+)
+
+;------------------------------------------------------------------------
+; 函数名  : LayerView_ViewAssyBottom
+; 功能    : 切换到装配底层视图 - 仅显示底层装配相关图层
+;           显示: 板框, 底层装配外形, 底层装配位号, 底层焊盘, 底层过孔
+; 参数    : 无
+; 返回值  : t - 操作成功
+;------------------------------------------------------------------------
+procedure( LayerView_ViewAssyBottom()
+    let((assyBotLayers)
+        assyBotLayers = list(
+            "BOARD GEOMETRY/OUTLINE"
+            "PACKAGE GEOMETRY/ASSEMBLY_BOTTOM"
+            "REF DES/ASSEMBLY_BOTTOM"
+            "PIN/BOTTOM"
+            "VIA CLASS/BOTTOM"
+        )
+        LayerView_HideAllLayers()
+        LayerView_ShowLayers(assyBotLayers)
+        printf("[%s] 已切换到装配底层视图\n" C_LAYER_VIEW_MODULE)
+        t
+    )
+)
+
+;------------------------------------------------------------------------
+; ASTB 菜单包装函数(供 core/menu.il Utilities 菜单调用)
+;------------------------------------------------------------------------
+
+;------------------------------------------------------------------------
+; 函数名  : ASTB_Util_LayerSwitch
+; 功能    : 菜单包装 - 切层(输入层号切层/多选/全部走线层/底层)
+; 参数    : 无
+; 返回值  : t/nil - 同 LayerView_SwitchLayer
+;------------------------------------------------------------------------
+procedure( ASTB_Util_LayerSwitch()
+    LayerView_SwitchLayer()
+)
+
+;------------------------------------------------------------------------
+; 函数名  : ASTB_Util_LayerUp
+; 功能    : 菜单包装 - 上一层走线层(循环)
+; 参数    : 无
+; 返回值  : t/nil
+;------------------------------------------------------------------------
+procedure( ASTB_Util_LayerUp()
+    LayerView_LayerUp()
+)
+
+;------------------------------------------------------------------------
+; 函数名  : ASTB_Util_LayerDown
+; 功能    : 菜单包装 - 下一层走线层(循环)
+; 参数    : 无
+; 返回值  : t/nil
+;------------------------------------------------------------------------
+procedure( ASTB_Util_LayerDown()
+    LayerView_LayerDown()
+)
+
+;------------------------------------------------------------------------
+; 函数名  : ASTB_Util_ViewSilkTop
+; 功能    : 菜单包装 - 丝印顶层视图
+; 参数    : 无
+; 返回值  : t
+;------------------------------------------------------------------------
+procedure( ASTB_Util_ViewSilkTop()
+    LayerView_ViewSilkTop()
+)
+
+;------------------------------------------------------------------------
+; 函数名  : ASTB_Util_ViewSilkBottom
+; 功能    : 菜单包装 - 丝印底层视图
+; 参数    : 无
+; 返回值  : t
+;------------------------------------------------------------------------
+procedure( ASTB_Util_ViewSilkBottom()
+    LayerView_ViewSilkBottom()
+)
+
+;------------------------------------------------------------------------
+; 函数名  : ASTB_Util_ViewAssyTop
+; 功能    : 菜单包装 - 装配顶层视图
+; 参数    : 无
+; 返回值  : t
+;------------------------------------------------------------------------
+procedure( ASTB_Util_ViewAssyTop()
+    LayerView_ViewAssyTop()
+)
+
+;------------------------------------------------------------------------
+; 函数名  : ASTB_Util_ViewAssyBottom
+; 功能    : 菜单包装 - 装配底层视图
+; 参数    : 无
+; 返回值  : t
+;------------------------------------------------------------------------
+procedure( ASTB_Util_ViewAssyBottom()
+    LayerView_ViewAssyBottom()
+)
+
+;------------------------------------------------------------------------
+; 模块初始化调用
+;------------------------------------------------------------------------
+Init_LayerView()

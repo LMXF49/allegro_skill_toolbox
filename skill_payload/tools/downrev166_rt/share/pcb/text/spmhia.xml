@@ -1,0 +1,506 @@
+<MsgFile>    
+    <Msg>
+        <Id>1</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_GE_RESERVED</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Reserved for IDA general messages.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1000</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_PREF_RESERVED</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Reserved for IDA preference messages.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1001</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_PREF_TRANSL_PPT_VALUE_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Invalid padstack plating thickness value entered. Enter a non-negative value.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1101</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_PREF_SIM_PORT_REF_IMP_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Invalid port reference impedance value entered. Enter a positive value.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1201</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_PREF_CLARITY_FREQ_MIN_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Invalid minimum frequency value entered. Enter a non-negative value.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1202</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_PREF_CLARITY_FREQ_MAX_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Invalid maximum frequency value entered. Enter a value greater than the minimum frequency.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1203</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_PREF_CLARITY_FREQ_STEP_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Invalid step frequency value entered. Enter a positive value.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1204</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_PREF_CLARITY_FREQ_CNT_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Invalid frequency count entered. Enter a positive integer.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1205</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_PREF_CLARITY_METAL_THK_THOLD_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Invalid metal thickness threshold value entered. Enter a non-negative value.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1206</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_PREF_CLARITY_MIN_ITER_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Invalid minimum adaptive mesh iteration number entered. Enter an integer equal to or greater than three.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1207</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_PREF_CLARITY_MAX_ITER_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Invalid maximum adaptive mesh iteration number entered. Enter an integer greater than the minimum iteration number.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1208</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_PREF_CLARITY_ADAPT_PCT_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Invalid adaptive refinement percentage value entered. Enter a positive value.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1209</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_PREF_CLARITY_TARGET_DELTA_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Invalid target delta S value entered. Enter a positive value.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1210</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_PREF_CLARITY_MIN_CONV_ITER_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Invalid minimum converged iteration number entered. Enter a positive integer.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1211</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_PREF_CLARITY_SOL_FREQ_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Invalid solution frequency value entered. Enter a positive value.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1212</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_PREF_CLARITY_AFS_CONV_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Invalid AFS convergence value entered. Enter a  positive value.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1301</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_PREF_POWERSI_FREQ_MIN_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Invalid minimum frequency value entered. Enter a non-negative value.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1302</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_PREF_POWERSI_FREQ_MAX_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Invalid maximum frequency value entered. Enter a value greater than the minimum frequency.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1303</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_PREF_POWERSI_FREQ_STEP_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Invalid step frequency value entered. Enter a positive value.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1304</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_PREF_POWERSI_FREQ_CNT_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Invalid frequency count entered. Enter a positive integer.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>2000</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_DSA_RESERVED</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Reserved for IDA Design Setup workflow messages.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>3000</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_IMP_RESERVED</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Reserved for IDA Impedance workflow messages.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>4000</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_CPL_RESERVED</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Reserved for IDA Coupling workflow messages.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>5000</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_XTLK_RESERVED</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Reserved for IDA Crosstalk workflow messages.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>6000</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_RFLT_RESERVED</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Reserved for IDA Reflection workflow messages.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>7000</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_RTP_RESERVED</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Reserved for IDA Return Path workflow messages.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>8000</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_IRDROP_RESERVED</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Reserved for IDA IRDrop workflow messages.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>8001</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_IRDROP_LOAD_RESULT_1File</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Cannot load selected result file '%s'. Only any one of an IDA result file (.irida), a PowerDC simulation result file (.xml), or a PowerDC distribution plot file (.IRD) is allowed to be loaded.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>8002</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_IRDROP_LOAD_RESULT_2Files</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Cannot load selected result files '%s' and '%s' together. Only PowerDC simulation result file (.xml) and PowerDC distribution plot file (.IRD) are allowed to be loaded together.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>8003</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_IRDROP_LOAD_RESULT_3Files</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Cannot load %d result files at a time. A maximum of two result files are allowed only when one is a PowerDC simulation file (.xml) and the other is a PowerDC distribution plot file (.IRD).
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>8004</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_IRDROP_LOAD_RESULT_VRM_NOT_FOUND</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            VRM not found in PowerDC simulation result file '%s'. Select to load a result file with VRM components.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>8005</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_IRDROP_LOAD_RESULT_SINK_NOT_FOUND</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Sink not found in PowerDC simulation result file '%s'. Select to load a result file with sink components.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>8006</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_IRDROP_LOAD_RESULT_VRM_FAIL</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Failed to load VRM components from PowerDC simulation result file '%s'. Select another result file with valid VRM components to load.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>8007</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_IRDROP_LOAD_RESULT_SINK_FAIL</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Failed to load sink components from PowerDC simulation result file '%s'. Select another result file with valid sink components to load.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>8008</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_IRDROP_LOAD_RESULT_DISC_FAIL</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Failed to load discrete components from PowerDC simulation result file '%s'. Select another result file with valid discrete components to load.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>9000</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_TOPXP_RESERVED</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Reserved for IDA TopXp workflow messages.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>10000</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_PILIND_RESERVED</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Reserved for IDA Power Inductance workflow messages.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>11000</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_VIAWIZ_PORT_NET_NOT_FOUND</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Cannot generate port for via structure because net '%s' not found. Ensure net with the correct name exists in design.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>11001</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_VIAWIZ_VS_TRACE_NOT_DEFINED</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Cannot generate port for via structure because entry or exit traces are not defined. Ensure entry and exit traces are defined when creating via structure.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>11002</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_VIAWIZ_VS_NOT_FOUND</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Cannot assign net to signal vias because via structure not found in design. Ensure via structure is defined and placed in design.
+        </Desc>
+        <Output>C</Output>
+    </Msg>        
+    <Msg>
+        <Id>11003</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_VIAWIZ_XSECT_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Cannot update cross section because imported cross section has less than five layers.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>11004</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_VIAWIZ_XSECT_SURFACE_LAYER_MISSING</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Cannot update cross section because the first and last layers in the cross section to be imported are not SURFACE layers.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>11005</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_VIAWIZ_ANAL_CANCEL</CDNUSR_DEFINE_NAME>
+        <Category>
+            I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Via structure model extraction cancelled.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>11006</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_VIAWIZ_ANAL_SUCCESS</CDNUSR_DEFINE_NAME>
+        <Category>
+            I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Via structure model extraction completed successfully.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>11007</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_VIAWIZ_PAD_LOAD_FAILED</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Failed to load padstack '%s' from library. Ensure environment variable 'PADPATH' is set correctly.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>11008</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_VIAWIZ_ANAL_FAIL</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Via structure model extraction failed. Check log file '%s' for more detail.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>11009</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_VIAWIZ_PORT_NO_PLANE_UP</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Cannot generate port at location %s on layer '%s' because there is no plane above the layer. 
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>11010</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_VIAWIZ_PORT_NO_PLANE_DOWN</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Cannot generate port at location %s on layer '%s' because there is no plane below the layer. 
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>11011</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_VIAWIZ_PORT_NO_PLANE</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Cannot generate port at location %s on layer '%s' because there is no plane on either side of the layer. 
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>12000</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_IME_RESERVED</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Reserved for IDA Interconnect Model Extraction workflow messages.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>12001</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_IME_ANAL_SUCCESS</CDNUSR_DEFINE_NAME>
+        <Category>
+            I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Interconnect model extraction completed successfully.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>12002</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_IME_ANAL_FAIL</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Interconnect model extraction failed. Check log file '%s' for more detail.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>12003</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_IME_ANAL_CANCEL</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Interconnect model extraction cancelled.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>12004</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_IME_NO_GND_NET</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Unable to identify reference net because design does not have a ground net. Specify a ground net and run extraction.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>12005</Id>
+        <CDNUSR_DEFINE_NAME>IDAMSG_IME_FREQ_OVERLAP</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Frequency samples overlapped because of the combination of the Freq Min (Hz) and Freq Max (Hz) values specified in the Frequency Sampling group of the Parameters Setup window. Change the values to avoid any overlaps.
+        </Desc>
+        <Output>C</Output>
+    </Msg>    
+</MsgFile>

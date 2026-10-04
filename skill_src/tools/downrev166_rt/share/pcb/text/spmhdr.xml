@@ -1,0 +1,4173 @@
+<MsgFile>
+
+  <Msg>
+    <Id>1</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_INFO_STARTED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Report started: output file is '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>2</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_INFO_READ</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Report: %s records read.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>3</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_INFO_ENDED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Report ended.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>4</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_INFO_ENDED_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Report ended ... see output file for errors.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>5</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_INFO_SORT_STARTED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Sort started.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>6</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_INFO_SORT_ENDED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Sort ended.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>7</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_INFO_OPEN_OUTPUT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Report ended - couldn't open output file '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>8</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_INFO_OPEN_RP</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Report ended - couldn't open output file '%s', %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>9</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_INPUTPROMPT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter a name for the extract command file:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>10</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_OUTPUTPROMPT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter a name for the report file to be written:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>11</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_SCRIPTPROMPT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter name for the script file to be written:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>12</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_SORT_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Sort error, code: %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>13</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_OPEN_EXTRACT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Couldn't open text file '%s', %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>14</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_SETFIELDS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Internal error setting fields, %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>15</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DAREADRECORD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error reading input file %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>16</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_INTER_STARTED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%s started.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>17</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_INTER_ENDED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%s ended.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>18</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_INTER_ENDED_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error running report program %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>19</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_ECL_SCHEDULE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+ECL Schedule Report
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>20</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_PROMPTNAM23</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter ONE of the above choices and press Return:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>21</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_UNUSED_NET</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+...unused...
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>22</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_RATSNEST</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+ratsnest
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>23</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_SLP_TITLE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+SYMBOL LIBRARY PATH REPORT
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>24</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_SLP_SUB1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|symbol       |symbol  |symbol|library                                         |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>25</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_SLP_SUB2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|name         |type    |count |path                                            |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>26</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_SLP_END</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+number of different symbol names %d
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>27</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_CMP_TITLE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+COMPONENT REPORT
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>28</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_CMP_SUB1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|        |   device    |  value &amp;   |   package   |        |        |        |m|
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>29</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_CMP_SUB2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| refdes |    type     | tolerance  |    symbol   |   x    |    y   |  ang   |r|
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>30</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_CMP_END</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+total component count  %d
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>31</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_PAD_TITLE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+PADSTACK  DEFINITION  REPORT
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>32</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_PAD_IPD</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+internal_pad_def
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>33</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_PAD_VIA</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+VIA
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>34</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_PAD_NON_VIA</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+NON-VIA
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>35</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_PAD_OPTIONAL</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+OPTIONAL
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>36</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_PAD_FIXED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+FIXED
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>37</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_PAD_TSM</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+TOP-SOLDER-MASK
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>38</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_PAD_BSM</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+BOTTOM-SOLDER-MASK
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>39</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_PAD_TPM</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+TOP-PASTE-MASK
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>40</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_PAD_BPM</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+BOTTOM-PASTE-MASK
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>41</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_PAD_TFM</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+TOP-FILM-MASK
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>42</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_PAD_BFM</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+BOTTOM-FILM-MASK
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>43</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_PAD_PAD</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+PAD
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>44</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_PAD_PLATED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+PLATED
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>45</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_PAD_NON_PLATED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+NON_PLATED
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>46</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_PAD_DRILL_OPT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+OPTIONAL
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>47</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_PAD_SUB0</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| Pad name: %s       Type %s       Inner-pads %s |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>48</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_PAD_SUB1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|    subclass or   | pad  |outline  |   size    |  offset   |  flash  |  shape |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>49</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_PAD_SUB2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|mask-type or drill| type |geometry | wdt | hgt |  x  |  y  |  name   |  name  |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>50</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_PAD_DRILL1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|    DRILL:                                                                    |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>51</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_PAD_DRILL2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|      hole     |  plating  |      display/plot        size      | hole offset |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>52</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_PAD_DRILL3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|      size     |   type    |   figure  |character| wdt  | hgt   |  x   |   y  |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>53</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_PAD_END</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+total padstack definitions %d
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>54</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_NET_TITLE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+NETLIST  REPORT
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>55</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_NET_SUB1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|         net         |                           net                          |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>56</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_NET_SUB2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|         name        |                           pins                         |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>57</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_NET_END</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+total pin count  %d
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>58</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_ECL_TITLE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+ECL  LOADING  REPORT
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>59</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_ECL_SUB1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|                   refdes                                                     |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>60</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_ECL_SUB2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|  net name         pinid               x        y       length   layer        |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>61</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_ECL_TOTAL</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+TOTAL       %s VIA(S)                         %s  %s
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>62</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_ECL_END1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+End of ECL Loading Report
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>63</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_ECL_END2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+total path length all ECL nets = %s %s
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>64</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_ECS_TITLE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+ECL  LOADING  REPORT  (SHORT  FORM)
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>65</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_ECS_SUB1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|                         number                                               |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>66</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_ECS_SUB2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|    net name             of vias                length          ratsnest      |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>67</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_ECS_END1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+End of ECL Loading Report (Short  Form)
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>68</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_ECS_END2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+total path length all ECL nets = %s %s
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>69</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_EAS_TITLE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+ECL  ACTUAL  VS  SCHEDULED  CONNECTIONS  REPORT (Sorted highest percent etch/manhattan to lowest)
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>70</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_EAS_SUB1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|Net Name /                       |        Scheduled to pin       |   Actual pin-pin etch:        %% on |     Total lengths   |etch/|
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>71</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_EAS_SUB2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|    pinid  | |    x    |    y    |  pinid  | |    x    |     y   | length  | width|layer name  | layer|   etch   | manhattan| mnht|
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>72</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_EAS_END1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+End of ECL Actual vs. Scheduled Report (Sorted highest percent etch/manhattan to lowest)
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>73</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_EAN_TITLE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+ECL  ACTUAL  VS  SCHEDULED  CONNECTIONS  REPORT (Sorted by net name)
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>74</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_EAN_SUB1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|Net Name /                       |        Scheduled to pin       |   Actual pin-pin etch:        %% on |     Total lengths   |etch/|
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>75</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_EAN_SUB2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|    pinid  | |    x    |    y    |  pinid  | |    x    |     y   | length  | width|layer name  | layer|   etch   | manhattan| mnht|
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>76</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_EAN_TOTL</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Net totals
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>77</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_EAN_END1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+End of ECL Actual vs. Scheduled Report (Sorted by net name)
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>78</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_UCN_TITLE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+UNCONNECTED  PINS  REPORT
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>79</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_UCN_SUB1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| net name /                        |                                |manhattan|
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>80</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_UCN_SUB2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|   from pin         x         y    |   to pin         x         y   |distance |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>81</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_UCN_END1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+total unconnected pin pairs %d
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>82</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_PSU_TITLE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+PADSTACK  USAGE  REPORT
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>83</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_PSU_SUB1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|     padstack     |     symbol     |  pin   || Total padstack usage counts:   |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>84</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_PSU_SUB2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|       name       |      name      | number || per pin |per symbol|per padstck|
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>85</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_PSU_END1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+total padstack usage count %d
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>86</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_PSU_END2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+total padstack definitions used %d
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>87</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_SUM_TITLE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+DRAWING SUMMARY REPORT
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>88</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_NPR_TITLE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+NET  PROPERTIES  REPORT
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>89</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_NPR_SUB1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|       net          |               property                                  |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>90</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_NPR_SUB2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|       name         |       name       |        value                         |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>91</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_NPR_SUB3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|  ***** no longer used  ******  |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>92</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_NPR_SUB4</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|  ***** no longer used  ******  |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>93</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_NPR_SUB5</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|  ***** no longer used  ******  |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>94</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_NPR_SUB6</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|  ***** no longer used  ******  |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>95</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_NPR_SUB7</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|  ***** no longer used  ******  |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>96</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_NPR_SUB8</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|  ***** no longer used  ******  |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>97</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_NPR_SUB9</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|  ***** no longer used  ******  |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>98</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_NPR_SUB10</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|  ***** no longer used  ******  |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>99</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_NPR_END</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+total net count  %d
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>100</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_CPN_TITLE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+COMPONENT  PIN  REPORT
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>101</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_CPN_SUB1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|reference|     device    |   pin   |  pin    |  pin  |       net              |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>102</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_CPN_SUB2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|desgnator|      type     |   use   |  name   | numbr |       name             |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>103</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_CPN_END</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+total component pin count  %d
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>104</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_SPN_TITLE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+SYMBOL  PIN  REPORT
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>105</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_SPN_SUB1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|      |   symbol   |   device   | pin |padstack| pin location  |    net       |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>106</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_SPN_SUB2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|refdes|    name    |    type    |numbr|  name  |   x   |   y   |    name      |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>107</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_SPN_END</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+total symbol pin count  %d
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>108</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_FPN_TITLE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+FUNCTION  PIN  REPORT
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>109</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_FPN_SUB1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|  fcn   |   ref  |   function   |    |  pin   |  pin  |pin  |      net        |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>110</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_FPN_SUB2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|  des   |   des  |     type     |slot|  name  |  use  |numbr|      name       |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>111</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_FPN_END</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+total function pin count  %d
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>112</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_PCP_TITLE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+PLACED COMPONENT REPORT
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>113</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_PCP_SUB1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|        |   device    |  value &amp;   |  package    |        |        |        |m|
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>114</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_PCP_SUB2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| refdes |    type     | tolerance  |   symbol    |   x    |    y   |  ang   |r|
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>115</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_PCP_END</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+total placed component count  %d
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>116</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_UPC_TITLE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+UNPLACED COMPONENT REPORT
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>117</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_UPC_SUB1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|        |    device    |    value &amp;   |   package                             |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>118</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_UPC_SUB2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| refdes |     type     |   tolerance  |    symbol                             |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>119</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_UPC_END</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+total unplaced component count  %d
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>120</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_BOM_TITLE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+BOM   REPORT
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>121</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_BOM_SUB1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|   package    |    device    |     component          |  comp  |         |    |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>122</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_BOM_SUB2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|    name      |     type     |   value &amp; tolerance    |  class |  refdes |totl|
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>123</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_BOM_END</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+total part count  %d
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>124</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_FCN_TITLE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+FUNCTION   REPORT
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>125</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_FCN_SUB1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|u| function |   function   |   device     |                    |slot|component|
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>126</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_FCN_SUB2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|n|designator|     type     |    type      |  value &amp; tolerance |name|  refdes |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>127</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_FCN_END1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+assigned function count                                            %s
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>128</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_FCN_END2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+unassigned function count (* in column 1 above means unassigned )  %s
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>129</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_FCN_END3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+total  assigned and unassigned function count                      %s
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>130</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_ASF_TITLE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+ASSIGNED   FUNCTION   REPORT
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>131</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_ASF_SUB1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| function |   function   |   device     |                      |slot|component|
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>132</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_ASF_SUB2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|designator|     type     |    type      |   value &amp; tolerance  |name|  refdes |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>133</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_ASF_END</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+total assigned function count     %s
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>134</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_UAF_TITLE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+UNASSIGNED   FUNCTION   REPORT
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>135</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_UAF_SUB1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| function |   function   |   device     |                      |slot          |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>136</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_UAF_SUB2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|designator|     type     |    type      |   value &amp; tolerance  |name          |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>137</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_UAF_END</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+total unassigned function count   %s
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>138</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_SPF_TITLE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+SPARE   FUNCTIONS   REPORT
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>139</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_SPF_SUB1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| function |   function   |   device     |                      |slot|component|
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>140</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_SPF_SUB2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|designator|     type     |    type      |   value &amp; tolerance  |name|  refdes |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>141</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_SPF_END</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+total spare function count   %s
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>142</Id>
+    <CDNUSR_DEFINE_NAME>DARRPTMSG_FILE1_PROMPT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter name of first text data input file:
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>143</Id>
+    <CDNUSR_DEFINE_NAME>DARRPTMSG_FILE2_PROMPT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter name of second text data input file:
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>144</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_BN1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+(BACK-ANNOTATABLE NETLIST)
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>145</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_BN2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+(FOR DRAWING: %s)
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>146</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_BN3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+(%s)
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>147</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_NB1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+(NETLIST)
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>148</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_NB2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+(FOR DRAWING: %s)
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>149</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_NB3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+(%s)
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>150</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_RULE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Using DRC rule set %s
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>151</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_TITLE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Design Rule Check (DRC) Error Report
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>152</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_WAIVED_TITLE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Waived Design Rule Check (DRC) Error Report
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>153</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DDF_TITLE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+DRC Error Differences Report
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>154</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_OOD</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| WARNING: DRC Error Analysis in this drawing is not up to date. Run Batch DRC.|
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>155</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_PPL1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| Package placement violations:                                                |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>156</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_PPL2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|   drc location  |sepa| element |   element location or extent      | package |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>157</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_PPL3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|    x   |    y   |ratn|identfctn|   x1   |   y1   |   x2   |   y2   |  name   |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>158</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_EKK1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| Spacing and etch keepin / keepout violations:                                |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>159</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_EKK2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|   drc location  |sepa| element |   element location or extent      |member of|
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>160</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_EKK3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|    x   |    y   |ratn|identfctn|   x1   |   y1   |   x2   |   y2   |   net   |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>161</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_NDT1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| Net data violations:                                                         |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>162</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_NDT2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|   drc location  |sepa| element |   element location or extent      |member of|
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>163</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_NDT3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|    x   |    y   |ratn|identfctn|   x1   |   y1   |   x2   |   y2   |   net   |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>164</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_NEL1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| Net electrical violations:                                                   |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>165</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_NEL2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|   drc location  |                                                            |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>166</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_NEL3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|    x   |    y   |                                                            |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>167</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_DSN1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| Design violations:                                                           |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>168</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_DSN2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|   drc location  |sepa| element |   element location or extent      |member of|
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>169</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_DSN3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|    x   |    y   |ratn|identfctn|   x1   |   y1   |   x2   |   y2   |   net   |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>170</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_PKI1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|packages outside PACKAGE KEEPIN subclass %s                   |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>171</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_PKI2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|                    keepin at  XL %s  YL %s  XU %s  YU %s     |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>172</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_PKI3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| drc location| sepa- |                  p  a  c  k  a  g  e                   |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>173</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_PKI4</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|  x   |  y   | ration|       ref des        |      name       |   x   |   y   |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>174</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_PKO1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|packages inside PACKAGE KEEPOUT subclass %s                   |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>175</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_PKO2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|    at XL %s YL %s XU %s YU %s MIN_HGT %s MAX_HGT %s |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>176</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_PKO3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| drc location|       p  a  c  k  a  g  e      |       |       |  min |   max  |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>177</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_PKO4</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|  x   |  y   |    ref des    |     name       |   x   |   y   |height| height |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>178</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_PKG1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|    PACKAGE-to-PACKAGE error on %s                            |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>179</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_PKG2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| drc location|       |                  p  a  c  k  a  g  e                   |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>180</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_PKG3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|  x   |  y   |       |       ref des        |      name       |   x   |   y   |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>181</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_VKO1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| vias inside VIA KEEPOUT subclass %s                          |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>182</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_VKO2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|                    keepout at  XL %s  YL %s  XU %s  YU %s    |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>183</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_VKO3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| drc location| sepa-|            |     member    | via location               |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>184</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_VKO4</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|   x  |  y   |ration|            |    of  net    |  x   |  y   |              |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>185</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_RKI1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|  etch outside ROUTE KEEPIN etch subclass %s                  |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>186</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_RKI2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|                    keepin at  XL %s  YL %s  XU %s  YU %s     |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>187</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_RKI3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| drc location| sepa-|  element   |     member    |    element location        |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>188</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_RKI4</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|   x  |  y   |ration|    type    |    of  net    |  x1  |  y1  | x2   |  y2   |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>189</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_RKOX</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%s etch subclass %s
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>190</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_RKO1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| etch inside ROUTE KEEPOUT %s|
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>191</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_RKO2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|                   keepout at  XL %s  YL %s  XU %s  YU %s     |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>192</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_RKO3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| drc location| sepa-|  element   |     member    |    element location        |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>193</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_RKO4</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|   x  |  y   |ration|    type    |    of  net    |  x1  |  y1  | x2   |  y2   |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>194</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_PTP1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|  PAD-TO-PAD errors -- DIFFERENT NET: subclass %s             |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>195</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_PTP2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| drc location| sepa-|            |     member    | element location           |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>196</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_PTP3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|   x  |  y   |ration|  pin id    |    of  net    |  x1  |  y1                 |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>197</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_PPS1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|  PAD-TO-PAD errors -- SAME NET     : subclass %s             |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>198</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_PPS2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| drc location| sepa-|            |     member    | element location           |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>199</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_PPS3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|   x  |  y   |ration|  pin id    |    of  net    |  x1  |  y1                 |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>200</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_ETP1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|  ETCH-TO-PAD ERRORS -- DIFFERENT NET: subclass %s            |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>201</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_ETP2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| drc location| sepa-|  type or   |     member    |    element location        |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>202</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_ETP3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|   x  |  y   |ration|  pin id    |    of  net    |  x1  |  y1  | x2   |  y2   |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>203</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_EPS1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|  ETCH-TO-PAD ERRORS -- SAME NET     : subclass %s            |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>204</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_EPS2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| drc location| sepa-|  type or   |     member    |    element location        |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>205</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_EPS3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|   x  |  y   |ration|  pin id    |    of  net    |  x1  |  y1  | x2   |  y2   |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>206</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_ETC1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|  ETCH-TO-ETCH ERRORS -- DIFFERENT NET: subclass %s           |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>207</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_ETC2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| drc location| sepa-|  element   |     member    |    element location        |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>208</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_ETC3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|   x  |  y   |ration|    type    |    of  net    |  x1  |  y1  | x2   |  y2   |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>209</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_ETS1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|  ETCH-TO-ETCH ERRORS -- SAME NET     : subclass %s           |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>210</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_ETS2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| drc location| sepa-|  element   |     member    |    element location        |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>211</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_ETS3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|   x  |  y   |ration|    type    |    of  net    |  x1  |  y1  | x2   |  y2   |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>212</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_NLA1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|  Nets with etch on layers not allowed by net's LAYER_RULE                    |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>213</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_NLA2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| netname / layer (etch subclass)      | element type    |    layer  rule      |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>214</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_NLA3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|              from/to  pin/via id        |   x  |   y  |    length on layer   |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>215</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_NWI1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|  Nets with cline segments at width not allowed by drc rules                  |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>216</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_NWI2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| netname / layer / segment coordinates                                        |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>217</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_NWI3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|                |   x   |   y   |   x   |   y   |    width    |    length     |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>218</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_NDL1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|  Nets violating pin-to-pin delay or length rules                             |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>219</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_NDL2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| netname                          |           delay and length        |type of|
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>220</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_NDL3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|          | pin id  |   x  |   y  |  minimum  |  maximum  |  actual   | error |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>221</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_NVI1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|  Nets violating pin-to-pin maximum via count rules                           |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>222</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_NVI2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| netname                                        |        via    count         |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>223</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_NVI3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|              |      pin id       |   x  |   y  |     maximum   |    actual   |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>224</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_END0</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+end of    DESIGN  RULE  CHECK  ERROR  REPORT
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>225</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DRC_END1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+total DRC error count  %d
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>226</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DDF_END0</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+end of    DRC  ERROR  DIFFERENCES  REPORT
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>227</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_ECO_TITLE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+ECO   REPORT
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>228</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_NET_CHG1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| NET CHANGES                                                                  |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>229</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_NET_CHG2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>230</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_NET_CHGI</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|   net  name |  type of change |                net     pins                  |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>231</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_NET_VER</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+has ERROR -- see file pstxnet.lst
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>232</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_NET_SCH</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+no longer scheduled
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>233</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_NET_C_NET_L_DEL</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+pins DELETED FROM this net (all pins deleted)
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>234</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_NET_F_DEL</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+pins DELETED FROM this net (pin now not on any net)
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>235</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_NET_K_MOV_FROM</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+pins MOVED FROM this net (to net name listed on right)
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>236</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_NET_V_MOV_TO</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+pins MOVED TO this net (pin was on net name listed on right)
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>237</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_NET_Q_ADD</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+pins ADDED TO this existing net (pins not previously on any net)
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>238</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_NET_R_ADD</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+pins ADDED TO this new net
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>239</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_NET_DPRP1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| NET PROPERTIES deleted from design                                           |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>240</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_NET_DPRP2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|     net  name   |   property   |                    value                    |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>241</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_NET_SCHED1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| NET USER SCHEDULE CHANGES                                                    |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>242</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_NET_SCHED2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|     net  name   |   operation |                   schedule                   |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>243</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_NET_APRP1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| NET PROPERTIES added to design                                               |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>244</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_NET_APRP2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|     net  name   |   property   |                    value                    |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>245</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_CMP_DEF1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| COMPONENT DEFINITION added to design                                         |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>246</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_CMP_DEF2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|    device type                                                               |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>247</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_CMP_DEFC1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| COMPONENT DEFINITION changed in design                                       |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>248</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_CMP_DEFC2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|    ref des                                                                   |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>249</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_CMP_DEL1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| COMPONENTS DELETED from design                                               |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>250</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_CMP_DEL2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|    ref des        |    device type      |   x   |   y                        |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>251</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_CMP_CHG1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| COMPONENTS CHANGED from one device type to another in design                 |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>252</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_CMP_CHG2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|    ref des        | new device type     |   x   |   y   |  old  device type  |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>253</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_CMP_ADD1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| COMPONENTS ADDED to design                                                   |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>254</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_CMP_ADD2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|    ref des        |    device type                                           |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>255</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_CMP_DPRP1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| COMPONENT PROPERTIES deleted from design                                     |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>256</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_CMP_DPRP2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|   ref  des   |   x   |   y   |   property   |             value              |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>257</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_CMP_APRP1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| COMPONENT PROPERTIES added to design                                         |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>258</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_CMP_APRP2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|   ref  des   |   x   |   y   |   property   |             value              |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>259</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_SLT_DPRP1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| SLOT PROPERTIES deleted from design                                          |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>260</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_SLT_DPRP2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|   slot_id    |   x   |   y   |   property   |             value              |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>261</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_SLT_APRP1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| SLOT PROPERTIES added to design                                              |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>262</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_SLT_APRP2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|   slot_id    |   x   |   y   |   property   |             value              |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>263</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_PIN_DPRP1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| PIN PROPERTIES deleted from design                                           |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>264</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_PIN_DPRP2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|    pin_id    |   x   |   y   |   property   |             value              |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>265</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_PIN_APRP1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| PIN PROPERTIES added to design                                               |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>266</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_PIN_APRP2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|    pin_id    |   x   |   y   |   property   |             value              |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>267</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_ECO_END</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Total ECO changes reported:  %6d
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>268</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DIF_TITLE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+PCB-to-SCHEMATIC  DIFFERENCES  REPORT
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>269</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DIF_ADF0</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| ADDED FUNCTION(S) on the schematic, not present on PCB                                                                           |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>270</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DIF_ADF1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|     SCH logical part    |     SCH  location   |     SCH  section   |    SCH  drawing      |    SCH  part  type                   |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>271</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DIF_ADN0</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| ADDED NET(S) on the schematic, not present on PCB                                                                                |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>272</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DIF_ADN1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|     SCH    physical    net     |     SCH    logical    net                                                                       |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>273</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DIF_ADP0</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| ADDED PIN(S) on the schematic, not present on PCB                                                                                |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>274</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DIF_ADP1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|     SCH logical part    |     SCH   location   |     SCH   physical   net   |   SCH  logical  net     |    SCH  pin   number     |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>275</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DIF_DLF0</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| DELETED FUNCTION(S): Functions on the PCB not present on schematic                                                               |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>276</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DIF_DLF1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|     PCB logical part    |     PCB  refdes                                                                                        |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>277</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DIF_DLN0</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| DELETED NETS(S): Nets on the PCB not present on schematic                                                                        |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>278</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DIF_DLN1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|     PCB physical net                                                                                                             |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>279</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DIF_DLP0</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| DELETED PIN(S): Pins on the PCB not present on schematic                                                                         |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>280</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DIF_DLP1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|     PCB logical part    |     PCB    refdes    |    PCB   physical   net   |    PCB   pin   number                               |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>281</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DIF_ECG0</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| ERROR -- Change Group: function swapped between mult disjoint groups in sch; HARD_GROUPING on, so PCB function assgn ignored.    |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>282</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DIF_ECG1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|     PCB logical part    |     PCB    group     |      SCH     group     |    SCH     drawing    |     SCH   part  type           |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>283</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DIF_ECR0</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| ERROR -- Change Refdes: refdes on PCB was changed &amp; conflicts with HARD LOCATION on SCH; HARD_LOC_SEC on, so PCB refdes ignored. |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>284</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DIF_ECR1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|     PCB logical part    |     PCB    refdes    |      SCH   location    |    SCH     drawing    |     SCH   part  type           |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>285</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DIF_ECS0</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| ERROR -- Change Slot: slot on PCB was changed &amp; conflicts with HARD SEC on SCH; HARD_LOC_SEC on, so PCB refdes ignored.          |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>286</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DIF_ECS1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|     PCB logical part    |     PCB    slot      |      SCH   section     |    SCH     drawing    |     SCH   part  type           |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>287</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DIF_MLP0</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| MISMATCH LIBRARY: Missing PCB function pin number in schematic library definition.                                               |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>288</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DIF_MLP1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|     PCB logical part    |     PCB    refdes    |      PCB   pin number  |    SCH     drawing    |     SCH   part  type           |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>289</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DIF_MLS0</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| MISMATCH LIBRARY: Missing schematic function pin in PCB function.                                                                |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>290</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DIF_MLS1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|     PCB logical part    |     PCB    refdes    |      SCH   pin number  |    SCH     drawing    |     SCH   part  type           |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>291</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DIF_MLM0</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| MISMATCH LIBRARY: PCB function pins occur on multiple sections.                                                                  |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>292</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DIF_MLM1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|     PCB logical part    |     PCB    refdes    |      SCH    drawing    |     SCH   part  type                                   |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>293</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DIF_MMP0</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| MOVED PIN(S): pin in PCB is on a different net than in the schematic.                                                            |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>294</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DIF_MMP1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|    PCB logical part   |   PCB  refdes   |   PCB  physical  net | PCB pin  number  |   SCH  physical  net  |  SCH logical net     |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>295</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DIF_WFS0</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| WARNING -- Function swapped between disjoint schematic GROUPS; HARD_GROUPING off, so PCB overrides schematic GROUP property.     |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>296</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DIF_WFS1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|    SCH logical part   |    PCB   group    |     SCH   group    |      SCH    drawing      |    SCH  part  type                   |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>297</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DIF_WRC0</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| WARNING -- Refdes on PCB changed; conflicts with HARD assigned LOCATION prop on SCH; HARD_LOC_SEC off, so PCB overrides SCH.     |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>298</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DIF_WRC1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|    PCB logical part   |    PCB   refdes    |    SCH   location     |      SCH    drawing      |    SCH  part  type               |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>299</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DIF_WSR0</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| WARNING -- Function swapped between ROOMS assigned on SCH; PCB function assignment overrides schematic ROOM property.            |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>300</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DIF_WSR1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|    PCB logical part    |     PCB    room     |     SCH    room     |      SCH    drawing      |    SCH  part  type               |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>301</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DIF_WFA0</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| WARNING -- Function assigned to slot on PCB conflicts with HARD assigned slot on SCH; HARD_LOC_SEC off, so PCB overrides SCH.    |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>302</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DIF_WFA1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|    PCB logical part    |     PCB    slot     |     SCH    section     |      SCH    drawing      |    SCH  part  type            |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>303</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DIF_SPF0</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| SPARES -- Function slots available on PCB.                                                                                       |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>304</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DIF_SPF1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|    PCB refdes     |     PCB    pin number                                                                                        |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>305</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_DIF_END</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+total differences reported  %d
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>306</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_ERPT_NAME</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+ECL Long Report
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>307</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_ERSH_NAME</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+ECL Short Report
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>308</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_RPBM_NAME</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Bill of Materials Report
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>309</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_RPCL_NAME</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Component List Report
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>310</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_RPCN_NAME</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Create Load Text Netlist
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>311</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_RPCP_NAME</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Component Pin Report
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>312</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_RPNL_NAME</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Netlist Report
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>313</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_RPPL_NAME</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Placed Component Report
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>314</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_RPUP_NAME</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Unplaced Component Report
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>315</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_RPVV_NAME</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Concept Feedback Report
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>316</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_CSET_NAME</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Constraints Report
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>317</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_RPNP_NAME</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Net Properties Report
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>318</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_NET_C_NET_E_REN</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+net RENAMED (to net name listed on right)
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>319</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_MOD_TITLE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+MODULE  REPORT
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>320</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_MOD_SUB1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|          module          |           module            |       |       |     |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>321</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_MOD_SUB2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|         instance         |         definition          |   x   |   y   | ang |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>322</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_MOD_END</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+total module count   %s
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>323</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_NET_SHAPE1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+| SHAPE MOVED TO DUMMY NET                                                    |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>324</Id>
+    <CDNUSR_DEFINE_NAME>DARMSG_NET_SHAPE2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+|     net  name                  |   layer      |    first point on shape      |
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+</MsgFile>

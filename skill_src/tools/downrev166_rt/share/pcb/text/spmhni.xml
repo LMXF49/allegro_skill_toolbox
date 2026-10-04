@@ -1,0 +1,4041 @@
+<MsgFile>
+
+  <Msg>
+    <Id>1</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_INTER_BADSAVE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Couldn't save drawing: %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>2</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_INTER_NOFILE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+First use PARAMS to specify input file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>3</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_INTER_PUTPARM</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unknown database error, contact Cadence Customer Support.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>4</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_INFO_ABORT_INPUT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Netin terminated: unable to open '%s', %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>5</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_INFO_ABORT_CCLOSE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Error closing the scan system.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>6</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_INFO_ABORT_CINIT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Netin terminated: error initializing scan system.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>7</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_INFO_ABORT_CLOG</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Netin terminated: unable to create '%s'
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>8</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_INFO_ABORT_LOG</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Netin terminated: unable to initialize '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>9</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_INFO_STARTED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Netin started: netlist file is '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>10</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_INFO_PACKAGES</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+$PACKAGES: %d components, %d errs, %d warns.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>11</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_INFO_FUNCTIONS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+$FUNCTIONS: %d functions, %d errs, %d warns.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>12</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_INFO_NETS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+$NETS: %d nets, %d errs, %d warns.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>13</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_INFO_PINS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+$PINS: %d pins, %d errs, %d warns.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>14</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_INFO_ENDED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Netin ended: %d errs, %d warns in log file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>15</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_ATR_BADRENAME</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+'%0' may only be used with $C_PROPERTY.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>16</Id>
+    <CDNUSR_DEFINE_NAME>OLD_NIMSG_ATR_CHANGE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Replacing property value '%0'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>17</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_ATR_ISUSER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Property '%0' is not one defined by Cadence.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>18</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_ATR_NODELETE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Property not present, delete ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>19</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_ATR_NOEXIST</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Property doesn't exist - will be added not changed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>20</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_ATR_NOVAL_ALLOWED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Value not allowed for property '%0'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>21</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_ATR_REN1_FNI</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+May only rename a single function.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>22</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_ATR_REN1_CMI</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+May only rename a single package.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>23</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_ATR_REN1_NET</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+May only rename a single net.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>24</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_BADNETNAME</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid net name '%0': %1. It could be '%2'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>25</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_BADREFDES</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid refdes '%0': %1. It could be '%2'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>26</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_CPDNET_OVERRIDE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Net '%0' overrides device file net '%1'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>27</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_DEV_LOG_CREATE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to create device file log  file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>28</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_DEV_LOG_INIT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to initialize device file log file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>29</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_DEV_TOTAL_ERRORS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Total Device File Errors   =  %d.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>30</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_DEV_TOTAL_WARNINGS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Total Device File Warnings =  %d.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>31</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_DF_TITLE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Parsing device file: '%0'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>32</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_ENDOFLINE_EXPECTED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+End of line expected. Additional characters found and ignored. Try quoting the string indicated.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>33</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_ILLSEMICOLON</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Incorrectly placed semicolon.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>34</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_MEMERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Out of memory. Increase your swap/page space.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>35</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_NCNET_OVERRIDE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No Connect pin being connected to a net.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>36</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_NET_EXPECTED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+A net name was expected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>37</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_NET_TOTAL_ERRORS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Total Netlist Errors   =  %d.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>38</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_NET_TOTAL_WARNINGS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Total Netlist Warnings =  %d.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>39</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_NETISNOT_NO_RAT</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Net '%0' does not have the NO_RAT flag set.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>40</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_NOSEMICOLON</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Required semicolon is missing.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>41</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_OPENSERIES</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid refdes '%0': open series not allowed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>42</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_PIN_FUNCDES</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid pin reference, must be funcdes.pinname.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>43</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_PIN_NORANGE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid pin reference, ranges not allowed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>44</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_PIN_NORMAL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid pin reference.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>45</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_PIN_ON_USERDEF</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Removing pin '%0' from SCHEDULED net.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>46</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_PIN_ONEDES</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid pin ref, must be func.pinname or ref.pinnumber.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>47</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_PIN_REFDES</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid pin reference, must be refdes.pinnumber.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>48</Id>
+    <CDNUSR_DEFINE_NAME>OLD_NIMSG_PIN_WRONGNET</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pin '%0' is on a different net.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>49</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_READFAIL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot read input file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>50</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_RESCHEDULE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Net '%0' is being rescheduled.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>51</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_TERMINATED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Execution stopped before reading entire input file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>52</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_USERDEF_NOADD</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Adding pins to a SCHEDULED net.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>53</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_USERDEF_NORAT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot set NO_RAT flag on a SCHEDULED net.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>54</Id>
+    <CDNUSR_DEFINE_NAME>PIN_NUMBER_EXPECTED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+A pin number was expected after ':'
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>55</Id>
+    <CDNUSR_DEFINE_NAME>PIN_LABEL_EXPECTED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+A pin label was expected after the '.'
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>56</Id>
+    <CDNUSR_DEFINE_NAME>FUNC_DES_EXPECTED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Function designator name not found, line ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>57</Id>
+    <CDNUSR_DEFINE_NAME>DESIGNATOR_EXPECTED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+A reference or function designator name was expected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>58</Id>
+    <CDNUSR_DEFINE_NAME>TOLERANCE_EXPECTED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Expected a tolerance property or semicolon, line ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>59</Id>
+    <CDNUSR_DEFINE_NAME>VALUE_EXPECTED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+A value property field was expected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>60</Id>
+    <CDNUSR_DEFINE_NAME>DEVICE_EXPECTED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Device name not found, line ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>61</Id>
+    <CDNUSR_DEFINE_NAME>BAD_DES_PREFIX</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal designator prefix %0, cannot end in a digit.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>62</Id>
+    <CDNUSR_DEFINE_NAME>MISS_EXCL_DEVICE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Expected '!' before device, line ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>63</Id>
+    <CDNUSR_DEFINE_NAME>BAD_KEYWORD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid keyword, keyword ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>64</Id>
+    <CDNUSR_DEFINE_NAME>MISS_SEMICOLON</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Expected ';' (semicolon), found illegal character '%0'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>65</Id>
+    <CDNUSR_DEFINE_NAME>MISS_EQUALS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Expected '=' (equals).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>66</Id>
+    <CDNUSR_DEFINE_NAME>MISS_EXCL_FUNCTYPE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Expected '!' before function type, found illegal char '%0'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>67</Id>
+    <CDNUSR_DEFINE_NAME>MISS_DEVICE_FILE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot find device file for '%0'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>68</Id>
+    <CDNUSR_DEFINE_NAME>IGNORE_NON_COMMENT</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Non-comment line preceding first keyword will be ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>69</Id>
+    <CDNUSR_DEFINE_NAME>BAD_RANGE_SPEC</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Range specification error. Format is: [lower-upper]
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>70</Id>
+    <CDNUSR_DEFINE_NAME>BAD_BRACKETS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Bad or unmatched bracket(s) in range specification.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>71</Id>
+    <CDNUSR_DEFINE_NAME>NETIN_TITLE_MSG</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Allegro NETLIST IN Log File
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>72</Id>
+    <CDNUSR_DEFINE_NAME>CHK_SUBTITLE_LINE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+-----------------------------------------------------------
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>73</Id>
+    <CDNUSR_DEFINE_NAME>PIN_IGNORED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The given pin is ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>74</Id>
+    <CDNUSR_DEFINE_NAME>MISS_PERIOD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Expected '.' after designator before pin label, found '%0'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>75</Id>
+    <CDNUSR_DEFINE_NAME>BAD_ASSIGNMENT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The function will be assigned to '%0', and not '%1'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>76</Id>
+    <CDNUSR_DEFINE_NAME>OLD_SLOT_CONFUSION</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+For the given pin, slot '%0' will be used, not slot '%1'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>77</Id>
+    <CDNUSR_DEFINE_NAME>MISS_PACKAGE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Device file has no package, netlist must supply one.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>78</Id>
+    <CDNUSR_DEFINE_NAME>MISS_NAMED_NET</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No net exists for netname '%0'. Net may have special characters that require quoting the name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>79</Id>
+    <CDNUSR_DEFINE_NAME>BAD_DEVICE_CHANGE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+'%0' and '%1' are of incompatible device types.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>80</Id>
+    <CDNUSR_DEFINE_NAME>MISS_RD_IN_RENAME</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot find Refdes '%0' to rename.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>81</Id>
+    <CDNUSR_DEFINE_NAME>DUP_RD_IN_RENAME</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Refdes '%1' already exists. '%0' not renamed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>82</Id>
+    <CDNUSR_DEFINE_NAME>SUPERCEDED_PACKAGE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Package symbol '%0' replaces device file package '%1'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>83</Id>
+    <CDNUSR_DEFINE_NAME>DUP_FUNC_DES</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Function designator '%0' already exists. Not added again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>84</Id>
+    <CDNUSR_DEFINE_NAME>BAD_RD_FD_COUPLING</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Bad Refdes:Funcdes coupling reference. Pin ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>87</Id>
+    <CDNUSR_DEFINE_NAME>BAD_DEV_CREATION</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to create the component definition.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>88</Id>
+    <CDNUSR_DEFINE_NAME>BAD_DEVICE_FILE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Device file was parsed, errors were detected. Run netin in syntax check mode for detailed error report.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>89</Id>
+    <CDNUSR_DEFINE_NAME>DUP_REF_DES</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+reference designator '%0' already exists, not added again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>90</Id>
+    <CDNUSR_DEFINE_NAME>OLD_PIN_ON_DIFF_NET</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The pin %0' is already on different net, pin ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>91</Id>
+    <CDNUSR_DEFINE_NAME>ILLEGAL_DCT_CASE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+This designated pin case is illegal, pin will be ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>92</Id>
+    <CDNUSR_DEFINE_NAME>PIN_MISMATCH</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Mismatch of pin name and pin number, pin ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>93</Id>
+    <CDNUSR_DEFINE_NAME>UNKNOWN_FUNC_INST</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unknown function designator.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>94</Id>
+    <CDNUSR_DEFINE_NAME>UNKNOWN_COMP_INST</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unknown component designator.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>95</Id>
+    <CDNUSR_DEFINE_NAME>DB_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+'%0'
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>96</Id>
+    <CDNUSR_DEFINE_NAME>MISSING_REAL_NET</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+The given pin is on a dummy net.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>97</Id>
+    <CDNUSR_DEFINE_NAME>NAME_TOO_LONG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The given name '%0' is too long and will not be used.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>98</Id>
+    <CDNUSR_DEFINE_NAME>BAD_FUNCI_CREATION</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to create the function '%0'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>99</Id>
+    <CDNUSR_DEFINE_NAME>BAD_COMPI_CREATION</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to create the component '%0'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>100</Id>
+    <CDNUSR_DEFINE_NAME>LINE_OF_EQUALS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+===========================================================
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>101</Id>
+    <CDNUSR_DEFINE_NAME>DEVICE_CHECKER_TITLE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Device File Checker
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>102</Id>
+    <CDNUSR_DEFINE_NAME>TOTAL_ERRORS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Total Combined Netlist and Device File Errors   =  %d.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>103</Id>
+    <CDNUSR_DEFINE_NAME>TOTAL_WARNINGS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Total Combined Netlist and Device File Warnings =  %d.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>104</Id>
+    <CDNUSR_DEFINE_NAME>SOURCE_END_MSG</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+End of NETLIST IN Syntax/Logic Check
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>105</Id>
+    <CDNUSR_DEFINE_NAME>NETIN_END_MSG</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+End of Allegro NETLIST IN Log
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>106</Id>
+    <CDNUSR_DEFINE_NAME>SYNTAX_FILE_LINE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Netlist File Name: '%s'
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>107</Id>
+    <CDNUSR_DEFINE_NAME>INC_FILE_LINE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Netlist File: '%s'      Physical Design File: '%s'
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>108</Id>
+    <CDNUSR_DEFINE_NAME>BLANK_LINE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Blank line.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>109</Id>
+    <CDNUSR_DEFINE_NAME>NO_PNUM_FT_MATCH</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pin number '%0' has no function pins for function type '%1'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>110</Id>
+    <CDNUSR_DEFINE_NAME>NO_PNUM_IN_UA_FUNCTION</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pin num '%0' not in device file for function '%1', ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>111</Id>
+    <CDNUSR_DEFINE_NAME>MISS_FDES_PIGN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Missing function '%0' , pin ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>112</Id>
+    <CDNUSR_DEFINE_NAME>REF_DES_EXPECTED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Reference designator name not found, line ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>113</Id>
+    <CDNUSR_DEFINE_NAME>SEMICOLON_EXPECTED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Expected ';' , found an illegal character, line ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>114</Id>
+    <CDNUSR_DEFINE_NAME>REF_FUNC_NOT_FND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Reference/function designator '%0' not found, pin ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>115</Id>
+    <CDNUSR_DEFINE_NAME>PIN_NOT_IN_DEVICE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pin '%0' not in device file '%1'. pin ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>116</Id>
+    <CDNUSR_DEFINE_NAME>PNAM_NOT_IN_DEVICE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pin name '%0' not in device file '%1'. pin ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>117</Id>
+    <CDNUSR_DEFINE_NAME>PNUM_NOT_IN_DEVICE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pin number '%0' not in device file '%1'. pin ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>118</Id>
+    <CDNUSR_DEFINE_NAME>BAD_FUNC_TYPE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Device '%0' does not have function type '%1', line ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>119</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_ATR_CHANGE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Replacing '%0' value '%1' with '%2'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>120</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_UPD_ADDNET</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Net '%s' added.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>121</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_UPD_ADDCMI</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Component '%s' added.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>122</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_UPD_ADDFNI</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Unassigned function '%s' added.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>123</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_UPD_ADDPIN</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pin '%s' connected to net '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>124</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_UPD_CHGCMI</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Device definition changed for component '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>125</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_UPD_CHGPIN</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pin '%s' moved to net '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>126</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_UPD_DELCMI</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Component '%s' deleted.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>127</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_UPD_DELFNI</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%d unassigned function(s) and all their pins deleted.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>128</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_UPD_DELNET</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Net '%s' deleted.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>129</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_UPD_DELPIN</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pin '%s' disconnected from net '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>130</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_UPD_SUMCMI</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Components: %d added, %d deleted, %d now in drawing.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>131</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_UPD_SUMFNI</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%d unassigned function(s) added, %d pin(s) connected to nets.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>132</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_UPD_SUMNET</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Nets: %d added, %d deleted, %d now in drawing.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>133</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_UPD_SUMPIN</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pins: %d added, %d deleted, %d changed nets, %d now connected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>134</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_INFO_CHKCMD</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Checking for component deletes.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>135</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_INFO_CHKNET</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Checking for net and pin deletes.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>136</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_INFO_CLEAR</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Beginning set up pass.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>137</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_PIN_ALREADY_NET</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Pin '%0' already connected to net '%1'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>138</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_PIN_WRONGNET</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pin '%0' is on net '%1', cannot schedule.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>139</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_PIN_ON_DIFF_NET</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pin '%0' is connected to net '%1', not reconnected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>140</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_BADPACKNAME</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid package '%0': %1. It could be '%2'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>141</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_BADDEVNAME</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid device '%0': %1. It could be '%2'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>142</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_BADFUNCTYPE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid function type '%0': %1. It could be '%2'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>143</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_BADSLOTNAME</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid slot name '%0': %1. It could be '%2'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>144</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_BADATTRVALUE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid property value '%0': %1. It could be '%2'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>145</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_BADVALUE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid value '%0': %1. It could be '%2'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>146</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_BADTOL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid tolerance '%0': %1. It could be '%2'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>147</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_BADPINNUMBER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid pin number '%0': %1. It could be '%2'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>148</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_BADPINNAME</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid pin name '%0': %1. It could be '%2'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>149</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_BADFUNCDES</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid function designator '%0': %1. It could be '%2'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>150</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_UPD_DELNETPROP</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Net '%s' property '%s %s' deleted.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>151</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_DELFUNCPROP</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Refdes/slot '%s/%s' function property '%s %s' deleted.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>152</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_WARNSTRING</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+%0
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>153</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_USING_SCALD</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Scald directory '%s' may be used to find device files.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>154</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_SCALD_PARSE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Couldn't load scald directory: %0.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>155</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_SLOT_CONFUSION</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+'%0' slot '%1' in conflict with existing slot '%2', pin ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>156</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_SYM_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Device '%0' package '%1': symbol file not found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>157</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_PIN_NUMB_MISMATCH</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Pin mismatch: device '%0', symbol '%1'. Component '%2' not placed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>158</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_DEV_NET_CHANGED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Device '%0' pin '%1' POWER/GROUND net changed to '%2'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>159</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_NO_SUPER_IF_ASSOC</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Physical design is associated with a schematic; cannot run supercede mode.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>160</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_SYM_PEDIT</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Symbol changed for '%0'. Pin edits were lost.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>161</Id>
+    <CDNUSR_DEFINE_NAME>NRMSG_SYM_PEDIT</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Symbol changed for '%s'. %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>162</Id>
+    <CDNUSR_DEFINE_NAME>NRMSG_SYM_PEDIT_INSERT</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Pin edits were lost
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>163</Id>
+    <CDNUSR_DEFINE_NAME>NRBADCLASS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Problems with device '%s'. CLASS property '%s' is illegal: '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>164</Id>
+    <CDNUSR_DEFINE_NAME>NRBADPACKAGE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Problems with device '%s'. JEDEC_TYPE property '%s' is illegal: '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>165</Id>
+    <CDNUSR_DEFINE_NAME>NRBADPINORDER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Problems building functions in device '%s': '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>166</Id>
+    <CDNUSR_DEFINE_NAME>NRBADPOWER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Problems with device '%s'. Net name '%s'  and power pin '%s' is illegal: '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>167</Id>
+    <CDNUSR_DEFINE_NAME>NRCOMPDEF_BITSET</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Application bits set for device.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>168</Id>
+    <CDNUSR_DEFINE_NAME>NRCOMPDEF_NOTFOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot find device type '%s' for refdes %s. Typically due to illegal characters in the device type name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>169</Id>
+    <CDNUSR_DEFINE_NAME>NRCOMPINST_NOTFOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot find refdes %s while under device type '%s'. Typically due to duplicate refdes names in the pst files.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>170</Id>
+    <CDNUSR_DEFINE_NAME>NRFAILED_COMPDEF</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Device '%s' has library errors. Unable to transfer to Allegro.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>171</Id>
+    <CDNUSR_DEFINE_NAME>NRLOG_OPENFAIL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to open "netrev.lst" file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>172</Id>
+    <CDNUSR_DEFINE_NAME>NRNET_ISNULL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to find net name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>173</Id>
+    <CDNUSR_DEFINE_NAME>NRPININST_NOTFOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to find pin on component instance.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>174</Id>
+    <CDNUSR_DEFINE_NAME>NRPIN_MALLOC_FAIL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to build pin array.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>175</Id>
+    <CDNUSR_DEFINE_NAME>NRFATAL_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Netrev error detected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>176</Id>
+    <CDNUSR_DEFINE_NAME>NRLIB_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Device library error detected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>177</Id>
+    <CDNUSR_DEFINE_NAME>NRBAD_DRAWING</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to open physical design file,'%s':'%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>178</Id>
+    <CDNUSR_DEFINE_NAME>NRBAD_DRAWING_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error detected opening physical design file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>179</Id>
+    <CDNUSR_DEFINE_NAME>NRBAD_NCPIN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Problems with device '%s'. Error with NC_PINS property: '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>180</Id>
+    <CDNUSR_DEFINE_NAME>NRMISS_PINRANGE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Badly formed pinrange.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>181</Id>
+    <CDNUSR_DEFINE_NAME>NRMISS_RPAREN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Missing closing right parenthesis.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>182</Id>
+    <CDNUSR_DEFINE_NAME>NRMISS_LPAREN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Missing opening left parenthesis.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>183</Id>
+    <CDNUSR_DEFINE_NAME>NRNC_FAIL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to insert nc pins into tmp.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>184</Id>
+    <CDNUSR_DEFINE_NAME>NRLIB_WARN</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Device library warning detected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>185</Id>
+    <CDNUSR_DEFINE_NAME>NRWARN_COMPDEF</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Device '%s' has library warnings. Defaults are assumed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>186</Id>
+    <CDNUSR_DEFINE_NAME>NRBADPINCOUNT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Problems with device '%s'. PINCOUNT property '%s' is illegal: '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>187</Id>
+    <CDNUSR_DEFINE_NAME>NRPINCOUNT_TOOSMALL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+There are more pins in the device than in the pincount.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>188</Id>
+    <CDNUSR_DEFINE_NAME>NRPINCOUNT_NOTNUMERIC</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The pincount must be numeric.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>189</Id>
+    <CDNUSR_DEFINE_NAME>NRBADPARTNAME</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Problems with the name of device '%s': '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>190</Id>
+    <CDNUSR_DEFINE_NAME>NRBAD_ATTR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Device problem '%s'. Package property error: '%s'='%s'. %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>191</Id>
+    <CDNUSR_DEFINE_NAME>NRDEVSYM_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Device/Symbol check error detected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>192</Id>
+    <CDNUSR_DEFINE_NAME>NRDEVSYM_WARN</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Device/Symbol check warning detected.
+    </Desc>
+     <ExtDesc>
+This is a general warning that is normally paired with another message.
+Check the secondary message for more detail.
+     </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>193</Id>
+    <CDNUSR_DEFINE_NAME>NRSYM_FIND_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error finding symbol '%s' for device '%s': '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>194</Id>
+    <CDNUSR_DEFINE_NAME>NRSYM_NO_SYMBOL</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Symbol '%s'%s for device '%s' not found. 
+The symbol either does not exist in the library path (PSMPATH) or is an old symbol from a previous release.  
+
+Set the correct library path if not set or use dbdoctor to migrate old symbols.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>195</Id>
+    <CDNUSR_DEFINE_NAME>NRSYM_MISSING_SYM_PIN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Symbol '%s' for device '%s' is missing pin '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>196</Id>
+    <CDNUSR_DEFINE_NAME>NRSYM_MISSING_COMP_PIN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Symbol '%s' for device '%s' has extra pin '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>197</Id>
+    <CDNUSR_DEFINE_NAME>NRSYM_MISSING_REFDES</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Symbol '%s' for device '%s' has no refdes.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>198</Id>
+    <CDNUSR_DEFINE_NAME>NRBADPINNAME</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Problems with device '%s'. Pinname '%s' is replaced by '%s': '%s'.
+    </Desc>
+    <ExtDesc>
+Name either is too long (usual) or contains illegal characters. 
+Check the design tab under the prmed command for current maximum length.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>199</Id>
+    <CDNUSR_DEFINE_NAME>NRBAD_NCPIN1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error with NC_PIN '%s' in device '%s': '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>200</Id>
+    <CDNUSR_DEFINE_NAME>NRBADPINNUMBER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error with pin number '%s' in device '%s': '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>201</Id>
+    <CDNUSR_DEFINE_NAME>NRBADNETNAME</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error with net name '%s': '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>202</Id>
+    <CDNUSR_DEFINE_NAME>NRBADNETNAME_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Net name error detected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>203</Id>
+    <CDNUSR_DEFINE_NAME>NRHEADERMSG</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+  netrev %s %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>204</Id>
+    <CDNUSR_DEFINE_NAME>NRCOPYMSG</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Cadence Design Systems, Inc.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>205</Id>
+    <CDNUSR_DEFINE_NAME>NRPATHS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+------ Library Paths ------
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>206</Id>
+    <CDNUSR_DEFINE_NAME>NRDIRECTIVEMSG</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+------ Directives ------------
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>207</Id>
+    <CDNUSR_DEFINE_NAME>NRRIPETCHMSG</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Ripup etch:                  %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>208</Id>
+    <CDNUSR_DEFINE_NAME>NRRIPSYMBOLSMSG</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Ripup symbols:               %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>209</Id>
+    <CDNUSR_DEFINE_NAME>NRSCHDIRMSG</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Schematic directory:         '%s'
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>210</Id>
+    <CDNUSR_DEFINE_NAME>NRBOARDDIRMSG</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Design Directory:            '%s'
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>211</Id>
+    <CDNUSR_DEFINE_NAME>NROLDBOARDNAMEMSG</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Old design name:             '%s'
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>212</Id>
+    <CDNUSR_DEFINE_NAME>NRNEWBOARDNAMEMSG</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+New design name:             '%s'
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>213</Id>
+    <CDNUSR_DEFINE_NAME>NRREADHDRMSG</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+------ Preparing to read pst files ------
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>214</Id>
+    <CDNUSR_DEFINE_NAME>NRERRORHDRMSG</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+------ Oversights/Warnings/Errors ------
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>215</Id>
+    <CDNUSR_DEFINE_NAME>NRSUMMARYMSG</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+------ Summary Statistics ------
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>217</Id>
+    <CDNUSR_DEFINE_NAME>NRBAD_NETATTR</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Problems with net '%s'. Error with net property '%s' and value '%s': '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>218</Id>
+    <CDNUSR_DEFINE_NAME>NRBAD_FUNCATTR</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Problems with function '%s.%s'. Error with function property '%s' and value '%s': '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>219</Id>
+    <CDNUSR_DEFINE_NAME>NRPROPERTY_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Could not add a property to the Allegro database.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>222</Id>
+    <CDNUSR_DEFINE_NAME>NRBOARDNAMELONG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Drawing name too long to copy.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>223</Id>
+    <CDNUSR_DEFINE_NAME>NRSCMDIRLONG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Schematic name too long to copy.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>224</Id>
+    <CDNUSR_DEFINE_NAME>NRSPROCESSCMPMSG</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Starting to process component instances
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>225</Id>
+    <CDNUSR_DEFINE_NAME>NREPROCESSCMPMSG</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%s Finished component instance processing
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>226</Id>
+    <CDNUSR_DEFINE_NAME>NRSPROCESSNETMSG</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Starting to process nets
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>227</Id>
+    <CDNUSR_DEFINE_NAME>NREPROCESSNETMSG</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%s Finished net processing
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>228</Id>
+    <CDNUSR_DEFINE_NAME>NRSPROCESSDEVMSG</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Starting to check device models
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>229</Id>
+    <CDNUSR_DEFINE_NAME>NREPROCESSDEVMSG</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%s Finished checking device models
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>230</Id>
+    <CDNUSR_DEFINE_NAME>NRSPROCESSPRPMSG</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Starting to process slot properties
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>231</Id>
+    <CDNUSR_DEFINE_NAME>NREPROCESSPRPMSG</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%s Finished slot property processing
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>232</Id>
+    <CDNUSR_DEFINE_NAME>NRSYM_ALTSYM_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error in ALT_SYMBOLS property for device '%s':'%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>233</Id>
+    <CDNUSR_DEFINE_NAME>NRBAD_PINATTR</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Problems with pin '%s.%s'. Error with pin property '%s' and value '%s': '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>234</Id>
+    <CDNUSR_DEFINE_NAME>NRBAD_DRAWCLOSE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot write drawing, '%s' out to the directory: '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>235</Id>
+    <CDNUSR_DEFINE_NAME>NRBAD_DRWCLOSE_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error detected saving design.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>249</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_SUBTITLE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Symbol Refresh Logfile
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>250</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_SYMBOL_START</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+'%s'  symbol starting to refresh:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>251</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_SYMBOL_DONE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+'%s'  symbol refreshed successfully.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>252</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_NO_FIND_SYMBOL</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+'%s' symbol unable to find in directory search path.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>253</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_NO_FIND_PAD_STACK</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Unable to find pad stack, '%s', in directory search path. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>254</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_NO_SYMBOL_LOAD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to load symbol, '%s': '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>255</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_NO_REFRESH_SYMBOL</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Symbol '%s' not found (in list file).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>256</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_SUMMARY</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+----- Symbol Update Summary ----
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>257</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_COMPLETED_REPLACE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Completed refreshing all symbols successfully.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>258</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_WARN_REPLACE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Completed refreshing symbols; some symbols may not have been updated due to warnings or errors.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>259</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_FAILED_REPLACE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Refresh symbol errors; due to these errors this design is NOT updated.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>260</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%8d  errors detected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>261</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_WARN</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%8d  warnings detected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>262</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_OPTIONS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+------ Symbol Refresh Directives ------
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>263</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_MESSAGES</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+------ Symbol Refresh Messages ------
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>264</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_OLDBOARD</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Input design  = '%s'
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>265</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_NEWBOARD</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Output design = '%s'
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>266</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_UPBRD</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Update mechanical symbols              = '%s'
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>267</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_UPOTHER</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Update format symbols                  = '%s'
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>268</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_UPPACK</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Update package symbols                 = '%s'
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>269</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_LIST</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Symbol list file                       = '%s'
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>270</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_MISSING_IN_NEW</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%d pins found in the symbol in the physical design, but missing from library symbol. They are:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>271</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_MISSING_IN_OLD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%d pins found in library symbol, but missing from the symbol in the physical design. They are:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>272</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_SYMFILE_MISSING</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to locate or open symbol/list file '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>273</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_COMPONENT_PIN_EDITED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Component '%s', symbol '%s', location (%s %s) had edited pins.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>274</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_SYMBOL_PIN_EDITED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Symbol '%s', location (%s %s) had edited pins.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>275</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_UPSHAPE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Update shape/flash symbols             = '%s'
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>276</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_UPDATE_PAD_STACK</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to update pad stack '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>277</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_PAD_STACK_START</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+'%s'  pad stack refresh starting.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>278</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_UPPAD</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Update symbol padstacks                = '%s'
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>279</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_UPTEXTLOC</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Reset symbol text and size locations   = '%s'
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>280</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_PAD_STACK_DONE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+'%s'  pad stack refreshed successfully.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>281</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_PAD_SUBTITLE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pad Stack Refresh Logfile
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>282</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_PAD_OPTIONS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+------ Pad Stack Refresh Options ------
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>283</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_PAD_LISTFILE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+PAD_STACK_LISTFILE  = '%s'
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>284</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_PAD_MESSAGES</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+------ Pad Stack Refresh Messages ------
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>285</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_COMPLETED_PAD_REPLACE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Completed refreshing all pad stacks successfully.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>286</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_WARN_PAD_REPLACE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Completed refreshing all pad stacks successfully. Warnings detected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>287</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_FAILED_PAD_REPLACE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to complete refreshing pad stacks.  Errors detected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>288</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_NOPADS_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No pad stacks found or selected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>289</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_ATR_BADVALUE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Property '%0' value '%1' error: %2.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>290</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_ATR_UNDEF</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Property '%0' is not defined.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>291</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_ATR_BAD_ELEMENT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Property '%0' is not defined for %1.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>292</Id>
+    <CDNUSR_DEFINE_NAME>NRSPROCESSCPRPMSG</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Starting to process component instance properties
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>293</Id>
+    <CDNUSR_DEFINE_NAME>NREPROCESSCPRPMSG</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%s Finished component instance property processing
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>294</Id>
+    <CDNUSR_DEFINE_NAME>NRBAD_NETIN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error adding component instance properties, see netin log file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>295</Id>
+    <CDNUSR_DEFINE_NAME>NRCMP_PRP_OVERWRITE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Component '%s', property '%s'. Value '%s' was overwritten by '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>296</Id>
+    <CDNUSR_DEFINE_NAME>NRCMP_PRP_INCONSIST</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Component '%s', property '%s'. Value '%s' will be chosen over '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>297</Id>
+    <CDNUSR_DEFINE_NAME>NRPRPOVER_WARN</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Component instance property overwrite detected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>298</Id>
+    <CDNUSR_DEFINE_NAME>NRPRPINC_WARN</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Component instance property inconsistency detected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>299</Id>
+    <CDNUSR_DEFINE_NAME>NRSPROCESSCINSTPRP</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Starting to process component instance properties
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>300</Id>
+    <CDNUSR_DEFINE_NAME>NREPROCESSCINSTPRP</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%s Finished component instance property processing
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>301</Id>
+    <CDNUSR_DEFINE_NAME>NRBAD_COMPATTR</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Problems with component '%s'. Error with component property '%s' and value '%s': '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>302</Id>
+    <CDNUSR_DEFINE_NAME>NRPST_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+PST file error detected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>303</Id>
+    <CDNUSR_DEFINE_NAME>NRPST_WARN</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+PST file warning detected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>304</Id>
+    <CDNUSR_DEFINE_NAME>NRPST_NOSECTIONS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No sections found in part '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>305</Id>
+    <CDNUSR_DEFINE_NAME>NRPST_NOPINSINSEC</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Section %s in part '%s' has no pins.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>306</Id>
+    <CDNUSR_DEFINE_NAME>NRPST_PHYSPIN_UC</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Physical pin name '%s' in component '%s' contains lower case characters.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>307</Id>
+    <CDNUSR_DEFINE_NAME>NRPST_NOLOGPINS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No logical pins found in component '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>308</Id>
+    <CDNUSR_DEFINE_NAME>NRPST_NOPHYSPINS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No physical pins in logical pin '%s' in part '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>309</Id>
+    <CDNUSR_DEFINE_NAME>NRPST_SECTOOBIG</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Section number for pin '%s' is greater than total number of sections '%s' in part '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>310</Id>
+    <CDNUSR_DEFINE_NAME>NRPST_MULTPINSINSEC</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Physical pin '%s' appears multiple times in section '%s' of part '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>311</Id>
+    <CDNUSR_DEFINE_NAME>NRPST_MULTPROPS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Multiple instances of property '%s' found on %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>312</Id>
+    <CDNUSR_DEFINE_NAME>NRPST_NOPKGS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No packages found for part '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>313</Id>
+    <CDNUSR_DEFINE_NAME>NRPST_BADINSTSECNUM</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Section number of instance '%s' on package '%s' is greater than number of sections in part '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>314</Id>
+    <CDNUSR_DEFINE_NAME>BAD_COMPI_CREATION_2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to create the component '%s': '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>315</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_PARTSCHEDULE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Net '%0' is being partially scheduled.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>316</Id>
+    <CDNUSR_DEFINE_NAME>NRPROPERTY_WARN</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Property warning detected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>317</Id>
+    <CDNUSR_DEFINE_NAME>NR_OBSOLETE_NET_PROP</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Problem with property '%s' value '%s' on net '%s': '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>318</Id>
+    <CDNUSR_DEFINE_NAME>NR_OBSOLETE_PROP</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Property is obsolete and will be ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>319</Id>
+    <CDNUSR_DEFINE_NAME>NRPST_BADPINUSEBI</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Part '%s' pin '%s' contains both an INPUT_LOAD and OUTPUT_LOAD property, but no BIDIRECTIONAL or OUTPUT_TYPE property.  Unable to determine pinuse.  Assuming bidirectional pin.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>320</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_CANT_REPLACE_COMP</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Unable to replace symbol '%s' for component '%s' at (%s %s).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>321</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_CANT_REPLACE_SYM</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Unable to replace symbol '%s' at (%s %s).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>322</Id>
+    <CDNUSR_DEFINE_NAME>NR_SCALD_TO_5X</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to run in SCALD mode on an HDL based physical design.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>323</Id>
+    <CDNUSR_DEFINE_NAME>NR_5X_TO_SCALD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to run in HDL mode on a SCALD based physical design.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>324</Id>
+    <CDNUSR_DEFINE_NAME>NR_5X_MIGRATION_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+This design is not in synch with the schematic.  Unable to migrate to HDL.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>325</Id>
+    <CDNUSR_DEFINE_NAME>NR_PST_IS_5X</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to load HDL design data into a SCALD based physical design.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>326</Id>
+    <CDNUSR_DEFINE_NAME>NR_PST_IS_SCALD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to load SCALD design data into an HDL based physical design.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>327</Id>
+    <CDNUSR_DEFINE_NAME>NR_DESIGN_SYNCH_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Design Synch Error
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>328</Id>
+    <CDNUSR_DEFINE_NAME>NR_CMPD_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to find match for component definition: '%s' package: '%s' value: '%s' tolerance: '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>329</Id>
+    <CDNUSR_DEFINE_NAME>NR_CMP_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to find match for component instance: '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>330</Id>
+    <CDNUSR_DEFINE_NAME>NR_CMP_OWNER_DIFFERENT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+SCALD component definition owner '%s' differs from HDL comonent definition owner '%s' for component instance '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>331</Id>
+    <CDNUSR_DEFINE_NAME>NR_CMPD_DIFFERENT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Component definition: '%s' package: '%s' value: '%s' tolerance: '%s' differs from original.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>332</Id>
+    <CDNUSR_DEFINE_NAME>NR_EXTRA_CMP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Component instance '%s' found in Allegro database but not in design data.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>333</Id>
+    <CDNUSR_DEFINE_NAME>NR_EXTRA_NET</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Net '%s' found in Allegro database but not in design data.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>334</Id>
+    <CDNUSR_DEFINE_NAME>NR_EXTRA_PIN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Component pin '%s.%s' found on net '%s' in Allegro database but not in design data.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>335</Id>
+    <CDNUSR_DEFINE_NAME>NR_MISSING_NET</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Net '%s' not found in Allegro database.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>336</Id>
+    <CDNUSR_DEFINE_NAME>NR_NET_DIFFERENT_PIN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pin '%s:%s' is on net '%s' in Allegro database and net '%s' in design data.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>337</Id>
+    <CDNUSR_DEFINE_NAME>NRSYM_CANT_LOAD_SYMBOL</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Unable to load symbol '%s'%s for device '%s': %s
+    </Desc>
+     <ExtDesc>
+Indicates that your PSMPATH or PADPATH is not set correctly to find
+all your footprints or padstacks. If only a few of these messages are seen
+you may need to create new footprints or padstacks.
+During logic import, this is a warning and unless errors were reported during
+import the design has been updated with all logic changes.
+     </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>338</Id>
+    <CDNUSR_DEFINE_NAME>NRPST_BADPINUSEPROPVAL</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Unrecognized PINUSE property value found on part '%s' pin '%s'.  Pinuse will be set to UNSPEC.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>339</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_ETCH_MISMATCH_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Symbol definition contains ETCH but Instance has no associated ETCH. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>340</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_ETCH_MISMATCH_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Check for duplicate or misaligned symbol etch. (NOTE: dbdoctor will remove duplicate VIAs)
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>341</Id>
+    <CDNUSR_DEFINE_NAME>NR_NOSYMBOLERROR</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Missing symbol has error:    %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>342</Id>
+    <CDNUSR_DEFINE_NAME>NR_CMGRFLOW_REQUIRED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Design flow is Constraint Manager enabled, require pstcmdb.dat and pstcmbc.dat files.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>343</Id>
+    <CDNUSR_DEFINE_NAME>NR_CMGRFLOW_MISMATCH</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Design flow is Constraint Manager enabled, pstcmdb.dat and pstxnet.dat do not appear to be from the same packaging step.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>344</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_ATR_DIFFP_CREATE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Created '%0' group with value '%1'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>345</Id>
+    <CDNUSR_DEFINE_NAME>NR_OBSOLETE_NET_DIFFP</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Property '%s' value '%s' on net '%s': '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>346</Id>
+    <CDNUSR_DEFINE_NAME>NR_OBSOLETE_DIFFP_PROP</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Property will be mapped to a differential pair of the same name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>347</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_ATR_DIFFP_CHANGE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Replacing '%0' net '%1' with '%2'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>348</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_ATR_DIFFP_MOVE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Moving net '%0' group '%1' to group '%2'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>349</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_ATR_DIFFP_REMOVE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Removing net '%0' from group '%1'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>350</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_DIFFP_COUNT_LO</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Differential group '%0' has too few members. Disbanded.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>351</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_DIFFP_COUNT_HI</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Differential group '%0' has too many members. Disbanded.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>352</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_DIFFP_MODEL_NET</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Net %0 is a member of electrical diffpair model %1.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>353</Id>
+    <CDNUSR_DEFINE_NAME>NIMSG_DIFFP_MODEL_GROUP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Diffpair %0 is a electrically derived diffpair, cannot be changed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>354</Id>
+    <CDNUSR_DEFINE_NAME>NRMSG_ATR_DIFFP_CREATE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Created '%s' group with value '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>355</Id>
+    <CDNUSR_DEFINE_NAME>NRMSG_ATR_DIFFP_CHANGE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Replacing '%s' net '%s' with '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>356</Id>
+    <CDNUSR_DEFINE_NAME>NRMSG_ATR_DIFFP_MOVE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Moving net '%s' group '%s' to group '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>357</Id>
+    <CDNUSR_DEFINE_NAME>NRMSG_ATR_DIFFP_REMOVE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Removing net '%s' from group '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>358</Id>
+    <CDNUSR_DEFINE_NAME>NRMSG_DIFFP_COUNT_LO</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Differential group '%s' has too few members. Disbanded.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>359</Id>
+    <CDNUSR_DEFINE_NAME>NRMSG_DIFFP_COUNT_HI</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Differential group '%s' has too many members. Disbanded.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>360</Id>
+    <CDNUSR_DEFINE_NAME>NRMSG_DIFFP_MODEL_NET</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Net %s is a member of electrical diffpair model %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>361</Id>
+    <CDNUSR_DEFINE_NAME>NRMSG_DIFFP_MODEL_GROUP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Diffpair '%s' is a electrically derived diffpair, cannot be changed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>362</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_UPDRILLDATA</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Reset custom drill data                = '%s'
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>363</Id>
+    <CDNUSR_DEFINE_NAME>NRMSG_SIGNAL_MODEL_MISSING</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Signal model '%s' not found; may effect xnets and electrical constraints.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  <Msg>
+    <Id>364</Id>
+    <CDNUSR_DEFINE_NAME>NRMSG_ATTRIB_GET_FIELD_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to retrieve the attribute field value. This is caused by a problem with the logical information being imported, and needs to be corrected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  <Msg>
+    <Id>365</Id>
+    <CDNUSR_DEFINE_NAME>NRMSG_INVALID_ICPARM</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Could not retrieve the IC parameter record. An ECO is being applied to a device that does not have an IC Parameter record. This is caused by a problem with the logical information being imported, and needs to be corrected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  <Msg>
+    <Id>366</Id>
+    <CDNUSR_DEFINE_NAME>NRMSG_NO_VERILOG_FILE_PATH</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No IC source file path (Verilog or Die Abstract) was specified in the pstchip.dat file in parameter CDS_CODESIGN_SOURCE.  This should contain the physical path of the IC source file for the co-design die, but does not. This is caused by a problem with the logical information being imported, and needs to be corrected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  <Msg> 
+    <Id>367</Id>
+    <CDNUSR_DEFINE_NAME>NRMSG_DELETE_ATTACHMENT_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Could not delete the Verilog file attached to the SiP database. During attachment of the Verilog file, the existing Verilog file could not be removed from the SiP database. Check the SiP database file permissions for both read and write access.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  <Msg> 
+    <Id>368</Id>
+    <CDNUSR_DEFINE_NAME>NRMSG_MISSING_CDSZ_FILE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The die abstract or compressed verilog file to be attached to the SiP database is missing. The path of the file should be specified in the pstchip.dat file in parameter CDS_CODESIGN_SOURCE, but points to a file that does not exist. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  <Msg> 
+    <Id>369</Id>
+    <CDNUSR_DEFINE_NAME>NRMSG_CREATE_ATTACHMENT_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Could not attach the verilog file to the SiP database. Check the SiP database file permissions for both read and write access.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  <Msg> 
+    <Id>370</Id>
+    <CDNUSR_DEFINE_NAME>NRMSG_PCELLFIXED_PARAMCHANGE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+The symbol of %s pcell component is FIXED but pcell parameters have changed on the component.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  <Msg> 
+    <Id>371</Id>
+    <CDNUSR_DEFINE_NAME>NRMSG_PCELLIRREGULAR_PARAMCHANGE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+The symbol of %s pcell component is IRREGULARLY EDITED but pcell parameters have changed on the component.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>372</Id>
+    <CDNUSR_DEFINE_NAME>NRPININST_NOTFOUND_CI</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to find pin on component instance %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>373</Id>
+    <CDNUSR_DEFINE_NAME>NRRIPETCH_DELSEG_MSG</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Ripup delete first segment:  %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>374</Id>
+    <CDNUSR_DEFINE_NAME>NRRIPETCH_RETBW_MSG</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Ripup retain bondwire:       %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>375</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_UPPINESCAPE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Reset Pin Escapes (fanouts)            = '%s'
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>376</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_RIPUP_ETCH</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Ripup Etch                             = '%s'
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+  
+  <Msg>
+    <Id>377</Id>
+    <CDNUSR_DEFINE_NAME>NRMSG_NO_VERILOG_FILE_MODULE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      No Verilog Module Name (IC Cell Name) was specified in the pstchip.dat file in parameter CDS_CODESIGN_VERILOG_MODULE.  This should contain the mixed case module name (cell name) for the co-design die, but does not. This is caused by a problem with the logical information being imported, and needs to be corrected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>378</Id>
+    <CDNUSR_DEFINE_NAME>NRMSG_BAD_DB_CODESIGN_DIE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Unable to create a board database, because a co-design die exists in the netlist.  Create a SiP database instead, or remove the co-design die before creating a board database.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>379</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_SYMINST_DONE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Instance %s of symbol %s refreshed successfully.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>380</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_SYMBOLS_DONE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%d symbol(s) refreshed successfully.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+      <Id>381</Id>
+      <CDNUSR_DEFINE_NAME>RFMSG_SYMINST_ALTSYMDEF_DONE</CDNUSR_DEFINE_NAME>
+      <Category>
+          I
+          <Sub-Category>P</Sub-Category>
+      </Category>
+      <Desc>
+Component '%s', Symbol '%s' refreshed successfully to alternate symbol '%s'.
+      </Desc>
+      <Output>C</Output>
+  </Msg>
+
+  <Msg>
+      <Id>382</Id>
+      <CDNUSR_DEFINE_NAME>RFMSG_SYMINST_ALTSYMDEF_ERROR</CDNUSR_DEFINE_NAME>
+      <Category>E</Category>
+      <Desc>
+Component '%s', Symbol '%s' cannot be refreshed to alternate symbol '%s'.
+      </Desc>
+      <Output>C</Output>
+  </Msg>
+
+  <Msg>
+      <Id>383</Id>
+      <CDNUSR_DEFINE_NAME>RFMSG_SYMINST_ALTSYMDEF_NONE</CDNUSR_DEFINE_NAME>
+      <Category>E</Category>
+      <Desc>
+Component '%s', Symbol '%s', location (%d, %d) is unplaced as it is illegal on layer '%s' in zone '%s'.
+      </Desc>
+      <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>384</Id>
+    <CDNUSR_DEFINE_NAME>RFMSG_SYMINST_ALTSYMDEF_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Component '%s', Symbol '%s', location (%d, %d), Alternate symbol %s is not found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>385</Id>
+    <CDNUSR_DEFINE_NAME>DSYNC_GEN_PREVIEW</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Generating Preview...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>386</Id>
+    <CDNUSR_DEFINE_NAME>DSYNC_CONSTRAINT_ENABLE_MISMATCH</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cannot determine connectivity difference because the schematic and layout are not compatible for the constraint-enabled flow.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>387</Id>
+    <CDNUSR_DEFINE_NAME>DSYNC_CONSTRAINT_MIGRATION_WARNING</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cannot show connectivity difference because the migration of the design to the constraint-enabled flow is not complete.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>388</Id>
+    <CDNUSR_DEFINE_NAME>DSYNC_CLICK_SYNC_TO_LAYOUT</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Click 'Sync' to synchronize the layout with the schematic for the constraint flow.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>389</Id>
+    <CDNUSR_DEFINE_NAME>DSYNC_UNEXPECTED_NETLIST_FILETYPE1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+May not be able to determine connectivity difference because the selected file type '%s' is not valid. Select a file of one of the following types: '.dat', '.cdsz', '.brd', '.mcm', '.sip'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>390</Id>
+    <CDNUSR_DEFINE_NAME>DSYNC_CONNECTIVITY_DIFF_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cannot determine connectivity differences.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>391</Id>
+    <CDNUSR_DEFINE_NAME>DSYNC_LAYOUT_NOT_CONSTRAINT_ENABLED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+The schematic design is enabled for the constraint flow, but the layout is not.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>392</Id>
+    <CDNUSR_DEFINE_NAME>DSYNC_SCHEMATIC_NOT_CONSTRAINT_ENABLED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+The board layout is enabled for the constraint flow, but the schematic is not.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>393</Id>
+    <CDNUSR_DEFINE_NAME>DSYNC_OPEN_JSON_FILE_FAILED1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Unable to populate preview table because JSON file '%s' cannot be opened. The file is either corrupted, missing or the directory does not have read or write permissions.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>394</Id>
+    <CDNUSR_DEFINE_NAME>DSYNC_NO_CONNECTIVITY_CHANGES</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+There are no connectivity differences to show.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>395</Id>
+    <CDNUSR_DEFINE_NAME>DSYNC_ECO_UPDATE_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E
+      <Sub-Category>T</Sub-Category>
+    </Category>
+    <Desc>
+Unable to synchronize netlist changes from schematic to layout. View log file for details.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>396</Id>
+    <CDNUSR_DEFINE_NAME>DSYNC_BACKANNOTATE_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E
+      <Sub-Category>T</Sub-Category>
+    </Category>
+    <Desc>
+Unable to synchronize connectivity changes from layout to schematic. View log file for details.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>397</Id>
+    <CDNUSR_DEFINE_NAME>DSYNC_CLICK_SYNC_TO_MIGRATE</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Click 'Sync' to complete the migration.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+</MsgFile>

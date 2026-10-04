@@ -1,0 +1,60 @@
+FILE_TYPE=FORM_DEFN VERSION=2
+FORM
+FIXED
+PORT 40 13
+HEADER "光绘参数定义"
+
+POPUP <FMTPOP> "Gerber RS274X" "gerber_rs274x", "Gerber 4x00" "gerber_4x00", "Gerber 6x00" "gerber_6x00", "Barco DPF" "barco_dpf".
+POPUP <PRECPOP> "5.5" "5.5", "4.5" "4.5", "4.4" "4.4", "3.5" "3.5", "3.4" "3.4", "2.4" "2.4", "2.3" "2.3".
+
+TILE
+
+TEXT "输出格式:"
+TLOC 2 1
+ENDTEXT
+
+FIELD art_fmt
+FLOC 16 1
+ENUMSET 18
+POP "FMTPOP"
+ENDFIELD
+
+TEXT "精度(整数.小数):"
+TLOC 2 4
+ENDTEXT
+
+FIELD art_prec
+FLOC 16 4
+ENUMSET 18
+POP "PRECPOP"
+ENDFIELD
+
+TEXT "Undefined line width:"
+TLOC 2 7
+ENDTEXT
+
+FIELD art_ulw
+FLOC 24 7
+REALFILLIN 8 8
+REALMIN 0.000000
+REALMAX 1000.000000
+DECIMAL 3
+ENDFIELD
+
+TEXT "mil"
+TLOC 34 7
+ENDTEXT
+
+FIELD ap_ok
+FLOC 6 10
+MENUBUTTON "确定" 10 2
+ENDFIELD
+
+FIELD ap_cancel
+FLOC 22 10
+MENUBUTTON "取消" 10 2
+ENDFIELD
+
+ENDTILE
+
+ENDFORM

@@ -1,0 +1,730 @@
+<MsgFile>
+
+  <Msg>
+    <Id>1</Id>
+    <CDNUSR_DEFINE_NAME>EVMSG_BADGRD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Granularity does not multiply router grid.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>2</Id>
+    <CDNUSR_DEFINE_NAME>EVMSG_CANCEL</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+User abort with cancel.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>3</Id>
+    <CDNUSR_DEFINE_NAME>EVMSG_CSCNAME</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Internal error retrieving colormap subclass name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>4</Id>
+    <CDNUSR_DEFINE_NAME>EVMSG_CSCNUMBER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Existing colormap subclasses exceed max subclasses.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>5</Id>
+    <CDNUSR_DEFINE_NAME>EVMSG_HSCNAME</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Internal error retrieving histogram subclass name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>6</Id>
+    <CDNUSR_DEFINE_NAME>EVMSG_HSCNUMBER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Existing histogram subclasses exceed max subclasses.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>7</Id>
+    <CDNUSR_DEFINE_NAME>EVMSG_TOOMANYPT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cline has too many points.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>8</Id>
+    <CDNUSR_DEFINE_NAME>EVMSG_HITSERR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cline hits exceeds saved hits.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>9</Id>
+    <CDNUSR_DEFINE_NAME>EVMSG_DEGENMAP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Degenerate number of map cells on layer.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>10</Id>
+    <CDNUSR_DEFINE_NAME>EVMSG_DEGENBMAP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Degenerate evaluator bitmap.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>11</Id>
+    <CDNUSR_DEFINE_NAME>EVMSG_EXPAND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Internal error in expanding display frect.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>12</Id>
+    <CDNUSR_DEFINE_NAME>EVMSG_ILLEGALDSP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal number of display directions.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>13</Id>
+    <CDNUSR_DEFINE_NAME>EVMSG_KEEPIN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Route keepin is required
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>14</Id>
+    <CDNUSR_DEFINE_NAME>EVMSG_NONORTHOG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Non-orthogonal line passed to orthogonal routine.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>15</Id>
+    <CDNUSR_DEFINE_NAME>EVMSG_NORTLAY</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No routing layers are active.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>16</Id>
+    <CDNUSR_DEFINE_NAME>EVMSG_NORTLAYDIR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No routing layers for directions.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>17</Id>
+    <CDNUSR_DEFINE_NAME>EVMSG_OUTMAP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Internal error: Display position outside map.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>18</Id>
+    <CDNUSR_DEFINE_NAME>EVMSG_DEGENPATH</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Degenerate simulated path for rat line.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>19</Id>
+    <CDNUSR_DEFINE_NAME>EVMSG_BMAP_RANGE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Internal error. Etch bitmap value out of range.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>20</Id>
+    <CDNUSR_DEFINE_NAME>EVMSG_VMAP_RANGE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Internal error. Via bitmap value out of range.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>21</Id>
+    <CDNUSR_DEFINE_NAME>EVMSG_DMAP_RANGE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Internal error. Etch display map value out of range.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>22</Id>
+    <CDNUSR_DEFINE_NAME>EVMSG_VDMAP_RANGE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Internal error. Via display map value out of range.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>23</Id>
+    <CDNUSR_DEFINE_NAME>EVMSG_NO_VIA</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Could not get characteristics of default via.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>24</Id>
+    <CDNUSR_DEFINE_NAME>EVMSG_ACCURACY</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Area Overflow. Too many accuracy digits.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>25</Id>
+    <CDNUSR_DEFINE_NAME>WRMSG_DUMMY_INFO</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Dummy INFO message
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>26</Id>
+    <CDNUSR_DEFINE_NAME>WRMSG_DUMMY_WARNING</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Dummy WARNING message
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>27</Id>
+    <CDNUSR_DEFINE_NAME>WRMSG_DUMMY_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Dummy ERROR message
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>28</Id>
+    <CDNUSR_DEFINE_NAME>WRMSG_DUMMY_FATAL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Dummy error message
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>29</Id>
+    <CDNUSR_DEFINE_NAME>WRMSG_STATUS_STATS1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Scheduled    %d Attempts    %d
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>30</Id>
+    <CDNUSR_DEFINE_NAME>WRMSG_STATUS_STATS2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Completes    %d Fails       %d Yanks    %d
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>31</Id>
+    <CDNUSR_DEFINE_NAME>WRMSG_STATUS_FILE1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Scheduled    %d Attempts    %d Completes     %d Fails    %d Yanks    %d
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>32</Id>
+    <CDNUSR_DEFINE_NAME>IFPMSG_BUNDLE_EXISTS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+A bundle with that name already exists.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>33</Id>
+    <CDNUSR_DEFINE_NAME>IFPMSG_EMPTY_BUNDLE_NAME</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+A bundle name must be specified.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>34</Id>
+    <CDNUSR_DEFINE_NAME>FEDMSG_VIA_OVERLAP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Select a location that does not overlap an existing Flow Via.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>35</Id>
+    <CDNUSR_DEFINE_NAME>FEDMSG_NEED_VTX</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Delete vertex must be invoked from a Flow vertex.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>36</Id>
+    <CDNUSR_DEFINE_NAME>FEDMSG_ONE_OBJECT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s can only operate on a single Flow object.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>37</Id>
+    <CDNUSR_DEFINE_NAME>BEDMSG_ONE_OBJECT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s can only operate on a single Bundle.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>38</Id>
+    <CDNUSR_DEFINE_NAME>BEDMSG_EDIT_BUNDLE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select a bundle to edit.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>39</Id>
+    <CDNUSR_DEFINE_NAME>BEDMSG_SPLIT_BUNDLE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select a bundle to split.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>40</Id>
+    <CDNUSR_DEFINE_NAME>BEDMSG_NAME_CANCELED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+A new Bundle was not created because the no name was provided.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>41</Id>
+    <CDNUSR_DEFINE_NAME>BEDMSG_NO_LAYERS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Turning off layer would result in a connection with no available routing layers.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>42</Id>
+    <CDNUSR_DEFINE_NAME>BEDMSG_OK_DEL_LUSE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Request to turn off a layer that is enabled on a flow line override. OK to remove the override?
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>43</Id>
+    <CDNUSR_DEFINE_NAME>BEDMSG_NO_LAYER_SAMENET</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+A bundle that must route on same layer must have at least one layer available to all connections.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>44</Id>
+    <CDNUSR_DEFINE_NAME>BEDMSG_OK_DEL_SAME_LAYER</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Layer usage prevents routing the bundle on the same layer(s). Turn Off Layer Matching?
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>45</Id>
+    <CDNUSR_DEFINE_NAME>BEDMSG_EDIT_SEL_RATS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select rats to transfer into (or remove from with ctrl pick) active bundle.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>46</Id>
+    <CDNUSR_DEFINE_NAME>BEDMSG_SPLIT_SEL_RATS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select rats to transfer into new bundle.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>47</Id>
+    <CDNUSR_DEFINE_NAME>IFPMSG_RESET_LAYER_USE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Bundle '%s' reset to default layer usage: %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>48</Id>
+    <CDNUSR_DEFINE_NAME>IFPMSG_RESET_LINE_USE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+A flow line of bundle '%s' reset to default layer usage: %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>49</Id>
+    <CDNUSR_DEFINE_NAME>IFPMSG_CLR_RTE_SAME_LAYER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Bundle '%s' route on same layer cleared: %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>50</Id>
+    <CDNUSR_DEFINE_NAME>IFPMSG_NOT_A_RAT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No longer a direct rat connection.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>51</Id>
+    <CDNUSR_DEFINE_NAME>IFPMSG_NOT_A_PINPAIR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pin(s) removed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>52</Id>
+    <CDNUSR_DEFINE_NAME>IFPMSG_PINPAIR_REMOVED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pinpair '%s:%s' removed from bundle '%s': %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>53</Id>
+    <CDNUSR_DEFINE_NAME>GLMSG_CANT_OPEN_LOG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot open the log file for glossing.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>54</Id>
+    <CDNUSR_DEFINE_NAME>GLMSG_ABORT_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Glossing aborted with error = %d ... see log file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>55</Id>
+    <CDNUSR_DEFINE_NAME>GLMSG_ABORT_2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unknown error = %d ... glossing aborted.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>56</Id>
+    <CDNUSR_DEFINE_NAME>GLMSG_CANCEL</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Aborted by cancel.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>57</Id>
+    <CDNUSR_DEFINE_NAME>GLMSG_COMPLETE_DRC</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Glossing functions completed ... starting net level DRC update.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>58</Id>
+    <CDNUSR_DEFINE_NAME>GLMSG_DRC_REDO_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Status = %d returned by drc_redo.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>59</Id>
+    <CDNUSR_DEFINE_NAME>GLMSG_COMPLETE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Glossing complete.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>60</Id>
+    <CDNUSR_DEFINE_NAME>GLMSG_FILLET_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+While %s the following error was detected: %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>61</Id>
+    <CDNUSR_DEFINE_NAME>BEDMSG_SPLIT_ALL_RATS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+At least one rat must remain in a bundle.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>62</Id>
+    <CDNUSR_DEFINE_NAME>IFPMSG_NO_IMPORT_SYSTEM</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot import when a system database is active.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>63</Id>
+    <CDNUSR_DEFINE_NAME>IFPMSG_UNABLE_OPEN_LOG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to create %s log file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>64</Id>
+    <CDNUSR_DEFINE_NAME>IFPMSG_NOSAMELAYER_SEQUENCE</CDNUSR_DEFINE_NAME>
+    <Category>I <Sub-Category>P</Sub-Category> </Category>
+    <Desc>
+A bundle with a multi-layer sequence cannot route on same layer.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>65</Id>
+    <CDNUSR_DEFINE_NAME>IFPMSG_SEQUENCE_FIXED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Bundle '%s' sequence updated to repair issues
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>66</Id>
+    <CDNUSR_DEFINE_NAME>IFPMSG_SEQUENCE_MISSING</CDNUSR_DEFINE_NAME>
+    <Category>I <Sub-Category>P</Sub-Category> </Category>
+    <Desc>
+Ratsnest(s) did not have a sequence assignment.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>67</Id>
+    <CDNUSR_DEFINE_NAME>IFPMSG_SEQUENCE_SUBCLASS_INVALID</CDNUSR_DEFINE_NAME>
+    <Category>I <Sub-Category>P</Sub-Category> </Category>
+    <Desc>
+Ratsnest(s) had an invalid subclass assignment.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>68</Id>
+    <CDNUSR_DEFINE_NAME>IFPMSG_SEQUENCE_SUBCLASS_NOTBNDL</CDNUSR_DEFINE_NAME>
+    <Category>I <Sub-Category>P</Sub-Category> </Category>
+    <Desc>
+Ratsnest(s) had a subclass assignment that was not enabled for the bundle.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>69</Id>
+    <CDNUSR_DEFINE_NAME>IFPMSG_SEQUENCE_SUBCLASS_NOTNET</CDNUSR_DEFINE_NAME>
+    <Category>I <Sub-Category>P</Sub-Category> </Category>
+    <Desc>
+Ratsnest(s) had a subclass assignment that was not enabled for its net.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>70</Id>
+    <CDNUSR_DEFINE_NAME>IFPMSG_IMPORT_PART_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E </Category>
+    <Desc>
+Cannot import when partition design is active or there are exported partition in master design.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+</MsgFile>

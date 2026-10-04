@@ -1,0 +1,55 @@
+#========================================================================
+# 文件名    : route_layervoid.form
+# 功能      : 选层挖空参数表单（route_padvoid.il / route_clinevoid.il 共用）
+# 说明      : 目标层下拉由 SKILL 运行时 axlFormBuildPopup 构建；
+#             按钮用非保留名 apply/quit
+# 编码      : GBK（含中文，必须 GBK 保存）
+#========================================================================
+FILE_TYPE=FORM_DEFN VERSION=2
+FORM
+FIXED
+PORT 34 12
+HEADER "选层挖空"
+
+# 空 POPUP 声明（运行时由 axlFormBuildPopup 填充，amg 表单实证模式；
+# 缺此声明 axlFormCreate 会因 POP 引用未声明 POPUP 而返回 nil）
+POPUP <layers> "" ""
+
+TILE
+
+TEXT "目标层:"
+TLOC 2 1
+ENDTEXT
+
+FIELD layer
+FLOC 10 1
+ENUMSET 14
+POP "layers"
+ENDFIELD
+
+TEXT "外扩:"
+TLOC 2 4
+ENDTEXT
+
+FIELD expand
+FLOC 10 4
+STRFILLIN 8 16
+ENDFIELD
+
+TEXT "(当前设计单位)"
+TLOC 19 4
+ENDTEXT
+
+FIELD apply
+FLOC 4 8
+MENUBUTTON "确定" 10 2
+ENDFIELD
+
+FIELD quit
+FLOC 20 8
+MENUBUTTON "取消" 10 2
+ENDFIELD
+
+ENDTILE
+
+ENDFORM

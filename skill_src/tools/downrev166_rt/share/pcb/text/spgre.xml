@@ -1,0 +1,436 @@
+<MsgFile>
+  <Msg>
+    <Id>1</Id>
+    <CDNUSR_DEFINE_NAME>NO_ROUTE_KEEPIN</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>No route keepin.</Desc>
+    <ExtDesc>The route engine needs to have a route keepin shape defined to
+ determine the area where routing can be added. The route keepin may or 
+ may not be the same as the board outline. If no route keepin is defined,
+ the size of the Allegro drawing is used. To avoid this warning, create a 
+ route keepin shape.
+     </ExtDesc>    
+     <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>2</Id>
+    <CDNUSR_DEFINE_NAME>NO_PINS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>No pins found.
+    </Desc>
+    <ExtDesc>No pins where found on any component. Check that the correct
+	design has been loaded and that there is at least one component with at
+	least one pin placed in the design.</ExtDesc>    
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>3</Id>
+    <CDNUSR_DEFINE_NAME>NO_ENABLED_NETS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>No nets enabled for routing.
+    </Desc>
+    <ExtDesc>Either no nets were found in the design, or all nets in the design
+    have been disabled for routing. Check that some nets are route enabled.</ExtDesc>    
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>4</Id>
+    <CDNUSR_DEFINE_NAME>PIN_OUTSIDE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>Pin {1} is outside the route keepin.
+    </Desc>
+    <ExtDesc>This pin is on an unplaced component, or the component
+    has not been placed within the route keepin shape. Check the location
+    of the pin and that its component has been placed.</ExtDesc>    
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>5</Id>
+    <CDNUSR_DEFINE_NAME>PIN_SURROUNDED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>Pin {1} is completely enclosed by route keepouts on all layers.
+    </Desc>
+    <ExtDesc>Each pad on each layer of the design is blocked for routing.
+    The route engine is unable to route to this pin. Check for the ability to
+	route to this pin using interactive etch edit mode.</ExtDesc>    
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>6</Id>
+    <CDNUSR_DEFINE_NAME>PIN_NO_FANOUT</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>Surface mount pin {1} has no fanout.
+    </Desc>
+    <ExtDesc>This pin is defined on only one layer but is not routed to a through hole via. 
+	The route engine requires that all pins are fanned out prior to routing.</ExtDesc>    
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>7</Id>
+    <CDNUSR_DEFINE_NAME>NET_NO_LAYER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>Net {1} has no layers on which routing is enabled.
+    </Desc>
+    <ExtDesc>This net is blocked from routing on all layers. Verify that this net
+    can be routed in Allegro using interactive etch edit mode. Verify that the layer
+    stackup allows routing on at least one layer.</ExtDesc>    
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>8</Id>
+    <CDNUSR_DEFINE_NAME>PIN_UNLOCKED_FANOUT</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>Surface mount pin {1} has unlocked fanout.
+    </Desc>
+    <ExtDesc>This pin has been fanned out but the fanout via has not 
+    been locked (fixed). The route engine may delete this via preventing a
+    route to the pin. To avoid this warning, lock the via.</ExtDesc>    
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>9</Id>
+    <CDNUSR_DEFINE_NAME>DELAY_MISMATCH</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>Match or relative delay constraint defined on {1} for match group {2}
+	is defined in units of {3} for delta and {4} for tolerance. This is
+	inconsistent with other relative delay constraints on the same match group.
+    </Desc>
+    <ExtDesc>Delay constraints can be specified in terms of time, length, or percentage.  
+    All delay constraints specified on elements of a specific match group must all be 
+	defined in the same terms (for example, all in terms of time). Members of match groups 
+	must be defined using the same units.</ExtDesc>    
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>10</Id>
+    <CDNUSR_DEFINE_NAME>TOTAL_ETCH_LENGTH_NO_MATE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>Total etch length is defined on {1} but not on {2}, which is its
+	differential pair mate.
+    </Desc>
+    <ExtDesc>Members of the same differential pair should have the same constraints.
+    For this differential pair, a total etch length constraint was defined on one
+    member but not the other.</ExtDesc>    
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>11</Id>
+    <CDNUSR_DEFINE_NAME>TOTAL_ETCH_LENGTH_MIS_MATCH</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>Total etch length defined on {1} does not match total etch length
+	defined on {2}, which is its differential pair mate.
+    </Desc>
+    <ExtDesc>Members of the same differential pair should have the same constraints.
+    For this differential pair, the total etch length constraint defined on one
+    member of the differential pair is different from the total etch length constraint
+    defined on the other member of the differential pair.</ExtDesc>    
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>12</Id>
+    <CDNUSR_DEFINE_NAME>PROP_DELAY_NO_MATE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>Prop delay is defined on {1} but not on {2}, which is its differential pair mate.
+    </Desc>
+    <ExtDesc>Members of the same differential pair should have the same constraints.
+    For this differential pair, a propagation delay constraint was defined on one
+    member, but not the other.</ExtDesc>    
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>13</Id>
+    <CDNUSR_DEFINE_NAME>AUTOBUNDLE_SUCCESS</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>Autobundle completed successfully.
+    </Desc>
+    <ExtDesc>This is a normal status message indicating that the route engine has
+	automatically created one or more bundles.</ExtDesc>    
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>14</Id>
+    <CDNUSR_DEFINE_NAME>AUTOBUNDLE_FAILURE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>Autobundle failed to complete.
+    </Desc>
+    <ExtDesc>A problem occurred while the route engine was trying to create bundles.
+	Select fewer rats to bundle, or create the bundles interactively.</ExtDesc>    
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>15</Id>
+    <CDNUSR_DEFINE_NAME>DIFF_PAIR_GAP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>Differential pair {1} has a primary gap or neck gap set to zero.
+    </Desc>
+    <ExtDesc>A differential pair constraint has been defined, but either a primary gap
+	or a neck gap was not defined. Check that both a primary gap and neck gap are 
+	specified on all layers, or that neither a primary gap nor a neck gap is specified.</ExtDesc>    
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>16</Id>
+    <CDNUSR_DEFINE_NAME>MXL_INFO</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>Status message reporting normal operation.
+    </Desc>
+    <ExtDesc>This is a normal status report generated automatically. It can be
+	safely ignored.</ExtDesc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+  <Id>17</Id> 
+  <CDNUSR_DEFINE_NAME>FLOWLINE_UNDER_COMP</CDNUSR_DEFINE_NAME> 
+  <Category>W</Category>
+  <Desc>Flow line of bundle {1} ends underneath component.</Desc>
+  <ExtDesc>Part of the flow for this bundle is under a component. To allow the route engine
+  maximum flexibility to find paths under components, place the flow and its rake area
+  outside all component outlines.</ExtDesc>
+  <Output>C</Output> 
+  </Msg>
+
+  <Msg>
+  <Id>18</Id>
+  <CDNUSR_DEFINE_NAME>LARGE_PIN_COUNT_NET</CDNUSR_DEFINE_NAME>
+  <Category>W</Category> 
+  <Desc>Net {1} contains {2} pins and is not marked as a VOLTAGE net therefore all
+   connections will be scheduled for routing.</Desc>
+  <ExtDesc>Extended description</ExtDesc>
+  <Output>C</Output> 
+  </Msg>
+
+  <Msg>
+  <Id>19</Id>
+  <CDNUSR_DEFINE_NAME>FLOW_OUTSIDE_ROUTE_KEEPIN</CDNUSR_DEFINE_NAME>
+  <Category>W</Category> 
+  <Desc>Flow of bundle {1} is outside route keepin.</Desc>
+  <ExtDesc>Extended description</ExtDesc>
+  <Output>C</Output> 
+  </Msg>
+
+  <Msg>
+  <Id>20</Id>
+  <CDNUSR_DEFINE_NAME>RDM2ALDB_SKIPPED_RATS</CDNUSR_DEFINE_NAME>
+  <Category>W</Category> 
+  <Desc>Rats were skipped that could not be processed for the current command. See GRE log file for details.
+  </Desc>
+  <ExtDesc> Commit plan and convert to plan commands are unable to process rats
+  that do not meet certain criteria such as plan level. For example, commit
+  plan requires that the plan have a minimum plan level of topological.
+  </ExtDesc>
+  <Output>C</Output> 
+  </Msg>
+
+  <Msg>
+  <Id>21</Id>
+  <CDNUSR_DEFINE_NAME>GRE_SELECTION_FAILED</CDNUSR_DEFINE_NAME>
+  <Category>E</Category> 
+  <Desc> The GRE selection required for '%s' failed and the command cannot run.
+  </Desc>
+  <ExtDesc>
+  The current command needed to pass element selections along to the GRE
+routing engine to control the scope of its activity. This selection failed.
+The current command will not proceed because the selection failure would
+cause the route engine to act on the entire design.
+Contact Cadence customer support for assistance.
+  </ExtDesc>
+  <Output>C</Output> 
+  </Msg>
+
+  <Msg>
+  <Id>22</Id>
+  <CDNUSR_DEFINE_NAME>GRE_EXECUTE_CMD_FAILED</CDNUSR_DEFINE_NAME>
+  <Category>E</Category> 
+  <Desc> GRE execute command failed. The GRE log file may have more details.
+  </Desc>
+  <ExtDesc>
+  A GRE command was required as part of the current command, but the command
+had an unexpected failure. Contact Cadence customer support for assistance.
+  </ExtDesc>
+  <Output>C</Output> 
+  </Msg>
+
+  <Msg>
+  <Id>23</Id>
+  <CDNUSR_DEFINE_NAME>GRE_SPAWN_CMD_FAILED</CDNUSR_DEFINE_NAME>
+  <Category>E</Category> 
+  <Desc> GRE spawn command failed. The GRE log file may have more details.
+  </Desc>
+  <ExtDesc>
+  A GRE command was required as part of the current command, but the command
+had an unexpected failure. Contact Cadence customer support for assistance.
+  </ExtDesc>
+  <Output>C</Output> 
+  </Msg>
+
+  <Msg>
+  <Id>24</Id>
+  <CDNUSR_DEFINE_NAME>GRE_AUTOBUNDLE_FAILED</CDNUSR_DEFINE_NAME>
+  <Category>E</Category> 
+  <Desc> GRE autobundle failed. The GRE log file may have more details.
+  </Desc>
+  <ExtDesc>
+  The GRE autobundle command ran into an unexpected error.
+Contact Cadence customer support for assistance.
+  </ExtDesc>
+  <Output>C</Output> 
+  </Msg>
+
+  <Msg>
+  <Id>25</Id>
+  <CDNUSR_DEFINE_NAME>GRE_STRATEGY_VERSION_MISMATCH</CDNUSR_DEFINE_NAME>
+  <Category>E</Category> 
+  <Desc>
+  GRE strategy file version mismatch. The GRE log file may have more details.
+  </Desc>
+  <ExtDesc>
+  The runtime environment has a GRE strategy file that is a different version
+than is expected for product version that is running. GRE based commands
+cannot be run. Remove local copies of strategy.dat and strategy.tcl.
+  </ExtDesc>
+  <Output>C</Output> 
+  </Msg>
+
+  <Msg>
+  <Id>26</Id>
+  <CDNUSR_DEFINE_NAME>GRE_CMD_INVALID_WHILE_PLANNING</CDNUSR_DEFINE_NAME>
+  <Category>E</Category> 
+  <Desc> This command cannot be run while GRE is planning.
+  </Desc>
+  <ExtDesc>
+  An attempt was made to run a command that cannot be run while planning is
+active. This is an unexpected situation.
+Contact Cadence customer support for assistance.
+  </ExtDesc>
+  <Output>C</Output> 
+  </Msg>
+
+  <Msg>
+  <Id>27</Id>
+  <CDNUSR_DEFINE_NAME>GRE_TILING_FAILURE</CDNUSR_DEFINE_NAME>
+  <Category>E</Category> 
+  <Desc> GRE initialization failed. The GRE log file may have more details.
+  </Desc>
+  <ExtDesc>
+  GRE initialization is required to prepare for planning and other GRE commands.
+Failures are unexpected. Contact Cadence customer support for assistance.
+  </ExtDesc>
+  <Output>C</Output> 
+  </Msg>
+
+  <Msg>
+  <Id>28</Id>
+  <CDNUSR_DEFINE_NAME>GRE_RESELECTION_INCOMPLETE</CDNUSR_DEFINE_NAME>
+  <Category>W</Category> 
+  <Desc> Some GRE objects could not be selected.
+  </Desc>
+  <ExtDesc>
+  The current action needed to pass element selections along to the GRE
+routing engine to control the scope of its activity. This selection was
+not completely successful, causing some objects to not be selected. The
+action continued with the selections that were successful. This is likely
+to have some impact on the result of the action.
+The GRE log file may have more details on the failure.
+  </ExtDesc>
+  <Output>C</Output> 
+  </Msg>
+
+  <Msg>
+  <Id>29</Id>
+  <CDNUSR_DEFINE_NAME>GRE_NOEDIT_IBD_RATBUNDLE</CDNUSR_DEFINE_NAME>
+  <Category>W</Category> 
+  <Desc> %s cannot modify interface ratbundles.
+  </Desc>
+  <ExtDesc>
+  An attempt was made to run a ratbundle delete or edit command with
+an interface ratbundle in the selection set. Interface ratbundles are
+auto-generated and cannot be directly modified by this command.
+  </ExtDesc>
+  <Output>C</Output> 
+  </Msg>
+
+  <Msg>
+  <Id>30</Id>
+  <CDNUSR_DEFINE_NAME>GRE_NORENAME_IBD_RATBUNDLE</CDNUSR_DEFINE_NAME>
+  <Category>W</Category> 
+  <Desc> Interface ratbundles cannot be renamed.
+  </Desc>
+  <ExtDesc>
+  Interface ratbundles are auto-generated and given a name based on the 
+net group or bus that was used to group the ratnests. This name can only
+be modified by renaming the net group or bus.
+  </ExtDesc>
+  <Output>C</Output> 
+  </Msg>
+
+  <Msg>
+  <Id>31</Id>
+  <CDNUSR_DEFINE_NAME>AIDT_RETURN_ERROR</CDNUSR_DEFINE_NAME>
+  <Category>E</Category>
+  <Desc> Errors encountered. %s
+  </Desc>
+  <ExtDesc>
+  Auto interactive Delay Tune command encountered some error conditions.
+The GRE log file may have more details on encountered errors.
+  </ExtDesc>
+  <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+  <Id>32</Id>
+  <CDNUSR_DEFINE_NAME>AIDT_RETURN_STATISTICS</CDNUSR_DEFINE_NAME>
+  <Category>I
+    <Sub-Category>P</Sub-Category>
+  </Category>
+  <Desc> Clines Selected: %d; Timing constraints: %d; Timing violations: %d; Outside ideal range: %d
+  </Desc>
+  <ExtDesc></ExtDesc>
+  <Output>C</Output>
+  </Msg>
+
+
+  <Msg>
+    <Id>33</Id>
+    <CDNUSR_DEFINE_NAME>AIPT_RETURN_STATISTICS</CDNUSR_DEFINE_NAME>
+    <Category>
+      I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+      Clines Selected: %d; Phase constraints: %d; Phase violations: %d; Outside ideal range: %d
+    </Desc>
+    <ExtDesc></ExtDesc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>34</Id>
+    <CDNUSR_DEFINE_NAME>GRE_SHAPE_VOIDS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+      Design contains etch/keepout shapes with voids that are not supported by the Auto-Interactive Routing commands. The shapes may be missing voids and will affect the routing results. To work around the issue, reconstruct etch/keepouts without voids.
+    </Desc>
+    <ExtDesc></ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+
+</MsgFile>
+
+    

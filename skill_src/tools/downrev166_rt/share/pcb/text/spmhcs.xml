@@ -1,0 +1,91 @@
+<MsgFile>
+
+  <Msg>
+    <Id>1</Id>
+    <CDNUSR_DEFINE_NAME>CSMSG_NO_REFDES</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Symbol is missing a refdes.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>2</Id>
+    <CDNUSR_DEFINE_NAME>CSMSG_NO_MSHAPE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Shape symbol cannot have multiple shapes.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>3</Id>
+    <CDNUSR_DEFINE_NAME>CSMSG_VOI_EXIST</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Shape symbol cannot have a void in a shape.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>4</Id>
+    <CDNUSR_DEFINE_NAME>CSMSG_CSABORT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Create symbol failed. Fix reported warnings and errors.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>5</Id>
+    <CDNUSR_DEFINE_NAME>CSMSG_NMETOOLG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Symbol name must be 17 chars. max.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>6</Id>
+    <CDNUSR_DEFINE_NAME>CSMSG_ILLSYMNM</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%s is not a legal symbol name.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>7</Id>
+    <CDNUSR_DEFINE_NAME>CSMSG_DONE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Symbol '%s' created.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>8</Id>
+    <CDNUSR_DEFINE_NAME>CSMSG_FVOI_XIST</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Flash symbol cannot have a void in a shape.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+</MsgFile>

@@ -1,0 +1,4664 @@
+<MsgFile>
+
+  <Msg>
+    <Id>1</Id>
+    <CDNUSR_DEFINE_NAME>BDMSG_MISSING_THICKNESS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Missing layer thickness information in the layout cross section.
+    </Desc>
+    <ExtDesc>
+All etch and dielectric layers must have a non-zero layer thickness assigned
+for NC backdrilling to be able to function.
+
+Thicknesses can be defined using the Layout Cross Section interface.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>2</Id>
+    <CDNUSR_DEFINE_NAME>BDMSG_MISSING_DIELECTRIC</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Missing dielectric layer(s) in the layout cross section.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>3</Id>
+    <CDNUSR_DEFINE_NAME>BDMSG_ABORT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+'Backdrill Setup and Analysis' aborted.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>4</Id>
+    <CDNUSR_DEFINE_NAME>BDMSG_MISSING_THICKNESS2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Layout cross section layer thickness data is missing or incomplete.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>5</Id>
+    <CDNUSR_DEFINE_NAME>BDMSG_MISSING_DIELECTRIC2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Layout cross section has one or more missing dielectric layers.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>6</Id>
+    <CDNUSR_DEFINE_NAME>BDMSG_ABORT2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+NC backdrill setup aborted.            
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>7</Id>
+    <CDNUSR_DEFINE_NAME>BDMSG_SYSTEM_PASS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot delete a system default pass.
+    </Desc>
+    <ExtDesc>
+The first two passes are system default passes that cannot be deleted.
+
+They can only be enabled or disabled.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>8</Id>
+    <CDNUSR_DEFINE_NAME>BDMSG_INSERT_ROW</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot insert a row in a pass set with the maximum number of passes.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>9</Id>
+    <CDNUSR_DEFINE_NAME>BDMSG_SIDE_OBJECTS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+'From Layer' and 'Objects' must be set before inserting into a pass set.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>10</Id>
+    <CDNUSR_DEFINE_NAME>BDMSG_INSERT_ROW_SYSTEM</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot insert a row after a system default pass.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>11</Id>
+    <CDNUSR_DEFINE_NAME>BDMSG_SIDE_OBJECTS2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+'From Layer' and 'Objects' needed before multiple passes can be specified.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>12</Id>
+    <CDNUSR_DEFINE_NAME>BDMSG_RESETTING_PASSES</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Resetting the number of passes specified to %d ... the number of design layers less 1.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>13</Id>
+    <CDNUSR_DEFINE_NAME>BDMSG_CANNOT_ENABLE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot enable as side and objects conflict with the pass enabled in row %d.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>14</Id>
+    <CDNUSR_DEFINE_NAME>BDMSG_CANNOT_ENABLE2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot enable until the layer is set.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>15</Id>
+    <CDNUSR_DEFINE_NAME>BDMSG_CANNOT_ENABLE3</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot enable until side and objects are set.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>16</Id>
+    <CDNUSR_DEFINE_NAME>BDMSG_PERFORMING</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Performing backdrill analysis ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>17</Id>
+    <CDNUSR_DEFINE_NAME>BDMSG_NO_NETS_FLAGGED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+There are no nets flagged for backdrilling. Add BACKDRILL_MAX_PTH_STUB property to critical nets.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>18</Id>
+    <CDNUSR_DEFINE_NAME>BDMSG_COUNTS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Errors: %d  Exclusions: %d
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>19</Id>
+    <CDNUSR_DEFINE_NAME>BDMSG_DONE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Done.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>20</Id>
+    <CDNUSR_DEFINE_NAME>BDMSG_NOTHING_ENABLED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Nothing is enabled for backdrill analysis.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>21</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_CANCELLED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Testprep terminated due to a user CANCEL request.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>22</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PROCESSING_NET</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Processing net %s (%d out of %d) (c=%d, f=%d, i=%d) ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>23</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_TERMINATED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Testprep terminated ... see log file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>24</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_CLEARING</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Clearing Testprep subclasses ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>25</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_CREATING</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Creating testpoint locations ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>26</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_COMPLETE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Testprep completed ... Complete: %d Fail: %d Ignore: %d Warn: %d
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>27</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_NO_VIA_SPEC</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+A test via must be specified for auto insertion.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>28</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_AUTO_MESSAGE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Performing auto insertion initialization ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>29</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_RTLOGOPEN_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot open the Testprep auto insertion router log file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>30</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_LOGOPEN_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot open the Testprep log file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>31</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_TPS_FIXED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Testpoints are fixed in Testprep Parameters.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>32</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PROBING_PASS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Probing pass ... probe type %d and probe spacing %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>33</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_DRILL_LOG_FILE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot open the probe drill log file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>34</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_USING_DEFAULTS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cannot read the file 'nc_param.txt' ... using defaults.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>35</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_ERROR_TOP_FILE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot open the top drill file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>36</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_ERROR_BOTTOM_FILE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot open the bottom drill file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>37</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_DRILL_WARNINGS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Probe drill file creation completed with warnings ... see log file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>38</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_DRILL_COMPLETE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Probe drill file creation complete.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>39</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_NET_NO_TEST</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Net %s has NO_TEST property ... ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>40</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PROBED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%s probed from %s (Net: %s) %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>41</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PROBED_WITH_TYPE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%s probed from %s with probe type %d (Net: %s) %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>42</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PROBED_U</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%s probed from %s (Net: Unused: %s) %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>43</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PROBED_WITH_TYPE_U</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%s probed from %s with probe type %d (Net: Unused: %s) %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>44</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_ACCEPT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick pulldown DONE/NEXT or next pin/via/line to accept.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>45</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_ACCEPT_SWAP</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick pulldown DONE/NEXT or first pin/via of next swap.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>46</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_NOT_ON_TRACE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Testpoint not allowed on trace ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>47</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_ERROR_TRACE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failure trying to add testpoint to the trace.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>48</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_NOT_ON_TRACE_LOC</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Testpoint not allowed on trace at this location.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>49</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_NO_TRACE_PAD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Testpoints on traces require a 'SMT Testpad' parameter setting.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>50</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_NO_TRACE_PAD_2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Testpoints on traces require a 'Test SMT/blind pad' parameter setting.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>51</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_AREA_SIZE_ZERO</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+'Unit area square size' must be greater than 0.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>52</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_AREA_DISP_ZERO</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+'Unit area square displacement' must be greater than 0.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>53</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_AREA_DISP_BAD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The unit area displacement cannot be greater than the size.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>54</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_AREA_MAX_PER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+'Max testpoints per unit area' must be greater than 0.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>55</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_ZERO_SETTING</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+All unit area settings must be greater than 0 for execution.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>56</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_NOTHING_SELECTED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Nothing selected for checking.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>57</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_DENSITY_VIOLATIONS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Density violations were detected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>58</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_DENSITY_NO_VIOLATIONS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+No density violations were detected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>59</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_DENSITY_PERFORMING</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Performing testpoint unit area density check on %s side ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>60</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_DENSITY_CANCELLED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+* * * Execution canceled by user * * *
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>61</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_DENSITY_COMPONENT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Performing testpoint component area density check on %s side ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>62</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_ERROR_SUBCLASS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to add the PROBE_DENSITY subclasses.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>63</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_FIXED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Testpoints are fixed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>64</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_NOT_FIXED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Testpoints are NOT fixed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>65</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_FIXTURE_OVERWRITE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Overwriting any existing testpoint FIXTURE subclasses ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>66</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_FIXTURE_CREATE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Creating testpoint FIXTURE subclasses ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>67</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_FIXTURE_EXISTS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+FIXTURE subclasses already exist.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>68</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_FIXTURE_ADD_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to add the FIXTURE subclasses.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>69</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_NOTHING_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Nothing found to query.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>70</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_DELETE_FIXED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+* * * Testpoints are FIXED and cannot be deleted * * *
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>71</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_SWAP_FIXED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+* * * Testpoints are FIXED and cannot be swapped * * *
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>72</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PICK_1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick pin/via/trace to test ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>73</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PICK_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick pin/via to delete testpoint from ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>74</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PICK_3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick pin/via/trace to query ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>75</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PICK_4</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick testpoint pin/via to swap ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>76</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PICK_5</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick ???
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>77</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_ACCEPT_DELETE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick pulldown DONE/NEXT or next testpoint to accept.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>78</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_CANNOT_DELETE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cannot delete this type of testpoint via from a FIXED net ... ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>79</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_SCAN_RESTART</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Restarting net scan from the beginning ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>80</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_SCAN_NOTHING</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Scanning ... no untested testable net found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>81</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PAD_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Testprep Parameters: Test Pad %s not found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>82</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_VIA_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Testprep Parameters: Test Via %s not found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>83</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_ALREADY_EXISTING</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Padstack %s is already an 'Existing Via' ... not added.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>84</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PAD_OLD_SETTING</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Detected an old 'Test SMT/blind pad' setting of %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>85</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_VIA_OLD_SETTING</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Detected an old 'Test thru via' setting of %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>86</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_OLD_SETTINGS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+The old setting(s) will not be visible in Testprep Parameters but will continue to be used until any new Padstack Selections are made.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>87</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_NOTE_CROSS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+NOTE: 'Cross' figure will be used for probes that are too close.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>88</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_INVALID_REPLACE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Not a valid replacement for existing via padstack %s ... rejected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>89</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PADSTACK_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Padstack %s does not exist.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>90</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_NOT_MIN_PAD_SIZE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Padstack %s does not meet the minimum pad size.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>91</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_CANNOT_ENABLE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cannot enable for use.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>92</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_LAYER_MISMATCH</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Padstack %s does not match the layer stackup ... rejected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>93</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_NO_PAD_ON_SIDE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Padstack %s does not have a pad on the %s side ... rejected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>94</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_NOT_MIN_PAD_SIZE_2</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Padstack %s does not meet the minimum pad size requirement ... rejected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>95</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PADSTACK_NOT_FOUND_2</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Padstack %s was not found in the design or library.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>96</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_LOAD_MSG_PADS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+:MSG=Padstack Selections input file
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>97</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_LOAD_MSG_TYPES</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+:MSG=Probe Types input file
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>98</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_LOAD_PAD_SELECTIONS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Loading Padstack Selections from file '%s' ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>99</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PAD_FILE_INVALID</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Selected file is not a valid Padstack Selections file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>100</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_LOAD_PROBE_TYPES</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Loading Probe Types from file '%s' ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>101</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_TYPES_FILE_INAVLID</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Selected file is not a valid Probe Types file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>102</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_SAVE_MSG_PADS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+:MSG=Padstack Selections output file
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>103</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_SAVE_MSG_TYPES</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+:MSG=Probe Types output file
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>104</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_SAVE_PAD_SELECTIONS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Saving Padstack Selections to file '%s' ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>105</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_SAVE_PROBE_TYPES</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Saving Probe Types to file '%s' ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>106</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PROPERTIES_PICK</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick pins/vias/traces to query ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>107</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PROP_SYM_ADD</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick symbols to add %s ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>108</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PROP_SYM_DEL</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick symbols to delete %s ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>109</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PROP_NET_ADD</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick nets to add %s ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>110</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PROP_NET_DEL</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick nets to delete %s ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>111</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_QTY_INVALID</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Quantity must be greater than 0.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>112</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_MAX_DENSITY_INVALID</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Maximum must not be less than 0.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>113</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_SYMBOL_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Symbol not found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>114</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_NET_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Net not found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>115</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_SYMBOL_ALREADY_HAS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Symbol %s already has the %s property.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>116</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_SYMBOL_ADDING_PROP</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Adding property %s to symbol %s ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>117</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_SYMBOL_DOESNT_HAVE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Symbol %s does not have the %s property.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>118</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_SYMBOL_DELETE_PROP</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Deleting property %s from symbol %s ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>119</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_SYMBOL_ALREADY_HAS_2</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Symbol %s already has the %s property with maximum %d.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>120</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_SYMBOL_ALREADY_HAS_3</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Symbol %s already has the %s property with maximum %d ... will be reset to %d.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>121</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_SYMBOL_ADDING_PROP_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Adding property %s with maximum %d to symbol %s ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>122</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_NET_ALREADY_HAS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Net %s already has the %s property.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>123</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_NET_IS_DUMMY</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Net is a DUMMY net ... %s property not allowed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>124</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_NET_ALREADY_HAS_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Net %s already has the %s property ... %s property not allowed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>125</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_NET_NO_TEST_HAS_TPS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Net %s already has testpoints on it ... NO_TEST property not allowed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>126</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_NET_ADDING_PROP</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Adding property %s to net %s ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>127</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_NET_ALREADY_HAS_2</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Net %s already has the %s property with quantity %d.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>128</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_NET_ALREADY_HAS_3</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Net %s already has the %s property with quantity %d ... will be reset to %d.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>129</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_NET_ADDING_QUANTITY</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Adding property TESTPOINT_QUANTITY with quantity %d to net %s ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>130</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_NET_DOESNT_HAVE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Net %s does not have the %s property.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>131</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_NET_DELETE_PROP</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Deleting property %s from net %s ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>132</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_NET_DELETE_QUANTITY</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Deleting property TESTPOINT_QUANTITY with quantity %d from net %s ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>133</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PROP_CANCEL</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Cancel that last operation.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>134</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PROP_OOPS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Oops that last operation.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>135</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_RESEQ_TEXT_DISPLAY</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cannot resequence reference designators with Text Display disabled.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>136</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_RESEQ_NOTHING</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Nothing has been selected for resequencing.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>137</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_RESEQ_TYPES</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Resequencing testpoint probe types ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>138</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_RESEQ_TOO_CLOSE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Deletion of testpoints that are too close was requested.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>139</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_RESEQ_REFDES</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Resequencing testpoint refdes text ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>140</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_RESEQ_STRING_NUMERIC</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Refdes resequencing cannot be performed without text 'stringNumeric' properly set.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>141</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_RESEQ_DONE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%s%d testpoints were resequenced.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>142</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_RESEQ_DONE_TYPES</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%s%d testpoint probe types were resequenced.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>143</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_RESEQ_DONE_TYPES_ASIS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%s%d testpoint probe types were left as is.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>144</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_RESEQ_DONE_TOO_CLOSE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+%s%d testpoint probe types were too close.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>145</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_NOTHING_SWAPPABLE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+No pins/vias swappable with that selected ... pick again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>146</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_SWAP_TO</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick a pin/via/cline that you wish to swap to.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>147</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_SWAP_FROM</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick tested pin or via to swap from ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>148</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_SWAP_ITSELF</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot swap a testpoint with itself.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>149</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_SWAP_FIXED_NET</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cannot swap this type of testpoint via on a FIXED net ... ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>150</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PIN_DIF_NET</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot swap these testpoints as they are on different nets.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>151</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PAD_WRONG_LAYER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+SMD pad is on the wrong layer for the 'Test SMT/blind pad'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>152</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PAD_NOT_EITHER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+SMD pad not 'Either' layer for the 'Test SMT/blind pad'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>153</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_TYPE_WRONG_PAD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+'Pad Stack Type' is wrong for the 'Test SMT/blind pad'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>154</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_TYPE_WRONG_VIA</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+'Pad Stack Type' is wrong for the 'Test thru via'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>155</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_SIZE_WRONG_PAD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+'Min Pad Size' is wrong for the 'Test SMT/blind pad'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>156</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_SIZE_WRONG_VIA</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+'Min Pad Size' is wrong for the 'Test thru via'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>157</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PAD_UNDEFINED_PAD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pad shape is null for the 'Test SMT/blind pad'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>158</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PAD_UNDEFINED_VIA</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pad shape is null for the 'Test thru via'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>159</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_NO_TEST_VIA</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Auto insertion requires a 'Test thru via' and/or 'Test SMT/blind pad'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>160</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_CANT_REPLACE_VIA</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to replace the via padstack as requested.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>161</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PIN_IS_VIA</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pad is a via which is not allowed as per the specified 'Pin type'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>162</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PIN_NOT_VIA</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pad is a pin which is not allowed as per the specified 'Pin type'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>163</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PIN_NOT_OUTPUT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pin is not an output as per the specified 'Pin type'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>164</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PIN_NOT_IO</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pin is not an I/O as per the specified 'Pin type'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>165</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PAD_TOO_SMALL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pad does not meet the specified 'Min pad size'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>166</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PAD_UNDER_COMP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pad is under a component which is not allowed as per 'Allow under component'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>167</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PAD_UNDER_PIN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pad is under a pin.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>168</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PIN_OFF_GRID</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pad is not on the specified 'Test grid'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>169</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PAD_UNDEFINED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pad shape is null.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>170</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PAD_NOT_SMD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pad is not surface mount for 'Test SMT/blind pad'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>171</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PAD_NOT_THRU</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pad is not through hole for 'Test thru via'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>172</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PIN_ALREADY_TEST</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pad is already a testpoint.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>173</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PIN_BRD_SYM</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pad has no net or is a board symbol pin.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>174</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PIN_NOT_TEST</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pad is not a testpoint.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>175</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PIN_TOO_CLOSE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pad is too close to an already existing testpoint.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>176</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PIN_NOT_NODE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pad is not a node as per the specified 'Test method'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>177</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PIN_OUT_OF_BOUNDS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pad is in a NO_PROBE area.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>178</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_PAD_MISMATCH</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Replacement padstack doesn't properly match up with the existing padstack.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>179</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_NO_PIN_VIA_TRACE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pin, via, or trace not found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>180</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_NO_TP_PIN_VIA</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Testpoint pin or via not found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>181</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_NO_PIN_VIA</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pin or via not found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>182</Id>
+    <CDNUSR_DEFINE_NAME>TVMSG_EXECUTING</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Executing thieving ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>183</Id>
+    <CDNUSR_DEFINE_NAME>TVMSG_NO_PROPER_OUTLINE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+A proper outline was not specified for thieving.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>184</Id>
+    <CDNUSR_DEFINE_NAME>TVMSG_VALIDATING_PARAMS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Validating thieving parameters ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>185</Id>
+    <CDNUSR_DEFINE_NAME>TVMSG_INVALID_CLEARANCE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid 'Clearance' ... must be greater than 0.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>186</Id>
+    <CDNUSR_DEFINE_NAME>TVMSG_INVALID_SIZE_X</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid 'Size X' ... must be greater than 0.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>187</Id>
+    <CDNUSR_DEFINE_NAME>TVMSG_INVALID_SIZE_Y</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid 'Size Y' ... must be greater than 0.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>188</Id>
+    <CDNUSR_DEFINE_NAME>TVMSG_INVALID_SPACING_X</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid 'Spacing X' ... must be greater than 0.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>189</Id>
+    <CDNUSR_DEFINE_NAME>TVMSG_INVALID_SPACING_Y</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid 'Spacing Y' ... must be greater than 0.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>190</Id>
+    <CDNUSR_DEFINE_NAME>TVMSG_INVALID_BORDER_WIDTH</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid 'Border width' ... cannot be less than 0.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>191</Id>
+    <CDNUSR_DEFINE_NAME>TVMSG_FUNNY_SPACINGS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Spacings don't look right for the specified size with staggering.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>192</Id>
+    <CDNUSR_DEFINE_NAME>TVMSG_SPACING_X</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Not enough spacing in X for the specified size.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>193</Id>
+    <CDNUSR_DEFINE_NAME>TVMSG_SPACING_Y</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Not enough spacing in Y for the specified size.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>194</Id>
+    <CDNUSR_DEFINE_NAME>TVMSG_CANT_DELETE_SHAPE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to delete the user-digitized shape.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>195</Id>
+    <CDNUSR_DEFINE_NAME>TVMSG_UNABLE_TO_SET</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to set the desired spacing, size, and clearance defaults,
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>196</Id>
+    <CDNUSR_DEFINE_NAME>TVMSG_DIGITIZE_OUTLINE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Digitize the thieving outline ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>197</Id>
+    <CDNUSR_DEFINE_NAME>TVMSG_CANT_FIND_SHAPE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot find the thieving shape ... restart the command.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>198</Id>
+    <CDNUSR_DEFINE_NAME>TVMSG_SHAPE_TOO_SMALL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Thieving shape is too small to process.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>199</Id>
+    <CDNUSR_DEFINE_NAME>TVMSG_NO_SHAPE_LEFT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+There is no eligible space in thieving shape to fill. Pick a larger area or change the parameter so that there is enough area to process
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>200</Id>
+    <CDNUSR_DEFINE_NAME>TVMSG_NUMBER_OF_SHAPES</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Thieving shape was broken into %d new shapes.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>201</Id>
+    <CDNUSR_DEFINE_NAME>TVMSG_NO_GROUP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to create the group for thieving.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>202</Id>
+    <CDNUSR_DEFINE_NAME>TVMSG_CREATING_GROUP</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Thieving group '%s' is being created ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>203</Id>
+    <CDNUSR_DEFINE_NAME>TVMSG_CREATING_PADSTACK</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Thieving padstack '%s' is being created ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>204</Id>
+    <CDNUSR_DEFINE_NAME>TVMSG_CANT_INIT_PADSTACK</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to initialize the fill element padstack.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>205</Id>
+    <CDNUSR_DEFINE_NAME>TVMSG_CANT_FILL_PADSTACK</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to fill the fill element padstack.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>206</Id>
+    <CDNUSR_DEFINE_NAME>TVMSG_CANT_CREATE_PADSTACK</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to create the fill element padstack.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>207</Id>
+    <CDNUSR_DEFINE_NAME>TVMSG_USING_PADSTACK</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Thieving padstack '%s' is being used ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>208</Id>
+    <CDNUSR_DEFINE_NAME>TVMSG_CANT_CREATE_ELEMENT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to create a fill element.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>209</Id>
+    <CDNUSR_DEFINE_NAME>TVMSG_NOTHING_IN_GROUP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Nothing is in the thieving group ... canceled.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>210</Id>
+    <CDNUSR_DEFINE_NAME>TVMSG_CANCELLED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+* * * Thieving CANCELED * * *
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>211</Id>
+    <CDNUSR_DEFINE_NAME>TVMSG_FAIL_VOID_BORDER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to create a void border.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>212</Id>
+    <CDNUSR_DEFINE_NAME>TVMSG_FAIL_SHAPE_BORDER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to create a shape border.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>213</Id>
+    <CDNUSR_DEFINE_NAME>ASMSG_ERROR_PARAM_REC</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error getting parameter record: %d
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>214</Id>
+    <CDNUSR_DEFINE_NAME>ASMSG_CLEARING_TOP</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Clearing Autosilk TOP ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>215</Id>
+    <CDNUSR_DEFINE_NAME>ASMSG_CLEARING_BOTTOM</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Clearing Autosilk BOTTOM ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>216</Id>
+    <CDNUSR_DEFINE_NAME>ASMSG_DISABLE_UPDATING</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Disabling incremental updating ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>217</Id>
+    <CDNUSR_DEFINE_NAME>ASMSG_CANNOT_OPEN_LOG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Could not open the log file ... aborting.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>218</Id>
+    <CDNUSR_DEFINE_NAME>ASMSG_CUT_AND_COPY</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Cutting and copying ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>219</Id>
+    <CDNUSR_DEFINE_NAME>ASMSG_DEHILITE_TOP</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Dehighlighting silkscreen TOP ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>220</Id>
+    <CDNUSR_DEFINE_NAME>ASMSG_DEHILITE_BOTTOM</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Dehighlighting silkscreen BOTTOM ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>221</Id>
+    <CDNUSR_DEFINE_NAME>ASMSG_CANCELLED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+* * * Autosilk CANCELED * * *
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>222</Id>
+    <CDNUSR_DEFINE_NAME>ASMSG_ERROR_TERMINATED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error encountered ... see log file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>223</Id>
+    <CDNUSR_DEFINE_NAME>ASMSG_FINISHED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Autosilk finished ... (Failures: %d)
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>224</Id>
+    <CDNUSR_DEFINE_NAME>ASMSG_AUDIT_TOP</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Auditing Autosilk TOP ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>225</Id>
+    <CDNUSR_DEFINE_NAME>ASMSG_AUDIT_BOTTOM</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Auditing Autosilk BOTTOM ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>226</Id>
+    <CDNUSR_DEFINE_NAME>ASMSG_AUDIT_ERRORS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Audit errors: %d
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>227</Id>
+    <CDNUSR_DEFINE_NAME>ASMSG_FINISHED_AUDIT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Autosilk audit finished ... (Errors: %d)
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>228</Id>
+    <CDNUSR_DEFINE_NAME>NCMSG_ERROR_PARAM_FILE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error reading the NC parameters file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>229</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_CANT_CREATE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot create the file '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>230</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_NO_COLOR_CONFIG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot read the color config file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>231</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_NEGATIVE_VALUE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Negative value of %s was specified for the plot vector text width.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>232</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_DEFAULT_WIDTHS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Defaulting to the photoplot widths.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>233</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_NON_VECTORIZED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Plotting is being performed with non-vectorized text.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>234</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_OUT_OF_BOUNDS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+The plot_shape_spacing is out of bounds ... defaulting to 10 mils.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>235</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_FAILED_TO_SCALE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to scale the shape spacing ... aborting.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>236</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_ERROR_STEP_N</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to initialize plotting (Step %d) to '%s' ... error %d.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>237</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_NO_TEXT_FONTS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Plotter device '%s' does not have any text fonts installed ... plotting aborted.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>238</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_TRY_AGAIN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Try again after verifying the system installation of text fonts for the plotter device.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>239</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_FONT_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Font '%s' for non-vectorized text was not found ... plotting aborted..
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>240</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_TRY_VIEW</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Try 'View available fonts' in Plot Setup ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>241</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_MIRRORING_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Text mirroring failed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>242</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_FONT_NOT_CREATED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Text font for non-vectorized text was not created.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>243</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_SYSTEM_DEFAULTS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+System default printer and settings being used ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>244</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_PAPER_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Plotter device '%s' does not have '%s' paper.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>245</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_NOT_ON_UNIX</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Plot Preview is not available on UNIX platforms.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>246</Id>
+    <CDNUSR_DEFINE_NAME>NCCMSG_PADSTACKS_ASSOCIATED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Padstacks associated with hole # %d ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>247</Id>
+    <CDNUSR_DEFINE_NAME>NCCMSG_PADSTACK</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+  %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>248</Id>
+    <CDNUSR_DEFINE_NAME>NCCMSG_CONFIRM_AUTOGEN</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Do you really want to perform auto generation of drill/slot hole symbols?
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>249</Id>
+    <CDNUSR_DEFINE_NAME>NCCMSG_CANNOT_SAVE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot save with validation errors.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>250</Id>
+    <CDNUSR_DEFINE_NAME>NCCMSG_NO_UPDATING</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Validation errors ... updating not performed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>251</Id>
+    <CDNUSR_DEFINE_NAME>NCCMSG_NO_LIB_PADSTACK</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Library padstack %s not found ... using design padstack.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>252</Id>
+    <CDNUSR_DEFINE_NAME>NCCMSG_VALIDATING</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Validating ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>253</Id>
+    <CDNUSR_DEFINE_NAME>NCCMSG_YELLOW_FLAGS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+YELLOW flags a complete hole definition as identical to the indicated hole # ... could 'Merge'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>254</Id>
+    <CDNUSR_DEFINE_NAME>NCCMSG_RED_FLAGS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+RED flags a hole symbol definition as identical to that of the indicated hole # ... must resolve.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>255</Id>
+    <CDNUSR_DEFINE_NAME>NCCMSG_NO_ERRORS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+No validation errors detected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>256</Id>
+    <CDNUSR_DEFINE_NAME>NCCMSG_UPDATING_PADSTACKS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Updating design padstacks for hole %d ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>257</Id>
+    <CDNUSR_DEFINE_NAME>NCCMSG_WRITING_REPORT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Writing drill customization report file 'drill_customization.%s' ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>258</Id>
+    <CDNUSR_DEFINE_NAME>NCCMSG_CONFIRM_MERGING</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Do you really want to perform merging of drill/slot holes?
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>259</Id>
+    <CDNUSR_DEFINE_NAME>NCCMSG_CONFIRM_RESET_DESIGN</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Do you really want to reset to design padstack settings?
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>260</Id>
+    <CDNUSR_DEFINE_NAME>NCCMSG_CONFIRM_UPDATING</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Do you really want to update the design padstacks with the customization changes?
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>261</Id>
+    <CDNUSR_DEFINE_NAME>NCCMSG_CONFIRM_RESET_LIBRARY_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+The results of reseting to library padstack settings may be unpredictable if the library and design padstacks differ significantly in more than just the data that is customizable within Drill Customization.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>262</Id>
+    <CDNUSR_DEFINE_NAME>NCCMSG_CONFIRM_RESET_LIBRARY_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Do you really want to reset to library padstack settings?
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>263</Id>
+    <CDNUSR_DEFINE_NAME>NCCMSG_CONFIRM_UPDATING_B_1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Do you want to update the design padstacks with the customization changes before exiting?
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>264</Id>
+    <CDNUSR_DEFINE_NAME>NCCMSG_CONFIRM_UPDATING_B_2</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Changes will not be saved if there are validation errors.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>265</Id>
+    <CDNUSR_DEFINE_NAME>TVMSG_SHAPE_TOO_COMPLEX</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Thieving could not be generated within the specified outline.
+    </Desc>
+    <ExtDesc>
+There were unspecified problems in trying to determine what areas within the
+specified thieving outline could in fact be filled with the thieving pattern.
+It is typically due to complexities involved with what is on the design and
+within the specified outline that need to be avoided by the thieving.
+
+Suggestions to try and get thieving generated are to try a somewhat different
+outline, or to instead try a number of smaller outlines to reduce the complexity
+of what is within each outline.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>266</Id>
+    <CDNUSR_DEFINE_NAME>BDMSG_INVALID_FROM_LAYER</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Specified 'From Layer' is not valid with the current 'To Layer'.
+    </Desc>
+    <ExtDesc>
+Backdrilling cannot have the 'From Layer' set to the top layer if the current
+'To Layer' is the bottom layer. Similarly the 'From Layer' cannot be set to
+the bottom layer if the current 'To Layer' is the top layer. In other words
+backdrilling through all layers of a design is not allowed.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>267</Id>
+    <CDNUSR_DEFINE_NAME>BDMSG_INVALID_TO_LAYER</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Specified 'To Layer' is not valid with the current 'From Layer'.
+    </Desc>
+    <ExtDesc>
+Backdrilling cannot have the 'To Layer' set to the bottom layer if the current
+'From Layer' is the top layer. Similarly the 'To Layer' cannot be set to
+the top layer if the current 'From Layer' is the bottom layer. In other words
+backdrilling through all layers of a design is not allowed.
+
+The 'To Layer' can also not be set to the top or bottom layer of a design if
+the current 'From Layer' is an internal layer of the design.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>268</Id>
+    <CDNUSR_DEFINE_NAME>BDMSG_OPTIONAL_PLATING</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Design contains padstacks with a plating status of 'Optional' that are being ignored by backdrilling.
+    </Desc>
+    <ExtDesc>
+Backdrilling only looks at pins and vias whose padstacks have a plating status of
+'Plated' in the padstack editor. Pins and vias whose padstacks have a plating status
+of 'Non-Plated' or 'Optional' will be ignored for backdrilling purposes.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>269</Id>
+    <CDNUSR_DEFINE_NAME>NCMSG_SLOT_HOLES</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Design contains slot holes that cannot be drilled. They can be processed by NC Route instead.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>270</Id>
+    <CDNUSR_DEFINE_NAME>NCMSG_NO_ROOT_FILE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No 'Root file name' for output specified.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>271</Id>
+    <CDNUSR_DEFINE_NAME>NCMSG_NO_FILE_NAME</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No 'File name' for output specified.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>272</Id>
+    <CDNUSR_DEFINE_NAME>NCMSG_NO_PARAM_FILE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+NC Parameters file 'nc_param.txt' not found ... loading defaults.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>273</Id>
+    <CDNUSR_DEFINE_NAME>NCMSG_ERR_PARAM_FILE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Error reading NC Parameters file 'nc_param.txt' ... loading defaults.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>274</Id>
+    <CDNUSR_DEFINE_NAME>NCMSG_NAME_VALUE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+NC Parameters file requires name/value pairs ... line %d ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>275</Id>
+    <CDNUSR_DEFINE_NAME>NCMSG_PARAM_OBSOLETE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+NC Parameters file setting '%s' is obsolete ... ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>276</Id>
+    <CDNUSR_DEFINE_NAME>NCMSG_PARAM_UNKNOWN</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+NC Parameters file keyword '%s' is not supported.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>277</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_EXTRACTING</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Extracting the routing data from the database ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>278</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_AUTO_BIT_FILE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Auto-generating tool file 'ncroutebits_auto.txt' ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>279</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_PATHS_TERMINATED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+There was an error while processing the route path extract file ... Program terminated.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>280</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_PATHS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Processing route path data ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>281</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_PATHS_PLATING</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Processing %s route path data ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>282</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_OPEN_TERMINATED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+There was an error while opening the output file '%s' ... Program terminated.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>283</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_SLOTS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Processing slot hole data ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>284</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_SLOTS_PLATING</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Processing %s slot hole data ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>285</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_SLOTS_TERMINATED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+There was an error while processing the slot hole extract file ... Program terminated.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>286</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_FILE_CREATED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+NC Route file '%s' created ...  
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>287</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_COMPLETED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Program completed%s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>288</Id>
+    <CDNUSR_DEFINE_NAME>NCMSG_DONE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Done.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>289</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_TERMINATE_DETECTED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Request to terminate detected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>290</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_TERMINATING</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+NC Route terminating due to an error.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>291</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_TERMINATING_2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+NC Route terminating due to an error ... see 'ncroute.log'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>292</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_PRE_ROUTE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pre_processing route path data ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>293</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_PRE_ROUTE_PLATING</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pre_processing %s route path data ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>294</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_MISSING_SUBCLASS_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Missing 'NCROUTE_PATH' and/or 'NCROUTE_PLATED' subclass on BOARD GEOMETRY.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>295</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_MISSING_SUBCLASS_2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Add the appropriate layer(s) and re-run the program.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>296</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_NO_ROUTE_PATHS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No route path data was found for processing.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>297</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_OPTIMIZING</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Optimizing route path data ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>298</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_TEMP_FILE_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot open temporary data file ... Terminating.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>299</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_SORT_FILE_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot re-open temporary data file after sorting ... Terminating.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>300</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_NO_TOOLCODE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No toolcode of size %f found in '%s' ... Defaulting to T01.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>301</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_NO_START_PTS_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No start point indicators found on the board.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>302</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_NO_START_PTS_2</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Start and end points for route paths will be selected at random.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>303</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_NO_START_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+%s point indicator(s) not found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>304</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_NO_START_2</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Start point and direction selected at random at (%f %f).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>305</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_NOT_SEQUENTIAL_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+First and second point indicators must be sequential.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>306</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_NOT_SEQUENTIAL_2</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Selected at random at (%f, %f).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>307</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_NO_START_A</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Start point indicator for route at (%f %f) not found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>308</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_NO_START_B</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Start point chosen at random.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>309</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_EXPLANATION_1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+EXPLANATION OF 'START POINT INDICATORS' ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>310</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_EXPLANATION_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+The direction in which a route path is cut can be
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>311</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_EXPLANATION_3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+controlled by adding the character '1' at (or near)
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>312</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_EXPLANATION_4</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+the vertex that you want to be the start point of the cut.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>313</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_EXPLANATION_5</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+This character (referred to as a 'start point indicator')
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>314</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_EXPLANATION_6</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+is added by using the ADD TEXT command.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>315</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_EXPLANATION_7</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+In the case of a complete loop, direction can be specified
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>316</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_EXPLANATION_8</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+by adding the character '1' at the first point on the path
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>317</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_EXPLANATION_9</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+and the character '2' at the second point along the path.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>318</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_NO_TOOLCODE_RECT</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No toolcode of a size smaller than %f found for a RECTANGLE slot ... Defaulting to T01.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>319</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_NO_TOOLCODE_OVAL</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No toolcode of a size the same as or smaller than %f found for an OVAL slot ... Defaulting to T01.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>320</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_OVAL_SLOTS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+OVAL      slots routed: %d
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>321</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_RECT_SLOTS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+RECTANGLE slots routed: %d
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>322</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_NO_SLOTS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No slot holes were found for processing.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>323</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_NO_SLOTS_PLATING</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No %s slot holes were found for processing.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>324</Id>
+    <CDNUSR_DEFINE_NAME>NCPMSG_PARAMETERS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Processing NC Parameters file 'nc_param.txt' ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>325</Id>
+    <CDNUSR_DEFINE_NAME>NCPMSG_NO_PARAMETERS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No NC Parameters file found under the search path defined 
+in environment variable 'ncdpath' ... using defaults.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>326</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_NO_BIT_FILE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cannot find NC Route bit tool file 'ncroutebits.txt'
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>327</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_AUTO_BIT_FILE_2</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+... will auto-generate bit tool file 'ncroutebits_auto.txt'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>328</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_ERROR_BIT_FILE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to open router bit tool file '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>329</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_PROCESSING_BIT_FILE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Processing router bit tool file '%s' ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>330</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_BAD_HOLE_SIZE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Bad hole size: %s ... line ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>331</Id>
+    <CDNUSR_DEFINE_NAME>NCRMSG_BAD_TOOL_NAME</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Bad tool name: %s ... line ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>332</Id>
+    <CDNUSR_DEFINE_NAME>NCMSG_NO_ERRORS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+No errors found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>333</Id>
+    <CDNUSR_DEFINE_NAME>NCDMSG_LOG_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+There was an error opening the log file '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>334</Id>
+    <CDNUSR_DEFINE_NAME>NCDMSG_EXTRACTING</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Extracting the drilling data from the database ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>335</Id>
+    <CDNUSR_DEFINE_NAME>NCDMSG_EXTRACT_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+There was an error extracting the drilling data.
+    </Desc>
+    <ExtDesc>
+This may be due to the environment variable TEXTPATH not containing the default 
+Cadence extracta view file directory (share/pcb/text/views).
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>336</Id>
+    <CDNUSR_DEFINE_NAME>NCDMSG_TERMINATED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Program terminated.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>337</Id>
+    <CDNUSR_DEFINE_NAME>NCPMSG_ERROR_PARAMETERS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Errors were found in the NC Parameters file ... using defaults.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>338</Id>
+    <CDNUSR_DEFINE_NAME>NCDMSG_ERROR_EXCLUDED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Errors were found in the excluded drill file ... check log file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>339</Id>
+    <CDNUSR_DEFINE_NAME>NCDMSG_ERROR_TOOL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Errors were found in the tool file ... check log file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>340</Id>
+    <CDNUSR_DEFINE_NAME>NCDMSG_ILLEGAL_SCALE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal scale value ... %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>341</Id>
+    <CDNUSR_DEFINE_NAME>NCDMSG_ZERO_SCALE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Zero scale value is illegal.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>342</Id>
+    <CDNUSR_DEFINE_NAME>NCPMSG_NAME_VALUE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+'%s.txt' file requires name/value pairs ... line %d ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>343</Id>
+    <CDNUSR_DEFINE_NAME>NCPMSG_INVALID_KEYWORD</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Invalid keyword %s in parameter file '%s.txt' ... line %d.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>344</Id>
+    <CDNUSR_DEFINE_NAME>NCDMSG_NO_EXTRACT_FILE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Extract data file to create drill outputs does not exist.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>345</Id>
+    <CDNUSR_DEFINE_NAME>NCDMSG_OUTPUT_DIR</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Drill files being output to directory '%s' ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>346</Id>
+    <CDNUSR_DEFINE_NAME>NCDMSG_NO_HOLES</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No holes were found in this drawing.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>347</Id>
+    <CDNUSR_DEFINE_NAME>NCDMSG_SKIP_TOOL</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Some toolcodes were not found in the 'nc_tools.txt' tool file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>348</Id>
+    <CDNUSR_DEFINE_NAME>NCDMSG_OUTPUT_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot write to the output file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>349</Id>
+    <CDNUSR_DEFINE_NAME>NCDMSG_CREATING_DRILL</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Creating file '%s' for holes connecting %s and %s %s ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>350</Id>
+    <CDNUSR_DEFINE_NAME>NCDMSG_CREATING_BDRILL</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Creating file '%s' for backdrilling holes from layer %s to layer %s ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>351</Id>
+    <CDNUSR_DEFINE_NAME>NCDMSG_DUPLICATE_HOLE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Duplicate hole at (%f %f) ... ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>352</Id>
+    <CDNUSR_DEFINE_NAME>NCDMSG_AUTO_TOOL_FILE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Auto-generating tool file 'nc_tools_auto.txt' ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>353</Id>
+    <CDNUSR_DEFINE_NAME>NCDMSG_EXCLUDE_FILE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Processing the exclude drill file 'nc_exclude.txt' ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>354</Id>
+    <CDNUSR_DEFINE_NAME>NCDMSG_BAD_HOLE_SIZE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Bad hole size: %s 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>355</Id>
+    <CDNUSR_DEFINE_NAME>NCDMSG_BAD_PLATING_CODE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Bad plating code: %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>356</Id>
+    <CDNUSR_DEFINE_NAME>NCDMSG_EXCLUDED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+EXCLUDED: Hole size '%s' with plating code '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>357</Id>
+    <CDNUSR_DEFINE_NAME>NCDMSG_MACHINE_OFFSET</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error processing design units for the machine offset.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>358</Id>
+    <CDNUSR_DEFINE_NAME>NCDMSG_PRECISION_SAME</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Design precision is the same as that of the drill output file data.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>359</Id>
+    <CDNUSR_DEFINE_NAME>NCDMSG_PRECISION_SAME_2</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Data rounding errors may still be possible.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>360</Id>
+    <CDNUSR_DEFINE_NAME>NCDMSG_PRECISION_GREATER</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Design precision is greater than that of the drill output file data.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>361</Id>
+    <CDNUSR_DEFINE_NAME>NCDMSG_PRECISION_GREATER_2</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Data rounding errors are very possible.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>362</Id>
+    <CDNUSR_DEFINE_NAME>NCDMSG_INTEGER_PLACES</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The number of places, %d, defined for integer values is less than the places required, %d, for integer values of coordinates of drill locations in the design. Increase the format value for integers in the NC parameter file to generate the proper output.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>363</Id>
+    <CDNUSR_DEFINE_NAME>NCDMSG_SWITCHING_UNITS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Units system is being switched when generating drill output file data.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>364</Id>
+    <CDNUSR_DEFINE_NAME>NCDMSG_ERROR_WRITING</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+There was an error while writing the drill files ... Terminating.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>365</Id>
+    <CDNUSR_DEFINE_NAME>NCDMSG_SLOT_HOLES</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+This design contains %d slot holes that cannot be drilled.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>366</Id>
+    <CDNUSR_DEFINE_NAME>NCDMSG_SLOT_HOLES_2</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+They can be processed by NC routing instead.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>367</Id>
+    <CDNUSR_DEFINE_NAME>NCDMSG_SORTING</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Sorting the drill data ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>368</Id>
+    <CDNUSR_DEFINE_NAME>NCDMSG_NO_TOOL_FILE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cannot find NC Drill tool file 'nc_tools.txt'
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>369</Id>
+    <CDNUSR_DEFINE_NAME>NCDMSG_AUTO_TOOL_FILE_2</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+... will auto-generate tool file 'nc_tools_auto.txt'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>370</Id>
+    <CDNUSR_DEFINE_NAME>NCDMSG_BAD_HOLE_SIZE_2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Bad hole size '%s' on line %d.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>371</Id>
+    <CDNUSR_DEFINE_NAME>NCDMSG_BAD_PLATING_CODE_2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Bad plating code '%s' on line %d.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>372</Id>
+    <CDNUSR_DEFINE_NAME>NCDMSG_BAD_TOOL_CODE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Bad tool code '%s' on line %d.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>373</Id>
+    <CDNUSR_DEFINE_NAME>NCDMSG_DUPLICATE_TOOL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Duplicated tool code '%s' on line %d.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>374</Id>
+    <CDNUSR_DEFINE_NAME>NCDMSG_SAME_DEFINITION</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Tool '%s' on line %d is the same as tool '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>375</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_BW_HOLES</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Holes will generally not appear in a 'Black and white' plot.
+    </Desc>
+    <ExtDesc>
+Holes are currently enabled for display/plotting, but will generally not appear
+in a plot as 'Black and white' plots have been enabled in Plot Setup. Holes are
+displayed in the currently specified color, but any color (including white)
+is converted to black for a black and white plot. A padless hole will appear
+though as the black hole will not be inside a black pad.
+
+Holes will appear in a 'Color' plot, likely even if a color plot is sent to a
+non-color printer if the plot in fact comes out grayscale. The exception to
+this however with 'Color' plots would be a padless hole where the color of
+the hole and the color of the plot background are the same (e.g. a white
+padless hole that is plotted on white paper).
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>376</Id>
+    <CDNUSR_DEFINE_NAME>TVMSG_ZERO_LENGTH_LINE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot perform line style thieving with a zero length line element (Size X = Y).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>377</Id>
+    <CDNUSR_DEFINE_NAME>TVMSG_PADSTACK_USED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Padstack %s currently used and assigned to a different layer. Switch users of this padstack to a different stack.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>378</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_CANT_OPEN_INPUT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to open the input file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>379</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_UNKNOWN_ANGLE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Unknown angle ... using 0 degrees.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>380</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_ERROR_DETAIL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error encountered in creating detail.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>381</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_PLACING_DETAIL</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Placing the detail ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>382</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_CANCEL_ABORT</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cancel detected ... Creation of detail aborted.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>383</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_COMPLETED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Loading of plot data completed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>384</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_OUT_OF_EXTENTS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Data is out of extents. Pick again ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>385</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_ARC_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error processing arc ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>386</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_ARC_DATA1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Center = (%s, %s) Radius = %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>387</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_ARC_DATA2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Start Point = (%s, %s) End Point = (%s, %s)
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>388</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_DRAWING_SIZE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot read the drawing size.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>389</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_WINDOW_SIZE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot read the window size.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>390</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_TEXT_SIZE_DATA</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot read the text size data.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>391</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_ILLEGAL_PEN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal pen number.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>392</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_LINE_DATA</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot read the line data.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>393</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_ERROR_ABORT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error encountered in conversion or display processing. Loading of plot aborted.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>394</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_CANCEL_ABORT2</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cancel detected ... Loading of plot aborted.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>395</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_DATA_FIT</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Plot data will only fit rotated 90 or 270 degrees.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>396</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_DATA_FIT2</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Plot data is larger than the drawing size. Scale by approximately %f to place.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>397</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_NULL_TEXT</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Null text string at (%s, %s) ... ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>398</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_LOADING_DATA</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Loading the plot data file ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>399</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_DATA_FIT3</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Plot data does not fit in the current drawing size.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>400</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_SUBCLASS_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error processing the subclass.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>401</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_ARC_OUTSIDE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Arc outside of drawing extents ... cannot continue.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>402</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_ARC_ERROR2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error %d while processing arc data.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>403</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_TEXT_OUTSIDE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Text outside of drawing extents ... cannot continue.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>404</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_TEXT_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error %d while processing text data.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>405</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_RECTANGLE_OUTSIDE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Filled rectangle outside of drawing extents ... cannot continue.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>406</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_RECTANGLE_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error %d while processing filled rectangle data.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>407</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_FIGURE_OUTSIDE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Figure outside of drawing extents ... cannot continue.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>408</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_FIGURE_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error %d while processing figure data.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>409</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_LINE_OUTSIDE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Line outside of drawing extents ... cannot continue.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>410</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_LINE_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error %d while processing line data.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>411</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_HOLE_OUTSIDE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Hole outside of drawing extents ... cannot continue.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>412</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_HOLE_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error %d while processing hole data.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>413</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_POLYGON_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error %d while processing polygon data.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>414</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_UNKNOWN_ELEMENT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unknown element type %d.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>415</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_RESEQ_PROBE_NUMBER</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cannot resequence testpoint %s as net %s has the PROBE_NUMBER property.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>416</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_BACDRILL_DATA_EXIST</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cannot add testpoint due to existing backdrill data.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+      <Id>417</Id>
+      <CDNUSR_DEFINE_NAME>TVMSG_INVALID_OFFSET_X</CDNUSR_DEFINE_NAME>
+      <Category>E</Category>
+      <Desc>
+          Invalid 'Offset X' ... cannot be less than 0 or greater than Pitch X.
+      </Desc>
+      <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+      <Id>418</Id>
+      <CDNUSR_DEFINE_NAME>TVMSG_INVALID_OFFSET_Y</CDNUSR_DEFINE_NAME>
+      <Category>E</Category>
+      <Desc>
+          Invalid 'Offset Y' ... cannot be less than 0 or greater than Pitch Y.
+      </Desc>
+      <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+      <Id>419</Id>
+      <CDNUSR_DEFINE_NAME>TVMSG_INVALID_ARRAY_ANGLE</CDNUSR_DEFINE_NAME>
+      <Category>E</Category>
+      <Desc>
+          Invalid 'Array angle' ... cannot be less than -90 or greater than +90.
+      </Desc>
+      <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+      <Id>420</Id>
+      <CDNUSR_DEFINE_NAME>TVMSG_INVALID_OFFSET_NX</CDNUSR_DEFINE_NAME>
+      <Category>E</Category>
+      <Desc>
+          Invalid 'Offset Nx' ... cannot be less than 0 or greater than Pitch X.
+      </Desc>
+      <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+      <Id>421</Id>
+      <CDNUSR_DEFINE_NAME>TVMSG_INVALID_OFFSET_NY</CDNUSR_DEFINE_NAME>
+      <Category>E</Category>
+      <Desc>
+          Invalid 'Offset Ny' ... cannot be less than 0 or greater than Pitch Y.
+      </Desc>
+      <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+      <Id>422</Id>
+      <CDNUSR_DEFINE_NAME>TVMSG_INVALID_BORDER_CLR</CDNUSR_DEFINE_NAME>
+      <Category>E</Category>
+      <Desc>
+          Invalid 'Border clearance' ... cannot be less than 0.
+      </Desc>
+      <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+      <Id>423</Id>
+      <CDNUSR_DEFINE_NAME>TVMSG_INVALID_MASK_NAME</CDNUSR_DEFINE_NAME>
+      <Category>E</Category>
+      <Desc>
+          Invalid 'Mask layer name' ... cannot be empty string.
+      </Desc>
+      <Output>C</Output>
+  </Msg>
+
+  <Msg>
+      <Id>424</Id>
+      <CDNUSR_DEFINE_NAME>TVMSG_WORKING_GROUP</CDNUSR_DEFINE_NAME>
+      <Category>
+          I
+          <Sub-Category>P</Sub-Category>
+      </Category>
+      <Desc>
+          Thieving group '%s' is being used ...
+      </Desc>
+      <Output>C</Output>
+  </Msg>
+
+  <Msg>
+      <Id>425</Id>
+      <CDNUSR_DEFINE_NAME>TVMSG_CHOSEN_GROUP</CDNUSR_DEFINE_NAME>
+      <Category>
+          I
+          <Sub-Category>P</Sub-Category>
+      </Category>
+      <Desc>
+          Thieving group '%s' is chosen ...
+      </Desc>
+      <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>426</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_UPD_TPLBL</CDNUSR_DEFINE_NAME>
+    <Category>
+      I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+      Updating testpoint labels with net names ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>427</Id>
+    <CDNUSR_DEFINE_NAME>TPMSG_TPUPD_DONE</CDNUSR_DEFINE_NAME>
+    <Category>
+      I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+      %s%d testpoint labels were updated.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>428</Id>
+    <CDNUSR_DEFINE_NAME>PFMSG_NO_PRINTER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No Printer has been configured, Quitting ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+    <Msg>
+    <Id>429</Id>
+    <CDNUSR_DEFINE_NAME>SINGLE_EXPORT_GERBER_RECORD_WARNING</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+The current Gerber layer definitions will be replaced with the new definitions based on the default configuration file. The current Gerber layer definitions will be saved to %s and can be restored in a layout editor, if needed. Do you want to replace the current Gerber layer definitions?
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+</MsgFile>

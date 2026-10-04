@@ -1,0 +1,84 @@
+FILE_TYPE=FORM_DEFN VERSION=2
+FORM
+FIXED
+PORT 50 21
+HEADER "Update Front-End Height Property"
+
+
+TILE
+TABSET "1"
+FLOC 1 1
+FSIZE 48 40
+TAB "Single PlaceBounds"
+FIELD Tree_Single
+FLOC 3 1
+TREEVIEW  40 15
+ENDFIELD
+FIELD Update_Height_Single
+FLOC 3 32
+MENUBUTTON "Update Height" 4 3
+ENDFIELD
+FIELD Select_All_Single
+FLOC 20 32
+MENUBUTTON "Select All" 4 3
+ENDFIELD
+FIELD DeSelect_All_Single
+FLOC 30 32
+MENUBUTTON "Deselect All" 4 3
+ENDFIELD
+
+ENDTAB
+TAB "Multiple Place Bounds"
+TEXT "Components"
+TLOC 3 1
+ENDTEXT
+FIELD Comp_List_Field
+FLOC 3 3
+LIST "" 35 7
+ENDFIELD
+
+TEXT "Place_bounds"
+TLOC 3 18
+ENDTEXT
+
+FIELD PLCB_List_Field
+FLOC 3 20
+LIST "" 35 4
+ENDFIELD
+TEXT "Comp Height"
+TLOC 3 28
+ENDTEXT
+
+TEXT
+TLOC 15 28
+INFO Comp_Height_Msg_Field 15
+ENDTEXT
+
+TEXT "PlcBnd Height"
+TLOC 3 30
+ENDTEXT
+
+TEXT
+TLOC 15 30
+INFO PLCB_Height_Msg_Field 15
+ENDTEXT
+FIELD Update_Height_Mult
+FLOC 3 34
+MENUBUTTON "Update Height" 4 3
+ENDFIELD
+
+ENDTAB
+ENDTABSET
+FIELD Reread_Db
+FLOC 6 42
+MENUBUTTON "Reread DB" 4 3
+ENDFIELD
+
+FIELD Exit_Field
+FLOC 33 42
+MENUBUTTON " Exit " 4 3
+ENDFIELD
+
+ENDTILE
+
+ENDFORM

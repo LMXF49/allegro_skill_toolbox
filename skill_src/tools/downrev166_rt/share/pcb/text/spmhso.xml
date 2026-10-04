@@ -1,0 +1,32 @@
+<MsgFile>
+    <Msg>
+        <Id>1</Id>
+        <CDNUSR_DEFINE_NAME>STREAM_UI_DEGASOOD</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Degas shapes are out of date, update the shapes manually.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>2</Id>
+        <CDNUSR_DEFINE_NAME>STREAM_DEGASOOD_DISABLE_1</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+Disabling out-of-date checks for degassing. %d degassed shapes are out-of-date. Generated file may not be correct for degassing rules.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>3</Id>
+        <CDNUSR_DEFINE_NAME>STREAM_UI_DEGASOOD_CONFIRM</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+Generated shapes may not be correct for degassing rules because degassed shapes are out-of-date. Do you want to proceed?
+
+Add the design-level property DEGAS_DISABLE_OOD_CHECKS to not see this message again.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+</MsgFile>
+

@@ -1,0 +1,683 @@
+<MsgFile>
+
+  <Msg>
+    <Id>1</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_STANDARD_RULES_CHECKER</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Standard Rules Checker is currently under development.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>2</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_CUSTOM_RULES_CHECKER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The Custom Rules portion of the Assembly Design Rule Checker feature is not available prior to release 16.0. As of that release, it will be available only in Cadence SiP Digital Layout GXL.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>3</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_NOT_LICENSED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The Assembly Design Rule Checker is not available in this product. It is only available in Cadence SiP Digital Layout GXL, releases 15.7 and newer.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>4</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_STD_RULE_GROUP_ALL</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+All Standard Rules
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>5</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_STD_RULE_GROUP_WIRE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Wire Rules
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>6</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_STD_RULE_GROUP_DIE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Die Rules
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>7</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_STD_RULE_GROUP_OPTICAL</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Optical Rules
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>8</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_STD_RULE_GROUP_MISC</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Miscellaneous Rules
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>9</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_MISSING_ERROR_MESSAGE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error occurred but error message unavailable. Contact development. This message is a placeholder for a real message still awaiting the build process.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>10</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_ERROR_ENCOUNTERED_SETUP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error during Assembly Rules Data Checker traversal of the design during set-up. See previous or next message for details.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>11</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_UNABLE_TO_SETUP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to set up data structures prior to performing Assembly Rules Data Checks.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>12</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_COMP_NOT_IN_GROUP2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Component %s should belong to a %s group, but does not. Run uprev on this design.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>13</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_DIE_ALREADY_IN_DIE_LIST1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Possible database corruption. Two component instances with same refdes %s, or same component found multiple times, in traversal of database. Run DBDoctor.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>14</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_NO_DRAWING_NAME</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Database error. Unable to get drawing name. Run DBDoctor to correct the error. Your settings will not be loaded or saved.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>15</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_EMPTY_INI_FILE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Settings file is empty or doesn't exist. ADRC uprev will not run.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>16</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_UNABLE_SAVE_RULE_SETTINGS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to save your current settings. Next time you will run Assembly Rules Checks your current settings will not be loaded.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>17</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_UNABLE_LOAD_RULE_SETTINGS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to load user settings from INI file. You can run the rules, but have to enter your settings. Current settings on the form are default settings.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>18</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_UNABLE_TO_RUN_RULE1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to run rule %s.  Execution of the rules following this one is stopped.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>19</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_CHECK_PREV_MESSAGES</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Check previous messages for more details.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>20</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_ERROR_IN_WIRE2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error in wire at location %s to %s:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>21</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_NO_SOURCE_PIN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No source pin.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>22</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_SOURCE_NO_PIN_NOR_FINGER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Source is neither Pin nor Finger.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>23</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_NO_DESTINATION</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No destination Pin, Finger, or Shape. If it appears that there is a finger there, make sure it has a BOND_PAD property.If it appears that there is a pin there, make sure that the wire and pins are not on Dummy Nets.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>24</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_DEST_NO_PIN_NOR_FINGER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Destination is not Pin, Finger or Shape.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>25</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_WIRE_NOT_TESTED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The wire will not be tested in the Assembly Rules Checks.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>26</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_0_TOTAL_VIOLATIONS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+ADRC: Found 0 violations of the selected rule(s).
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>27</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_1_TOTAL_VIOLATIONS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+ADRC: Found 1 violation of the selected rule(s) and generated a DRC marker.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>28</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_TOTAL_VIOLATIONS1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+ADRC: Found %s violations of the selected rule(s) in the design and generated DRC markers.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>29</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_UPREV_REQUIRED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Wire bond group information not found. Run 'wirebond uprev' then try again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>30</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_UNWIRED_FINGERS1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+There are %s bond fingers in the design that don't have wire attached. These bond fingers will not be tested in the Assembly Rules Checks.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>31</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_PROP_FILE_NOT_FOUND1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to find ADRC Properties file %s in any of the directories in the techpath variable.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>32</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_PROP_DTD_NOT_FOUND2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to find DTD file %s declared in ADRC Properties file %s in any of the directories in the techpath variable.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>33</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_PROP_PARSER_INIT_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to initialize the ADRC Properties file parser. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>34</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_PROP_INVALID_RULE3</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Unknown rule %s of type %s encountered in ADRC Properties file %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>35</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_PROP_ATTRIBUTES_NOT_SUPP</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Attributes found in ADRC Properties file %s are not supported.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>36</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_PROP_INVALID_CONSTRAINT3</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unknown constraint %s in rule %s encountered in ADRC Properties file %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>37</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_PROP_INVALID_PROPERTY3</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unknown property %s in rule %s encountered in ADRC Properties file %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>38</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_PROP_PARSER_FAILED2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Parsing of ADRC Properties file %s failed with the message: %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>39</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_PROP_RULE_NOT_FOUND1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Parsing of ADRC Properties file %s failed because the following rule(s) were not found: 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>40</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_PROP_INVALID_PARAM_VALUE3</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Incorrect value %s specified for constraint or property %s for rule %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>41</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_PROP_MORETHANONE_DEFAULT2</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+More than one set of default constraints are specified for rule %s in ADRC Properties file %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>42</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_PROP_MISSING_CONSTRAINTS3</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The following constraints are missing for rule %s in ADRC Properties file %s: %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>43</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_PROP_SCOPE_CONFLICT2</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+adrcScope is set for rule %s in ADRC Properties file %s and wireProfile and otherWireProfile do not match. No wires that match this subrule will be tested.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>44</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_USER_CANCEL</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+ADRC Rule checks have halted because the Stop button was pressed.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>45</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_CALC_ABS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Calculations will be done using Constraints in absolute units.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>46</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_CALC_PRCNT1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Calculations will be done using Constraints as a percent of %s.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>47</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_TOTAL_UNCHECKED_OBJ1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+There are %s unchecked objects in the design.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>48</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_ADD_EXTENTION1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Extension %s was added to the file name.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>49</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_FILE_NAME_INVALID</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Report File Name contains invalid characters. Enter valid file name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>50</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_FILE_IN_CURDIR1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Path specified in ADS_SDREPORT variable is invalid. Report will be created in %s directory.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>51</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_REPORT_FILE_NOT_OPEN1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Report File %s cannot be created. Execution of the rules is stopped. Enter valid file name and try to run rules again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>52</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_DIE_ROTATION</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Assembly rules checks cannot check die stack where dies are rotated relative to each other at any angle other then divisible by 90 degrees.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>53</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_NOT_SPPRT_FIN2FIN_WB</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Current version of software does not support any assembly rule checks for finger-to-finger wire bonds.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>54</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_WRONG_CONSTRAINT3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Rule %s adrcSetConstraint function - Unknown constraint %s - value %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>55</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_NAME_PROP_RULE_NOT_FOUND1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%s 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  <Msg>
+    <Id>56</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_WRONG_CONSTRAINT_VALUE2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+adrcSetConstraintTombstoneCheck - Value %s for constraint %d is invalid.\nUsed default value for this constraint.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+   <Msg>
+    <Id>57</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_SOLDERMASK_OBJ_NOT_FOUND1</CDNUSR_DEFINE_NAME>
+    <Category>E </Category>
+    <Desc>
+There is a violation at location %s. Due to internal error, DRC marker for this violation could not be created.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>58</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_PROP_INVALID_SYNTAX1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Syntax error in processing the ADRC Properties file '%s'. Check the XML file against the DTD.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  <Msg>
+    <Id>59</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_WIRE_NO_PIN_FINGER1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+There are %s wires in the design that have no source and destination pin or finger. These wires will not be tested in Assembly Rules Checks.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  <Msg>
+    <Id>60</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_NO_VALID_CONSTRAINT1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+        No valid constraint found for rule %s. The rule will not run. Check constraint manager and enter valid constraint.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  <Msg>
+    <Id>61</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_CONSTR_TYPE_MISMATCH1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+        Min and Max constraints for rule %s must be in the same units ( percent or absolute values). The rule will not run. Check constraint manager and enter valid constraint.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  <Msg>
+    <Id>62</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_0_CHECKS_RUN</CDNUSR_DEFINE_NAME>
+    <Category>
+      I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+      ADRC: No rules were selected.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+  <Msg>
+    <Id>63</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_RULES_NO_CONSTRAINTS</CDNUSR_DEFINE_NAME>
+    <Category>
+      I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+      ADRC: No constraints were set for any of the selected rules. None of the selected rules was executed.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+  
+</MsgFile>

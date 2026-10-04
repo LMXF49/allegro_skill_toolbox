@@ -1,0 +1,285 @@
+<MsgFile>
+
+  <Msg>
+    <Id>1</Id>
+    <CDNUSR_DEFINE_NAME>AXLUMSG_TOO_MANY_DBIDS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Too many DBIDs provided in the list.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>2</Id>
+    <CDNUSR_DEFINE_NAME>AXLUMSG_AXLBADMARK</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+axlmark: Nesting level mismatch (record=%d, replay=%d)
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>3</Id>
+    <CDNUSR_DEFINE_NAME>AXLUMSG_XHDATA_BAD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Bad Crosshatch data provided to _axlDBIDGetShapeAttr.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>4</Id>
+    <CDNUSR_DEFINE_NAME>AXLUMSG_ILLEGAL_NET</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid net identifier
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>5</Id>
+    <CDNUSR_DEFINE_NAME>AXLUMSG_ATR_NOT_MOD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Attribute not modifiable.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>6</Id>
+    <CDNUSR_DEFINE_NAME>AXLMSG_ILLEGAL_REFDES</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal reference designator '%s': '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>7</Id>
+    <CDNUSR_DEFINE_NAME>AXLMSG_ILLEGAL_DEVICE_NAME</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal device name '%s': '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>8</Id>
+    <CDNUSR_DEFINE_NAME>AXLMSG_NON_UNIQUE_COMP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Component '%s' already exists.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>9</Id>
+    <CDNUSR_DEFINE_NAME>AXLMSG_NO_DEV_FILE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to find device file for '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>10</Id>
+    <CDNUSR_DEFINE_NAME>AXLMSG_DEV_PARSE_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Problems while parsing device file for '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>11</Id>
+    <CDNUSR_DEFINE_NAME>AXLMSG_CPT_LOAD_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to load Concept device '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>12</Id>
+    <CDNUSR_DEFINE_NAME>AXLMSG_ADD_COMPDEF_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Problems adding component definition '%s': '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>13</Id>
+    <CDNUSR_DEFINE_NAME>AXLMSG_ADD_COMPINS_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Problems adding component instance '%s': '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>14</Id>
+    <CDNUSR_DEFINE_NAME>AXLMSG_BAD_PACKAGE_NAME</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Bad package name '%s' ignored: '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>15</Id>
+    <CDNUSR_DEFINE_NAME>AXLMSG_BAD_PROP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Property '%s'='%s' ignored: '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>16</Id>
+    <CDNUSR_DEFINE_NAME>AXLMSG_DEV_NAME_SHORTENED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Device name '%s' shortened to '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>17</Id>
+    <CDNUSR_DEFINE_NAME>AXLMSG_ATCH_ID_TOO_LONG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+"Attachment id too long - must be 31 characters or less."
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>18</Id>
+    <CDNUSR_DEFINE_NAME>AXLMSG_ATCH_PASSWD_TOO_LONG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+"Attachment password too long - must be 31 characters or less."
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>19</Id>
+    <CDNUSR_DEFINE_NAME>AXLMSG_ATCH_BAD_DATA_FORMAT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+"Unknown attachment data format requested."
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>20</Id>
+    <CDNUSR_DEFINE_NAME>AXLMSG_ATCH_NO_DATA</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+"No attachment data specified."
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>21</Id>
+    <CDNUSR_DEFINE_NAME>AXLMSG_MU_CONTROL_NOT_SUPPORTED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+"Control '%s' is not supported in multi-user mode."
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>22</Id>
+    <CDNUSR_DEFINE_NAME>AXLMSG_MU_DELETE_PARM_NOT_SUPPORTED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+"Deleting of parameters is not supported in multi-user mode."
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>23</Id>
+    <CDNUSR_DEFINE_NAME>AXLMSG_MU_UPD_ALL_SHAPES_NOT_SUPPORTED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      "Updating of all shapes is not supported in multi-user mode."
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>24</Id>
+    <CDNUSR_DEFINE_NAME>AXLMSG_UNITS_ILLEGAL_UNITS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      "Illegal units value: %s."
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>25</Id>
+    <CDNUSR_DEFINE_NAME>AXLMSG_UNITS_DBUPERUU_NOT_SUPPORTED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      "DBUperUU is only supported in later releases."
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>26</Id>
+    <CDNUSR_DEFINE_NAME>AXLMSG_UNITS_ILLEGAL_DBUPERUU_VALUE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+"%d is not a legal DBUperUU value. Legal values are: %s."
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>27</Id>
+    <CDNUSR_DEFINE_NAME>AXLMSG_UNITS_CANNOT_SET_DBUPERUU_AND_ACCURACY</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+"Set accuracy or DBUperUU. Cannot set both."
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>28</Id>
+    <CDNUSR_DEFINE_NAME>AXLMSG_UNITS_DESIGN_USING_DBUPERUU</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+"Design is now using DBUperUU: %d."
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+</MsgFile>

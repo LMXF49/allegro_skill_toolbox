@@ -1,0 +1,137 @@
+<MsgFile>
+
+  <Msg>
+    <Id>1</Id>
+    <CDNUSR_DEFINE_NAME>SWMALLOC_ERR</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Error getting memory for swapping.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>2</Id>
+    <CDNUSR_DEFINE_NAME>SWPINPAIR_ERR</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Error matching pin pairs for swapping.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>3</Id>
+    <CDNUSR_DEFINE_NAME>ISSMSG_PICKEDUP</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+This symbol is already selected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>4</Id>
+    <CDNUSR_DEFINE_NAME>ISSMSG_SWAPPING</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Swapping the selected symbols ...
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>5</Id>
+    <CDNUSR_DEFINE_NAME>ISSMSG_SWAPDONE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Swapping complete.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>6</Id>
+    <CDNUSR_DEFINE_NAME>ISSMSG_NOREFDES</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Specified symbol instance was not found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>7</Id>
+    <CDNUSR_DEFINE_NAME>SWMSG_CANT_OPEN_LOG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot open the log file 'swap.log'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>8</Id>
+    <CDNUSR_DEFINE_NAME>SWMSG_VIEWLESS_ROOM</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Room %s is not found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>9</Id>
+    <CDNUSR_DEFINE_NAME>SWMSG_CANCEL</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Aborted by cancel.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>10</Id>
+    <CDNUSR_DEFINE_NAME>SWMSG_ERROR_RETURN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error return ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>11</Id>
+    <CDNUSR_DEFINE_NAME>SWMSG_WARNINGS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+There were %d warnings reported in the log file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>12</Id>
+    <CDNUSR_DEFINE_NAME>SWMSG_ERRORS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+There were %d errors reported in the log file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+</MsgFile>

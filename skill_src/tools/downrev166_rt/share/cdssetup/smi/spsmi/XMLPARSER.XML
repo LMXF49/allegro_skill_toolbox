@@ -1,0 +1,339 @@
+<?xml version="1.0" ?> 
+<MsgFile>
+	<Msg>
+		<Id>	
+		 1
+		</Id>			
+		<Category>E
+			<Sub-Category>I</Sub-Category>
+		</Category >
+    <Desc>"Unable to parse the XML file %s at line %d at col %d because of %s. Ensure that the installation has been done properly. "</Desc>
+		<Output>E</Output>
+	</Msg>
+	<Msg>
+		<Id>	
+		 2
+		</Id>			
+		<Category>E
+			<Sub-Category>T</Sub-Category>
+		</Category >
+		<Desc>"Xml platform initializations was not successful.  Ensure that the installation has been done properly."</Desc>
+		<Output>E</Output>
+	</Msg>
+	<Msg>
+		<Id>	
+		 3
+		</Id>	
+		<Category>E
+			<Sub-Category>T</Sub-Category>
+		</Category >
+		<Desc>"Xml platform termination was not successful.  Ensure that the installation has been done properly."</Desc>
+		<Output>E</Output>
+	</Msg>
+	<Msg>
+		<Id>	
+		 4
+		</Id>	
+		<Category>E
+			<Sub-Category>I</Sub-Category>
+		</Category >
+		<Desc>"The size of the message id %d in file %s has %s characters.Valid message id is between %s and %s characters."</Desc>
+		<Output>E</Output>
+	</Msg>
+	<Msg>
+		<Id>	
+		 5
+		</Id>			
+		<Category>E
+			<Sub-Category>I</Sub-Category>
+		<Desc>"The category type [ %s ] specified is not a known category type for message id %d in file %s.Only E for error , W for warning , I for information and Q for question are valid categories."</Desc>
+		</Category>
+		<Output>E</Output>
+	</Msg>
+	<Msg>
+		<Id>	
+		 6
+		</Id>	
+		<Category>E
+			<Sub-Category>I</Sub-Category>
+		</Category>
+		<Desc>"Sub category has been specified for message %d in file %s. Only error and info messages can have sub-category."</Desc>
+		<Output>E</Output>
+	</Msg>
+	<Msg>
+		<Id>	
+		 7
+		</Id>	
+		<Category>E
+			<Sub-Category>I</Sub-Category>
+		</Category >
+		<Desc>"The output type [ %s ] specified for message id %d in file %s is not a known type.Only O for stdout , E for strerr , L for logfile and C for callback are the valid options."</Desc>
+		<ExtDesc>"The output field specifies where the message has to be displayed."</ExtDesc>
+		<Output>E</Output>
+	</Msg>
+	<Msg>
+		<Id>	
+		 8
+		</Id>	
+		<Category>E
+			<Sub-Category>I</Sub-Category>
+		</Category >
+		<Desc>"The number of paramters in the description for message id %d in file %s is %s.This does not match the specified paramcount %s."</Desc>
+		<Output>E</Output>
+	</Msg>
+	<Msg>
+		<Id>	
+		 9
+		</Id>	
+		<Category>E
+			<Sub-Category>I</Sub-Category>
+		</Category >
+		<Desc>"The number of paramters in the message description %s do not match the paramcount %s."</Desc>
+		<Output>E</Output>
+	</Msg>
+	<Msg>
+		<Id>	
+		 10
+		</Id>	
+		<Category>E
+			<Sub-Category>I</Sub-Category>
+		</Category >
+		<Desc>"Message id not specified in the file %s.The message id is a mandatory field."</Desc>
+		<Output>E</Output>
+	</Msg>
+	<Msg>
+		<Id>	
+		 11
+		</Id>	
+		<Category>E
+			<Sub-Category>I</Sub-Category>
+		</Category >
+		<Desc>"Message category not specified in the file %s  for message id %d."</Desc>
+		<ExtDesc>"E for error , W for warning , I for information and Q for question are valid categories."</ExtDesc>
+		<Output>E</Output>
+	</Msg>
+	<Msg>
+		<Id>	
+		 12
+		</Id>			
+		<Category>E
+			<Sub-Category>I</Sub-Category>
+		</Category >
+		<Desc>"The sub category type [ %s ] specified is not a known category type for message id %d in file %s. Valid sub categories for Error category are I for input , T for tool , N for internal. Valid sub categories for Info category are P for progress"</Desc>
+		<Output>E</Output>
+	</Msg>
+	<Msg>
+		<Id>	
+		 13
+		</Id>	
+		<Category>E
+			<Sub-Category>I</Sub-Category>
+		</Category >
+		<Desc>"Message description not specified in the file %s for message id %d."</Desc>
+		<ExtDesc>"The message description contains static text and parameters.Parameters will be filled dynamically by the tool."</ExtDesc>
+		<Output>E</Output>
+	</Msg>
+	<Msg>
+		<Id>	
+		 14
+		</Id>	
+		<Category>E
+			<Sub-Category>I</Sub-Category>
+		</Category >
+		<Desc>"Charsperline not specified in the in the file %s for message id %d."</Desc>
+		<ExtDesc>"This field specifies the number of characters to be displayed on a single line of the specified output.This limit can be specified differently for each kind of output.This limit specifies the number of characters after the parameters has been substituted."</ExtDesc>
+		<Output>E</Output>
+	</Msg>
+	<Msg>
+		<Id>	
+		 15
+		</Id>	
+		<Category>E
+			<Sub-Category>I</Sub-Category>
+		</Category >
+		<Desc>"An unknown parameter has been defined for element %s of message id %d in file %s."</Desc>
+		<Output>E</Output>
+	</Msg>
+	<Msg>
+		<Id>	
+		 16
+		</Id>		
+		<Category>E
+			<Sub-Category>I</Sub-Category>
+		</Category >
+		<Desc>"An unknown attribute has been defined for element %s of message id %d in file %s."</Desc>
+		<Output>E</Output>
+	</Msg>
+	<Msg>
+		<Id>	
+		 17
+		</Id>	
+		<Category>W	
+		</Category >
+		<Desc>"There are %s messages in the file %s whose messages are to be stored in a logfile but no logfile for the file has been specified."</Desc>
+		<Output>E</Output>
+	</Msg>
+	<Msg>
+		<Id>	
+		 18
+		</Id>	
+		<Category>E
+			<Sub-Category>I</Sub-Category>
+		</Category >
+		<Desc>"Number of ignore param fields exceed the paramcount for message id %d in file %s.For the particular message id only %s parameters are specified in the description."</Desc>
+		<Output>E</Output>
+	</Msg>
+	<Msg>
+		<Id>	
+		 19
+		</Id>			
+		<Category>E
+			<Sub-Category>I</Sub-Category>
+		</Category >
+		<Desc>"Duplicate parameter overload has been specified for message id %d in file %s."</Desc>
+		<Output>E</Output>
+	</Msg>
+	<Msg>
+		<Id>	
+		 20
+		</Id>	
+		<Category>W
+		</Category >
+		<Desc>"message id %d in file %s contains leading zeros."</Desc>
+		<Output>E</Output>
+	</Msg>
+	<Msg>
+		<Id>	
+		 21
+		</Id>	
+		<Category>W
+		</Category >
+		<Desc>"The message id %d in file %s does not start with capital letters."</Desc>
+		<Output>E</Output>
+	</Msg>
+	<Msg>
+		<Id>	
+		 22
+		</Id>	
+		<Category>W
+		</Category >
+		<Desc>"The message id %d in file %s contains words starting in capital letters in the middle of the sentence."</Desc>
+		<Output>E</Output>
+	</Msg>
+	<Msg>
+		<Id>	
+		 23
+		</Id>	
+		<Category>W
+		</Category >
+		<Desc>"The message id %d in file %s contains exclamation marks."</Desc>
+		<Output>E</Output>
+	</Msg>
+	<Msg>
+		<Id>	
+		 24
+		</Id>	
+		<Category>W
+		</Category >
+		<Desc>"The message id %d in file %s contains double quotes."</Desc>
+		<Output>E</Output>
+	</Msg>
+	<Msg>
+		<Id>	
+		 25
+		</Id>	
+		<Category>W
+		</Category >
+		<Desc>"The message id %d in file %s does not end with a full stop."</Desc>
+		<Output>E</Output>
+	</Msg>
+	<Msg>
+		<Id>	
+		 26
+		</Id>	
+		<Category>W
+		</Category >
+		<Desc>"The message id %d in file %s contains misspelled word '%s'.Suggested spellings are '%s'."</Desc>
+		<Output>E</Output>
+	</Msg>
+	<Msg>
+		<Id>	
+		 27
+		</Id>	
+		<Category>E
+		</Category >
+		<Desc>"Duplicate message id %d in file %s.Two messages cannot contain the same message id in the same file."</Desc>
+		<Output>E</Output>
+	</Msg>
+	<Msg>
+		<Id>	
+		 28
+		</Id>	
+		<Category>W
+		</Category >
+		<Desc>"Could not open banned words file %s."</Desc>
+		<Output>E</Output>
+	</Msg>
+	<Msg>
+		<Id>	
+		 29
+		</Id>	
+		<Category>W
+		</Category >
+		<Desc>"The message id %d in file %s contains mis-spelled word '%s'."</Desc>
+		<Output>E</Output>
+	</Msg>
+	<Msg>
+		<Id>	
+		 30
+		</Id>	
+		<Category>W
+		</Category >
+		<Desc>"The message id %d in file %s contains banned word '%s'."</Desc>
+		<Output>E</Output>
+	</Msg>
+	<Msg>
+		<Id>	
+		 31
+		</Id>			
+		<Category>E
+			<Sub-Category>I</Sub-Category>
+		</Category >
+		<Desc>"Catalog file %s does not exist. This file should be there in either the &lt;cdsroot&gt;/share/cdssetup/smi/%s 
+			or in the CDS_SITE."</Desc>
+		<Output>E</Output>
+	</Msg>
+  <Msg>
+    <Id>
+      32
+    </Id>
+    <Category>
+      E
+      <Sub-Category>I</Sub-Category>
+    </Category >
+    <Desc>
+      "Unable to dynamically load library %s. %s Ensure that the installation has been done properly."
+    </Desc>
+    <Output>E</Output>
+  </Msg>
+  <Msg>
+    <Id>
+      33
+    </Id>
+    <Category>
+      E
+      <Sub-Category>I</Sub-Category>
+    </Category >
+    <Desc>
+      "Unable to get the function pointer for %s in library %s as %s Ensure that the installation has been done properly."
+    </Desc>
+    <Output>E</Output>
+  </Msg>  
+  <CharsPerLine>
+    80
+    <CharsPerLineForO>80</CharsPerLineForO>
+    <CharsPerLineForE>80</CharsPerLineForE>
+	</CharsPerLine>
+</MsgFile>
+
+

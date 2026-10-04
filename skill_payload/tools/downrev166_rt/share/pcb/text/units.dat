@@ -1,0 +1,135 @@
+# Unit preferences for categories of data.
+# Units will be diplayed exactly as entered.
+
+PCB2PCB_DISTANCE                cm
+PCB_DISTANCE                    cm
+ALTITUDE                        m
+TEMPERATURE                     degC
+THERM_CONDUCTANCE               w/cm-degC
+THERM_CONDUCTIVITY              w/cm-degC
+VOLTAGE                         V
+NOISE_VOLTAGE                   mV
+DIODE_VOLTAGE                   V
+VELOCITY                        m/s
+PROP_VELOCITY                   mil/ns
+ELEC_CONDUCTIVITY               mho/cm
+ETCH_THICKNESS                  mil
+FAILURE_RATE                    fpmh
+CAPACITANCE                     pF
+IMPEDANCE                       ohm
+PROP_DELAY                      ns
+CLOCK_SKEW                      ps
+ETCH_RESISTANCE                 mOhm
+RESISTANCE                      Ohm
+INDUCTANCE                      nH
+THERM_RESISTANCE                degC/w
+PRESSURE                        atm
+PERCENTAGE                      %
+TIME                            s
+CLOCK_FREQUENCY                 MHz
+TRACE_ROUGHNESS                 um
+
+# Units conversion mapping data.
+# One numeric scaling prefix is allowed per mapping.
+# A numeric suffix indicates exponentiation (eg. CM3 for centimeter-cubed).
+# All units must ultimately map to one of the following fundamental units:
+#
+# METER  RADIAN  SECOND  DEGC  GRAM  COULOMB DIMENSIONLESS
+
+P				PS
+N				NS
+M                               METER
+MILE                            5280FEET
+FURLONG                         0.125MILE
+FEET                            0.3048METER
+FOOT                            FEET
+FT                              FEET
+'                               FEET
+INCH                            0.0254METER
+IN                              INCH
+INS                             INCH
+"                               INCH
+MIL                             0.001INCH
+MICRON                          UMETER
+SMOOT                           67INCH
+SMOOTS                          SMOOT
+OZ.CU                           1.44MIL
+OZ.FL                           29.57353CC
+GALLON                          128OZ.FL
+GAL                             GALLON
+CC                              CM3
+LITER                           1000CC
+L                               LITER
+MPH                             MILE/HOUR
+RAD                             RADIAN
+DEGREE                          0.017453292519943295769222RADIAN
+DEGREES                         DEGREE
+DEG                             DEGREE
+SEC                             SECOND
+S                               SECOND
+MINUTE                          60SECOND
+MIN                             MINUTE
+HOUR                            3600SECOND
+HR                              HOUR
+DAY                             24HOUR
+FORTNIGHT                       14DAY
+C                               DEGC
+DEGF                            0.555555555555555555555555555555DEGC
+F                               DEGF
+G                               GRAM
+GF                              0.00980665NEWTON
+POUND                           453.59237GRAM
+LB                              POUND
+LBS                             POUND
+LBF                             32.174POUND-FEET/SECOND2
+OUNCE                           28.349523125GRAM
+OZF                             32.174OUNCE-FEET/SECOND2
+DYNE                            0.00001NEWTON
+PSI                             LBF/INCH2
+PASCAL                          NEWTON/METER2
+PA                              PASCAL
+NEWTON                          KGRAM-METER/SECOND2
+VOLT                            NEWTON-METER/COULOMB
+V                               VOLT
+VOLTS                           VOLT
+AMPERE                          COULOMB/SEC
+A                               AMPERE
+AMP                             AMPERE
+AMPS                            AMPERE
+WEBER                           NEWTON-METER/AMPERE
+HENRY                           WEBER/AMPERE
+H                               HENRY
+WATT                            VOLT-AMPERE
+W                               WATT
+WATTS                           VOLT-AMPERE
+FARAD                           COULOMB/VOLT
+F                               FARAD
+JOULE                           WATT-SECOND
+J                               JOULE
+BTU                             1055.05585262JOULE
+OHM                             VOLT/AMPERE
+OHMS                            OHM
+MHO                             AMPERE/VOLT
+MHOS                            MHO
+SEIMEN                          MHO
+HORSEPOWER                      550FEET-LBF/SECOND
+HP                              HORSEPOWER
+CPS                             CYCLE/SECOND
+HZ                              CYCLE/SECOND
+MHZ                             MEGHZ
+PERCENT                         0.01DIMENSIONLESS
+%                               PERCENT
+ATM                             14.696PSI
+# a LINE is an isotherm line, required for the Thermal Parameters Form
+LINE                            DIMENSIONLESS
+CYCLE                           DIMENSIONLESS
+FAILURE                         DIMENSIONLESS
+FPMH                            FAILURE/MEGHOUR
+PPHH                            PERCENT/100HOUR
+ACRE                            43560FT2
+# standard database units
+MILS                            0.001INCH
+INCHES                          0.0254METER
+MILLIMETERS                     0.001METER
+CENTIMETERS                     0.01METER
+MICRONS                         0.000001METER

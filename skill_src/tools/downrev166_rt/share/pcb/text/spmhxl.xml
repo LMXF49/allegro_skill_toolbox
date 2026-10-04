@@ -1,0 +1,1073 @@
+<MsgFile>
+
+  <Msg>
+    <Id>1</Id>
+    <CDNUSR_DEFINE_NAME>TRANSMSG_TLD_INPUTPROMPT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Name of Allegro Wire Delay extract file ? [ %0 ]:
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>2</Id>
+    <CDNUSR_DEFINE_NAME>TRANSMSG_DXF_INPUTPROMPT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Symbol conversion file:
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>3</Id>
+    <CDNUSR_DEFINE_NAME>IDF_PIN_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to create pin instance of %s.
+This error must be fixed in the software that created the IDF file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>4</Id>
+    <CDNUSR_DEFINE_NAME>IDF_RESIST_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to create Resist Free.
+The Resist Free starts at line %d.
+This error must be fixed in the software that created the IDF file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>5</Id>
+    <CDNUSR_DEFINE_NAME>IDF_AREA_FILL_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to create Area Fill.
+The Area Fill starts at line %d.
+This error must be fixed in the software that created the IDF file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>6</Id>
+    <CDNUSR_DEFINE_NAME>IDF_VIAKO_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to create Via Keepout.
+The IDF Via Keepout starts at line %d.
+This error must be fixed in the software that created the IDF file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>7</Id>
+    <CDNUSR_DEFINE_NAME>IDF_ROOM_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to create Place Region.
+The IDF Place Region starts at line %d.
+This error must be fixed in the software that created the IDF file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>8</Id>
+    <CDNUSR_DEFINE_NAME>IDF_PACKKO_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to create Place Keepout.
+The IDF Place Keepout starts at line %d.
+This error must be fixed in the software that created the IDF file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>9</Id>
+    <CDNUSR_DEFINE_NAME>IDF_PACKKI_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to create Place Outline.
+The IDF Place Outline starts at line %d.
+This error must be fixed in the software that created the IDF file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>10</Id>
+    <CDNUSR_DEFINE_NAME>IDF_ROUTEKO_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to create Route Keepout.
+The IDF Route Keepout starts at line %d.
+This error must be fixed in the software that created the IDF file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>11</Id>
+    <CDNUSR_DEFINE_NAME>IDF_ROUTEKI_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to create Route Keepin.
+The IDF Route Keepin starts at line %d.
+This error must be fixed in the software that created the IDF file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>12</Id>
+    <CDNUSR_DEFINE_NAME>IDF_NOTE_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to create Note %s.
+This error must be fixed in the software that created the IDF file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>13</Id>
+    <CDNUSR_DEFINE_NAME>IDF_PADSTACK_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Padstack %s does not exist.
+This error must be fixed in the software that created the IDF file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>14</Id>
+    <CDNUSR_DEFINE_NAME>IDF_SYM_DEF_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Symbol Definition %s could not be found.
+This error must be fixed in the software that created the IDF file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>15</Id>
+    <CDNUSR_DEFINE_NAME>IDF_REFDES_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Refdes %s not found.
+This error must be fixed in the software that created the IDF file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>16</Id>
+    <CDNUSR_DEFINE_NAME>IDF_SYM_INS_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Symbol Instance of symbol %s could not be created.
+This error must be fixed in the software that created the IDF file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>17</Id>
+    <CDNUSR_DEFINE_NAME>IDF_SYM_PLACE_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Symbol %s could not be placed.
+This error must be fixed in the software that created the IDF file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>18</Id>
+    <CDNUSR_DEFINE_NAME>IDF_FID_STACK_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Fiducials padstack %s could not be created.
+This error must be fixed in the software that created the IDF file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>19</Id>
+    <CDNUSR_DEFINE_NAME>IDF_BOARD_OUT_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Board Outline loop with label %d could not be created.
+This error must be fixed in the software that created the IDF file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>20</Id>
+    <CDNUSR_DEFINE_NAME>IDF_PANEL_OUT_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Panel Outline loop with label %d could not be created.
+This error must be fixed in the software that created the IDF file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>21</Id>
+    <CDNUSR_DEFINE_NAME>IDF_OTHER_OUT_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Other Outline loop with lable %d could not be created.
+The IDF Other Outline starts at line %d.
+This error must be fixed in the software that created the IDF file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>22</Id>
+    <CDNUSR_DEFINE_NAME>IDF_FILE_EMPTY_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+IDF Board file %s is empty.
+This error must be fixed in the software that created the IDF file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>23</Id>
+    <CDNUSR_DEFINE_NAME>IDF_RKI_IGNORE_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The Route Keepin already exists and may have IDF_OWNER=ECAD or FIXED property.
+The IDF ROUTE_OUTLINE is ignored.
+This error must be fixed in the software that created the IDF file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>24</Id>
+    <CDNUSR_DEFINE_NAME>IDF_RKI_MORE_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The IDF file contains more than one ROUTE_OUTLINE.
+Allegro allows only one Route Keepin.
+The remaining ROUTE_OUTLINEs are ignored.
+This error must be fixed in the software that created the IDF file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>25</Id>
+    <CDNUSR_DEFINE_NAME>IDF_PKI_IGNORE_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The Package Keepin already exists and may have IDF_OWNER=ECAD or FIXED property.
+The IDF PLACE_OUTLINE is ignored.
+This error must be fixed in the software that created the IDF file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>26</Id>
+    <CDNUSR_DEFINE_NAME>IDF_PKI_MORE_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The IDF file contains more than one PLACE_OUTLINE.
+Allegro only allows one Package Keepin.
+The remaining PLACE_OUTLINEs are ignored.
+This error must be fixed in the software that created the IDF file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>27</Id>
+    <CDNUSR_DEFINE_NAME>IDF_FID_DEF_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Fiducials definition of %s could not be created.
+This error must be fixed in the software that created the IDF file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>28</Id>
+    <CDNUSR_DEFINE_NAME>IDF_FID_INS_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Fiducials instance of %s could not be created.
+This error must be fixed in the software that created the IDF file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>29</Id>
+    <CDNUSR_DEFINE_NAME>IDF_PSTACK_CRE_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Padstack %s could not be created.
+This error must be fixed in the software that created the IDF file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>30</Id>
+    <CDNUSR_DEFINE_NAME>IDF_SYM_CONFLICT_MSG</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Symbol name conflict.
+  Refdes: %s .
+  IDF Package Name: %s .
+  Placed Symbol Package Name: %s .
+  Placed Symbol Package Name (or its alternate symbols if available) used by rule.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>31</Id>
+    <CDNUSR_DEFINE_NAME>IDF_NETLIST_CONFLICT_MSG</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+      Symbol name conflict.
+      Refdes: %s .
+      IDF Package Name: %s .
+      Net List Package Name: %s .
+      Net List Package Name (or its alternate symbols if available) used by rule.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>32</Id>
+    <CDNUSR_DEFINE_NAME>IDF_RKI_ALL_MSG</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Route Outline layer changed to ALL.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>33</Id>
+    <CDNUSR_DEFINE_NAME>IDF_PKI_ALL_MSG</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Place Outline layer changed to ALL.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>34</Id>
+    <CDNUSR_DEFINE_NAME>IDF_TEXT_CRE_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Text [ %s ] could not be created.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>35</Id>
+    <CDNUSR_DEFINE_NAME>IDF_DB_OPEN_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to open design file %s .
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>36</Id>
+    <CDNUSR_DEFINE_NAME>IDF_SC_ADD_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to add subclass %s .
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>37</Id>
+    <CDNUSR_DEFINE_NAME>IDF_INVALID_CLASS_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid class %s .
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>38</Id>
+    <CDNUSR_DEFINE_NAME>IDF_ROOM_NAME_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Room will not be created without a name.
+The IDF Place Region starts at line %d.
+This error must be fixed in the software that created the IDF file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>39</Id>
+    <CDNUSR_DEFINE_NAME>IDF_ROOM_EXISTS_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Room %s exists and IDF_OWNER = ECAD.
+The IDF Place Region starts at line %d.
+This Place Region is ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>40</Id>
+    <CDNUSR_DEFINE_NAME>IDF_PLACE_REJECT_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Placement rejected for %s / %s / %s .
+Check IDF_OWNER or FIXED property values.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>41</Id>
+    <CDNUSR_DEFINE_NAME>IDF_MIN_PRECISION_MSG</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Drawing precision changed from %d to 0.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>42</Id>
+    <CDNUSR_DEFINE_NAME>IDF_MAX_PRECISION_MSG</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Drawing precision changed from %d to 4.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>43</Id>
+    <CDNUSR_DEFINE_NAME>IDF_FILE_FAIL_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to open IDF Board file %s .
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>44</Id>
+    <CDNUSR_DEFINE_NAME>IDF_FAIL_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Translation failed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>45</Id>
+    <CDNUSR_DEFINE_NAME>IDF_DB_SAVE_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed saving design file %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>46</Id>
+    <CDNUSR_DEFINE_NAME>IDF_LOG_FILE_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to open log file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>47</Id>
+    <CDNUSR_DEFINE_NAME>IDF_INVALID_SUBCLASS_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid subclass %s .
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>48</Id>
+    <CDNUSR_DEFINE_NAME>IDF_GEOMETRY_EXISTS_MSG</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+There is existing geometry on Board Geometry / Outline.
+This geometry may conflict with the IDF data.
+Review the board outline in Allegro after idf_in is complete.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>49</Id>
+    <CDNUSR_DEFINE_NAME>IDX_PIN_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to create pin instance of %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>50</Id>
+    <CDNUSR_DEFINE_NAME>IDX_RESIST_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to create Resist Free.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>51</Id>
+    <CDNUSR_DEFINE_NAME>IDX_AREA_FILL_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to create Area Fill.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>52</Id>
+    <CDNUSR_DEFINE_NAME>IDX_VIAKO_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to create Via Keepout %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>53</Id>
+    <CDNUSR_DEFINE_NAME>IDX_ROOM_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to create Place Region  %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>54</Id>
+    <CDNUSR_DEFINE_NAME>IDX_PACKKO_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to create Place Keepout %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>55</Id>
+    <CDNUSR_DEFINE_NAME>IDX_PACKKI_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to create Place Outline  %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>56</Id>
+    <CDNUSR_DEFINE_NAME>IDX_ROUTEKO_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to create Route Keepout %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>57</Id>
+    <CDNUSR_DEFINE_NAME>IDX_ROUTEKI_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to create Route Keepin %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>58</Id>
+    <CDNUSR_DEFINE_NAME>IDX_NOTE_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to create Note %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>59</Id>
+    <CDNUSR_DEFINE_NAME>IDX_PADSTACK_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Padstack %s does not exist.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>60</Id>
+    <CDNUSR_DEFINE_NAME>IDX_SYM_DEF_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Symbol Definition %s could not be found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>61</Id>
+    <CDNUSR_DEFINE_NAME>IDX_REFDES_MSG</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Refdes %s not found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>62</Id>
+    <CDNUSR_DEFINE_NAME>IDX_SYM_INS_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Symbol Instance of symbol %s could not be created.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>63</Id>
+    <CDNUSR_DEFINE_NAME>IDX_SYM_PLACE_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Symbol %s could not be placed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>64</Id>
+    <CDNUSR_DEFINE_NAME>IDX_FID_STACK_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Fiducials padstack %s could not be created.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>65</Id>
+    <CDNUSR_DEFINE_NAME>IDX_BOARD_OUT_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Board Outline %s could not be created.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>66</Id>
+    <CDNUSR_DEFINE_NAME>IDX_PANEL_OUT_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Panel Outline %s could not be created.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>67</Id>
+    <CDNUSR_DEFINE_NAME>IDX_OTHER_OUT_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Other Outline %s could not be created.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>68</Id>
+    <CDNUSR_DEFINE_NAME>IDX_FILE_EMPTY_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+IDX Board file %s is empty.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>69</Id>
+    <CDNUSR_DEFINE_NAME>IDX_RKI_IGNORE_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The Route Keepin already exists and may have IDX_OWNER=ECAD or FIXED property.
+The IDX ROUTE_OUTLINE is ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>70</Id>
+    <CDNUSR_DEFINE_NAME>IDX_RKI_MORE_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The IDX file contains more than one ROUTE_OUTLINE.
+Allegro allows only one Route Keepin.
+The remaining ROUTE_OUTLINEs are ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>71</Id>
+    <CDNUSR_DEFINE_NAME>IDX_PKI_IGNORE_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The Package Keepin already exists and may have IDX_OWNER=ECAD or FIXED property.
+The IDX PLACE_OUTLINE is ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>72</Id>
+    <CDNUSR_DEFINE_NAME>IDX_PKI_MORE_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The IDX file contains more than one PLACE_OUTLINE.
+Allegro only allows one Package Keepin.
+The remaining PLACE_OUTLINEs are ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>73</Id>
+    <CDNUSR_DEFINE_NAME>IDX_FID_DEF_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Fiducials definition of %s could not be created.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>74</Id>
+    <CDNUSR_DEFINE_NAME>IDX_FID_INS_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Fiducials instance of %s could not be created.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>75</Id>
+    <CDNUSR_DEFINE_NAME>IDX_PSTACK_CRE_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Padstack %s could not be created.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>76</Id>
+    <CDNUSR_DEFINE_NAME>IDX_SYM_CONFLICT_MSG</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+      Symbol name conflict.
+      Refdes: %s .
+      IDX Package Name: %s .
+      Placed Symbol Package Name: %s .
+      Placed Symbol Package Name (or its alternate symbols if available) used by rule.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>77</Id>
+    <CDNUSR_DEFINE_NAME>IDX_NETLIST_CONFLICT_MSG</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+      Symbol name conflict.
+      Refdes: %s .
+      IDX Package Name: %s .
+      Net List Package Name: %s .
+      Net List Package Name (or its alternate symbols if available) used by rule.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>78</Id>
+    <CDNUSR_DEFINE_NAME>IDX_RKI_ALL_MSG</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Route Outline layer changed to ALL.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>79</Id>
+    <CDNUSR_DEFINE_NAME>IDX_PKI_ALL_MSG</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Place Outline layer changed to ALL.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>80</Id>
+    <CDNUSR_DEFINE_NAME>IDX_TEXT_CRE_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Text [ %s ] could not be created.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>81</Id>
+    <CDNUSR_DEFINE_NAME>IDX_DB_OPEN_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to open design file %s .
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>82</Id>
+    <CDNUSR_DEFINE_NAME>IDX_SC_ADD_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to add subclass %s .
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>83</Id>
+    <CDNUSR_DEFINE_NAME>IDX_INVALID_CLASS_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid class %s .
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>84</Id>
+    <CDNUSR_DEFINE_NAME>IDX_ROOM_NAME_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Room will not be created without a name.
+The IDX Place Region starts at line %d.
+This error must be fixed in the software that created the IDX file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>85</Id>
+    <CDNUSR_DEFINE_NAME>IDX_ROOM_EXISTS_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Room %s exists and IDX_OWNER = ECAD.
+The IDX Place Region starts at line %d.
+This Place Region is ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>86</Id>
+    <CDNUSR_DEFINE_NAME>IDX_PLACE_REJECT_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Placement rejected for %s / %s / %s .
+Check IDX_OWNER or FIXED property values.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>87</Id>
+    <CDNUSR_DEFINE_NAME>IDX_MIN_PRECISION_MSG</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Drawing precision changed from %d to 0.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>88</Id>
+    <CDNUSR_DEFINE_NAME>IDX_MAX_PRECISION_MSG</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Drawing precision changed from %d to 4.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>89</Id>
+    <CDNUSR_DEFINE_NAME>IDX_FILE_FAIL_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to open IDX Board file %s .
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>90</Id>
+    <CDNUSR_DEFINE_NAME>IDX_FAIL_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Translation failed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>91</Id>
+    <CDNUSR_DEFINE_NAME>IDX_DB_SAVE_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed saving design file %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>92</Id>
+    <CDNUSR_DEFINE_NAME>IDX_LOG_FILE_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to open log file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>93</Id>
+    <CDNUSR_DEFINE_NAME>IDX_INVALID_SUBCLASS_MSG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid subclass %s .
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>94</Id>
+    <CDNUSR_DEFINE_NAME>IDX_GEOMETRY_EXISTS_MSG</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+There is existing geometry on Board Geometry / Outline.
+This geometry may conflict with the IDX data.
+Review the board outline in Allegro after idx_in is complete.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>95</Id>
+    <CDNUSR_DEFINE_NAME>IDF_IDX_UPDATE_ALT_SYMBOL_MESSAGE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+      Refdes: %s Symbol Package: %s is changed to Alternate Symbol: %s at (%d, %d) on %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>96</Id>
+    <CDNUSR_DEFINE_NAME>IDF_IDX_NO_ALT_SYMBOL_MESSAGE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Refdes: %s Symbol: %s is not placed/moved as it is illegal at (%d, %d) on %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>97</Id>
+    <CDNUSR_DEFINE_NAME>IDF_IDX_NO_ALT_SYMBOLS_LIBRARY</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Refdes: %s Alternate symbols for %s at (%d, %d) on %s are not available in the library.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+
+  <Msg>
+    <Id>98</Id>
+    <CDNUSR_DEFINE_NAME>IDF_NETLIST_CONFLICT_MSG2</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Symbol '%s' cannot be placed, '%s' was already placed at (%.3f, %.3f). Resolve netlist conflict.
+      Refdes: %s .
+      IDF Package Name: %s .
+      Net List Package Name: %s .
+      Net List Package Name (or its alternate symbols if available) used by rule.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+
+</MsgFile>

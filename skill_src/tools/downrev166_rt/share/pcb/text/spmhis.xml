@@ -1,0 +1,6074 @@
+<MsgFile>
+  <Msg>
+    <Id>1</Id>
+    <CDNUSR_DEFINE_NAME>ICPILMSG_ALREADYINCOMMAND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Exit the current command before running the %s command.
+    </Desc>
+    <ExtDesc>
+The Cadence IC Packaging tools allow only one actively running command at a time. 
+If a command is already running and cannot be exited when you attempt to launch
+another command, you will need to manually finish or cancel the current command
+and then run the new command again.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>2</Id>
+    <CDNUSR_DEFINE_NAME>ICPILMSG_GREATERTHAN</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Value entered is too small. Value must be greater than %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>3</Id>
+    <CDNUSR_DEFINE_NAME>ICPILMSG_GREATERTHANEQUAL</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Value entered is too small. Value must be at least %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>4</Id>
+    <CDNUSR_DEFINE_NAME>ICPILMSG_LESSTHAN</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Value entered is too large. Value must be less than %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>5</Id>
+    <CDNUSR_DEFINE_NAME>ICPILMSG_LESSTHANEQUAL</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Value entered is too large. Value must be at most %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>6</Id>
+    <CDNUSR_DEFINE_NAME>ICPILMSG_NOTNUMBER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to convert %s to a numeric measurement. Re-enter value.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>7</Id>
+    <CDNUSR_DEFINE_NAME>IPCILMSG_OOPS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Undoing last %s operation.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>8</Id>
+    <CDNUSR_DEFINE_NAME>IPCILMSG_NO_OOPS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Unable to undo last %s operation. Nothing to undo.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>9</Id>
+    <CDNUSR_DEFINE_NAME>IPCILMSG_FILE_OVERWRITE_OK</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+File %s already exists. Overwrite old file?
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>10</Id>
+    <CDNUSR_DEFINE_NAME>IPCILMSG_FILE_CREATED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+File %s successfully written.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>11</Id>
+    <CDNUSR_DEFINE_NAME>IPCILMSG_FILE_OPEN_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+File %s could not be opened for reading/writing.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>12</Id>
+    <CDNUSR_DEFINE_NAME>ICPILMSG_FILE_OPEN_FAIL_REASON</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Reason for file access failure: %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>13</Id>
+    <CDNUSR_DEFINE_NAME>DGSMSG_IGNORESHAPE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Filtering all shapes that are unfilled, cross-hatched, or not on a conductor layer.
+    </Desc>
+    <ExtDesc>
+Shape degassing operations may only be applied to solid-filled static or dynamic 
+conductor shapes in the active drawing. Any unfilled shapes, cross-hatched shapes,
+or shapes which exist on non-conductor layers (such as manufacturing layers or 
+component geometry layers) will automatically be removed from the selection set.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>14</Id>
+    <CDNUSR_DEFINE_NAME>ICPILMSG_LOWPRECISION</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Database precision is low. Results of %s may not be as expected.
+    </Desc>
+    <ExtDesc>
+If the units and accuracy values for your current drawing are too low, the results 
+from this command may not be precise enough to achieve the desired results. It is 
+recommended that you either change to a finer design unit or increase the number of 
+decimal places of accuracy before proceeding.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>15</Id>
+    <CDNUSR_DEFINE_NAME>DGSMSG_ANGLETOOLARGE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Angle specified is outside allowable range. Angle value must be within +/-90 degrees.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>16</Id>
+    <CDNUSR_DEFINE_NAME>DGSMSG_MODIFIEDVALUE</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+The %s value was modified to retain the size + separation = pitch formula.
+    </Desc>
+    <ExtDesc>
+At all times, the degassing tool maintains this equality of size + separation = pitch. 
+If the size is modified, either pitch or separation must be changed to compensate, as 
+an example. This message is a reminder to you that if you change one value, you should
+be aware of the modification which took place to balance the equation.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>17</Id>
+    <CDNUSR_DEFINE_NAME>DGSMSG_SHAPE_TOO_SMALL</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Area of selected shape is below minimum shape area setting. No degassing voids created.    
+    </Desc>
+    <ExtDesc>
+The selected shape is less than the specified minimum shape area for degassing. 
+The shape will be automatically removed from the selected shapes and will not be
+degassed. This prevents you from adding degassing holes to small shapes you may
+not be able to see when doing a window selection in a zoomed-out design.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>18</Id>
+    <CDNUSR_DEFINE_NAME>DGSMSG_NOSHAPESELECTED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+No shapes are selected for degassing. Select a shape, then perform the selected operation.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>19</Id>
+    <CDNUSR_DEFINE_NAME>DGSMSG_STARTONESHAPE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Beginning to degas shape %d.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>20</Id>
+    <CDNUSR_DEFINE_NAME>DGSMSG_DONEONESHAPE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Completed degassing shape. %d degassing voids added.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>21</Id>
+    <CDNUSR_DEFINE_NAME>DGSMSG_VOIDVIOLATION</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Could not add void at %s: %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>22</Id>
+    <CDNUSR_DEFINE_NAME>DGSMSG_SHAPE_SELECT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select shape(s) to be degassed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>23</Id>
+    <CDNUSR_DEFINE_NAME>DGSMSG_MINAPER_PROMPT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Void separation of %s is below the minimum aperture for artwork fill (%s). Separation is based on the extents box; actual clearance may be larger depending on shape, rotation, and stagger settings. Errors may result when filling shape. Would you like to continue?
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>24</Id>
+    <CDNUSR_DEFINE_NAME>DGSMSG_SMALLERTHANMINAPER</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Void separation is smaller than min aperture setting.
+    </Desc>
+    <ExtDesc>
+The min aperture setting, under the global shape parameters, controls how narrow a piece
+of a shape can be when filling. If the void separation value is smaller than this, the tool
+will not fill the pieces of shape between the degassing voids. If the value for min aperture 
+is not set correctly, you should change that setting before running the degassing tool.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>25</Id>
+    <CDNUSR_DEFINE_NAME>V3DMSG_SELECT_AREA</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select display region for viewing. All elements in this region meeting current find filter settings will be displayed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>26</Id>
+    <CDNUSR_DEFINE_NAME>V3DMSG_SELECT_DESIGN</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select elements for viewing. Entire object(s) selected will be displayed in the viewer.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>27</Id>
+    <CDNUSR_DEFINE_NAME>V3DMSG_CONFIG_DIES</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Configure die height and thickness in the stack-up tab before launching the viewer.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>28</Id>
+    <CDNUSR_DEFINE_NAME>V3DMSG_RULE_EXISTS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+DRC Rule name already exists. Rule names must be unique.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>29</Id>
+    <CDNUSR_DEFINE_NAME>V3DMSG_RULE_NAME_PROMPT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Name for %s 3D DRC Rule:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>30</Id>
+    <CDNUSR_DEFINE_NAME>V3DMSG_BADVALUE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal value entered. Re-enter value.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>31</Id>
+    <CDNUSR_DEFINE_NAME>V3DMSG_NO_LICENSE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to acquire necessary license (%s) for this feature.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>32</Id>
+    <CDNUSR_DEFINE_NAME>V3DMSG_LAUNCH_VIEWER</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Generating 3D view of design. This may take a few moments.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>33</Id>
+    <CDNUSR_DEFINE_NAME>V3DMSG_BAD_COLOR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal color value. Must be in the format R G B, with each value being between 0 and 255.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>34</Id>
+    <CDNUSR_DEFINE_NAME>V3DMSG_BAD_RULEVAL</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+%s name %s is not a valid choice.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>35</Id>
+    <CDNUSR_DEFINE_NAME>EBMSG_EBTRACE_OVERLAP_CON</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+An etch-back trace cannot overlap conductors. Select a new point so that there is no overlap.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>36</Id>
+    <CDNUSR_DEFINE_NAME>EBMSG_EBTRACE_OVERLAP_SELF</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+An etch-back trace cannot overlap itself. Select a new point so that there is no overlap.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>37</Id>
+    <CDNUSR_DEFINE_NAME>EBMSG_EBMASK_OVERLAP</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Etch-back mask is overlapping multiple traces at %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>38</Id>
+    <CDNUSR_DEFINE_NAME>EBMSG_LARGE_VALUE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+%s exceeds design extents.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>39</Id>
+    <CDNUSR_DEFINE_NAME>EBMSG_LAYEROP_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Etch-back could not %s layer %s. Another layer with the same name may already exist.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>40</Id>
+    <CDNUSR_DEFINE_NAME>EBMSG_LINE_TOO_LARGE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Line width too large to create mask of max width %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>41</Id>
+    <CDNUSR_DEFINE_NAME>EBMSG_LOWPRECISION</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Database precision is low. Results of etch back may not be as expected.
+    </Desc>
+    <ExtDesc>
+If the units and accuracy values for your current drawing are too low, the etch-back
+routines may not be able to make traces and masks that are accurate enough for your
+needs. It is recommended that you either change to a finer design unit or increase
+the number of decimal places of accuracy before proceeding.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>42</Id>
+    <CDNUSR_DEFINE_NAME>EBMSG_MAX_WIDTH</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Max width (%s) must be larger than min width (%s).
+    </Desc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>43</Id>
+    <CDNUSR_DEFINE_NAME>EBMSG_NONEBTRACE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Filtering all non etch-back lines from selection.
+    </Desc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>44</Id>
+    <CDNUSR_DEFINE_NAME>EBMSG_SNAPFAILED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+There is no object to snap to. Pick again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>45</Id>
+    <CDNUSR_DEFINE_NAME>EBMSG_UNMASKED_TRACE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Unmasked trace located at %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>46</Id>
+    <CDNUSR_DEFINE_NAME>EBMSG_MASK_NOSHAPE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Etch-back masking failed. Unable to create a mask shape.
+    </Desc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>47</Id>
+    <CDNUSR_DEFINE_NAME>EBMSG_MASK_OVERLAP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Etch-back masking failed. Mask shape does not have enough clearance with connecting shape(s).
+    </Desc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>48</Id>
+    <CDNUSR_DEFINE_NAME>EBMSG_MASK_CLEARANCE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Etch-back masking failed. Mask shape does not have enough clearance with shapes along its path.
+    </Desc>
+    <Output>C</Output>
+  </Msg>  
+    
+  <Msg>
+    <Id>49</Id>
+    <CDNUSR_DEFINE_NAME>EBMSG_MASK_HOLES</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Etch-back masking failed. Unable to create mask shape without holes.
+    </Desc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>50</Id>
+    <CDNUSR_DEFINE_NAME>EBMSG_MASK_TOOSMALL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Etch-back masking failed. Mask shape does not conform to minimum dimensions.
+    </Desc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>51</Id>
+    <CDNUSR_DEFINE_NAME>EBMSG_TRACE_ADDED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Etch-back trace added connecting %s at %s to %s at %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>52</Id>
+    <CDNUSR_DEFINE_NAME>EBMSG_MASK_BATCH</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Etch-back create all masks %s at %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>53</Id>
+    <CDNUSR_DEFINE_NAME>EBMSG_MASK_CREATED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Etch-back mask created at %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>54</Id>
+    <CDNUSR_DEFINE_NAME>EBMSG_MASK_CREATED_MULTI</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Etch-back mask created at %s; mask covers multiple traces.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>55</Id>
+    <CDNUSR_DEFINE_NAME>EBMSG_UPREV_PROMPT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Etch-back traces have been created using an earlier release of the software and will be updated for compatibility with the current version. OK to proceed?
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>56</Id>
+    <CDNUSR_DEFINE_NAME>EBMSG_UPREV_TRACE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Updating etch-back trace from %s to %s on subclass %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>57</Id>
+    <CDNUSR_DEFINE_NAME>EBMSG_TRACE_ALREADY_MASKED_OK</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Trace at %s is already masked. Would you like to mask it anyway?
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>58</Id>
+    <CDNUSR_DEFINE_NAME>EBMSG_DELETE_MASKS_OK</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Do you want to delete the existing masks?
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>59</Id>
+    <CDNUSR_DEFINE_NAME>EBMSG_CHANGE_CLEARANCE_OK</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Current settings would create a mask %s wide, %s than %s. Change line clearance to %s in order to meet the width requirements?
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>60</Id>
+    <CDNUSR_DEFINE_NAME>EBMSG_LINE_WIDTH_CONFIRM</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Line width too large to create mask of max width %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>61</Id>
+    <CDNUSR_DEFINE_NAME>DBDIARY_ERASE_CONFIRM</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+This will delete all diary entries associated with this database. Erase all diary entries?
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>62</Id>
+    <CDNUSR_DEFINE_NAME>ICPMSG_CROSSHATCH_VOID_PROCESS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select the cross-hatched shapes to fill partial voids in.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>63</Id>
+    <CDNUSR_DEFINE_NAME>ICPMSG_SPREADSHEET_STOP_BUTTON</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Stop button pressed. Resulting symbol spreadsheet may be incomplete.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>64</Id>
+    <CDNUSR_DEFINE_NAME>ICPMSG_SPREADSHEET_SEL_PROMPT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select the component(s) to generate symbol spreadsheet file(s) for.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>65</Id>
+    <CDNUSR_DEFINE_NAME>ICPMSG_WBREPORT_PROMPT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select specific items to report on, or do not select anything to report on the entire design.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>66</Id>
+    <CDNUSR_DEFINE_NAME>ICPMSG_RENAMENET_MERGE_PROMPT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Net name exists in design. Merge with existing net?
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>67</Id>
+    <CDNUSR_DEFINE_NAME>ICPMSG_RENAMENET_RENAMED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Renamed net %s. New name is %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>68</Id>
+    <CDNUSR_DEFINE_NAME>ICPMSG_RENAMENET_MERGE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Merged net %s into net %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>69</Id>
+    <CDNUSR_DEFINE_NAME>ICPMSG_RENAMENET_SELECT_PROMPT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select net(s) to be renamed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>70</Id>
+    <CDNUSR_DEFINE_NAME>ICPMSG_RENAMENET_NAME_PROMPT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+New/Existing net name: 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>71</Id>
+    <CDNUSR_DEFINE_NAME>PKGGENMSG_LOWPRECISION</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Database precision is low. Precision of resulting BGA/Die may be seriously affected.
+    </Desc>
+    <ExtDesc>
+If the units and accuracy values for your current drawing are too low, the BGA and
+Die generating tools may not be able to create a reasonable component with the default
+values used in the forms. Change your design units and/or accuracy, or enter new
+values for all fields in the wizard to ensure proper component creation.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>72</Id>
+    <CDNUSR_DEFINE_NAME>PKGGENMSG_OUTSIDE_EXTENTS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Coordinate point lies outside the drawing extents.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>73</Id>
+    <CDNUSR_DEFINE_NAME>PKGGENMSG_NO_DIE_LAYERS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Design contains no die stack layers. Unable to create wirebond die.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>74</Id>
+    <CDNUSR_DEFINE_NAME>PKGGENMSG_SYMBOL_TOO_LARGE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Package extents exceed design extents. 
+    </Desc>
+    <ExtDesc>
+With the current origin location and package size, the BGA/Die symbol
+being defined will not fit within the extents of the current drawing. 
+To correct this issue, reposition the origin of the symbol or exit 
+this wizard and enlarge the size of the drawing, then restart the wizard.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>75</Id>
+    <CDNUSR_DEFINE_NAME>PKGGENMSG_USER_CANCEL_CHANGES</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+No changes were made to the current wizard settings.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>76</Id>
+    <CDNUSR_DEFINE_NAME>PKGGENMSG_PITCH_TOO_LARGE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pin pitch too large for package dimensions.
+    </Desc>
+    <ExtDesc>
+The requested pin pitch is too large, and would result in pins extending
+outside the edge of the symbol boundary. Enter a smaller pitch value or
+increase the size of the symbol.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>77</Id>
+    <CDNUSR_DEFINE_NAME>PKGGENMSG_USE_FULL_MATRIX</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Perimeter and core combined exceed matrix dimensions. Select full matrix if a perimeter grid is not desired. 
+    </Desc>
+    <ExtDesc>
+A perimeter matrix with core must have a minimum of one empty ring of pins separating them. Therefore, 
+for a 25x25 matrix, two times the number of perimeter rings plus the number of core rows/columns
+may not exceed or equal the size of the matrix (25). 
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>78</Id>
+    <CDNUSR_DEFINE_NAME>PKGGENMSG_NEGATIVE_PADSIZE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+This value would result in a negative pad size; the value will be set to the minimum value that will maintain current pad size and spacing requirements.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>79</Id>
+    <CDNUSR_DEFINE_NAME>PKGGENMSG_MATRIX_TOO_SMALL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The matrix size is too small. Enlarge the pin matrix then set multiplier value again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>80</Id>
+    <CDNUSR_DEFINE_NAME>PKGGENMSG_TOO_FEW_ROWSCOLS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Too few %s for the current perimeter and core settings.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>81</Id>
+    <CDNUSR_DEFINE_NAME>PKGGENMSG_TOO_MANY_ROWSCOLS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Too many %s to fit the symbol dimensions using the current pin pitch. Reduce pin pitch first.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>82</Id>
+    <CDNUSR_DEFINE_NAME>PKGGENMSG_PAD_OVERLAP</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Resulting pin pitch is smaller than the pad size. Pad overlap (and DRCs) will result.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>83</Id>
+    <CDNUSR_DEFINE_NAME>PKGGENMSG_FAILED_SEE_LOG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to create component and symbol using current settings. See log file for details.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>84</Id>
+    <CDNUSR_DEFINE_NAME>PKGGENMSG_MATRIX_SIZE_ADJUST</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Package matrix dimensions are too small to fit all required %s pins.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>85</Id>
+    <CDNUSR_DEFINE_NAME>PKGGENMSG_MATRIX_BAD_NAME</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s is not a legal value. It contains illegal characters. Enter a new name. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>86</Id>
+    <CDNUSR_DEFINE_NAME>PKGGENMSG_NAMED_ITEM_EXISTS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+The %s %s already exists. Reuse this name (existing objects will be deleted)?
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>87</Id>
+    <CDNUSR_DEFINE_NAME>PKGGENMSG_CHANGE_AFFECTS_EDGE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+The edge spacing field is locked. This change will alter the edge spacing. Do you want to continue?
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>88</Id>
+    <CDNUSR_DEFINE_NAME>PKGGENMSG_PKGSIZE_AFFECTS_PADSIZE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Reducing the package %s will result in a smaller %s pin pitch (%L). Change the pad %s to %L and continue?
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>89</Id>
+    <CDNUSR_DEFINE_NAME>PKGGENMSG_PKGSIZE_AFFECTS_PITCH</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Reducing the package %s will result in a smaller %s pin pitch (%L). Do you wish to continue?
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>90</Id>
+    <CDNUSR_DEFINE_NAME>PKGGENMSG_PITCH_AFFECTS_PADSIZE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+The value %L is less than the specified pad %s of %L. Change the pad %s to %L and continue?
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>91</Id>
+    <CDNUSR_DEFINE_NAME>PKGGENMSG_PADSIZE_AFFECTS_PITCH</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pad %s is greater than the pin pitch (%L). Change the pin pitch to %L and recalculate package size?
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>92</Id>
+    <CDNUSR_DEFINE_NAME>PKGGENMSG_PADSIZE_AFFECTS_EDGE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pad %s is greater than the pin pitch (%L). Automatically adjust the edge spacing value and continue?
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>93</Id>
+    <CDNUSR_DEFINE_NAME>PBARMSG_FIXED_NOCREATE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The existing %s component is fixed. Remove fixed property and delete the %s, then run this command again. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>94</Id>
+    <CDNUSR_DEFINE_NAME>PBARMSG_FIXED_NODELETE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The existing %s component is fixed. Remove fixed property and run this command again to delete the %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>95</Id>
+    <CDNUSR_DEFINE_NAME>PBARMSG_PBAR_EXISTS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+A %s already exists in the design. Delete the existing %s before creating a new one.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>96</Id>
+    <CDNUSR_DEFINE_NAME>PBARMSG_NO_PBAR_EXISTS</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Design does not contain a %s component. Nothing to delete. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>97</Id>
+    <CDNUSR_DEFINE_NAME>PBARMSG_NO_BGA_EXISTS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Design does not contain a BGA component. A BGA component is required before creating the %s.
+    </Desc>
+    <ExtDesc>
+A BGA is a component of class &apos;IO&apos;. In order to create a plating bar, the BGA component 
+is required. The BGA is used to determine the extents of the design and therefore where the 
+plating bar should be created relative to. 
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>98</Id>
+    <CDNUSR_DEFINE_NAME>PBARMSG_NO_BGA_OUTLINE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to determine size of BGA. Ensure BGA is placed and has an outline shape, then run this command again.
+    </Desc>
+    <ExtDesc>
+The BGA outline is a rectangle or polygon on the ASSEMBLY_TOP or ASSEMBLY_BOTTOM 
+layer of the current design. If this geometry information has has been manually 
+deleted from the BGA symbol instance, it must be recreated so accurate 
+determination of the edges of the placed symbol may be computed.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>99</Id>
+    <CDNUSR_DEFINE_NAME>PBARMSG_NO_ROUTING</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to create %s. No clines intersect the BGA boundary. 
+    </Desc>
+    <ExtDesc>
+The create plating bar command works by trimming or extending routing clines 
+which extend past the BGA outline to intersect with the new plating bar border. 
+In this way, only nets which require plating and are therefore extended to the
+plating region, are processed. 
+
+The design as currently routed has no plating tail routes ending in the required
+region, and therefore a plating bar component, which requires at least two pins, 
+could be created.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>100</Id>
+    <CDNUSR_DEFINE_NAME>ICPILMSG_CHECKING_DB</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Checking database for required information.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>101</Id>
+    <CDNUSR_DEFINE_NAME>ICPHPMSG_SELECT_INSTRUCTION</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Configure filtering options on form, then press update.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>102</Id>
+    <CDNUSR_DEFINE_NAME>ICPHPMSG_SELECT_FILTER</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select elements to limit this highlighting operation to in the main display.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>103</Id>
+    <CDNUSR_DEFINE_NAME>CLNCHGWIDMSG_SELECT_POINTS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select two points on the same cline. The portion of the cline between these points will be updated.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>104</Id>
+    <CDNUSR_DEFINE_NAME>CLNCHGWIDMSG_SELECT_WINDOW</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select window region to change cline width in. All portions of clines in this region will be updated.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>105</Id>
+    <CDNUSR_DEFINE_NAME>CLNCHGWIDMSG_DIFF_CLINES</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+First and second picks were on different clines. Select again.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>106</Id>
+    <CDNUSR_DEFINE_NAME>CLNCHGWIDMSG_NO_CLINES</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No clines found in the specified area.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>107</Id>
+    <CDNUSR_DEFINE_NAME>EBMSG_LINE_NOT_SELECTABLE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cannot snap to a line that is not a masked etchback trace. Pick again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>108</Id>
+    <CDNUSR_DEFINE_NAME>EBMSG_DYN_SHAPE_NOT_SELECTABLE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cannot snap to a dynamic shape. Pick again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>109</Id>
+    <CDNUSR_DEFINE_NAME>DPNMSG_SELECT_PROMPT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select pins and/or fingers to display text labels on.
+    </Desc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>110</Id>
+    <CDNUSR_DEFINE_NAME>DPNMSG_NO_NET_FOUND_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No net name available for selected item at %L.
+    </Desc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>111</Id>
+    <CDNUSR_DEFINE_NAME>DPNMSG_NO_ITEM_FOUND_3</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No %L available for selected item at %L on net %L.
+    </Desc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>112</Id>
+    <CDNUSR_DEFINE_NAME>DPNMSG_NO_FLABEL_FOUND_2</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Bond finger at %L on net %L has no label.
+    </Desc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>113</Id>
+    <CDNUSR_DEFINE_NAME>DPNMSG_NO_TEXT_BLOCK</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No valid text blocks defined for displaying text labels.
+    </Desc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>114</Id>
+    <CDNUSR_DEFINE_NAME>DPNMSG_UNDEF_TEXT_BLOCK_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Text block %L does not exist in the current design. Select the desired text block before continuing.
+    </Desc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>115</Id>
+    <CDNUSR_DEFINE_NAME>PBARMSG_SINGLE_PIN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Only one route found for %s. Creating a %s requires minimum of two routed connections.
+    </Desc>
+    <ExtDesc>
+A logical component requires a minimum of two pins. As a logical component, the plating bar must
+adhere to this rule. In order to generate the plating bar component for your design, route a minimum
+of two clines out to the edge of the package substrate boundary, then re-run the plating bar tool. 
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>116</Id>
+    <CDNUSR_DEFINE_NAME>APDTOPCBMSG_DIR_EXIST_PROMPT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Subdirectory exists. Component may already exist. Overwrite existing information?
+    </Desc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>117</Id>
+    <CDNUSR_DEFINE_NAME>APDTOPCBMSG_POWER_NET_PROMPT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+No voltage nets found in design. Ensure all power and ground nets are properly identified before generating delay report. Continue?
+    </Desc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>118</Id>
+    <CDNUSR_DEFINE_NAME>APDTOPCBMSG_FILES_GENERATED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+All component files have been written to the component subdirectory.
+    </Desc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>119</Id>
+    <CDNUSR_DEFINE_NAME>APDTOPCBMSG_FILEGEN_ERROR_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to generate all %s files. See log files for details.
+    </Desc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>120</Id>
+    <CDNUSR_DEFINE_NAME>APDTOPCBMSG_NO_BGA</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No BGA (class = IO) component found in design. Nothing to export.
+    </Desc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>121</Id>
+    <CDNUSR_DEFINE_NAME>APDTOPCBMSG_PICK_PAD_1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select the padstack to use when generating %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>122</Id>
+    <CDNUSR_DEFINE_NAME>APDTOPCBMSG_CREATING_SYMBOL_1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Generating symbol data for %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>123</Id>
+    <CDNUSR_DEFINE_NAME>APDTOVERMSG_NO_TOP_LEVEL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to locate top-level package component (BGA) in database.
+    </Desc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>124</Id>
+    <CDNUSR_DEFINE_NAME>APDTOVERMSG_NO_VERILOG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to generate verilog netlist information for the current database. 
+    </Desc>
+    <ExtDesc>
+One or more required parts are missing from the active database. These objects
+must exist before a verilog file may be generated. Add the necessary components
+as indicated by the preceding messages, then run the verilog export command again.    
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>125</Id>
+    <CDNUSR_DEFINE_NAME>WBLOCKMSG_NO_ITEMS_1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+No bond wire or bond fingers found in the design to %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>126</Id>
+    <CDNUSR_DEFINE_NAME>WBLOCKMSG_NUM_PROCESSED_3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Successfully %s %d bond wire(s) and %d bond finger(s).
+    </Desc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>127</Id>
+    <CDNUSR_DEFINE_NAME>WBLOCKMSG_FIXED_3</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+%s at %L is fixed. Unable to %s.    
+    </Desc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>128</Id>
+    <CDNUSR_DEFINE_NAME>WBLOCKMSG_DELETE_ERROR_3</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s at %L could not be deleted. Run dbdoctor to repair the database, then run this command again. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>129</Id>
+    <CDNUSR_DEFINE_NAME>WBLOCKMSG_UNLOCK_PROMPT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+This will unlock all bond fingers and bond wires from their parent die symbol. Continue?
+    </Desc>
+    <ExtDesc>
+Bond wires and bond fingers are created linked to the die symbol. This allows editing 
+commands such as Move, Delete, Rotate to treat the wires and fingers as part of the 
+die symbol, acting on them all as a single unit.
+
+This command unlocks ALL bond wires and fingers from die symbols(s) so that bond wires 
+will stretch like substrate conductor clines when moving a die. Deleting a die
+when wires and fingers are unlocked will also not rip up the wirebond objects.
+
+Continue?
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>130</Id>
+    <CDNUSR_DEFINE_NAME>WBLOCKMSG_LOCK_PROMPT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+This will lock all bond fingers and bond wires to their connected parent die symbol. Continue?
+    </Desc>
+    <ExtDesc>
+Bond wires and bond fingers are created linked to the die symbol. This allows editing 
+commands such as Move, Delete, Rotate to treat the wires and fingers as part of the 
+die symbol, acting on them all as a single unit.
+
+This command locks ALL bond wires and fingers to the connected die symbols(s),
+to restore the standard editing behaviour described above. Once wire bond items are 
+locked, they will be ripped up if the parent symbol is deleted or unplaced.
+
+Continue?
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>131</Id>
+    <CDNUSR_DEFINE_NAME>WBSMASKMSG_NO_ITEMS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No bond fingers selected. Re-select fingers to proceed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>132</Id>
+    <CDNUSR_DEFINE_NAME>WBSMASKMSG_SELECT_PROMPT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select the bond fingers (and optional vias) to create a soldermask opening for.
+    </Desc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>133</Id>
+    <CDNUSR_DEFINE_NAME>WBNSTDMSG_BAD_GROUP_NAME</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Group named %s exists and is not a direct connection group. Enter a different name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>134</Id>
+    <CDNUSR_DEFINE_NAME>WBNSTDMSG_DIFF_NETS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid destination. Both items are not on the same net (%s vs %s). Select a new end point.
+    </Desc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>135</Id>
+    <CDNUSR_DEFINE_NAME>WBNSTDMSG_SELECT_PROMPT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select start and end points for non-standard bond wire.
+    </Desc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>136</Id>
+    <CDNUSR_DEFINE_NAME>ICPPUAMSG_SELECT_PROMPT_1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select %s pins for auto pin use propagation.
+    </Desc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>137</Id>
+    <CDNUSR_DEFINE_NAME>ICPPUAMSG_FILTERED_PINS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pins of different component classes have been filtered from the selected pins.
+    </Desc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>138</Id>
+    <CDNUSR_DEFINE_NAME>ICPPUAMSG_NO_VALID_PINS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+No eligible pins found in the selected items. Re-select pins for pin use assignment.
+    </Desc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>139</Id>
+    <CDNUSR_DEFINE_NAME>ICPPUAMSG_PINUSE_CORRECT_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pin %s.%s already has the correct pin use. No change made.
+    </Desc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>140</Id>
+    <CDNUSR_DEFINE_NAME>ICPPUAMSG_PINUSE_CHANGED_4</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pin %s.%s pin use changed from %s to %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>141</Id>
+    <CDNUSR_DEFINE_NAME>ICPPUAMSG_PINUSE_ASSIGNED_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pin %s.%s already has a pin use already assigned. No change made.
+    </Desc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>142</Id>
+    <CDNUSR_DEFINE_NAME>ICPRATLYRMSG_CONFIGURE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Configure ratsnest display on form, then press apply.
+    </Desc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>143</Id>
+    <CDNUSR_DEFINE_NAME>APTOICMSG_RUNNING_DRAC</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Running Dracula tool. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>144</Id>
+    <CDNUSR_DEFINE_NAME>APTOICMSG_DRAC_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Dracula process failed. No output files were generated. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>145</Id>
+    <CDNUSR_DEFINE_NAME>APTOICMSG_DIE_FROM_DRAC</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Generating die file from Dracula result files. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>146</Id>
+    <CDNUSR_DEFINE_NAME>APTOICMSG_RUNNING_DIEIN</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Importing die data to create component and symbol in design.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>147</Id>
+    <CDNUSR_DEFINE_NAME>APTOICMSG_CREATE_DIE_FAIL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to create die file from Dracula results. See log file for more details.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>148</Id>
+    <CDNUSR_DEFINE_NAME>FILMMSG_CANCELLED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+The film resistor generation process has been canceled.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>149</Id>
+    <CDNUSR_DEFINE_NAME>FILMMSG_COMPLETED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+The film resistor generation process is complete.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>150</Id>
+    <CDNUSR_DEFINE_NAME>FILMMSG_HAD_ERRORS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Errors occurred generating film resistors. See the film_res.log file for additional information.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>151</Id>
+    <CDNUSR_DEFINE_NAME>FILMMSG_BAD_DRAW_TYPE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+This command can only be run on layout designs. Change to an MCM, SIP, or BRD file then run the command again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>152</Id>
+    <CDNUSR_DEFINE_NAME>IPCILMSG_SAVE_CUR_DESIGN_1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Save the current drawing before running the %s command?
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>153</Id>
+    <CDNUSR_DEFINE_NAME>IPCILMSG_SAVING_DESIGN_1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Saving the current drawing as %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>154</Id>
+    <CDNUSR_DEFINE_NAME>ACNMSG_BAD_PREFIX</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The net prefix entered is invalid. It contains illegal characters or is too long. Enter a new prefix.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>155</Id>
+    <CDNUSR_DEFINE_NAME>ICPOVMSG_BAD_FORMOPT_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unrecognized %s value. Resetting to previous value. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>156</Id>
+    <CDNUSR_DEFINE_NAME>ICPOVMSG_ITEM_SELECTED_1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%s selected for offset via generation. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>157</Id>
+    <CDNUSR_DEFINE_NAME>ICPOVMSG_FAILED_CREATE_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to generate offset via for pin %s. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>158</Id>
+    <CDNUSR_DEFINE_NAME>ICPOVMSG_STATUS_UPDATE_1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%s generating offset vias for selected pin(s).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>159</Id>
+    <CDNUSR_DEFINE_NAME>ICPOVMSG_SELECT_PROMPT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select component or pin(s) to add offset vias. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>160</Id>
+    <CDNUSR_DEFINE_NAME>ICPOVMSG_NOTHING_SELECTED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No pins selected for creating offset vias. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>161</Id>
+    <CDNUSR_DEFINE_NAME>ICPOVMSG_FILTER_COMP_PROMPT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select component(s) to filter this net selection to.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>162</Id>
+    <CDNUSR_DEFINE_NAME>ICPOVMSG_USER_PICK_FOCUS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select origin for offset via alignment.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>163</Id>
+    <CDNUSR_DEFINE_NAME>ICPOVMSG_PIN_VIA_DRC</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Pin to via spacing violates DRC. Increase pitch or reduce via pad dimensions.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>164</Id>
+    <CDNUSR_DEFINE_NAME>ICPMNAMSG_UNASSIGN_PINS_HDR</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+The following nets in the source list could not\nbe mapped to any pin in the target list:\n\nPins:\n====
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>165</Id>
+    <CDNUSR_DEFINE_NAME>ICPMNAMSG_ASSIGN_PINS_HDR</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+The following net assignments were made:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>166</Id>
+    <CDNUSR_DEFINE_NAME>ICPMNAMSG_BAD_REGEX_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid regular expression (%s) entered. Resetting to previous expression.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>167</Id>
+    <CDNUSR_DEFINE_NAME>ICPMNAMSG_INCOMPLETE_ASSIGN</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Not all target pins were successfully assigned source nets.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>168</Id>
+    <CDNUSR_DEFINE_NAME>ICPMNAMSG_ASSIGN_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Multi-Net Assignment unsuccessful. Change your target or source selections.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>169</Id>
+    <CDNUSR_DEFINE_NAME>ICPMNAMSG_NOASSIGN_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Assignment not currently possible. %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>170</Id>
+    <CDNUSR_DEFINE_NAME>ICPMNAMSG_NET_CREATE_FAILED_2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+New net creation aborted due to invalid name %s (%s).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>171</Id>
+    <CDNUSR_DEFINE_NAME>ICPMNAMSG_SELECT_PROMPT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Filter source nets or target pins using the form, or select target pins graphically.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>172</Id>
+    <CDNUSR_DEFINE_NAME>ICPMNAMSG_NO_TARGET_PINS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+No target pins selected. Adjust target pin filters or reselect in the graphics window.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>173</Id>
+    <CDNUSR_DEFINE_NAME>ICPMNAMSG_INVALID_SRC_DEST</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Must select valid source net and target pin lists before assigning
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>174</Id>
+    <CDNUSR_DEFINE_NAME>ICPILMSG_NET_CREATED_1</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+New net %s successfully created.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>175</Id>
+    <CDNUSR_DEFINE_NAME>ICPMNAMSG_FAIL_ASSIGN_CREATE_3</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to create net %s. Skipped assignment to pin %s.%s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>176</Id>
+    <CDNUSR_DEFINE_NAME>ICPMNAMSG_FAIL_ASSIGN_MECH_2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to assign net %s to a mechanical pin %s. Skipping.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>177</Id>
+    <CDNUSR_DEFINE_NAME>ICPMNAMSG_FAIL_ASSIGN_REASS_3</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pin %s.%s already assigned to net %s. Skipping.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>178</Id>
+    <CDNUSR_DEFINE_NAME>ICPMNAMSG_FAIL_ASSIGN_FIXED_3</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to reassign net of pin %s.%s to %s; pin already assigned to FIXED net %s. Skipping.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>179</Id>
+    <CDNUSR_DEFINE_NAME>ICPMNAMSG_FAIL_ASSIGN_REASS_OFF_3</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Reassign is not allowed and pin %s.%s is already assigned to %s. Skipping.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>180</Id>
+    <CDNUSR_DEFINE_NAME>ICPMNAMSG_FAIL_ASSIGN_DB_3</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to assign net %s to %s.%s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>181</Id>
+    <CDNUSR_DEFINE_NAME>ICPMNAMSG_PASS_ASSIGN_3</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Pin %s.%s successfully assigned to net %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>182</Id>
+    <CDNUSR_DEFINE_NAME>ICPMNAMSG_ESCAPE_MISSING_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Net name pattern &apos;%s&apos; contains unescaped &apos;-&apos; character with no start of range integer preceding it.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>183</Id>
+    <CDNUSR_DEFINE_NAME>ICPMNAMSG_ESCAPE_ADDED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+  Although not escaped with a backslash (\\-), it will be treated as though it had been escaped.  
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>184</Id>
+    <CDNUSR_DEFINE_NAME>ICPMURMSG_MULTI_SELECT_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Multiple %s selected. Automatically selecting the first item in the list.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>185</Id>
+    <CDNUSR_DEFINE_NAME>ICPMURMSG_NO_AREA_SELECTED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Must select region/symbol/shape to generate report.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>186</Id>
+    <CDNUSR_DEFINE_NAME>ICPMURMSG_USER_PROMPT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select %s to use for metal usage calculation.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>187</Id>
+    <CDNUSR_DEFINE_NAME>ICPDBFMSG_UNKNOWN_SORT</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Unrecognized sorting type. Defaulting to sorting by die pin.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>188</Id>
+    <CDNUSR_DEFINE_NAME>ICPDBFMSG_WRITING_REPORT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Printing from-to report for die pin, bond finger, package pin and net name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>189</Id>
+    <CDNUSR_DEFINE_NAME>ICPAPICMSG_MISSING_DATA_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s not set. Set all fields before continuing.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>190</Id>
+    <CDNUSR_DEFINE_NAME>ICPAPICMSG_TEMP_RULE_1</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+A template rule file %s has been created.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>191</Id>
+    <CDNUSR_DEFINE_NAME>ICPAPICMSG_IC_DESIGN_NO_EXIST_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The design %s does not exist. Enter the design name again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>192</Id>
+    <CDNUSR_DEFINE_NAME>ICPAPICMSG_BAD_FORM_DATA_2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid %s entered (%s). Restoring previous value.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>193</Id>
+    <CDNUSR_DEFINE_NAME>ICPDCMPMSG_CREATE_SUBCLASS_1</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Created new subclass, %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>194</Id>
+    <CDNUSR_DEFINE_NAME>ICPDCMPMSG_DYNAMIC_SHAPE</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Auto-generated dynamic shape pieces may not be deleted. Skipping.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>195</Id>
+    <CDNUSR_DEFINE_NAME>ICPAFLTMSG_USES_GLOSSING_PARAMS</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+This command uses the current Glossing/Pad Fillet parameters.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>196</Id>
+    <CDNUSR_DEFINE_NAME>ICPILMSG_FORM_NOT_FOUND_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to open form file %s. Check install hierarchy and FORMPATH environment variable.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>197</Id>
+    <CDNUSR_DEFINE_NAME>ICPWBMPMSG_COMP_CREATED_2</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Component %s - %d fingers were converted to pins.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>198</Id>
+    <CDNUSR_DEFINE_NAME>ICPWBMSG_NO_BONDWIRES</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Design contains no bond wires. Exiting command.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>199</Id>
+    <CDNUSR_DEFINE_NAME>ICPWBTPMSG_MULTI_WIRES</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Multiple items selected. Selected one bond wire only.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>200</Id>
+    <CDNUSR_DEFINE_NAME>ICPWBTPMSG_NO_ITEM_FOUND_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No %s(s) found. Select the desired item again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>201</Id>
+    <CDNUSR_DEFINE_NAME>ICPWBTPMSG_WIRE_NO_FINGER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Bond finger missing for selected bond wire(s). Ensure wire is connected at both ends using show element.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>202</Id>
+    <CDNUSR_DEFINE_NAME>ICPRNGMSG_CREATE_ERROR_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to create ring %d. Check global shape parameters and drawing size, then try again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>203</Id>
+    <CDNUSR_DEFINE_NAME>ICPRNGMSG_FLAG_CREATED</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Die flag successfully created.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>204</Id>
+    <CDNUSR_DEFINE_NAME>ICPRNGMSG_RING_CREATED_2</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Ring %d successfully created%s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>205</Id>
+    <CDNUSR_DEFINE_NAME>ICPRNGMSG_NO_FLAG_LAYER</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Layer not deselected for die flag. A minimum of one layer must be selected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>206</Id>
+    <CDNUSR_DEFINE_NAME>ICPARLMSG_FILTER_ITEMS</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Filtering items not eligible for layer assignment from selected items list.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>207</Id>
+    <CDNUSR_DEFINE_NAME>ICPARLMSG_FILTER_MECHPINS</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Filtering mechanical pins from the selected items. Mechanical pins will not be autorouted.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>208</Id>
+    <CDNUSR_DEFINE_NAME>ICPARLMSG_FILTER_NOITEMS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No items available for assignment after filtering. Select items again to proceed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>209</Id>
+    <CDNUSR_DEFINE_NAME>ICPARLMSG_SELECT_PROMPT_1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select nets/pins for %s layer assignment.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>210</Id>
+    <CDNUSR_DEFINE_NAME>ICPARLMSG_SINGLE_LAYER_FIXED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Only one layer may be selected for FIXED layer assignments. Unable to select additional layer.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>211</Id>
+    <CDNUSR_DEFINE_NAME>ICPARLMSG_NO_LAYER_SELECTED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No routing layers selected for assignment. Select a layer to continue.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>212</Id>
+    <CDNUSR_DEFINE_NAME>ICPARLMSG_PER_PIN_ASSIGN</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Deriving connections on a per-pin basis for all nets in selection.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>213</Id>
+    <CDNUSR_DEFINE_NAME>ICPARLMSG_DIFFP_WARN_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Both nets in differential pair %s are not assigned to the same routing layer.
+    </Desc>
+    <ExtDesc>
+Spider router does not support broadside differential pair routing at this time. If different
+routing layers are assigned to the two member nets of a differential pair, these will
+be treated as regular nets during auto-routing by spider route. 
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>214</Id>
+    <CDNUSR_DEFINE_NAME>ICPARLMSG_PIN_ASSIGNED_3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pin %s.%s was assigned to layer %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>215</Id>
+    <CDNUSR_DEFINE_NAME>ICPARLMSG_PIN_NOT_ASSIGNED_2</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Unable to automatically determine layer for pin %s.%s. No assignment made.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>216</Id>
+    <CDNUSR_DEFINE_NAME>ICPNETMSG_MULTI_SELECT</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Multiple nets selected. Only one net may be selected for this operation. Select again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>217</Id>
+    <CDNUSR_DEFINE_NAME>ICPNETMSG_NOT_DBID</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid argument encountered. %L is not a valid dbid. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>218</Id>
+    <CDNUSR_DEFINE_NAME>ICPNETMSG_NO_NET_NAME</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No net name entered. Enter the net name again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>219</Id>
+    <CDNUSR_DEFINE_NAME>ICPNETMSG_NET_SELECTED_1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Net &apos;%s&apos; selected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>220</Id>
+    <CDNUSR_DEFINE_NAME>ICPNETMSG_NET_EXISTS_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Net name &apos;%s&apos; exists. Enter a new net name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>221</Id>
+    <CDNUSR_DEFINE_NAME>ICPNETMSG_NET_CREATE_FAIL_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to create net named &apos;%s&apos;. Enter a new net name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>222</Id>
+    <CDNUSR_DEFINE_NAME>ICPNETMSG_DUMMY_SELECT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Dummy net or dummy net pin selected. Select a new net/pin. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>223</Id>
+    <CDNUSR_DEFINE_NAME>ICPNETMSG_ALREADY_DUMMY</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+One or more selected items were already unassigned. No deassignment was required.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>224</Id>
+    <CDNUSR_DEFINE_NAME>ICPNETMSG_NET_FIXED_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cannot edit net &apos;%s&apos;. Net has the fixed property. Select again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>225</Id>
+    <CDNUSR_DEFINE_NAME>ICPNETMSG_WRONG_SEL_TYPE_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Selected item(s) are of the wrong type (expected %ss). Select again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>226</Id>
+    <CDNUSR_DEFINE_NAME>ICPNETMSG_CORRECT_NET</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Selected item is already on the specified net. No changes made.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>227</Id>
+    <CDNUSR_DEFINE_NAME>ICPNETMSG_ALREADY_ASSIGNED_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Selected item is assigned to net &apos;%s&apos;. Enabled reassign pins or selected again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>228</Id>
+    <CDNUSR_DEFINE_NAME>ICPNETMSG_NORIP_NET</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Net %s has the no_ripup property. Conductor elements will not be modified.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>229</Id>
+    <CDNUSR_DEFINE_NAME>ICPNETMSG_NOCOMP_PIN_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Pin %s is not part of a component. No net changes may be made.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>230</Id>
+    <CDNUSR_DEFINE_NAME>ICPNETMSG_STATUS_FAILED_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Net %s failed. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>231</Id>
+    <CDNUSR_DEFINE_NAME>ICPNETMSG_NO_SELECTION</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No valid pin or net selected. Make a selection to continue.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>232</Id>
+    <CDNUSR_DEFINE_NAME>ICPNETMSG_DEASSIGN_PROGRESS_1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%s net deassignment.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>233</Id>
+    <CDNUSR_DEFINE_NAME>ICPAANMSG_NO_LAYER_GRID</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+The layer grid is only supported for package-die assignments. It has been disabled.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>234</Id>
+    <CDNUSR_DEFINE_NAME>ICPAANMSG_NO_ROUTER_BASED</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+This assignment operation cannot be performed with the router-based algorithm. Defaulting to nearest match.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>235</Id>
+    <CDNUSR_DEFINE_NAME>ICPAANMSG_SELECT_PROMPT_1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select %s pins for auto net assignment.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>236</Id>
+    <CDNUSR_DEFINE_NAME>ICPAANMSG_PINS_SELECTED_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s pins already selected. Oops selection to change the component type.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>237</Id>
+    <CDNUSR_DEFINE_NAME>ICPAANMSG_STAGE_STATUS_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Stage %d %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>238</Id>
+    <CDNUSR_DEFINE_NAME>ICPAANMSG_STAGE_START_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Beginning stage %d of assignment: %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>239</Id>
+    <CDNUSR_DEFINE_NAME>ICPAANMSG_CLEARING_OPTIMIZE_1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Clearing %s pin selection for optimize existing assignment mode.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>240</Id>
+    <CDNUSR_DEFINE_NAME>ICPAANMSG_SELECT_OPTIMIZE_1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select new %s for this mode.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>241</Id>
+    <CDNUSR_DEFINE_NAME>ICPAANMSG_UNASSIGN_DESC</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+The following pins could not be mapped to any pin in the destination set.
+    </Desc>
+    <ExtDesc>
+The following pins in the source set could not be mapped to any pin in the destination set:
+
+Pins:
+====
+
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>242</Id>
+    <CDNUSR_DEFINE_NAME>ICPAANMSG_MISSING_FANOUT_1</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Not all %s pins have fanout routing. Assignments may not be optimal.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>243</Id>
+    <CDNUSR_DEFINE_NAME>ICPAANMSG_NO_SOURCE_PINS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Assignment is not possible. No source pins are eligible for assignment (allow net creation/reassignment?).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>244</Id>
+    <CDNUSR_DEFINE_NAME>ICPAANMSG_TOO_MANY_SOURCE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Assignment is not possible. More source pins are selected than eligible destination pins.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>245</Id>
+    <CDNUSR_DEFINE_NAME>ICPAANMSG_FILTER_COMP_CLASS</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Filtering pins of different component class(es).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>246</Id>
+    <CDNUSR_DEFINE_NAME>ICPAANMSG_ALL_FILTERED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No pins matching specified component class in selection set. Select pins again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>247</Id>
+    <CDNUSR_DEFINE_NAME>ICPAANMSG_MULTI_DEST</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Destination pins belong to multiple components. Select destination pins that belong to one component only.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>248</Id>
+    <CDNUSR_DEFINE_NAME>ICPAANMSG_REPLACE_DEST</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Replacing currently selected destination pins with new selection.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>249</Id>
+    <CDNUSR_DEFINE_NAME>ICPAANMSG_ASSIGN_READY</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Press the assign button when you are ready to begin. Complex assignments may take a few minutes.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>250</Id>
+    <CDNUSR_DEFINE_NAME>ICPAANMSG_NOT_ALL_ASSIGNED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Not all source pins were successfully assigned to destinations pins. See log for details.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>251</Id>
+    <CDNUSR_DEFINE_NAME>ICPAANMSG_INVALID_SELECTION</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select both source and destination pin sets to perform auto net assignment.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>252</Id>
+    <CDNUSR_DEFINE_NAME>ICPAANMSG_ASSIGNMENT_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Automatic net assignment failed. See log for details.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>253</Id>
+    <CDNUSR_DEFINE_NAME>ICPSRMSG_WRONG_CLASS_3</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+%s may have the wrong component class (class is %s, expected %s).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>254</Id>
+    <CDNUSR_DEFINE_NAME>ICPSRMSG_PARSE_ERROR_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Parse error at line %d: %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>255</Id>
+    <CDNUSR_DEFINE_NAME>ICPSRMSG_PARTITIONS_EXPORTED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The current design has exported partitions. Import partitions to perform auto-routing on design.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>256</Id>
+    <CDNUSR_DEFINE_NAME>ICPSRMSG_DB_DIE_CHECK</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Checking die component...
+    </Desc>
+    <ExtDesc>
+Design contains no die component.
+A symbol is a die if its component class is IC.
+  To fix this perform the following 3 steps:
+    a. Identify the name of the die symbol.
+    b. Use &apos;Logic->Edit Parts List...&apos; to change the component class.
+    c. Use &apos;show element&apos; to verify the new component class.
+When finished, run this command again.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>257</Id>
+    <CDNUSR_DEFINE_NAME>ICPSRMSG_DB_PKG_CHECK</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Checking package component...
+    </Desc>
+    <ExtDesc>
+Design contains no package component.
+A symbol is a package if its component class is IO.
+  To fix this perform the following 3 steps:
+    a. Identify the name of the die symbol.
+    b. Use &apos;Logic->Edit Parts List...&apos; to change the component class.
+    c. Use &apos;show element&apos; to verify the new component class.
+When finished, run this command again.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>258</Id>
+    <CDNUSR_DEFINE_NAME>ICPSRMSG_DB_CHECK_OK_1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%s check passed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>259</Id>
+    <CDNUSR_DEFINE_NAME>ICPSRMSG_DB_CHECK_DIE_TYPE_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Die %s is %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>260</Id>
+    <CDNUSR_DEFINE_NAME>ICPSRMSG_DB_MULTI_PKG_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Design contains %d package components. The router only supports designs with a single package component.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>261</Id>
+    <CDNUSR_DEFINE_NAME>ICPSRMSG_DB_PKG_OUTLINE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Package component is missing component outline. 
+    </Desc>
+    <ExtDesc>
+The component outline is a rectangle on either of the following layers:    
+    COMPONENT GEOMETRY / ASSEMBLY_TOP
+    COMPONENT GEOMETRY / ASSEMBLY_BOTTOM
+This defines the outline of the physically manufactured package and must
+be present for auto-routing. Add this information to the design before
+running the router again.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>262</Id>
+    <CDNUSR_DEFINE_NAME>ICPSRMSG_DB_CNS_OFF_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%d design rule spacing value(s) are not set, or are disabled.
+    </Desc>
+    <ExtDesc>
+Use the Constraint Manager to set the constraint value or the Constraint Modes command to
+enable the constraint if it is disabled. Then, run the router again.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>263</Id>
+    <CDNUSR_DEFINE_NAME>ICPSRMSG_NET_FAILED_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Net %s failed at %L.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>264</Id>
+    <CDNUSR_DEFINE_NAME>ICPSRMSG_DB_CNSAREA_CHECK</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Checking constraint areas...
+    </Desc>
+    <ExtDesc>
+ERROR: Only one constraint area is supported.
+       The constraint area must be a rectangle with constraint set name of &apos;DIE_AREA&apos;.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>265</Id>
+    <CDNUSR_DEFINE_NAME>ICPSRMSG_PADS_UNDEFINED_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No pads are defined on layer %s. 
+    </Desc>
+    <ExtDesc>
+Spider router is unable to add vias during routing of a design. In order to use 
+this router, you must first create fanout routing from your pins to the desired 
+routing layer(s).
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>266</Id>
+    <CDNUSR_DEFINE_NAME>ICPSRMSG_FILLETS_NOCLEAN</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+The design contains fillets. Post-route cleanup has been skipped.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>267</Id>
+    <CDNUSR_DEFINE_NAME>ICPSRMSG_CLINE_FAILED_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to create cline with points: %L.
+    </Desc>
+    <ExtDesc>
+Probable cause: Bad fillet structure near this location.
+Solution      : Reconstruct the non-standard fillets and run the router again.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>268</Id>
+    <CDNUSR_DEFINE_NAME>ICPSRMSG_NO_COMPS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No die and/or package component(s) found in the database. Unable to route. Command exited.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>269</Id>
+    <CDNUSR_DEFINE_NAME>ICPSRMSG_ROUTE_KEEPIN_1</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+%s route keep-in on layer ROUTE KEEPIN/ALL.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>270</Id>
+    <CDNUSR_DEFINE_NAME>ICPSRMSG_MISSING_FANOUTS</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Not all pins have fanouts. Generating default vias. Results may not be optimal.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>271</Id>
+    <CDNUSR_DEFINE_NAME>ICPSRMSG_MISSING_LAYER_ASSIGN</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Not all pins have assigned routing layers. Defaulting these to the first enabled routing layer.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>272</Id>
+    <CDNUSR_DEFINE_NAME>ICPSRMSG_PREVIEW_ROUTABLE</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Route feasibility indicates all nets are routable. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>273</Id>
+    <CDNUSR_DEFINE_NAME>ICPSRMSG_PREVIEW_FAILS_1</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Route feasibility indicates %d net(s) may not be routable.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>274</Id>
+    <CDNUSR_DEFINE_NAME>ICPSRMSG_FANOUT_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to create routing stubs for bond fingers. Not all fingers connected to the same die.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>275</Id>
+    <CDNUSR_DEFINE_NAME>ICPSRMSG_SELECT_LAYER</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Select one or more substrate layers to route. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>276</Id>
+    <CDNUSR_DEFINE_NAME>ICPSRMSG_NO_LAYERS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Design has no substrate routing layers. Unable to perform auto-routing. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>277</Id>
+    <CDNUSR_DEFINE_NAME>ICPSRMSG_ROUTE_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Router failed. See log file for more details. Command canceled.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>278</Id>
+    <CDNUSR_DEFINE_NAME>ICPSRMSG_PBAR_CREATED</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+The plating bar component has been created/updated. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>279</Id>
+    <CDNUSR_DEFINE_NAME>ICPSRMSG_MISSING_CONN_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%s -- Missing %s connection.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>280</Id>
+    <CDNUSR_DEFINE_NAME>ICPSRMSG_NET_FAILED_1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%s -- Unable to complete connections. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>281</Id>
+    <CDNUSR_DEFINE_NAME>ICPFLTCMSG_REMOVE_1</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+%d fillet lines were removed. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>282</Id>
+    <CDNUSR_DEFINE_NAME>ICPFLTCMSG_NO_REMOVE_1</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+%d fillet lines were not removed. Most likely cause is fixed property on cline/net.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>283</Id>
+    <CDNUSR_DEFINE_NAME>ICPFLTCMSG_FILLETED_1</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+%d cline corners were filleted.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>284</Id>
+    <CDNUSR_DEFINE_NAME>ICPFLTCMSG_NO_FILLET_DRC_1</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+%d corners could not be filleted without DRCs. No changes have been made to these corners.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>285</Id>
+    <CDNUSR_DEFINE_NAME>ICPPITMSG_UNBOUND_FUNC_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+packageDesignCheckAddCheck: Symbol %L is not bound to a skill function. Registration failed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>286</Id>
+    <CDNUSR_DEFINE_NAME>ICPRPNMSG_SELECT_PINS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select pins that form a single row/column or are arranged in a staggered pattern.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>287</Id>
+    <CDNUSR_DEFINE_NAME>ICPRPNMSG_CORNER_PINS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Selected pins do not form a single row, column, or staggered pattern.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>288</Id>
+    <CDNUSR_DEFINE_NAME>ICPRPNMSG_PINNUM_NOT_NUMBER_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pin number %s is not numeric. Unable to renumber pins.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>289</Id>
+    <CDNUSR_DEFINE_NAME>ICPRPNMSG_SELECT_STPIN</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select the stationary reference pin.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>290</Id>
+    <CDNUSR_DEFINE_NAME>ICPRPNMSG_SELECT_STPIN_MULT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Multiple pins selected. Select a single reference pin from the original selected pins.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>291</Id>
+    <CDNUSR_DEFINE_NAME>ICPRPNMSG_TOO_FEW_PINS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Too few pins selected. Select a minimum of three pins.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>292</Id>
+    <CDNUSR_DEFINE_NAME>ICPPADMSG_PAD_EXISTS_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Padstack %s already exists. Enter a new name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>293</Id>
+    <CDNUSR_DEFINE_NAME>ICPPADMSG_PAD_NAME_INVALID_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Padstack name %s is empty or contains invalid characters. Enter a new name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>294</Id>
+    <CDNUSR_DEFINE_NAME>ICPPADMSG_PAD_DRC_WARN_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Padstack %s exceeds the pin pitch. Overlapping pin pads and DRC errors will result.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>295</Id>
+    <CDNUSR_DEFINE_NAME>ICPPADMSG_NO_PADSTACK</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to load padstack. Select a new padstack. If the padstack exists, it may need to updated to the current software release.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>296</Id>
+    <CDNUSR_DEFINE_NAME>ICPPADMSG_PAD_TOO_FEW_LAYERS_2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Padstack is defined on too few layers (%d). A minimum of %d layers are required.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>297</Id>
+    <CDNUSR_DEFINE_NAME>ICPPADMSG_PAD_NOT_ON_LAYER_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Padstack is not defined on required layer(s) (%L).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>298</Id>
+    <CDNUSR_DEFINE_NAME>ICPPADMSG_SELECT_LIST</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select a padstack from the available padstacks list.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>299</Id>
+    <CDNUSR_DEFINE_NAME>ICPPADMSG_SELECT_NO_PADS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+No padstacks defined in the current design. Define a new padstack or load one from the pad library.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>300</Id>
+    <CDNUSR_DEFINE_NAME>ICPPADMSG_SELECT_DISK</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter the pad file name or use the browse tool to selected the desired padstack.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>301</Id>
+    <CDNUSR_DEFINE_NAME>ICPPADMSG_CREATE_FAILED_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Creation of padstack %s failed. Check padstack specifications and try again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>302</Id>
+    <CDNUSR_DEFINE_NAME>ICPWBGPMSG_SAME_SIDE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Both pins must be on the same side of the die. Reselect pins to create a guide path.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>303</Id>
+    <CDNUSR_DEFINE_NAME>ICPWBGPMSG_SAME_CORNER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Selected pins are in the same corner. Select two pins at different corners of the same side.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>304</Id>
+    <CDNUSR_DEFINE_NAME>ICPCLRPTMSG_NO_ITEMS_2</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+The following layer(s) contain no %s: %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>305</Id>
+    <CDNUSR_DEFINE_NAME>ICPCLRPTMSG_NO_OUTLINE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No package outline found for design. Unable to generate report.
+    </Desc>
+    <ExtDesc>
+The package outline represents the boundary of the design itself. This is
+created with a rectangle on the SUBSTRATE GEOMETRY/OUTLINE layer. In order
+to run the conductor length report, this outline must be present.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>306</Id>
+    <CDNUSR_DEFINE_NAME>ICPCLRPTMSG_MISSING_BF_LABELS_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+%d bond fingers are missing labels.
+    </Desc>
+    <ExtDesc>
+Bond fingers without a label are still considered and reported in the conductor
+length report, but they will show up as -&lt;No Label-&gt; in the report. To
+prevent this, label all fingers using the dynamic label capabilities of the
+wire bonder or manually create labels using the bond finger text command.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>307</Id>
+    <CDNUSR_DEFINE_NAME>ICPCLRPTMSG_WRITE_STATUS_1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Conductor length report creation %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>308</Id>
+    <CDNUSR_DEFINE_NAME>ICPDASNMSG_UNSUPPORTED_TYPE_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Stretching of object type %s is not supported at this time.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>309</Id>
+    <CDNUSR_DEFINE_NAME>ICPDASNMSG_ASSIGNED_3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%s %s assigned to net %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>310</Id>
+    <CDNUSR_DEFINE_NAME>ICPDASNMSG_NOT_ASSIGNED_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+DRC at %L not resolve. Both items are %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>311</Id>
+    <CDNUSR_DEFINE_NAME>ICPDASNMSG_PASS_RESULTS_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pass %d resolved %d connections.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>312</Id>
+    <CDNUSR_DEFINE_NAME>ICPDASNMSG_UNCONN_SHAPE_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Unconnected shape found at %L on %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>313</Id>
+    <CDNUSR_DEFINE_NAME>ICPDASNMSG_PROCESSING_DATA</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Running derive assignment to clean up net connections.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>314</Id>
+    <CDNUSR_DEFINE_NAME>ICPDASNMSG_UNCONN_SHP_USER_1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%d unconnected shapes detected. See derive_assign.log for more details.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>315</Id>
+    <CDNUSR_DEFINE_NAME>ICPDASNMSG_RECOMMEND</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+For best results, assign net to power/ground plane shapes before proceeding.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>316</Id>
+    <CDNUSR_DEFINE_NAME>ICPMATHMSG_PARALLEL_LINES</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to compute intersection of parallel lines.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>317</Id>
+    <CDNUSR_DEFINE_NAME>PKGGENMSG_BAD_JEDEC_FILE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to initialize registered JEDEC package information. JEDEC packages will be unavailable.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>318</Id>
+    <CDNUSR_DEFINE_NAME>ICPNDWMSG_SCALING_2</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Adjusting the die %s to fit inside the %s region.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>319</Id>
+    <CDNUSR_DEFINE_NAME>ICPNDWMSG_TECHFILE_LOAD_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Loading techfile %s %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>320</Id>
+    <CDNUSR_DEFINE_NAME>ICPNDWMSG_DRAWING_TOO_SMALL_1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Symbol %s is estimated to be larger than the drawing. Increasing drawing extents.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>321</Id>
+    <CDNUSR_DEFINE_NAME>ICPNDWMSG_DRAWING_RESIZE_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Drawing %s increased to %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>322</Id>
+    <CDNUSR_DEFINE_NAME>ICPNDWMSG_BAD_DRAWING_TYPE_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unrecognized package design style specified (%d). 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>323</Id>
+    <CDNUSR_DEFINE_NAME>ICPNDWMSG_CANT_ADD_LAYER_2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to add %s layer %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>324</Id>
+    <CDNUSR_DEFINE_NAME>ICPNDWMSG_TECHFILE_FAIL_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to load techfile %s. Select an alternate techfile.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>325</Id>
+    <CDNUSR_DEFINE_NAME>ICPNDWMSG_TEMPLATE_REJECT_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+File cannot be used as a template (Reason: %s).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>326</Id>
+    <CDNUSR_DEFINE_NAME>ICPNDWMSG_RESIZE_FAIL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to resize the drawing extents.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>327</Id>
+    <CDNUSR_DEFINE_NAME>ICPNDWMSG_BAD_CIOP_LAYERS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+RDL layer not adjacent to passivation opening layer.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>328</Id>
+    <CDNUSR_DEFINE_NAME>ICPNDWMSG_TEMPLATE_LOAD_FAIL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to open template drawing. A new empty drawing has been started.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>329</Id>
+    <CDNUSR_DEFINE_NAME>ICPNDWMSG_MISSING_INFO</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Fill in all fields to advance to the next step of the wizard.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>330</Id>
+    <CDNUSR_DEFINE_NAME>ICPNDWMSG_BAD_CORE_SIZE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Invalid core dimensions. Resettings to minimum size (2x2).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>331</Id>
+    <CDNUSR_DEFINE_NAME>ICPNDWMSG_BAD_SIZE_RATIO_2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Given specified aspect ratio, this %s would cause the %s to exceed the drawing dimensions. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>332</Id>
+    <CDNUSR_DEFINE_NAME>ICPNDWMSG_COMP_NAME_EXISTS_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Component name already in use in the design for the %s component. Enter a unique name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>333</Id>
+    <CDNUSR_DEFINE_NAME>ICPNDWMSG_BAD_NAME_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The name %s is invalid. It contains illegal characters. Enter a new name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>334</Id>
+    <CDNUSR_DEFINE_NAME>ICPNDWMSG_NO_DIE_PINS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The specified LEF/OA data contains no die pad instances.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>335</Id>
+    <CDNUSR_DEFINE_NAME>ICPNDWMSG_BAD_ESTDIESIZE_2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Estimated %s is less than the %s. Increase dimensions.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>336</Id>
+    <CDNUSR_DEFINE_NAME>ICPNDWMSG_OVERLAP_RESULT_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+This value will result in overlapping %s. Adjusting one or more values is recommended.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>337</Id>
+    <CDNUSR_DEFINE_NAME>ICPNDWMSG_SPECIFY_PITCH</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+A value for the pin pitch must be entered before a die size may be estimated.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>338</Id>
+    <CDNUSR_DEFINE_NAME>ICPNDWMSG_OVERLAP_PAD_POSSIBLE_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+%s pin overlap may occur with the specified values. A larger value is recommended.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>339</Id>
+    <CDNUSR_DEFINE_NAME>ICPNDWMSG_DIE_BGA_OVERLAP</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+The current die size will overlap the BGA. If this is not a chip-scale package, increasing BGA size may be necessary.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>340</Id>
+    <CDNUSR_DEFINE_NAME>ICPNDWMSG_NO_TEMPLATE_FILE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No template file currently specified. Disable this option or select a file to continue.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>341</Id>
+    <CDNUSR_DEFINE_NAME>ICPNDWMSG_BAD_CONSTRAINTS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The current design rule constraint values for line width and line to line spacing are both 0.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>342</Id>
+    <CDNUSR_DEFINE_NAME>ICPNDWMSG_RECOMMEND_DIE_BGA_CLEAR</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+A minimum distance between the innermost BGA balls and die pads of 1500um is recommended.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>343</Id>
+    <CDNUSR_DEFINE_NAME>ICPNDWMSG_NO_TECHNOLOGIES</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Unable to locate technologies file. Check your installation path and TECHPATH setting.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>344</Id>
+    <CDNUSR_DEFINE_NAME>ICPDFSMSG_NO_PLANES_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No planes are defined on net/subnet name &apos;%s&apos;. Item(s) on this net have been deselected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>345</Id>
+    <CDNUSR_DEFINE_NAME>ICPDFSMSG_MULTI_NETS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Different nets cannot be shorted together. Select items from a single net only.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>346</Id>
+    <CDNUSR_DEFINE_NAME>ICPDFSMSG_NO_OVERWRITE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Existing shorting scheme(s) will not be overwritten. This can be enabled from the options tab. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>347</Id>
+    <CDNUSR_DEFINE_NAME>ICPDFSMSG_VIEW_ONLY</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Define short is currently in view-only mode. Turn on override status from the options tab.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>348</Id>
+    <CDNUSR_DEFINE_NAME>ICPDFSMSG_DUPLICATE_2</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+The subnet %s is duplicated on net %s. Property not added.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>349</Id>
+    <CDNUSR_DEFINE_NAME>ICPDFSMSG_UNKNOWN_NET_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Unrecognized net/subnet &apos;%s&apos;.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>350</Id>
+    <CDNUSR_DEFINE_NAME>ICPDFSMSG_REMOVED_NET_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Removing the unrecognized net/subnet &apos;%s&apos;.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>351</Id>
+    <CDNUSR_DEFINE_NAME>ICPDFSMSG_DIFFERENT_NETS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The selected items are on different nets. Different nets cannot be shorted together.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>352</Id>
+    <CDNUSR_DEFINE_NAME>ICPCTOSMSG_IRREGULAR_PITCH_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+The calculated pin pitch for this symbol indicates an irregular pin pattern. A spreadsheet with %d rows and %d columns will be created. Proceed?
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>353</Id>
+    <CDNUSR_DEFINE_NAME>BPAMSG_DUPE_LABEL_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Duplicate bond finger label &apos;%s&apos; found on finger at %L.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>354</Id>
+    <CDNUSR_DEFINE_NAME>BPAMSG_NO_DUPE_LABELS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+No duplicate bond finger labels were found during processing.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>355</Id>
+    <CDNUSR_DEFINE_NAME>BPAMSG_DUPE_LABELS_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Duplicate bond finger labels were found. See %s for complete list of duplicate labels.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>356</Id>
+    <CDNUSR_DEFINE_NAME>BPAMSG_SELECT_FINGERS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select the bond fingers to assign finger names to. Names are stored in the BOND_PAD property.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>357</Id>
+    <CDNUSR_DEFINE_NAME>BPAMSG_REF_INTEGER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Beginning bond finger label must end with an integer. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>358</Id>
+    <CDNUSR_DEFINE_NAME>BPAMSG_REF_EXISTS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Beginning bond finger label already exists in design. Specify a unique value.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>359</Id>
+    <CDNUSR_DEFINE_NAME>BPAMSG_NO_SORTING_SPEC</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No horizontal and/or vertical sorting type specified in options tab. Configure these fields to proceed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>360</Id>
+    <CDNUSR_DEFINE_NAME>BPAMSG_NO_SORTING</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Horizontal and vertical sorting type are both set to no sort. You must set at least one sorting type.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>361</Id>
+    <CDNUSR_DEFINE_NAME>BPAMSG_NEW_VALUE_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+The bond finger at %L has been named &apos;%s&apos;.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>362</Id>
+    <CDNUSR_DEFINE_NAME>BPAMSG_RENAME_VALUE_3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+The bond finger at %L has been renamed from &apos;%s&apos; to &apos;%s&apos;.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>363</Id>
+    <CDNUSR_DEFINE_NAME>BPAMSG_UNCHANGE_VALUE_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+The bond finger at %L has not been renamed. It is still &apos;%s&apos;.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>364</Id>
+    <CDNUSR_DEFINE_NAME>BPAMSG_REMOVE_VALUE_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+The bond finger at %L has had its name removed (was previously &apos;%s&apos;).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>365</Id>
+    <CDNUSR_DEFINE_NAME>BPAMSG_TEXT_UPDATED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+The text label on the bond finger has been updated to the new name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>366</Id>
+    <CDNUSR_DEFINE_NAME>BPAMSG_TEXT_REMOVED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+The text label on the bond finger has been removed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>367</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_USER_OPERATION_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+The structure %s command was %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>368</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_USER_OOPS_1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Undoing last structure %s operation. Database has been reverted to previous state.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>369</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_FILE_WRITE_FAIL_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to write the file %s. Check directory write access permissions. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>370</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_FILENAME_TO_LOWER_2</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+The filename &apos;%s&apos; was automatically converted to lowercase (&apos;%s&apos;).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>371</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_FILE_WRITE_OK_1</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+The file %s was successfully written to disk.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>372</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_NO_MATCH_START_LAYER_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot place structure at %L. The start layer of the structure does not match the selected element&apos;s layer.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>373</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_INVALID_NAME_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Structure name &apos;%s&apos; contains illegal characters. Enter a new name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>374</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_NAME_EXISTS_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Symbol name &apos;%s&apos; already exists in the design. Enter a unique name for this structure.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>375</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_INVALID_OBJTYPE_2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The selected item (type &apos;%s&apos;) is not support as a structure %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>376</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_FAILED_DEF_CREATE_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to create structure symbol definition &apos;%s&apos;.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>377</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_NO_OOPS_CURSOR</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Unable to oops while unplaced library symbol is on the cursor. Place the current structure or cancel. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>378</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_INSTANCES_ADDED_2</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+%d instances of the structure &apos;%s&apos; have been added to the database.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>379</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_DEFINE_DIFF_NETS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Selected items are not on the same net. All pieces of the structure definition must be on the same net.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>380</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_DEFINE_NOT_CONN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Selected items are not physically connect. All pieces of the structure definition must be physically connected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>381</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_DEF_CREATED_1</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Structure &apos;%s&apos; definition successfully added to database.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>382</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_PART_OTHER_SYM</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+One or more selected items is part of an existing symbol instance.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>383</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_PICK_ORIGIN</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select the origin of the new structure. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>384</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_PICK_VS_ELEMENTS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select the conductor elements which will define the structure. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>385</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_XML_LOAD_ERROR_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to load structure definition from %s. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>386</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_CLINE_PAD_EXIT</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+One or more clines do not completely exit from pin/via pads. This will introduce problems adding fillets later.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>387</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_DEF_NOT_IN_STRUCT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Selected end item is not part of the selected structure elements. Select again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>388</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_ADD_SEL_VS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select a structure from the available structures list on the form or by picking in canvas.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>389</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_ADD_NOT_VS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Selected item is not a structure. Select again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>390</Id>
+    <CDNUSR_DEFINE_NAME>VMSG_ADD_BAD_ANGLE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Angle must be between 0 and 360 degrees. Enter a new angle. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>391</Id>
+    <CDNUSR_DEFINE_NAME>VMSG_ADD_SELECTED_VS_1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Selected structure is &apos;%s&apos;. Select the items to add this structure to.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>392</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_ITEM_NOT_ON_LAYER_3</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The %s at %L is not defined on layer %L. Unable to place structure at this location.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>393</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_CLINE_NOT_FLOATING</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The cline at %L does not have an unconnected end. At least one end must be unconnected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>394</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_DUMMY_ITEM_COUNT_1</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+%d selected items are on dummy nets and have not had structures added to them.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>395</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_DEF_PART_OTHER_SYM_EXP</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Selection contains item(s) belong to another symbol. The structure cannot be instantiated at this location. Create library definition (.(e)xml file)?
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>396</Id>
+    <CDNUSR_DEFINE_NAME>ACNMSG_SELECT_ITEMS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select components and/or pins to generate nets for.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>397</Id>
+    <CDNUSR_DEFINE_NAME>ACNMSG_NUM_ASSIGNED_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%d pins were assigned to nets, and %d pins were reassigned to new nets.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>398</Id>
+    <CDNUSR_DEFINE_NAME>ACNMSG_NUM_FAILED_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+%d pins could not be assigned.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>399</Id>
+    <CDNUSR_DEFINE_NAME>ACNMSG_NUM_FAILED_LOG_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+%d pins could not be assigned.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>400</Id>
+    <CDNUSR_DEFINE_NAME>ICPILMSG_SEE_LOG</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+See log file for additional information.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>401</Id>
+    <CDNUSR_DEFINE_NAME>ACNMSG_PIN_ASSIGNED_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pin %s has been assigned to net %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>402</Id>
+    <CDNUSR_DEFINE_NAME>ACNMSG_PIN_REASSIGNED_3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pin %s has been reassigned from net %s to %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>403</Id>
+    <CDNUSR_DEFINE_NAME>ACNMSG_PIN_NET_MATCHES_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pin %s is already assigned to net %s. No change required.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>404</Id>
+    <CDNUSR_DEFINE_NAME>ACNMSG_PIN_NO_REASSIGN_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pin %s is already assigned to net %s. Reassignment option is off; no change has been made.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>405</Id>
+    <CDNUSR_DEFINE_NAME>ACNMSG_NET_CREATE_FAIL_2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to create net named %s. Pin %s not assigned to new net. 
+    </Desc>
+    <ExtDesc>
+Check the net name length. If possible use a lower net name prefix to shorten the 
+length of generated net names for pins with long names such as this pin.    
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>406</Id>
+    <CDNUSR_DEFINE_NAME>APCRSMSG_NO_PLANES</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Design contains no power/ground planes (shapes on conductive layers).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>407</Id>
+    <CDNUSR_DEFINE_NAME>APCRSMSG_DUPE_SUBNET_2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The subnet &apos;%s&apos; is duplicated on net &apos;%s&apos;. The subnet has not been added.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>408</Id>
+    <CDNUSR_DEFINE_NAME>APCRSMSG_NOT_PG_NET_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Net &apos;%s&apos; is not a power/ground net. You must select a power/ground net. 
+    </Desc>
+    <ExtDesc>
+If the selected net is a power/ground net, then it is missing the voltage
+property. This property is what is used by the system to identify nets
+of this particular class. Add the property, then run this command again.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>409</Id>
+    <CDNUSR_DEFINE_NAME>APCRSMSG_NO_VIA_PAD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The design contains no vias which are available for shorting. 
+    </Desc>
+    <ExtDesc>
+If the selected net is a power/ground net, then it is missing the voltage
+property. This property is what is used by the system to identify nets
+of this particular class. Add the property, then run this command again.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>410</Id>
+    <CDNUSR_DEFINE_NAME>APCRSMSG_VIA_NO_DRILL_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+The selected via padstack (%s) has no drill hole defined. 
+    </Desc>
+    <ExtDesc>
+Note: The NC Drill command will not create drill figures without 
+      drill hole information defined for the padstack definition.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>411</Id>
+    <CDNUSR_DEFINE_NAME>APCRSMSG_NO_VALID_SELECT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+None of the items selected are eligible for shorting. Select again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>412</Id>
+    <CDNUSR_DEFINE_NAME>APCRSMSG_NO_NET_2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The item at (%L, %L) is not on a net and cannot be used for shorting.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>413</Id>
+    <CDNUSR_DEFINE_NAME>APCRSMSG_VIA_ADD_FAIL_4</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to create shorting %s via at (%L, %L) to net &apos;%s&apos;.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>414</Id>
+    <CDNUSR_DEFINE_NAME>APCRSMSG_PROP_ADD_FAIL_4</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to attach shorting scheme &apos;%s&apos; to %s via at (%L, %L).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>415</Id>
+    <CDNUSR_DEFINE_NAME>APCRSMSG_CREATE_PAD_FAIL_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to create new padstack definition based on %s. Cannot add shorting vias.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>416</Id>
+    <CDNUSR_DEFINE_NAME>APCRSMSG_BAD_SHORT_5</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s at (%L, %L) on net &apos;%s&apos; has an invalid shorting scheme (%s).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>417</Id>
+    <CDNUSR_DEFINE_NAME>APCRSMSG_CONF_SHORT_4</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s at (%L, %L) on net &apos;%s&apos; has a conflicting shorting scheme (%s).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>418</Id>
+    <CDNUSR_DEFINE_NAME>APCRSMSG_SHAPE_HAS_VOID_3</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+A shape on layer %s has a void located at (%L, %L) which may require that the shape be re-voided.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>419</Id>
+    <CDNUSR_DEFINE_NAME>APCRSMSG_FING_OFFSET_3</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid bond finger offset specified for padstack &apos;%s&apos; at (%L, %L).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>420</Id>
+    <CDNUSR_DEFINE_NAME>APCRSMSG_SINGLE_PAD_3</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+The single-layer padstack on layer %s at (%L, %L) was not added.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>421</Id>
+    <CDNUSR_DEFINE_NAME>APCRSMSG_OUTSIDE_PLANE_3</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+The via at (%L, %L) on layer %s lies outside the plane. The via was not added.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>422</Id>
+    <CDNUSR_DEFINE_NAME>APCRSMSG_PG_NET_LIST</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Power and ground shapes (net/subnet):
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>423</Id>
+    <CDNUSR_DEFINE_NAME>APCRSMSG_ADDREP_VIA_4</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+A via will be %s at (%L, %L) with shorting scheme &apos;%s&apos;.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>424</Id>
+    <CDNUSR_DEFINE_NAME>APCRSMSG_VIA_ADDREPED_4</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Via successfully %s at (%L, %L) with shorting scheme &apos;%s&apos;.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>425</Id>
+    <CDNUSR_DEFINE_NAME>APCRSMSG_SHORTING_SCHEME_5</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+The shorting scheme &apos;%s&apos; exists on the %s at (%L, %L) for net &apos;%s&apos;.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>426</Id>
+    <CDNUSR_DEFINE_NAME>ICPAANMSG_ROUTE_FEAS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Running route feasibility to estimate package routability of net assignments.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>427</Id>
+    <CDNUSR_DEFINE_NAME>CMPLNMSG_INCREASE_ACCURACY</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to compute intersection points. Increase the drawing accuracy and run this command again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>428</Id>
+    <CDNUSR_DEFINE_NAME>CMPLNMSG_CLOSE_GAP</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Use the &apos;Close Gap&apos; option from the RMB popup to close the next smallest gap. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>429</Id>
+    <CDNUSR_DEFINE_NAME>CMPLNMSG_SELECT_SEGS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select the lines / line segments to be composed into lines. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>430</Id>
+    <CDNUSR_DEFINE_NAME>CMPLNMSG_CLOSED_LOOP</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+The selected segments cannot be further combined. Closing the next smallest gap would form a close shape.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>431</Id>
+    <CDNUSR_DEFINE_NAME>CMPLNMSG_PROCESSING</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Processing the selected segments. Depending on the number of items selected, this may take a few minutes. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>432</Id>
+    <CDNUSR_DEFINE_NAME>CMPLNMSG_GAP_INCREASED_1</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Increasing the gap tolerance to %s to close the next smallest gap.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>433</Id>
+    <CDNUSR_DEFINE_NAME>CMPSHMSG_PROCESSING</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Processing the selected segments. For a large number of segments, this may take a few minutes. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>434</Id>
+    <CDNUSR_DEFINE_NAME>CMPSHMSG_USE_CLOSE_SHAPE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Use the &apos;Close Shape&apos; option from the RMB popup to close any shape(s) left open.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>435</Id>
+    <CDNUSR_DEFINE_NAME>CMPSHMSG_OPEN_SHAPES_REMAIN</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+There are segments remaining which do not form a closed shape based on current gap settings.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>436</Id>
+    <CDNUSR_DEFINE_NAME>CMPSHMSG_MAX_SEGMENTS_2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Too many segments to process (%d selected, %d max supported). Select fewer segments.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>437</Id>
+    <CDNUSR_DEFINE_NAME>CMPSHMSG_INCREASING_GAP_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Increasing the gap tolerance to %s to close the next smallest gap.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>438</Id>
+    <CDNUSR_DEFINE_NAME>CMPSHMSG_NUM_CREATED_1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+A total of %d shapes were created.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>439</Id>
+    <CDNUSR_DEFINE_NAME>CMPSHMSG_SELECT_PROMPT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select the lines / line segments to be composed into shape(s).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>440</Id>
+    <CDNUSR_DEFINE_NAME>CMPSHMSG_INVALID_NET_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Net &apos;%s&apos; not found in design. Enter an existing net name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>441</Id>
+    <CDNUSR_DEFINE_NAME>CMPSHMSG_NO_CLOSE_SHAPE</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Unable to create closed shape(s) from selected segments using current gap settings.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>442</Id>
+    <CDNUSR_DEFINE_NAME>CMPSHMSG_NO_BREAKS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No breaks to display.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>443</Id>
+    <CDNUSR_DEFINE_NAME>CMPSHMSG_NO_SELECTION</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+No lines / line segments selected. Reselect the items to compose into shape(s).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>444</Id>
+    <CDNUSR_DEFINE_NAME>ICPMSG_WBREPORT_BADCONF</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The %s file does not represent a valid wirebond report configuration.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>445</Id>
+    <CDNUSR_DEFINE_NAME>ICPMSG_SHAPECLINE_PROCESS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select the shapes to be converted into cline objects.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>446</Id>
+    <CDNUSR_DEFINE_NAME>ICPOVMSG_VIA_EXISTS_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+%d of the selected pins are already connected to vias. This process may create duplicate vias.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>447</Id>
+    <CDNUSR_DEFINE_NAME>WBNSTDMSG_SAME_OBJECT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to create bond wire. Start and end connecting objects are the same. Select a different end object.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>448</Id>
+    <CDNUSR_DEFINE_NAME>ICPILMSG_BETA_COMMAND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+This is a beta feature and cannot be run at this time. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>449</Id>
+    <CDNUSR_DEFINE_NAME>ICPDIAMSG_NO_DISTRIB_DIES</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+There are no co-design dies in this design available (or licensed with current options) for abstract writing.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>450</Id>
+    <CDNUSR_DEFINE_NAME>EBMSG_INVALID_MIN_MASK_CLEAR</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Antenna length (%s) must be greater than or equal to Min. mask clearance (%s).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>451</Id>
+    <CDNUSR_DEFINE_NAME>ICPWBTPMSG_FILTER_NONSTANDARD</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Filtering non-standard bond wires from selection. These wires must be edited with the add/edit non-standard wire bond command.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>452</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_CLINE_ENDCONN_UNKNOWN</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Both ends of selected cline are dangling. Unable to determine which end to place structure to.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>453</Id>
+    <CDNUSR_DEFINE_NAME>ICPNETMSG_PROPAGATE_OFF</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Assignment propagation option is disabled. Net not updated on selected item as it is not a pin or shape.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>454</Id>
+    <CDNUSR_DEFINE_NAME>SSVAILMSG_NO_VIA_PADSTACKS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No available via padstacks defined in the constraint system via list. Unable to run command at this time.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>455</Id>
+    <CDNUSR_DEFINE_NAME>SSVAILMSG_SHAPE_SELECT_1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select the %s for shape-to-shape via connection array creating/removal.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>456</Id>
+    <CDNUSR_DEFINE_NAME>SSVAILMSG_LEGALIZE_PAD</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+The current padstack is not defined on the necessary layers. A new default padstack has been selected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>457</Id>
+    <CDNUSR_DEFINE_NAME>SSVAILMSG_CONFIGURE_FORM</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Configure via array settings for creation or remove existing array.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>458</Id>
+    <CDNUSR_DEFINE_NAME>SSVAILMSG_SPACE_LESS_CLEAR</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Via to shape layer spacing is larger than via array spacing. Not all vias in the array will be created.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>459</Id>
+    <CDNUSR_DEFINE_NAME>SSVAILMSG_NO_VALID_CONN_SHAPE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+The selected shape cannot be shorted with the reference shape. It is either not on the same net or is not on a valid layer.
+    </Desc>
+    <ExtDesc>
+To short two shapes together with the shorting via array command, both shapes must be on the same net. Additionally,
+they must be on different layers of the design and must be filled (no cross-hatched shapes allowed).
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>460</Id>
+    <CDNUSR_DEFINE_NAME>BPAMSG_RADIAL_REF_PICK</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select reference finger for start of radial sort.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>461</Id>
+    <CDNUSR_DEFINE_NAME>BPAMSG_RADIAL_REF_PICK2</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Selected finger is not in the active set. Select reference finger for radial sort.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>462</Id>
+    <CDNUSR_DEFINE_NAME>PBARMSG_MULTI_BGA_EXISTS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Multiple BGA components exist in the active drawing. The largest BGA will be used.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>463</Id>
+    <CDNUSR_DEFINE_NAME>PBARMSG_QUESTIONNABLE_BGA</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+The largest BGA in the design has a very small pin count and may have the wrong component class. Continue?
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>464</Id>
+    <CDNUSR_DEFINE_NAME>SSVAILMSG_BOTH_SHAPES_SELECTED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Both reference and destination shapes selected. Configure form settings to generate via array.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>465</Id>
+    <CDNUSR_DEFINE_NAME>SSVAILMSG_STARTEND_LAYERS_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Vias will be add between layers %s and %s in overlapping regions of selected shapes.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>466</Id>
+    <CDNUSR_DEFINE_NAME>WBNSTDMSG_BAD_PADSTACK_2</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Padstack %s not on cline layer (%s). Using auto padstack.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>467</Id>
+    <CDNUSR_DEFINE_NAME>ICPMSG_SPREADSHEET_SYM_PROMPT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select the component(s) to generate update from external spreadsheet file(s).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>468</Id>
+    <CDNUSR_DEFINE_NAME>ICPMSG_UPDATE_NEED_SOURCE_FILE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Specify the source spreadsheet file name and location to continue.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>469</Id>
+    <CDNUSR_DEFINE_NAME>ICPMSG_UPDATE_NEED_DATA_CONFIG</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Configure data present in spreadsheet cells. Only net name and pin use will be updated.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>470</Id>
+    <CDNUSR_DEFINE_NAME>ICPMSG_READ_SPREADSHEET_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to read spreadsheet data file successfully. Component not updated.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>471</Id>
+    <CDNUSR_DEFINE_NAME>ICPMSG_SPREADSHEET_NET_MISSING_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Net %s not found in database. New net %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>472</Id>
+    <CDNUSR_DEFINE_NAME>ICPMSG_SPREADSHEET_PIN_UPDATED_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pin %s %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>473</Id>
+    <CDNUSR_DEFINE_NAME>CMPSHMSG_REMOVED_DUPLICATES_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+%d selected items completely overlapped with segments from other selected items and have been filtered.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>474</Id>
+    <CDNUSR_DEFINE_NAME>V3DMSG_SELECT_NETS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select the net(s) and set clearance value for generating 3D view.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>475</Id>
+    <CDNUSR_DEFINE_NAME>ACNMSG_PIN_NO_SUFFIX_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pin %s is has no %s. Use of pin number as default value is off; no change has been made.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>476</Id>
+    <CDNUSR_DEFINE_NAME>APDTOPCBMSG_NO_SIGNAL_NETS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No pins of the selected BGA component have signals nets assigned. Unable to generate component for use on PCB.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>477</Id>
+    <CDNUSR_DEFINE_NAME>DPNMSG_NUM_REFRESHED_1</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+%d text labels updated based on current design connectivity.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>478</Id>
+    <CDNUSR_DEFINE_NAME>APDTOPCBMSG_FILTER_NETS</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+If desired, select specific net(s) to include in delay report.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>479</Id>
+    <CDNUSR_DEFINE_NAME>APDTOPCBMSG_NETS_SELECTED_1</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+%d nets selected for inclusion in pin delay report.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>480</Id>
+    <CDNUSR_DEFINE_NAME>IPCILMSG_DIA_XML_NO_CONVERT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+The specified die abstract file was not converted to XML format. Some possible reasons:
+      - the die abstract file is not in binary format as specified by Cadence standards.
+      - the die abstract file contains information that is considered proprietary to Cadence and cannot be publicized in XML format.
+      - there are permission restrictions on the specified XML output file or on its directory.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>481</Id>
+    <CDNUSR_DEFINE_NAME>DPNMSG_BATCH_UPDATE_NO_ITEMS</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+No text labels registered for automatic updating. If old text labels exist in the design, they must be recreated.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>482</Id>
+    <CDNUSR_DEFINE_NAME>REPVSMSG_SELECT_VIAS_TO_REPLACE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select the padstack and structure for replacement, then select the item(s) to be replaced.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>483</Id>
+    <CDNUSR_DEFINE_NAME>REPVSMSG_NO_ITEMS_TYPE_1</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+No %s found in the design. Unable to replace vias with structures at this time.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>484</Id>
+    <CDNUSR_DEFINE_NAME>REPVSMSG_NUM_REPLACED_3</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Finished replacement of %d %s with %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>485</Id>
+    <CDNUSR_DEFINE_NAME>REPVSMSG_NONE_TO_REPLACE_2</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+No %s found to be replaced with %s. No changes made to the design.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>486</Id>
+    <CDNUSR_DEFINE_NAME>CHGSYMMSG_SELECT_SYMBOL</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select the symbol for adding/removing children.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>487</Id>
+    <CDNUSR_DEFINE_NAME>CHGSYMMSG_SELECT_CHILDREN</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select the objects to add/remove to the symbol. Switch modes using the mouse menu.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>488</Id>
+    <CDNUSR_DEFINE_NAME>CHGSYMMSG_SYMBOL_SELECTED</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+%s selected for child manipulation.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>489</Id>
+    <CDNUSR_DEFINE_NAME>CHGSYMMSG_CHANGE_MODE</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Changing to %s child mode.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>490</Id>
+    <CDNUSR_DEFINE_NAME>CHGSYMMSG_CHANGE_RESULTS</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+%d items %s symbol (%d associated with a different symbol or not of applicable type).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>491</Id>
+    <CDNUSR_DEFINE_NAME>ICPPKGTYPEMSG_NONSTANDARD_TYPE_1</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Custom package type (%s) selected. Default behavior will be used in affected commands.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>492</Id>
+    <CDNUSR_DEFINE_NAME>ICPPKGTYPEMSG_CUSTOM_TYPES_1</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+%d package types found in wire profile definitions have been added to standard package types.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>493</Id>
+    <CDNUSR_DEFINE_NAME>ICPBWDOCMSG_STALE_MAPPING_2</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Mapping for layer %s references %s not found in database.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>494</Id>
+    <CDNUSR_DEFINE_NAME>ICPBWDOCMSG_UPDATE_COMPLETE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Update of bond wire documentation layer(s) on manufacturing class complete.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>495</Id>
+    <CDNUSR_DEFINE_NAME>ICPBWDOCMSG_BATCH_NO_MAP</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No mappings defined. Unable to process batch update.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>496</Id>
+    <CDNUSR_DEFINE_NAME>ICPBWDOCMSG_LOAD_SAVED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Loading saved layer mappings from database.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>497</Id>
+    <CDNUSR_DEFINE_NAME>CLNCHGWIDMSG_NO_MAX_WIDTH</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cline with endpoint at %s on net %s has no (or incorrectly) defined max line width. Cline will not be modified.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>498</Id>
+    <CDNUSR_DEFINE_NAME>PKGRTEMSG_EXTENTS_USED_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Exporting package routing using extents of %s to IC view.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>499</Id>
+    <CDNUSR_DEFINE_NAME>REPVSMSG_FIXED_IGNORED_1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Selected %s that are fixed have been skipped; to replace these, enable the option in the command settings.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>500</Id>
+    <CDNUSR_DEFINE_NAME>ICPMSG_SPREADSHEET_PIN_MODIFIED_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pin being %s at %L.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>501</Id>
+    <CDNUSR_DEFINE_NAME>ICPNETMSG_STATUS_SUCCESS_3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pin %s.%s deassigned from net %s. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>502</Id>
+    <CDNUSR_DEFINE_NAME>MESHPADMSG_RAD_DIM_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Corner radius must be less than %s for proper rounding. Update value before generating degassing holes.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>503</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_DEFINE_NO_DYNAM_SHAPES</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Dynamic Shape(s) may not be selected for Define Structure.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>504</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_DEFINE_ONLY_ETCH_OR_KEEPOUT_SHAPES</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unsupported Shape Type for Define Structure.  Must be Etch or Route Keepout.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>505</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_DEFINE_VOIDS_NOT_SUPPORTED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Selected void(s) are deleted, and are not in the structure symbol.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>506</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_PICK_VS_RPV</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select the conductor elements which will define Return Path Connection. When finished, select Complete Return Path from the mouse popup menu.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>507</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_WRONG_NET_NAME</CDNUSR_DEFINE_NAME>
+    <Category>W
+    </Category>
+    <Desc>
+Entered net name is incorrect. Original Return Path nets list is restored. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>508</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_NO_RP_CONNECTION</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+No Return Path connection is defined for structure. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>509</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_HS_VS_NOT_ALLOWED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+High-Speed Via Structure %s processing is not allowed. Valid license is required.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>510</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_RPV_DEF_QUERY</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Define Return Path Connection for Via Structure?
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>511</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_NO_HS_LICENSE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No license is available for creating High-Speed Structure.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+
+  <Msg>
+    <Id>512</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_DEFINE_INCOMPLETE_SEL</CDNUSR_DEFINE_NAME>
+    <Category>W
+    </Category>
+    <Desc>
+Selected structure layout might be incomplete. Some connected objects could hidden or missed in selection. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>513</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_NORPNET_ASSIGN</CDNUSR_DEFINE_NAME>
+    <Category>E
+    </Category>
+    <Desc>
+Placing structure requires Return Path Net assignment. Select valid net name in the form.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>514</Id>
+    <CDNUSR_DEFINE_NAME>ICPMSG_SPREADSHEET_FAILED_TO_OPEN_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The file %s is currently open in other application and is locked for reading. Close the application to import the file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>515</Id>
+    <CDNUSR_DEFINE_NAME>ICPMSG_SPREADSHEET_LABELS_NOT_AVAILABLE_1</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Row and column headers are not available for component &apos;%s&apos; because the component does not use an alphanumeric, grid-based pattern.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>516</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_FIXED_PROP_IGNORED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Fixed property found on 1+ items for new structure. Property ignore to create structure and initial structure instance.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>517</Id>
+    <CDNUSR_DEFINE_NAME>CBSMSG_SUMMARY_2</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+%d shape(s) created on %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>518</Id>
+    <CDNUSR_DEFINE_NAME>CBSMSG_NEG_SEPARATION_VAL</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Maximum separation should be a non-negative value.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>519</Id>
+    <CDNUSR_DEFINE_NAME>CBSMSG_NEG_DISTANCE_VAL</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Maximum distance from pad should be a non-negative value.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>520</Id>
+    <CDNUSR_DEFINE_NAME>EBMSG_LINE_CANNOT_CROSS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cannot cross an etch back trace that is not masked.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>521</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_DEFINE_NO_DIESTACK_OBJECTS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Objects in die stack layer may not be selected for Define Structure.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+    <Msg>
+    <Id>522</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_DEFINE_NO_DIELECTRIC_OBJECTS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Objects in dielectric layer may not be selected for Define Structure.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>523</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_PROPERTIES_NOT_PRESERVED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Properties were deleted from selected objects because preserve properties option was not selected during structure creation.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>524</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_STANDARD_PICK_ELEMENTS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Standard Via Structure: Select the conductor elements which will define the via structure.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>525</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_HIGHSPEED_PICK_ELEMENTS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+High Speed Via Structure: Select the conductor elements which will define the via structure.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>526</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_LCOMP_PROMPT_INFO</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+L Comp: Enter required parameter values.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>527</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_EXPORT_OVERWRITE_CONFIRM</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Files with the same name as the exported files exist in the selected directory. Export All will overwrite the existing files. Do you want to proceed?
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>528</Id>
+    <CDNUSR_DEFINE_NAME>VSMSG_EXPORT_LACK_LICENSE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Warning: Only Standard Structures were exported. Need High Speed Option or SiP license to export High Speed/LComp Structures.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>529</Id>
+    <CDNUSR_DEFINE_NAME>AREFMSG_MF_LAYER_MAPPING_BAD</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Detecting metal fill being represented in AREF but targeted at non-%s class. If array format is preferred, update the mapping to %s class. If the current mapping is remained, AREFs will be flattened. Do you want to proceed?
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>530</Id>
+    <CDNUSR_DEFINE_NAME>ICPPVSMSG_SETTING_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Check PVS Run Setting again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+ 
+  <Msg>
+    <Id>531</Id>
+    <CDNUSR_DEFINE_NAME>ICPPVSMSG_SETTING_NULL_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+PVS Run Setting Error: %s is missing.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>532</Id>
+    <CDNUSR_DEFINE_NAME>WBSMASKMSG_NO_PADS_ON_LAYER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Selected items do not have pads defined on the specified layer. Solder mask not generated.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>533</Id>
+    <CDNUSR_DEFINE_NAME>DGSMSG_VOID_SPACING_LOAD_SMALLER_EQUAL_ZERO</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Void spacing loaded from saved parameter is smaller than or equal to 0. It is changed to minimum aperture.
+    </Desc>
+    <ExtDesc>
+If spacing is not greater than zero, void will overlap or touch other boundaries.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>534</Id>
+    <CDNUSR_DEFINE_NAME>CMPSHMSG_BAD_LAYER_1</CDNUSR_DEFINE_NAME>
+    <Category>
+        I
+        <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Invalid shape layer (%L) specified. Unable to create shapes.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>535</Id>
+    <CDNUSR_DEFINE_NAME>CMPSHMSG_BAD_FILL_1</CDNUSR_DEFINE_NAME>
+    <Category>
+        I
+        <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Invalid shape fill (%L) specified. Legal values are t and nil.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>536</Id>
+    <CDNUSR_DEFINE_NAME>CMPSHMSG_BAD_NET</CDNUSR_DEFINE_NAME>
+    <Category>
+        I
+        <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Unknown net specified for shape creation.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>537</Id>
+    <CDNUSR_DEFINE_NAME>CMPSHMSG_NO_OBJECTS</CDNUSR_DEFINE_NAME>
+    <Category>
+        I
+        <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+No valid objects in object set to compose shapes from.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>538</Id>
+    <CDNUSR_DEFINE_NAME>LYRCMPMSG_COMPLETE</CDNUSR_DEFINE_NAME>
+    <Category>
+        I
+        <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Layer comparison complete successfully.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>539</Id>
+    <CDNUSR_DEFINE_NAME>LYRCMPMSG_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to perform layer comparison because the polygon operation failed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>540</Id>
+    <CDNUSR_DEFINE_NAME>LYRCMPMSG_SELECT_AREA_1</CDNUSR_DEFINE_NAME>
+    <Category>
+        I
+        <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select %s to use for layer comparison.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>541</Id>
+    <CDNUSR_DEFINE_NAME>LYRCMPMSG_DESIGN_EXTENTS</CDNUSR_DEFINE_NAME>
+    <Category>
+        I
+        <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+The substrate outline / design extents will be used for layer compare calculations.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>542</Id>
+    <CDNUSR_DEFINE_NAME>LYRCMPMSG_SINGLE_ITEM_2</CDNUSR_DEFINE_NAME>
+    <Category>
+        I
+        <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Only one %s may be selected at a time. Automatically selecting the first %s in list.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>543</Id>
+    <CDNUSR_DEFINE_NAME>DGSMSG_NAME_EXISTS_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pattern name &apos;%s&apos; exists. Enter a new pattern name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>544</Id>
+    <CDNUSR_DEFINE_NAME>DGSMSG_BAD_PATTERN_NAME_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The pattern name &apos;%s&apos; contains illegal characters. Enter a different name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>545</Id>
+    <CDNUSR_DEFINE_NAME>DGSMSG_OFFSETNXTOOLARGE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The Nx value for Offset is not valid. Nx must be greater than or equal to 0 and less than the value for pitch X.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>546</Id>
+    <CDNUSR_DEFINE_NAME>DGSMSG_OFFSETNYTOOLARGE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The Ny value for Offset is not valid. Ny must be greater than or equal to 0 and less than the value for pitch Y.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+</MsgFile>

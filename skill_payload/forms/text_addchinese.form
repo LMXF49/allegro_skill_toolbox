@@ -1,0 +1,121 @@
+FILE_TYPE=FORM_DEFN VERSION=2
+FORM
+FIXED
+PORT 52 28
+HEADER "添加中文文字"
+
+POPUP <FONTPOP> "黑体 simhei" "C:/Windows/Fonts/simhei.ttf", "楷体 simkai" "C:/Windows/Fonts/simkai.ttf", "仿宋 simfang" "C:/Windows/Fonts/simfang.ttf", "雅黑 msyh" "C:/Windows/Fonts/msyh.ttc", "隶书 SIMLI" "C:/Windows/Fonts/SIMLI.TTF", "等线 Deng" "C:/Windows/Fonts/Deng.ttf".
+POPUP <SIZEPOP> "25" "25", "50" "50", "100" "100", "150" "150", "200" "200", "300" "300".
+POPUP <GAPPOP> "0.8" "0.8", "1.0" "1.0", "1.2" "1.2", "1.5" "1.5", "2.0" "2.0", "3.0" "3.0".
+POPUP <CLASSPOP> "Board Geometry" "BOARD GEOMETRY", "Package Geometry" "PACKAGE GEOMETRY", "Ref Des" "REF DES", "Drawing Format" "DRAWING FORMAT".
+POPUP <SUBPOP> """".
+
+TILE
+
+TEXT "文字内容:"
+TLOC 2 1
+ENDTEXT
+
+FIELD ctext
+FLOC 20 1
+STRFILLIN 30 256
+ENDFIELD
+
+TEXT "字体:"
+TLOC 2 4
+ENDTEXT
+
+FIELD font
+FLOC 20 4
+ENUMSET 26
+POP "FONTPOP"
+ENDFIELD
+
+FIELD fontbrowse
+FLOC 48 4
+MENUBUTTON "..." 3 2
+ENDFIELD
+
+TEXT "字体大小(mil):"
+TLOC 2 7
+ENDTEXT
+
+FIELD fsize
+FLOC 20 7
+ENUMSET 12
+POP "SIZEPOP"
+ENDFIELD
+
+TEXT "字间距(倍):"
+TLOC 2 10
+ENDTEXT
+
+FIELD fgap
+FLOC 20 10
+ENUMSET 12
+POP "GAPPOP"
+ENDFIELD
+
+TEXT "层类别:"
+TLOC 2 13
+ENDTEXT
+
+FIELD fclass
+FLOC 20 13
+ENUMSET 24
+POP "CLASSPOP"
+ENDFIELD
+
+TEXT "子类:"
+TLOC 2 16
+ENDTEXT
+
+FIELD fsub
+FLOC 20 16
+ENUMSET 24
+OPTIONS prettyprint ownerdrawn
+POP "SUBPOP"
+ENDFIELD
+
+FIELD fvis
+FLOC 46 16
+CHECKLIST "    " "LVIS"
+ENDFIELD
+
+TEXT "绘制方式:"
+TLOC 2 19
+ENDTEXT
+
+FIELD dt_line
+FLOC 20 19
+CHECKLIST "Line" "DTYPE"
+ENDFIELD
+
+FIELD dt_shape
+FLOC 30 19
+CHECKLIST "Shape" "DTYPE"
+ENDFIELD
+
+FIELD dt_anti
+FLOC 41 19
+CHECKLIST "AntiShape" "DTYPE"
+ENDFIELD
+
+FIELD add
+FLOC 6 24
+MENUBUTTON "添加" 10 2
+ENDFIELD
+
+FIELD done
+FLOC 21 24
+MENUBUTTON "关闭" 10 2
+ENDFIELD
+
+FIELD help
+FLOC 36 24
+MENUBUTTON "说明" 10 2
+ENDFIELD
+
+ENDTILE
+
+ENDFORM

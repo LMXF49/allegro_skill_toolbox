@@ -1,0 +1,18 @@
+{
+    // 项目约定：.il/.form/.dat/.cfg 为 GBK 编码（Allegro 要求），
+    // 关联语言仅用于语法高亮（lisp≈SKILL，ini≈form/dat 段结构）。
+    // 仓库根 .vscode/settings.json 已有同款配置覆盖整个工作区，
+    // 本文件保留用于单独打开 skill_payload 目录的场景。
+    "files.associations": {
+        "*.il": "lisp",
+        "*.form": "ini",
+        "*.dat": "ini",
+        "*.cfg": "ini"
+    },
+    "[lisp]": {
+        "files.encoding": "gbk"
+    },
+    "[ini]": {
+        "files.encoding": "gbk"
+    }
+}

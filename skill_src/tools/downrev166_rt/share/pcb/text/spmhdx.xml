@@ -1,0 +1,298 @@
+<MsgFile>
+
+  <Msg>
+    <Id>1</Id>
+    <CDNUSR_DEFINE_NAME>DAXMSG_INFO_STARTED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Extract started ... command file is '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>2</Id>
+    <CDNUSR_DEFINE_NAME>DAXMSG_INFO_READ</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Extract: processed %s records.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>3</Id>
+    <CDNUSR_DEFINE_NAME>DAXMSG_INFO_ENDED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Extract ended.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>4</Id>
+    <CDNUSR_DEFINE_NAME>DAXMSG_INFO_ENDED_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Extract ended ... see extract.log for errors.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>5</Id>
+    <CDNUSR_DEFINE_NAME>DAXMSG_NEXT_OUTPUTPROMPT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Additional output file name (&lt;return&gt; if none)
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>6</Id>
+    <CDNUSR_DEFINE_NAME>DAXMSG_OPEN_LOG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Could not open log file '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>7</Id>
+    <CDNUSR_DEFINE_NAME>DAXMSG_OPEN_PARM</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Could not open command file '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>8</Id>
+    <CDNUSR_DEFINE_NAME>DAXMSG_OPEN_OUTPUT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Could not open output file '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>9</Id>
+    <CDNUSR_DEFINE_NAME>DAXMSG_FIELD_TABLE_OVERFLOW</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Internal error ... too many field names.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>10</Id>
+    <CDNUSR_DEFINE_NAME>DAXMSG_ILLEGAL_VIEW</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal view name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>11</Id>
+    <CDNUSR_DEFINE_NAME>DAXMSG_INTERNAL_SECTION</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Program error ... wrong section for read.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>12</Id>
+    <CDNUSR_DEFINE_NAME>DAXMSG_TOO_MANY_FIELDS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Too many fields specified.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>13</Id>
+    <CDNUSR_DEFINE_NAME>DAXMSG_TOO_MANY_SELECTS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Too many select statements.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>14</Id>
+    <CDNUSR_DEFINE_NAME>DAXMSG_ILLEGAL_FIELD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Field '%s' is unknown.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>15</Id>
+    <CDNUSR_DEFINE_NAME>DAXMSG_NO_VALUE_SPEC</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No value specified.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>16</Id>
+    <CDNUSR_DEFINE_NAME>DAXMSG_BAD_VALUE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+'%s' is not a valid value for field '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>17</Id>
+    <CDNUSR_DEFINE_NAME>DAXMSG_CLASS_FIRST</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Must have CLASS selection before SUBCLASS selection.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>18</Id>
+    <CDNUSR_DEFINE_NAME>DAXMSG_COMMAND_FILE_ERRS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Errors found in the extract command file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>19</Id>
+    <CDNUSR_DEFINE_NAME>DAXMSG_FIELD_MEANINGLESS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+'%s' is not meaningful in the '%s' view.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>20</Id>
+    <CDNUSR_DEFINE_NAME>DAXMSG_BAD_OR_POSITION</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Incorrectly placed OR statement.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>21</Id>
+    <CDNUSR_DEFINE_NAME>DAXMSG_NOT_ENOUGH_OUTPUT_FILES</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Extract failed because the number of output files, %d, specified as arguments is less than the number of requested views. Ensure output files are equal to views.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>22</Id>
+    <CDNUSR_DEFINE_NAME>DAXMSG_NO_VIEW_SPECIFIED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No view specified.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>23</Id>
+    <CDNUSR_DEFINE_NAME>DAXMSG_NET_PROXIMITY</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Filtering for nets within %s of net '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>24</Id>
+    <CDNUSR_DEFINE_NAME>DAXMSG_NETS_SELECTED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%s nets match the criteria.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>25</Id>
+    <CDNUSR_DEFINE_NAME>DAXMSG_NO_NET</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Net '%s' does not exist.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>26</Id>
+    <CDNUSR_DEFINE_NAME>DAXMSG_NO_SEPARATION</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No separation specified.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>27</Id>
+    <CDNUSR_DEFINE_NAME>DAXMSG_CANT_FILL_SHAPE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot fill the cross hatched shape at (%s,%s) on (%s).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>28</Id>
+    <CDNUSR_DEFINE_NAME>DAXMSG_MKS_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Units conversion error: '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+</MsgFile>

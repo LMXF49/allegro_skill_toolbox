@@ -1,0 +1,4424 @@
+<MsgFile>
+
+    <Msg>
+        <Id>1</Id>
+        <CDNUSR_DEFINE_NAME>BGAEDMSG_ROTATED_SYMBOL</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Symbol is rotated. Temporarily setting rotation to 0 while editing.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>2</Id>
+        <CDNUSR_DEFINE_NAME>BGAEDMSG_BEGIN_ANALYSIS</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Beginning analysis of symbol. This may take a minute.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>5</Id>
+        <CDNUSR_DEFINE_NAME>BGAEDMSG_INSUF_PINS_IN_RING</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Isolated pin(s) detected outside grid pattern. Analysis failed.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>6</Id>
+        <CDNUSR_DEFINE_NAME>BGAEDMSG_BAD_LABELLING</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Unknown pin labeling scheme. Analysis failed.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>34</Id>
+        <CDNUSR_DEFINE_NAME>ICPARMMSG_PARM_NOT_FOUND</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Unable to locate requested die parameter record.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>35</Id>
+        <CDNUSR_DEFINE_NAME>ICPARMMSG_PARM_EXISTS</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Die parameter record already exists in database.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>36</Id>
+        <CDNUSR_DEFINE_NAME>ICPARMMSG_PARM_NO_CREATE</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Unable to create new die parameter record.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>37</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_UNABLE_OPEN_LOG</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Unable to create log file %s for current command.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>38</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_FINISHED</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            %s completed.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>39</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_CANCELLED</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            %s cancelled.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>40</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_FAILED</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            %s failed.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>41</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_NO_FORM_FILE</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Unable to open required form file.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>42</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_FILTER_FIXED</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Filtering components which have the fixed property from list of editable components.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>43</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_FIXED_INSTANCE</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Symbol/Component has the fixed property. Remove the property to allow editing of this component.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>44</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_WRONG_COMP_CLASS</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Component has wrong class ... pick again.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>45</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_MULTI_INSTANCE</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Symbol/Component has multiple instances. Editing not supported.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>46</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_NO_EDITABLE_COMPS</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Design contains no existing, editable components. Must create a new one.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>47</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_NO_COPY_CODESIGN</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Copy and edit only allowed on standard dies.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>48</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_NO_TILE_IN_DB</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Database contains no main tile. Corrupt file.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>49</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_ODD_ANGLE_SYMBOL</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Symbol is rotated at an odd angle. Editing not supported.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>50</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_MEASURE_BAD_STRING</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Value is not a units string.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>51</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_MEASURE_TOO_SMALL</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Value %s is too small.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>52</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_MEASURE_TOO_LARGE</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Value %s is too large.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>53</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_SYMBOL_SELECT</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Make a new selection.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>54</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_VERIFY_RESULTS</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            The database has been updated with your changes. Verify the results.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>55</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_NO_GRID_ATTRIBUTE</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            The rectangle supplied is not a valid grid boundary.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>56</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_POINT_NOT_IN_GRID</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            The requested point does not lie inside any specified grid.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>57</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_BEGIN_UPDATE</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Beginning database update of %s.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>58</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_UPDATE_SUCCESS</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Database update of %s successful.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>59</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_UPDATE_FAIL</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Database update of %s failed.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>60</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_PUN</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Checking for unused nets to purge from design.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>61</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DERIVE_ASSIGN</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Performing batch derive assignment to update logical connections.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>62</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_PIN_ADD</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Select the location(s) where pins are to be added.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>63</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_PIN_DELETE</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Select the pin(s) to delete.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>64</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_PIN_SWAP</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Select the %s pin to swap.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>65</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_PIN_MDMVCP_SELECT</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Select the pins to %s.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>66</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_PIN_MOD_APPLY</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            When finished making changes, press apply to update pins.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>67</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_PIN_CPYMV_REFERENCE</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Pick a reference pin for this %s operation.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>68</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_PIN_CPYMV_PLACE</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Pick the new location for this reference pin.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>69</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_PIN_NO_CALC_NUMBER</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Pin is not in a grid. Unable to calculate pin number.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>70</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_PIN_CUSTOM_NUMBER</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Pin number must be set manually (pin is in a customized numbering grid).
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>71</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_PIN_NUM_TOO_LONG</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Pin number too long. Truncating from %s to %s.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>72</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_PIN_NUMBER_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Pin number is invalid ... enter a valid pin number.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>73</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_PIN_NUM_BAD_PATTERN</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Current grid pattern does not support pin number lookup by location.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>74</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_PIN_SORT_ILLEGAL</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Illegal pin sort option specified.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>75</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_GRID_PIN_KEEPOUT</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Owning grid has pin keepout enabled. Placement rejected.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>76</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_EXISTING_PIN_AT_LOC</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            A pin already exists at this location. Unable to add new pin.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>77</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_ENVIRONMENT_VAR_FAIL</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Environment variable not set while configuring IC Library Manager.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>78</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_LEFS_NOT_READ</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            The IC Library manager is not configured with a valid Library definition file name or Library name. Use The IC Library manager to configure it.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>79</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_PARM_LDF</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Library definition file from IC parameter record was not found. Substituting current library definition file which has a matching library definition file base name and library name.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>80</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_IOP_EDIT1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Encounter I/O Planner add/edit session changes have not been saved. Save the changes in %s before attempting to edit the die.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>81</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_SCMPHYSICALECO_YESNO</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            SCM has updated a component interface. Physical nets have changed. Ensure the die component from the IC design Environment (the default is Encounter) is updated into the SiP Layout working directory. Do you wish to continue to launch Cadence Encounter I/O Planner?
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>82</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DBATTACH_BLANKFNAME1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Blank filename in ic parameter record for verilog path: %s. Verify that SCM has correctly specified the verilog design file for the attachment.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>83</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DBATTACH_NOATTACHM1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Could not find the attachment file %s. Verify that SCM has correctly attached the verilog design file.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>84</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DBATTACH_EXPORTFAIL1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Could not detach file %s. Check the integrity of the database.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>85</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DBATTACH_UNZIPFAIL1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Could not uncompress the file %s. Check whether cdsUnzip exists.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>86</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DBATTACH_FAILED</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Could not detach the verilog design file to send to Encounter I/O Planner.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>87</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_ADD_INSTANCE_FAILED</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Unable to add object info to internal data structures.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>88</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_BAD_SEL_ON_SCREEN</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Item selected on screen is not eligible for the current operation.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>89</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_CANT_ADD_TO_GROUP2</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Unable to add %s to %s group.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>90</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_CANT_CREATE_DRV_GRP</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Unable to create Driver group.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>91</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_CANT_CREATE_TIL_GRP</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Unable to create Tile group.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>92</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_CANT_FIND_DRIVER_DEF</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Cannot find a definition for %s %s. This could be because it is not in a current .cml file.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>93</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_CANT_FIND_TILE_DEF</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Cannot find a definition for %s %s. This could be because its .til file is missing.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>94</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_COMMIT_FAILS</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Failed when trying to commit existing transactions.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>95</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_COMPINST_NOT_DRV</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Database object is a component instance but is not of Driver class.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>96</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_COMPLETE_GROUP</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Complete current temp group operation before continuing.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>97</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_COPY_OUTSIDE_EXTENTS</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Unable to copy grid to this location. It would be outside the symbol extents.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>98</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_CREATE_DRV_FAIL</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Failed during the process to create a driver (including internal data structure).
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>99</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_CREATE_DRV_GROUP_FAIL</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Failed to create driver group and/or pins for driver instance.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>100</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_CREATE_TIL_FAIL</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Failed during the process to create a tile (including internal data structure).
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>101</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_CUSTOM_NUM_CANCELLED</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Custom pin number cancelled. Skipping remaining pins.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>102</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DEBUG_ERROR1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Debug: %s.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>103</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DEBUG_INFO1</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Debug: %s.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>104</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DEBUG_WARNING1</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Debug: %s.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>105</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DIE_LOGIC_NO_PHYS</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            %s component contains logic but no physical bump locations. Unable to edit.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>106</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRIVER_REF_INST_FAILS</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Unable to set refdes and/or instance name.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>107</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRVTIL_GAP_NOT_AGAIN</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            &lt; GAP &gt; may not be used immediately following another &lt; GAP &gt;.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>108</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRVTIL_GAP_NOT_FIRST</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            &lt; GAP &gt; may not be used as first item on cursor.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>109</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRV_ALREADY_IN_LIST1</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Driver %s already in internal data structure.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>110</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRV_ALREADY_SELECTED</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Driver has already been selected.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>111</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRV_BAD_SELECT</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Driver %s was unable to store at least one driver instance in selection list.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>112</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRV_BAD_SEL_BUFGET</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Driver %s was unable to retrieve at least one driver instance from Select buffer.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>113</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRV_CANT_ADD_NOSYM</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Driver %s cannot be added as it has no symbol def or library definition.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>114</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRV_CANT_PLACE</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Driver Instance %s cannot be placed as its definition is not eligible for adding.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>115</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRV_CREATE_DEF2</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Created definition for driver %s from %s instead of from library definition.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>116</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRV_DEBUG</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            DEBUG: %s.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>117</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRV_DELETE</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Select the driver(s) to delete.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>118</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRV_DISABLED_TREEITEM</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            In tree, tried something on a disabled item %s.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>119</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRV_DISPATCH_FAILED</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Driver dispatch %s.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>120</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRV_EMPTY_CML</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            There were no macros defined in the CML file(s) for the selected library.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>121</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRV_FAIL_ADD_TILE2</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Unable to add driver %s to tile %s.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>122</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRV_FAIL_COPY_NET</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Copy of nets from %s failed.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>123</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRV_FAIL_CUR_SYM</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Failed to place symbol for %s on cursor.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>124</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRV_FAIL_GROUP_ADD</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Driver %s could not be added parent die group failed.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>125</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRV_FAIL_INIT_BRANCH</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Internal error - unable to initialize branch for %s in drivers tree.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>126</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRV_FAIL_INIT_TREE</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Internal error - unable to initialize available drivers tree.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>127</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRV_FAIL_READ_DRV_SC</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Failed to read shape to shape spacing DRC value for subclass used for drivers. Using driver gap of 0.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>128</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRV_FAIL_READ_LDF</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Problem reading LDF file %s.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>129</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRV_FAIL_SET_SHPSHP</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Failed to set shape to shape spacing DRC value on subclass used for drivers. Using driver gap of 0.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>130</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRV_FAIL_SWAP_NET</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Unable to swpa nets of swapped objects.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>131</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRV_GAP_SETTING</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            In default constraint set, shape to shape spacing on subclass used for drivers is %s.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>132</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRV_IGNORE_CML_DRVR</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Ignoring driver %s from library .cml file because it has no pins.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>133</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRV_INST_NEW_FAIL</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Unable to create internal data cache for current driver instance.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>134</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRV_INTERNAL_ERROR</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Internal error in %s.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>135</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRV_LDF_READ_ERROR</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Error while trying to read ldf file %s.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>136</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRV_LEF_FAIL_NAMECHK</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            %s name %s fails name check.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>137</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRV_LIST_CORRUPTION1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Addition of driver %s to internal data structure caused pointer corruption.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>138</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRV_MULTIPLE_COMPDEF</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Database error: %s instance %s has comp def not same as first comp def with that name.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>139</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRV_NOT_INSERTED1</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Unable to add driver %s to internal data structure.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>140</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRV_NO_ACTIVE_BUTTON</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Some as yet unprogrammed button pressed.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>141</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRV_NO_ATR_REUSE_PID</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            No ATR_REUSE_PID attribute on driver %s/%s of tile %s/%s.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>142</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRV_NO_CPMV_INTR_DRV</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Driver copy/move cannot copy/move driver where it would intersect another driver.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>143</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRV_NO_DEFN_MATCH</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Unable to find matching driver definitions for %s.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>144</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRV_NO_DEL_TILE</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Driver delete cannot delete driver %s which is part of a tile.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>145</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRV_NO_LDF_FILE</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            No LDF file found in working directory. Select an LDF file.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>146</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRV_NO_LIB_DEF1</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            No library definition found for driver %s.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>147</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRV_NO_LIB_LEF</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            No LEF file(s) listed in current library.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>148</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRV_NO_LIB_SELECTED</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            No library currently selected.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>149</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRV_NO_UNPLACE_TILE</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Driver unplace cannot unplace driver %s which is part of a tile.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>150</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRV_SELMGR_ERROR</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            During selection, selection list was not reset at end of last operation.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>151</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRV_SELMGR_ILLEGAL</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Selection manager function called illegally.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>152</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DRV_USE_LIBRARY_MGR</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Use drivers / IC Library manager to correct the following:
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>153</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_FAIL_DEL_COMPINST2</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Unable to delete component instance of %s %s.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>154</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_FAIL_DEL_SYMINST2</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Unable to delete symbol instance of %s %s.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>155</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_GRID_ADD</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Set the desired grid settings in the form, then pick two corners for the new grid.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>156</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_GRID_BAD_PRIORITY</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            The priority value entered must be larger than the base grid's priority.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>157</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_GRID_COPY_PICK</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Select the grid you wish to copy.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>158</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_GRID_COPY_PLACE</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Place the grid at the desired new location.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>159</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_GRID_DELETE</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Select the grid to be deleted.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>160</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_GRID_DRIVER_KEEPOUT</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Owning grid has driver keepout enabled. Placement rejected.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>161</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_GRID_DUPE_NAME</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            A grid with this name already exists. Name must be unique.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>162</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_GRID_DUPE_PRIORITY</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            A grid with this priority already exists. Priority value must be unique.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>163</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_GRID_INVALID_LOCATION</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            The picks made cannot be scaled to create a valid grid. Pick again.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>164</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_GRID_MOD_APPLY</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Make the necessary changes to the grid in the form. Press apply when finished.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>165</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_GRID_MOD_APPLY_FAIL</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Grid settings could not be applied successfully. Restoring original settings.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>166</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_GRID_MOD_APPLY_OK</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Grid settings successfully changed.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>167</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_GRID_MOD_PICK</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Select the grid you wish to modify.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>168</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_GRID_NONE_FOUND</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            No pin placement grids found for symbol. To have pins snap to grid, define appropriate grids before editing pins.
+        </Desc>
+        <ExtDesc>
+            The Die and BGA Editor environments use a hierarchical system of placement
+            grids for pin structures. These grids allow you to control the relative
+            placement of pins in an area of the symbol. They also provide the ability
+            to select an automatic pin numbering scheme to apply in this region, so that
+            you are not required to manually enter physical pin numbers.
+
+            If you wish to have complete freedom of placement for the pins of this
+            symbol, no action is required on your part. If you wish to make use of
+            the grid structures to simplify symbol editing, Create them before
+            modifying the pin pattern. Any grids you define now will be available
+            for future editing of this component.
+        </ExtDesc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>169</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_GRID_NO_DEL_BASE</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Unable to delete grid. Base grid cannot be removed.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>170</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_GRID_TILE_KEEPOUT</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Owning grid has tile keepout enabled. Placement rejected.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>171</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_GRID_TOO_SMALL</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            The grid drawn is too small. Minimum size is 2*offset.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>172</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_GRP_NOT_TILE</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Database object is a group but is not of Tile class.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>173</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_HNDL_NOT_COMPINST</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Database object parameter is not a component instance as required.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>174</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_HNDL_NOT_GRP</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Database object parameter is not a group as required.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>175</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_INCOMPLETE_OPERATION</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Complete or oops the current action before continuing.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>176</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_LOCATION_CHECK_FAILS</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Failed when trying to check proposed location for object.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>177</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_LOG_NET_MATCH</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Matched net %s to new refdes %s pin %s.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>178</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_LOG_NET_SAVE</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Saving existing net %s attached to refdes %s pin %s.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>179</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_LOG_NO_NET_FOUND</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            No net found to match new refdes %s pin %s.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>180</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_LOG_NO_NET_MATCH</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Existing net %s not attached, came from old refdes %s pin %s.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>181</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_LOG_RECREATE</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            %s %s: Re-creating %s refdes %s.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>182</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_NO_COPY_BASE_GRID</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Copying the base grid is not allowed.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>183</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_NO_DIE_PRESENT2</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            During %s initialization, cannot find the %s being edited.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>184</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_NO_DONE</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Finish or cancel current editing session before executing other commands.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>185</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_NO_IC_GROUP2</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            During %s initialization, cannot find an 'IC Group' for the %s being edited.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>186</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_NO_PINS_IN_SYMBOL</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Component currently has no pins. Add at least one pin to continue.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>187</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_NO_SWAP_TILE_PINS</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Unable to swap pins. Tile pins are not eligible for swapping.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>188</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_OOPS_BUFPEND_FAILS</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            During %s %s for the %s, unable to store at least one transaction in Oops buffer.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>189</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_OOPS_FAILS</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Failed when trying to oops existing transactions.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>190</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_PIN_SET_VALUE</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Choose a valid %s value in the form and pick again.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>191</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_SELTYPE_UNKNOWN</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Selected item not recognized as an instance or definition of any driver or tile.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>192</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_TEXT_CHANGE_SETTINGS</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Set the desired pin number text settings for this component.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>193</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_BOUNDARY_SELECT</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Select the new symbol outline (shape/rectangle). Shape extents must continue to surround all pins.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>194</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_BOUNDARY_TOO_SMALL</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Selected shape is too small. Shape's extents must encompass all symbol pins.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>195</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_TIL_ALREADY_IN_LIST</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Tile %s already in list.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>196</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_TIL_ALREADY_SELECTED</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Tile has already been selected.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>197</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_TIL_ASSIGN_RUNNING</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Tile assignment must be completed or cancelled before returning to die editor.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>198</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_TIL_BAD_FILE_TYPE</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Extention of tile definition file %s is not .til. Skipping...
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>199</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_TIL_BAD_SELECT</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Tile %s was unable to store at least one tile instance in selection list.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>200</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_TIL_CANT_ADD_BADSTACK</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Tile %s cannot be added as its layers do not match the %s's layers.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>201</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_TIL_CANT_ADD_NOATTACH</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Tile %s cannot be added as it has no .til file definition or attachment.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>202</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_TIL_CANT_ADD_NODRVSYM</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Tile %s cannot be added as one or more of its drivers is not eligible for adding.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>203</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_TIL_CANT_PLACE</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Tile Instance %s cannot be placed as its definition is not eligible for adding.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>204</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_TIL_DEBUG</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            DEBUG: %s.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>205</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_TIL_DEL_OBJ_CB_FAIL</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Unable to delete all objects of tile.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>206</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_TIL_DISABLED_TREEITEM</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            In tree, tried something on a disabled item %s.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>207</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_TIL_DISPATCH_FAILED</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Tile dispatch %s.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>208</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_TIL_FAIL_AUTO_PLACE</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Tile autoplace failed to automatically place existing tile %s.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>209</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_TIL_FAIL_GROUP_ADD</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Tile add tile %s to die group failed.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>210</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_TIL_FAIL_INIT_TREE</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Internal error - unable to initialize available tiles tree.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>211</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_TIL_FILE_NOT_FOUND</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            No .til file found for tile %s.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>212</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_TIL_GRID_MISALIGNMENT</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Tile bump pitch does not match grid at selected location.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>213</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_TIL_INST_NEW_FAIL</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Unable to create internal data cache for current tile instance.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>214</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_TIL_INST_NOT_FOUND</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Could not find instance for tile group id %s.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>215</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_TIL_INTERNAL_ERROR</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Internal error in %s.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>216</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_TIL_LIST_CORRUPTION</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Tile %s insertion caused pointer corruption.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>217</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_TIL_NOT_INSERTED</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Tile %s not inserted in list.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>218</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_TIL_NO_ACTIVE_BUTTON</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Some as yet unprogrammed button pressed.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>219</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_TIL_NO_DEFN_MATCH</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Unable to find matching tile definitions for %s.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>220</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_TIL_NO_FILES_DIR</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            No .til files found in directory %s.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>221</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_TIL_NO_MIRROR_ALLOWED</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Tile mirroring is not supported.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>222</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_TIL_RECT_NOT_VISIBLE</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Tile outlines are currently NOT visible.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>223</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_TIL_SELMGR_ERROR</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            During selection, selection list was not reset at end of last operation.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>224</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_TOO_MANY_POINTS</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Selection window contains too many grid points ... reselect.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>225</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_UNUSED_NOT_NULL1</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Report to developer: Function %s expecting NULL parameter but got something non-NULL.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>226</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_UPREV_ERROR1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Up-Rev: %s.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>227</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_UPREV_INFO1</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Up-Rev: %s.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>228</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_UPREV_WARNING1</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Up-Rev: %s.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>229</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_PARAMETERIZED_START</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            PHONY MESSAGE -- Messages after here must have State and Tab parameters. More are optional.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>230</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_ACTION_OBJ_COMPLETE</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            %s %s complete.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>231</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_ACTION_OBJ_FAILURE</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            %s %s failed.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>232</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_ACTION_OBJ_OOPS_COMP</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            %s %s oops complete.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>233</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_ACTION_OBJ_OOPS_FAIL</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            %s %s oops failed.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>234</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_ALREADY_UNPLACED</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            %s: %s is already unplaced.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>235</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_BAD_STATE_FOR_FUNC</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            %s %s: Report developer error. Function %s not valid for this command.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>236</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_BAD_SWAP_NUMBER</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            %s: Incorrect number of %ss selected for swapping; selected %s, must be 1 or 2.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>237</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_BAD_TAB_FOR_FUNC</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            %s %s: Report developer error. Function %s not valid for this command.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>238</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_CANT_ACT_OBJ_ON_TILE</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Unable to %s %ss when they belong to Tile group.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>239</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_CANT_DISBAND_GRP2</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Prior to %s %s, unable to disband %s group %s.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>240</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_CANT_ACT_NO_LEF1</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            %s: cannot do this for %s %s as it has no LEF definition. Check your .ldf and .cml files.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>241</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_CANT_PUT_OBJ_GRID</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            %s: Cannot put a %s where it does not match the underlying grid.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>242</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_CANT_PUT_OBJ_INTRSCT</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            %s: Cannot put a %s where it would intersect another one.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>243</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_CANT_PUT_OBJ_OUTSIDE</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            %s: Cannot put a %s where it would be all or partially outside the design extents.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>244</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_CANT_RM_OBJ_FROM_GRP2</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Prior to %s %s, unable to remove object %s from group %s.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>245</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_CANT_SWAP_SAME1</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            %s: Cannot swap %s %s with itself.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>246</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_CANT_SWAP_TWO_UNPL</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            %s: Meaningless to swap two unplaced %ss. Start over.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>247</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_SELMGR_BADCALL</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            %s:
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>248</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_SEL_ALIGN_LINE</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            %s: Select a horizontal or vertical line segment with which selected %s(s) should be aligned.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>249</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_SEL_ANY_INSTS</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            %s: Select %s(s) from design or from placed/unplaced instances branches in the tree.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>250</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_SEL_ANY_INST_SWAP1</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            %s: Select first %s from design or from placed/unplaced instances branches in the tree.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>251</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_SEL_ANY_INST_SWAP2</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            %s: Select second %s from design or from placed/unplaced instances branches in the tree.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>252</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_SEL_BAD_ALIGN_CHOICE</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            %s: Selected alignment object must be horizontal or vertical line, or rectangle.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>253</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_SEL_DEFINITION</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            %s: Select a %s definition from the definitions branch in the tree.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>254</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_SEL_DEF_OR_DEST</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            %s: Select/Unselect a %s definition, or select new location for any currently selected %s(s).
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>255</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_SEL_DESTINATION</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            %s: Select new location for %s instance(s).
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>256</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_SEL_NOT_FIXED</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            %s: Selected %s %s is not eligible for this operation because it is FIXED.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>257</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_SEL_OBJ_FOR_COMMAND</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Select the %s(s) to %s.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>258</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_SEL_ONLY_ONE_ALIGN</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            %s: To align %s(s), select only one line segment or valid alignment object.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>259</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_SEL_PL_INSTS</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            %s: Select %s(s) from design or from placed instances branch in the tree.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>260</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_SEL_REFERENCE_POINT</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            %s: Select a cursor reference point for the selected %ss.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>261</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_SEL_UNPL_OR_DEST</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            %s: Select/Unselect an unplaced %s, or select new location for any currently selected %s(s).
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>262</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_SEL_UN_INSTS</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            %s: Select %s(s) from the unplaced instances branch in the trees.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>263</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_SEL_WRONG_TYPE</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            %s %s: Report developer error. Selected item must be a %s, and it is not.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>264</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_SWAP_COMPLETE</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            %s of %ss complete. Remaining in swap mode.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>265</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_UNPLC_EXISTING_FAILS</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            %s: Failed when trying to unplace intersecting %ss.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>266</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_UNRECOGNIZED_TAB</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            %s:
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>267</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_PARAMETERIZED_END</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            PHONY MESSAGE -- Messages above here must have State and Tab parameters.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>268</Id>
+        <CDNUSR_DEFINE_NAME>ICPGROUP_BAD_GROUP_HANDLE</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Invalid IC group supplied. Unable to add object to group.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>269</Id>
+        <CDNUSR_DEFINE_NAME>ICPGROUP_NAME_EXISTS</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            IC reference designator already in use. Unable to create new group.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>270</Id>
+        <CDNUSR_DEFINE_NAME>ICPGROUP_GROUP_EXISTS</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            IC group with specified name already exists.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>271</Id>
+        <CDNUSR_DEFINE_NAME>ICPTEXT_INVALID_TEXT_SIZE</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Could not scale designator text for IC symbol. Ensure there is at least one text block defined in Setup-&gt;Text Sizes...
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>272</Id>
+        <CDNUSR_DEFINE_NAME>ICPGROUP_DBA_NO_GROUP</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Could not retrieve IC group from database.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>273</Id>
+        <CDNUSR_DEFINE_NAME>ICPGROUP_DBA_GROUP_PROCESSING</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Could not process IC group entries.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>274</Id>
+        <CDNUSR_DEFINE_NAME>ICPICPARM_DBA_NO_ICPARM</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Could not retrieve IC parameter record.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>275</Id>
+        <CDNUSR_DEFINE_NAME>ICPTEXT_DBA_TEXT_CREATE_FAILED</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Could not create text block record.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>276</Id>
+        <CDNUSR_DEFINE_NAME>ICPIOFILEMSG_FILEIO</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            An error occurred while trying to write the IO file. The .io file may not have been written.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>277</Id>
+        <CDNUSR_DEFINE_NAME>ICPIOFILEMSG_INTERNAL</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Unable to create the .io file because of an internal error. Contact Cadence Customer Support for assistance.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>278</Id>
+        <CDNUSR_DEFINE_NAME>ICPIOFILEMSG_NOCOMPINST</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Unable to find the component instance of the die with the reference designator %s. Ensure this object exists in the design and is in the database.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>279</Id>
+        <CDNUSR_DEFINE_NAME>ICPIOFILEMSG_NOSYMINST</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Unable to find the matching symbol instance of the component instance with the reference designator %s. Ensure that it exists in the design and is in the database.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>280</Id>
+        <CDNUSR_DEFINE_NAME>ICPIOFILEMSG_UNABLETOCONVERTPATH</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Unable to create an absolute path for the Library file '%s'. Ensure that the path for this file is correct.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>281</Id>
+        <CDNUSR_DEFINE_NAME>ICPIOFILEMSG_MISSINGCMLFILE</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            A LEF file was found ('%s') that did not have a corresponding CML file. The macro information needed to create the .io file may be missing.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>282</Id>
+        <CDNUSR_DEFINE_NAME>ICPIOFILEMSG_OBSOLETECMLFILE</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            A LEF file was found ('%s') that had an out of date CML file. The macro information used to create the .io file may be missing or may be incorrect.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>283</Id>
+        <CDNUSR_DEFINE_NAME>ICPIOFILEMSG_MISSINGBUMPINFO</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            When writing an IO file, unable to find library definition for macro %s. Ensure that the Library file containing the definition of this macro is in the currently selected library, and that the syntax is correct.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>284</Id>
+        <CDNUSR_DEFINE_NAME>ICPIOFILEMSG_IOFILEWRITTEN</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Successfully wrote '%s'. Information for %d bump cell(s) was written.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>285</Id>
+        <CDNUSR_DEFINE_NAME>ICPIOFILEMSG_NOLIBRARY</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Unable to find macro information needed to create the .io file because no IC Library is set.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>286</Id>
+        <CDNUSR_DEFINE_NAME>ICPIOFILEMSG_DIRREADONLY</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Cannot create .io file because the current working directory ('%s') is not writeable.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>287</Id>
+        <CDNUSR_DEFINE_NAME>ICPIOFILEMSG_FILEREADONLY</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Cannot create .io file because the a file of the name '%s' already exists and is read-only.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>288</Id>
+        <CDNUSR_DEFINE_NAME>ICPIOFILEMSG_NOPARMRECORD</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Unable to find the parameter record for the die with the reference designator %s.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>289</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_VERILOG_FILE_MOVED1</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            The verilog file at location %s was not found. Use the file browser to pick its new location, or Cancel to cancel the operation.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>290</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_MISMATCH_PROP</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            The user defined property exists for a pin in the pstchips.dat file, but is missing a corresponding verilog port name on the same pin. The power/ground information will be ignored.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>291</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_SCMLOGICALECO_YESNO</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            SCM has updated a component interface. Verilog ports have changed. Ensure the die component is updated from the IC design Environment (the default is Encounter) into the SiP Layout working directory. Do you wish to continue to launch Cadence Encounter I/O Planner?
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>292</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_SCMPHYSLOGECO_YESNO</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            SCM has updated a component interface. Verilog ports and physical nets have changed. Ensure the die component is updated from the IC design Environment (the default is Encounter) into the SiP Layout working directory. Do you wish to continue to launch Cadence Encounter I/O Planner?
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>293</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_SCMPHYSICALECO_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            SCM has updated the component interface with an unknown ECO level, and is being ignored. Correct the SCM ECO update, and retry.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>294</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_NO_DBATTACHMENT</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            SCM has updated the component interface with a new Verilog file, but the Verilog file is missing from the SIP database. Correct the SIP database from within SCM, and retry.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>295</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DBATTACH_BLANKFNAME</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            SCM has updated the component interface, but the filename specified for the Verilog file is blank. Correct the SIP database from within SCM, and retry.
+            // db attachment id name
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>296</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DBATTACH_NOATTACHMENT</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            SCM has updated the component interface with a new Verilog file, but the Verilog file is missing from the SIP database. Correct the SIP database from within SCM, and retry.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>297</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DBATTACH_EXPORTFAILED</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            An error occurred while extracting the Verilog file from the SIP database. Check write permissions to the directory or reattach the Verilog file in SIP database from within SCM, and retry.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>298</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DBATTACH_CDSUNZIPFAIL</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            An error occurred while uncompressing the compressed Verilog file from the SIP database. Ensure that cdsUnzip is in your path, and that the destination directory has write permissions.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>299</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_SCMECONETS_FILEW</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            File creation in current working directory failed.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>300</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_SCMPHYSICALECO_INVAL1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            CDNSIP received an unsupported ECO value (%d) from SCM and cannot edit the die. Check that CDNSIP and SCM are compatible versions.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>301</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_SCMECONETS_FILEW1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Could not open the file '%s' for writing in the current working directory. Check destination directory has write permissions.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>302</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DBATTACH_NOATTACHMT1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            The verilog attachment file '%s' is missing. Re-export the the database from SCM.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>303</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DBATTACH_EXPORT1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Extract for file '%s' failed.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>304</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_LIBDEFS_NOTFOUND1</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            The OA library definitions file '%s' was not found. Use the file browser to point to the correct file, or if it is a new library, to a file and location where it will be written to.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>305</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_VERILOG_CHANGED1</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            The verilog file '%s' was not found. Use the file browser to point to the correct location of the file.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>306</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_LEFLIB_LDFPATH1</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            The IC Library path was set to '%s'.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+    <Msg>
+        <Id>307</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_LEFLIB_LIBNAME1</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            The LEF Library name was set to '%s'.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+    <Msg>
+        <Id>308</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_OA_DEFAULT_LIBDEFS1</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            The OA library definitions name was set to a default name '%s'.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+    <Msg>
+        <Id>309</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_OA_DEFAULT_LIB1</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            The OA library name was set to a default name '%s'.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+    <Msg>
+        <Id>310</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_OA_DEFAULT_CELL1</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            The OA cell name was set to a default name '%s'.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+    <Msg>
+        <Id>311</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_OA_DEFAULT_VIEW1</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            The OA view name was set to a default name '%s'.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+    <Msg>
+        <Id>312</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_LIBDEFS_CANCEL</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            You canceled selecting an OA library definitions file.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+    <Msg>
+        <Id>313</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_ECO_CANCEL</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            You canceled the ECO die edit.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+    <Msg>
+        <Id>314</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_VERILOG_CANCEL</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            You canceled selecting the verilog file location.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+    <Msg>
+        <Id>315</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_LIBDEFS_SET1</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            The OA library definitions name was set to '%s'.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+    <Msg>
+        <Id>316</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_LAUNCHING</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Launching window to edit co-design component...
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+    <Msg>
+        <Id>317</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_EXPANDA1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            The verilog path '%s' specified by SCM contains an environment string followed by a terminator, and not a variable. Correct the environment variable within SCM.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>318</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_EXPANDB2</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            The verilog path '%s' specified by SCM contains an environment variable '%s' which is not set.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>319</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_EXPANDC2</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            The environment path '%s' in the verilog path contains an environment variable '%s' which is not supported. Reimport the design from SCM.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>320</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_EXPANDD1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Expanding the verilog path '%s' exceeds the path limits. Reduce the environment variable size.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>321</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_EXPAND</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Expanding the verilog file path failed.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>322</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_COD_READ_DIA_FILE1</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+            Reading initial driver positions from Die Abstract file '%s'.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>323</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_COD_NO_DIA_FILE1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Unable to find Die Abstract file '%s' containing initial driver positions.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>324</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_COD_NO_DIA_FILENAME</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Unable to determine file name for Die Abstract file containing initial driver positions.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>325</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_COD_BAD_PLATFORM</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+            'Edit codesign die' feature with SiP Die Editor communicating to Encounter I/O Planner is not supported on this platform.
+        </Desc>
+        <ExtDesc>
+            With proper environment variable settings, it may be possible to use this feature in SiP Layout on an unsupported platform (e.g. Windows-XP), but it will not be possible to confirm or save changes in Encounter I/O Planner, and is therefore reserved for software development only.
+        </ExtDesc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>326</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_COD_BETA</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            The Beta feature of the Die Editor is enabled for Concurrent Co-Design dies. Usage and support of this beta feature are subject to prior agreement with Cadence. In addition, Cadence assumes you understand the feature limitations and expected results. Contact your Cadence representative with any questions. If you turned on this feature by mistake, you can turn it off by unsetting the SIPIOP_BETA_ENV variable.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>327</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_COD_NO_IOP</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+            Starting Die Editor without Launching Encounter I/O Planner. For software development only.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>328</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_COD_VALID1</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+            SiP-IOP Codesign feature validation check called by function '%s'.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>329</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_COD_VALID</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+            SiP-IOP Codesign feature validation check called by Die Editor Start-Up function.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>330</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_MISSING_ERROR_MSG</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+            This is a placeholder message for a message with 0 parameters used in development to prevent compile errors. If this message is displayed in production tools it is an error and should be reported.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>331</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_MISSING_ERROR_MSG1</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+            This is a placeholder message for a message with 1 parameter used in development to prevent compile errors. If this message is displayed in production tools it is an error and should be reported. Parameter is '%s'.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>332</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_MISSING_ERROR_MSG2</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+            This is a placeholder message for a message with 2 parameters used in development to prevent compile errors. If this message is displayed in production tools it is an error and should be reported. Parameters are '%s' and '%s'.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>333</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_MISSING_ERROR_MSG3</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+            This is a placeholder message for a message with 3 parameters used in development to prevent compile errors. If this message is displayed in production tools it is an error and should be reported. Parameters are '%s', '%s' and '%s'.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>334</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_COD_NOT_VALID</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+            Unable to 'Edit codesign die' for previously displayed reasons. Leaving Die Editor.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>335</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_XMLPARSE_EXCEPTION</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            A parser exception occurred while parsing a Die Abstract file.
+        </Desc>
+        <ExtDesc>
+            Die Abstracts are read at different times. If the current operation is trying to read a
+            .dia or .xda file from disk, run Reports --> Die Abstract Check to find out what the
+            problem is. Similarly, if the current operation is trying to read a Die Abstract from a
+            database attachment, extract the Die Abstract and run Reports --> Check Die Abstract.
+
+            If a die abstract file cannot be extracted from the database attachment, there may be a
+            corruption in the database or in the attachment record.
+
+            Inability to read a Die Abstract will very likely make it impossible to do certain
+            Symbol Editor Application Mode functions for codesign dies.
+        </ExtDesc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>336</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_XMLPARSE_EXCEPTION1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            A parser exception '%s' occurred while parsing the Die Abstract file.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>337</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_XMLPARSE_INVALID_PARM</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            An invalid parameter was received during Die Abstract parsing.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>338</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_XMLPARSE_NO_MEMORY</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Could not allocate memory.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>339</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_XMLPARSE_STATE</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            An invalid state occurred during Die Abstract parsing.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>340</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_XMLPARSE_STATE1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            An invalid state occurred while parsing Die Abstract tag '%s'.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>341</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_INVALID_XML_TAG</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            An invalid Die Abstract tag was read from the Die Abstract file.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>342</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_INVALID_XML_TAG1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            An invalid Die Abstract tag '%s' was read from the Die Abstract file.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>343</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_COD_NO_IOP_HANDLE</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Unable to find an active Encounter I/O Planner session for the selected die. Die modifications will not be saved to IC design.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>344</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_COD_NOT_CODESIGN_DIE</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            The selected die is not a codesign die, therefore it cannot be opened in Encounter I/O Planner.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>345</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_COD_BAD_IOP_SOURCE1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Failed to 'source %s' in Encounter I/O Planner.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>346</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_COD_BAD_IOP_TCL1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Failed to run tcl command '%s' to successful completion in Encounter I/O Planner.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>347</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_COD_BAD_IOP_HANDLER</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Unable to complete Encounter I/O Planner request for reason listed above.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>348</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_COD_WIN_DIA_FILE1</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+            For this platform, with no Encounter I/O Planner session, Die Editor will use existing Die Abstract file '%s'.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>349</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_COD_WIN_CANT_RUN1</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+            This platform is not supported, so the following command is not being sent to Encounter I/O Planner: '%s'
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>350</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_COD_BAD_REQUEST</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Unknown Encounter I/O Planner command request.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>352</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_COD_NO_IOP_REFRESH</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+            Refresh using new definition will be done in SiP but there is no equivalent functionality in Encounter I/O Planner.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>353</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_FIXED_PROP_FOUND</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+            The fixed property has been found on the selected component or one of its pieces (pin, border, etc). Continue with editing session?
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>354</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_FIXED_PROP_ITEM_1</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Fixed property found on %s.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>355</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_FIXED_PROP_FULL_LIST</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            See log file for complete list of fixed items preventing this component from being edited.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>356</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_CREATE_COMP_FAIL</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Unable to create component due to pin number or swap code problems. See log file for details.
+        </Desc>
+        <ExtDesc>
+            Duplicate pin numbers may be corrected by changing grid settings to eliminate duplication between two different grids. Pin swap code \ pin use mismatches should be resolved such that all pins in the same swap group have same pin use.
+        </ExtDesc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>357</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_MOVE_DRIVER_PIN</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Unable to move a pin that is part of a driver. You must move the driver.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>358</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_SWAP_DRIVER_PIN</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Unable to swap a pin that is part of a driver. You must swap or delete the driver.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>359</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DEL_DRIVER_PIN</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Unable to delete a pin that is part of a driver. You must delete the driver.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>360</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DBDOC_FAILED</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Database integrity check failed. Run DBDoctor to fix any database errors before editing to prevent work loss.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>361</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_SPSHEET_DRIVER_ONLY</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+            The die editing spreadsheet is active. Only the spreadsheet may be used for edits while it is open.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>362</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_IOP_REFRESH</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+            Refresh using new definition will be done in SiP but there is no equivalent functionality in Encounter I/O Planner.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>363</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_COD_SHUTDOWN</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+            Resynchronizing die with Encounter I/O Planner. This will temporarily shut down the die editor.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>364</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_COD_BAD_COMMAND_MODE1</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Environment variable SIPIOP_MODE is set to '%s' which is not recognized. Legal values are 'ONE_AT_A_TIME', 'MULTIPLE', and 'DISTRIBUTED'. Proceeding in 'ONE_AT_A_TIME' mode.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>365</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_COD_BAD_PRODUCT</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Invalid product. A co-design die may only be edited in SiP product.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>366</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_COD_WRITE_IOP_FILE1</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+            Writing Encounter I/O Planner TCL commands, or multiple cells/bumps for Encounter I/O Planner TCL command, to file '%s'.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>367</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_COD_CANT_OPEN_SIPOUT1</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+            Unable to open file '%s' for output of list of bumps and drivers for codesign die in DISTRIBUTED mode.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>368</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_COD_IOP_FILE_ALREADY_OPEN</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            File for output of Encounter I/O Planner TCL commands, or multiple cells/bumps for one Encounter I/O Planner TCL command, is already open.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>369</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_COD_UNABLE_ALLOC_GLOBALS</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Unable to allocate memory for global variables for SiP-IOP Edit Codesign Die function.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>370</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_COD_INVALID_ORIENT1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Invalid orientation '%s' found in Die Abstract file. It must be in Encounter I/O Planner-style { R0, R90, R180, R270, MX, MY, MX90, MY90 } or in Allegro-style { N, S, E, W, FN, FS, FE, FW }.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>371</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_COD_DISTRIBUTED_MODE</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+            When editing a Codesign Die in DISTRIBUTED mode, an existing die abstract file that SiP will use to populate its display of bumps and drivers is required. At the end of a session, SiP will write a text file that can be used as input to a tcl command in Encounter I/O Planner to make any of the suggested changes.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>372</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_MULTCOMP_PIN_DEL</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Pins from multiple symbols have been selected. All pins selected for deletion must be from the same symbol.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>373</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_RELSPACE_NOFIT</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Relative pin spacing is enabled. The desired pitch + offset will not fit all pins.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>374</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_COINCIDENT_PINS_DELETED_1</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            %d pins snapped to the same location. Duplicate pins have been deleted/unplaced.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>375</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_SENDINGIOFILE_1</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+            Sending IO file '%s' to IO Planner.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>376</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_FILTER_CODESIGN</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Filtering co-design component %s which cannot be edited using the current product/license combination.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>377</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_CODESIGN_INSTANCE</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Selected item is a co-design component which cannot be edited using the current product/license combination.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>378</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DIA_NAME_MISMATCH_3</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            The IC design name (%s) in the die abstract file %s does not match that of the die being edited (%s).
+        </Desc>
+        <ExtDesc>
+            To refresh a co-design die from a die abstract file on disk, the IC design name in the
+            die abstract file must match the IC design name recorded for the die being edited in the
+            current SiP/APD session.
+
+            To prevent the unintended change of die definitions within your pacakge database, if these
+            names do NOT match, the tool will not allow the update. You may either delete the existing
+            die and add a new die from this abstract file or change the design name in the abstract
+            file to match that in the package design.
+        </ExtDesc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>379</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_LOAD_DIA_PROMPT</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            Do you want to update this die from a die abstract file on disk? If not, the latest abstract file linked to this database will be used.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>380</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DIA_WRITE_ERROR_1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Error during writing to %s die abstract file. File may be incomplete.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>381</Id>
+        <CDNUSR_DEFINE_NAME>ICPIOFILEMSG_NO_BUMPS</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+            If any pin swaps have been made outside of the die editor environment for this component, they will be lost by editing the die.
+        </Desc>
+        <ExtDesc>
+            Pin swapping for wire bond co-design die components is only supported from within
+            the die editor command in SiP/APD. Changes made using auto assign net, pin swap,
+            or other logic editing commands cannot be updated to the Encounter I/O Planner
+            database in this release.
+
+            When editing the co-design die the next time, these changes will be undone and the
+            assignments restored based on the IC design.
+        </ExtDesc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>382</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_COD_IOP_EDIT_ONLY</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+            Launching IO Planner to create initial die footprint for placement in package substrate.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+    <Msg>
+        <Id>383</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DIA_OPEN_FAILED1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            The die abstract file '%s' could not be opened for reading.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>384</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DIA_INVALID_FORMAT</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            The die abstract file is not in a supported format or the tool does not have the right license to process this die abstract file.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>385</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_ALIGN_SEG_2</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+            Using segment on selected symbol/shape closest to the selection point for alignment (%s, %s).
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>386</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_ODD_ANGLE_ROT</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Rotation for component must be a multiple of 90 degrees. Adjusting to nearest multiple of 90.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>387</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_XMLPARSE_LINECOLUMN2</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            An error was detected in the die abstract file at line %d, column %d.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>388</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_COD_COORD_MISMATCH</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            There is a non-integer scaling factor for converting co-ordinates between SiP and Encounter I/O Planner. The result is rounding errors with coordinates being off by one or more database units in either tool. See Extended Description for more information.
+        </Desc>
+        <ExtDesc>
+            Converting co-ordinates between SiP and Encounter I/O Planner requires
+            a comparison of the units and accuracy used by each of the two
+            databases. It may also require the consideration of an additional die
+            shrink factor. These things are used to compute a scaling factor from
+            one tool to the other. If the databases do not have the same units and
+            accuracy, the scaling factor in one or both directions might not be an
+            integer. Similarly, if the co-design die is being placed using Die
+            Shrink, there may be a non-integer scaling factor.
+
+            A non-integer scaling factor means that converting locations and/or
+            sizes from one database to the other can lead to rounding errors,
+            which cannot be corrected in this tool.
+
+            The best situation is one where the two databases use the same units
+            and accuracy and there is no shrink. When that is not the case, it may
+            be possible to fix this problem if the SiP design's accuracy can be
+            changed so that it matches what is in Encounter I/O Planner. It may
+            not be possible to do that if the two tools use different units of
+            measure for the same co-design die.
+
+            See the die_editor.log file for complete information on the database
+            units, scaling factors, and other SiP-IOP codesign information for the
+            current co-design die.
+        </ExtDesc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>389</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_EXISTING_PIN_1</CDNUSR_DEFINE_NAME>
+        <Category>I<Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            A pin already exists at %s. Pin not created at this position.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>390</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DUPE_PIN_NUMS_1</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Duplicate pins number(s) found. First duplicate is '%s'. Change grid settings or use custom pin numbers. No changes made to symbol.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>391</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_NO_EDIT_2</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Not all actions are available for %s %s. Some commands will not be shown in the popup menu.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>392</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_BAD_BASE_GRID_EXT</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Base pin grid for selected symbol does not match actual symbol extents. It has been reset to default settings.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>393</Id>
+        <CDNUSR_DEFINE_NAME>ICPIOFILEMSG_MISSINGBUMPPIN1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            When writing an IO file, macro %s has no pins. This may be due to an incorrect library file. If the LEF file is correct, run the Library Manager and set options correctly so that this macro in the CML file has at least one pin.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>394</Id>
+        <CDNUSR_DEFINE_NAME>ICPIOFILEMSG_BUMPFAILURE</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Failure during writing of IO file due to an incorrect or missing library definition for a macro. See previous message for additional information.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>395</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_FILTER_CHIPINT</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            This component may only be edited using the Chip Integration option.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>396</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DUPE_PIN_NAME_2</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Pin name %s already exists. It has been changed to %s to make it unique.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>397</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_NO_BORDER_TEXT</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+            Border pin text is not available for this symbol. The symbol's base grid pin numbering pattern does not support border numbers.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>398</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_DUPE_PIN_NUMS</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Duplicate pins number(s) found during update. Pin numbers have been made unique, but grid settings need adjustment.
+        </Desc>
+        <ExtDesc>
+            Duplicate pin numbers may be corrected by changing grid settings to eliminate duplication between two different grids.
+            The most common ways to achieve this are to add a prefix string for pins in each grid, or to specify a starting pin
+            number for each grid that will ensure no overlap with other grids on the same symbol.
+        </ExtDesc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>399</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_COPY_REPLACE_SAME_1</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+            Pin being copied is the same as the one it is to replace. No change made for pin %s.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>400</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_FAILED_LAUNCH_IOP</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Failed to launch Encounter I/O Planner window. Restart die editor after ensuring Encounter software is properly configured.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>401</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_ICLM_INFO_NOT_SETUP</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            The IC Library settings are not completely configured. Unable to proceed with die editing session.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>402</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_NOPITCH_GRID_SCHEME</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            This grid uses a %s numbering pattern. Disabling the pin pitch may result in very long pin numbers, and will remove any associated border pin text labels. Continue?
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>403</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_NODELETE_ALL_PINS</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            At least one pin is required for the component/symbol. The final pin has not been deleted.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>404</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_NO_SWAPPABLE_PINS</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+            No pins found on component that are swappable with the selected pin.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>405</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_USE_APPMODE</CDNUSR_DEFINE_NAME>
+        <Category>I
+            <Sub-Category>P</Sub-Category>
+        </Category>
+        <Desc>
+            The %s is being replaced by the new symbol editing application mode. Continue using the older command for this editing session?
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>406</Id>
+        <CDNUSR_DEFINE_NAME>ICPDIAMSG_CREATE_ERROR</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            An error was encountered when creating a die abstract from an XML file, to attach to the database. Make sure the current and temp directories are writable. If the problem persists, contact Cadence support.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>407</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_LOCATION_SNAPPED_4</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            %s %s was snapped from picked location %s to nearest legal position at %s.
+        </Desc>
+        <ExtDesc>
+            Legal pin locations are defined based on the pin placement grids associated with the owning symbol definition.
+            Multiple placement grids may be defined for a single symbol definition to allow for different pitch and numbering
+            patterns in different regions. These grids are independent of the system and etch grids defined by the
+            Setup -> Grids... command.
+
+            To prevent pins from snapping to a grid, turn the pitch off for that grid by selecting the grid outline
+            (located on the SUBSTRATE GEOMETRY / SYMBOL GRIDS layer) and selecting the "Pin pitch settings" option from the
+            RMB option while in the symbol editing application mode.
+        </ExtDesc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>408</Id>
+        <CDNUSR_DEFINE_NAME>ICPCIOMSG_SECDB_XACT_ENABLE_FAIL</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Secondary database transaction-enable failed.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>409</Id>
+        <CDNUSR_DEFINE_NAME>ICPCIOMSG_DRIVER_IS_LOCKED_COVER</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+            Driver position is locked, status-flag is COVER.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>410</Id>
+        <CDNUSR_DEFINE_NAME>ICPCIOMSG_DRIVER_OUTSIDE_EXTENTS</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Target driver placement is outside of the die's extents.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>411</Id>
+        <CDNUSR_DEFINE_NAME>ICPCIOMSG_DRIVER_PLACEMENT_CONFLICT</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Target driver placement is in conflict with another driver.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>412</Id>
+        <CDNUSR_DEFINE_NAME>ICPCIOMSG_BAD_ARGS</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            An internal error has been detected. An invalid argument was passed to an internal function. Contact Cadence customer support for further assistance.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>413</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_UPDATE_DRIVER_PIN_NET</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Unable to change net assignment on the pin of a driver because SiP Layout is not permitted to modify the internal netlist of the IC design.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>414</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_NO_DEFAULT_OP_1</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Selected object has no active default %s operation. Configure default operations in the User Preferences editor.
+        </Desc>
+        <ExtDesc>
+            Default drag and double-click operations can be configured for a number of different objects for this application mode. The available options are
+            found under the Setup -> User Preferences command in the IC_Packaging / Symbol_Editor folder.
+
+            Note that some commands, such as dragging, are not application to all object types. For example, you cannot drag a die or a BGA component using the
+            symbol editing application mode. To move a primary component such as this, use the placement edit application mode, Edit -> Move, or Edit -> Die Stack Editor
+            commands to move a primary object.
+        </ExtDesc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>415</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_UNLOCK_COMP_1</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            The locked property has been found on the selected symbol %s. Do you wish to remove the property?
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+    <Msg>
+        <Id>416</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_ICNET_ON_STD_PIN</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Unable to update net assignment on the pin of a standard object with the net from an IC design.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>417</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_INVALID_DESIGN_NAME</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            IC design name for the die in the package is not found in the parameter record.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>418</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_NOMATCH_ICNET_E</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Could not match a corresponding sip package net to ic net for given function pin.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>419</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_CIO_DIE_CREATE_FAILED</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            The CIO creation can fail due to an error in the DIA attachment. Extract the DIA attachment, run the
+            diacheck utility and correct any errors found, then reimport the dia file.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>420</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_NO_RENUM_PINS</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            No pins of this component are part of customized or sequential numbering grid and therefore none are eligible for custom renumbering.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>421</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_RENUM_FILTER_PINS_1</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            %d pins of this component belong to auto-numbering grids and cannot be manually renumbered without changing pin numbering settings first. These pins have been dehighlighted.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>422</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_IC_DUMMY_NET_2</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Net assignment at pin '%s' of package net '%s' and a dummy IC net considered an illegal condition and will not be applied.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>423</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_IC_NOCHANGE_NET_5</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Assignment (pkg net '%s', ic net '%s' [no change]) at pin '%s' (currently pkg net '%s', ic net '%s') failed.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>424</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_IC_UNASSIGNMENT_7</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Deassignment of (pkg net '%s', ic net '%s') to (pkg net '%s', ic net '%s') at pin '%s' (currently pkg net '%s', ic net '%s') failed.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>425</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_IC_PIN_NET_NOT_COMPATIBLE_5</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Assignment (pkg net '%s', ic net '%s') at pin '%s' (currently pkg net '%s', ic net '%s') failed. Swap pins to make this type of change.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>426</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_IC_PIN_NULL_NET_NON_NULL_7</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Assignment (pkg net %s, ic net '%s') at pin '%s' (currently pkg net '%s', ic net '%s') failed because the ic net '%s' and the current pkg net '%s' are an invalid combination.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>427</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_IC_PIN_NON_NULL_NET_NULL_7</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Assignment (pkg net '%s', ic net '%s') at pin '%s' (currently pkg net '%s', ic net '%s') failed because the package net '%s' and the current IC net '%s' are an invalid combination.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>428</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_IC_PIN_NET_NON_NULL_3</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Assignment (pkg net '%s') at pin '%s' (currently pkg net '%s') failed.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>429</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_IC_PORT_TO_PIN_FAIL_3</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Assignment of port '%s' to pin '%s' failed because the pin is already assigned to package net '%s'.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>430</Id>
+        <CDNUSR_DEFINE_NAME>ICPKGSEMSG_IC_PIN_NAME_CONFLICT_1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Trying to set pin name %s conflicts with an existing pin name. Pin names must be unique. Specify a new, unique pin name.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+</MsgFile>

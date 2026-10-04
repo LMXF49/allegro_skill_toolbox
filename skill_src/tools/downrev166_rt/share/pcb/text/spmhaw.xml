@@ -1,0 +1,1714 @@
+<MsgFile>
+
+  <Msg>
+    <Id>1</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_UNRECOG</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Unrecognized keyword.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>2</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_TRUNCDEV</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Device name is too long has been truncated.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>3</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_DEVICEEXP</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Device name expected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>4</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_BADCOORDS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+COORDINATES parameter expects ABSOLUTE or INCREMENTAL.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>5</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_COOREXP</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+COORDINATES parameter expected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>6</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_SIZEEXP</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Size expected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>7</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_MCODEEXP</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Machine code expected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>8</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_TRUNCNAME</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Name too long has been truncated.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>9</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_NAMEEXP</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Name expected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>10</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_FRMTBIG</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Format is too big.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>11</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_PERIODEXP</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Period expected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>12</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_STATNSEXP</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Number of stations expected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>13</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_BADUNITS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Unrecognized UNITS.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>14</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_BADDEVICE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Unrecognized DEVICE.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>15</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_UNITEXP</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Units expected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>16</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_WHEELEXP</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Wheel number expected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>17</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_BADYES</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+YES or NO expected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>18</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_YESNOEXP</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+YES or NO expected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>19</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_TRCMCODE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Machine code truncated.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>20</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_GARBAGE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Garbage found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>21</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_TITLE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Photoplot log file
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>22</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_PARM_SUBT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Results from parameter file.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>23</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_APER_SUBT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Results from aperture table.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>24</Id>
+    <CDNUSR_DEFINE_NAME>NCMSG_COMPLETE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+NC Drill complete.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>25</Id>
+    <CDNUSR_DEFINE_NAME>NCMSG_COMPLERR</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+NC Drill complete with detected errors; see log file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>26</Id>
+    <CDNUSR_DEFINE_NAME>NCMSG_IN_PROG</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+NC Drill in progress...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>27</Id>
+    <CDNUSR_DEFINE_NAME>NCMSG_PICK_LOC</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick the location for the NC Drill Legend table.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>28</Id>
+    <CDNUSR_DEFINE_NAME>NCMSG_PICK_AGN</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Legend will not fit there; pick again.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>29</Id>
+    <CDNUSR_DEFINE_NAME>NCMSG_TITLE_STR</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter title string for legend:
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>30</Id>
+    <CDNUSR_DEFINE_NAME>NCMSG_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error in NC Drill see log file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>31</Id>
+    <CDNUSR_DEFINE_NAME>LGMSG_FILENAME</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter photoplot input filename:
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>32</Id>
+    <CDNUSR_DEFINE_NAME>LGMSG_NOTFOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to open the photoplot input file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>33</Id>
+    <CDNUSR_DEFINE_NAME>LGMSG_PARAM</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to open the artwork parameter file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>34</Id>
+    <CDNUSR_DEFINE_NAME>LGMSG_APER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to open the aperture file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>35</Id>
+    <CDNUSR_DEFINE_NAME>LGMSG_IN_PROG</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Photoplot loading in progress...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>36</Id>
+    <CDNUSR_DEFINE_NAME>LGMSG_COMPLETE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Photoplot loading complete.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>37</Id>
+    <CDNUSR_DEFINE_NAME>LGMSG_STATUS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Loaded %d percent.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>38</Id>
+    <CDNUSR_DEFINE_NAME>LGMSG_DUMMY</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Dummy message
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>39</Id>
+    <CDNUSR_DEFINE_NAME>LGMSG_EXTENTS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Pick causes data to be out of bounds, try another location.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>40</Id>
+    <CDNUSR_DEFINE_NAME>LGMSG_ABORT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Aborting photoplot loading, see log file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>41</Id>
+    <CDNUSR_DEFINE_NAME>LGMSG_SELECT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select the location of the start point.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>42</Id>
+    <CDNUSR_DEFINE_NAME>LGMSG_WAIT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Reading the input file...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>43</Id>
+    <CDNUSR_DEFINE_NAME>LPMSG_FILENAME</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter plot file name:
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>44</Id>
+    <CDNUSR_DEFINE_NAME>LPMSG_SCALE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter scale value:
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>45</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_STATUS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Renames completed = %d;  remain = %d.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>46</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_COMPLETE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Auto rename of refdes complete; %d components renamed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>47</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error in auto rename of refdes; aborting.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>48</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_INPROG</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Auto rename of reference designators in progress...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>49</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_ABORT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Aborting auto rename refdes, see log file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>50</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_NOTOP</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+No components with AUTO RENAME property found on subclass TOP.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>51</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_NOBOT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+No components with AUTO RENAME property found on subclass BOTTOM.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>52</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_NOBOTH</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+No components wth AUTO RENAME property found on subclass TOP and BOTTOM.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>53</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_NOCOMP</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+No components found on subclass TOP and BOTTOM.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>54</Id>
+    <CDNUSR_DEFINE_NAME>CVL_MSG_FAT1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Delete line segment failed
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>55</Id>
+    <CDNUSR_DEFINE_NAME>CVL_MSG_FAT01</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+at start = (%s %s) and end = (%s %s).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>56</Id>
+    <CDNUSR_DEFINE_NAME>CVL_MSG_FAT2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Adding connect line segment failed
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>57</Id>
+    <CDNUSR_DEFINE_NAME>CVL_MSG_FAT7</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot get pin location (%s %s).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>58</Id>
+    <CDNUSR_DEFINE_NAME>CVL_MSG_FAT16</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Temporary database write failed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>59</Id>
+    <CDNUSR_DEFINE_NAME>CVL_FAT_CLNLIN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Stand alone clines to line conversion error = %d.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>60</Id>
+    <CDNUSR_DEFINE_NAME>CVL_MSG_ERR1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot connect line from via at (%s %s)
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>61</Id>
+    <CDNUSR_DEFINE_NAME>CVL_MSG_ERR2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot connect line from pin at (%s %s)
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>62</Id>
+    <CDNUSR_DEFINE_NAME>CVL_MSG_ERR0</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+to connect line at (%s %s).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>63</Id>
+    <CDNUSR_DEFINE_NAME>CVL_NOMAT_PSK4</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The following figures are not being converted to vias:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>64</Id>
+    <CDNUSR_DEFINE_NAME>CVL_NON_UNIQ</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Convert Figures added via at (%s %s) using non-unique padstack "%s".
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>65</Id>
+    <CDNUSR_DEFINE_NAME>CVL_DEL_CLIN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Deleting stand alone cline.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>66</Id>
+    <CDNUSR_DEFINE_NAME>CVL_VIA_FAIL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No figures to convert to vias.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>67</Id>
+    <CDNUSR_DEFINE_NAME>CVL_VIA_TERM</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Via conversion program terminating due to error = %d.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>68</Id>
+    <CDNUSR_DEFINE_NAME>CVL_MSG_VIA</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Added connect line from via at (%s %s)
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>69</Id>
+    <CDNUSR_DEFINE_NAME>CVL_MSG_PIN</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Added connect line from pin at (%s %s)
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>70</Id>
+    <CDNUSR_DEFINE_NAME>CVL_MSG_PVA</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+to connect line at (%s %s).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>71</Id>
+    <CDNUSR_DEFINE_NAME>CVLMSG_IN_PROG</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Conversion in progress...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>72</Id>
+    <CDNUSR_DEFINE_NAME>CVLMSG_FIG_CMP</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Conversion of figures to vias is complete.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>73</Id>
+    <CDNUSR_DEFINE_NAME>CVLMSG_COMPLETE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Conversion complete; no errors found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>74</Id>
+    <CDNUSR_DEFINE_NAME>CVLMSG_INCOMP</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%d incomplete nets.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>75</Id>
+    <CDNUSR_DEFINE_NAME>CVLMSG_INCOMP2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Incomplete net %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>76</Id>
+    <CDNUSR_DEFINE_NAME>CVL_MSG_CONN</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Conversion in progress, %d % of nets are completely connected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>77</Id>
+    <CDNUSR_DEFINE_NAME>CVLMSG_TIME</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Elapsed time for conversion: %d hr %d min %d sec
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>78</Id>
+    <CDNUSR_DEFINE_NAME>CVLMSG_TIME1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Elapsed time for conversion: %d min %d sec
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>79</Id>
+    <CDNUSR_DEFINE_NAME>CVLMSG_DRC_FND</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Conversion in progress; additional DRC errors found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>80</Id>
+    <CDNUSR_DEFINE_NAME>CVLMSG_NO_DRC</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Conversion in progress; no new DRC errors found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>81</Id>
+    <CDNUSR_DEFINE_NAME>CVL_UNPLACED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Unplaced components exist in layout database.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>82</Id>
+    <CDNUSR_DEFINE_NAME>CVL_RED_VIA</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Redundant vias exist in layout.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>83</Id>
+    <CDNUSR_DEFINE_NAME>CVLMSG_STATUS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Convert Lines completed converting lines to connect lines.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>84</Id>
+    <CDNUSR_DEFINE_NAME>CVLMSG_STAT5</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Convert Lines in progress, converted %d percent lines to connect lines.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>85</Id>
+    <CDNUSR_DEFINE_NAME>CVLMSG_STAT7</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Convert Figures in progress, processed %d percent figures.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>86</Id>
+    <CDNUSR_DEFINE_NAME>CVLMSG_STATU1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Convert Lines processing near touching connect lines to pins/vias.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>87</Id>
+    <CDNUSR_DEFINE_NAME>CVLMSG_STATU2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Convert Lines processing near touching connect lines to vias that are not on any net.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>88</Id>
+    <CDNUSR_DEFINE_NAME>CVL_SEE_LOG</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+See conversion log file for description of error.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>89</Id>
+    <CDNUSR_DEFINE_NAME>CVL_USE_TMD</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Conversion terminated; %d errors found. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>90</Id>
+    <CDNUSR_DEFINE_NAME>CVL_INFO_MSG1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%d percent pins/vias checked.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>91</Id>
+    <CDNUSR_DEFINE_NAME>CVL_INFO_MSG3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Convert Lines adding near touching connect lines to pins/vias.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>92</Id>
+    <CDNUSR_DEFINE_NAME>CVL_INFO_MSG2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%d percent connect lines segments added.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>93</Id>
+    <CDNUSR_DEFINE_NAME>CVL_INFO_EXIT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+User request to stop conversion early.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>105</Id>
+    <CDNUSR_DEFINE_NAME>GACMSG_REP_TITLE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+FILM GEOMETRY AREA REPORT
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>106</Id>
+    <CDNUSR_DEFINE_NAME>LP_STARTUP</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Starting Load Photoplot...
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>107</Id>
+    <CDNUSR_DEFINE_NAME>LP_DBA_LINE_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error adding a line at %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>108</Id>
+    <CDNUSR_DEFINE_NAME>LP_APER_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Aperture %s not defined.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>109</Id>
+    <CDNUSR_DEFINE_NAME>LP_SYNTAX_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Syntax error %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>110</Id>
+    <CDNUSR_DEFINE_NAME>LP_INTERNAL_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Artwork loaders has detected an internal error.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>111</Id>
+    <CDNUSR_DEFINE_NAME>LP_MEMORY_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Out of memory.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>112</Id>
+    <CDNUSR_DEFINE_NAME>LP_FLASH_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No active aperture; unable to process a flash.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>113</Id>
+    <CDNUSR_DEFINE_NAME>LP_ABORT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Artwork import failed because either the artwork file contains data that is not supported by the import process or the file cannot be opened or parsed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>114</Id>
+    <CDNUSR_DEFINE_NAME>LP_FILE_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error opening file %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>115</Id>
+    <CDNUSR_DEFINE_NAME>LP_ADD_FIGURE_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to add figure at %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>116</Id>
+    <CDNUSR_DEFINE_NAME>LP_FILE_NAME</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Processing photoplot file %s ...
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>117</Id>
+    <CDNUSR_DEFINE_NAME>LP_LAYER_INFO</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Adding the film data on %s/%s.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>118</Id>
+    <CDNUSR_DEFINE_NAME>LP_IMAGE_ROTATE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Rotated the film by %g degrees.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>119</Id>
+    <CDNUSR_DEFINE_NAME>LP_IMAGE_MIRROR</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Mirrored the film.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>120</Id>
+    <CDNUSR_DEFINE_NAME>LP_COMPLETE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Load Photoplot complete.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>121</Id>
+    <CDNUSR_DEFINE_NAME>LP_274X_DECIMAL_N_SUPPORT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Explicit decimal point not supported.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>122</Id>
+    <CDNUSR_DEFINE_NAME>LP_274X_INCREMENT_N_SUPPORT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Incremental mode not supported.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>123</Id>
+    <CDNUSR_DEFINE_NAME>LP_274X_CODE_N_SUPPORT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s code not supported.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>124</Id>
+    <CDNUSR_DEFINE_NAME>LP_274X_POLYAPER_N_SUPPORT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Polygon aperture not supported.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>125</Id>
+    <CDNUSR_DEFINE_NAME>LP_274X_UNKNOWN_TOKEN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unknown token %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>126</Id>
+    <CDNUSR_DEFINE_NAME>LP_ROUND_OFF</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Coordinates have been rounded off.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>127</Id>
+    <CDNUSR_DEFINE_NAME>ART_MAX_REACHED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Maximum number of aperture wheels is %d.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>128</Id>
+    <CDNUSR_DEFINE_NAME>ART_ERROR_IN_SHAPE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Error in shape located at (%s,%s).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>129</Id>
+    <CDNUSR_DEFINE_NAME>ART_ERROR_SHAPE_IS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+The shape is of class %s and subclass %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>130</Id>
+    <CDNUSR_DEFINE_NAME>ART_ERROR_IN_VOID</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Error in void located at (%s,%s).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>131</Id>
+    <CDNUSR_DEFINE_NAME>ART_ERROR_VOID_IS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+The void is of class %s and subclass %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>132</Id>
+    <CDNUSR_DEFINE_NAME>ART_CANNOT_ENABLE_HOLES</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cannot enable requested plotting of holes as the film does not contain any pin or via layers.
+    </Desc>
+    <ExtDesc>
+The film requires PIN or VIA CLASS layers in the film to determine what holes are to be plotted,
+before any drawing of holes can be enabled.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>133</Id>
+    <CDNUSR_DEFINE_NAME>ART_HOLES_IN_PADS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+'Draw holes in pads' is being allowed, but the film does contain etch layers.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>134</Id>
+    <CDNUSR_DEFINE_NAME>ART_HOLES_ONLY</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cannot enable 'Draw holes only' as the film contains etch layers.
+    </Desc>
+    <ExtDesc>
+'Draw holes only' plots holes as if they were in fact pads, so allowing them with
+ETCH layers in the film could be very confusing as to what exactly is being plotted.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>135</Id>
+    <CDNUSR_DEFINE_NAME>ART_HOLES_DISABLED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Holes cannot be drawn if there are no pin or via layers in the film ... disabled.
+    </Desc>
+    <ExtDesc>
+The film no longer contains any PIN or VIA CLASS layers, so drawing of holes is being disabled.
+The layers are required to determine which holes are to be drawn.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>136</Id>
+    <CDNUSR_DEFINE_NAME>ART_HOLES_ONLY_DISABLED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+'Draw holes only' cannot be enabled if there are etch layers in the film ... disabled.
+    </Desc>
+    <ExtDesc>
+The film now contains ETCH layers so the 'Draw holes only' setting has to be disabled.
+The drawing of holes as pads with ETCH included would be just too confusing.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>137</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_HARD_LOCATION</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+HARD_LOCATION property on %s ... component ignored.
+    </Desc>
+    <ExtDesc>
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>138</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_ILLEGAL_EXTENTS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Symbol at (%s, %s) has illegal symbol extents.
+    </Desc>
+    <ExtDesc>
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>139</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_AUTO_RENAME</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Processing %s but %s has AUTO_RENAME property for the opposite side ... ignored.
+    </Desc>
+    <ExtDesc>
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>140</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_MAX_SIZE_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Refdes %s%s%s exceeds maximum designator size ... aborting.
+    </Desc>
+    <ExtDesc>
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>141</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_MAX_SIZE_2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Refdes %s%s%s-%s exceeds maximum designator size ... aborting.
+    </Desc>
+    <ExtDesc>
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>142</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_MAX_SIZE_3</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Refdes %s-%s exceeds maximum designator size ... aborting.
+    </Desc>
+    <ExtDesc>
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>143</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_ALREADY_EXISTS_1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Reference designator %s (UNPLACED) already exists ... skipping to
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>144</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_ALREADY_EXISTS_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Reference designator %s already exists ... skipping to
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>145</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_OLD_NEW</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+OLD %s    NEW %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>146</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_NO_GRID_LINES</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No grid lines found on %s side ... aborting.
+    </Desc>
+    <ExtDesc>
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>147</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_MISSING_KEEPIN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Missing package keepin ... aborting. Add one and run again.
+    </Desc>
+    <ExtDesc>
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>148</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_NOT_HORZ_VERT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Grid lines are not horizontal and vertical ... aborting.
+    </Desc>
+    <ExtDesc>
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>149</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_COULD_NOT_LIST_AREA</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Could not list area.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>150</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_GRID_TOO_SMALL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Grid too small ... terminating.
+    </Desc>
+    <ExtDesc>
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>151</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_ERROR_CODE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error: %d
+    </Desc>
+    <ExtDesc>
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>152</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_MAX_SIZE_4</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Refdes %s%s exceeds maximum designator size ... aborting.
+    </Desc>
+    <ExtDesc>
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>153</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_RENAMING_ON</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Renaming components on
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>154</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_SEQUENCING</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Sequencing the reference designators
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>155</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_ROW_PROCESSING</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Row processing direction : to the %s,
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>156</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_COL_PROCESSING</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Column processing direction : %s,
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>157</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_ERROR_SETTING</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error in setting processing method in sequential renaming.
+    </Desc>
+    <ExtDesc>
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>158</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_NO_DIGIT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No non-skip DIGIT characters available ... aborting.
+    </Desc>
+    <ExtDesc>
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>159</Id>
+    <CDNUSR_DEFINE_NAME>ARMSG_NO_LETTER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No non-skip LETTER characters available ... aborting.
+    </Desc>
+    <ExtDesc>
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>160</Id>
+    <CDNUSR_DEFINE_NAME>ARTMSG_MNV_CUT_LAYER_NO_ENABLE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+It cannot be enabled because current film '%s' was not specified as a cut layer film.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>161</Id>
+    <CDNUSR_DEFINE_NAME>ARTMSG_MNV_CUT_LAYER_NO_DISABLE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+It cannot be disabled because current film '%s' was specified as a cut layer film.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+</MsgFile>

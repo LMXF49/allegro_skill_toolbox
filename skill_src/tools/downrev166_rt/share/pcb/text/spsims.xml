@@ -1,0 +1,1382 @@
+<MsgFile>
+
+  <Msg>
+    <Id>1</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_DEF_BAD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Bad file name given in %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>2</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_DEF_OPEN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to open report definition file '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>3</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_DEF_READ</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Reading report definition file '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>4</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_DEF_PARSE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error(s) found while parsing report definition file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>5</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_DEF_INTERP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error(s) found while interpreting report definition file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>6</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_DEF_CLOSE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Finished reading report definition file successfully.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>7</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_CUST_UPDATE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Custom report '%s' has been replaced.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>8</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_STD_CUSTOM</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Standard report '%s' cannot be replaced with a custom report.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>9</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_STD_UPDATE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Standard report '%s' has been replaced.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>10</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_DEF_MISSING</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No report definitions available...unable to generate reports.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>11</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_NO_VECTORS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No test vectors specified for report \"%s\".
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>12</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_RPT_MISSING</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to find report '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>13</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_RPTDEF_BAD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Bad report definition given in %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>14</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_RPTDEF_CREATE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to create report definition file '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>15</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_SIMTYPE_BAD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unknown simulation type found in %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>16</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_STIMULUS_BAD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unknown stimulus found in %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>17</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_FTS_BAD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unknown FTS mode found in %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>18</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_RPTDEF_NAME</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No name specified for report in report definition.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>19</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_RPTDEF_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error(s) found in report definition '%s'. Definition discarded.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>20</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_TOKEN_UNITS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Table units token encountered outside of table.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>21</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_TOKEN_SORT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Sort token encountered outside of table.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>22</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_TOKEN_GROUP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Group token encountered outside of table.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>23</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_TOKEN_UNKNOWN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unknown token '%d' encountered in %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>24</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_TOKEN_ILLEGAL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal table token encountered.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>25</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_VAR_BAD_ROW</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Variable %s cannot be used as a ROW variable.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>26</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_VAR_NO_ROW</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No ROW variable specified in table.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>27</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_VAR_NO_COL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No COLUMN variable(s) specified in table.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>28</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_VAR_NO_SORT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Sort variable %s does not appear in table.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>29</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_VAR_FOREACH</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Variable %s cannot be used as a FOREACH variable.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>30</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_VAR_UNKNOWN</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Unknown variable encountered: '%s'
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>31</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_ALLOC</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Memory allocation error in %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>32</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_SPC_COMP_CKT</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Spice Compilation Failure in Circuit Package Model %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>33</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_SPC_COMP_ESP</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Spice Compilation Failure in ESpice Model %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>34</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_BRD_MODEL</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Using BoardModel '%s'
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>35</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_DEVMOD_LK</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Device model lookup failed (%s)
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>36</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_DEVMOD_LK_AUD</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Device model lookup failed (%s) - run SigNoise Audit
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>37</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_CABLE_SHORT</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Unable to find Circuit Models for cable %s; short circuiting the cable.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>38</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_WIRE_SHORT</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No Subcircuit Specified for wire %s.%s; short circuiting the wire.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>39</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_SIMID_DUP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Duplicate simId '%s' requested in %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>40</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_PARAM_DUP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Duplicate params requested in %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>41</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_CACHE_ADD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to add results to SimCache.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>42</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_CACHE_EXISTS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Result for simId %s, receiver %s already exists.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>43</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_RESULT_NODE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Result node not found for simId %s in %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>44</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_RCVR_ALLOC</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to allocate a new receiver node in %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>45</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_BMODEL_EXISTS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Board Model exists - But not all the primary pins have PinMap Info\n So this circuit is being built in the conventional way.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>46</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_DC_NOVOLTAGE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+***Dc pin %s has no voltage info; the pin will be open circuited***\n
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>47</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_BMODEL_NOPIN</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Pin '%s' in wire '%s' of boardmodel '%s' does not exist in .brd: Will ignore this wire.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>48</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_BMODEL_NONET</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Pin '%s' in wire '%s' of boardmodel '%s' does not have a net parent: Will ignore this wire.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>49</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_BMODEL_PINCOUNT</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+The number of pins in wire '%s' of boardmodel '%s' is not matched to any net(s) in the board - will ignore this wire.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>50</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_NO_SIMLICENSE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to get License to carry out a simulation.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>51</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_CMD_TLSIM</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Tlsim Command used :  %s\n
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>52</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_CMD_SPC2SPC</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Spc2spc command used : %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>53</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_FAIL_SPC2SPC</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Spc2spc failed to translate the espice files in '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>54</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_CMD_HSPICE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Hspice command used : %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>55</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_HSPICE_FAIL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Hspice failed to simulate main_gen.spc in %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>56</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_HSPICE_ERRORLOC</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error messages can be found in %s/waveforms.lis.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>57</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_HSPICE_NOXLATE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+hspice_lis2sim.pl failed to translate waveforms.lis in %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>58</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_CMD_SPECTRE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Spectre command used : %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>59</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_SPECTRE_FAIL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Spectre failed to simulate main_gen.spectre in '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>60</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_SPECTRE_NOXLATE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+spectre_psfascii2sim.pl failed to translate timeSweep.tran in %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>61</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_CMD_NLXLATE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Netlist translator command used : %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>62</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_ESPICE_NOXLATE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to translate the espice files in '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>63</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_CMD_SIMULATOR</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Simulator command used : %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>64</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_SIMULATOR_FAIL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s failed to simulate main_gen.spc in %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>65</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_SIMULATOR_NOCMD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The simulator command for %s is not found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>66</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_NO_NLXLATE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The netlist translator command for %s is not found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>67</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_CMD_WFXLATE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Waveform translator command used : %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>68</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_WFXLATE_FAIL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to translate the %s waveform in %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>69</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_NO_WFXLATE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The waveform translator command for %s is not found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>70</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_NOSTIM_MEAS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Could not find stimulus in simulation measurements.\n
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>71</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_NO_INVERSEPIN</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Differential pair positive pin %s does not have inverse pin defined.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>72</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_VLTTHRESH_NOCROSS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Voltage threshold on receiver '%s' never crossed for driver '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>73</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_STIM_NOCONVERGE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Convergence Problem in Simulation of %s stimulus %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>74</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_STIM_NODURATION</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Primary stimulus is %s but no duration is specified; Setting duration to 50ns.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>75</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_WF_RESOLUTION</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Using waveform resolution %f ns.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>76</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_NO_UNRLICENSE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Current SigNoise license does not support simulation of unrouted interconnect.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>77</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_NO_MMCIRCUIT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s : '%s' - No circuit found for MacroModel '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>78</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_NO_VMEAS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No 'V Measurement' is defined in the delay measurement fixture of model %s. The buffer delay is assumed 0.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>79</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_NO_MMSECTIONONE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s Simulation: IO buffer %s should contain a MacroModel section.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>80</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_NO_MMSECTIONALL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s Simulation: All IO buffers should contain a MacroModel section.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>81</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_NO_BHVRMODEL</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No bhvr model for %s pin.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>82</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_MMLANGUAGE_UNKNOWN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The language of the subckt for the macro model %s is unknown. You need to have a %s subckt.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>83</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_MMLANGUAGE_WRONG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The language of the subckt for the macro model %s does not match the language of the targeted simulator.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>84</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_MM_NOIOCELL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Macromodel %s: Unable to find IOcell %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>85</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_NOSTIM_TERM</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+'%s' terminal '%s' custom stimuli is not specified.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>86</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_NOSTIM_DCTERM</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+'%s' DC Terminal '%s' Cannot have Custom Stimuli
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>87</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_NO_BITPATTERN</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No bit pattern is assigned to xnet (%s). Using default bit pattern '01'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>88</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_PINFREQ_MISMATCH</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+The frequency %lgMhz may not be supported for this pin %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>89</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_SETTING_RISE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Setting  rise time = fall time = %lgns to support %lgMhz.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>90</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_CYCLEPERIOD_MISMATCH</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Untenable duty cycle/period combination for pin %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>91</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_SXNET_NODR</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+ No drivers or receiver found for sxnet %s. Skipping Simulation.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>92</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_SXNET_NODRVR</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Unable to find driver for neighbor sxnet %s: Terminating the first receiver with 200 ohms resistance to ground.\n
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>93</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_CMD_ALTSIM</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Using Alternate Simulator, simulation command line:\n    '%s'\n
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>94</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_FAIL_ALTSIM</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Alternate Simulator Failed.\n
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>95</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_FAIL_DRSIM</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Simulation failure for driver pin '%s' to receiver pin '%s'
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>96</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_FAIL_NAMEMAP</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Name mapper failures occurred for net %s\n
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>97</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_FAIL_LPNAMEMAP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to map physical to logical name
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>98</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_PDELAY_FAIL</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Propagation delay calculation between %s and %s failed!
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>99</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_PDELAY_ALTSIM</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cannot calculate propagation delay for simulators other than tlsim.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>100</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_FAIL_HLTHRESH</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Could not get High state logic input threshold for %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>101</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_FAIL_LLTHRESH</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Could not get Low state logic input threshold for %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>102</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_FAIL_STYPELOOKUP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Wrong Simulation Type found in %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>103</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_FAIL_NNSIMNAME</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unknown Neighbor XNet and Driver in Sim Name
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>104</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_FAIL_WFCACHE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Could not find waveform in simulation cache for %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>105</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_FAIL_WFFILE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Could not find waveform file for simulation %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>106</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_SPC_OPEN</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Opening file %s\n
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>107</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_SPC_CREATE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Creating file %s\n
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>108</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_SPC_FINISH</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Finished processing file %s\n
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>109</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_SPC_RESULTS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Results in file %s\n
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>110</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_SPC_TLMODEL</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Cannot resolve TLINE model name in file %s, exiting.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>111</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_SPC_TLFILENAME</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Cannot resolve TLINE model file name in file %s, exiting.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>112</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_FAIL_STOPEN</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Cannot open file stimulus.spc, using 1ns rise/fall times
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>113</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_SPC_HSCREATE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Creating file %s\n
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>114</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_SYNTAX_ALTSIM</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Spectre/ESpice Name syntax correction; %s changed to %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>115</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_FAIL_WNMODEL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Wire number '%d' is not found in model '%s' as it contains RLGC matrices with dimension = '%d'.\n
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>116</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_FAIL_WNASK</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Wrong wire number '%d' requested in RLGC Spice generator
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>117</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_IRDROP_OPEN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Fail to open IRDrop database from design.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>118</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_IRDROP_OPEN_HIERVER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Fail to open IRDrop database with higher version.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>119</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_IRDROP_SAVE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Fail to save IRDrop database into design.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>120</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_IRDROP_ALLOC</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Fail to allocate memory in %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>121</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_IRDROP_UMFSOLVER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Fail (%d) to analysis net %s in umf solver.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>122</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_IRDROP_SHAPE_OVERLAP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot deal with overlap between shapes in layer %s on net %s now. Merge them in advance.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>123</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_IRDROP_MATERIAL_NOTAVAILABLE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The plating material %s has been not available, using default.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>124</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_SQPI_FILE_OPEN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to open file '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>125</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_SQPI_FILE_FORMAT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid format in file '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>126</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_SQPI_FILE_ZEROSTART</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The current data in file '%s' does not start from time 0.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>127</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_SQPI_FILE_INTERPOLATION</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Interpolation failed (division by zero found).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>128</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_SQPI_MESH_GENERATE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Fail to generate adaptive mesh for PI analysis.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>129</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_SQPI_LANGUAGE_NOTSUPPORT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The given simulation language does not support any more.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>130</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_SQPI_NOTLSIM</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot find or start tlsim engine.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>131</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_SQPI_CONDLOSSFREQ_BAD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid conductor loss measurement frequency value %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>132</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_SQPI_DIELOSSFREQ_BAD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid dielectric loss measurement frequency value %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>133</Id>
+    <CDNUSR_DEFINE_NAME>SIMSMSG_SQPI_NOPARTS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+There is no part on slave plane pairs.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+</MsgFile>
+

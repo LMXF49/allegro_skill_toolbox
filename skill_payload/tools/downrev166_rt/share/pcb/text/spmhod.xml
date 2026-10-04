@@ -1,0 +1,543 @@
+<MsgFile>
+
+  <Msg>
+    <Id>1</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_CLOSE_SAV</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Design has been corrupted, saving as '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>2</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_CLOSE_DBCHECK</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Performing a partial design check before saving.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>3</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_CLOSE_PTR_UPDATE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Preparing design for save to disk.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>4</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_CLOSE_WRITE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Writing design to disk.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>5</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_CLOSE_OK</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+'%s' saved to disk.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>6</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_CLOSE_NO_SAVE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+File not saved.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>7</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_CLOSE_RETRY</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Will retry and check for CANCEL every %d seconds.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>8</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_CLOSE_FILE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Close file error.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>9</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_ABORT_SAV</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Saving design as '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>10</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_WRITE_PAD_DB</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Error writing PADDING in design file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>11</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_WRITE_FILE_SIZE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+File size does not match size of actual data output.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>12</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_TOP2SURFACE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Etch subclass TOP has been set to Conductor subclass SURFACE.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>13</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_BOT2BASE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Etch subclass BOTTOM has been set to Conductor subclass BASE.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>14</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_SURFACE2TOP</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Conductor subclass %s has been set to Etch subclass TOP.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>15</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_BASE2BOT</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Conductor subclass %s has been set to Etch subclass BOTTOM.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>16</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_CLOSE_SAV_DBCHECK</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Perform dbdoctor for a complete error report on '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>17</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_CNS_STUB</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+design saved with DRC set to out of date, due to skipped DRC checks.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>18</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_UPREV_NOTIFY</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Opening the design requires no dbdoctor.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>19</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_OLD_PAD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Padstack revision is too old to open directly, use dbdoctor to uprev it.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>20</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_CALLBACK</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+The design already has a callback function registered.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>21</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_CLOSE_PRIMARY</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cannot close the primary design.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>22</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_READ_ONLY</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+The design is opened for READ ONLY.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>23</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_NOT_SYS_DB</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Design is not a system database (sdf).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>24</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_NOT_CIO_DB</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Design is not a Chip I/O Planner database.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>25</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_NOT_MDD_DB</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Design is not a Module Definition database (mdd).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>26</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_NOT_TILE_DB</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Design is not a Tile Definition database (til).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>27</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_NOT_VSD_DB</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Design is not a Via Structure Definition database.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>28</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_USER_ATTR</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+User defined property '%s' renamed to '%s'.  The name is the same as an ALLEGRO property.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>29</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_INVALID_SCHEMA_REV</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to open design. Design was saved under a newer release and contains features not compatible with this version of software. Review design_compatibility.log for new features used in this database.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>30</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_EXPORTED_PARTITIONS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Design has exported partitions, this operation cannot be completed without first importing the partitions.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>31</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_NOT_SIP_DB</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Design is not a System in Package database.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>32</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_OPEN_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Open design failed with error: %d
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>33</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_SAVED_HIGHER</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Design was last saved by a different product (%s). Constraints and other design data may not be available with this product. Functionality between two products may also be equivalent, you should consult the product functionality matrix to determine differences.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>34</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_SAVED_LOWER</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Design was last saved by lower capability product (%s). DRC is set out-of-date, you may wish to update DRC to reflect current rules.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>35</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_NOT_MCM_DB</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Design is not an Allegro Package Designer database (mcm).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>36</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_NOT_VIEWER_DB</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot open design. The design type is not appropriate for opening in this product.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>37</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_DB_LOCKED_NOTIFY</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+      Design is Locked.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>38</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_DB_LOCKED_EXPIRED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Design being opened has passed its lock expiration date; it can no longer be accessed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>39</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_DB_LOCKED_NOPWD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Design is Locked. No Password was provided. Open Canceled.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>40</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_DB_WRITE_LOCKED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+      Design is Locked for writing (Write Lock). 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>41</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_DB_VIEW_LOCKED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+      Design is Locked for Writing and Export (View Lock). Need password to open.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>42</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_DB_EXPORT_LOCKED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+      Design is Locked for Exports (Export Lock).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>43</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_DB_LOCK_NTP_FAILURE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Cannot access NTP server. Design is locked and requires Internet Network Time Protocol (NTP) for time check. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>44</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_NOT_SYSFP_DB</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Design is not a system database (scd).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>45</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_OPEN_CAPTURE_CONNECTION</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Opened connection with Capture.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>46</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_CLOSE_CAPTURE_CONNECTION</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Closed connection with Capture.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>47</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_CAPTURE_NO_BOARD_FILE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Could not find associated board file. Opening %s design.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>48</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_UNKNOWN_PROJECT</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Project file cannot be identified.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>49</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_NO_CAPTURE_ON_LINUX</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cannot open Capture project (.opj) because Capture is not supported on Linux.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>50</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_CAPTURE_PROJECT_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Capture project associated with board file is not found on disk. Do you want to select another project? Choosing not to select another project will disconnect this design from using integrated Capture/Allegro flow by deleting the project path property from the design.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>51</Id>
+    <CDNUSR_DEFINE_NAME>ODMSG_DB_PULSE_LOCKED</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+You will not be able to save and export from this design because the design is marked as read only by Pulse. To save or export, ensure the following: you are logged in, the design is shared with you, you have write permission, and hold the lock for the design.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+</MsgFile>

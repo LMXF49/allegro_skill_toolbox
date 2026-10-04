@@ -1,0 +1,22 @@
+;; ============================================================
+;; allegro_skill auto-load entry (17.x mainline, G: repo copy)
+;; Encoding: ASCII only (16.6 reader rejects non-ASCII)
+;; NOTE: On 16.6 skip loading -- 16.6 must use the patched D: copy
+;; (D:/Cadence/allegro_skill, GBK strings octal-escaped). This file
+;; may be picked up from the startup CWD, so guard by version.
+;; ============================================================
+errset(
+  prog((ver)
+    ver = errset(axlVersion('version) t)
+    if( and(ver car(ver) stringp(car(ver))
+            equal(substring(car(ver) 1 4) "16.6"))
+    then
+      printf("[ASTB] 16.6 detected; skip G: mainline, use D: patched copy\n")
+    else
+      ASTB_INSTALL_DIR = "G:/allegro/allegro_skill"
+      setSkillPath(cons(ASTB_INSTALL_DIR getSkillPath()))
+      load(strcat(ASTB_INSTALL_DIR "/main.il"))
+    )
+  )
+  t
+)

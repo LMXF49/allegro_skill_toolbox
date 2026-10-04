@@ -1,0 +1,3973 @@
+<MsgFile>
+<!-- The messages with ID from 1 to 80 are OBSOLETE and about to be replaced wiewed messages-->
+  <Msg>
+        <Id>1</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DIR_NOT_READABLE</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Directory specified is not readable.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>2</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DIR_NOT_WRITEABLE</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Directory specified is not writable.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>3</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DIR_NOT_WRITEABLE1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+%s directory is not writable.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>4</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_FILE_NOT_READABLE</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+File specified could not be opened for reading.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>5</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_FILE_NOT_WRITEABLE</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+File specified could not be opened for writing.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>6</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_FILE_NOT_CREATED_DIRRO1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Cannot create file: %s. The directory is read only.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>7</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_FILE_NOT_CREATED_DIRRO2</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Cannot create file: %s. The directory: %s is read only.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>8</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_ILLEGAL_FILENAME</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+File name specified is not in proper format.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>9</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_INIT_FAILED</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Could not initialize form fields data.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>10</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_LIST_CREATION_FAILED</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Could not create list of popup entries.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>11</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_NO_UPDATES</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Could not update form fields.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>12</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_POPUPLIST_FAILED</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Could not add entries to popup fields.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>13</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_LIST_NAME_TOO_LONG</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+List name too long. 
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>14</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_REL_TO_ABS_PATH</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Could not convert file path from a relative to an absolute path.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>15</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_INVALID_FILE_PATH</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+File path is not valid.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>16</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_INVALID_FILE_PATH1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+File path %s is not valid.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>17</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_REFDES_NOT_VALID1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Component %s is not a die and therefore cannot be exported. Select a valid die reference designator and try again. 
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>18</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_ACCR_CHANGED_TO_MATCH</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+The drawing accuracy was adjusted to match the IC database accuracy. 
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>19</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_ACCR_UNITS_CHNGD_2MATCH</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+The drawing accuracy and units were adjusted to match the IC database accuracy. 
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>20</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_UNITS_NOT_SUPPORTED1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+The actual drawing units (%s) are not supported for importing geometry from an IC database. 
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>21</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_UNITS_NOT_SUPPORTED</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+The actual drawing units are not supported. 
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>22</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_UNITS_UNKNOWN</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Unknown drawing or the IC database units.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>23</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_ERROR_PROCESSING_DSN</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Error processing design data.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>24</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_BAD_POWER_PIN1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Power pin %s could not be added to die. If the pin name is a duplicate, change it to a unique name.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>25</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_BAD_GROUND_PIN1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Ground pin %s could not be added to die. If the pin name is a duplicate, change it to a unique name.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>26</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_NOLEFLIBMGR</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+IC Library Manager not configured.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>27</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_UIF_DEFBROWSE</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+Could not open DEF file for reading.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>28</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_UIF_DEFILETOLOAD</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+Enter name of DEF file to load.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>29</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_UIF_LEFSNOTSET</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+LEF files have not been set up using Library Manager.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>30</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_INVALID_PARAM</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Invalid parameter passed to function while processing.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>31</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_INVALID_LEF_PATH</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Library file path is not valid.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>32</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_REL_PATH_TO_ABS_PATH1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Could not convert Library file path from a relative to an absolute path for file %s.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>33</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_REL_PATH_TO_ABS_PATH</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Could not convert Library file path from a relative to an absolute path.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>34</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_ABS_PATH_TO_REL_PATH1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Could not convert Library file path from an absolute to a relative path for file %s.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>35</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_ABS_PATH_TO_REL_PATH</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Could not convert Library file path from an absolute to a relative path.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>36</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_SET_ALL_PATHS</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Could not convert all LEF file paths. See log file.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>37</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DUPLICATE_LEFS</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Error while checking for duplicate LEF file. See log file.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>38</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_FILE_DOES_NOT_EXIST1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+LEF file %s does not exist.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>39</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_COULD_NOT_OPEN_FILE1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Error while attempting to open LEF file %s for reading. Check file permissions.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>40</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_LEF_PARSER_ERROR1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Error while attempting to parse LEF file %s. Check the file for correct syntax. 
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>41</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_INTERNAL_CALLBACK_ERROR</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Internal callback error. Contact Customer Support.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>42</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_CML_MACROS_ERR</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Error processing LEF file for CML macros. See log file.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>43</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DUPLICATE_LEF</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Duplicate LEF file matches LEF in list. It will not be added.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>44</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_SAMEDUPLEFFILENAME</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+Duplicate LEF file basename detected, but will be added. See log file.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>45</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_SAMEDUPLEFFILENAME1</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+LEF file %s has the same file base name as another LEF file in a different directory. Check whether this is an identical file that is about to be added. Add will be attempted. Rename this file to remove the warning.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>46</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_HAS_RELEVANT_MACROS</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+LEF file contains macros relevant for CML creation.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>47</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_NO_RELEVANT_MACROS</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+LEF file does not contain any relevant macros.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>48</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_LEF_FILE_ADDED1</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+LEF file %s was added.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>49</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_LEF_HAS_TECH_MOVED</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+LEF file has technology data, and it was moved to the first position in the list.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>50</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_MULTIPLE_TECH_LEF</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+Multiple LEF files have technology data. See log for details.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>51</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_NOMACROS_NOR_TECH</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+LEF file does not contain macros nor technology. File was not added.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>52</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_NOMACROS_NOR_TECH1</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+LEF file %s does not contain macros nor technology information. The file was not added.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>53</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_REFRESH_LEF_DISP</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+Could not refresh display of LEF files correctly.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>54</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_CML_OLDER_THAN_LEF1</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+%s is older than the LEF file.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>55</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_FILE_CML_NOT_FOUND2</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+%s file not found for lef file %s. Ignoring LEF file in batch mode.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>56</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_FILE_REQD_4DEF_NOT_FND1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+%s does not exist. It will be required for processing.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>57</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_FILE_LEF_READING1</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+Reading LEF file %s ...
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>58</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_ADDDEFAULTLIB_FAILED</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Could not add a default library.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>59</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_RESETINGLIBS_FAILED</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Could not reset the OpenAccess libraries.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>60</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_BROWSEDEF_FAILED</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Could not check the OpenAccess library definition file.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>61</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_BROWSELIBDEFS_FAILED</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Could not browse for the OpenAccess library definition file.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>62</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_CHECKLIBDEFS_FAILED</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Could not check the OpenAccess library definition file.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>63</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_CHKDUPVIEW_FAILED</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Could not check for duplicate view.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>64</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DEFS_BROWSE_CANCEL</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Could not open .defs file browser.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>65</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DEFS_FILE_DOESNT_EXIST</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+.defs file does not exist.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>66</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DUPLICATE_VIEW</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+Duplicate View for current library/cell found.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>67</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_LIBCELLVIEW_FAILED</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Could not read in Library/Cell/Views
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>68</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_SETCURRENTLIBPOP_FAILED</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Could not set the current library/cell/view entry.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>69</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_UIF_DUPLAYOUTVIEW</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+Could not create device as Library/Cell has an already defined view by same name.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>70</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_UIF_LIBDEFS</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+Could not open the OpenAccess library definition file for reading and writing.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>71</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_UIF_LIBDEFSFILE</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+Select library definitions file.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>72</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_UIF_LIBDEFSFILT</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+Library Definitions File |*.defs|
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>73</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_UPDATECELL_FAILED</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Could not update the cells in popup list.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>74</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_UPDATELIB_FAILED</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Could not update the libraries in popup list.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>75</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_UPDATEVIEW_FAILED</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Could not update the views in popup list.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>76</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_UIF_READLIBDOTDEFS</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+Reading the OpenAccess library definition file...
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>77</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_UIF_FINISHLIBDOTDEFS</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+Finished reading the OpenAccess library definition file.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>78</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_OAGETLIBS_FAILED</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Could not retrieve library information from the OpenAccess library definition file.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>79</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_OAINGETOAINFO_FAILED</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Could not retrieve OA library information for lib/cell/view specified.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>80</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_OAINPROCESSOADATA_FAILD</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Could not import die from OA.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>81</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_LOADING_OA_LIBRARIES</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+Loading OpenAccess libraries ...
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>82</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_CML_DEFINITION</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+CML - Condensed Macro Library.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>83</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DEF_DEFINITION</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+DEF - Design Exchange Format.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>84</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_LEF_DEFINITION</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+LEF - Library Exchange Format.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>85</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_LDF_DEFINITION</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+LDF - Library Definition File.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>86</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DEFILETOLOAD_D</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+Enter the name of the DEF file to load.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>87</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_NO_LEF_INFO</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+LEF information is not available because the LDF file was moved or it does not exist. Use the IC Library Manager to point to the LDF file or create a new LDF file. If the file does not exist, add LEF files and create CML files.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>88</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_NO_LEF_INFO_D</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+LEF information is not available. See the command line for details.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>89</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_SYNTAX_ERROR_D</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Incorrect syntax found in the file. See the command line for details.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>90</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_SYNTAX_ERROR2</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Incorrect syntax found in the file %s on the line %d. This problem may have occurred when the file was edited or transferred over the network. Edit the file to fix the error. Refer to the LEF/DEF Language Reference document. If you do not own the file, ask the provider to fix the error.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>91</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_LEFSNOTSET_D</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+The LDF file does not have any LEF files. See command line for details.
+        </Desc>
+        <ExtDesc>
+Unable to import design because required .cml files are missing.
+Run the IC Library Manager to ensure that your IC library is set up correctly:
+Make sure the correct current .ldf file is set.
+Make sure that the .ldf file is not empty.
+Make sure the correct library is set as the current one.
+Make sure that all of the LEF files that you need are included in the list for the current library.
+Make sure that .cml files are already created for all .lef files listed.
+        </ExtDesc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>92</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_LEFSNOTSET</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+The LDF file does not have any LEF files. Use the IC Library manager to add LEF files and create CML files.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>93</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_INVALID_LEF_PATH_D</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+The LEF file path is not valid. See the command line for details.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>94</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_INVALID_LEF_PATH3</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+The file %s was not found in %s as specified in %s. The file may have been moved or no longer exists. Use the IC Library Manager to change the path to point to the new location of the file.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>95</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_INVALID_DEF_PATH_D</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+The DEF file path is not valid. See the command line for details.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>96</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_INVALID_DEF_PATH2</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+File %s was not found at %s. The file may have been moved. Use the Browse button of the DEF Import dialog box to change the path to point to the new location of the file.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>97</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_LEF_FILE_ADDED2LDF1</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+The LEF file %s was added to the LDF file %s.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>98</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_LEF_HAS_TECH_MOVED1</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+Since the LEF file %s is a technology file, it was moved to the top of the list of LEF files.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>99</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_LEF_HAS_TECH_MOVED_D1</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+%s was moved to the top of the list.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>100</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_MULTIPLE_TECH_LEF_D</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+Multiple LEF files have technology data. See the command line for details.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>101</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_MULTIPLE_TECH_LEF1</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+Although the LEF file %s is a technology file, it was not automatically moved to the top of the library list because there are multiple technology files. Only technology data from the first file in the list will be used. Make sure to move the LEF file that contains the correct technology data to the top of the list.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>102</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_NOMACROS_NOR_TECH_D</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+The file was not added. See the command line for details.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>103</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_NOMACROS_NO_TECH1</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+The LEF file %s does not contain any relevant macros or technology information. The file was not added.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>104</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_NO_CML_FILE_CURR_LIB_D</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+No CML file was found. See command line for details.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>105</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_NO_CML_FILE_CURR_LIB</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+No CML file was found in the current library. Use the IC Library Manager to create CML files. If the library does not have LEF files, add them, then create the CML files.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>106</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_ILLEGAL_FILENAME_DEF1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+The file name %s is not in the proper format. Change the file extension to def.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>107</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_REL_TO_ABS_PATH1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Could not convert file path from a relative to an absolute path for file %s. The file does not exist at the specified location. Use the IC Library Manager to correct the LEF file path.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>108</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_CML_OLDER_THEN_LEF_D</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+CML file is older than LEF file. See the command line for details.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>109</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_CML_OLDER_THEN_LEF3</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+%s is older than %s. Data in %s may be out-of-date. Use IC Library Manager to re-create %s. 
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>110</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_SYNTAX_ERR2</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Incorrect syntax found in %s on line %d. This problem may have occurred when the file was edited or transferred over the network. Edit the file to fix the error. Refer to the standard specification on LEF/DEF. Another solution is to ask the provider of the file to fix the error.ICPOAMSG_INVALID_LEF______       0 LDF
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>111</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_FILE_NO_IO_MACROS_D</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+The file has no I/O macros. See the command line for details.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>112</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_FILE_NO_IO_MACROS2</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+The file %s has no I/O macros. %s file created without macros. This is normal for technology files and LEF files containing core or block macros only. If the LEF file contains I/O macros, then the class of those Macros are not correct. Edit LEF file to correct the macro class. Only macros of class PAD, ENDCAP, RING, COVER, and COVER BUMP are processed.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>113</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_CMLFILE_NOT_FOUND3</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+The file %s was not found for %s. Use the IC Library Manager to create %s.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>114</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_UPDATING_FILE2</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+Updating of the file %s... Writing new macros: %s.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>115</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_LIBDEFSFILE_D</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+Select OpenAccess library definitions file.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>116</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_OAGETLIBS_FAILED1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Could not retrieve OpenAccess library information from the file %s. The file may be damaged. Check that the file is not empty and  library information is included. Do not edit the file. Re-create the database to fix the problem. 
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>117</Id>
+        <CDNUSR_DEFINE_NAME>CPOAMSG_OAINGETOAINFO_FAILED3</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Could not open the OpenAccess library  %s containing cell %s, view %s. The OpenAccess database may be empty or corrupted. Re-create the database to fix the problem or obtain an updated database from the provider.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>118</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_FILE_DOESNT_EXIST3</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+The file %s was not found in %s. The file may have been moved or no longer exists. Use the %s to change the path to point to the new location of the file.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>119</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_SEVERAL_LDF_FILES3</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+There are %d LDF files in the current working directory. The file %s was chosen automatically. If this is not the correct LDF file, use the IC Library Manager to select the correct file.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>120</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_CML_SYNTAX_ALL3</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+The keyword %s is missing on line %d in the file %s. The file may be corrupted. Use the IC Library Manager to re-create the file. Do not edit the file.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>121</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_CML_SYNTAX_UNKNOWN1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+The file %s is incomplete. This problem may have occurred when the file was edited or transferred over the network. Use the IC Library Manager to re-create the file. Do not edit the file.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>122</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_UPDATING_CML2</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+Updating the file %s... Writing new macros: %s.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>123</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_INVALID_LEF_FILE1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+The file %s is missing information. If you do not own the file, ask the provider to send you the updated version of the file.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>124</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_INVALID_CML_VERSION2</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+The version of the CML file %s is %f. The file may have been created by an older/newer version of the tool. Use the IC Library Manager to re-create the CML file and this will update it to version %f.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>125</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_LINE_LENGTH_CML_MAX5</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Line number %s in  the file %s is %s characters and exceeds the allowed number of %s characters. Some of the points in the polygon pin %s may be omitted because this tool does not support this  type of polygon pin. Use the IC Library Manager to open the Options dialog box. Click the Pins tab and block this pin from processing. Then re-create the CML file. Another suggestion is to simplify the polygon so it has fewer points in it.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>126</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_IMPORT_LDF_FILE1</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+Importing the Library Definition File %s.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>127</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_LDF_LIB_SELECTED1</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+The current library selected is %s.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>128</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_PROCESSING_LIB1</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+Processing the library %s.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>129</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_CURR_LDF_PATH2</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+The directory %s where the file %s was written is not in the current LDF path. To have this file automatically selected the next time you start the tool, add the directory to the beginning of your LDF search path using the user preferences editor.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>130</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_CANNOT_RM_LIB2</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+The file %s is read-only. The library %s could not be removed as it is defined in this file. Change the permissions on the file to allow the library to be removed.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>131</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_NO_LEFS_IN_LIB1</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+Could not create CML files; as there are no LEF files in the library %s. Use the IC Library Manager to add LEF files to the library and create the CML files.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>132</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_NO_LIB_IN_LDF</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+There is no library defined; cannot create cml files. Use the IC Library Manager to add a library and LEF files to the library and create the CML files.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>133</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_ENTER_LIB_NAME</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+Enter a new library name.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>134</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_RULE4_LIB_NAME_D</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+Use only numbers or letters without spaces in the library name.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>135</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_RULE4_LIB_NAME</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+The library name &lt;%s&gt; is not valid. Use only numbers or letters without spaces in the library name.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>136</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_UNIQUE_LIB_NAME_D</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+Select a unique library name.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>137</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_RULE4_LIB_NAME1</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+The library name %s already exists. Select a unique library name.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>138</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_LIB_ADDED_IN_LDF2</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+A new library %s was added to file %s.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>139</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_CANNOT_ADD_LIB2</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+The file %s is read-only. You cannot add the library %s to this file. Change the permissions on the file to allow the library to be added.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>140</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DUPLICATE_LEF1</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+The file %s is already in the LEF file list for the current library, so it will not be added again. 
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>141</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DUPLIC_LEF_INDIF_DIR1</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+The LEF file %s has the same name as another LEF file in a different directory %s. Check whether these two files are identical. If so, remove one.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>142</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_HAS_RELEVANT_MACROS1</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+The LEF file %s contains macros relevant for CML creation.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>143</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_NO_IO_MACROS1</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+The file %s has no I/O macros of the following supported classes: PAD, ENDCAP, RING, COVER, and COVER BUMP. This is normal only for technology files and LEF files containing core or block macros. If the file %s contains I/O macros, then the class of those macros is not correct. Edit the LEF file to correct the macro class to one of the supported classes.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>144</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_Q_REMOVE_FIRST_LEF1</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+You are about to remove the first LEF file %s that contains technology data. This file is required for normal processing. If you delete it, make sure you move the correct technology file to the top of the list. Do you want to remove it?
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>145</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_LEF_REMOVED1</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+The LEF file %s was removed from library %s.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>146</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_UPDATING_LIBRARY_FILES1</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+Saving the LDF file %s.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>147</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_LDF_CHANGES_CANCELED1</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+You cancelled the changes. The LDF file %s remains unchanged.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>148</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_SELECT_LEF_2REMOVE</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+Select a LEF file for removal. 
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>149</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_LOG_HEADER_LEF_LIB1</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+The IC Library Manager log file was opened on:  %s.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>150</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_CHECKING_LEF4TECH_INFO</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+Checking the LEF files for technology information.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>151</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_LEF_HAS_TECH_INFO</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+The LEF file %s contains technology data.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>152</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_LEF_HASNOT_TECH_INFO_D</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+The LEF file %s does not contain technology data.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>153</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_CML_STAT_UP2DATE_D</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+Up to date.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>154</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_CML_STAT_OUT_OFDATE_D</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+Out-of-date.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>155</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_CML_STAT_NOTEXIST_D</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+Does not exist.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>156</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_ABS_FROM_REL_PATH_ERR1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Cannot convert file %s  from an absolute to a relative path. The file does not exist at the specified location. Use the IC Library Manager to correct the LEF file path.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>157</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_FIRST_LEF_NO_TECH1</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+The first LEF file %s does not contain technology data, which is required for processing. Use the IC Library Manager to add a LEF file containing technology data to the top of the library list.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>158</Id>
+        <CDNUSR_DEFINE_NAME>ICPCOMSG_SELECT_FILE1</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+Select the file name in the list %s.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>159</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_LDF_SYNTAX_ERROR1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+An incorrect syntax was found in the LDF file %s. This problem may have occurred when the file was edited or transferred over the network. Use the IC Library Manager to re-create the file. Do not edit the file.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>160</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_LDF_DUPLICATES1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+There are duplicates of the LEF file %s in the LDF file %s. This problem is caused when editing the file. Use the IC Library Manager to remove duplicate entries from the LDF file.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>161</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DIEPINS_INFO</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+Large pins on the top metal layer in your design that are intended for use as pads for connection to the package are die pins. Connection points are any other pins on the selected IC routing layers which do not directly leave the chip.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>162</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DEFAULT_CML_LOADED</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+The default CML file was loaded successfully.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>163</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DEFAULT_CML_NOTLOADED_D</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+The default CML file was not loaded.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>164</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_MIN_PIN_SIZE</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+The minimum pin size must be greater than 0. Increase the size of the pin.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>165</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_OPTIONS_CANCELED</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+You cancelled the IC Library option settings.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>166</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_LIB_OPTIONS_SAVED</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+The IC Library options settings were saved.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>167</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_OPTIONS_SAVED_AT1</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+The IC Library options log settings were saved at %s.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>168</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_PIN_NOSHAPE_ON_MAPPED2</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+The pin %s does not have a shape on the mapped layer %s. Use the General tab of IC Library Manager Options dialog box to change the mapping or choose another pin.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>169</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_WRITING_OPTIONS2CML1</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+Writing options to the CML file %s...
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>170</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_OPTIONS_NOTECH_INFO</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+The LEF file %s does not have technology data. The Options dialog box requires this information for processing. Use the IC Library Manager to add the file with the technology information to the top of the library list.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>171</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_OPTIONS_NO_MAPPING</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+At least one layer has to be mapped as the die pin layer. To map the layer, use the General tab of IC Library Manager Options dialog box.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>172</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_MIN_PIN_SIZE_DEFAULT</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+The minimum pin size must be greater than 0. The default values 40 by 40 microns were used  To change the values, use the Pin tab of IC Library Manager Options dialog box.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>173</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_NO_LAYER_INFO</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+The layer information is required, but does not exist. Use the IC Library Manager to add the lef file with technology information to the top of the library list.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>174</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_NEGATIVE_NORTH_SCRIBE1</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+You entered a negative scribe width of: %d for the north scribe. The default scribe width of 0 will be used instead.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>175</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_NEGATIVE_SOUTH_SCRIBE1</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+You entered a negative scribe width of: %d for the south scribe. The default scribe width of 0 will be used instead.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>176</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_NEGATIVE_EAST_SCRIBE1</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+You entered a negative scribe width of: %d for the east scribe. The default scribe width of 0 will be used instead.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>177</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_NEGATIVE_WEST_SCRIBE1</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+You entered a negative scribe width of: %d for the west scribe. The default scribe width of 0 will be used instead.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>178</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DEF_LOG_HEADER</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+The DEF Import log was opened on %s.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>179</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DEF_LOG_FOOTER</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+The DEF Import log was closed on %s.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>180</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DIE_SIZE2</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+The die size is: %s x %s.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>181</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DRAWING_SIZE2</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+The drawing size is: %s X %s.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>182</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DIE_OUTSIDE_DRAWING_UR</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+The upper right corner of the die is outside the drawing. Increase the drawing size to fix the problem.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>183</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DIE_OUTSIDE_DRAWING_UL</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+The upper left corner of the die is outside the drawing. Increase the drawing size to fix the problem.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>184</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DIE_OUTSIDE_DRAWING_LR</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+The lower right corner of the die is outside the drawing. Increase the drawing size to fix the problem.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>185</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DIE_OUTSIDE_DRAWING_LL</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+The lower left corner of the die is outside the drawing. Increase the drawing size to fix the problem.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>186</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DIE_AREA_NOT_VALID1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+The die area in the DEF file %s is 0. Edit the file to fix the error. Refer to the LEF/DEF Language Reference document. If you do not own this file, ask the provider to fix the error.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>187</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DEF_UNITS_NOT_VALID2</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+The units %s in the DEF file %s are not valid. Edit the file to fix the error. Units should be greater than or equal to 100 and less than or equal to 20000. Refer to the LEF/DEF Language Reference document. If you do not own this file, ask the provider to fix the error.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>188</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_NO_PINS_SECTION1</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+There is no PIN section in the %s. To fix this issue, specify the option to write pin information in the exporting tool.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>189</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_PIN_LAYR_NOT_DIE_LAYER3</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+The pin %s is defined on the layer %s. The die pin layer is %s. To import the pin, it must be on the same layer as the die pin layer. Use the General tab of IC Library Manager Options dialog box to re-map the die pin layer.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>190</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_INDETERMINATE_DEF_ERR</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Unknown error reading the DEF file. The file may be damaged. This problem may have occurred when the file was edited or transferred over the network. Re-create the file to fix the problem. Do not edit the file. If you do not own the file, ask the provider to send you an updated version of the file.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>191</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DIE_FITS</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+The die fits within the drawing extents.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>192</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_USER_STOP_READ_CMLS</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+You cancelled reading the CML files. As this is required for DEF file processing, DEF import will stop.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>193</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_LEF_NOT_FOUND_DEF_STOP2</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+The LEF file %s was not found at the path %s specified in the LDF file. DEF Import stopped. Use the IC Library Manager to find the new location of the LEF file.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>194</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_NO_TECH_INFO_DEF_STOP</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+The IC Library does not contain technology information, which caused DEF Import to stop. Use the IC Library Manager to add the LEF file with the technology information.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>195</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_TYLES_NUMBER1</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+%d tile instances found in the library.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>196</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_NO_TYLES_IN_DSN</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+No tile instances found in the library.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>197</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_PARAM_RECORD_NOT_FOUND</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+The die parameter record could not be read for the existing design because it may be damaged or was not recorded properly. Use the Import feature to restore the original design.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>198</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DIE_EXTENT_OUT8</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+The origin you selected places the die outside the extents of the drawing. The bounding box coordinates of the die based on the origin you selected are: (%f,%f), (%f,%f). The drawing extents are: (%f,%f) (%f,%f). Increase the drawing extents to fix the problem.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>199</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DIE_PIN_TOO_SMALL3</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+The pin %s is too small (%f by %f microns) to be represented in the package database and will be ignored. If this pin is required for packaging, increase its size. The minimum pin size must not be less than the accuracy of the drawing.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>200</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_NO_DIE_PINS_FOUND</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+There are no die pins found for the import. This may be because there is no PINS section, all drivers are unplaced, or only connection points are defined in the CML files. Correct the IC data or use the IC Library Manager to change the settings and recreate CML files. If you do not own the IC data, ask the provider to send you updated data.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>201</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_REFDES_TXT_NOT_SCALED1</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+Unable to scale designator text %s for the IC symbol, because there are no text sizes available. Be sure to define at least one text block in the Text Setup dialog box (Setup-&gt;Text Sizes).
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>202</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_PINNAME_CHAR_REPLACED1</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+The pin number %s has an invalid character &apos;!&apos; that has been replaced with &apos;|&apos;.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>203</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_LONG_PINNAME_ALTERED2</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+The pin number %s is too long and has been truncated and altered to %s.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>204</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_NET_ASSIGNMENTS_MIS_DEF</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+Some die pins do not have NET or SPECIALNET assignments in the DEF file. Since there is no net assigned to them, if this die is subsequently exported to DEF with these as physical pins, the pins will be lost. Convert these pins to cover bump cell instances, or reimport the die with net assignments to avoid loss of these pins
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>205</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_NET_ASSIGNMENTS_MIS_OA</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+Some die pins do not have NET or SPECIALNET assignments in the OpenAccess Library. Ask the provider to give you an updated version of the database. See log file for specific pin warnings.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>206</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_PIN_NO_NET_ASSIGNMENTS1</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+The pin %s was created with no net assignment.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>207</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DIE_NORTH_SCRIBE_ADDED1</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+The north scribe width of %s was added to the component. 
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>208</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DIE_SOUTH_SCRIBE_ADDED1</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+The south scribe width of %s was added to the component. 
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>209</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DIE_EAST_SCRIBE_ADDED1</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+The east scribe width of %s was added to the component. 
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>210</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DIE_WEST_SCRIBE_ADDED1</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+The west scribe width of %s was added to the component. 
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>211</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DIE_SHRINK_ADDED1</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+The Die Shrink value of %f % was added to the component. 
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>212</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_NO_LAYER_INFO_RDL</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+No layer information was found in the library because the IC Library does not have the technology data. The technology data is required for processing. Use the IC Library Manager to add the LEF file with technology data to the top of the library list. The layer name was defaulted to RDL. 
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>213</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_TOP_DEF_INFO2</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+Generated by %s version %s on: %s.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>214</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DEF_OUT_NO_DIE_DRIVER</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+No die or drivers were found in the design. There is nothing to export. Use the Die Editor to add drivers or pins to the design.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>215</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DEF_API_ERROR</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+The DEF file writer failed. This could be due to insufficient memory or disk space, a file system or network problem, or some internal software issue. Check that sufficient memory and disk space exists or that the network connection is not lost.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>216</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DEFOUT_API_SUCCESS</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+The DEF Writer finished exporting successfully.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>217</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DEFOUT_NO_DESIGN_NAME</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+The IC design name is missing, so the default die name %s will be used.	
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>218</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DEFOUT_DESIGN_NAME</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+The IC design name is %s.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>219</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_NO_ORIG_MACRO_NAME</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+Some macros lack the ORIG_CASE_MACRO_INS_NAME property so non case-sensitive macro instance names were used. Re-import the design to fix the problem before exporting it.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>220</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_COMPONENT_NOT_DIE1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+The component %s is not a die and therefore cannot be exported. Select a valid die reference designator and export the design.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>221</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_LINE_W_NOT_X_GRID</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+The design has line widths which are not an even multiple of the manufacturing grid. Change the manufacturing grid or line width to fix the problem.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>222</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_NOT_45_90_ROUTE</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+Route found that is not 45 or 90 degrees. This is not supported for IC designs. Change the routing to fix the problem before exporting the file.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>223</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_REGULAR_WIRING</CDNUSR_DEFINE_NAME>
+        <Category>I
+    </Category>
+        <Desc>
+Regular wiring was found and written to the DEF file. If this DEF file is read from IO Planner, the wire width will be computed from the Minimum Line Length constraint for the routing layers in IO Planner.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>224</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_NO_PIN_SECTION</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+The PIN section of the DEF file was not created because there were no logical or physical pins to export.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>225</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DEF_OUT_LOG_CLOSED</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+The DEF Export log file was closed on %s.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>226</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DEF_OUT_LOG_OPENED</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+The DEF Export log file was opened on %s.</Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>227</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DEF_OUT_CANCELED</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+You canceled DEF Export.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>228</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_NO_DIE2EXPORT</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+No suitable die found to export. The design does not contain any dies with pins or drivers. Add die pins or drivers before exporting.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>229</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_ERR2EXPORT_SCRIBELINES</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+Dies with scribe lines may not be exported from this tool because the increased die size due to the scribe widths is incompatible with the IC design.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>230</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_ERR2EXPORT_SHRINK</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+Dies that have been shrunk may not be exported from this tool because the shrink cannot be reversed without loss of precision due to rounding.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>231</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DEFOUT_CASESENS_PINAMES</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+Some pins lack the ORIGINAL_CASE_PIN_NAME property so non case-sensitive pin names were used instead. To fix this problem, re-import the design.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>232</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_CML_OLDER_LEF_PUP_MSG3</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+%s is older than %s. Data in %s may be out-of-date. Do you want to update it?
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>233</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_CML_CREATED_ON1</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+File Created on: %s.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>234</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_CML_VERSION1</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+VERSION\t%0.4lf.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>235</Id>
+        <CDNUSR_DEFINE_NAME>LEFDEFMSG_LOW_MEMORY</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+Low on available memory. Close program, install additional memory and try again.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>236</Id>
+        <CDNUSR_DEFINE_NAME>LEFDEFMSG_LOW_MEMORY_FRM</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+Low on available memory.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+  
+    <Msg>
+        <Id>237</Id>
+        <CDNUSR_DEFINE_NAME>LEFDEFMSG_ERR2LOAD_DLL</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Unable to load the icpOaInS dynamic shared library required for 
+OpenAccess. Make sure that your software environment is initialized and that 
+an OpenAccess compatible with this software release is installed.
+    </Desc>
+    <ExtDesc>
+When installing SPB tools that interface with OpenAccess, it is necessary for
+OpenAccess to be configured after installation of the core tools. You may verify
+that OpenAccess has been properly installed for your software by looking for a
+folder beginning with "oa_v22" in the SPB install hierarchy root directory.
+
+On Linux and UNIX systems, there should be a share/oa soft link which points to the
+above OpenAccess installation directory. Finally, there should be a share/oaPlugIns
+directory which contains the cdsLib.plg file.
+
+On Windows systems, the OA_PLUGIN_PATH environment variable must be set to point to the
+share/oaPlugIns directory.
+
+If any of the above is not properly configured, run the installation and/or configuration
+tools again. Once finished, you will need to restart this program for the changes to
+take effect.
+    </ExtDesc>
+    <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>238</Id>
+        <CDNUSR_DEFINE_NAME>LEFDEFMSG_ERR2LOAD_DLL_CON</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Unable to load icpOaInS library. See oaImport.log for details.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>239</Id>
+        <CDNUSR_DEFINE_NAME>LEFDEFMSG_ERR2LOAD_DLL_EXPORT</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Unable to load the icpOaOutS dynamic shared library required for OpenAccess. 
+Make sure that your software environment is initialized and a 
+valid installation of OpenAccess version 2.2 is installed. The OA_HOME environment 
+variable mist be set to point to the correct OpenAccess 2.2 installation.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>240</Id>
+        <CDNUSR_DEFINE_NAME>LEFDEFMSG_ERR2LOAD_DLL_EXPORT_CON</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Unable to load icpOaOutS library. See oaExport.log for details.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>241</Id>
+        <CDNUSR_DEFINE_NAME>LEFDEFMSG_CHECKING_DIE_SIZE</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+Checking the die size and location...
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>242</Id>
+        <CDNUSR_DEFINE_NAME>LEFDEFMSG_READING_CMLS_SUCCESSFUL</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+Reading the cml file(s) was successful.
+    </Desc>
+        <Output>C</Output>
+    </Msg> 
+
+  <Msg>
+        <Id>243</Id>
+        <CDNUSR_DEFINE_NAME>LEFDEFMSG_PROCESSING_COMPONENTS</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+Processing the components...
+    </Desc>
+        <Output>C</Output>
+    </Msg> 
+
+  <Msg>
+        <Id>244</Id>
+        <CDNUSR_DEFINE_NAME>LEFDEFMSG_CREATING_DIE_SYMBOL</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+Creating the die symbol... 
+    </Desc>
+        <Output>C</Output>
+    </Msg> 
+
+  <Msg>
+        <Id>245</Id>
+        <CDNUSR_DEFINE_NAME>LEFDEFMSG_OA_IMPORT_COMPLETED</CDNUSR_DEFINE_NAME>
+        <Category>I
+     <Sub-Category>P</Sub-Category>
+     </Category>
+        <Desc>
+OpenAccess import completed.
+    </Desc>
+        <Output>C</Output>
+    </Msg> 
+
+  <Msg>
+        <Id>246</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_SYNTAX_ERROR1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Incorrect syntax found in the file %s. This problem may have occurred when the file was edited or transferred over the network. Edit the file to fix the error. Refer to the LEF/DEF Language Reference document. If you do not own the file, ask the provider to fix the error.
+    </Desc>
+        <Output>C</Output>
+    </Msg> 
+
+  <Msg>
+        <Id>247</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_LEF_UNITS_NOT_VALID1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+The units %s in the LEF file are not valid. Edit the file to fix the error. Refer to the LEF/DEF Language Reference document. If you do not own this  file, ask the provider to fix the error.
+    </Desc>
+        <Output>C</Output>
+    </Msg> 
+
+  <Msg>
+        <Id>248</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_LEF_UNITS_2000TO1000</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+The Allegro database does not support 2000 accuracy. 1000 accuracy has been used with possible round off errors. Any value with 5 in the 10 thousandths place will be rounded off to the next higher value in the 1 thousandths place.
+    </Desc>
+        <Output>C</Output>
+    </Msg>  
+
+  <Msg>
+        <Id>249</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_LEF_UNITS_20000TO1000</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+The Allegro database does not support %s accuracy. 1000 accuracy has been used with possible round off errors.
+    </Desc>
+        <Output>C</Output>
+    </Msg>  
+
+  <Msg>
+        <Id>250</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_SYNTAX_ERROR_LINE_NUMBER1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Incorrect syntax found in the LEF file on line number %d. This problem may have occurred when the file was edited or transferred over the network. Edit the file to fix the error. Refer to the LEF/DEF Language Reference document. If you do not own the file, ask the provider to fix the error.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+  
+  <Msg>
+        <Id>251</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DBG_FAILED2CREATE_IC_PORT_NAME_PROPERTY</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Could not preserve IC port name %s as a property.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+  
+  <Msg>
+        <Id>252</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_NO_IC_CLASS_COMPONENTS1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+The component with reference designator %s is not of class IC. Therefore it cannot be replaced by importing a die of the same name. Choose a different reference designator for the die to be imported.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>253</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_LEF_UNITS_10000TO1000</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+The Allegro database does not support 10000 accuracy. 1000 accuracy has been used with possible round off errors. 
+    </Desc>
+        <Output>C</Output>
+    </Msg>  
+  
+  <Msg>
+        <Id>254</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_ORIG_TILE_NAME_MISSING</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+Some tile pins were found lacking the ORIGINAL_CASE_PIN_NAME property. Name TILEPIN is used instead.
+    </Desc>
+        <Output>C</Output>
+    </Msg>   
+
+<Msg>
+        <Id>255</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_ORIG_PIN_NAME_MISSING</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+Some pins were found lacking the ORIGINAL_CASE_PIN_NAME property. Name PIN is used instead.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+  
+   <Msg>
+        <Id>256</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_ORIG_COVER_BUMP_NAME_MISSING</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+Some cover bumps are missing pin names. Name PAD is used instead.
+    </Desc>
+        <Output>C</Output>
+    </Msg>  
+  
+  <Msg>
+        <Id>257</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_ORIG_DRIVER_PIN_NAME_MISSING</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+Some drivers are missing the ORIGINAL_CASE_PIN_NAME property.
+    </Desc>
+        <Output>C</Output>
+    </Msg>  
+  
+      
+   <Msg>
+        <Id>258</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_ORIG_MACRO_INS_NAME_MISSING</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+Some drivers are missing the ORIG_CASE_MACRO_INS_NAME property.
+    </Desc>
+        <Output>C</Output>
+    </Msg>      
+
+  <Msg>
+        <Id>259</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_FAILED2CREATE_CELL_MASTER_PROP1</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+Could not preserve cell master name %s as a property.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>260</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_FAILED2CREATE_CELL_PIN_PROP1</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+Could not preserve cell pin name %s as a property.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>261</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_FAILED2CREATE_CELL_INSTANCE_PROP1</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+Could not preserve cell instance name %s as a property.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+  
+  <Msg>
+        <Id>262</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_ABS_FROM_REL_PATH_ERR</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Cannot convert file from an absolute to a relative path. The file does not exist at the specified location. Use the IC Library Manager to correct the LEF file path.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+  
+  <Msg>
+        <Id>263</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DIE_OUTSIDE_DRAWING</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+        The die's center is in the lower left corner of the drawing and part of the die is outside of the drawing extents. Increase the drawing extents to fix the problem.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+  
+  <Msg>
+        <Id>264</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DIE_AREA_NOT_VALID</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+The die area in the DEF file is 0. Edit the file to fix the error. Refer to the LEF/DEF Language Reference document. If you do not own this file, ask the provider to fix the error.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+  
+  <Msg>
+        <Id>265</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DEF_UNITS_NOT_VALID</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+The units in the DEF file are not valid. Edit the file to fix the error. Units should be greater than or equal to 100 and less than or equal to 2000. Refer to the LEF/DEF Language Reference document. If you do not own this  file, ask the provider to fix the error.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+  
+  <Msg>
+        <Id>266</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_NO_PINS_SECTION</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+There is no PIN section in the DEF file. To fix this issue, specify the option to write pin information in the exporting tool.
+    </Desc>
+        <Output>C</Output>
+    </Msg> 
+
+  <Msg>
+        <Id>267</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_PIN_LAYR_NOT_DIE_LAYER</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+Some pin is defined on the layer that is not the die pin layer. To import the pin, it must be on the same layer as the die pin layer. Use the General tab of IC Library Manager Options dialog box to re-map the die pin layer.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>268</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_FAILED_2_CREATE_DIE_COMPONENT</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Error in creating die component. No die created    </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+        <Id>269</Id>
+        <CDNUSR_DEFINE_NAME>ICPCOMSG_SIMILAR_DSN_FOUND_OA1</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+A similar design name %s was found. The OpenAccess Import will replace the design.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+  <Msg>
+        <Id>270</Id>
+        <CDNUSR_DEFINE_NAME>ICPCOMSG_SIMILAR_DSN_FOUND_DEF1</CDNUSR_DEFINE_NAME>
+        <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+        <Desc>
+A similar design name %s was found. The DEF Import will replace the design.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+<!-- The following message is for debugging only-->
+
+  <Msg>
+        <Id>271</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_PARAM_REC_NOT_CREATED_DEBUG</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Failed to create new parameter record.
+    </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+
+  <Msg>
+        <Id>272</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_CML_FILE_NOT_READABLE1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Unknown error reading the CML file %s. The file may be damaged. This problem may have occurred when the file was edited or transferred over the network. Re-create the file to fix the problem using the IC Library Manager. Do not edit the file. If you do not own the file, ask the provider to send you an updated version of the file.
+
+    </Desc>
+        <Output>C</Output>
+    </Msg>  
+  
+  <Msg>
+        <Id>273</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_CML_FILE_NOT_READABLE</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Unknown error reading the CML file. The file may be damaged. This problem may have occurred when the file was edited or transferred over the network. Re-create the file to fix the problem using the IC Library Manager. Do not edit the file. If you do not own the file, ask the provider to send you an updated version of the file.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+  
+  <Msg>
+        <Id>274</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DEF_NO_COMPONENTS_SECTION</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+DEF file contains no COMPONENTS section or COMPONENTS count set to 0 in DEF file.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+   
+  <Msg>
+        <Id>275</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DEF_NO_PINS_SECTION</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+DEF file contains no PINS section or PINS count set to 0 in DEF file.
+   </Desc>
+        <Output>C</Output>
+    </Msg>  
+  
+  <Msg>
+        <Id>276</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DEF_NO_NETS_SECTION</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+DEF file contains no NETS section or NETS count set to 0 in DEF file.
+   </Desc>
+        <Output>C</Output>
+    </Msg> 
+  
+  <Msg>
+        <Id>277</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DEF_NO_SPECIAL_NETS_SECTION</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+DEF file contains no SPECIALNETS section or SPECIAL NETS count set to 0 in DEF file.
+   </Desc>
+        <Output>C</Output>
+    </Msg>  
+
+  <Msg>
+        <Id>278</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_NO_IO_BUFFERS_HAS_MATCH_DEFIN_IN_LEF</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+No I/O buffer instance in DEF had matching definitions in LEF.
+   </Desc>
+        <Output>C</Output>
+    </Msg>
+    
+   <Msg>
+        <Id>279</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_SOME_ERRORS_DURING_IMPORT</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+There were errors encountered during Import.
+   </Desc>
+        <Output>C</Output>
+    </Msg>
+  
+   <Msg>
+        <Id>280</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_IMPORT_COMPLETED</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+Import completed.
+   </Desc>
+        <Output>C</Output>
+    </Msg> 
+         
+  <Msg>
+        <Id>281</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_ERR_LOADING_CML_DATA_DEBUG</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Error loading CML data.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+  
+  <Msg>
+        <Id>282</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_IVALID_ORIGIN_DEF</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+Invalid origin from DEF. Origin set to centre. The file may be damaged. This problem may have occurred when the file was edited or transferred over the network. Re-create the file to fix the problem. Do not edit the file. If you do not own the file, ask the provider to send you an updated version of the file.
+    </Desc>
+        <Output>C</Output>
+    </Msg> 
+  
+  <Msg>
+        <Id>283</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_ERR_CREATING_DRIVER_GROUP_DEBUG1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+ Error creating driver group %s.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+  <Msg>
+        <Id>284</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_ERR_ADDING_DRIVER_GROUP2DIE_GROUP_DEBUG2</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Error adding driver group %s to die group %s    
+    </Desc>
+        <Output>C</Output>
+    </Msg> 
+  
+  <Msg>
+        <Id>285</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_ERR2CREATE_CLINE1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+ An error was encountered in creating a cline for net %s defined in DEF file. One reason could be that there are segments defined for this cline that have been defined to start and end at the same endpoints. Remove these segments from the DEF file.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+  
+  <Msg>
+        <Id>286</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DRAWING_SIZE_SMALLER_THEN_DIE_SIZE</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+The drawing size is smaller then the die size. Increase the drawing size to fix the problem.
+    </Desc>
+        <Output>C</Output>
+    </Msg> 
+   
+  <Msg>
+        <Id>287</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_FAILED2REPLACE_DIE_COMPONENT_WITH_NO_PINS</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Failed to replace existing die component with no pins. No die created.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+    
+  <Msg>
+        <Id>288</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_LEF_PATH_NOT_VALID1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+LEF path %s is not valid. Use the IC Library Manager to point to the correct LEF file and create CML file.
+        </Desc>
+        <Output>C</Output>
+    </Msg>      
+    <Msg>
+        <Id>289</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_LEF_PATH_NOT_VALID</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+LEF path is not valid. Use the IC Library Manager to point to the correct LEF file and create CML file.
+        </Desc>
+        <Output>C</Output>
+    </Msg>  
+    
+    <Msg>
+        <Id>290</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_INCOMPATIBLE_CML_FILE_VERSION</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Incompatible .cml file version. Use the IC Library Manager to recreate .cml file. 
+        </Desc>
+        <Output>C</Output>
+    </Msg>  
+    
+     <Msg>
+        <Id>291</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DEF_FILE_SYNTAX_ERR1</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+DEF file syntax error on line %d. </Desc>
+        <Output>C</Output>
+    </Msg> 
+    
+     <Msg>
+        <Id>292</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_FAILED2CREATE_DIE_SYMBOL_DEBUG</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+ Could not create new die symbol.
+       </Desc>
+        <Output>C</Output>
+    </Msg>         
+  <Msg>
+        <Id>293</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_PINNAME_CHAR_REPLACED</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+The pin number has an invalid character &apos;!&apos; that has been replaced with &apos;|&apos;.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+  <Msg>
+        <Id>294</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_NO_NAMED_LAYERS_DEFINED_DEBUG</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+There are no named layers in design cross-section. Add layers to fix it.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+    
+  <Msg>
+        <Id>295</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_NO_WB_LAYER</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+There is no wirebond layer in design cross-section. Add the layer to fix it.
+    </Desc>
+        <Output>C</Output>
+    </Msg> 
+ <!-- The following message is OBSOLETE for debugging CHIPIO only-->   
+  <Msg>
+        <Id>296</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_NO_RDL_LAYER_DEBUG</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+There is no layer with usage RDL in design cross-section    
+    </Desc>
+        <Output>C</Output>
+    </Msg> 
+    
+   <Msg>
+        <Id>297</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DRIVER_ORIENT_DEBUG</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Error encountered while processing orientation information for driver components.
+    </Desc>
+        <Output>C</Output>
+    </Msg> 
+   
+   <Msg>
+        <Id>298</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DRIVER_PLACEMNT_DEBUG</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Error encountered while processing placement information for driver components.
+       </Desc>
+        <Output>C</Output>
+    </Msg> 
+    
+   <Msg>
+        <Id>299</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_CHG_NAME_PROP_DEBUG1 </CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+Changed Original name property %s from CompInst to CompDef.
+       </Desc>
+        <Output>C</Output>
+    </Msg> 
+    
+   <Msg>
+        <Id>300</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_ORGN_IN_DIE_CENTER</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+The origin of the design  placed in the center of the die.
+       </Desc>
+        <Output>C</Output>
+    </Msg> 
+   <Msg>
+        <Id>301</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_PIN_COUNT_INVALID_DEBUG</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+The PIN section count is not valid.
+       </Desc>
+        <Output>C</Output>
+    </Msg> 
+ <!-- The following message is OBSOLETE for CHIPIO only-->   
+   <Msg>
+        <Id>302</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_INVALID_PIN_LAYER</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+Invalid layer name found for pins. Defaulted to RDL.
+       </Desc>
+        <Output>C</Output>
+   </Msg> 
+    
+   <Msg>
+        <Id>303</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DEF_ACCURACY1
+        </CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+Note: DEF_ACCURACY property of the die is not valid. DEF_ACCURACY is set to default value of %d.
+       </Desc>
+        <Output>C</Output>
+   </Msg>
+    
+   <Msg>
+        <Id>304</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_CB_NAME_MIS_DEBUG
+        </CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+Some cover bumps are missing pin names.
+       </Desc>
+        <Output>C</Output>
+   </Msg>
+     
+   <Msg>
+        <Id>305</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DIEPIN_NAME_MIS_DEBUG
+        </CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+Some die pins are missing pin names.
+       </Desc>
+        <Output>C</Output>
+   </Msg> 
+     
+   <Msg>
+        <Id>306</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_TILEPIN_NAME_MIS_DEBUG
+        </CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+Some tile pins are missing their original names.
+       </Desc>
+        <Output>C</Output>
+   </Msg> 
+     
+   <Msg>
+        <Id>307</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_ORIGPINNAME_MIS_DEBUG
+        </CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+Some pins were found lacking the ORIGINAL_CASE_PIN_NAME property. Using case insensitive pin name(s).
+       </Desc>
+        <Output>C</Output>
+   </Msg>  
+   
+    <Msg>
+        <Id>308</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_ORIENT_INFO_MIS_DEBUG
+        </CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Error encountered while processing orientation information.
+      </Desc>
+        <Output>C</Output>
+   </Msg> 
+   
+     <Msg>
+        <Id>309</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_PLACEMTN_INFO_MIS_DEBUG
+        </CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+Error encountered while processing placement information for cover bumps.
+      </Desc>
+        <Output>C</Output>
+   </Msg>       
+   
+    <Msg>
+        <Id>310</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_PIN_NOT_IN_MACRO
+        </CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+Macro(s) lacking PIN(s) were encountered, but ignored. Only Macros containing PIN(s) are candidates for processing.
+      </Desc>
+        <Output>C</Output>
+   </Msg>  
+   
+   <Msg>
+        <Id>311</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_ORIG_MACRO_NAME_MISSING</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+Some macros lack the ORIG_CASE_MACRO_NAME property so non case-sensitive macro names were used. Re-import the design to fix the problem before exporting it.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+    
+    
+   <Msg>               
+        <Id>312</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_IMPORTING_DEF
+        </CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+Importing the DEF file...
+       </Desc>
+        <Output>C</Output>
+   </Msg>   
+   <Msg>               
+        <Id>313</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DIRECT_ATTACH_DIES_NO_EXPORT
+        </CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+Direct attach dies may not be exported from this tool.
+       </Desc>
+        <Output>C</Output>
+   </Msg>     
+
+   <Msg>               
+        <Id>314</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_LAYER_STACKUP_NOT_VALID
+        </CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+The layer stackup of this design does not allow for import of die into a valid attachment/orientation. The layer stackup needs to be corrected.
+      </Desc>
+        <Output>C</Output>
+   </Msg>     
+ <!-- The following message is OBSOLETE for CHIPIO only-->   
+   <Msg>               
+        <Id>315</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_LAYER_NEED_RDL
+        </CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+The layer stackup requires at least an RDL layer and Conductor layer for import. The layer stackup needs to be corrected.
+      </Desc>
+        <Output>C</Output>
+   </Msg>     
+ <!-- The following message is OBSOLETE for CHIPIO only-->   
+    <Msg>               
+        <Id>316</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DESIGN_HAVE_DIE_INST_ALREADY
+        </CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+The design already contains a die instance. Only one die instance is allowed in the I/O Planner design.
+      </Desc>
+        <Output>C</Output>
+   </Msg>
+        
+  <Msg>
+        <Id>317</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_FIRST_LEF_NO_TECH</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+The first LEF file does not contain technology data, which is required for processing. Use the IC Library Manager to add a LEF file containing technology data to the top of the library list.
+        </Desc>
+        <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>318</Id>
+    <CDNUSR_DEFINE_NAME>ICPOAMSG_READING_OA_LIB_NOT_SUCCESSFUL1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Reading the OpenAccess library %s was not successful. The OpenAccess database may be empty or corrupted. Re-create the database to fix the problem or obtain an updated database from the provider.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>319</Id>
+    <CDNUSR_DEFINE_NAME>ICPOAMSG_CREATION_OF_DIE_COMPONENT</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Beginning creation of the die component...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>320</Id>
+    <CDNUSR_DEFINE_NAME>ICPOAMSG_COMPLETED_READING_OA_DATA</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Completed reading of the OpenAccess data...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>321</Id>
+    <CDNUSR_DEFINE_NAME>ICPOAMSG_OA_UNITS_NOT_VALID2</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+The units %f in the OpenAccess library '%s' are not valid. Edit the file to fix the error. Units should be greater than or equal to 100 and less than or equal to 20000. Refer to the LEF/DEF Language Reference document. If you do not own this file, ask the provider to fix the error.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+        <Id>322</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_DIE_OUTSIDE_DRAWING_EXTENTS</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+The origin you selected places the die outside the extents of the drawing. Increase the drawing extents to fix the problem.
+    </Desc>
+        <Output>C</Output>
+    </Msg>
+  
+  <Msg>
+        <Id>323</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_OA_NO_COMPONENTS</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+The OpenAccess data contains no components.
+        </Desc>
+        <Output>C</Output>
+ </Msg>
+
+  <Msg>
+        <Id>324</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_OA_NO_PHYSICAL_PINS</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+The OpenAccess data contains no physical pins at the top level of the design, looking for pins in  cells/macros...
+        </Desc>
+        <Output>C</Output>
+ </Msg>    
+
+ <Msg>
+        <Id>325</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_OA_NO_NETS</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+The OpenAccess data contains no nets. 
+        </Desc>
+       <Output>C</Output>
+ </Msg> 
+ 
+ <Msg>
+        <Id>326</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_OA_NO_SPECIAL_NETS</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+The OpenAccess data contains no special nets.
+        </Desc>
+       <Output>C</Output>
+ </Msg> 
+ 
+ <Msg>
+        <Id>327</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_OA_NO_BUFFERS</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+There were no matching i/o pads or buffers found in the files. 
+        </Desc>
+       <Output>C</Output>
+ </Msg> 
+  
+ <Msg>
+        <Id>328</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_OA_APD_CMD_OPTIONS</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+The oa in command has 2 options:
+1. No arguments - the graphical user interface will be invoked.
+2. Follow with seven mandatory arguments issued in the following order:
+&lt;full path to the OpenAccess library definition file &gt; 
+&lt;library name&gt; 
+&lt;cell name&gt; 
+&lt;view name&gt; 
+&lt;refdes&gt; 
+&lt;layer name&gt; 
+&lt;Chip attachment and orientation&gt;.
+Valid &lt;Chip attachment and orientation&gt; values are:
+FLIPCHIPUP, FLIPCHIPDOWN, WIREBONDCHIPDOWN, WIREBONDCHIPUP
+NOTE: you must put " " around any of the arguments containing a space.
+        </Desc>
+       <Output>C</Output>
+ </Msg> 
+  
+ <Msg>
+        <Id>329</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_OA_CHIPIO_CMD_OPTIONS</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+The oa in command has 2 options:
+1. No arguments - the graphical user interface will be invoked.
+2. Follow with 5 mandatory arguments issued in the following order:
+&lt;full path to the OpenAccess library definition file&gt; 
+&lt;library name&gt; 
+&lt;cell name&gt; 
+&lt;view name&gt; 
+&lt;refdes&gt; 
+NOTE: you must put " " around any of the arguments containing a space.
+        </Desc>
+       <Output>C</Output>
+ </Msg>  
+ 
+ <Msg>
+        <Id>330</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_CMD_ARG2</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+The %s command argument is %s.
+        </Desc>
+       <Output>C</Output>
+ </Msg>  
+ 
+ <Msg>
+        <Id>331</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_ATTACH_ORIENT_ARG_NOT_VALID1</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+Chip attachment and orientation command line argument #7 is %s. It is not valid.
+The valid values are: FLIPCHIPUP, FLIPCHIPDOWN, WIREBONDCHIPDOWN, WIREBONDCHIPUP.
+Change the argument to a valid value to fix it.
+        </Desc>
+       <Output>C</Output>
+ </Msg>  
+ 
+  <Msg>
+        <Id>332</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_ATTACH_ORIENT_ARG_NOT_VALID</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+Chip attachment and orientation command line argument is not valid.
+The valid values are: FLIPCHIPUP, FLIPCHIPDOWN, WIREBONDCHIPDOWN, WIREBONDCHIPUP.
+Change the argument to a valid value to fix it.
+        </Desc>
+       <Output>C</Output>
+ </Msg>  
+
+ <Msg>
+        <Id>333</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_X_COORD_ARG_OUTSIDE_DRAWING</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+The x coordinate is outside the drawing extents. Change argument number 8 to fix it.
+        </Desc>
+       <Output>C</Output>
+ </Msg>
+ 
+ <Msg>
+        <Id>334</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_Y_COORD_ARG_OUTSIDE_DRAWING</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+The y coordinate is outside the drawing extents. Change argument number 9 to fix it.
+        </Desc>
+       <Output>C</Output>
+ </Msg>
+
+ <Msg>
+        <Id>335</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_NO_OA_SUPPORT_ON_WINDOWS</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+OA processing is not supported on this platform. 
+        </Desc>
+       <Output>C</Output>
+ </Msg>
+ 
+  <Msg>
+        <Id>336</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_READING_OA_DONE_PROCESSING_DATA</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+Reading the OpenAccess database was completed. Starting to process the data...
+        </Desc>
+       <Output>C</Output>
+ </Msg>
+ 
+ <Msg>
+        <Id>337</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_VIEW_DELETED1</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+View %s was deleted.
+        </Desc>
+       <Output>C</Output>
+ </Msg> 
+  
+ <Msg>
+        <Id>338</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_VIEW_SAVED_DELETED2</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+View %s was saved as %s and deleted. 
+        </Desc>
+       <Output>C</Output>
+ </Msg> 
+  
+ <Msg>
+        <Id>339</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_VIEW_SAVED_AS2</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+View %s was saved as %s 
+        </Desc>
+       <Output>C</Output>
+ </Msg> 
+
+  <Msg>
+    <Id>340</Id>
+    <CDNUSR_DEFINE_NAME>ICPOAMSG_READING_OA_LIB_NOT_SUCCESSFUL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Reading the OpenAccess library was not successful. The OpenAccess database may be empty or corrupted. Re-create the database to fix the problem or obtain an updated database from the provider. If the library file has been edited such that no library information is contained in it, delete the file, and retry.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>341</Id>
+    <CDNUSR_DEFINE_NAME>ICPOAMSG_DELITION_OF_VIEW_NOT_SUCCESSFUL1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Deletion of the view %s was not successful. The OpenAccess database may be empty or corrupted. Re-create the database to fix the problem or obtain an updated database from the provider.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>342</Id>
+    <CDNUSR_DEFINE_NAME>ICPOAMSG_DELITION_OF_VIEW_NOT_SUCCESSFUL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Deletion of the view was not successful. The OpenAccess database may be empty or corrupted. Re-create the database to fix the problem or obtain an updated database from the provider.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>343</Id>
+    <CDNUSR_DEFINE_NAME>ICPOAMSG_SAVING_OF_VIEW_NOT_SUCCESSFUL2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Saving of the OpenAccess view %s as %s was not successful. The OpenAccess database may be empty or corrupted. Re-create the database to fix the problem or obtain an updated database from the provider.
+    </Desc>
+    <Output>C</Output>
+  </Msg> 
+
+  <Msg>
+    <Id>344</Id>
+    <CDNUSR_DEFINE_NAME>ICPOAMSG_SAVING_OF_VIEW_NOT_SUCCESSFUL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Saving of the OpenAccess view was not successful. The OpenAccess database may be empty or corrupted. Re-create the database to fix the problem or obtain an updated database from the provider.
+    </Desc>
+    <Output>C</Output>
+  </Msg> 
+
+  <Msg>
+    <Id>345</Id>
+    <CDNUSR_DEFINE_NAME>ICPOAMSG_LDF_PATH_NOT_VALID_DEFAULT_USED2</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+The OpenAccess library definition path %s is not valid. Default path %s was used.
+    </Desc>
+    <Output>C</Output>
+  </Msg>   
+
+  <Msg>
+    <Id>346</Id>
+    <CDNUSR_DEFINE_NAME>ICPOAMSG_LDF_PATH_NOT_VALID_DEFAULT_USED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+The OpenAccess library definition path is not valid. Default path was used.
+    </Desc>
+    <Output>C</Output>
+  </Msg>   
+  
+ <Msg>
+    <Id>347</Id>
+    <CDNUSR_DEFINE_NAME>ICPOAMSG_LIB_SAVED_AS</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Library %s was saved as %s 
+    </Desc>
+    <Output>C</Output>
+ </Msg> 
+
+  <Msg>
+    <Id>348</Id>
+    <CDNUSR_DEFINE_NAME>ICPOAMSG_SAVEAS_OF_LIB_NOT_SUCCESSFUL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Saving of the OpenAccess library %s as %s was not successful. The OpenAccess database may be empty or corrupted. Re-create the database to fix the problem or obtain an updated database from the provider.
+    </Desc>
+    <Output>C</Output>
+  </Msg> 
+  
+ <Msg>
+    <Id>349</Id>
+    <CDNUSR_DEFINE_NAME>ICPOAMSG_LIB_NAME_MODIFIED</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Library %s was renamed to %s. Characters found to be invalid in the Open Access name space were replaced with underscores.
+    </Desc>
+    <Output>C</Output>
+ </Msg> 
+  
+ <Msg>
+    <Id>350</Id>
+    <CDNUSR_DEFINE_NAME>ICPOAMSG_USER_ABORT</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+The user chose to abort import.
+    </Desc>
+    <Output>C</Output>
+ </Msg> 
+
+ <Msg>
+    <Id>351</Id>
+    <CDNUSR_DEFINE_NAME>ICPLDSMSG_NO_LDF</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+There is not active .ldf file. This file can be set through skill or through the IC Library Manager.
+    </Desc>
+    <Output>C</Output>
+ </Msg> 
+
+ <Msg>
+    <Id>352</Id>
+    <CDNUSR_DEFINE_NAME>ICPLDSMSG_NOLIB</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No LEF libraries were found for the active .ldf file. Add LEF libraries through the IC Library Manager.
+    </Desc>
+    <Output>C</Output>
+ </Msg> 
+
+ <Msg>
+    <Id>353</Id>
+    <CDNUSR_DEFINE_NAME>ICPLDSMSG_LDF_NO_EXIST</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The requested .ldf file was not found at the specified location. Specify file name and path again.
+    </Desc>
+    <Output>C</Output>
+ </Msg> 
+
+ <Msg>
+    <Id>354</Id>
+    <CDNUSR_DEFINE_NAME>ICPLDSMSG_LEFLIB_NOT_SET</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No library from the active .ldf file has been set as active. Specify the library name to proceed.
+    </Desc>
+    <Output>C</Output>
+ </Msg> 
+
+ <Msg>
+    <Id>355</Id>
+    <CDNUSR_DEFINE_NAME>ICPLDSMSG_WRONG_FILE_TYPE_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The selected file is not of the correct type (%s). Select a file of the indicated type.
+    </Desc>
+    <Output>C</Output>
+ </Msg>
+   <Msg>
+        <Id>356</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_SEVERAL_DIA_FILES3</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            There are %d DIA files in the current working directory. The file %s was chosen automatically. If this is not the correct DIA or LDF file, use the IC Library Manager to select the correct file.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>357</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_OPTIONS_DBUNITS_NOT_MATCH</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            The LEF file %s does not have technology data. Database Units in the LEF file do not match database units from technology LEF file. Database Units from technology file will be used.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>358</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_LAYER_MISMATCH_CML_LEF</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            The CML file defines a layer %s. The layer is not defined in technology LEF file. Layer %s will not be used.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+        <Id>359</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_PIN_SHAPE_ON_WRONG_LAYER</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Pin %s has a shape on layer %s. The layer is not defined in technology LEF file. The shape will be ignored.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+    <Msg>
+      <Id>360</Id>
+      <CDNUSR_DEFINE_NAME>ICPOAMSG_DBG_FAILED2CREATE_USER_DEFINED_PORT_PROPERTY</CDNUSR_DEFINE_NAME>
+      <Category>E</Category>
+      <Desc>
+        Could not preserve user defined port as a property.
+      </Desc>
+      <Output>C</Output>
+    </Msg>
+
+    <Msg>
+      <Id>361</Id>
+      <CDNUSR_DEFINE_NAME>ICPOAMSG_DBG_SET_USER_DEFINED_PORT_BUMP</CDNUSR_DEFINE_NAME>
+      <Category>W</Category>
+      <Desc>
+       Internal net %s of the IC has been assigned to a bump. It will be treated as a physical net.
+      </Desc>
+      <Output>C</Output>
+    </Msg>
+
+    <Msg>
+      <Id>362</Id>
+      <CDNUSR_DEFINE_NAME>ICPOAMSG_DBG_SET_USER_DEFINED_PORT_DRIVER_PIN</CDNUSR_DEFINE_NAME>
+      <Category>W</Category>
+      <Desc>
+        Found a die pin from driver %s on net %s with no assigned port. This net will be treated as a physical net.
+      </Desc>
+      <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>363</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_IC_LIBRARY_NOT_SETUP</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+        IC Library not set up. It must be set up to continue.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+  <Msg>
+    <Id>364</Id>
+    <CDNUSR_DEFINE_NAME>ICPOAMSG_FAILED2CREATE_CELL_PORT_PROP1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+      Could not preserve cell port name %s as a property.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>365</Id>
+    <CDNUSR_DEFINE_NAME>ICPOAMSG_CNCT_PIN_NOT_ALLOWED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Override of cover bumps to connect pins is not allowed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+    <Msg>
+        <Id>366</Id>
+        <CDNUSR_DEFINE_NAME>ICPOAMSG_PADSTACK_MODIFIED3</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+Geometry of pin %s of I/O driver cell %s was modified for use in %s. The die abstract representation of this pin is unchanged.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+
+
+  <Msg>
+    <Id>367</Id>
+    <CDNUSR_DEFINE_NAME>ICPOAMSG_2_PAD_OFFSETS_DEFINED_3</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+      In file "%s",  line %d, pin %s has pad offset defined using both OFFSET() and PADOFFSET(). Values from PADOFFSET() will be used.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>368</Id>
+    <CDNUSR_DEFINE_NAME>ICPOAMSG_IGNORING_BUMP_MACRO1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Ignoring cover bump macro %s will cause pins using this macro not to be created in the package substrate. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>369</Id>
+    <CDNUSR_DEFINE_NAME>ICPOAMSG_DIA_UNITS_NOT_VALID</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+The unit %s is used in the die abstract file.
+    </Desc>
+    <Output>C</Output>
+  </Msg> 
+
+</MsgFile>

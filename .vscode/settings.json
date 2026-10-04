@@ -1,0 +1,17 @@
+{
+    // 项目约定：skill_payload 下 .il/.form/.dat/.cfg 均为 GBK 编码
+    // （Allegro 17.4 要求，禁止转存为 UTF-8）。
+    // 关联语言仅用于语法高亮 + 按语言指定编码；本文件在仓库根，覆盖整个工作区。
+    "files.associations": {
+        "*.il": "lisp",
+        "*.form": "ini",
+        "*.dat": "ini",
+        "*.cfg": "ini"
+    },
+    "[lisp]": {
+        "files.encoding": "gbk"
+    },
+    "[ini]": {
+        "files.encoding": "gbk"
+    }
+}

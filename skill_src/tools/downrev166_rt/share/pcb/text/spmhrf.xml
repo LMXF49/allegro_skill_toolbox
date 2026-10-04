@@ -1,0 +1,434 @@
+<MsgFile>
+
+  <Msg>
+    <Id>1</Id>
+    <CDNUSR_DEFINE_NAME>ADDRULMSG_INTERNAL</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Internal errors
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>2</Id>
+    <CDNUSR_DEFINE_NAME>ADDRULMSG_INVALIDPARAM</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+An internal error caused a function to be called with an invalid parameter. Retry the operation (after restarting the application and reloading the design) and contact Cadence Customer Support for assistance if this continues to fail.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>3</Id>
+    <CDNUSR_DEFINE_NAME>ADDRULMSG_NOTEMPDB</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to start the command, because a temp database could not be initialized. Retry the operation (after restarting the application and reloading the design) and contact Cadence Customer Support for assistance if this continues to fail.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>4</Id>
+    <CDNUSR_DEFINE_NAME>ADDRULMSG_NOTRANSCOMMIT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to commit the temp database transaction, so the rulers could not be added to the design. Retry the operation (after restarting the application and reloading the design) and contact Cadence Customer Support for assistance if this continues to fail.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>5</Id>
+    <CDNUSR_DEFINE_NAME>ADDRULMSG_BADFIND</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+An internal error occurred while trying to snap to the object.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>6</Id>
+    <CDNUSR_DEFINE_NAME>ADDRULMSG_GLOBALNULL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Could not create the ruler because an internal structure was not initialized.  Retry the operation (after restarting the application and reloading the design) and contact Cadence Customer Support for assistance if this continues to fail.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>7</Id>
+    <CDNUSR_DEFINE_NAME>ADDRULMSG_NOVARSAVE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Due to a internal database error, a variable could not be saved in the temp database.  Retry the operation (after restarting the application and reloading the design) and contact Cadence Customer Support for assistance if this continues to fail.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>8</Id>
+    <CDNUSR_DEFINE_NAME>ADDRULMSG_CREATE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Errors that occurred when creating a ruler.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>9</Id>
+    <CDNUSR_DEFINE_NAME>ADDRULMSG_LINEOUTSIDEEXT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Could not create the ruler as one or more line segments could not be created. Check to ensure that the entire ruler remains within the design.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>10</Id>
+    <CDNUSR_DEFINE_NAME>ADDRULMSG_TEXTOUTSIDEEXT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Could not create the ruler as one or more text labels could not be created. Check to ensure that the entire ruler remains within the design.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>11</Id>
+    <CDNUSR_DEFINE_NAME>ADDRULMSG_ADDLINEFAIL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Could not create the ruler because a line could not be added to the database.  Retry the operation (after restarting the application and reloading the design) and contact Cadence Customer Support for assistance if this continues to fail.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>12</Id>
+    <CDNUSR_DEFINE_NAME>ADDRULMSG_NODIVINFO</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Could not create the ruler because an error occurred while calculating the division locations. Retry the operation (after restarting the application and reloading the design) and contact Cadence Customer Support for assistance if this continues to fail.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>13</Id>
+    <CDNUSR_DEFINE_NAME>ADDRULMSG_NOTXTINFO</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Could not create the ruler because an error occurred while calculating the text locations. Retry the operation (after restarting the application and reloading the design) and contact Cadence Customer Support for assistance if this continues to fail.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>14</Id>
+    <CDNUSR_DEFINE_NAME>ADDRULMSG_LENGTHERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Could not create the ruler because it exceeds the maximum length.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>15</Id>
+    <CDNUSR_DEFINE_NAME>ADDRULMSG_NONUMDIV</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Could not create the ruler because an error occurred while calculating the number of divisions. Retry the operation (after restarting the application and reloading the design) and contact Cadence Customer Support for assistance if this continues to fail.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>16</Id>
+    <CDNUSR_DEFINE_NAME>ADDRULMSG_NOROOM</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+An internal error caused a function to be called with a parameter of an invalid size. Retry the operation (after restarting the application and reloading the design) and contact Cadence Customer Support for assistance if this continues to fail.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>17</Id>
+    <CDNUSR_DEFINE_NAME>ADDRULMSG_MAIN</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Errors that occur in addruler_main
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>18</Id>
+    <CDNUSR_DEFINE_NAME>ADDRULMSG_SAMEPICK</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Could not use the pick specified, as it is identical to the last pick.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>19</Id>
+    <CDNUSR_DEFINE_NAME>ADDRULMSG_LENGTHWARN</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+The length of the last ruler created is at or near the maximum length of a ruler (%s), so additional segments cannot be added. The last ruler instance has been ended.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>20</Id>
+    <CDNUSR_DEFINE_NAME>ADDRULMSG_BADSTATE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+An internal error caused the command to enter a bad state.  Exiting the command. Retry the operation (after restarting the application and reloading the design) and contact Cadence Customer Support for assistance if this continues to fail.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>21</Id>
+    <CDNUSR_DEFINE_NAME>ADDRULMSG_SYMBOL</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Symbol Errors
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>22</Id>
+    <CDNUSR_DEFINE_NAME>ADDRULMSG_NOSYMDEF</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Could not create the ruler because the ruler symbol definition could not be created. Retry the operation (after restarting the application and reloading the design) and contact Cadence Customer Support for assistance if this continues to fail.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>23</Id>
+    <CDNUSR_DEFINE_NAME>ADDRULMSG_NOSYMINST</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Could not create the ruler because the symbol instance could not be created. Retry the operation (after restarting the application and reloading the design) and contact Cadence Customer Support for assistance if this continues to fail.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>24</Id>
+    <CDNUSR_DEFINE_NAME>ADDRULMSG_SUBCLASS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Subclass Errors
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>25</Id>
+    <CDNUSR_DEFINE_NAME>ADDRULMSG_SCINITERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Could not perform initialization tasks associated with subclass create.  The command cannot start. Retry the operation (after restarting the application and reloading the design) and contact Cadence Customer Support for assistance if this continues to fail.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>26</Id>
+    <CDNUSR_DEFINE_NAME>ADDRULMSG_CANTFINDSC</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Could not find or create the %s subclass.  Retry the operation (after restarting the application and reloading the design) and contact Cadence Customer Support for assistance if this continues to fail.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>27</Id>
+    <CDNUSR_DEFINE_NAME>ADDRULMSG_SCRESTOREERROR</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Could not restore the initial visibility of the %s subclass.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>28</Id>
+    <CDNUSR_DEFINE_NAME>ADDRULMSG_MSM</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Form errors
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>29</Id>
+    <CDNUSR_DEFINE_NAME>ADDRULMSG_NOFORMFILE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to open form file '%s.form'. Verify that this file was installed correctly and exists in the correct directory. If this is the case, then a parsing error has occurred, so the file may be corrupt and should be reinstalled.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>30</Id>
+    <CDNUSR_DEFINE_NAME>ADDRULMSG_BADMAJDIV</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Major division spacing must be at least %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>31</Id>
+    <CDNUSR_DEFINE_NAME>ADDRULMSG_NOTEXT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot find any usable text blocks. Exiting Command. Ensure that there is at least one text block that has non-zero width and height.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>32</Id>
+    <CDNUSR_DEFINE_NAME>ADDRULMSG_BADFORMFIELD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The form input could not be recognized.  Ensure that the form file '%s.form' was installed correctly and exists in the correct directory. If this is the case, then a parsing error has occurred, so the file may be corrupt and should be reinstalled.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>33</Id>
+    <CDNUSR_DEFINE_NAME>ADDRULMSG_PROP</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Property errors
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>34</Id>
+    <CDNUSR_DEFINE_NAME>ADDRULMSG_NOCREMAINLINEPROP</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Could not create the %s property needed to identify ruler main lines.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>35</Id>
+    <CDNUSR_DEFINE_NAME>ADDRULMSG_MAINLINEPROPWARN</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+The property %s, which is used to differentiate between main ruler lines and ruler division lines, already exists, but is not a property that can only be put on lines, and so may already be in use.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>36</Id>
+    <CDNUSR_DEFINE_NAME>ADDRULMSG_MAINLINEPROPWARN2</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+This property is going to be put on the main ruler line, so if it is being used for another purpose, unexpected behaviour may result. To avoid seeing this message, revert or delete the property.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>37</Id>
+    <CDNUSR_DEFINE_NAME>ADDRULMSG_MAINLINEPROPERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The property %s, which is used to differentiate between main ruler lines and ruler division lines, already exists and either is not a BOOLEAN property, or cannot be put on lines. The command is exiting. The pre-existing property should be deleted.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>38</Id>
+    <CDNUSR_DEFINE_NAME>ADDRULMSG_NOADDMAINLINEPROP</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Could not add the %s property to the ruler symbol instance.  Snapping to this ruler may not work properly.  Recreate the ruler, or add the property manually.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>39</Id>
+    <CDNUSR_DEFINE_NAME>ADDRULMSG_NOADDFIXED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Could not add the FIXED property to the ruler symbol instance.  Recreate the ruler, or add the property manually.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>40</Id>
+    <CDNUSR_DEFINE_NAME>DELRULMSG_BADFIXED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Due to an internal error, the FIXED property on %d static ruler(s) could not be removed. Contact Cadence Customer Support for assistance.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>41</Id>
+    <CDNUSR_DEFINE_NAME>DELRULMSG_CANTDEL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Due to an internal error, %d static ruler(s) could not be deleted. Contact Cadence Customer Support for assistance.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+</MsgFile>

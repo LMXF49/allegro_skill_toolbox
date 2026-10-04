@@ -1,0 +1,27 @@
+FILE_TYPE=FORM_DEFN VERSION=2
+FORM
+FIXED
+PORT 40 20
+HEADER "Cline to Shape"
+TILE
+
+TEXT "Select Clines to convert to Shape."
+TLOC 2 2
+ENDTEXT
+
+TEXT "Click OK then select clines in board."
+TLOC 2 5
+ENDTEXT
+
+FIELD done
+FLOC 2 12
+MENUBUTTON "OK" 10 3
+ENDFIELD
+
+FIELD cancel
+FLOC 20 12
+MENUBUTTON "Cancel" 10 3
+ENDFIELD
+
+ENDTILE
+ENDFORM

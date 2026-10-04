@@ -1,0 +1,1931 @@
+<MsgFile>
+
+  <Msg>
+    <Id>1</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_INFO_ENABLE_SPACING</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enabling Edge Spacing will introduce extra calculations which may take quite a long time.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>2</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_INFO_ENTER_BBOX</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter a bounding box.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>3</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_INFO_ENTER_POINT_BBOX</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter a point or a box.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>4</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_INFO_INIT_RFPROPS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Initializing RF Component Properties for the design...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>5</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_INFO_INIT_STACKUP</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Extracting stackup details of the design...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>6</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_INFO_LOADMODULE_KEEPLOC</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+      <Sub-Category>P</Sub-Category>
+    <Desc>
+Keep Location option is used only to load modules created from the same design.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>7</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_INFO_LOCATE_PIN</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+      <Sub-Category>P</Sub-Category>
+    <Desc>
+Locate pins on the straight line boundary of shapes...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>8</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_INFO_REFRESH_COMPLETED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Refreshing completed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>9</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_INFO_REFRESH_REFDES</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Refreshing %s...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>10</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_INFO_REPACKAGE_ALLMODE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Packaging Mode set to All RF Components.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>11</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_INFO_REPACKAGE_FINISHED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Repackaging completed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>12</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_INFO_REPACKAGE_PARTIAL_FINISHED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Repackaging partially completed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>13</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_INFO_REPACKAGE_PLACEMODE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Packaging Mode set to Placement Without Connection.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>14</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_INFO_REPACKAGE_PROMPT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Repackaging process relies on the uniqueness of the pin logic of all RF components. If not, the repackage process will not be complete.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>15</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_INFO_SELECT_OBJECTS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select %s to proceed...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>16</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_INFO_UPDATE_RFPROPDICTENTRIES</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Updating RF property dictionary entries...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>17</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_INFO_UPDATE_STACKUP_COMPLETED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Update stackup successful.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>18</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_INFO_UPDATE_SYMDEF</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Updating RF symbol definitions...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>19</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_INFO_CHANGENET_COMPLETED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+The net(%s) on Pin %s has been changed into the net(%s) on Pin %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>20</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_INFO_ADDVIA</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Padstack "VIA" used for via at %P.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>21</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_INFO_OUTPUT_DEVICE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Writing device file for '%s'...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>22</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_INFO_TOOMANYVIAS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+The preview is temporarily turned off as there are too many vias to display.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>23</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_INFO_NEEDSETUP</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Run setup before autoplacing RF components.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>24</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_BGEO_OUTLINE_NOT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+By user pick option is enabled because no design outline is detected.  To be able to use the other option, create %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>25</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_INFO_BREAK_TRUNCATE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+The highlighted segment will be retained.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>26</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_INFO_GET_PARAMETERS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Retrieving parameters for RF component - %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>27</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_INFO_NOT_MLIN</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Tapered pin connect is only supported on the pins connected to MLIN. The pin %s.%s is connected to %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>128</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_CHANGE_VARIABLE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error found in variable changes.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>129</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_CMD_NOT_FINISH</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Finish current command before starting new one.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>130</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_CMP_UNINITED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+RF component %s not repackaged.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>131</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_CONNECT_DEC_SPACING</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot create meander trace because of improper parameters. Decrease spacing or increase length and try again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>132</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_CONNECT_DIFF_FREQS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot connect because two points belong to conductors of different working frequencies.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>133</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_CONNECT_DIFF_WIDTHS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot connect because two points belong to conductors of different widths.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>134</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_CONNECT_DIFF_WIDTHS_FREQS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot connect because two points belong to conductors of different widths and working frequencies.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>135</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_CONNECT_FROM_DYNSHAPE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot connect from dynamic shape.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>136</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_CONNECT_INC_SPACING</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot create meander trace because of improper parameters. Increase spacing or decrease length and try again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>137</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_CONNECT_MEANDER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot create meander trace because of improper parameters. Change meander parameters and try again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>138</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_CONNECT_NO_PIN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot connect these two points because one of them is not related to a pin.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>139</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_CONNECT_POINTS_CONNECTED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Two points already connected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>140</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_CONNECT_POINTS_TOO_CLOSE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The two points are too close to apply meander mode connection. Change meander parameters and try again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>141</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_CONNECT_SAME_NET</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot connect these two objects with same net.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>142</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_CONNECT_TO_DYNSHAPE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot connect to dynamic shape.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>143</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_CONNECT_TWO_DYNSHAPES</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot connect two dynamic shapes.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>144</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_CONNECT_WRONG_MITERED_MODE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot perform connection using mitered bends.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>145</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_CONNECT_WRONG_MODES</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot perform connection using unmitered or mitered bends.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>146</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_CONNECT_WRONG_POS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot connect the two points due to improper locations of the points.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>147</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_CONVERT_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+RF component %s is not converted into shape because it has no etch shapes or it is a RF-specific via.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>148</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_DIFF_LAYERS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot proceed as two logically connected pins are on different layers.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>149</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_DSN_UNINITED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Design contains some unrepackaged RF components. Run autoplace before continuing.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>150</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_EDIT_FREQ</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Frequency and its unit can only be changed before starting a new trace.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>151</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_FILE_NOT_EXIST</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Specified file does not exist.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>152</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_GUI_CREATION</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to create the GUI form window.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>153</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_INPUT_BBOX</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Specified bounding box is not totally within design extents.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>154</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_INPUT_FIXED_OBJECT_SELECTED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Selected object has FIXED property.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>155</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_INPUT_GREATER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s should be greater than %f.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>156</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_INPUT_INVALID_PIN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid pin location. Try again...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>157</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_INPUT_INVALID_VALUE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid value. Violate the rule: %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>158</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_INPUT_LAYERS_IDENTICAL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Top and bottom layers set to same. Select %s as bottom layer.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>159</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_INPUT_LAYER_NOT_EXIST</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The specified layer does not exist. Specify another one before continuing.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>160</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_INPUT_LENGTH_RANGE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Length should be zero or between %f and %f.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>161</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_INPUT_MITER_ANGLE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Miter angle should be within 0 to 90 degrees.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>162</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_INPUT_MITER_FRACTION</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Miter fraction should be less than 1.0.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>163</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_INPUT_NETNAME_NEEDED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Specify a net name before continuing.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>164</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_INPUT_NETNAME_NOT_EXIST</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The specified net name does not exist. Specify another one before continuing.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>165</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_INPUT_NOT_SET</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s not set.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>166</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_INPUT_NOT_ZERO</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s should not be zero.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>167</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_INPUT_OFFSET_LESS_LENGTH</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Offset should be less than line length.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>168</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_INPUT_PADSTACK</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Specified padstack not available.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>169</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_INPUT_PAD_UNDEFINED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pad not defined on specified layer.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>170</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_INPUT_PIN_ON_ARC</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pin on arc not allowed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>171</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_INPUT_QCIRCLE_WIDTH</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Quarter-circle width should be less than radius.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>172</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_INPUT_RADIUS_LESS_WIDTH</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Arc radius should be greater than or equal to line width.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>173</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_INPUT_RANGE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s should be between %f and %f.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>174</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_INPUT_REFDES_EXIST</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The specified refdes has been used. Specify another one before continuing.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>175</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_INPUT_REFDES_NEEDED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Specify a new refdes before continuing.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>176</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_INPUT_STRING_LENGTH_128</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+String input length exceeds 128.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>177</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_INPUT_TOO_LARGE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s too large.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>178</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_INPUT_TOO_SMALL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s too small.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>179</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_INPUT_WIDTH_MODIFIED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Feed line width modified to fit new finger number.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>180</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_INPUT_ZERO</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s should be greater than zero.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>181</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_INVALID_BENDMODE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot proceed as the bend mode is not supported on this layer.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>182</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_LAYER_MAP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot proceed as multiple unknown layers should not be mapped to same Allegro layer.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>183</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_LAYER_UNMAPPED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot proceed as some unknown layers are not mapped.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>184</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_LOADING_MODULE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to load module.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>185</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_LOADING_SYMBOL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to load symbol from PSM file %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>186</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_NO_DC_NETS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot proceed for RF components as the design has no DC nets defined. DC nets are identified as nets with VOLTAGE property.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>187</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_NO_INNER_LAYERS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot proceed as the design lacks internal etch layers.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>188</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_NO_PROJECT_FILE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Project file not specified.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>189</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_NO_VIAS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot proceed as the design has no vias available. Run constraints setup first.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>190</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_NOT_APPLICABLE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Operation not applicable on %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>191</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_NOT_ENOUGH_INNER_LAYERS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot proceed as the design lacks enough internal etch layers.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>192</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_OBJECT_NOT_SELECTED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s not selected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>193</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_OPERATION_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot proceed with the specified parameters.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>194</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_OUTSIDE_DESIGN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot proceed as the object would be out of design extents if continue.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>195</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_PARTIALLY_ROUTED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Operation not applicable on partially routed nets.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>196</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_PIN_MISMATCH</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error loading package symbol. Pin number defined in PSM file does not match with parameter setting. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>197</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_REPACKAGE_CMP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot repackage %s using specified parameters.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>198</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_REPACKAGE_PARAMS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot repackage %s using specified parameters.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>199</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_STACKUP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot proceed as the design stackup does not support all RF components.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>200</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_UNDEFINED_VAR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot proceed as the design contains variable-defined components but not all variables are defined. Either specify the variable definition files in the CPM file and then start PCB Editor from Project Manager, or copy the files to the working directory.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>201</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_UNKNOWN_CMP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s is not a recognized RF component.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>202</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_UNSUPPORTED_CURVE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot proceed as the curve angle is larger than 90 degrees on surface layer or not within 20 to 150 degrees on inner layer.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>203</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_UNSUPPORTED_PIN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot proceed as the operation is not supported on RF component's pins.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>204</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_UNSUPPORTED_TOPOLOGY</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Operation not applicable as net %s contains unsupported cline topologies.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>205</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_VAR_MULTIDEFINED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Multiple definitions found for variable %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>206</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_VAR_RECURSIVE_DEFINED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Recursively defined variable(s) %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>207</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_VAR_UNDEFINED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Undefined variable(s) %s in expression %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>208</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_VARDEF_FILE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error in variable definition file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>209</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_VARDEF_FILE_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Variable definition file not found for this design.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>210</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_VARDEF_LEX</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Lexical error(s) in expression %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>211</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_DUPLICATE_AUTOSHOVE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot proceed as no valid destination component is selected. When 'Snap and Auto Shove' is checked, the destination component cannot be connected with the source component.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>212</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_SELECT_COMPONENT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot proceed as no valid destination pin is selected. When 'Snap and Auto Shove' is checked, the destination pin and the source pin cannot be in the same component.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>213</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_WARN_NOT_APPLICABLE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Operation not applicable on %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>214</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_WARN_ROUTE_DUMMYNET</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+The pin you want to connect is on a dummy net. Pick another point to continue, or change the net firstly and try again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+   <Msg>
+    <Id>215</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_AC_SELFINTERCEPT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Clearance shape cannot contain voids. 
+    </Desc>
+    <Output>C</Output>
+  </Msg> 
+
+   <Msg>
+    <Id>216</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_WARN_OPTION_DISABLED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+%s is disabled in the operation.
+    </Desc>
+    <Output>C</Output>
+  </Msg> 
+
+   <Msg>
+    <Id>217</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_WARN_AC_OFFSET_INVALID</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Offset value is less than Constraint Manager shape to shape spacing. 
+    </Desc>
+    <Output>C</Output>
+  </Msg> 
+
+   <Msg>
+    <Id>218</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_MODULE_NOT_INIT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The design has unplaced module instances. All module instances should be placed before autoplace command can be used. 
+    </Desc>
+    <Output>C</Output>
+  </Msg> 
+  
+   <Msg>
+    <Id>219</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_WARN_VAR_UPDATED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Some variables have been updated, footprints may be out-of-sync with parameters. Recommended operations: 1) Run autoplace command immediately or 2) Save the design and run autoplace command later.
+    </Desc>
+    <Output>C</Output>
+  </Msg> 
+
+   <Msg>
+    <Id>220</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_WARN_OUTOFSYNC</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Footprints may be out-of-sync with parameters. Autoplace command is required before any other operations.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+   <Msg>
+    <Id>221</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_WARN_SPLITGROUP</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Net with property RFSPLITGROUP value TRUE is an exception net.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>222</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_WARN_CANNOT_SNAP_TO_PIN</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+In this command, destination can't snap to connect point. Use the command Any Angle Bend Connect when you need.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>223</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_WARN_NO_PROJECT_FILE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Project file '%s' does not exist and is ignored. Quit current command and save the design to suppress this warning.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>512</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_PROP_INVALID</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid value for property %s. Use default value instead.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>640</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_PROP_MISSING</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Missing property %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>641</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_TOO_CLOSE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The destination point can't be too close to the source point.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>642</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_PARENT_SAME</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The parents of two pins are identical.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>643</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_NO_POSSIBLE_PATH</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No path can work, Input proper parameters to make two pins connected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>768</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_WARN_PROP_RESET_ALL</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+All physical properties are reset to their default values.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>800</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_ERROR_SWITCH_LIB_USE_MODEL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot switch library use model as the design contains RF components that are not supported in the target library.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>1024</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_FSE_INFO_APPLICABLE_OBJS</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+      <Sub-Category>P</Sub-Category>
+    <Desc>
+RFPCB FSE commands are restricted to be applicable on objects with RFPCB_OBJECT property.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>1025</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_FSE_ERROR_NO_CONNECTION</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot connect end points on the same line or at the same location.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>1026</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_FSE_ERROR_NOT_APPLICABLE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+FSE operation not applicable %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>1027</Id>
+    <CDNUSR_DEFINE_NAME>RFPCBMSG_FSE_ERROR_POINT_CONNECTED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Two end points already connected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+	<Msg>
+		<Id>1152</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFEXP_ERROR_NO_ELEMENTS</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>No valid elements selected.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1153</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFEXP_ERROR_NO_RF_COMPONENTS</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>No RF component selected.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1154</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFEXP_ERROR_NO_ADSLAYERS_DEF</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>File adslayers.def not found.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1155</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFEXP_ERROR_LAYER_EXISTS</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>This layer already exists.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1156</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFEXP_ERROR_INVALID_LAYER_MAPPING</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Invalid layer mapping.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1157</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFEXP_INFO_COMP2SHAPE_OR_BOUNDARY</CDNUSR_DEFINE_NAME>
+		<Category>I</Category>
+		<Desc>Component will be exported as shape/boundary.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1158</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFEXP_ERROR_COMPONENT_NOEXP_AS</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Component %s cannot be exported as %s.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1159</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFEXP_WARNING_NOT_ADS_COMPONENT</CDNUSR_DEFINE_NAME>
+		<Category>W</Category>
+		<Desc>Component is not currently supported in ADS.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1160</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFEXP_INFO_SHAPE2BOUNDARY</CDNUSR_DEFINE_NAME>
+		<Category>I</Category>
+		<Desc>Shape will be exported as boundary.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1161</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFEXP_WARNING_LINE2SEGS</CDNUSR_DEFINE_NAME>
+		<Category>W</Category>
+		<Desc>Line has arcs may be broken into segments.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1162</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFEXP_WARNING_LINE2LINE</CDNUSR_DEFINE_NAME>
+		<Category>W</Category>
+		<Desc>Line with width 0.0 can only be exported as line.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1163</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFEXP_INFO_LINE2SHAPE</CDNUSR_DEFINE_NAME>
+		<Category>I</Category>
+		<Desc>Line %s will be exported as shape.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1164</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFEXP_WARNING_NO_LOG</CDNUSR_DEFINE_NAME>
+		<Category>W</Category>
+		<Desc>Cannot create log file</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1165</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFEXP_ERROR_INVALID_PATH</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Invalid path %s.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1166</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFEXP_WARNING_SAVE</CDNUSR_DEFINE_NAME>
+		<Category>W</Category>
+		<Desc>Export completed, to update the design from ADS in the future, you may need to save the board.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1167</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFEXP_NEGATIVE_PLANE</CDNUSR_DEFINE_NAME>
+		<Category>W</Category>
+		<Desc>The selected shape on the negatvie planes is ignored. In order to select it, convert the negative planes as positive ones firstly.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1216</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFIMP_ERROR_NO_ELEMENT</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>No valid elements on layers in the IFF file. IFF file might be corrupt.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1217</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFIMP_ERROR_STACKUP_NOT_MATCH</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>The SLM file is inconsistent with the stackup of current design.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1218</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFIMP_ERROR_SLM_INVALID</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Invalid SLM file.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1219</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFIMP_ERROR_STACKUP_READING</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Unable to open the specified substrate file for reading.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1220</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFIMP_ERROR_UNRECOGNIZABLE_VALUE</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>IFF file line %d: unrecognizable value %s.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1221</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFIMP_ERROR_NO_LAYER_INFO</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>No layer information found in the IFF file.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1222</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFIMP_ERROR_CANCEL_UPDATE_STACKUP</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Update stackup canceled. Mapping between conductor layers is allowed, but may not consistent with the ADS simulation.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1223</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFIMP_ERROR_SLM_NOTMATCH</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>IFF file does not match the SLM file.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1224</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFIMP_ERROR_IFF_NOT_OPEN</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Unable to open the specified IFF file for reading.</Desc>
+		<Output>C</Output>
+	</Msg>
+
+	<Msg>
+		<Id>1226</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFIMP_ERROR_ACCURACY_NOT_CONVERTABLE</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Accuracy in IFF file is not convertible without losing precision. Adjust the unit/accuracy of current design and try again. Import is now canceled.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1227</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFIMP_ERROR_UNIT_NOT_SUPPORT</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Allegro does not support %s units.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1228</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFIMP_ERROR_IFF_INVALID</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Invalidate IFF file.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1229</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFIMP_ERROR_IFF_ERROR</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Error in IFF file at line %L</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1230</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFIMP_ERROR_INVALID_LAYER_MAPPING</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Invalid layer mapping. The layer in IFF file should not be mapped to a nonexistent Allegro layer.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1231</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFIMP_ERROR_MORE_LAYERS</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>More layers on IFF file than current design. There are %d layers in Allegro and %d layers used in ADS. Insert at least %d layers in Allegro from main menu Setup->Cross-section, then try again.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1232</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFIMP_ERROR_NO_LOG</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Cannot create log file.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1233</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFIMP_ERROR_FAIL_UPDATE_STACKUP</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Update stackup failed.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1234</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFIMP_ERROR_SLM_ERROR</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Error parsing SLM file %s at line %d.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1235</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFIMP_ERROR_FAIL_SCHEMATIC_IMPPORT</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Import schematic failed.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1236</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFIMP_ERROR_SLM_TOP_CLOSED</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Top substrate layer in SLM file cannot be 'Closed' type.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1237</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFIMP_ERROR_SLM_BOTTOM_CLOSED</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Bottom substrate layer in SLM file cannot be 'Closed' type.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1238</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFIMP_ERROR_SLM_2LAYERS</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>There should be at least 2 metal layers in SLM file to be imported.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1239</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFIMP_ERROR_SLOT_NOT_SUPPORT</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Horizontal magnetic currents (SLOT) mask type is not supported for metal layout layer.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1240</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFIMP_ERROR_NO_DCNET</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>No DC net found on current design for RF components.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1241</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFIMP_ERROR_NO_PROJECT</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>No project file specified. Importing schematic canceled.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1242</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFIMP_ERROR_EXTRACT_VARDEF</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Error extracting variable definition from schematic file.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1243</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFIMP_WARN_NOOBJ_IFF</CDNUSR_DEFINE_NAME>
+		<Category>W</Category>
+		<Desc>No Component/Shape/Line/Via found in IFF file.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1244</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFIMP_ERROR_CREATE_LAYERMAP</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Unable to create layer map file %s..</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1245</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_BEIFFIMP_ERROR_VAR_LAYOUT_ONLY</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Variables found in layout IFF file. Specify the schematic IFF file and try again. Import is now canceled.</Desc>
+		<Output>C</Output>
+	</Msg>
+
+	<Msg>
+		<Id>1472</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_LIBX_ERROR_IFF_NOT_FOUND</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Unable to open IFF file '%s' for reading.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1473</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_LIBX_ERROR_DIR_NOT_FOUND</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Output directory '%s' does not exist.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1474</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_LIBX_ERROR_FILE_NOT_READABLE</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>The given file '%s' is not readable. The file does not exist or does exist, but you do not have permission to read it.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1475</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_LIBX_ERROR_DLL_OPEN_FAIL</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Cannot open '%s' in the default path. The file is removed or the environment variable 'axlpluginpath' is corrupt. Add the file path into the environment variable 'axlpluginpath'.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1476</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_LIBX_ERROR_DLL_FUNC_OPEN_FAIL</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Cannot find the function '%s' in '%s'. The file might be outdated. Get the latest file and replace it.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1477</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_LIBX_ERROR_FILE_CREATE_FAIL</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Cannot create temporary file '%s'.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1478</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_LIBX_ERROR_LOG_FILE_CREATE_FAILE</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Cannot create log file. The file might exist and be not writable.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1479</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_LIBX_ERROR_IFF_INVALID</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Layout IFF file is corrupt.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1480</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_LIBX_ERROR_IFF_NO_LAYER_INFO</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>No layer information found in the layout IFF file.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1481</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_LIBX_ERROR_LAYER_MAP_INVALID_LAYER</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Invalid layer in the specified layout iff file.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1482</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_LIBX_ERROR_LAYER_MAP_COND_LIMIT</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>When mapped to conductor layer, only TOP/BOTTOM layer is permitted.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1483</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_LIBX_ERROR_IFF_ERROR_LINE</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Error in layout IFF file at line %L.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1484</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_LIBX_ERROR_IFF_NO_VALID_COMP</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Cannot find valid components in the schematic IFF file. None of the components has SMT_Pad attribute, or no flattened components exist.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1485</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_LIBX_WARN_IFF_NO_SMTPAD</CDNUSR_DEFINE_NAME>
+		<Category>W</Category>
+		<Desc>No SMT_Pad component exists in schematic IFF. Do you want to use default?</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1486</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_LIBX_WARN_PIN_UNMATCH</CDNUSR_DEFINE_NAME>
+		<Category>W</Category>
+		<Desc>'%s' contains %d pins. Check if it is a %s.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1487</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_LIBX_WARN_PACKAGE_NAME_DUPLICATE</CDNUSR_DEFINE_NAME>
+		<Category>W</Category>
+		<Desc>'%s' exists. Give a different name, otherwise, the existing package will be used.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1488</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_LIBX_WARN_PAD_NAME_DUPLICATE</CDNUSR_DEFINE_NAME>
+		<Category>W</Category>
+		<Desc>'%s' exists. Give a different name, otherwise, the existing pad will be used.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1489</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_LIBX_ERROR_SYMBOL_FILE_PATH</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Symbol '%s' loaded failed. Make sure the symbol file path has been added into PSMPATH, and the pad file path has been added into PADPATH.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1490</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_LIBX_ERROR_SYMBOL_FILE_INVALID</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>'%s' is NOT a SMT symbol. check if it is the right JEDEC type of '%s'.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1491</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_LIBX_ERROR_SYMBOL_FILE_COMP</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Symbol '%s' loaded failed. Specify the mapped symbol file for each component.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1492</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_LIBX_ERROR_SYMBOL_FILE_PKG</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Symbol '%s' loaded failed. Specify the mapped symbol file for each package node.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1493</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_LIBX_ERROR_LIBRARY_CREATE_FAIL</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Failed to generate library. No symbol page in schematic IFF file.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1494</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_LIBX_ERROR_ENTITY_CREATE_FAIL</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Failed to generate entity.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1495</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_LIBX_ERROR_PADSTACK_CREATE_FAIL</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Create padstack '%s' failed.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1496</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_LIBX_ERROR_PIN_CREATE_FAIL</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Create pin failed.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1497</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_LIBX_ERROR_TEXT_CREATE_FAIL</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Create text failed.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1498</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_LIBX_ERROR_REFDES_CREATE_FAIL</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Create RefDes '%s' failed.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1499</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_LIBX_ERROR_SYMBOL_FILE_WRITE_FAIL</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Write out symbol files failed.</Desc>
+		<Output>C</Output>
+	</Msg>
+	<Msg>
+		<Id>1500</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_LIBX_ERROR_PAD_FILE_MOVE_FAIL</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Pad file moved failed.</Desc>
+		<Output>C</Output>
+	</Msg>
+	
+	<Msg>
+		<Id>2000</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_DB_INTEGRITY_CHECK_FAILED</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>RF library setup check failed because the design contains unsupported RF components. Include components from only one of either ADS or MWO library. </Desc>
+		<Output>C</Output>
+	</Msg>
+	
+	<Msg>
+		<Id>2001</Id>
+		<CDNUSR_DEFINE_NAME>RFPCBMSG_RFPARAMS_INTEGRITY_CHECK_FAILED</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Parameter set integrity check failed for RF component %s because some properties are missing. Enable Create user-defined properties option in Export physical or Import Logic/Netlist dialog and try again.</Desc>
+		<Output>C</Output>
+	</Msg>
+	
+</MsgFile>

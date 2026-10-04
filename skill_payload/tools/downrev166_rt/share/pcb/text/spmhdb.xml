@@ -1,0 +1,4701 @@
+<MsgFile>
+
+  <Msg>
+    <Id>1</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_UPREV</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Revising design for compatibility with current software.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>2</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_UPREV_FIG</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Deleting bad FIGURE record. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>3</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_UPREV_DRC</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Deleting bad DRC error record.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>4</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_FDB_FAIL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Formatting design to this processor type failed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>5</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_OBS_REGEN</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+New database revision requires the regeneration of obstacles.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>6</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_DRILL_HOLE_NAME</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal drill hole name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>7</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_DRC_RULE_ID</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal DRC rule identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>8</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_ECL_ID</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal ECL identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>9</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_ARTFILM_ID</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal ARTFILM identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>10</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_ARTBLOCK_ID</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal ARTBLOCK identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>11</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_ARTCLASS_ID</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal ARTCLASS identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>12</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_FIND_STATE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal find state.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>13</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_OBST_ELEM_TYPE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal obstacle element type.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>14</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_SYM_DEF_HAS_INST</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Symbol definition has instances.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>15</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_EDGES_TOUCH</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Edges touch.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>16</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_COMP_DEF_HAS_INST</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Component definition has instances.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>17</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_MULDRW_NO_MORE_DR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No more drawings.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>18</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_MULDRW_ID</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal MULDRW identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>19</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_MULDRW_ACTIVE_DRWS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Active drawings.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>20</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_BUFFER_NOT_INIT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Buffer not initialized.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>21</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_ETCH_LAYER_NAME</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal ETCH/CONDUCTOR layer name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>22</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_DATABASE_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Database error.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>23</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_DELETE_BIT_SET</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Delete bit set on element.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>24</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_ERASED_BIT_SET</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Erased bit set on element.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>25</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_DRC_RULE_NAME</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal DRC rule name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>26</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_DRC_RULE_COUNT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal DRC rule count.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>27</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_DRC_RULE_DBPTR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal DRC rule database pointer.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>28</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_DRC_ELEMENT_DBPTR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal DRC element database pointer.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>29</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_SHAPE_SEG_NOT_Z</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Shape segment not zero width.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>30</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_VOID_SEG_NOT_Z</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Void segment not zero width.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>31</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_VOID_OUTSIDE_OF_S</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Void is outside of the shape.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>32</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_PAD_NOT_ON_SC</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pad not on subclass.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>33</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_SYMBOL_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Symbol not found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>34</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_PADSTACK_DOES_NOT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Padstack does not exist.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>35</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_SLOT_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Slot error.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>36</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_PIN_NAME_MISMATCH</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pin name mismatch. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>37</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_NO_FUNC_DEF</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No function definition.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>38</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_NET_NOT_USR_DEF</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Net %s no longer user defined.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>39</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_POINTER_ERR</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Zeroed illegal pointer value %d, see log file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>40</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_ANYDRAW_INPUT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Layout, drawing, or symbol file name:
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>41</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_ANYDRAW_OUTPUT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Output layout, drawing, or symbol file name:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>42</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_DRCOUTDATE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Run batch DRC to regenerate DRC errs.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>43</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_RAT_OUT_OF_DATE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Ratsnest lines are out of date.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>44</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_SHAPE_UNFILLED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Shape is unfilled.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>45</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_SHAPE_FILLED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Shape is filled.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>46</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_ILLEGAL_NULL_PAD</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal null pad.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>47</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_USERDEFNORAT</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cannot NO_RAT a SCHEDULED net.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>48</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_CONT_FAIL</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Database failed, continuing anyway.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>49</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_PROP_FAIL</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Failed to add prop (Illegal Value?), continuing.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>50</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_UPREV_INFO</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Database version is too old, run dbdoctor %s to uprev.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>51</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_UPREV_ERR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Database version is too old, run dbdoctor %s to uprev.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>52</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_DOTSAV_OLD</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Descendant of a .SAV from an earlier revision is not reliable. Contact Cadence customer support.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>53</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_DOTSAV_QCHK</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Descendant of .SAV resulting from problems detected during save design, running dbdoctor may correct this problem.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>54</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_DOTSAV</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Descendant of .SAV resulting from a crash is not reliable, running dbdoctor may correct this problem.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>55</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_RUN_DBFIX</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Execute "dbdoctor &lt;filename.SAV&gt;"
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>56</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_SC_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot locate subclass to delete.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>57</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_SC_NOT_EMPTY</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot delete a subclass until all items on it are deleted.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>58</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_ILLEGAL_CLASS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+This subclass may only be removed from class ETCH.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>59</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_TOPBOTSC</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot delete TOP or BOTTOM etch subclass.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>60</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_ILLEGAL_SHAPE_SYM</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal element in SHAPE_SYMBOL.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>61</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_ENV_SECTOR_SIZE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+User specified XSECTOR,YSECTOR: %d,%d
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>62</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_SECTOR_SIZE_INCR</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Large extents; sector size enlarged to: %d,%d
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>63</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_SECTOR_SIZE_DECR</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Small extents; sector size decreased to: %d,%d
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>64</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_EXTRANEOUS_REFDES</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Non-package symbol does not need a refdes.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>65</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_NO_COMP_FOR_REFDES</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No component found for refdes.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>66</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_VOID_IN_UNFILLED_SHAPE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unfilled shape cannot contain voids.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>67</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_NOSEGS_IN_BUF</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The coordinate buffer is incomplete.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>68</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_ILLEGAL_COORD_BUF_ENTRY</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Could not recognize coordinate buffer entry.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>69</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_INCOMPLETE_SEGINFO</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Incomplete arc segment data.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>70</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_OVERLAP_SEG_INFO</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Buffer contains overlapping segments.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>71</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_NO_ARRAY_END</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Did not locate end of coordinate buffer.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>72</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_ACTIVE_SHAPE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Current active shape must be filled first.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>73</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_SYMDEF_EXISTS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Symbol definition already exists.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>74</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_PADSTACK_EXISTS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Padstack already exists.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>75</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_PADSTACK_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Padstack does not exist.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>76</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_ACTIVE_PADSTACK</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot commit to design as there is an active padstack that first must be stored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>77</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_NO_ACTIVE_PADSTACK</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Have to activate padstack first.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>78</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_PADSTACK_NO_OPEN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to activate specified padstack.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>79</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_CRE_ARGS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Internal error, illegal arguments passed to a dba create routine.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>80</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_BAD_ARGS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Internal error, illegal arguments passed to a dba routine.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>81</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_XTALK_NET_NEEDED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Element must be a net.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>82</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_BAD_DBREAL_CONVERT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error in converting double to internal dbreal.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>83</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_NEGATIVE_PARA_LENGTH</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Negative parallel length calculated.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>84</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_QUERY_BUFF_OVERFLOW</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Temporary buffer for query overflowed, returning current data.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>85</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_ILLEGAL_FIELDID</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal field identifier passed to dba_get/set_field.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>86</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_CANT_DELETE_DEFAULT</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cannot delete default constraint set.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>87</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_NO_SUCH_CONSTRAINT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No constraint matching description.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>88</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_NO_CONSTRAINT_SET</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No constraint set specified.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>89</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_NO_CONSTRAINT_SIZE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to retrieve size for constraint.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>90</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_CANT_SET_LOCK_AT_C</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cannot set lock flag at constraint level.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>91</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_INVALID_CNS_ID</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Invalid constraint identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>92</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_NOT_NETDATA_SET</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Set must be Net Physical.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>93</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_MALLOC_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Out of memory; try increasing OS swap space.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>94</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_VIA_LIST_CREATE_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed creating via list.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>95</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_VIA_LIST_LOOKUP_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Padstack %s not found. Purging it from %s constraint set will eliminate warning.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>96</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_AREA_LIST_CREATE_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed creating area list.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>97</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_INVALID_CONSRAINT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid constraint.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>98</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_NET_ELEC_CONS_SET_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No electrical constraint set on net.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>99</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_NO_AREA_CONSTRAINT_ID</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Electrical constraints are not area driven.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>100</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_NO_NDA_ASGN_TABLE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Net Physical Assignment table missing.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>101</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_NO_NSA_ASGN_TABLE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Net Spacing Assignment table missing.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>102</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_NO_ENTRY_NDA_ASGN_TABLE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Net Physical Assignment table entry missing.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>103</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_NO_ENTRY_NSA_ASGN_TABLE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Net Spacing Assignment table entry missing.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>104</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_NO_DEFAULT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No default set for that constraint type.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>105</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_SET_EXISTS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot copy, new named set exists.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>106</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_NO_CONSTRAINT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No constraint handle specified.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>107</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_INVALID_FIELD_ID</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid field identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>108</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_INVALID_CSET_HANDLE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid constraint set handle.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>109</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_INVALID_CSET_TYPE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid constraint set type.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>110</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_NAME_TOO_LONG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+String is too long.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>111</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_INVALID_TABLE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No such table.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>112</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_BAD_ENTRY_SIZE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Entry size does not match table entry size.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>113</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_INDEX_TOO_LARGE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Entry larger than table size.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>114</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_TABLE_ENTRY_EXISTS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Table entry already exists.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>115</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_LOCKED_TECH_FILE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+That item has been locked by a technology file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>116</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_EMPTY_LIST</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Attempted to retrieve an empty list.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>117</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_FUNCTION_NOT_ASSIGNED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Function not assigned.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>118</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_NO_MAJORITY</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No majority; attribute not propagated.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>119</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_NO_FUNCTIONS_ON_COMP</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No functions associated with component.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>120</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_ATTR_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Attribute not found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>121</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_ATTR_DEF_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Attribute definition not found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>122</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_ATTR_DEF_EXISTS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Attribute definition already exists.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>123</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_ATTR_DEF_IN_USE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Attribute definition currently in use.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>124</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_ATTR_NOT_DEFINED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Attribute not defined.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>125</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_INVALID_ATTR_DATA_TYPE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid attribute definition data type.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>126</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_INVALID_ATTR_DEF_ORIGIN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid attribute definition origin.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>127</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_INVALID_ATTR_ELEMENT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Element does not support this property.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>128</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_INVALID_ATTR_ID</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Property type does not support this object or its data.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>129</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_INVALID_ATTR_RANGE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Attribute value is not within specified range.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>130</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_INVALID_ATTR_NAME</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal characters in attribute name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>131</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_ATTR_STR_NOT_EMPTY</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Attribute data string is not empty.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>132</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_BAD_FLOAT_VALUE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal characters found in floating point number.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>133</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_BAD_INT_VALUE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal characters found in integer number.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>134</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_BAD_BOOL_VALUE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal boolean value.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>135</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_BAD_ENUM_VALUE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid value, not an exact match to one of the legal values.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>136</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_BAD_MKS_VALUE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal data value.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>137</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_BAD_UNIT_SPECIFIER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unit specifier not legal for this data type.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>138</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_BAD_HANDLE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Bad object handle passed to dba routine.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>139</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_NEGATIVE_USE_COUNT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid (negative) use count.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>140</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_NEGATIVE_BYTE_COUNT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid (negative) byte count.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>141</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_INVALID_ATTR_STOR_TYPE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid attribute storage type.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>142</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_NOT_YET_IMPLEMENTED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Requested operation is not yet implemented.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>143</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_GFIELD_NO_STORAGE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No storage provided for return value to get_field.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>144</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_ILLEGAL_SUBCLASS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal subclass specified.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>145</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_OPS_FOR_ELEC_ONLY</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Can only set opflag at definition level.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>146</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_PAR_SEMI_EXPECTED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid parallelism syntax; missing semicolon.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>147</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_PAR_COLON_EXPECTED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid parallelism syntax; colon expected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>148</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_PAR_TOO_LONG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid parallelism syntax; string too long.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>149</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_PAR_TOO_MANY</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid parallelism syntax; too many length/separation pairs.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>150</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_PAR_NO_VALUE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid parallelism syntax; missing a value.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>151</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_PAR_ZERO_SEP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid parallelism syntax; zero separation value.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>152</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_CONSTRAINT_SEEK_FAIL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Constraint seek failed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>153</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_CORRUPT_TABLE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Table corrupt; current/maximum mismatch.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>154</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_INCOMP_ATTR_DEFS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Attribute Definitions are incompatible for attribute '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>155</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_XS_NO_SURFACE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Surface layers cannot be added to the layout.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>156</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_XS_TOP_BOTTOM_ADD</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cannot add layers before TOP or after BOTTOM subclasses.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>157</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_XS_TOP_BOTTOM_DEL</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cannot delete layers before TOP or after BOTTOM subclasses.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>158</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_XS_TOP_BOTTOM_RENAME</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cannot rename TOP or BOTTOM subclasses.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>159</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_XS_ADDSC_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Internal error adding subclass to database.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>160</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_XS_SCNAME_EXISTS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Subclass name already exists in cross-section.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>161</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_XS_SCNAME_NO_EXIST</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Subclass name does not exist in cross-section.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>162</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_XS_NO_ARTFLAG</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Artwork flag not appropriate for non-subclass layer.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>163</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_XS_BAD_LAYER_SET</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cross-section layer set is corrupt.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>164</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_XS_END_OF_SET</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+There are no more layers in the layer set.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>165</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_XS_NO_DELETE_SC</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cannot delete subclass with existing etch.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>166</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_XS_NO_SHIELD</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Not an appropriate shield layer.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>167</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_XS_NO_TOP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Only the first layer can be named TOP or SURFACE.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>168</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_XS_NO_BOTTOM</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Only the last layer can be named BOTTOM or BASE.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>169</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_ILLEGAL_CONNECTION</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Connected items are not on the same branch.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>170</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_ILLEGAL_CONSTRAINT_NAME_ID</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal constraint set name identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>171</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_ILLEGAL_SUBCLASS_COUNT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Number of subclasses does not match current number of ETCH subclasses.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>172</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_SHAPE_ON_UNFILLED_LINK</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Filled SHAPE is on Unfilled database link. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>173</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_SHAPE_ON_FILLED_LINK</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unfilled SHAPE is on Filled database link.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>174</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_NO_TEXT_LINE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+TEXT record is empty; null TEXT_LINE pointer.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>175</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_BRD_PIN_ON_NET</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Board Symbol PIN should not be allowed on a NET.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>176</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_ILLEGAL_NET_SCHEDULE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Net contains unscheduled pin.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>177</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_OBJECT_NOT_FINDABLE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Not capable of finding that element type.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>178</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_NOT_DB_FORMAT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+File does not appear to be an Allegro design.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>179</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_WRONG_PROCESSOR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Baffled and confused. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>180</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_DB_TOO_NEW</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Design revision %d.x is newer than current program version.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>181</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_DB_TOO_OLD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The current version of software is unable to open design %s.
+The design was last saved using version %d and must be updated using DB Doctor.
+    </Desc>
+    <ExtDesc>
+If additional information is required on upreving designs, use "help->search"
+and type in "uprev".  If error occurs while attempting to load a symbol, you
+will need to make sure the symbol, all its padstacks and Shape or Flash
+symbols are also updated before symbol can be loaded.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>182</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_NOT_OK_ON_CLASS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+'%s' object may not exist on class '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>183</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_NOT_OK_ON_SUBCLASS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+'%s' object may not exist on layer '%s/%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>184</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_NOT_OK_UNFILLED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unfilled %s may not exist on layer '%s/%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>185</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_NOT_OK_FILLED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Filled %s may not exist on layer '%s/%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>186</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_VOID_OUT_OF_SHAPE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Void must be within the shape.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>187</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_POLY_INTERSECT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s boundary may not cross itself.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>188</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_POLY_OPEN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s boundary must start and end at same point.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>189</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_ONLY_IN_LAYOUT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+'%s' object may not exist in a symbol.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>190</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_POLY_EXPAND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s boundary is illegal.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>191</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_VOID_NOT_EMPTY</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Void cannot contain another void of the same shape.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>192</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_NOT_A_SHAPE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Database object is not a shape.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>193</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_BAD_PROP_ATTACH_NAME</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid property attachment name, '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>194</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_BAD_DATA_TYPE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal data type, '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>195</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_GENERIC</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error processing '%s': %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>196</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_FIXED_SC</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Subclass name cannot be changed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>197</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_ILLEGAL_COLOR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Subclass color index out of range.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>198</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_UNITS_MISMATCH</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Design units and accuracy mismatch.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>199</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_ILLEGAL_DIMENSIONS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Dimension negative or too large for the design.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>200</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_NO_STORAGE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No memory space; try increasing OS swap/page space.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>201</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_SC_DISCONNS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+There were %d connections broken due to mirrored blind/buried pads.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>202</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_INCORRECT_EXTENTS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Incorrect calculated extents.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>203</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_DERIVED_NAME_TOO_LONG</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Derived name %s too long.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>204</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_SHAPE_SEGS_WIDTH_NE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+All SHAPE outline segments must have equal width.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>205</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_SHAPE_VOID_WIDTH_NE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+VOIDs must have same width as their parent SHAPE.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>206</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_VOID_SEGS_WIDTH_NE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+All VOID segments must have equal width.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>207</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_HATCH_WIDTH_GTR_SHAPE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Hatch width cannot be greater than shape outline.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>208</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_TIER_TOO_MANY_NETS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s is limited to %d nets.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>209</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_TIER_TOO_MANY_SUBCLASS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s is limited to %d subclasses.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>210</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_TIER_TOO_MANY_COMPS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s is limited to %d components.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>211</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_NONEXISTENT_CNS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The constraint set does not exist.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>212</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_TIER_CHANGE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Design features are disabled because selected product and options do not match design capability required: %s. Either select required product and options in Product Choices or click Update to Tier in File Properties to suppress the message. See Allegro PCB Design Solutions datasheet on www.cadence.com for mapping of products and options to design features.
+    </Desc>
+    <ExtDesc>
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>213</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_DRC_OOD_TIER</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+DRC set to "out of date". The current product selection supports a different DRC capability than what is saved in the design.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>214</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_WARN_DIFFERENT_TIER</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+%s opening an %s design.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>215</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_WARN_SAVE_HIGHER_TIER</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Saving with %d may disable opening with %d.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>216</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_TIER_CANT_SAVE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot save this design using %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>217</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_OPEN_LOWER_TIER</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Save with %s and you cannot open with %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>218</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_ILLEGAL_RAT_T_ID</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Ratsnest T Identifier has an illegal value.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>219</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_DEVNAME_TOOLONG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Device name is too long.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>220</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_NO_FUNCDEF</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Matching function definition not found in new component.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>221</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_NO_FUNCPINDEF</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Matching function pin definition not found in new component.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>222</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_NO_COMPPIN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Matching component pin definition not found in new component.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>223</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_ILL_PAD_SC_COUNT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Padstack has incorrect number of ETCH subclasses defined.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>224</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_SYMDEF_UNINSTANTIATED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Symbol definition has no instances.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>225</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_MAX_TSIZE_USED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The maximum number of text sizes has been reached.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>226</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_ILLEGAL_ODD_UNIT</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Inconsistent rotation data.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>227</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_ATCH_SIZE_MISMATCH</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Attachment data size does not agree with specified size.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>228</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_ATCH_PERMISSION_DENIED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Permission denied; provide the correct attachment password.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>229</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_ATCH_ILLEGAL_CHARACTER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal characters found in attachment data.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>230</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_ATCH_DOES_NOT_EXIST</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Attachment not found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>231</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_ATCH_DATA_TOO_LARGE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Attachment data exceeds maximum allowable size.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>232</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_ATCH_UNABLE_TO_OPEN_FILE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to open attachment data file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>233</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_ATCH_DATA_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No data specified for attachment.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>234</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_ILLEGAL_SHAPE_FILL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Shape must be solid filled.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>235</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_DUP_ROOM_NAME</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Duplicate room name found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>236</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_NET_EXIST</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Net name already exists.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>237</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_SC_SYM_DEFS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot delete this subclass, symbol definitions contain geometry on this subclass.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>238</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_BYTESWAPPED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The design is corrupted. It may have been copied from a different architecture using ASCII mode; copy using binary mode.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>239</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_TIER_TOO_MANY_LGC_PINS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s is limited to %d logical pins.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>240</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_TIER_TOO_MANY_PHYS_PINS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s is limited to %d physical pins.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>241</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_TIER_TOO_MANY_PLANES</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s is limited to %d planes.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>242</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_TIER_PLANES_W_TRACES</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s is limited to planes with no traces.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>243</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_FIXED_PROP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot modify element; the object or a parent has the FIXED property.
+    </Desc>
+    <ExtDesc>
+Remove FIXED property from the element or its parent and rerun the command.
+If this is a batch operation such as netrev; most will support an ignore
+FIXED property option.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>244</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_INVALID_REL_PARENT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Parent object does not support Relation objects.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>245</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_GROUP_NOT_EMPTY</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Group must be empty to delete.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>246</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_GROUP_EXISTS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Specified group name already in use.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>247</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_ILLEGAL_GROUP_TYPE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Specified group type is not a legal type.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>248</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_CPOINT_OUT_OF_EXTENTS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+CPOINT extends beyond the drawing extents.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>249</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_GROUP_CIRC_REF</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot add object to group. It would cause a circular reference.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>250</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_ILLEGAL_VOID_SUBCL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Void is not on same subclass as parent Shape.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>251</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_INVALID_RELATION</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Relationship object does not form proper relationship between GROUP and OBJECT.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>252</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_INVALID_DB_PTR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+A corrupt database pointer was detected. If dbdoctor_ui program does not resolve the issue contact Cadence Customer Support to have the database fixed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>253</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_SHAPE_NO_VOIDS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+VOIDs are not supported by the parent SHAPE.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>254</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_PAD_SIZE_WRONG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pad size does not match the extents of the pad shape.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>255</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_13_UPREV_WARN</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Electrical constraint definitions have been updated,  review settings.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>256</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_GROUP_NOT_A_MEMBER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+This element is not supported by this group type; not added.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>257</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_FIX_LIST_FULL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot add object to group; group is full.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>258</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_PINS_NOT_ON_SAME_XNET</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot create PINPAIR GROUP, the pins are not on the same XNET.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>259</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_PINS_ALREADY_IN_PINPAIR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot create PINPAIR GROUP, PINS are already in a pinpair.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>260</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_PINPAIR_ONLY_2_PINS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+A PINPAIR GROUP can have at most 2 pins.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>261</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_GRP_ALREADY_MEMBER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Element is already member of a group of the same type.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>262</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_SYS_NOT_ACTIVE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+System design must be active to create system level objects.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>263</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_SYS_REF_DB_NOT_OPEN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The referenced design must be open to create a external reference to a object.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>264</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_SYS_REF_OBJECT_INVALID</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The reference to an external object is invalid.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>265</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_SYS_REF_NAME_TO_LONG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The design name of the referenced design is too long.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>266</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_SYS_DESIGN_NAME_INUSE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Specified design name is already in use within this system.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>267</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_SYS_ACTIVE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Only one system design may be opened at same time.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>268</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_PIN_DOES_NOT_EXIST</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The referenced pin does not exist.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>269</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_REF_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Referenced object was either deleted or renamed. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>270</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_SYM_DEFS_NOT_COMP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to COPY symbol %s. The symbol definitions are not compatible between the two designs.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>271</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_ILLEGAL_CONN_SUBCL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal connection, element must be on same layer.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>272</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_ILLEGAL_PKG_PROP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Property is only allowed on PACKAGE KEEPOUT or PLACE BOUND.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>273</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_SHAPE_SYM_NF</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to load shape symbol %s (Check PSMPATH setting for this symbol).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>274</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_FLASH_SYM_NF</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to load flash symbol %s (Check PSMPATH setting for this symbol).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>275</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_MOD_REFDES_CONFLICT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Refdes '%s' conflicts with one already present in the module.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>276</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_MOD_COMPINST_COPY_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Component instance copy failed for refdes '%s'
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>277</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_MOD_PHYS_LAYER_MISMATCH</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Physical layers do not match.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>278</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_MOD_INST_NO_FIT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Module does not fit in design.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>279</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_MOD_LOGIC_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Could not transfer logic.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>280</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_MOD_GROUP_MOD_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Could not modify groups.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>281</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_MOD_INST_GROUP_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Could not create the module instance group.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>282</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_MOD_GROUP_PROPS_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Could not add properties to module instance group.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>283</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_MOD_CREATE_ELEM_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Could not create elements.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>284</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_MOD_NET_NAME_TOO_LONG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Net name too long: %s_%s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>285</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_MOD_REFDES_TOO_LONG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Refdes too long: %s_%s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>286</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_MOD_REUSE_ID_MISSING</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Reuse identifier missing for symbol %s at (%d %d).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>287</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_MOD_DEF_OPEN_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Module definition %s could not be opened. Possibly file does not exist.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>288</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_LOCK_DB</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+This design is locked for writing.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>289</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_LOCK_DB_SAVE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+You cannot save without unlocking.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>290</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_LOCK_DB_EXPORTS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Command is disabled under view or export lock
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>291</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_LOCK_ILLEGAL_PASSWD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal password Length or Format. Length may be 6 to 20 characters. 
+Password cannot start with "-", or contain " ", "\" or some character patterns. Enter another password.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>292</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_LOCK_ILLEGAL_USER_NAME</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal lock user name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>293</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_LOCK_ILLEGAL_DATE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal lock date.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>294</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_LOCK_ILLEGAL_SYSTEM</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal lock system name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>295</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_LOCK_ILLEGAL_EXPORT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot export data, must remove design export lock.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>296</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_LOCK_DB_ALREADY_LOCKED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Design is already locked.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>297</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_LOCK_PASSWD_NO_MATCH</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Password entered does not match the lock password.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>298</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_LOCK_ILLEGAL_OPTION</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal lock option.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>299</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_MOD_CROSS_MISMATCH</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cross-section of module differs from design.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>300</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_MOD_LAYPROP_MISMATCH</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s differs between module and design %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>301</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_MOD_LAYNAME_MISMATCH</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Module physical layer %d name %s does not match board layer name %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>302</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_PWRGNDNOVOLTAGE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cannot POWER_AND_GROUND SCHEDULE a net without VOLTAGE property.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>303</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_PWRGNDNOBUS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cannot POWER_AND_GROUND SCHEDULE a net with BUS property.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>304</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_BUSNOPWRGND</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cannot BUS SCHEDULE a net with POWER_AND_GROUND property.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>305</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_USERDEFNOPWRGND</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cannot POWER_AND_GROUND SCHEDULE a scheduled net. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>306</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_DBDOCTOR_EMPTY_SYM</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Symbol is empty.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>307</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_DBDOCTOR_LOGIC</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+A logic error was found, reload netlist.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>308</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_GRP_MEMBER_SAME_GROUP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Object's parent is already a member of the group.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>309</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_NO_RAT_NET</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Database error, ratsnest on NO_RAT net.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>310</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_INCORRECT_RE_RAT_FLAG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Database error, incorrect re_rat_flag found on net.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>311</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_DUPLICATE_PAD_STACK</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Duplicate padstack name found in design.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>312</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_PAD_STACK_LOWER_CASE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Padstack name changed to upper case.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>313</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_FLOATING_BRANCH</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Floating branch.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>314</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_FILM_REC_NAME</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Film record name too long.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>315</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_HIGHLIGHT_BIT_SET</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Highlight bit set.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>316</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_DIFFPAIR_ELECT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+DiffPair is electrically derived and cannot be modified.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>317</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_DIFFPAIR_EXISTS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+DiffPair with that name already exists.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>318</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_DIFFPAIR_SPACE_PRIMARY</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Minimum spacing value is negative or exceeds primary gap minus coupled tolerance (-).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>319</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_DIFFPAIR_SPACE_NECK</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Minimum spacing value is negative or exceeds neck gap minus coupled tolerance (-).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>320</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_ATTR_MATCHDELAY_SYNTAX</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Expected syntax is &lt;group&gt;:&lt;scope&gt;:&lt;pin1&gt;:&lt;pin2&gt;:&lt;delta&gt;:&lt;tolerance&gt;.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>321</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_ATTR_PROPDELAY_SYNTAX</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Expected syntax is &lt;pin1&gt;:&lt;pin2&gt;:&lt;min delay&gt;:&lt;maxdelay&gt;.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>322</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_ATTR_IMPEDANCE_SYNTAX</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Expected syntax is &lt;pin1&gt;:&lt;pin2&gt;:&lt;impedance&gt;:&lt;tolerance&gt;.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>323</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_ATTR_SWITCHSETTLE_SYNTAX</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Expected syntax is &lt;pin1&gt;:&lt;pin2&gt;:&lt;rising delay&gt;:&lt;falling delay&gt;.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>324</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_DYN_SHAPE_OOD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Dynamic Shapes are out of date, manually update them.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>325</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_DYN_SHP_REP_TITLE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Dynamic Shape Report
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>326</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_DYN_SHP_INST_TITLE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Dynamic Shape Instance Report
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>327</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_DYN_SHP_NOSHP_OFFSET</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Dynamic Shape has no ETCH left.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>328</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_DYN_SHP_UPDATE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Updating dynamic shape (%d of %d) %s ...
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>329</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_15_UPREV_WARN</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+%d Warnings were issued during the uprev.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>330</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_CNS_AREA_PROP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Property must be added to a net or constraint area.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>331</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_ATTR_PIN_DELAY_SYNTAX</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Expected syntax of pin delay is units in time or length.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>332</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_MOD_XSECTION_CNT</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Stackup of module has less layers than design; loading anyway.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>333</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_LYRSETGRP_ID_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid LayerSet group identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>334</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_LYRSET_ID_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid LayerSet identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>335</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_TOOMANY_LAYERSETS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Maximum number of LayerSets in a group is 50.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>336</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_LAYERSET_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+LayerSet does not exist.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>337</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_LAYERSET_OVERLAP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The given layer sets contain overlapping layers.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>338</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_PART_MASTER_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Master design was not found, verify its directory path.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>339</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_PART_ENTRY_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Master design does not reference this partition, verify path to master design.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>340</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_PART_OBSOLETE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Partition design is not a descendant of the master design. Use the Recover process to import.
+    </Desc>
+    <ExtDesc>
+There are two possible causes of this problem:
+1) Master designer used an earlier master design and re-partitioned.
+2) Master designer retracted the partitions and then re-exported them.
+Suggest read the Design Partition best practice paper in the area of design management.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>341</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_DPF_BAD_ASS_TYPE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Spacing or Physical types must already exist in assignment table.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>342</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_PART_OUT_OF_EXTENTS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Object is outside the partition extents.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>343</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_UNASSIGNED_PIN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pin not part of a component, cannot change net.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>344</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_MOVE_PIN_DUMMY</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pin moved to dummy net. Pin that is not part of a component cannot be on a named net.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>345</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_NO_PARTITION_SUPPORT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Partitions are not supported in current product or design type.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>346</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_PART_CREATE_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Partition create failed, check for adequate system memory.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>347</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_CANT_DELETE_MASTER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot delete Master entry from Work Flow Manager.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>348</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_ILL_WFM_DESIGNER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal designer name specified for partition entry.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>349</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_ILL_WFM_USER_STATUS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot reset user status to NEW.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>350</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_ILL_WFM_DB_PATH</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal partition path specified for partition entry.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>351</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_PART_ENTRY_INVALID</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+An attempt to access an invalid partition entry.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>352</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_PART_NOT_EXPORTED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot Import/Refresh a partition that is not EXPORTED.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>353</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_PART_ENTRY_OOD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Partition entry was not found or is Out Of Date with current design.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>354</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_LWD_CNS_INCOMPATIBLE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Line width constraint values are not compatible.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>355</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_DPF_NET_PROP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Property not allowed on nets in a design partition.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>356</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_DPF_REF_MASTER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Must have write permission in current directory to perform Refesh Master.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>357</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_COMP_INTR_PARTITION</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Component placement cannot intersect partition boundary.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>358</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_RECOVER_DPF_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Attempt to recover DPF has failed; see log file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>359</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_SHAPE_ALREADY_IN_REGION</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The shape/rectangle is already part of a Region (%s).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>360</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_NET_IN_OTHER_NETCLASS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The Net you are trying to add to this NetClass already belongs to a Netclass of the same domain.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>361</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_ILL_PHYSICAL_CSET</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+A Physical CSet cannot be assigned to this object. It is of a wrong domain.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>362</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_ILL_SPACING_CSET</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+A Spacing CSet cannot be assigned to this object. It is of a wrong domain.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>363</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_ILL_REGIONNAME_ATTR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+A Region_Name property can only be set in a Symbol.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>364</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_ILL_REGIONNAME_ATTR_CLASS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+A Region_Name property can only be set on a Constraint Region shape.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>365</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_ILL_STRING_TBL_ENTRY</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Corrupt name found; renamed to DBDOCTOR_CORRUPT_STRING.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>366</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_SIZE_DECREASED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Size cannot be decreased.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>367</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_BAD_PADSTACK</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal padstack encountered.
+    </Desc>
+    <ExtDesc>
+There are two possible problems with the padstacks:
+
+1) A die-layer padstack can only contain pads on a single layer.
+2) A padstack cannot contain pads on both substrate and die layers.
+
+Run the "wirebond uprev" command to legalize these padstacks.
+Review the modified padstacks in the padstack editor to ensure correctness.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>368</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_INVALID_OBJECT_FOR_DELETE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid element for dba delete interface.
+    </Desc>
+    <ExtDesc>
+The database access function for deleting objects received an element that
+cannot be deleted. This is a programming error that must be corrected in
+the application code.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>369</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_EIOP_SESSION_DETECTED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Partitions cannot be exported when an active IOP editor exists in the background.
+    </Desc>
+    <ExtDesc>
+Exit the IOP session and export partition.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>370</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_NOT_A_JUMPER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Symbol is not a jumper.
+    </Desc>
+    <ExtDesc>
+There are 2 types of jumpers. Via jumpers must have only 2 vias.
+Pin jumpers must have a JUMPER_DEVICE property on the function instance
+and there must be 2 function pin instances.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>371</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_GRP_HIERARCHY_VIOLATION</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Object's member is already a member of the target group hierarchy.
+    </Desc>
+    <ExtDesc>
+One or more members of this group object are already direct or indirect
+members of the hierarchical group to which this object is being added.
+For example, an Xnet cannot be added to a Bus if one of the Xnet's nets is
+already a member of that Bus. To add the Xnet to the Bus, the net must 
+first be removed from the Bus.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>372</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_ILL_ELECTRICAL_CSET</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+An Electrical CSet cannot be assigned to this object. It is of a wrong domain.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>373</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_EMBEDDED_COMP_EXISTS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Embedded Components already exist on etch layer.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>374</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_CMPD_SYMNAME_NE_PACKAGE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+All symbol-instance children of the component-under-edit must use the 
+package specified in the component-definition.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>375</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_CMPD_SYMDEF_NOT_UNIQUE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The package specified in the definition of the component-under-edit cannot be
+specified by another component-definition in the current design.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>376</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_CMPD_DUP_PIN_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Attempt to change a component pin-number to a existing pin-number.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>377</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_CMPD_NO_MULTI_FUNCPINSTS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+A pin with multiple function-pin instances was specified. Only pins with 
+a single function-pin instance are supported in this release.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>378</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_CMPD_FUNCPINST_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+An unassigned function-pin instance referencing the given net was not found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>379</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_CMPD_NO_ACTIVE_COMP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Attempt to edit a component but there is no component open for editing. 
+This is an internal software error, contact Cadence Customer Support.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>380</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_CMPD_BAD_CHILD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Attempt to edit an object which is not a child of the active component.
+This is an internal software error, contact Cadence Customer Support.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>381</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_CMPD_HASH_TABLE_FAILURE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+A hash-table failure has occurred.
+This is an internal software error, contact Cadence Customer Support.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>382</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_CMPD_DUP_FUNCPIN_NAME</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+A duplicate function pin name was entered. Function pin names must be unique 
+within a function pin's parent function definition.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>383</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_NAME_LOWER_CASE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Corrupt name found; name contains lower case characters, changed to upper case.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>384</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_CMPD_NO_EMBEDDED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Embedded components cannot be edited through this Application Mode.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>385</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_DUAL_PROTRUDE_SURFACE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Dual sided embedded components cannot be placed on, or protrude through surface layers.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>386</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_DUAL_SYM_REFRESH</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Dual sided embedded component mismatch, both existing and library symbols must be "Dual Sided".
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>387</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_LOCK_ILLEGAL_LOCKLEVEL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Illegal locking level. Lock can either be Write Only, View Only or View with Exports.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>388</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_LOCK_ILLEGAL_EXP_DURATION</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Illegal Expiration Duration.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>389</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_LOCK_DB_VIEW</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+      Command is disabled under view or export lock
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>390</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_ALLEGRO_DEMO_VERSION</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+      Demo Version. The tool cannot be used.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>391</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_DELETING_FILLET_SHAPE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+      Fillet shape was deleted due to a change in connectivity.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>392</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_NO_FUNCPIN_TO_EDIT</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+      Pin %s has no function pin to edit.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>393</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_CANT_DELETE_NCLEGEND_SC</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      NCLEGEND generated subclass cannot be deleted.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>394</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_CANT_PLACE_ZERO_LENGTH_SEG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Placement cannot be completed since the accuracy of the design is smaller than the base unit of the symbol (e.g. 1 mil less than 1 mm); conversion of these elements during placement will result in data loss (e.g. 0.001 mil = 0.0000254 mm).
+Update the symbol base accuracy to match or exceed that of the design before placement.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>395</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_ILLEGAL_RKO_PROP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No properties are supported on ROUTE KEEPOUTs associated with padstacks.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>396</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_DESIGN_OUTLINE_EXISTS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+A design outline already exists.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>397</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_MODULE_SYNC</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Component not found for symbol %s at %s, reuse id %d."
+    </Desc>
+    <ExtDesc>
+Logic synchronization warnings are typically due to having one or more Reuse blocks in the schematic where you may have performed Reuse annotation by which the old Reuse ID has been overwritten by new a one. Due to mismatch REUSE_IDs, you get this warning when placing the mdd file into the physical editor.
+
+While in the schematic (DE-HDL) while in the sub-design flow, when you copy/paste of components within the pages of the design, the Packager re-assigns the REUSE_ID for the components when you perform Export Physical, this results in the warning in Allegro. The REUSE_ID property is automatically attached to a component, it allows for the correct assignment of logic within a module instance. The REUSE_ID property is a number that uniquely identifies each symbol and component within a module. It is used to re-connect reference designators when a module is used in the physical design, thus allowing for the correct assignment of logic within a module instance. The property is stored within the module file (mdd) and the board design file that represents the module information, and it is back annotated to the schematic that represents the module's logic.
+
+Because this property is for Cadence internal use only, do not edit it.
+
+To remove this warning message, go to File> Export Physical> Advanced. Next select sub design tab and remove the sub design generation option.
+
+Once the Sub Design has been packaged using the Generate Subdesign mode and associated with interim board and the module is created, the DE-HDL Subdesign and module are in sync.
+
+This process assigns REUSE_ID's in DE-HDL and they are passed to Allegro.
+
+At this stage, the SubDesign and module should be put in libraries with READ ONLY privileges.
+
+Note: If further packaging passes are made using Generate Subdesign, the REUSE_ID's are all reassigned and the module (mdd) will no longer be in sync. In this event, you would be required to recreate the module.
+
+Do not these warnings.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>398</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_ILLEGAL_RELATION_TYPE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid relation type.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>399</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_SC_USED_FOR_MASK</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Cannot delete a subclass that has been mapped to a Mask layer.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>400</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_ZONE_SYMBOLS_PLACED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Cannot change Zone's surface layers, must remove placed symbols.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>401</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_CPVIA_SC_RANGE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+      The subclass range on Connect Poly Via does not match connections.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>402</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_CPVIA_NOT_CONNECTED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+      Connect Poly Via has no connections.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>403</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_SHAPE_TABLE_FAULTS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Multi-threaded DRC update aborted: internal memory resource depleted.
+      To proceed:
+      enable single-threaded DRC execution OR"
+      save design, reopen and increase resource allocation parameter.
+      Command syntax is:
+      set shape_cache_size=new_value.
+      Current cache size: %d records. Maximum cache size: %d records.
+    </Desc>
+    <ExtDesc>
+      Multi-threaded DRC update aborted: internal memory resource depleted.
+      To proceed:
+      enable single-threaded DRC execution OR"
+      save design, reopen and increase resource allocation parameter.
+      Command syntax is:
+      set shape_cache_size=new_value.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>404</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_ATTR_PVIA_EXIST</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+      Cannot remove property, Poly Vias exist in this design.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+   <Msg>
+    <Id>405</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_DFF_ADVCNS_EXIST</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+      This design contains advanced fabrication constraints, and the selected license  does not support evaluation of those constraints. So, some of the DRCs in the  design may not get reported.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+   <Msg>
+    <Id>406</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_DFF_BASEOLYCNS_EXIST</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+      This design contains only basic fabrication constraints, and the constraint values will properly get propagated to advanced constraints. However, you may need  to turn on the modes for corresponding advanced checks in order to run those.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>407</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_UPREV_NEW_FIXED_SC</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Design can't be upreved, %s can only have %d user defined subclasses.
+	</Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>408</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_LOCK_ILLEGAL_EXPORT_LOCK_OPTIONS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Illegal Export Lock Option.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>409</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_MAX_PINS_SIGNAL_NET_2</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      Maximum pins (%d) reached for signal net %s. Auto converting to ground net and updating net scheduling. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>410</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_SHAPE_WAS_GRIDDED</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      Shape was gridded. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>411</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_BACKDRILL_NET_SET_FIRST</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+This attribute must be set on net first for backdrilling.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  <Msg>
+    <Id>412</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_COMPLUSRSC_CREATE_NOALLOWED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      The subclass COMPONENT_LEAD for the class PACKAGE_GEOMETRY is reserved for internal use.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>413</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_STACKUP_NO_ETCH_SC</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+A stackup with no ETCH subclasses cannot be assigned to a ZONE.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>414</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_PIN_FIDUCIAL_ILLEGAL_PADSTACK</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+This attribute must be set on pin with pad usage "FIDUCIAL".
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>415</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_SHAPE_THRUPIN_CLEARANCE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+In-line help documentation for shape autovoiding form's thru pin clearance fields.
+    </Desc>
+    <ExtDesc>
+If set to DRC, shape voiding uses constraint-derived thru pin to shape spacing value as clearance. This clearance value is based on the specific and prioritized spacing value, which is determined by net, region, and constraint set memberships.
+
+If set to Thermal/anti, shape voiding uses the size of thermal relief or anti pad defined on the shape layer as clearance. By default, no additional clearance is defined relative to this value. For extra clearance, specify the Oversize value.  If the anti pad doesn't provide adequate clearance between the shape and the regular pad,  DRCs will result and will not be cleared.
+
+To increase clearance for all thru pins against which this shape is voided, set the Oversize value. To apply an oversize only on a single pin, add the DYN_CLEARANCE_OVERSIZE_ARRAY  property to the pin on the required layers.
+
+The DYN_CLEARANCE_TYPE property can also be used to override the clearance type (DRC, thermal/anti, or none) at the object level.  A value of none means no voiding is done at all relative to the object and may result in DRCs.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>416</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_SHAPE_SMDPIN_CLEARANCE</CDNUSR_DEFINE_NAME>
+    <Category>I
+        <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+In-line help documentation for shape autovoiding form's smd pin clearance fields.
+    </Desc>
+    <ExtDesc>
+If set to DRC, shape voiding uses constraint-derived SMD pin to shape spacing value as clearance. This clearance value is based on the specific and prioritized spacing value, which is determined by net, region, and constraint set memberships. 
+
+If set to Thermal/anti, shape voiding uses the size of thermal relief or anti pad defined on the shape layer as clearance. By default, no additional clearance is defined relative to this value. For extra clearance, specify the Oversize value.  If the anti pad doesn't provide adequate clearance between the shape and the regular pad,  DRCs will result and will not be cleared.
+
+To increase clearance for all SMD pins against which this shape is voided, set the Oversize value. To apply an oversize only on a single pin, add the DYN_CLEARANCE_OVERSIZE_ARRAY  property to the pin on the required layers.
+
+The DYN_CLEARANCE_TYPE property can also be used to override the clearance type (DRC, thermal/anti, or none) at the object level.  A value of none means no voiding is done at all relative to the object and may result in DRCs.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>417</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_SHAPE_VIA_CLEARANCE</CDNUSR_DEFINE_NAME>
+    <Category>I
+        <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+In-line help documentation for shape autovoiding form's via clearance fields.
+    </Desc>
+    <ExtDesc>
+If set to DRC, shape voiding uses constraint-derived via to shape spacing value as clearance. This clearance value is based on the specific and prioritized spacing value, which is determined by net, region, and constraint set memberships. 
+
+If set to Thermal/anti, shape voiding uses the size of thermal relief or anti pad defined on the shape layer as clearance. By default, no additional clearance is defined relative to this value. For extra clearance, specify the Oversize value.  If the anti pad doesn't provide adequate clearance between the shape and the regular pad,  DRCs will result and will not be cleared.
+
+To increase clearance for all vias against which this shape is voided, set the Oversize value. To apply an oversize only on a single via, add the DYN_CLEARANCE_OVERSIZE_ARRAY  property to the via on the required layers.
+
+The DYN_CLEARANCE_TYPE property can also be used to override the clearance type (DRC, thermal/anti, or none) at the object level.  A value of none means no voiding is done at all relative to the object and may result in DRCs.
+
+NOTE: Applies to all types of vias in the design.  
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>418</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_SHAPE_LINE_CLEARANCE</CDNUSR_DEFINE_NAME>
+    <Category>I
+        <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+In-line help documentation for shape autovoiding form's line clearance fields.
+    </Desc>
+    <ExtDesc>
+Shape voiding clearance to traces is always done based on the specific and prioritized spacing value, which is determined by net, region, and constraint set memberships.
+
+To increase clearance for all traces against which this shape is voided, set the Oversize value. To apply an oversize only on a single cline, add the DYN_CLEARANCE_OVERSIZE_ARRAY  property to the cline. 
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>419</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_SHAPE_TEXT_CLEARANCE</CDNUSR_DEFINE_NAME>
+    <Category>I
+        <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+In-line help documentation for shape autovoiding form's text clearance fields.
+    </Desc>
+    <ExtDesc>
+Shape voiding clearance to text is always done based on the specific and prioritized spacing value, which is determined by net, region, and constraint set memberships. Text does not have its own object type in Constraint Manager, and is governed by the cline to shape rules.
+
+To increase clearance for all texts against which this shape is voided, set the Oversize value. Text voiding oversize may not be applied to individual text objects in the database. 
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>420</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_SHAPE_SHAPE_CLEARANCE</CDNUSR_DEFINE_NAME>
+    <Category>I
+        <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+In-line help documentation for shape autovoiding form's shape clearance fields.
+    </Desc>
+    <ExtDesc>
+Shape voiding clearance to other shapes is always done based on the specific and prioritized spacing value, which is determined by net, region, and constraint set memberships.
+
+To increase clearance for all shapes against which this shape is voided, set the Oversize value. To apply an oversize only on a single shape, add the DYN_CLEARANCE_OVERSIZE_ARRAY  property to the shape.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>421</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_MOD_INST_ILLEGAL_PROFILE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Could not create the module instance because the module definition has
+profiles which are not allowed.  This can happen when placing an ICP-based module into a PCB, which only allows TOP and BOTTOM profiles.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>422</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_CURRENT_COMP_MODE</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+	<Sub-Category>P</Sub-Category>
+    <Desc>
+ [17.2 Compatibility Mode]
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>423</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_IMPORT_PARTITION</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot open partition '%s' because it was last saved using release '%s'. To open the partition in 17.4 or later releases, open  the master design using a previous release, either import the partitions into the master design or retract the partitions, and then open the master design in the current release and re-export the partition.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>424</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_EXPORTED_PARTITIONS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot open design '%s' because it was last saved using release '%s' and has exported partitions.  To open the design in 17.4 or later releases, first open the design using a previous release and either import partitions into the master design or retract partitions.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>425</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_AREF_PROP_REMOVE_DAEMON</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Advanced thieving shapes will be deleted and degas patterns will be removed from advanced degassed shapes. Do you want to proceed?
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>426</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_AREF_DETECT_NON_AREF_DEGAS</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Non-AREF degassing holes found in design. Regenerate these areas using the advanced degassing command.    
+    </Desc>
+    <ExtDesc>
+You can 
+- Reprocess each degassed shape automatically by clicking 'Update all degassed shapes' button.
+- degas a selected shape after clearing existing voids. 
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+  
+    <Msg>
+    <Id>427</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_AREF_DETECT_NON_AREF_THIEVE</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Non-AREF thieving groups found in design. Regenerate these areas using the advanced metal fill command.
+    </Desc>
+    <ExtDesc>
+You can locate and delete thieving groups with Find panel by
+- finding 'Groups' type.
+- making use of 'Find By Name'. In 'More...' dialog, choose 'Generic Group' and filter by name. (Default prefix is 'Thieving')
+    </ExtDesc>    
+    
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>428</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_MU_LOCKED_OBJECT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The current operation cannot be completed because an object is currently locked by another user. Try performing the operation again once the lock has been removed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>429</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_MU_LOCKED_OBJECT_DESC</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The current operation cannot be completed because object '%s' is currently locked by another user. Try performing the operation again once the lock has been removed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>430</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_MU_LOCKED_TEXT_SIZE_TABLE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The current operation cannot be completed because the text size table is currently locked by another user. Try performing the operation again once the lock has been removed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>431</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_AREF_CHECK_OPENGL_ENABLE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Advanced holes and metal fills will not be displayed, even though they are added to the database, because OpenGL is disabled. To display them, enable OpenGL and restart the application.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>432</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_LOCK_DB_PULSE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot run this command because the design is marked as read only by Pulse. To run the command, ensure the following: you are logged in, the design is shared with you, you have write permission, and you hold the lock for the design.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>433</Id>
+    <CDNUSR_DEFINE_NAME>IPCSPECMSG_NO_SPEC_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No IPC 2581 specs found for current design. Nothing to export.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>434</Id>
+    <CDNUSR_DEFINE_NAME>IPCSPECMSG_NO_SPEC_FILENAME</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No file name specified to write IPC 2581 spec information to. File not written.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>435</Id>
+    <CDNUSR_DEFINE_NAME>IPCSPECMSG_SPEC_NOT_FOUND_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+IPC Spec '%s' not found in design. Ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>436</Id>
+    <CDNUSR_DEFINE_NAME>IPCSPECMSG_SPEC_OVERWRITE_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+IPC Spec '%s' overwritten in design from imported specs. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>437</Id>
+    <CDNUSR_DEFINE_NAME>IPCSPECMSG_SPEC_ADD_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+IPC Spec '%s' added to design.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>438</Id>
+    <CDNUSR_DEFINE_NAME>IPCSPECMSG_SPEC_SKIP_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+IPC Spec '%s' not added to design. Spec exists and overwrite is disabled.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>439</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_MOD_REFDES_IN_USE_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Refdes %s already in use in database. To place more instances of this module, set variable 'module_instance_no_rename' to allow component renaming.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>440</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_INVALID_COMP_CLASS_FOR_TYPE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Component type is not legal for this component class.
+    </Desc>
+    <ExtDesc>
+The available component types are restricted by the base class for the component as follows:
+  Class IC:
+    Types: BGA, DIE, LGA, PACKAGE_DIE, QFN, QFP
+  Class IO:
+    Types: BGA, CONNECTOR, LGA, QFN, QFP
+  Class DISCRETE:
+    Types: CAPACITOR, INDUCTOR, RESISTOR
+  All other classes:
+    Types: None
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>441</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_INVALID_ATTR_NO_IMPORT_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot block the import of object &apos;%s&apos; because object is a child of a symbol or module.  Child objects inherit property added to the parent objects.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+    <Msg>
+    <Id>442</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_INVALID_ATTR_MODULE_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot block the import of object &apos;%s&apos; because object is not in a module design (.mdd).  
+    </Desc>
+    <Output>C</Output>
+    </Msg>
+
+  <Msg>
+    <Id>443</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_MOD_INST_STATIC_SHAPES</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Converting all module dynamic shapes to static to prevent changes in layout.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>444</Id>
+    <CDNUSR_DEFINE_NAME>DBAMSG_MOD_INST_DELETE_RKOS</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Removing route keepout elements from module not needed in layout.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>445</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_SYMBOL_ILLEGAL_XFORM</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Edit operation failed due to illegal symbol placement. Ensure that the destination zone is valid for placement of all symbols.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>446</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_GROUP_MOVE_DISALLOWS_ALTSYM1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Moving this group to the destination location requires an instance of symbol &apos;%s&apos; to switch to an alternate symbol. Group members are not allowed to switch to alternate symbols during move.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>447</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_XFORM_INVALID_SYMBOL1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+A component using symbol &apos;%s&apos; is being placed at an illegal location for that symbol. Try switching to an alternate symbol that is legal for the destination zone.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+    <Msg>
+        <Id>448</Id>
+        <CDNUSR_DEFINE_NAME>DBMSG_CMD_GPU_NOT_SUPPORTED</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            This command is currently not supported with the new GPU canvas mode. In order to use this command, you can launch the application with the -nogpu switch.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>449</Id>
+        <CDNUSR_DEFINE_NAME>DBMSG_DRC_OOD_SHAPE_OOD</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+            DRC errors are out-of-date because shapes are out-of-date.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+  <Msg>
+    <Id>450</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_SECTOR_RETUNED</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+The design has been retuned to improve performance.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  <Msg>
+    <Id>451</Id>
+    <CDNUSR_DEFINE_NAME>DBMSG_DFATBL_MIGRATED</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      The DFA Package To Package table in the design has been migrated to DesignTrue DFM DFA Package to Package table. The rules can be now accessed through Manufacturing worksheet in Constraint Manager.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+</MsgFile>
+

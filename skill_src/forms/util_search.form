@@ -1,0 +1,58 @@
+#========================================================================
+# 文件名    : util_search.form
+# 功能      : 搜索定位表单（Search Star v2.2：按钮移至候选框正下方，
+#             补"回车筛选"提示）
+# 依赖      : modules/utilities/util_search.il
+# 说明      : 器件/网络 同组 alg 互斥单选；按钮用非保留名 find/exit；
+#             candlist 为候选列表（LIST "" 空串首参，否则解析失败）
+# 编码      : GBK（含中文，必须 GBK 保存）
+#========================================================================
+FILE_TYPE=FORM_DEFN VERSION=2
+FORM
+FIXED
+PORT 32 26
+HEADER "搜索定位"
+
+TILE
+
+TEXT "筛选:"
+TLOC 2 1
+ENDTEXT
+
+FIELD name
+FLOC 7 1
+STRFILLIN 21 32
+ENDFIELD
+
+FIELD f_comp
+FLOC 4 3
+CHECKLIST "器件" "alg"
+ENDFIELD
+
+FIELD f_net
+FLOC 16 3
+CHECKLIST "网络" "alg"
+ENDFIELD
+
+TEXT "候选(输入后回车筛选, 单击定位):"
+TLOC 2 5
+ENDTEXT
+
+FIELD candlist
+FLOC 2 7
+LIST "" 26 11
+ENDFIELD
+
+FIELD find
+FLOC 4 22
+MENUBUTTON "查找" 9 2
+ENDFIELD
+
+FIELD exit
+FLOC 17 22
+MENUBUTTON "退出" 9 2
+ENDFIELD
+
+ENDTILE
+
+ENDFORM

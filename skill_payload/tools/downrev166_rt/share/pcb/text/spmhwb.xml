@@ -1,0 +1,2365 @@
+<MsgFile>
+
+  <Msg>
+    <Id>1</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_PARM_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Wire bond group configuration data not found. Creating a new one.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>2</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_PARM_EXISTS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Wire bond group configuration data found.
+    </Desc>
+    <Output>C</Output>t
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>3</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_PARM_NO_CREATE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to save wire bond group configuration data to database. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>4</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_DESIGN_WB_ANALYSIS_FAIL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Design is not configured for wire bonding. Correct the error(s) encountered before proceeding with wire bonding tool.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>5</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_UNABLE_ALLOC_MEM</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to allocate memory. Try increasing swap file size.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>6</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_INVALID_ITEM_TYPE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Selected item is of invalid type. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>7</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_ERROR_ENCOUNTERED_SETUP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Problem encountered during initialization of wire bond placement data. Unable to continue.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>8</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_ERROR_ENCOUNTERED_FINDDIE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to locate any die or discrete component associated with selected items. Most probable cause is the bond wire is not connected to the pin (objects on different layers).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>9</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_ERROR_ENCOUNTERED_FINDPATH</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Problem encountered while loading guide paths.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>10</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_ERROR_ENCOUNTERED_FINDWB</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Problem encountered while loading existing wire bond placement data. Not all wire bonds could be processed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>11</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_ERROR_ENCOUNTERED_FINDPIN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error when trying to find pin information for %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>12</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_INVALID_NAME</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Die Refdes or DieStack Group Name must be a valid string, not &apos;%s&apos;.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>13</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_INVALID_OWNER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Owner parameter must be non-NULL.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>14</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_INVALID_DIE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to find Die group information. There is a problem with the die component selected. Run &apos;uprev&apos; on the current design.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>15</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_UNABLE_TO_SETUP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to set up data structures prior to performing a wire bonding operation.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>16</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_UNABLE_TO_FINDDIE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to find the requested Die, Discrete Component, or Die Stack.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>17</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_UNABLE_TO_FINDPATH</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to find path(s) for the current Die, Discrete Component, or Die Stack.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>18</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_UNABLE_TO_FINDWB</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to find wire bonds for the current Die, Discrete Component, or Die Stack.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>19</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_UNABLE_TO_FINDPIN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to find information for pin.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>20</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_NO_DIE_OR_DIESTACK_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to find a Die, Discrete Component, or Die Stack.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>21</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_COMP_NOT_IC_OR_DISCRETE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Component named &apos;%s&apos; found, but is not of type IC or DISCRETE.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>22</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_ERROR_ENCOUNTERED_PREPINFO</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error during preparation of data structures for cursor movement:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>23</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_SELECTION_BUFFER_EMPTY</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid (length = 0) selection buffer was passed to cursor movement routine.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>24</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_SELECTION_BUFFER_NOT_INIT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid (zero) selection buffer was passed to cursor movement routine.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>25</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_SELECTION_REF_OUTOFRANGE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid reference index %s passed to cursor movement routine. Must be in range %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>26</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_UNABLE_TO_PREPINFO</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to set up data structures prior to moving the cursor.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>27</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_SELECTED_WB_NO_PINS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Selected wire bond is not attached to a pin.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>28</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_ADD_SELECTED_WB_FING</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Wire bond selected for Finger ADD already has a finger.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>29</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_MOVE_SELECTED_WB_NO_FING</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Wire bond selected for Finger MOVE does not have a finger. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>30</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_LABELS_NO_COMPS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No components found which can be wire bonded. Nothing to configure bond finger labels for.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>31</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_ERROR_BAD_OPERATION</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Selected operation must be one of ADD, DELETE, MOVE or RECONNECT;
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>32</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_ERROR_BAD_SHOVE_FLAG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Select SHOVE type must be ALL, PATH or OFF.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>33</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_ERROR_NULL_GUIDEPATH_ARRAY</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+There is no array of pointers to paths. (Array can be empty, but it must exist).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>34</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_ERROR_NULL_SELECT_STRUCT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+There is no structure into which data can be saved.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>35</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_ERROR_NULL_WIREBOND_ARRAY</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+There is no array of pointers to wire bonds. Array can be empty, but it must exist.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>36</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_ERROR_EMPTY_GUIDEPATH_ARRA</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+There are no guide paths in this design. Create some before attempting to ADD or MOVE wire bonds, unless using Equal Wire Length.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>37</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_NO_WIREBOND_LAYERS_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No die stack layers found in design. Add layers in design stackup to proceed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>38</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_NO_CONDUCTOR_LAYERS_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No conductor layers found in design. Add layers in design stackup to proceed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>39</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_ERROR_INVALID_SUBCLASS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid subclass for a padstack encountered.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>40</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_ERROR_INVALID_DIRECTION</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid die side encountered. Ensure the latest UI form for this command is being used.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>41</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_ERROR_INVALID_POINTER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid NULL pointer encountered. This could be due to old wire bond information contained in the database. Run &apos;wirebond uprev&apos; then try again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>42</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_ERROR_INVALID_COMMAND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid command encountered.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>43</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_ERROR_INVALID_ITEM</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid item type encountered in selected buffer.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>44</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_ERROR_INVALID_PLINE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid pline type encountered.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>45</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_ERROR_INVALID_ORDER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid sort order encountered.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>46</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_PATHS_INVALID_FIGURE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid figure type encountered.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>47</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_PATHS_INVALID_CURSOR_POS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Position cursor so that path does not intersect with component.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>48</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_PATHS_FIGURE_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error finding database figure at chosen location.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>49</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_PATHS_BUFFER_EMPTY</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+None of the selected items was valid for the selected operation. Note that paths with the FIXED property cannot be edited or moved.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>51</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_WIREBOND_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error finding wire bond information at chosen location.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>52</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_PATH_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error finding path information.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>54</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_SEGMENT_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error finding database segment.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>55</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_PADSTACK_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No padstack definitions available for use as bond fingers.
+    </Desc>
+    <ExtDesc>
+A padstack may only be used for a bond finger if it has only a single conductor
+layer pad (it may also possess soldermask, dielectric, etc. pads), and that
+pad is defined on either the top or bottom surface substrate layer. If the
+wirebond_via_padst_only environment variable is enabled, an additional 
+restriction is imposed in that the padstack definition must also be in the
+available vias list (Constraint Manager, Physical Constraints worksheet). 
+
+No padstacks were located in this design that matched all the above criteria.
+
+To fix this problem, 
+  1. Use the Tools -&gt; Padstack -&gt; Modify Design Padstack command to edit and
+     correct a padstack in your design. 
+  2. Use the stand-alone pad_designer command to create a new library padstack
+     to be used in this and other designs, then load the padstack into the
+     current drawing.
+  3. Use the Route -&gt; Wirebond -&gt; Select / Add command, select a pin, and use
+     the options form &quot;Add&quot; button for bond fingers to define a new finger 
+     padstack on the fly and have it added to your design. 
+
+NOTE: As of the 16.0 release of Cadence IC Packaging tools, bond finger padstacks are
+no longer required to have connection pads on the DIE type layers above the 
+substrate, as the bond wires themselves span between the die pad and bond finger
+layers.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>56</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_PADSTACK_ERROR_UNIQUE_NAME</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error finding a unique name for new padstack.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>59</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_UPREV_REQUIRED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Design contains old version of wire bond information. Run &apos;wirebond uprev&apos; then try again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>60</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_SHAPE_MULTI_ASSIGN</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Multiple (%d) shapes selected for net assignment. Only the first shape will be modified. It has been highlighted.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>61</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_INVALID_DEFAULT_ENV_ACTION</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+An invalid string was read from the env file regarding default actions for &apos;%s&apos; object type.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>62</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_SHAPE_NOT_RING</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Selected shape(s) are not on a power/ground net and therefore may not be acted on by this command.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>63</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_DESIGN_NO_PATHS_EXIST</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Design does not contain any guide path. Only Equal Wire Length, Free Placement, and Direct Connection patterns are possible.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>64</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_BMS_BUFFER_EMPTY</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No valid objects can be found in selected buffer for this command.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>66</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_INFO_PIN_NO_WB_PROPERTY</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Ignoring pins and nets with the NO_WIREBOND property.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>67</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_INFO_PIN_NO_PAD_ON_LAYER</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Selected pins do not have a pad on selected layer.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>68</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_INFO_SELECT_OBJECT_STATE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select object(s) for wire bonding operation.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>69</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_INFO_SELECT_WB_REFERENCE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select reference wire bond. Note that reference wire bond must be on a guide path and not freely-placed.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>70</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_INFO_SELECT_POPUP_STATE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Right-click to select type of wire bonding operation.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>71</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_INFO_SELECT_SH_AREA_STATE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Define the area of the shape(s) to modify.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>72</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_INFO_FINISH_OPERATION</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Finish current wire bonding operation before starting next series of edits.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>73</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_INFO_ELEMENT_SELECTION</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+&apos;%s&apos; selected.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>74</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_INFO_PATHS_SELECTED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+&apos;%d&apos; guide paths selected.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>75</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_INFO_PATH_CREATED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Guide Path(s) created. Configure next guide path or select new objects to be acted upon.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>76</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_INFO_DEST_PATHS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select path(s) to split to or to merge to.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>77</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_ADD_PIN_ALREADY_BONDED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Wire bond ADD: One or more of the selected pins already have a bond wires/fingers connected. Only pins with no wire bonds can be selected for ADD. The ADD operation will continue, ignoring any selected pins that are already connected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>78</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_CREATE_RING_MULTI_NET</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+All fingers selected for create ring operation must be on same net. Reselect fingers.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>79</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_CREATE_RING_MULTI_LAYER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+All fingers selected for create ring operation must be on the same layer. Reselect fingers.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>80</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_NUMBER_SWAPS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%d wire bonds swapped during pass %d.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>81</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_CENTER_SKIP_SAME_PATH</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Wire bonds whose neighbors are not on the same path will have their wires centered.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>82</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_NUMBER_CENTERED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%d wire bonds were adjusted such that their wires are centered relative to neighboring wire bonds. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>83</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_CANT_PLACE_NO_PATH</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to find a path on which to place a wire bond finger.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>84</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_NO_PLACEMENT_POSSIBLE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to find a placement point on a path for the current wire bond.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>85</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_MUST_BE_FREE_PLACEMENT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+In order to place fingers on points not on paths, Finger Pattern style must be set to FREE PLACEMENT.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>86</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_MISSING_ERROR_MESSAGE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error occurred but error message not available.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>87</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_DIRECT_CON_NOT_SUPPORTED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Direct Connection pattern type not supported.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>88</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_NEED_PATH_PATTERN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Set Finger Pattern style to one of Equal Length, Orthogonal, or On Path.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>89</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_SELECTED_NOT_ON_SAME_SIDE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+For this operation, all selected wire bonds must belong to the same side of the die.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>90</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_ERROR_WRONG_WB_REFERENCE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No valid reference wire bond was selected. The reference wire bond has to be from the initial set of wire bonds selected, and cannot be freely-placed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>91</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_RC_PATHS_NOT_MATCH</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Routing channels can only be added to a set of bond fingers that are on the same guide path.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>92</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_RC_INVALID_FINGER_SIDE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid side to bond finger encountered.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>93</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_RC_ATTRIBUTE_ADDED_SUCCESS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Routing channel attributes have been successfully added to selected bond fingers.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>94</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_RC_ATTRIBUTE_DEL_SUCCESS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Routing channel attributes have been successfully deleted from selected bond fingers.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>96</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_DIRECTCON_NO_DEST_PINS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+No valid destination pins were found for the selected items.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>97</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_DIRECTCON_NO_SELECT_PINS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+No selected wire bonds found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>98</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_DIRECT_CON_NO_DEST_PINS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No available destination pins found for direct connection. Select different pins or change your pattern style to proceed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>99</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_RECONN_NO_DEST_FINGERS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No suitable fingers found for the currently selected %s. Enable connection to wired fingers or make a new selection to proceed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>100</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_MERGE_SHAPE_FILTERED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Bond fingers shape overlays must be deleted by selecting the finger objects.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>101</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_RESPACE_MULTI_PATHS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Fingers from multiple guide paths selected. Respacing may only be done along a single path.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>102</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_RESPACE_MIN_ITEMS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Minimum of three bond fingers must be selected for a respace operation. Select additional fingers.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>103</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_XML_NOT_VALID_STRING</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid string value %s read from XML file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>104</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_XML_NOT_VALID_ELEMENT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid element %s found in XML file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>105</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_XML_INIT_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Initialization to read XML file failed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>108</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_XML_BAD_EXPORT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error exporting to XML file %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>109</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_XML_EXPORT_SUCCESS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Export to XML file %s successful.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>110</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_XML_BAD_IMPORT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error importing XML file %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>111</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_XML_IMPORT_SUCCESS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Import of XML file %s successful.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>112</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_XML_IMPORT_RECONNECT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+To instantiate the bond wires for any of the imported bond fingers, use the &quot;Reconnect&quot; command of the wire bonding tool.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>113</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_XML_DTD_FILE_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot find the DTD file (cdnwb.dtd). Ensure the subdirectory share/pcb/text/tech of your software installation is in your techpath.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>114</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_XML_INVALID_POINT_TYPE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Invalid wire profile point type (%s). Converting to %s style.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>115</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_XML_INVALID_POINT_DELTA</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Negative horizontal/vertical delta not allowed (%s). Converting to 0.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>116</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_XML_INVALID_POINT_ANGLE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Angular value must be between -180 and 180 degrees (%s). Converting to nearest extreme.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>117</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_XML_TECH_NOT_SET</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Wire profile technology file not set. Unable to refresh.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>118</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_XML_TECH_PROFILE_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Wire profile is not specified in the current technology file. Unable to refresh.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>119</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_XML_TECH_FILE_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Technology file not found. Reenter file name and path.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>120</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_PROFILE_DELETE_LAST_POINT</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Wire profile must contain at least one point. Final point not removed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>121</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_PROFILE_INVALID_TYPE_2</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Type 2 is not valid given the current type 1 specified. Both movements would be in the same plane.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>122</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_PROFILE_ADJUST_TYPE_2</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Adjusting second type to remain legal with new point type 1 specification.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>123</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_PROFILE_DEFAULT_TYPE_VAL</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+New type specification. Defaulting value based on new type.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>124</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_ERROR_INVALID_XML_FILE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The XML parser encountered an error while trying to read the specified XML file. Ensure that the file exists in the directory specified and with the correct read access rights.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>125</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_FORM_FIELD_FILE_NAME_EMPTY</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Field File name is empty. Specify a valid file name.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>126</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_FORM_INVALID_PATH</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+File path is invalid. Specify a valid path for the file.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>127</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_FORM_INVALID_FIELD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Encountered invalid field on form. The form file for the current command needs to be updated.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>128</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_MOVE_SELECTED_WB_FIXED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Wire bond MOVE: One or more of the selected wire bonds is marked FIXED. Only non-FIXED wire bonds can be selected for MOVE. The MOVE operation will continue, ignoring any FIXED wire bonds.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>129</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_REF_IS_FIXED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Wire bond MOVE: The finger being used as the Reference finger in the group of fingers is FIXED. Therefore it can&apos;t move, and this operation is halted. Select non-FIXED wire bonds only.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>130</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_MERGE_TOO_FAR</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No fingers on the same net found within %lf times the finger to finger spacing requirements. Select same-net fingers that are closer together to perform merge. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>131</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_VIA_NOT_FINGER</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Bond fingers are vias with the BOND_PAD property. Filtering non-finger vias from selection.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>132</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_FINGERS_NO_PATH_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The design contains bond fingers that are not attached to any guide paths. To proceed, change their pattern to &apos;Free placement&apos; or &apos;Equal Wire Length&apos; or add the missing guide paths.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>133</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_NO_PATH_NEAR_FINGER</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Bond fingers associated with paths found that are not near any path. 1 or more guide paths may have been deleted. Recreate guides or strange placement results could occur.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>134</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_WRONG_DIE_ORIENTATION</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to locate suitable die stack layer. Remove any conductor layers located above the die stack layer(s). If none present, run wirebond uprev to correct wirebond dies incorrectly identified as chip-down instead of chip-up.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>135</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_UPREV_WIRE_NO_PROP</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Design contains clines on a die stack layer, that lack the BOND_WIRE property. Add this property on clines that are bond wires then run the wirebond uprev command again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>137</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_EMPTY_SELECT_BUFFER</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No items currently selected. Most likely cause is enabling groups or nets in the find filter but not also checking the specific objects (fingers, pins, or wires) you want selected from the group/net.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>138</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_EMPTY_BUFFER_ADD_MOVE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+None of the selected items is valid for selected operation. Note that Die to die bond wires cannot be moved, and bond wires cannot be added to already bonded pins. Reselect the objects to be acted upon.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>139</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_EMPTY_BUFFER_MIN_DRC</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+None of the selected items is valid for selected operation. Note that wire bonds that are not on a guide path are discarded from the selection. Reselect the objects to be acted upon.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>141</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_CLINE_NOT_WIRE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+One or more clines lack the BOND_WIRE property and are therefore not considered wirebonds. Add the property then reselect the wire.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>142</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_MIDDLE_COMMAND_SELECT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+New command selected in the middle of another command. Exit the current command before proceeding to another command. Unset the current command as default if it is the default command for this object type selection.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>143</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_AUTO_BOND_APD_COMPS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Only one component can be selected for auto bonding in APD. Re-select only one component.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>144</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_AUTO_BOND_SIP_DIESTACK</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Only components belonging to the same die stack can be selected for auto bonding in SIP. Re-select components from the same die stack.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>145</Id>
+    <CDNUSR_DEFINE_NAME>WBCVHMSG_TWO_CIRC_SAME_CENTER</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Tangent Circle to Circle: Circles have same Center.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>146</Id>
+    <CDNUSR_DEFINE_NAME>WBCVHMSG_TWO_CIRC_NO_TANGENT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Tangent Circle to Circle: Circles intersect, inner tangents do not exist. 
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>147</Id>
+    <CDNUSR_DEFINE_NAME>WBCVHMSG_TWO_CIRC_TANGENT_OK</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Tangent Circle to Circle: Tangents exist.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>148</Id>
+    <CDNUSR_DEFINE_NAME>WBCVHMSG_POINT_IS_CIRC_CENTER</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Tangent Point to Circle: Point is circle center.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>149</Id>
+    <CDNUSR_DEFINE_NAME>WBCVHMSG_POINT_IS_INSIDE_CIRC</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Tangent Point to Circle: Point is inside circle.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>150</Id>
+    <CDNUSR_DEFINE_NAME>WBCVHMSG_POINT_IS_ON_CIRC</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Tangent Point to Circle: Point is on circle boundary.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>151</Id>
+    <CDNUSR_DEFINE_NAME>WBCVHMSG_POINT_CIRC_TANGENT_OK</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Tangent Point to Circle: Tangents exist.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>152</Id>
+    <CDNUSR_DEFINE_NAME>WBCVHMSG_CANT_ALLOC</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to allocate memory.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>153</Id>
+    <CDNUSR_DEFINE_NAME>WBCVHMSG_CANT_GET_PT_OUT_POLY</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Can&apos;t find point on union polygon outside convex polygon.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>154</Id>
+    <CDNUSR_DEFINE_NAME>WBCVHMSG_CANT_EXPAND_WBPAD</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cannot create expanded polygon around bond finger.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>155</Id>
+    <CDNUSR_DEFINE_NAME>WBCVHMSG_CANT_CONVEX_HULL</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Can&apos;t create convex hull around neighboring bond fingers.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>156</Id>
+    <CDNUSR_DEFINE_NAME>WBCVHMSG_CANT_MERGE_POLYGONS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Can&apos;t merge convex polygon with current union.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>157</Id>
+    <CDNUSR_DEFINE_NAME>WBCVHMSG_CANT_DRAW_POLYGON</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Can&apos;t draw polygon on screen.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>158</Id>
+    <CDNUSR_DEFINE_NAME>WBCVHMSG_CANT_GET_POLY_FOR_PAD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Can&apos;t get polygon for bond finger.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>159</Id>
+    <CDNUSR_DEFINE_NAME>WBCVHMSG_CANT_CONVERT_POLYGON</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Can&apos;t convert polygon from integer to real.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>160</Id>
+    <CDNUSR_DEFINE_NAME>WBCVHMSG_CANT_EXPAND_POLYGON</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot expand polygon.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>161</Id>
+    <CDNUSR_DEFINE_NAME>WBCVHMSG_CANT_FIND_REFERENCE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Can&apos;t find a die in the design to use as a reference for the selected bond fingers.
+    </Desc>
+    <ExtDesc>
+When there is no die instantiated in the design, you must set a reference point so
+the fingers can be properly sorted. You do this by 
+   &quot;set WBSOLDERMASK_REFX=-&lt;x_coord-&gt;&quot; and
+   &quot;set WBSOLDERMASK_REFY=-&lt;y_coord-&gt;&quot;
+where x_coord and y_coord is the location of where the center of the die 
+will eventually be.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>162</Id>
+    <CDNUSR_DEFINE_NAME>WBCVHMSG_ERROR_UNION_POLYGONS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error encountered during union of two polygons.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>163</Id>
+    <CDNUSR_DEFINE_NAME>WBAXLMSG_INVALID_PARENT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s: Invalid parent supplied. Not a symbol instance.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>165</Id>
+    <CDNUSR_DEFINE_NAME>WBAXLMSG_MISSING_RING_LOCATION</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s: Connection to power/ground ring requires explicit location on ring.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>166</Id>
+    <CDNUSR_DEFINE_NAME>WBAXLMSG_BAD_WIRE_END</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s: Invalid bond wire %s object.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>167</Id>
+    <CDNUSR_DEFINE_NAME>WBAXLMSG_BAD_WIRE_PHYSICAL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s: Bad wire %s supplied.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>168</Id>
+    <CDNUSR_DEFINE_NAME>WBAXLMSG_BAD_FINGER_PHYSICAL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s: Bad finger %s supplied.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>169</Id>
+    <CDNUSR_DEFINE_NAME>WBAXLMSG_BAD_CONSTRAINT_NAME</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s: Unrecognized constraint name (%s).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>170</Id>
+    <CDNUSR_DEFINE_NAME>WBAXLMSG_BAD_CONSTRAINT_LAYER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s: Invalid layer specified for constraint.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>171</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_UPREV_WIRE_PROFILE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Note that there are significant changes in bond wire definitions for this new release. It is advisable to run through the wirebond profile editor to configure the wire profiles before running the wire bond design.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>172</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_UPREV_LOG_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Uprev found some database objects which could not be uprevved, but could not create a log file to explain the problem. Check that full write permissions exist for the current directory.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>173</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_UPREV_WIRE_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Uprev could not convert at least one wire to the new bond wire model. Check the %s file for more details.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>174</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_RECONN_PICK_FINGERS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Place bond wires on the existing bond fingers they should be connecting to.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>175</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_DEFAULT_PAD_QUESTIONABLE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No oblong or rectangular padstacks available for use as default finger padstack.
+    </Desc>
+    <ExtDesc>
+Most bond fingers are created as either oblong or rectangular shapes, oriented in 
+the horizontal direction (facing &quot;east&quot; with width greater than height). No 
+padstack definitions were found in this design matching those characteristics.
+
+While this is not an error depending on the technology rules for this design, 
+it is often an indication that some padstack definitions are missing. These may
+be available in your padstack library or need to be created specifically for
+this design. This can be done in one of several manners:
+  1. Use the Tools -&gt; Padstack -&gt; Modify Design Padstack command to edit and
+     correct a padstack in your design. 
+  2. Use the stand-alone pad_designer command to create a new library padstack
+     to be used in this and other designs, then load the padstack into the
+     current drawing.
+  3. Use the Route -&gt; Wirebond -&gt; Select / Add command, select a pin, and use
+     the options form &quot;Add&quot; button for bond fingers to define a new finger 
+     padstack on the fly and have it added to your design. 
+     
+If the &quot;wirebond_via_padst_only&quot; environment variable is enabled, an additional 
+restriction is imposed that the padstack definition must also be in the
+available vias list (Constraint Manager, Physical Constraints worksheet).
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>176</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_UPREV_PAD_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Uprev found and modified one or more padstacks. Check the %s file for more details.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>178</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_CANCEL</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Operation aborted through CANCEL selection.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>179</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_POPGUIDE_HAS_FINGERS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Filtering guide paths which already have fingers on them. 
+    </Desc>
+    <ExtDesc>
+Guide paths which already have fingers on them are not eligible for the populate
+with fingers command. This command places as many fingers on the selected guide
+path(s) as possible, without consideration for other objects on the guide or on
+neighboring guides. 
+
+If fingers already exist on the selected path, DRC errors would result. Therefore,
+these paths have been removed from the selection automatically.
+    </ExtDesc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>181</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_POPGUIDE_FINGERS_CREATED_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Populated guide path %d with %d fingers.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>182</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_POPGUIDE_DRCS_CREATED_1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Current settings will result in %d new bond finger related DRCs in the design.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>182</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_STUBS_DRCS_CREATED_1</CDNUSR_DEFINE_NAME>
+    <Category>I
+        <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Current settings will result in %d more DRCs in the design.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+    <Msg>
+    <Id>184</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_ARC_OFFSET_NOT_ALLOWED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+The linear offset is not allowed for arc guide paths. To select this option,
+unset the Radius check box to create a linear guide path.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>185</Id>
+    <CDNUSR_DEFINE_NAME>ICPMSG_PROFILE_CV_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+The profile definition specified does not exist in the database. Make sure 
+that the profile is defined in the database first, then re-try using it.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>186</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_DANGLING_WIRE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+The bond wire from %s to %s is not connected at both ends. It will be ignored during placement.
+    </Desc>
+    <ExtDesc>
+Bond wires must be connected to valid objects on both ends at all times in order
+to be properly processed by the wirebond placement engine, 3D Viewer, 3D Field 
+Solver, and other commands. This wire is currently not connected to objects on both
+ends and thus will not be used by the wire bonding tool.
+
+Correct this issue by deleting the wire. If this connection is still required, 
+add a new wire between the two objects using the add wirebond command.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>187</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_DUPLICATE_PATHS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Identical overlapping guide paths exist at %s. It is recommended you delete one of these guide paths or unexpected results may occur.
+    </Desc>
+    <ExtDesc>
+If multiple guide paths exist at the same location in the database, certain 
+wirebonding commands, such as redistribute fingers across guide paths or
+populate guide path with fingers may not operate as you would expect. This is
+because they tool is required to use all the guide paths that exist in the 
+region of the design under consideration.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>188</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_FINGER_PAD_SIZES</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Bond finger padstack %s was defined with height exceeding width. 
+    </Desc>
+    <ExtDesc>
+Bond fingers should normally be created with their width exceeding their height for 
+proper orientation on the substrate. The width of the pad definition is the dimension 
+of the pad shape along the bond wire axis when placed.
+
+Defining a finger with height greater than width is normally only desirable when 
+the padstack will be used as a multi connection point finger with wire tack 
+points arranged side by side. 
+
+Do you wish to proceed?
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>189</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_UPREV_TACKPOINTS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Bond finger tack point shapes have been updated. The bond wires now connect directly to the finger pad.
+    </Desc>
+    <ExtDesc>
+Prior to 16.2, adjusting the end point for a bond wire required the addition of 
+a shape the same size as the bond finger pad. The wire connected to the shape, 
+and the shape connected to the finger in order to maintain full database 
+connectivity.
+
+This is no longer necessary. The bond wire can connect directly to the pad,
+anywhere inside the pad boundary. As a result, these shapes have been 
+automatically removed from your design. 
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>191</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_CREATE_RING_NO_FINGERS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+No power/ground bond fingers selected. Re-select fingers to create a ring segment from.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+  
+  <Msg>
+    <Id>192</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_FINGER_PAD_INVALID</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Padstack %s is not legal for use as a bond finger padstack. Resetting to default finger padstack.
+    </Desc>
+    <ExtDesc>
+Only single-layer padstacks on an exposed substrate layer are legal for use as bond fingers. 
+If the padstack definition is later modified to exist on more than one layer, the wire bonding
+commands will reset this to the default bond finger padstack to ensure the design integrity
+is preserved. 
+
+If the current padstack needs to be used, cancel out of the current command and modify the
+padstack to be a single layer padstack, then run the command again.
+    </ExtDesc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>193</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_CREATE_WIRE_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Unable to create bond wire. Most probable cause is different nets for start and end owners.
+    </Desc>
+    <ExtDesc>
+Bond wires connect items on different 2D layers together. However, these items must still be
+on the same net or else a connection cannot be electrically made (this would be considered
+a short, which is not allowed). 
+
+To correct this issue, ensure that both items are on the same net, then create the wire.
+    </ExtDesc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+  
+  <Msg>
+    <Id>194</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_CNS_READ_ONLY</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Values on this form are only editable in feasibility mode. Make formal changes in Constraint Manager.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>195</Id>
+    <CDNUSR_DEFINE_NAME>WBCVHMSG_USING_DIE_CENTER</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Using die center (%d,%d) as the reference for angular sorting of selected bond fingers.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>196</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_DELETE_FING_W_WIRE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Delete bond finger if last connected bond wire is deleted?
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>197</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_LABEL_SAVE_CHANGES</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Changing the active component will save the current settings to the database. Do you wish to save changes and proceed?
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>198</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_SHAPE_ASSIGN_VOLTAGE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+The selected net does not have a voltage property identifying it as a power/ground net. Assign a voltage now?
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>199</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_PROFILE_REFRESH</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Refreshing database profiles from selected XML file.
+    </Desc>
+    <ExtDesc>
+Refresh existing database profiles from XML file?
+
+If you answer no, profiles defined in both the XML file and database will keep the
+current database definition.
+    </ExtDesc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>200</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_PROFILE_NO_CERTIFY</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+The selected profile has been marked as uncertfied. It has been locally changed in this design.
+    </Desc>
+    <ExtDesc>
+You are editing a certified wire profile.
+
+This will mark the profile as no longer being certified until such time 
+as you refresh it from the master definitions file. Do you wish to proceed?
+    </ExtDesc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>201</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_PROFILE_PURGE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+This will purge all profiles not currently in use by any wires in the design. Do you wish to proceed?
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>202</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_PROFILE_RANGE_VIOL_3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Value is incompatible with required range / stepping (%s - %s, %s increments).
+    </Desc>
+    <ExtDesc>
+Modifying a bond wire profile&apos;s definition outside the vendor&apos;s specified
+tolerance values or stepping increments will cause the profile to be marked as 
+uncertified until such time as you refresh it from the master definitions file. 
+
+Do you wish to proceed?
+    </ExtDesc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>203</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_SWAP_NO_ORTHO</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Filtering selected wire bonds which are orthogonally bonded. 
+    </Desc>
+    <ExtDesc>
+Wire bonds which have been orthogonally bonded to a guide path have only
+one satisfying placement location on that path. To resolve crosses with
+these types of wire bonds, you must first change them to an on-path
+or free placement style. 
+    </ExtDesc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>204</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_SPACE_MERGE_FINGERS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Fingers have been respaced farther than the maximum allowed merged finger spacing.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>205</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_CROSSES_SHOVE_PATH</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Crossed bond wires detected. Shove moved has been defaulted to on path mode. 
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>206</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_FILTER_NON_STANDARD</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Filtering non-standard bond wires from the selected items. 
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>207</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_EMPTY_BUFFER_CHANGE_CHAR</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+None of the selected items is valid for selected operation. Note that non-standard bond wires should be modified using the nonstandard wirebond command.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>208</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_ERROR_NULL_OPTIONS_STRUCT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No valid option was specified for wire bond placement. A bad call was made inside the wire bonder.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>209</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_CREATE_WIRE_FAIL_IMPORT</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Unable to create bond wire with ends %s %s. Most probable cause is the recipient die or die stack does not have any valid objects to connect to the wire end points.
+The wire has been discarded.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>210</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_RECONN_BOTH_DUMMY_NET</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Other pin(s) already connected to bond finger are on dummy net, as is selected pin. Real nets must be assigned for all aspects of system to work properly.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>211</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_PROFILE_NAME_EXISTS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Profile name already exists. Bond wire profile names must be unique.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>212</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_SHOVE_NO_DRCS_1</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Bubble is set to "%s" and allow DRCs is disabled in the global settings. Results may not be optimal or complete.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>213</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_LABEL_PROP_DATA_TYPE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+The property definition for user property WB_PATH_TIER_INDEX has the wrong type. It must be of type integer. Property will be ignored.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>214</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_SHAPE_NOT_SAME_RING</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Selected shape(s) are not part of the same original ring shape. Unable to resize these ring piece(s).
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>215</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_SHAPE_NO_HEAL_SHAPE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Selected shape(s) form a split ring with no associated original boundary. Unable to resize these ring piece(s).
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>216</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_XML_SYNTAX_ERROR_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error reading file: %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+<Msg>
+    <Id>217</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_MAX_BONDPADS_EXCEEDED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The maximum number of bond pads supported in Allegro PCB Designer for a single chip (100) has been exceeded. Allegro Package Designer or Cadence SIP Layout may be used for designs requiring more die pads than supported in Allegro PCB Designer.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  <Msg>
+    <Id>218</Id>
+    <CDNUSR_DEFINE_NAME>WBMSG_FINGERS_IN_RECURSIVE_PATTERN_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Some of wires have fingers alignment set as "Match CW Neighbor" or "Match CCW Neighbor". This creates recursive pattern, and condition cannot be met. One of the fingers location is %s.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>219</Id>
+    <CDNUSR_DEFINE_NAME>WBCVHMSG_CANT_EXPAND_WBPAD_CLINE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cannot create expanded polygon around cline.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+</MsgFile>

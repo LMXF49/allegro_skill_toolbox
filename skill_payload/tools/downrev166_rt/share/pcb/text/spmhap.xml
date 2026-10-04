@@ -1,0 +1,263 @@
+<MsgFile>
+
+  <Msg>
+    <Id>1</Id>
+    <CDNUSR_DEFINE_NAME>APINMSG_ILLINC</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal increment.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>2</Id>
+    <CDNUSR_DEFINE_NAME>APINMSG_NOPAD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No padstack specified.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>3</Id>
+    <CDNUSR_DEFINE_NAME>APINMSG_PROBLOADPAD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Problem loading '%s.pad'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>4</Id>
+    <CDNUSR_DEFINE_NAME>APINMSG_NOPINNUM</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Adding pin(s) with NO pin number.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>5</Id>
+    <CDNUSR_DEFINE_NAME>APINMSG_ILLPNUM</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Only numeric/alpha-numeric pin numbers allowed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>6</Id>
+    <CDNUSR_DEFINE_NAME>APINMSG_TOOHIGH</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pin number cannot expand beyond 6 digits.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>7</Id>
+    <CDNUSR_DEFINE_NAME>APINMSG_ILLPAD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal pad name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>8</Id>
+    <CDNUSR_DEFINE_NAME>APINMSG_NOSIZDEF</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+This size has not been defined.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>9</Id>
+    <CDNUSR_DEFINE_NAME>APINMSG_ILLTSIZE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal text size.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>10</Id>
+    <CDNUSR_DEFINE_NAME>APINMSG_NOTXTALL</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+No pin number processing in mechanical symbol.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>11</Id>
+    <CDNUSR_DEFINE_NAME>APINMSG_ILLSPACE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal pin spacing.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>12</Id>
+    <CDNUSR_DEFINE_NAME>APINMSG_USINGPAD</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Using '%s.pad'.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>13</Id>
+    <CDNUSR_DEFINE_NAME>APINMSG_ILLTXTOFF</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal text offset.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>14</Id>
+    <CDNUSR_DEFINE_NAME>APINMSG_ILLNUMOFPINS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal number of pins
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>15</Id>
+    <CDNUSR_DEFINE_NAME>APINMSG_GET_ORIGIN</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick the polar origin.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>16</Id>
+    <CDNUSR_DEFINE_NAME>APINMSG_ADD_PIN_EXIT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Exiting from Add Pin.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>17</Id>
+    <CDNUSR_DEFINE_NAME>APINMSG_PLACE_PIN</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick pin location.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>18</Id>
+    <CDNUSR_DEFINE_NAME>APINMSG_ILLEGAL_NUM_COLS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal number of columns.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>19</Id>
+    <CDNUSR_DEFINE_NAME>APINMSG_ILLEGAL_NUM_ROWS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal number of rows.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>20</Id>
+    <CDNUSR_DEFINE_NAME>APINMSG_ILLEGAL_COUNT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal polar count.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>21</Id>
+    <CDNUSR_DEFINE_NAME>APINMSG_TEXT_OUT_OF_EXT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pin number will expand outside of extents.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>22</Id>
+    <CDNUSR_DEFINE_NAME>APINMSG_PIN_OUT_OF_EXT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pin will extend outside of extents.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>23</Id>
+    <CDNUSR_DEFINE_NAME>APINMSG_PIN_ROTATED_AT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pin rotated by '%s' degrees.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>24</Id>
+    <CDNUSR_DEFINE_NAME>APINMSG_ILL_ANG_POLAR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal angle for polar add.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+</MsgFile>

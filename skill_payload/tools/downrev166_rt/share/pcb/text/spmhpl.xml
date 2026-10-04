@@ -1,0 +1,320 @@
+<MsgFile>
+
+  <Msg>
+    <Id>1</Id>
+    <CDNUSR_DEFINE_NAME>PLMSG_NOMORECOMP</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+No more components. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>2</Id>
+    <CDNUSR_DEFINE_NAME>PLMSG_SYMBOLNOTFOUND</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Symbol definition not found.  Check library.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>3</Id>
+    <CDNUSR_DEFINE_NAME>PLMSG_PLACED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Component already placed.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>4</Id>
+    <CDNUSR_DEFINE_NAME>APLMSG_MALLOC</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Malloc error.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>5</Id>
+    <CDNUSR_DEFINE_NAME>APLMSG_NOGRD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+A placement grid was not found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>6</Id>
+    <CDNUSR_DEFINE_NAME>APLMSG_NOKEEP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Missing placement keepin rectangle.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>7</Id>
+    <CDNUSR_DEFINE_NAME>APLMSG_NOROOM</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Room %s was not found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>8</Id>
+    <CDNUSR_DEFINE_NAME>APLMSG_RMGRD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Subclass of room %s doesn't match the placement grid.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>9</Id>
+    <CDNUSR_DEFINE_NAME>APLMSG_GRDSIDE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Grid subclass doesn't match the requested side.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>10</Id>
+    <CDNUSR_DEFINE_NAME>APLMSG_RMSIDE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Subclass of room %s doesn't match the requested side.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>11</Id>
+    <CDNUSR_DEFINE_NAME>APLMSG_UNPLRM</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No unplaced component matches active room %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>12</Id>
+    <CDNUSR_DEFINE_NAME>APLMSG_PLTAG</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Unplaced components are not PLACE TAGGED.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>13</Id>
+    <CDNUSR_DEFINE_NAME>APLMSG_PREPLAC</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No preplaced component is in area you are placing.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>14</Id>
+    <CDNUSR_DEFINE_NAME>APLMSG_RMMATCH</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Room match error = %d
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>15</Id>
+    <CDNUSR_DEFINE_NAME>APLMSG_PAKOTL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error = %d in getting package outline.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>16</Id>
+    <CDNUSR_DEFINE_NAME>APLMSG_NONET</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Net %s is not found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>17</Id>
+    <CDNUSR_DEFINE_NAME>APLMSG_PLPARM</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error %d fetching placement parameter record.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>18</Id>
+    <CDNUSR_DEFINE_NAME>APLMSG_NETWT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error %d while attempting to set net weights.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>19</Id>
+    <CDNUSR_DEFINE_NAME>APLMSG_NOUNPL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+There are no unplaced components.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>20</Id>
+    <CDNUSR_DEFINE_NAME>APLMSG_NOPLTAG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+PLACE TAG property not found on unplaced components.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>21</Id>
+    <CDNUSR_DEFINE_NAME>APLMSG_PLINSPARM</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error = %d in getting insight parameters.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>22</Id>
+    <CDNUSR_DEFINE_NAME>APLMSG_PUTPARM</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error = %d in putting insight parameters.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>23</Id>
+    <CDNUSR_DEFINE_NAME>APLMSG_TOOMANYNET</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Too many nets were chosen.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>24</Id>
+    <CDNUSR_DEFINE_NAME>APLMSG_DBIALL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error in initializing database record.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>25</Id>
+    <CDNUSR_DEFINE_NAME>APLMSG_EXTNTKEEP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error in calculating extents of keepin.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>26</Id>
+    <CDNUSR_DEFINE_NAME>APLMSG_EXTNTAREA</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error in calculating extents of active area.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>27</Id>
+    <CDNUSR_DEFINE_NAME>APLMSG_MASKKEEP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal Keepin element mask.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>28</Id>
+    <CDNUSR_DEFINE_NAME>APLMSG_MASKROOM</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal element mask for room %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>29</Id>
+    <CDNUSR_DEFINE_NAME>APLMSG_OVLAP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error = %d during overlap testing.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>30</Id>
+    <CDNUSR_DEFINE_NAME>APLMSG_RESULTS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Best placement results have been put in %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>31</Id>
+    <CDNUSR_DEFINE_NAME>APLMSG_WARNINGS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+There were %d warnings reported in the log file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+</MsgFile>

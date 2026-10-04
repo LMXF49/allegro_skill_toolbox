@@ -1,0 +1,1292 @@
+<MsgFile>
+
+  <Msg>
+    <Id>1</Id>
+    <CDNUSR_DEFINE_NAME>AXLSKILL_MSG_INVALID</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Message with identifier of %s either does not exist or cannot be issued from Skill.
+    </Desc>
+    <ExtDesc>
+This is an internal software issue that users should report to Cadence as there is
+nothing that users can do to resolve the situation.
+
+Either the message identifier has been misspelled or incorrectly specified and does not
+exist at all, or it does in fact exist but cannot be issued from Skill. If a message is
+to be able to be issued from Skill, it must either exist in the SPMHSK message module
+for general Skill messages, or another message module where that module has been
+specifically flagged to be Skill messaging capable as well.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>2</Id>
+    <CDNUSR_DEFINE_NAME>AXLSKILL_MSG_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+There was an unknown internal system error trying to retrieve message %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>3</Id>
+    <CDNUSR_DEFINE_NAME>AXLSKILL_MSG_PARAMS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The substitution parameters supplied for message %s do not match what is expected.
+    </Desc>
+    <ExtDesc>
+This could happen for a number of reasons:
+
+1. The number of substitution parameters supplied do not match the number that is expected.
+   Either not enough parameters were supplied or too many.
+2. A text string parameter was found when the message was expecting a number substitution.
+3. A numeric parameter was found when the message was expecting a text string substitution.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>4</Id>
+    <CDNUSR_DEFINE_NAME>VARIANTS_NOT_VARIANTS_FILE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+File '%s' does not appear to be a design variants file.
+    </Desc>
+    <ExtDesc>
+1. Check with the schematic designer that they gave you the correct file.
+2. Check the documentaion that format of selected file matches the required format.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>5</Id>
+    <CDNUSR_DEFINE_NAME>VARIANTS_FILE_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Variants file '%s' not found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>6</Id>
+    <CDNUSR_DEFINE_NAME>VARIANTS_GENERATING_BOM</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Generating Bill-of-Material report '%s' for design variant '%s' ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>7</Id>
+    <CDNUSR_DEFINE_NAME>VARIANTS_TEMP_FILE_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot find temporary data file '%s' for input.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>8</Id>
+    <CDNUSR_DEFINE_NAME>VARIANTS_ADDING_CNI_SECTION</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Adding 'Components Not Installed' section ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>9</Id>
+    <CDNUSR_DEFINE_NAME>VARIANTS_TEMP_FILE_NOT_OPENED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot open temporary data file '%s' for output.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>10</Id>
+    <CDNUSR_DEFINE_NAME>VARIANTS_REPORT_FILE_NOT_OPENED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot open report output file '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>11</Id>
+    <CDNUSR_DEFINE_NAME>VARIANTS_VARIANT_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The '%s' design variant was not found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>12</Id>
+    <CDNUSR_DEFINE_NAME>VARIANTS_COMPONENT_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Component '%s' was not found in the design ... ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>13</Id>
+    <CDNUSR_DEFINE_NAME>VARIANTS_GENERATING_AD</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Generating assembly drawing %s for design variant '%s' ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>14</Id>
+    <CDNUSR_DEFINE_NAME>VARIANTS_USING_ASSEMBLY</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+using assembly    data
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>15</Id>
+    <CDNUSR_DEFINE_NAME>VARIANTS_USING_PLACE_BOUND</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+using place bound data
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>16</Id>
+    <CDNUSR_DEFINE_NAME>VARIANTS_UNSUPPORTED_OBJECT</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Unsupported '%s' found on layer %s ... ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>17</Id>
+    <CDNUSR_DEFINE_NAME>VARIANTS_AD_ALREADY_EXISTS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Variant assembly drawing %s already exists. Do you want to overwrite it?
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>18</Id>
+    <CDNUSR_DEFINE_NAME>NCLEGEND_IGNORE_SEPARATE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Template file request for separate slot hole legend ignored with 'By layer' legend.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>19</Id>
+    <CDNUSR_DEFINE_NAME>NCLEGEND_FAILED_TO_CREATE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Failed to create legend %s ... layers %s to %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>20</Id>
+    <CDNUSR_DEFINE_NAME>NCLEGEND_CREATED_LEGEND</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Legend %d: %s ... layer %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>21</Id>
+    <CDNUSR_DEFINE_NAME>NCLEGEND_CREATED_LEGEND_SLOTS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Legend %d: %s ... slot holes
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>22</Id>
+    <CDNUSR_DEFINE_NAME>NCLEGEND_CREATED_LEGEND_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Legend %d: %s ... layers %s to %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>23</Id>
+    <CDNUSR_DEFINE_NAME>NCLEGEND_LEGEND_COUNT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+There were %d drill legends generated.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>24</Id>
+    <CDNUSR_DEFINE_NAME>NCLEGEND_LEGEND_COUNT_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+There were %d drill legends that FAILED to create.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>25</Id>
+    <CDNUSR_DEFINE_NAME>NCLEGEND_DESIGN_EXTENTS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Design extents not sufficient, select origin again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>26</Id>
+    <CDNUSR_DEFINE_NAME>NCLEGEND_NO_TEMPLATE_FILE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot find the legend template file '%s'
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>27</Id>
+    <CDNUSR_DEFINE_NAME>NCLEGEND_CANCELLED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Drill Legend command cancelled.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>28</Id>
+    <CDNUSR_DEFINE_NAME>NCLEGEND_DBADD_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+A database add error occurred while drawing the drill chart.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>29</Id>
+    <CDNUSR_DEFINE_NAME>NCLEGEND_DBADD_CONTINUE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Ignoring the error and continuing drawing the rest of the drill chart.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>30</Id>
+    <CDNUSR_DEFINE_NAME>NCLEGEND_CANNOT_OPEN_LOG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot open the log file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>31</Id>
+    <CDNUSR_DEFINE_NAME>NCLEGEND_NO_TEMPLATE_FILE_SPEC</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No template file has been specified.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>32</Id>
+    <CDNUSR_DEFINE_NAME>NCLEGEND_TEMPLATE_ERRORS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+There are errors in the template file '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>33</Id>
+    <CDNUSR_DEFINE_NAME>NCLEGEND_USING_TEMPLATE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Using template file '%s' ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>34</Id>
+    <CDNUSR_DEFINE_NAME>NCLEGEND_SYNTAX_ERRORS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Syntax errors detected in the template file, correct and try again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>35</Id>
+    <CDNUSR_DEFINE_NAME>NCLEGEND_BEGIN_PROCESSING</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Begin processing of drill legend template file '%s' ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>36</Id>
+    <CDNUSR_DEFINE_NAME>NCLEGEND_SYNTAX_ERRORS_2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Syntax errors detected in the drill legend template file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>37</Id>
+    <CDNUSR_DEFINE_NAME>NCLEGEND_END_PROCESSING</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+End of drill legend template file processing.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>38</Id>
+    <CDNUSR_DEFINE_NAME>NCLEGEND_CANNOT_FIND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot find drill legend template file '%s'. Cannot proceed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>39</Id>
+    <CDNUSR_DEFINE_NAME>NCLEGEND_IMPROPER_UNITS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Improper units '%s' ... assuming MILS.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>40</Id>
+    <CDNUSR_DEFINE_NAME>NCLEGEND_NUMBER_LESS_THAN</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+%s number is less than 1 ... assuming 1.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>41</Id>
+    <CDNUSR_DEFINE_NAME>NCLEGEND_NUMBER_GREATER_THAN</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+%s number is greater than Max Text Block(%d) ... assuming 1.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>42</Id>
+    <CDNUSR_DEFINE_NAME>NCLEGEND_IMPROPER_SIZE_ORDER</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Improper size order '%s' ... assuming Ascending.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>43</Id>
+    <CDNUSR_DEFINE_NAME>NCLEGEND_IMPROPER_ALT_UNITS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Improper alternate units '%s' ... assuming 'mils'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>44</Id>
+    <CDNUSR_DEFINE_NAME>NCLEGEND_IMPROPER_PLATING_ORDER</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Improper plating order '%s' ... assuming PlatedFirst.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>45</Id>
+    <CDNUSR_DEFINE_NAME>NCLEGEND_INCORRECT_COL_TYPE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Incorrect ColumnType of '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>46</Id>
+    <CDNUSR_DEFINE_NAME>NCLEGEND_COL_WIDTH_TOO_SMALL</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Column width for '%s' is too small and may result in text overlap ... assuming %d characters.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>47</Id>
+    <CDNUSR_DEFINE_NAME>NCLEGEND_IMPROPER_COL_TYPE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Column type '%s' does not exist.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>48</Id>
+    <CDNUSR_DEFINE_NAME>NCLEGEND_MULTIPLE_COL_TYPE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Column type '%s' occurs more than once.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>49</Id>
+    <CDNUSR_DEFINE_NAME>NCLEGEND_INCORRECT_COL_DEF</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Incorrect column definition.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>50</Id>
+    <CDNUSR_DEFINE_NAME>NCLEGEND_TITLE_HEIGHT_TOO_SMALL</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Title box height specified is too small such that title text may overwrite the table ... specify at least %f (design units).
+    </Desc>
+    <ExtDesc>
+The ?TitleHeight specified for the height of the title box in the drill legend template
+(.dlt) file being used is too small for the height of the title text itself. The title
+text height is indirectly set by the ?TitleTextBlock specified in the template file.
+Either ?TitleHeight has to be increased or ?TitleTextBlock changed to a text block of
+a smaller height.
+
+Of note is a situation where ?TitleHeight could be too small even without this message
+being issued. The message only applies to the assumption of a single line of title text.
+It is possible however to have multiple lines with the title text. The height of a single
+title line may fit within the box, hence no warning. The combined height of multiple
+lines may not fit though, but still no warning.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>51</Id>
+    <CDNUSR_DEFINE_NAME>NCLEGEND_INCOMPLETE_CUST_DATA</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Incomplete custom data.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>52</Id>
+    <CDNUSR_DEFINE_NAME>NCLEGEND_INVALID_PLATING</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Invalid plating status '%s' ... assuming Plated.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>53</Id>
+    <CDNUSR_DEFINE_NAME>NCLEGEND_NO_HOLESIZE_AND_STATUS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No holesize and status in custom data.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>54</Id>
+    <CDNUSR_DEFINE_NAME>NCLEGEND_NO_UNITS_SPECIFIED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Units are not specified in the template ... assuming design units (%s) and proceeding.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>55</Id>
+    <CDNUSR_DEFINE_NAME>NCLEGEND_DIFFERENT_UNITS_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Design units of %s and template units of %s are different.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>56</Id>
+    <CDNUSR_DEFINE_NAME>NCLEGEND_DIFFERENT_UNITS_2</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Custom data may not match properly because of roundoffs in conversions.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>57</Id>
+    <CDNUSR_DEFINE_NAME>PLOT_NO_STIPPLES_FILE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No '%s' file found for color plotting.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>58</Id>
+    <CDNUSR_DEFINE_NAME>PLOT_NO_CDSPLOTINIT_FILE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No .cdsplotinit printer specification file found in either install, current or user root directory. Would you like to run plotconfig to create this file?
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>59</Id>
+    <CDNUSR_DEFINE_NAME>PLOT_NO_PRINTER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No printer has been specified.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>60</Id>
+    <CDNUSR_DEFINE_NAME>PLOT_NO_FILE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No file has been specified.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>61</Id>
+    <CDNUSR_DEFINE_NAME>PLOT_NO_CDSPLOTINIT_FILE_2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No .cdsplotinit printer specification file found in either install, current or user root directory.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>62</Id>
+    <CDNUSR_DEFINE_NAME>IFF_FILE_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+File was not found. Re-enter or select Cancel to quit.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>63</Id>
+    <CDNUSR_DEFINE_NAME>IFF_CREATE_LAYER_MAP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to create the layer map file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>64</Id>
+    <CDNUSR_DEFINE_NAME>IFF_IGNORE_LINE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Error found on line %d in file ... line ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>65</Id>
+    <CDNUSR_DEFINE_NAME>IFF_CANNOT_OPEN_IFF</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to open the IFF file for reading.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>66</Id>
+    <CDNUSR_DEFINE_NAME>IFF_NO_LAYER_INFO</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No layer information was found in the IFF file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>67</Id>
+    <CDNUSR_DEFINE_NAME>IFF_LAYERS_DO_NOT_MAP</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+IFF layers that do not currently map properly include:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>68</Id>
+    <CDNUSR_DEFINE_NAME>IFF_CIRCUIT_REPLACED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+IFF circuit %s has been replaced.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>69</Id>
+    <CDNUSR_DEFINE_NAME>IFF_CIRCUIT_PLACED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+IFF circuit %s has been placed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>70</Id>
+    <CDNUSR_DEFINE_NAME>IFF_CIRCUIT_EXISTS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+IFF circuit %s already exists in the design. Do you wish to replace it?
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>71</Id>
+    <CDNUSR_DEFINE_NAME>IFF_OBJECT_BAD_LAYER</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+%s found in IFF file with bad IFF layer ... ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>72</Id>
+    <CDNUSR_DEFINE_NAME>IFF_UNSUPPORTED_VERSION</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+IFF version found in file is not supported by this interface.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>73</Id>
+    <CDNUSR_DEFINE_NAME>IFF_UNSUPPORTED_UNITS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Allegro does not support %s units.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>74</Id>
+    <CDNUSR_DEFINE_NAME>IFF_GREATER_RESOLUTION</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+IFF file has greater resolution than the Allegro database such that round off may occur. Do you wish to continue?
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>75</Id>
+    <CDNUSR_DEFINE_NAME>IFF_HFSYMMAP_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Error found on line %d in file hfsymmap.txt ... line ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>76</Id>
+    <CDNUSR_DEFINE_NAME>ICPDEFVS_PICK_START</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Select the cline or via which defines the start of this structure. Adjust
+visibility as necessary to ensure the proper item is selected.
+    </Desc>
+    <ExtDesc>
+The object you choose for the structure origin is used to determine the x,y
+coordinates of the structure's origin as well as the starting layer for the via
+structure. When an instance is later placed in the design, the host item it
+connects to must be defined on this layer.
+
+As a result, if you are defining a structure that spans multiple layers and
+starts on a lower layer of the design, it may be necessary to temporarily
+adjust your layer visibility to ensure that you pick the desired item on the
+correct layer. Failure to do so may result in your new structure not being
+able to be attached to the desired items.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>  
+
+  <Msg>
+    <Id>77</Id>
+    <CDNUSR_DEFINE_NAME>LP_NO_DATA</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No data was found in file '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>78</Id>
+    <CDNUSR_DEFINE_NAME>LP_INPUT_FILE_TYPE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Type of the file must be specified.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>79</Id>
+    <CDNUSR_DEFINE_NAME>LP_RASTER_SUPPORT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Layer %s/%s does not support raster formats.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>80</Id>
+    <CDNUSR_DEFINE_NAME>LP_EMPTY_FILM</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Empty film has been loaded.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>81</Id>
+    <CDNUSR_DEFINE_NAME>LP_FILE_LOADING</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Photoplot file is being loaded ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>82</Id>
+    <CDNUSR_DEFINE_NAME>LP_FILE_COMPLETE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Photoplot file loading completed with no errors.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>83</Id>
+    <CDNUSR_DEFINE_NAME>LP_LAYER_INCOMPATIBLE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Layer %s/%s is incompatible with the selected options.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>84</Id>
+    <CDNUSR_DEFINE_NAME>LP_UPDATING_SUBCLASS_LIST</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Updating the sublcass list ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>85</Id>
+    <CDNUSR_DEFINE_NAME>IRDROP_REFMARK</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Fail to create reference mark symbol.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>86</Id>
+    <CDNUSR_DEFINE_NAME>IRDROP_TARGETMARK</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Fail to create target mark symbol.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>87</Id>
+    <CDNUSR_DEFINE_NAME>IRDROP_FULLROUTED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The net %s has not been fully routed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>88</Id>
+    <CDNUSR_DEFINE_NAME>IRDROP_NOSOURCEPIN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+There is no source pin on net %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>89</Id>
+    <CDNUSR_DEFINE_NAME>IRDROP_NOSINKPIN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+There is no sink pin on net %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>90</Id>
+    <CDNUSR_DEFINE_NAME>IRDROP_NOSINKCURRENT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+There are %d sink pins on net %s without sink current.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>91</Id>
+    <CDNUSR_DEFINE_NAME>IRDROP_CREATEDIR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Fail to create directory %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>92</Id>
+    <CDNUSR_DEFINE_NAME>IRDROP_CREATEREPORT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Fail to create analysis report file %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>93</Id>
+    <CDNUSR_DEFINE_NAME>IRDROP_FINDREPORT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Fail to find analysis report file %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>94</Id>
+    <CDNUSR_DEFINE_NAME>IRDROP_FINDMODEL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Fail to find signal model %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>95</Id>
+    <CDNUSR_DEFINE_NAME>IRDROP_NOSUPPORTMODEL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unsupported subckt statement %s in model %s. Ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+
+  <Msg>
+    <Id>96</Id>
+    <CDNUSR_DEFINE_NAME>SQPI_NOFASTHENRY</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to find loop inductance executable in path %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>97</Id>
+    <CDNUSR_DEFINE_NAME>SQPI_TLSIMFAIL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Problem running Multinode TLSim simulation with the following error:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>98</Id>
+    <CDNUSR_DEFINE_NAME>SQPI_PRECHECK</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot execute multinode TLSim simulation with the following error:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>99</Id>
+    <CDNUSR_DEFINE_NAME>SQPI_NOVRM</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+There is no VRM found on given plan pair %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>100</Id>
+    <CDNUSR_DEFINE_NAME>SQPI_MOREVRM</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+There are more than 1 VRMs found on given plan pair %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>101</Id>
+    <CDNUSR_DEFINE_NAME>SQPI_SCHDECAP_NOCAP</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Schematic Decap (%s) has no capacitance, using default.    
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>102</Id>
+    <CDNUSR_DEFINE_NAME>SQPI_SCHDECAP_NOESR</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Schematic Decap (%s) has no ESR, using default.    
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>103</Id>
+    <CDNUSR_DEFINE_NAME>SQPI_SCHDECAP_NOESL</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Schematic Decap (%s) has no ESL, using default.    
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>104</Id>
+    <CDNUSR_DEFINE_NAME>SQPI_SCHDECAP_DIFFCAP</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Schematic Decap (%s) capacitance (%s) is different from signal model, ignored.    
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>105</Id>
+    <CDNUSR_DEFINE_NAME>SQPI_SCHDECAP_DIFFESR</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Schematic Decap (%s) ESR (%s) is different from signal model, ignored.    
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>106</Id>
+    <CDNUSR_DEFINE_NAME>SQPI_SCHDECAP_DIFFESL</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Schematic Decap (%s) ESL (%s) is different from signal model, ignored.    
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>107</Id>
+    <CDNUSR_DEFINE_NAME>SQPI_SCHDECAP_DIFFPINCOUNT</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Schematic Decap (%s) pin number (%s) is different from signal model, ignored.    
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>108</Id>
+    <CDNUSR_DEFINE_NAME>SQPI_SCHDECAP_DIFFRFREQ</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Schematic Decap (%s) resonant frequency (%s)is different from signal model, ignored.    
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>109</Id>
+    <CDNUSR_DEFINE_NAME>SQPI_SCHDECAP_CREATE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot create schematic component (%s) in Allegro.    
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>110</Id>
+    <CDNUSR_DEFINE_NAME>SQPI_SCHDECAP_NOPACKAGE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Schematic Decap (%s) has no device package information.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>111</Id>
+    <CDNUSR_DEFINE_NAME>SQPI_SCHDECAP_INVALIDPACKAGE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Schematic Decap (%s) package (%s) is not in DB or library.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>112</Id>
+    <CDNUSR_DEFINE_NAME>SQPI_BADDEVICEMODEL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The signal model for capacitor device type %s with the following issues:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>113</Id>
+    <CDNUSR_DEFINE_NAME>SQPI_BADDEVICETYPE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The capacitor device type %s begins with a number; not allowed by the current simulator.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>114</Id>
+    <CDNUSR_DEFINE_NAME>SQPI_FILE_SAVE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to store into file '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>115</Id>
+    <CDNUSR_DEFINE_NAME>SQPI_LANGUAGE_NOTSUPPORT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The given simulation language does not support any more.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>116</Id>
+    <CDNUSR_DEFINE_NAME>SQPI_FILE_OPEN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to open file '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>117</Id>
+    <CDNUSR_DEFINE_NAME>SQPI_MODEL_MULTITERM</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The model %s has more than two terminals and it cannot be used for PI simulation.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>118</Id>
+    <CDNUSR_DEFINE_NAME>IRDROP_SHAPEOVERLAPPED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+There are %d shapes overlapped in %s layer on net %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>119</Id>
+    <CDNUSR_DEFINE_NAME>LP_FILE_COMPLETE_ERR</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Photoplot file loading completed with errors - see log file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>120</Id>
+    <CDNUSR_DEFINE_NAME>CMD_DISABLED_DB_LOCK</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Command is disabled under view or export lock.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+</MsgFile>

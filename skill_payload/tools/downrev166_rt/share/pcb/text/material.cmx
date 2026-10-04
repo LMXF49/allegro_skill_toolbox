@@ -1,0 +1,5640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Cadence_Material_Lib Version="1.05">
+<DataDescriptions>
+	<Material>
+		<Column name="Default Thickness" unit="um" />
+	</Material>
+	<Metal>
+		<Column name="Temperature" unit="C" />
+		<Column name="Conductivity" unit="S/m" />
+	</Metal>
+	<Dielectric>
+		<Column name="Temperature" unit="C" />
+		<Column name="Frequency" unit="MHz" />
+		<Column name="Relative Permittivity" />
+		<Column name="LossTangent" />
+	</Dielectric>
+	<Thermal>
+		<Column name="Temperature" unit="C" />
+		<Column name="Conductivity" unit="W/(m*K)" />
+		<Column name="Density" unit="kg/m^3" />
+		<Column name="Specific heat" unit="J/(kg*K)" />
+		<Column name="Emissivity" />
+		<Column name="Solar Reflectance" />
+	</Thermal>
+	<Magnetic>
+		<Column name="Frequency" unit="MHz" />
+		<Column name="ur(real)" />
+		<Column name="ur(-imag)" />
+	</Magnetic>
+	<SurfaceRoughness>
+	<Huray>
+		<Column name="Surface Ratio" />
+		<Column name="Snowball Radius" unit="um" />
+	</Huray>
+	<ModHammerstad>
+		<Column name="Roughness Factor" />
+		<Column name="RMS value" unit="um" />
+	</ModHammerstad>
+	<ModGroisse>
+		<Column name="Roughness Factor" />
+		<Column name="RMS value" unit="um" />
+	</ModGroisse>
+	</SurfaceRoughness>
+	<Structural>
+	<Elasticity>
+		<Column name="Temperature" unit="C" />
+		<Column name="Youngs Modulus" unit="Pa" />
+		<Column name="Poissons Ratio" />
+	</Elasticity>
+	<CTE>
+		<Column name="Reference Temperature" unit="C" />
+		<Column name="Temperature" unit="C" />
+		<Column name="CTE" unit="1/C" />
+	</CTE>
+	<Viscoplastic>
+	<Anand>
+		<Column name="A" unit="1/s" />
+		<Column name="Q" unit="J/mol" />
+		<Column name="m" />
+		<Column name="Xi" />
+		<Column name="h0" unit="Pa" />
+		<Column name="n" />
+		<Column name="a" />
+		<Column name="s~" unit="Pa" />
+		<Column name="s0" unit="Pa" />
+	</Anand>
+	<ModifiedAnand>
+		<Column name="A" unit="1/s" />
+		<Column name="Q" unit="J/mol" />
+		<Column name="m" />
+		<Column name="Xi" />
+		<Column name="n" />
+		<Column name="a" />
+		<Column name="s~" unit="Pa" />
+		<Column name="s00" unit="Pa" />
+		<Column name="s01" unit="Pa/K" />
+		<Column name="h00" unit="Pa" />
+		<Column name="h01" unit="Pa/K" />
+		<Column name="h02" unit="Pa/K^2" />
+		<Column name="h03" unit="Pa.s" />
+		<Column name="h04" unit="Pa.s^2" />
+	</ModifiedAnand>
+	</Viscoplastic>
+	<Fatigue>
+	<Darveaux>
+		<Column name="N0" />
+		<Column name="a" unit="m" />
+		<Column name="da/dN" unit="m/cycle" />
+		<Column name="K1" unit="J^(-K2)" />
+		<Column name="K2" />
+		<Column name="K3" unit="J^(-K4)" />
+		<Column name="K4" />
+	</Darveaux>
+	<Solomon>
+		<Column name="c" />
+		<Column name="Ef" />
+	</Solomon>
+	</Fatigue>
+	<Failure>
+	<Tension>
+		<Column name="Max Principal Stress" unit="Mpa" />
+	</Tension>
+	<Compression>
+		<Column name="Min Principal Stress" unit="Mpa" />
+	</Compression>
+	<MaxPressure>
+		<Column name="Max Pressure" unit="Mpa" />
+	</MaxPressure>
+	<EffectiveStrain>
+		<Column name="Max Effective Strain" />
+	</EffectiveStrain>
+	<MaxStrain>
+		<Column name="Max Principal Strain" />
+	</MaxStrain>
+	</Failure>
+	</Structural>
+</DataDescriptions>
+<Material name="1MM_COPPER" DefaultThickness="39.3701MIL" UpperTolerance="3.93701MIL" LowerTolerance="3.93701MIL">
+	<Metal>
+		<Model>
+2.000000e+01 5.800000e+07
+2.500000e+01 5.800000e+07
+		</Model>
+	</Metal>
+	<Thermal>
+		<Model>
+2.700000e+01 4.010000e+02 8.933000e+03 3.850000e+02 7.000000e-02 0.000000e+00
+1.270000e+02 3.930000e+02 8.933000e+03 3.970000e+02 7.000000e-02 0.000000e+00
+2.270000e+02 3.860000e+02 8.933000e+03 4.120000e+02 7.000000e-02 0.000000e+00
+3.270000e+02 3.790000e+02 8.933000e+03 4.170000e+02 7.000000e-02 0.000000e+00
+5.270000e+02 3.660000e+02 8.933000e+03 4.330000e+02 7.000000e-02 0.000000e+00
+7.270000e+02 3.520000e+02 8.933000e+03 4.510000e+02 7.000000e-02 0.000000e+00
+9.270000e+02 3.390000e+02 8.933000e+03 4.800000e+02 7.000000e-02 0.000000e+00
+		</Model>
+	</Thermal>
+<Structural>
+	<Elasticity>
+2.500000e+01 1.210000e+11 3.800000e-01
+	</Elasticity>
+	<CTE RefTemperature="20">
+2.500000e+01 1.775000e-05
+	</CTE>
+	<Viscoplastic>
+	<Anand Enable="false">
+0 0 0 0 0 0 0 0 0
+	</Anand>
+	<ModifiedAnand Enable="false">
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	</ModifiedAnand>
+	</Viscoplastic>
+	<Fatigue>
+	<Darveaux Enable="false">
+0 0 0 0 0 0 0
+	</Darveaux>
+	<Solomon Enable="false">
+0 0
+	</Solomon>
+	</Fatigue>
+	<Failure>
+	<Tension Enable="false">
+0
+	</Tension>
+	<Compression Enable="false">
+0
+	</Compression>
+	<MaxPressure Enable="false">
+0
+	</MaxPressure>
+	<EffectiveStrain Enable="false">
+0
+	</EffectiveStrain>
+	<MaxStrain Enable="false">
+0
+	</MaxStrain>
+	</Failure>
+</Structural>
+</Material>
+<Material name="1OZ_COPPER" DefaultThickness="1.4MIL" UpperTolerance="0.1MIL" LowerTolerance="0.1MIL">
+	<Metal>
+		<Model>
+2.000000e+01 5.800000e+07
+2.500000e+01 5.800000e+07
+		</Model>
+	</Metal>
+	<Thermal>
+		<Model>
+2.700000e+01 4.010000e+02 8.933000e+03 3.850000e+02 7.000000e-02 0.000000e+00
+1.270000e+02 3.930000e+02 8.933000e+03 3.970000e+02 7.000000e-02 0.000000e+00
+2.270000e+02 3.860000e+02 8.933000e+03 4.120000e+02 7.000000e-02 0.000000e+00
+3.270000e+02 3.790000e+02 8.933000e+03 4.170000e+02 7.000000e-02 0.000000e+00
+5.270000e+02 3.660000e+02 8.933000e+03 4.330000e+02 7.000000e-02 0.000000e+00
+7.270000e+02 3.520000e+02 8.933000e+03 4.510000e+02 7.000000e-02 0.000000e+00
+9.270000e+02 3.390000e+02 8.933000e+03 4.800000e+02 7.000000e-02 0.000000e+00
+		</Model>
+	</Thermal>
+<Structural>
+	<Elasticity>
+2.500000e+01 1.210000e+11 3.800000e-01
+	</Elasticity>
+	<CTE RefTemperature="20">
+2.500000e+01 1.775000e-05
+	</CTE>
+	<Viscoplastic>
+	<Anand Enable="false">
+0 0 0 0 0 0 0 0 0
+	</Anand>
+	<ModifiedAnand Enable="false">
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	</ModifiedAnand>
+	</Viscoplastic>
+	<Fatigue>
+	<Darveaux Enable="false">
+0 0 0 0 0 0 0
+	</Darveaux>
+	<Solomon Enable="false">
+0 0
+	</Solomon>
+	</Fatigue>
+	<Failure>
+	<Tension Enable="false">
+0
+	</Tension>
+	<Compression Enable="false">
+0
+	</Compression>
+	<MaxPressure Enable="false">
+0
+	</MaxPressure>
+	<EffectiveStrain Enable="false">
+0
+	</EffectiveStrain>
+	<MaxStrain Enable="false">
+0
+	</MaxStrain>
+	</Failure>
+</Structural>
+</Material>
+<Material name="2OZ_COPPER" DefaultThickness="2.8MIL" UpperTolerance="0.2MIL" LowerTolerance="0.2MIL">
+	<Metal>
+		<Model>
+2.000000e+01 5.800000e+07
+2.500000e+01 5.800000e+07
+		</Model>
+	</Metal>
+	<Thermal>
+		<Model>
+2.700000e+01 4.010000e+02 8.933000e+03 3.850000e+02 7.000000e-02 0.000000e+00
+1.270000e+02 3.930000e+02 8.933000e+03 3.970000e+02 7.000000e-02 0.000000e+00
+2.270000e+02 3.860000e+02 8.933000e+03 4.120000e+02 7.000000e-02 0.000000e+00
+3.270000e+02 3.790000e+02 8.933000e+03 4.170000e+02 7.000000e-02 0.000000e+00
+5.270000e+02 3.660000e+02 8.933000e+03 4.330000e+02 7.000000e-02 0.000000e+00
+7.270000e+02 3.520000e+02 8.933000e+03 4.510000e+02 7.000000e-02 0.000000e+00
+9.270000e+02 3.390000e+02 8.933000e+03 4.800000e+02 7.000000e-02 0.000000e+00
+		</Model>
+	</Thermal>
+<Structural>
+	<Elasticity>
+2.500000e+01 1.210000e+11 3.800000e-01
+	</Elasticity>
+	<CTE RefTemperature="20">
+2.500000e+01 1.775000e-05
+	</CTE>
+	<Viscoplastic>
+	<Anand Enable="false">
+0 0 0 0 0 0 0 0 0
+	</Anand>
+	<ModifiedAnand Enable="false">
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	</ModifiedAnand>
+	</Viscoplastic>
+	<Fatigue>
+	<Darveaux Enable="false">
+0 0 0 0 0 0 0
+	</Darveaux>
+	<Solomon Enable="false">
+0 0
+	</Solomon>
+	</Fatigue>
+	<Failure>
+	<Tension Enable="false">
+0
+	</Tension>
+	<Compression Enable="false">
+0
+	</Compression>
+	<MaxPressure Enable="false">
+0
+	</MaxPressure>
+	<EffectiveStrain Enable="false">
+0
+	</EffectiveStrain>
+	<MaxStrain Enable="false">
+0
+	</MaxStrain>
+	</Failure>
+</Structural>
+</Material>
+<Material name="4OZ_COPPER" DefaultThickness="5.6MIL" UpperTolerance="0.5MIL" LowerTolerance="0.5MIL">
+	<Metal>
+		<Model>
+2.000000e+01 5.800000e+07
+2.500000e+01 5.800000e+07
+		</Model>
+	</Metal>
+	<Thermal>
+		<Model>
+2.700000e+01 4.010000e+02 8.933000e+03 3.850000e+02 7.000000e-02 0.000000e+00
+1.270000e+02 3.930000e+02 8.933000e+03 3.970000e+02 7.000000e-02 0.000000e+00
+2.270000e+02 3.860000e+02 8.933000e+03 4.120000e+02 7.000000e-02 0.000000e+00
+3.270000e+02 3.790000e+02 8.933000e+03 4.170000e+02 7.000000e-02 0.000000e+00
+5.270000e+02 3.660000e+02 8.933000e+03 4.330000e+02 7.000000e-02 0.000000e+00
+7.270000e+02 3.520000e+02 8.933000e+03 4.510000e+02 7.000000e-02 0.000000e+00
+9.270000e+02 3.390000e+02 8.933000e+03 4.800000e+02 7.000000e-02 0.000000e+00
+		</Model>
+	</Thermal>
+<Structural>
+	<Elasticity>
+2.500000e+01 1.210000e+11 3.800000e-01
+	</Elasticity>
+	<CTE RefTemperature="20">
+2.500000e+01 1.775000e-05
+	</CTE>
+	<Viscoplastic>
+	<Anand Enable="false">
+0 0 0 0 0 0 0 0 0
+	</Anand>
+	<ModifiedAnand Enable="false">
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	</ModifiedAnand>
+	</Viscoplastic>
+	<Fatigue>
+	<Darveaux Enable="false">
+0 0 0 0 0 0 0
+	</Darveaux>
+	<Solomon Enable="false">
+0 0
+	</Solomon>
+	</Fatigue>
+	<Failure>
+	<Tension Enable="false">
+0
+	</Tension>
+	<Compression Enable="false">
+0
+	</Compression>
+	<MaxPressure Enable="false">
+0
+	</MaxPressure>
+	<EffectiveStrain Enable="false">
+0
+	</EffectiveStrain>
+	<MaxStrain Enable="false">
+0
+	</MaxStrain>
+	</Failure>
+</Structural>
+</Material>
+<Material name="aluminum" DefaultThickness="0" UpperTolerance="0" LowerTolerance="0">
+	<Metal>
+		<Model>
+2.000000e+01 3.500000e+07
+4.000000e+01 3.246753e+07
+6.000000e+01 3.027682e+07
+8.000000e+01 2.836305e+07
+1.000000e+02 2.667683e+07
+1.200000e+02 2.517986e+07
+1.400000e+02 2.384196e+07
+		</Model>
+	</Metal>
+	<Thermal>
+		<Model>
+2.700000e+01 2.370000e+02 2.702000e+03 9.030000e+02 1.100000e-01 0.000000e+00
+1.270000e+02 2.400000e+02 2.702000e+03 9.490000e+02 1.100000e-01 0.000000e+00
+2.270000e+02 2.360000e+02 2.702000e+03 9.960000e+02 1.100000e-01 0.000000e+00
+3.270000e+02 2.310000e+02 2.702000e+03 1.033000e+03 1.100000e-01 0.000000e+00
+5.270000e+02 2.180000e+02 2.702000e+03 1.146000e+03 1.100000e-01 0.000000e+00
+		</Model>
+	</Thermal>
+<Structural>
+	<Elasticity>
+2.500000e+01 6.900000e+10 3.300000e-01
+	</Elasticity>
+	<CTE RefTemperature="20">
+2.500000e+01 2.400000e-05
+	</CTE>
+	<Viscoplastic>
+	<Anand Enable="false">
+0 0 0 0 0 0 0 0 0
+	</Anand>
+	<ModifiedAnand Enable="false">
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	</ModifiedAnand>
+	</Viscoplastic>
+	<Fatigue>
+	<Darveaux Enable="false">
+0 0 0 0 0 0 0
+	</Darveaux>
+	<Solomon Enable="false">
+0 0
+	</Solomon>
+	</Fatigue>
+	<Failure>
+	<Tension Enable="false">
+0
+	</Tension>
+	<Compression Enable="false">
+0
+	</Compression>
+	<MaxPressure Enable="false">
+0
+	</MaxPressure>
+	<EffectiveStrain Enable="false">
+0
+	</EffectiveStrain>
+	<MaxStrain Enable="false">
+0
+	</MaxStrain>
+	</Failure>
+</Structural>
+</Material>
+<Material name="ALUMINUM_HS" DefaultThickness="78.7402MIL" UpperTolerance="0mm" LowerTolerance="0mm">
+	<Metal>
+		<Model>
+2.000000e+01 3.767000e+09
+		</Model>
+	</Metal>
+	<Thermal>
+		<Model>
+2.700000e+01 2.370000e+02 2.702000e+03 9.030000e+02 1.100000e-01 0.000000e+00
+1.270000e+02 2.400000e+02 2.702000e+03 9.490000e+02 1.100000e-01 0.000000e+00
+2.270000e+02 2.360000e+02 2.702000e+03 9.960000e+02 1.100000e-01 0.000000e+00
+3.270000e+02 2.310000e+02 2.702000e+03 1.033000e+03 1.100000e-01 0.000000e+00
+5.270000e+02 2.180000e+02 2.702000e+03 1.146000e+03 1.100000e-01 0.000000e+00
+		</Model>
+	</Thermal>
+<Structural>
+	<Elasticity>
+2.500000e+01 6.900000e+10 3.300000e-01
+	</Elasticity>
+	<CTE RefTemperature="20">
+2.500000e+01 2.400000e-05
+	</CTE>
+	<Viscoplastic>
+	<Anand Enable="false">
+0 0 0 0 0 0 0 0 0
+	</Anand>
+	<ModifiedAnand Enable="false">
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	</ModifiedAnand>
+	</Viscoplastic>
+	<Fatigue>
+	<Darveaux Enable="false">
+0 0 0 0 0 0 0
+	</Darveaux>
+	<Solomon Enable="false">
+0 0
+	</Solomon>
+	</Fatigue>
+	<Failure>
+	<Tension Enable="false">
+0
+	</Tension>
+	<Compression Enable="false">
+0
+	</Compression>
+	<MaxPressure Enable="false">
+0
+	</MaxPressure>
+	<EffectiveStrain Enable="false">
+0
+	</EffectiveStrain>
+	<MaxStrain Enable="false">
+0
+	</MaxStrain>
+	</Failure>
+</Structural>
+</Material>
+<Material name="CARBON_INK_1MIL" DefaultThickness="1MIL">
+	<Metal>
+		<Model>
+2.000000e+01 2.000000e+02
+		</Model>
+	</Metal>
+	<Dielectric>
+		<Model>
+1.000000e+03 2.500000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+</Material>
+<Material name="CARBON_INK_2MIL" DefaultThickness="2MIL">
+	<Metal>
+		<Model>
+2.000000e+01 2.000000e+02
+		</Model>
+	</Metal>
+	<Dielectric>
+		<Model>
+1.000000e+03 2.500000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+</Material>
+<Material name="CHROMIUM" DefaultThickness="0.000787402MIL" UpperTolerance="0" LowerTolerance="0">
+	<Metal>
+		<Model>
+2.000000e+01 7.700000e+06
+		</Model>
+	</Metal>
+	<Thermal>
+		<Model>
+2.500000e+01 9.370000e+01 7.160000e+03 4.610000e+02 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="CONDUCTIVE_ADHESIVE_SILVER_EPOXY" DefaultThickness="1MIL">
+	<Metal>
+		<Model>
+2.000000e+01 2.500000e+06
+		</Model>
+	</Metal>
+	<Thermal>
+		<Model>
+2.500000e+01 2.090000e-01 1.160000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="CONDUCTIVE_ADHESIVE_THERMOSET" DefaultThickness="2MIL">
+	<Metal>
+		<Model>
+2.000000e+01 2.500000e+06
+		</Model>
+	</Metal>
+	<Thermal>
+		<Model>
+2.500000e+01 2.350000e+00 2.100000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="copper" DefaultThickness="1.2MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil">
+	<Metal>
+		<Model>
+2.000000e+01 5.960000e+07
+2.500000e+01 5.800000e+07
+4.000000e+01 5.528757e+07
+6.000000e+01 5.155709e+07
+8.000000e+01 4.829822e+07
+1.000000e+02 4.542683e+07
+1.200000e+02 4.287770e+07
+1.400000e+02 4.059946e+07
+		</Model>
+	</Metal>
+	<Thermal>
+		<Model>
+2.700000e+01 4.010000e+02 8.933000e+03 3.850000e+02 7.000000e-02 0.000000e+00
+1.270000e+02 3.930000e+02 8.933000e+03 3.970000e+02 7.000000e-02 0.000000e+00
+2.270000e+02 3.860000e+02 8.933000e+03 4.120000e+02 7.000000e-02 0.000000e+00
+3.270000e+02 3.790000e+02 8.933000e+03 4.170000e+02 7.000000e-02 0.000000e+00
+5.270000e+02 3.660000e+02 8.933000e+03 4.330000e+02 7.000000e-02 0.000000e+00
+7.270000e+02 3.520000e+02 8.933000e+03 4.510000e+02 7.000000e-02 0.000000e+00
+9.270000e+02 3.390000e+02 8.933000e+03 4.800000e+02 7.000000e-02 0.000000e+00
+		</Model>
+	</Thermal>
+<Structural>
+	<Elasticity>
+2.500000e+01 1.210000e+11 3.800000e-01
+	</Elasticity>
+	<CTE RefTemperature="20">
+2.500000e+01 1.775000e-05
+	</CTE>
+	<Viscoplastic>
+	<Anand Enable="false">
+0 0 0 0 0 0 0 0 0
+	</Anand>
+	<ModifiedAnand Enable="false">
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	</ModifiedAnand>
+	</Viscoplastic>
+	<Fatigue>
+	<Darveaux Enable="false">
+0 0 0 0 0 0 0
+	</Darveaux>
+	<Solomon Enable="false">
+0 0
+	</Solomon>
+	</Fatigue>
+	<Failure>
+	<Tension Enable="false">
+0
+	</Tension>
+	<Compression Enable="false">
+0
+	</Compression>
+	<MaxPressure Enable="false">
+0
+	</MaxPressure>
+	<EffectiveStrain Enable="false">
+0
+	</EffectiveStrain>
+	<MaxStrain Enable="false">
+0
+	</MaxStrain>
+	</Failure>
+</Structural>
+</Material>
+<Material name="COPPER_FOIL_HA" DefaultThickness="0.708661MIL">
+	<Metal>
+		<Model>
+2.000000e+01 5.800000e+07
+		</Model>
+	</Metal>
+</Material>
+<Material name="COPPER_FOIL_HTE" DefaultThickness="0.708661MIL">
+	<Metal>
+		<Model>
+2.000000e+01 5.800000e+07
+		</Model>
+	</Metal>
+</Material>
+<Material name="COPPER_HS_BLOCK" DefaultThickness="7.87402MIL">
+	<Metal>
+		<Model>
+2.000000e+01 5.960000e+07
+4.000000e+01 5.528757e+07
+6.000000e+01 5.155709e+07
+8.000000e+01 4.829822e+07
+1.000000e+02 4.542683e+07
+1.200000e+02 4.287770e+07
+1.400000e+02 4.059946e+07
+		</Model>
+	</Metal>
+	<Thermal>
+		<Model>
+2.700000e+01 4.010000e+02 8.933000e+03 3.850000e+02 7.000000e-02 0.000000e+00
+1.270000e+02 3.930000e+02 8.933000e+03 3.970000e+02 7.000000e-02 0.000000e+00
+2.270000e+02 3.860000e+02 8.933000e+03 4.120000e+02 7.000000e-02 0.000000e+00
+3.270000e+02 3.790000e+02 8.933000e+03 4.170000e+02 7.000000e-02 0.000000e+00
+5.270000e+02 3.660000e+02 8.933000e+03 4.330000e+02 7.000000e-02 0.000000e+00
+7.270000e+02 3.520000e+02 8.933000e+03 4.510000e+02 7.000000e-02 0.000000e+00
+9.270000e+02 3.390000e+02 8.933000e+03 4.800000e+02 7.000000e-02 0.000000e+00
+		</Model>
+	</Thermal>
+<Structural>
+	<Elasticity>
+2.500000e+01 1.210000e+11 3.800000e-01
+	</Elasticity>
+	<CTE RefTemperature="20">
+2.500000e+01 1.775000e-05
+	</CTE>
+	<Viscoplastic>
+	<Anand Enable="false">
+0 0 0 0 0 0 0 0 0
+	</Anand>
+	<ModifiedAnand Enable="false">
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	</ModifiedAnand>
+	</Viscoplastic>
+	<Fatigue>
+	<Darveaux Enable="false">
+0 0 0 0 0 0 0
+	</Darveaux>
+	<Solomon Enable="false">
+0 0
+	</Solomon>
+	</Fatigue>
+	<Failure>
+	<Tension Enable="false">
+0
+	</Tension>
+	<Compression Enable="false">
+0
+	</Compression>
+	<MaxPressure Enable="false">
+0
+	</MaxPressure>
+	<EffectiveStrain Enable="false">
+0
+	</EffectiveStrain>
+	<MaxStrain Enable="false">
+0
+	</MaxStrain>
+	</Failure>
+</Structural>
+</Material>
+<Material name="COPPER_TUNGSTEN_HS" DefaultThickness="25MIL">
+</Material>
+<Material name="COPPER_NICKEL_70-30" DefaultThickness="1.3MIL">
+	<Metal>
+		<Model>
+2.000000e+01 2.668000e+06
+		</Model>
+	</Metal>
+	<Thermal>
+		<Model>
+2.500000e+01 2.900000e+01 8.950000e+03 3.770000e+02 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="COPPER_NICKEL_90-10" DefaultThickness="1.3MIL">
+	<Metal>
+		<Model>
+2.000000e+01 2.668000e+06
+		</Model>
+	</Metal>
+	<Thermal>
+		<Model>
+2.500000e+01 4.000000e+01 8.900000e+03 3.770000e+02 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="COPPER_PASTE" DefaultThickness="1MIL">
+	<Metal>
+		<Model>
+2.000000e+01 1.000000e+06
+		</Model>
+	</Metal>
+	<Thermal>
+		<Model>
+2.500000e+01 1.170000e+01 0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="CUPRONICKEL" DefaultThickness="1.3MIL">
+	<Metal>
+		<Model>
+2.000000e+01 2.668000e+06
+		</Model>
+	</Metal>
+</Material>
+<Material name="ENEPIG" DefaultThickness="0.165354MIL">
+	<Metal>
+		<Model>
+2.000000e+01 1.500000e+07
+		</Model>
+	</Metal>
+</Material>
+<Material name="ENIG" DefaultThickness="0.18MIL">
+	<Metal>
+		<Model>
+2.000000e+01 1.500000e+07
+		</Model>
+	</Metal>
+</Material>
+<Material name="gold" DefaultThickness="0" UpperTolerance="0" LowerTolerance="0">
+	<Metal>
+		<Model>
+2.000000e+01 4.520000e+07
+4.000000e+01 4.232210e+07
+6.000000e+01 3.978873e+07
+8.000000e+01 3.754153e+07
+1.000000e+02 3.553459e+07
+1.200000e+02 3.373134e+07
+1.400000e+02 3.210227e+07
+		</Model>
+	</Metal>
+	<Thermal>
+		<Model>
+2.700000e+01 3.170000e+02 1.930000e+04 1.290000e+02 2.000000e-02 0.000000e+00
+1.270000e+02 3.110000e+02 1.930000e+04 1.310000e+02 2.000000e-02 0.000000e+00
+2.270000e+02 3.040000e+02 1.930000e+04 1.330000e+02 2.000000e-02 0.000000e+00
+3.270000e+02 2.980000e+02 1.930000e+04 1.350000e+02 2.000000e-02 0.000000e+00
+5.270000e+02 2.840000e+02 1.930000e+04 1.400000e+02 2.000000e-02 0.000000e+00
+7.270000e+02 2.700000e+02 1.930000e+04 1.450000e+02 2.000000e-02 0.000000e+00
+9.270000e+02 2.550000e+02 1.930000e+04 1.550000e+02 2.000000e-02 0.000000e+00
+		</Model>
+	</Thermal>
+<Structural>
+	<Elasticity>
+2.500000e+01 8.000000e+10 4.200000e-01
+	</Elasticity>
+	<CTE RefTemperature="20">
+2.500000e+01 1.420000e-05
+	</CTE>
+	<Viscoplastic>
+	<Anand Enable="false">
+0 0 0 0 0 0 0 0 0
+	</Anand>
+	<ModifiedAnand Enable="false">
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	</ModifiedAnand>
+	</Viscoplastic>
+	<Fatigue>
+	<Darveaux Enable="false">
+0 0 0 0 0 0 0
+	</Darveaux>
+	<Solomon Enable="false">
+0 0
+	</Solomon>
+	</Fatigue>
+	<Failure>
+	<Tension Enable="false">
+0
+	</Tension>
+	<Compression Enable="false">
+0
+	</Compression>
+	<MaxPressure Enable="false">
+0
+	</MaxPressure>
+	<EffectiveStrain Enable="false">
+0
+	</EffectiveStrain>
+	<MaxStrain Enable="false">
+0
+	</MaxStrain>
+	</Failure>
+</Structural>
+</Material>
+<Material name="GOLD_HARD" DefaultThickness="0.14MIL">
+	<Metal>
+		<Model>
+2.000000e+01 1.500000e+07
+		</Model>
+	</Metal>
+</Material>
+<Material name="GOLD_SOFT_BONDABLE" DefaultThickness="0.14MIL">
+	<Metal>
+		<Model>
+2.000000e+01 1.500000e+07
+		</Model>
+	</Metal>
+</Material>
+<Material name="HALF_OZ_COPPER" DefaultThickness="0.7MIL" UpperTolerance="0.05MIL" LowerTolerance="0.05MIL">
+	<Metal>
+		<Model>
+2.000000e+01 5.800000e+07
+2.500000e+01 5.800000e+07
+		</Model>
+	</Metal>
+	<Thermal>
+		<Model>
+2.700000e+01 4.010000e+02 8.933000e+03 3.850000e+02 7.000000e-02 0.000000e+00
+1.270000e+02 3.930000e+02 8.933000e+03 3.970000e+02 7.000000e-02 0.000000e+00
+2.270000e+02 3.860000e+02 8.933000e+03 4.120000e+02 7.000000e-02 0.000000e+00
+3.270000e+02 3.790000e+02 8.933000e+03 4.170000e+02 7.000000e-02 0.000000e+00
+5.270000e+02 3.660000e+02 8.933000e+03 4.330000e+02 7.000000e-02 0.000000e+00
+7.270000e+02 3.520000e+02 8.933000e+03 4.510000e+02 7.000000e-02 0.000000e+00
+9.270000e+02 3.390000e+02 8.933000e+03 4.800000e+02 7.000000e-02 0.000000e+00
+		</Model>
+	</Thermal>
+<Structural>
+	<Elasticity>
+2.500000e+01 1.210000e+11 3.800000e-01
+	</Elasticity>
+	<CTE RefTemperature="20">
+2.500000e+01 1.775000e-05
+	</CTE>
+	<Viscoplastic>
+	<Anand Enable="false">
+0 0 0 0 0 0 0 0 0
+	</Anand>
+	<ModifiedAnand Enable="false">
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	</ModifiedAnand>
+	</Viscoplastic>
+	<Fatigue>
+	<Darveaux Enable="false">
+0 0 0 0 0 0 0
+	</Darveaux>
+	<Solomon Enable="false">
+0 0
+	</Solomon>
+	</Fatigue>
+	<Failure>
+	<Tension Enable="false">
+0
+	</Tension>
+	<Compression Enable="false">
+0
+	</Compression>
+	<MaxPressure Enable="false">
+0
+	</MaxPressure>
+	<EffectiveStrain Enable="false">
+0
+	</EffectiveStrain>
+	<MaxStrain Enable="false">
+0
+	</MaxStrain>
+	</Failure>
+</Structural>
+</Material>
+<Material name="IMMERSION_SILVER" DefaultThickness="0.01MIL">
+	<Metal>
+		<Model>
+2.000000e+01 6.300000e+07
+		</Model>
+	</Metal>
+</Material>
+<Material name="IMMERSION_TIN" DefaultThickness="0.0393701MIL">
+	<Metal>
+		<Model>
+2.000000e+01 8.800000e+06
+		</Model>
+	</Metal>
+</Material>
+<Material name="INCONEL" DefaultThickness="19.685MIL" UpperTolerance="0" LowerTolerance="0">
+	<Metal>
+		<Model>
+2.000000e+01 8.200000e+05
+		</Model>
+	</Metal>
+	<Thermal>
+		<Model>
+2.500000e+01 1.490000e+01 8.470000e+03 4.440000e+02 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="INDIUM" DefaultThickness="0" UpperTolerance="0" LowerTolerance="0">
+	<Metal>
+		<Model>
+2.000000e+01 1.200000e+07
+		</Model>
+	</Metal>
+	<Thermal>
+		<Model>
+2.500000e+01 8.200000e+01 7.310000e+03 2.300000e+02 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="INVAR" DefaultThickness="4.33071MIL" UpperTolerance="0" LowerTolerance="0">
+	<Metal>
+		<Model>
+2.000000e+01 1.200000e+06
+		</Model>
+	</Metal>
+	<Thermal>
+		<Model>
+2.500000e+01 1.015000e+01 8.050000e+03 5.150000e+02 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Iron" DefaultThickness="1.3MIL" >
+	<Metal>
+		<Model>
+2.000000e+01 2.668000e+06
+		</Model>
+	</Metal>
+	<Thermal>
+		<Model>
+2.500000e+01 7.620000e+01 7.870000e+03 4.400000e+02 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="KOVAR" DefaultThickness="196.85MIL" UpperTolerance="0.0mm" LowerTolerance="0.0mm">
+	<Metal>
+		<Model>
+2.000000e+01 2.300000e+06
+		</Model>
+	</Metal>
+	<Thermal>
+		<Model>
+2.500000e+01 1.730000e+01 8.360000e+03 4.390000e+02 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="LEAD" DefaultThickness="0" UpperTolerance="0" LowerTolerance="0">
+	<Metal>
+		<Model>
+2.000000e+01 4.600000e+06
+		</Model>
+	</Metal>
+	<Thermal>
+		<Model>
+2.500000e+01 3.300000e+01 1.022000e+04 1.287000e+02 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="MOLYBDENUM" DefaultThickness="25MIL" UpperTolerance="0" LowerTolerance="0">
+	<Metal>
+		<Model>
+2.000000e+01 1.800000e+07
+		</Model>
+	</Metal>
+	<Thermal>
+		<Model>
+2.500000e+01 1.380000e+02 1.022000e+04 2.550000e+02 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="MONEL" DefaultThickness="1.1811MIL" UpperTolerance="0" LowerTolerance="0">
+	<Metal>
+		<Model>
+2.000000e+01 1.700000e+06
+		</Model>
+	</Metal>
+	<Thermal>
+		<Model>
+2.500000e+01 2.180000e+01 8.800000e+03 4.270000e+02 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="NICHROME" DefaultThickness="1MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil">
+	<Metal>
+		<Model>
+2.000000e+01 1.500000e+07
+		</Model>
+	</Metal>
+</Material>
+<Material name="Nichrome_35-20" DefaultThickness="0" UpperTolerance="0" LowerTolerance="0" >
+	<Metal>
+		<Model>
+2.500000e+01 1.000000e+07
+		</Model>
+	</Metal>
+	<Thermal>
+		<Model>
+2.500000e+01 1.300000e+01 7.900000e+03 5.000000e+02 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Nichrome_40-20" DefaultThickness="0" UpperTolerance="0" LowerTolerance="0" >
+	<Metal>
+		<Model>
+2.500000e+01 1.000000e+07
+		</Model>
+	</Metal>
+	<Thermal>
+		<Model>
+2.500000e+01 1.300000e+01 7.900000e+03 5.000000e+02 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Nichrome_60-15" DefaultThickness="0" UpperTolerance="0" LowerTolerance="0">
+	<Metal>
+		<Model>
+2.500000e+01 1.000000e+07
+		</Model>
+	</Metal>
+	<Thermal>
+		<Model>
+2.500000e+01 1.300000e+01 8.200000e+03 4.800000e+02 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="NICKEL" DefaultThickness="0.19685MIL" UpperTolerance="0" LowerTolerance="0">
+	<Metal>
+		<Model>
+2.000000e+01 1.500000e+07
+		</Model>
+	</Metal>
+	<Thermal>
+		<Model>
+2.500000e+01 6.070000e+01 8.880000e+03 4.600000e+02 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="PLATED_COPPER_FOIL" DefaultThickness="2.1MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil">
+	<Metal>
+		<Model>
+2.000000e+01 3.430000e+07
+2.500000e+01 5.800000e+07
+		</Model>
+	</Metal>
+	<Thermal>
+		<Model>
+2.700000e+01 4.010000e+02 8.933000e+03 3.850000e+02 7.000000e-02 0.000000e+00
+1.270000e+02 3.930000e+02 8.933000e+03 3.970000e+02 7.000000e-02 0.000000e+00
+2.270000e+02 3.860000e+02 8.933000e+03 4.120000e+02 7.000000e-02 0.000000e+00
+3.270000e+02 3.790000e+02 8.933000e+03 4.170000e+02 7.000000e-02 0.000000e+00
+5.270000e+02 3.660000e+02 8.933000e+03 4.330000e+02 7.000000e-02 0.000000e+00
+7.270000e+02 3.520000e+02 8.933000e+03 4.510000e+02 7.000000e-02 0.000000e+00
+9.270000e+02 3.390000e+02 8.933000e+03 4.800000e+02 7.000000e-02 0.000000e+00
+		</Model>
+	</Thermal>
+<Structural>
+	<Elasticity>
+2.500000e+01 1.210000e+11 3.800000e-01
+	</Elasticity>
+	<CTE RefTemperature="20">
+2.500000e+01 1.775000e-05
+	</CTE>
+	<Viscoplastic>
+	<Anand Enable="false">
+0 0 0 0 0 0 0 0 0
+	</Anand>
+	<ModifiedAnand Enable="false">
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	</ModifiedAnand>
+	</Viscoplastic>
+	<Fatigue>
+	<Darveaux Enable="false">
+0 0 0 0 0 0 0
+	</Darveaux>
+	<Solomon Enable="false">
+0 0
+	</Solomon>
+	</Fatigue>
+	<Failure>
+	<Tension Enable="false">
+0
+	</Tension>
+	<Compression Enable="false">
+0
+	</Compression>
+	<MaxPressure Enable="false">
+0
+	</MaxPressure>
+	<EffectiveStrain Enable="false">
+0
+	</EffectiveStrain>
+	<MaxStrain Enable="false">
+0
+	</MaxStrain>
+	</Failure>
+</Structural>
+</Material>
+<Material name="PLATINUM" DefaultThickness="0" UpperTolerance="0" LowerTolerance="0">
+	<Metal>
+		<Model>
+2.000000e+01 1.000000e+07
+		</Model>
+	</Metal>
+	<Thermal>
+		<Model>
+2.500000e+01 6.910000e+01 2.145000e+04 1.340000e+02 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="RESISTOR_INK" DefaultThickness="2MIL">
+	<Metal>
+		<Model>
+2.000000e+01 2.000000e+00
+		</Model>
+	</Metal>
+	<Dielectric>
+		<Model>
+1.000000e+03 2.500000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+</Material>
+<Material name="silver" DefaultThickness="0" UpperTolerance="0" LowerTolerance="0">
+	<Metal>
+		<Model>
+2.000000e+01 6.300000e+07
+4.000000e+01 5.855019e+07
+6.000000e+01 5.468750e+07
+8.000000e+01 5.130293e+07
+1.000000e+02 4.831288e+07
+1.200000e+02 4.565217e+07
+1.400000e+02 4.326923e+07
+		</Model>
+	</Metal>
+	<Thermal>
+		<Model>
+2.700000e+01 4.290000e+02 1.050000e+04 2.320000e+02 2.000000e-02 0.000000e+00
+1.270000e+02 4.250000e+02 1.050000e+04 2.390000e+02 2.000000e-02 0.000000e+00
+2.270000e+02 4.190000e+02 1.050000e+04 2.440000e+02 2.000000e-02 0.000000e+00
+3.270000e+02 4.120000e+02 1.050000e+04 2.500000e+02 2.000000e-02 0.000000e+00
+5.270000e+02 3.960000e+02 1.050000e+04 2.620000e+02 2.000000e-02 0.000000e+00
+7.270000e+02 3.790000e+02 1.050000e+04 2.770000e+02 2.000000e-02 0.000000e+00
+9.270000e+02 3.610000e+02 1.050000e+04 2.920000e+02 2.000000e-02 0.000000e+00
+		</Model>
+	</Thermal>
+<Structural>
+	<Elasticity>
+2.500000e+01 7.100000e+10 3.700000e-01
+	</Elasticity>
+	<CTE RefTemperature="20">
+2.500000e+01 2.000000e-05
+	</CTE>
+	<Viscoplastic>
+	<Anand Enable="false">
+0 0 0 0 0 0 0 0 0
+	</Anand>
+	<ModifiedAnand Enable="false">
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	</ModifiedAnand>
+	</Viscoplastic>
+	<Fatigue>
+	<Darveaux Enable="false">
+0 0 0 0 0 0 0
+	</Darveaux>
+	<Solomon Enable="false">
+0 0
+	</Solomon>
+	</Fatigue>
+	<Failure>
+	<Tension Enable="false">
+0
+	</Tension>
+	<Compression Enable="false">
+0
+	</Compression>
+	<MaxPressure Enable="false">
+0
+	</MaxPressure>
+	<EffectiveStrain Enable="false">
+0
+	</EffectiveStrain>
+	<MaxStrain Enable="false">
+0
+	</MaxStrain>
+	</Failure>
+</Structural>
+</Material>
+<Material name="SILVER_COPPER_FOIL" DefaultThickness="0.314961MIL">
+	<Metal>
+		<Model>
+2.000000e+01 1.000000e+06
+		</Model>
+	</Metal>
+</Material>
+<Material name="SILVER_FOIL" DefaultThickness="0.314961MIL">
+	<Metal>
+		<Model>
+2.000000e+01 9.900000e+06
+		</Model>
+	</Metal>
+	<Thermal>
+		<Model>
+2.500000e+01 4.290000e+02 1.049000e+04 2.368000e+02 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="SILVER_INK" DefaultThickness="0.314961MIL" >
+	<Metal>
+		<Model>
+2.000000e+01 9.900000e+06
+		</Model>
+	</Metal>
+	<Thermal>
+		<Model>
+2.500000e+01 4.290000e+02 1.049000e+04 2.330000e+02 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="SILVER_INK_PHOTOSENSITIVE" DefaultThickness="0.314961MIL">
+	<Metal>
+		<Model>
+2.000000e+01 9.900000e+06
+		</Model>
+	</Metal>
+	<Thermal>
+		<Model>
+2.500000e+01 4.290000e+02 1.049000e+04 2.330000e+02 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="SILVER_PASTE_1MIL" DefaultThickness="1MIL">
+	<Metal>
+		<Model>
+2.000000e+01 9.900000e+06
+		</Model>
+	</Metal>
+	<Thermal>
+		<Model>
+2.500000e+01 9.100000e+00 2.300000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="SILVER_PASTE_HALF_MIL" DefaultThickness="0.5MIL">
+	<Metal>
+		<Model>
+2.000000e+01 9.900000e+06
+		</Model>
+	</Metal>
+	<Thermal>
+		<Model>
+2.500000e+01 9.100000e+00 2.300000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="SILVER_THICK_FILM_INK" DefaultThickness="0.393701MIL">
+	<Metal>
+		<Model>
+2.000000e+01 9.900000e+06
+		</Model>
+	</Metal>
+</Material>
+<Material name="Solder60">
+	<Metal>
+		<Model>
+2.500000e+01 5.882353e+06
+		</Model>
+	</Metal>
+	<Thermal>
+		<Model>
+2.500000e+01 5.750000e+01 8.500000e+03 1.630000e+02 5.000000e-02 0.000000e+00
+		</Model>
+	</Thermal>
+<Structural>
+	<Elasticity>
+2.500000e+01 3.000000e+10 4.000000e-01
+	</Elasticity>
+	<CTE RefTemperature="20">
+2.500000e+01 2.160000e-05
+	</CTE>
+	<Viscoplastic>
+	<Anand Enable="false">
+0 0 0 0 0 0 0 0 0
+	</Anand>
+	<ModifiedAnand Enable="false">
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	</ModifiedAnand>
+	</Viscoplastic>
+	<Fatigue>
+	<Darveaux Enable="false">
+0 0 0 0 0 0 0
+	</Darveaux>
+	<Solomon Enable="false">
+0 0
+	</Solomon>
+	</Fatigue>
+	<Failure>
+	<Tension Enable="false">
+0
+	</Tension>
+	<Compression Enable="false">
+0
+	</Compression>
+	<MaxPressure Enable="false">
+0
+	</MaxPressure>
+	<EffectiveStrain Enable="false">
+0
+	</EffectiveStrain>
+	<MaxStrain Enable="false">
+0
+	</MaxStrain>
+	</Failure>
+</Structural>
+</Material>
+<Material name="Solder63">
+	<Metal>
+		<Model>
+2.500000e+01 6.896552e+06
+		</Model>
+	</Metal>
+	<Thermal>
+		<Model>
+2.500000e+01 5.060000e+01 8.470000e+03 1.630000e+02 5.000000e-02 0.000000e+00
+		</Model>
+	</Thermal>
+<Structural>
+	<Elasticity>
+2.500000e+01 1.720000e+10 4.300000e-01
+	</Elasticity>
+	<CTE RefTemperature="20">
+2.500000e+01 2.470000e-05
+	</CTE>
+	<Viscoplastic>
+	<Anand Enable="false">
+0 0 0 0 0 0 0 0 0
+	</Anand>
+	<ModifiedAnand Enable="false">
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	</ModifiedAnand>
+	</Viscoplastic>
+	<Fatigue>
+	<Darveaux Enable="false">
+0 0 0 0 0 0 0
+	</Darveaux>
+	<Solomon Enable="false">
+0 0
+	</Solomon>
+	</Fatigue>
+	<Failure>
+	<Tension Enable="false">
+0
+	</Tension>
+	<Compression Enable="false">
+0
+	</Compression>
+	<MaxPressure Enable="false">
+0
+	</MaxPressure>
+	<EffectiveStrain Enable="false">
+0
+	</EffectiveStrain>
+	<MaxStrain Enable="false">
+0
+	</MaxStrain>
+	</Failure>
+</Structural>
+</Material>
+<Material name="SOLDER_60_40" DefaultThickness="0" UpperTolerance="0" LowerTolerance="0">
+	<Metal>
+		<Model>
+2.000000e+01 4.600000e+06
+		</Model>
+	</Metal>
+</Material>
+<Material name="SOLDER_PASTE_SAC" DefaultThickness="3MIL">
+	<Metal>
+		<Model>
+2.000000e+01 7.690000e+06
+		</Model>
+	</Metal>
+</Material>
+<Material name="STAINLESS_STEEL" DefaultThickness="7.87402MIL" UpperTolerance="0" LowerTolerance="0">
+	<Metal>
+		<Model>
+2.000000e+01 1.400000e+06
+		</Model>
+	</Metal>
+	<Thermal>
+		<Model>
+2.500000e+01 1.670000e+01 7.800000e+03 4.780000e+02 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="TANTALUM" DefaultThickness="0.00275591MIL" UpperTolerance="0" LowerTolerance="0">
+	<Metal>
+		<Model>
+2.000000e+01 7.200000e+06
+		</Model>
+	</Metal>
+	<Thermal>
+		<Model>
+2.500000e+01 5.440000e+01 1.665000e+04 1.530000e+02 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="TIN" DefaultThickness="0.023622MIL" UpperTolerance="0" LowerTolerance="0">
+	<Metal>
+		<Model>
+2.000000e+01 8.800000e+06
+		</Model>
+	</Metal>
+	<Thermal>
+		<Model>
+2.500000e+01 6.075000e+01 7.295000e+03 2.220000e+02 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Titanium" DefaultThickness="0.023622MIL" UpperTolerance="0" LowerTolerance="0" >
+	<Metal>
+		<Model>
+2.000000e+01 8.800000e+06
+		</Model>
+	</Metal>
+	<Dielectric>
+		<Model>
+1.000000e+03 4.500000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.190000e+01 4.500000e+03 5.220000e+02 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="TUNGSTEN" DefaultThickness="0.590551MIL" UpperTolerance="0.0cm" LowerTolerance="0.0cm">
+	<Metal>
+		<Model>
+2.000000e+01 8.600000e+07
+		</Model>
+	</Metal>
+	<Thermal>
+		<Model>
+2.500000e+01 1.740000e+02 1.930000e+04 1.320000e+02 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Zinc" DefaultThickness="0.023622MIL" UpperTolerance="0" LowerTolerance="0" >
+	<Metal>
+		<Model>
+2.000000e+01 8.800000e+06
+		</Model>
+	</Metal>
+	<Thermal>
+		<Model>
+2.500000e+01 1.122000e+02 7.100000e+03 3.898000e+02 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="3M_Adhesive_5506" DefaultThickness="5MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil" >
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.300000e+00 0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="3M_Adhesive_TC-2707" DefaultThickness="5MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil" >
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 7.200000e-01 0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="3M_Interface_Pad_5300-DS" DefaultThickness="5MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil" >
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 6.000000e-01 0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="3M_Interface_Pad_5300-SP" DefaultThickness="5MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil" >
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="3M_Interface_Pad_5500H" DefaultThickness="5MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil" >
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="3M_Interface_Pad_5509" DefaultThickness="5MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil" >
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 5.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="3M_Interface_Pad_5510H" DefaultThickness="5MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil" >
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.600000e+00 0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="3M_Interface_Pad_5514" DefaultThickness="5MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil" >
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.600000e+00 0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="3M_Interface_Pad_5515" DefaultThickness="5MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil" >
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 3.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="3M_Interface_Pad_5515S" DefaultThickness="5MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil" >
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.700000e+00 2.800000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="3M_Interface_Pad_5516_Series" DefaultThickness="5MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil" >
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 3.100000e+00 2.900000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="3M_Interface_Pad_5519" DefaultThickness="5MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil" >
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 5.000000e+00 3.100000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="3M_Interface_Pad_5549S" DefaultThickness="5MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil" >
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 3.500000e+00 0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="3M_Interface_Pad_5550H" DefaultThickness="5MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil" >
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.000000e+00 2.300000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="3M_Interface_Pad_5570N" DefaultThickness="5MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil" >
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.100000e+00 1.750000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="3M_Interface_Pad_5571DL" DefaultThickness="5MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil" >
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.500000e+00 1.350000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="3M_Interface_Pad_5571N" DefaultThickness="5MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil" >
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.500000e+00 1.350000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="3M_Interface_Pad_5578H" DefaultThickness="5MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil" >
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 3.500000e+00 2.500000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="3M_Interface_Pad_5583S" DefaultThickness="5MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil" >
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.000000e+00 2.000000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="3M_Interface_Pad_5584" DefaultThickness="5MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil" >
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.100000e+00 1.900000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="3M_Interface_Pad_5586" DefaultThickness="5MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil" >
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.600000e+00 2.300000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="3M_Interface_Pad_5589H" DefaultThickness="5MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil" >
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.000000e+00 1.900000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="3M_Interface_Pad_5590H" DefaultThickness="5MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil" >
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="3M_Interface_Pad_5590PI" DefaultThickness="5MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil" >
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 3.000000e+00 2.000000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="3M_Interface_Pad_5591" DefaultThickness="5MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil" >
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.000000e+00 2.000000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="3M_Interface_Pad_5591S" DefaultThickness="5MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil" >
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="3M_Interface_Pad_5592" DefaultThickness="5MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil" >
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.100000e+00 0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="3M_Interface_Pad_5595S" DefaultThickness="5MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil" >
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.600000e+00 0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="3M_Tape_8805" DefaultThickness="5MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil" >
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 6.000000e-01 1.070000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="3M_Tape_8810" DefaultThickness="5MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil" >
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 6.000000e-01 1.070000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="3M_Tape_8815" DefaultThickness="5MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil" >
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 6.000000e-01 1.070000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="3M_Tape_8820" DefaultThickness="5MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil" >
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 6.000000e-01 1.070000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="3M_Tape_9889FR" DefaultThickness="5MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil" >
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 5.000000e-01 0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="3MC0614">
+	<Dielectric>
+		<Model>
+1.000000e-03 1.600000e+01 5.000000e-03
+1.000000e-02 1.585000e+01 9.000000e-03
+1.000000e-01 1.560000e+01 1.500000e-02
+1.000000e+00 1.500000e+01 2.500000e-02
+1.000000e+01 1.430000e+01 3.600000e-02
+1.000000e+02 1.360000e+01 4.300000e-02
+1.000000e+03 1.300000e+01 8.000000e-02
+2.000000e+03 1.265000e+01 1.400000e-01
+1.000000e+04 1.225000e+01 2.000000e-01
+		</Model>
+	</Dielectric>
+</Material>
+<Material name="3MC1011">
+	<Dielectric>
+		<Model>
+1.000000e-03 2.000000e+01 9.000000e-03
+1.000000e-02 1.980000e+01 1.300000e-02
+1.000000e-01 1.950000e+01 1.900000e-02
+1.000000e+00 1.880000e+01 2.500000e-02
+1.000000e+01 1.790000e+01 3.600000e-02
+1.000000e+02 1.700000e+01 4.300000e-02
+1.000000e+03 1.630000e+01 8.000000e-02
+2.000000e+03 1.580000e+01 1.400000e-01
+1.000000e+04 1.525000e+01 2.000000e-01
+		</Model>
+	</Dielectric>
+</Material>
+<Material name="ADHESIVE_ACRYLIC" DefaultThickness="0.5MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 3.500000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.900000e-01 1.180000e+03 1.470000e+03 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+<Structural>
+	<Elasticity>
+2.500000e+01 2.840000e+09 4.020000e-01
+	</Elasticity>
+	<CTE RefTemperature="20">
+2.500000e+01 7.360000e-05
+	</CTE>
+	<Viscoplastic>
+	<Anand Enable="false">
+0 0 0 0 0 0 0 0 0
+	</Anand>
+	<ModifiedAnand Enable="false">
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	</ModifiedAnand>
+	</Viscoplastic>
+	<Fatigue>
+	<Darveaux Enable="false">
+0 0 0 0 0 0 0
+	</Darveaux>
+	<Solomon Enable="false">
+0 0
+	</Solomon>
+	</Fatigue>
+	<Failure>
+	<Tension Enable="false">
+0
+	</Tension>
+	<Compression Enable="false">
+0
+	</Compression>
+	<MaxPressure Enable="false">
+0
+	</MaxPressure>
+	<EffectiveStrain Enable="false">
+0
+	</EffectiveStrain>
+	<MaxStrain Enable="false">
+0
+	</MaxStrain>
+	</Failure>
+</Structural>
+</Material>
+<Material name="ADHESIVE_EPOXY" DefaultThickness="0.984252MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 4.600000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.100000e+00 0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="ADHESIVE_THERMOSET" DefaultThickness="2MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 5.700000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.350000e+00 2.100000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="AG_CU_EUTECTIC" DefaultThickness="1.9685MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 4.500000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+</Material>
+<Material name="Air" DefaultThickness="0" UpperTolerance="0" LowerTolerance="0">
+	<Dielectric>
+		<Model>
+1.000000e+03 1.000000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.700000e+01 2.670000e-02 1.177000e+00 1.005000e+03 0.000000e+00 0.000000e+00
+3.700000e+01 2.740000e-02 1.141000e+00 1.005000e+03 0.000000e+00 0.000000e+00
+4.700000e+01 2.810000e-02 1.106000e+00 1.006000e+03 0.000000e+00 0.000000e+00
+5.700000e+01 2.870000e-02 1.073000e+00 1.006000e+03 0.000000e+00 0.000000e+00
+6.700000e+01 2.940000e-02 1.042000e+00 1.007000e+03 0.000000e+00 0.000000e+00
+7.700000e+01 3.000000e-02 1.012000e+00 1.007000e+03 0.000000e+00 0.000000e+00
+8.700000e+01 3.060000e-02 9.830000e-01 1.007000e+03 0.000000e+00 0.000000e+00
+9.700000e+01 3.130000e-02 9.560000e-01 1.008000e+03 0.000000e+00 0.000000e+00
+1.070000e+02 3.190000e-02 9.310000e-01 1.008000e+03 0.000000e+00 0.000000e+00
+1.170000e+02 3.250000e-02 9.060000e-01 1.009000e+03 0.000000e+00 0.000000e+00
+1.270000e+02 3.310000e-02 8.830000e-01 1.009000e+03 0.000000e+00 0.000000e+00
+2.270000e+02 3.890000e-02 7.060000e-01 1.017000e+03 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="ALUMINA" DefaultThickness="10MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 1.000000e+01 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+-1.730000e+02 4.498000e+02 3.960000e+03 1.260000e+02 0.000000e+00 0.000000e+00
+-7.300000e+01 8.200000e+01 3.960000e+03 5.020000e+02 0.000000e+00 0.000000e+00
+2.500000e+01 4.600000e+01 3.960000e+03 7.530000e+02 0.000000e+00 0.000000e+00
+1.270000e+02 3.230000e+01 3.860000e+03 9.200000e+02 0.000000e+00 0.000000e+00
+2.270000e+02 2.420000e+01 3.960000e+03 1.046000e+03 0.000000e+00 0.000000e+00
+5.270000e+02 1.300000e+01 3.960000e+03 1.172000e+03 0.000000e+00 0.000000e+00
+7.270000e+02 1.050000e+01 3.960000e+03 1.216000e+03 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+<Structural>
+	<Elasticity>
+2.500000e+01 1.600000e+11 2.300000e-01
+	</Elasticity>
+	<CTE RefTemperature="20">
+2.500000e+01 3.300000e-06
+	</CTE>
+	<Viscoplastic>
+	<Anand Enable="false">
+0 0 0 0 0 0 0 0 0
+	</Anand>
+	<ModifiedAnand Enable="false">
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	</ModifiedAnand>
+	</Viscoplastic>
+	<Fatigue>
+	<Darveaux Enable="false">
+0 0 0 0 0 0 0
+	</Darveaux>
+	<Solomon Enable="false">
+0 0
+	</Solomon>
+	</Fatigue>
+	<Failure>
+	<Tension Enable="false">
+0
+	</Tension>
+	<Compression Enable="false">
+0
+	</Compression>
+	<MaxPressure Enable="false">
+0
+	</MaxPressure>
+	<EffectiveStrain Enable="false">
+0
+	</EffectiveStrain>
+	<MaxStrain Enable="false">
+0
+	</MaxStrain>
+	</Failure>
+</Structural>
+</Material>
+<Material name="ALUMINUM_NITRIDE" DefaultThickness="10MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 4.500000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.600000e+02 3.260000e+03 7.400000e+02 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Bergquist_Hi-Flow_THF_1500P">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.500000e+00 0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Bergquist_Hi-Flow_THF_1600P">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.600000e+00 0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Bergquist_Hi-Flow_THF_3000UT">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 3.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Bergquist_Loctite_EIF_1000">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 4.500000e-01 0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Bergquist_Loctite_TC_4_T">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 6.100000e-01 0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Bergquist_Loctite_TC_8M">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.300000e+00 0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Bergquist_Loctite_TCF_1000">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Bergquist_Loctite_TCF_2000AF">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 3.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Bergquist_Loctite_TCF_4000PXF">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 3.400000e+00 0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Bergquist_Loctite_TCP_4000_Series">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 3.400000e+00 0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Bergquist_Loctite_TCP_8175M1">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.300000e+00 0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Bergquist_Loctite_TG_100">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 3.400000e+00 0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="BERYLLIA" DefaultThickness="10MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 6.700000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.180000e+02 2.850000e+03 8.850000e+02 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="BORON_NITRIDE" DefaultThickness="10MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 4.000000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.000000e+01 3.490000e+03 7.930000e+02 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="BT_epoxy" DefaultThickness="8MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil">
+	<Dielectric>
+		<Model>
+1.000000e+02 4.100000e+00 1.300000e-02
+1.000000e+03 4.100000e+00 2.000000e-02
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 3.500000e-01 1.400000e+03 1.150000e+03 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+<Structural>
+	<Elasticity>
+2.500000e+01 2.780000e+10 2.100000e-01
+	</Elasticity>
+	<CTE RefTemperature="20">
+2.500000e+01 1.400000e-05
+	</CTE>
+	<Viscoplastic>
+	<Anand Enable="false">
+0 0 0 0 0 0 0 0 0
+	</Anand>
+	<ModifiedAnand Enable="false">
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	</ModifiedAnand>
+	</Viscoplastic>
+	<Fatigue>
+	<Darveaux Enable="false">
+0 0 0 0 0 0 0
+	</Darveaux>
+	<Solomon Enable="false">
+0 0
+	</Solomon>
+	</Fatigue>
+	<Failure>
+	<Tension Enable="false">
+0
+	</Tension>
+	<Compression Enable="false">
+0
+	</Compression>
+	<MaxPressure Enable="false">
+0
+	</MaxPressure>
+	<EffectiveStrain Enable="false">
+0
+	</EffectiveStrain>
+	<MaxStrain Enable="false">
+0
+	</MaxStrain>
+	</Failure>
+</Structural>
+</Material>
+<Material name="CERMET" DefaultThickness="25MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 5.000000e+01 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.150000e+01 7.100000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="CONFORMAL_COAT" DefaultThickness="0.787402MIL" UpperTolerance="0um" LowerTolerance="0um">
+	<Dielectric>
+		<Model>
+1.000000e+03 3.000000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.500000e-01 9.000000e+02 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="CORDERITE" DefaultThickness="10MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 1.000000e+01 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.500000e+00 2.150000e+03 8.250000e+02 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="CYANATE_ESTER_E" DefaultThickness="8MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil">
+	<Dielectric>
+		<Model>
+1.000000e+03 3.800000e+00 9.000000e-03
+		</Model>
+	</Dielectric>
+</Material>
+<Material name="CYANATE_ESTER_S" DefaultThickness="8MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil">
+	<Dielectric>
+		<Model>
+1.000000e+03 3.500000e+00 9.000000e-03
+		</Model>
+	</Dielectric>
+</Material>
+<Material name="DIAMOND" DefaultThickness="0.5MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 5.700000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.000000e+03 3.520000e+03 5.079000e+02 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="DieAttach">
+	<Dielectric>
+		<Model>
+1.000000e+02 3.900000e+00 2.000000e-02
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.000000e+00 1.220000e+03 2.000000e+03 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+<Structural>
+	<Elasticity>
+2.500000e+01 2.960000e+09 3.600000e-01
+	</Elasticity>
+	<CTE RefTemperature="20">
+2.500000e+01 3.300000e-05
+	</CTE>
+	<Viscoplastic>
+	<Anand Enable="false">
+0 0 0 0 0 0 0 0 0
+	</Anand>
+	<ModifiedAnand Enable="false">
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	</ModifiedAnand>
+	</Viscoplastic>
+	<Fatigue>
+	<Darveaux Enable="false">
+0 0 0 0 0 0 0
+	</Darveaux>
+	<Solomon Enable="false">
+0 0
+	</Solomon>
+	</Fatigue>
+	<Failure>
+	<Tension Enable="false">
+0
+	</Tension>
+	<Compression Enable="false">
+0
+	</Compression>
+	<MaxPressure Enable="false">
+0
+	</MaxPressure>
+	<EffectiveStrain Enable="false">
+0
+	</EffectiveStrain>
+	<MaxStrain Enable="false">
+0
+	</MaxStrain>
+	</Failure>
+</Structural>
+</Material>
+<Material name="DOW_SLYGARD_3-6605">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 8.000000e-01 2.100000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="DOWSIL_1-4173">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.800000e+00 2.700000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="DOWSIL_1-4174">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.800000e+00 2.700000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="DOWSIL_3-6651">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.100000e+00 2.400000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="DOWSIL_3-6751">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.000000e+00 2.300000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="DOWSIL_3-6752">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.700000e+00 2.600000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="DOWSIL_340">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 6.000000e-01 2.110000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="DOWSIL_EA-9189_H_RTV">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 9.000000e-01 1.700000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="DOWSIL_Q1-9226">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 8.000000e-01 2.100000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="DOWSIL_SC_102">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 8.000000e-01 2.450000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="DOWSIL_SC_4471_CV">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.000000e+00 2.760000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="DOWSIL_SC_4476_CV">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 3.100000e+00 3.040000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="DOWSIL_SE-4486">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.600000e+00 2.600000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="DOWSIL_SE4445_CV">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.300000e+00 2.400000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="DOWSIL_SE_4485">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.800000e+00 2.900000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="DOWSIL_SE_4490_CV">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.900000e+00 2.630000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="DOWSIL_TC-2022">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.600000e+00 2.700000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="DOWSIL_TC-2030">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.700000e+00 2.900000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="DOWSIL_TC-2035">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 3.300000e+00 3.000000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="DOWSIL_TC-3015">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.000000e+00 2.800000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="DOWSIL_TC-4025">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.700000e+00 2.800000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="DOWSIL_TC-5080">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.000000e+00 2.100000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="DOWSIL_TC-6020">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.700000e+00 2.900000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="DOWSIL_TC_4605_HLV">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.000000e+00 1.700000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="DOWSIL_TC_5021">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 3.300000e+00 3.470000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="DOWSIL_TC_5026">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.900000e+00 3.530000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="DOWSIL_TC_5121">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.500000e+00 4.180000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="DOWSIL_TC_5351">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 3.300000e+00 3.120000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="DOWSIL_TC_5622">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 4.300000e+00 2.530000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="DOWSIL_TC_5888">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 5.200000e+00 2.600000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="DOWSIL_TC_6011">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.000000e+00 1.600000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Dupont_Kapton_FPC_Film">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.200000e-01 0.000000e+00 1.090000e+03 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Dupont_Kapton_HN">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.200000e-01 1.420000e+03 1.090000e+03 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Dupont_Kapton_HPP-ST">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.200000e-01 1.420000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Dupont_Kapton_MT">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 4.600000e-01 0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Dupont_Kapton_MT+">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 8.000000e-01 0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="ELECTRO_COND_EPOXY" DefaultThickness="1.9685MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 4.500000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 8.650000e+00 3.000000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="ELECTROLESS_PLT_AU" DefaultThickness="0.0590551MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 4.500000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+</Material>
+<Material name="ELECTROLESS_PLT_NI" DefaultThickness="0.11811MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 4.500000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 4.390000e+00 0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="EPOXY_ARAMID" DefaultThickness="10MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 3.900000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+</Material>
+<Material name="EPOXY_INK_THERMOSET" DefaultThickness="0.669291MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 4.400000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+</Material>
+<Material name="EPOXY_INK_UV_CURE" DefaultThickness="0.393701MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 4.400000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+</Material>
+<Material name="EPOXY_RESIN_HIGH-DK" DefaultThickness="0.472441MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 1.000000e+01 1.900000e-02
+		</Model>
+	</Dielectric>
+</Material>
+<Material name="EPOXY_RESIN_HIGH-TG" DefaultThickness="0.314961MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 4.400000e+00 1.500000e-02
+		</Model>
+	</Dielectric>
+</Material>
+<Material name="ferrite_measured">
+	<Dielectric>
+		<Model>
+1.000000e+00 3.200000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 5.100000e+00 4.750000e+03 8.800000e+02 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+	<Magnetic>
+		<Model Er="3.2" Sigma="0">
+1.000000e+00 3.400000e+02 4.500000e+01
+2.500000e+00 3.300000e+02 4.400000e+01
+3.800000e+00 3.350000e+02 7.000000e+01
+5.000000e+00 3.250000e+02 9.300010e+01
+6.000000e+00 3.100000e+02 1.150000e+02
+7.000000e+00 2.900000e+02 1.250000e+02
+8.000000e+00 2.750000e+02 1.300000e+02
+9.000000e+00 2.600000e+02 1.350000e+02
+1.000000e+01 2.500000e+02 1.400000e+02
+2.000000e+01 1.700000e+02 1.450000e+02
+3.000000e+01 1.200000e+02 1.300000e+02
+4.000000e+01 8.000000e+01 1.220000e+02
+5.000000e+01 7.000000e+01 1.100000e+02
+6.000000e+01 5.500000e+01 1.000000e+02
+7.000000e+01 4.500000e+01 9.000000e+01
+8.000000e+01 4.000000e+01 8.200000e+01
+9.000000e+01 3.000000e+01 8.000010e+01
+1.000000e+02 2.500000e+01 7.300000e+01
+2.000000e+02 1.000000e+01 4.300000e+01
+3.000000e+02 5.000000e+00 2.800000e+01
+4.000000e+02 3.000000e+00 2.300000e+01
+5.000000e+02 2.000000e+00 2.000000e+01
+		</Model>
+	</Magnetic>
+</Material>
+<Material name="FIBERGLASS_PTFE" DefaultThickness="9.84252MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.300000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.540000e-01 2.310000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="FORSTERITE" DefaultThickness="10MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 7.000000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.600000e+00 2.600000e+03 8.500000e+02 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="FR-4" DefaultThickness="8MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil">
+	<Dielectric>
+		<Model>
+1.000000e+03 4.500000e+00 3.500000e-02
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.300000e-01 1.900000e+03 1.200000e+03 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+<Structural>
+	<Elasticity>
+2.500000e+01 1.800000e+10 3.000000e-01
+	</Elasticity>
+	<CTE RefTemperature="20">
+2.500000e+01 2.220000e-05
+	</CTE>
+	<Viscoplastic>
+	<Anand Enable="false">
+0 0 0 0 0 0 0 0 0
+	</Anand>
+	<ModifiedAnand Enable="false">
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	</ModifiedAnand>
+	</Viscoplastic>
+	<Fatigue>
+	<Darveaux Enable="false">
+0 0 0 0 0 0 0
+	</Darveaux>
+	<Solomon Enable="false">
+0 0
+	</Solomon>
+	</Fatigue>
+	<Failure>
+	<Tension Enable="false">
+0
+	</Tension>
+	<Compression Enable="false">
+0
+	</Compression>
+	<MaxPressure Enable="false">
+0
+	</MaxPressure>
+	<EffectiveStrain Enable="false">
+0
+	</EffectiveStrain>
+	<MaxStrain Enable="false">
+0
+	</MaxStrain>
+	</Failure>
+</Structural>
+</Material>
+<Material name="FR-4_NO_FLOW_PREPREG" DefaultThickness="2MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 4.000000e+00 1.400000e-02
+		</Model>
+	</Dielectric>
+</Material>
+<Material name="FR4">
+	<Dielectric>
+		<Model>
+1.000000e+02 3.900000e+00 2.300000e-02
+5.000000e+02 3.900000e+00 2.300000e-02
+9.000000e+02 3.900000e+00 2.300000e-02
+1.000000e+03 3.700000e+00 1.900000e-02
+2.000000e+03 3.700000e+00 1.900000e-02
+3.000000e+03 3.700000e+00 1.900000e-02
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.300000e-01 1.900000e+03 1.200000e+03 9.000000e-01 0.000000e+00
+		</Model>
+	</Thermal>
+<Structural>
+	<Elasticity>
+2.500000e+01 1.800000e+10 3.000000e-01
+	</Elasticity>
+	<CTE RefTemperature="20">
+2.500000e+01 2.220000e-05
+	</CTE>
+	<Viscoplastic>
+	<Anand Enable="false">
+0 0 0 0 0 0 0 0 0
+	</Anand>
+	<ModifiedAnand Enable="false">
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	</ModifiedAnand>
+	</Viscoplastic>
+	<Fatigue>
+	<Darveaux Enable="false">
+0 0 0 0 0 0 0
+	</Darveaux>
+	<Solomon Enable="false">
+0 0
+	</Solomon>
+	</Fatigue>
+	<Failure>
+	<Tension Enable="false">
+0
+	</Tension>
+	<Compression Enable="false">
+0
+	</Compression>
+	<MaxPressure Enable="false">
+0
+	</MaxPressure>
+	<EffectiveStrain Enable="false">
+0
+	</EffectiveStrain>
+	<MaxStrain Enable="false">
+0
+	</MaxStrain>
+	</Failure>
+</Structural>
+</Material>
+<Material name="FR42">
+	<Dielectric>
+		<Model>
+1.000000e+02 3.900000e+00 2.000000e-02
+5.000000e+02 3.900000e+00 2.000000e-02
+9.000000e+02 3.900000e+00 2.000000e-02
+1.000000e+03 3.800000e+00 1.800000e-02
+2.000000e+03 3.800000e+00 1.400000e-02
+2.100000e+03 3.850000e+00 1.200000e-02
+2.500000e+03 3.810000e+00 1.200000e-02
+2.600000e+03 3.800000e+00 1.400000e-02
+3.000000e+03 3.780000e+00 1.400000e-02
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.300000e-01 1.900000e+03 1.200000e+03 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+<Structural>
+	<Elasticity>
+2.500000e+01 1.800000e+10 3.000000e-01
+	</Elasticity>
+	<CTE RefTemperature="20">
+2.500000e+01 2.220000e-05
+	</CTE>
+	<Viscoplastic>
+	<Anand Enable="false">
+0 0 0 0 0 0 0 0 0
+	</Anand>
+	<ModifiedAnand Enable="false">
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	</ModifiedAnand>
+	</Viscoplastic>
+	<Fatigue>
+	<Darveaux Enable="false">
+0 0 0 0 0 0 0
+	</Darveaux>
+	<Solomon Enable="false">
+0 0
+	</Solomon>
+	</Fatigue>
+	<Failure>
+	<Tension Enable="false">
+0
+	</Tension>
+	<Compression Enable="false">
+0
+	</Compression>
+	<MaxPressure Enable="false">
+0
+	</MaxPressure>
+	<EffectiveStrain Enable="false">
+0
+	</EffectiveStrain>
+	<MaxStrain Enable="false">
+0
+	</MaxStrain>
+	</Failure>
+</Structural>
+</Material>
+<Material name="FR42_measured">
+	<Dielectric>
+		<Model>
+1.000000e+02 4.600000e+00 1.700000e-02
+5.000000e+02 4.590000e+00 1.800000e-02
+9.000000e+02 4.582000e+00 1.940000e-02
+1.000000e+03 4.580000e+00 1.930000e-02
+2.000000e+03 4.560000e+00 1.900000e-02
+2.100000e+03 4.558000e+00 1.900000e-02
+2.500000e+03 4.540000e+00 2.000000e-02
+2.600000e+03 4.540000e+00 2.100000e-02
+3.000000e+03 4.538000e+00 2.100000e-02
+		</Model>
+	</Dielectric>
+</Material>
+<Material name="FR4_4.1">
+	<Dielectric>
+		<Model>
+1.000000e+02 4.100000e+00 2.300000e-02
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.300000e-01 1.900000e+03 1.200000e+03 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+<Structural>
+	<Elasticity>
+2.500000e+01 1.800000e+10 3.000000e-01
+	</Elasticity>
+	<CTE RefTemperature="20">
+2.500000e+01 2.220000e-05
+	</CTE>
+	<Viscoplastic>
+	<Anand Enable="false">
+0 0 0 0 0 0 0 0 0
+	</Anand>
+	<ModifiedAnand Enable="false">
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	</ModifiedAnand>
+	</Viscoplastic>
+	<Fatigue>
+	<Darveaux Enable="false">
+0 0 0 0 0 0 0
+	</Darveaux>
+	<Solomon Enable="false">
+0 0
+	</Solomon>
+	</Fatigue>
+	<Failure>
+	<Tension Enable="false">
+0
+	</Tension>
+	<Compression Enable="false">
+0
+	</Compression>
+	<MaxPressure Enable="false">
+0
+	</MaxPressure>
+	<EffectiveStrain Enable="false">
+0
+	</EffectiveStrain>
+	<MaxStrain Enable="false">
+0
+	</MaxStrain>
+	</Failure>
+</Structural>
+</Material>
+<Material name="FR4_4.2">
+	<Dielectric>
+		<Model>
+1.000000e+02 4.200000e+00 2.300000e-02
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.300000e-01 1.900000e+03 1.200000e+03 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+<Structural>
+	<Elasticity>
+2.500000e+01 1.800000e+10 3.000000e-01
+	</Elasticity>
+	<CTE RefTemperature="20">
+2.500000e+01 2.220000e-05
+	</CTE>
+	<Viscoplastic>
+	<Anand Enable="false">
+0 0 0 0 0 0 0 0 0
+	</Anand>
+	<ModifiedAnand Enable="false">
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	</ModifiedAnand>
+	</Viscoplastic>
+	<Fatigue>
+	<Darveaux Enable="false">
+0 0 0 0 0 0 0
+	</Darveaux>
+	<Solomon Enable="false">
+0 0
+	</Solomon>
+	</Fatigue>
+	<Failure>
+	<Tension Enable="false">
+0
+	</Tension>
+	<Compression Enable="false">
+0
+	</Compression>
+	<MaxPressure Enable="false">
+0
+	</MaxPressure>
+	<EffectiveStrain Enable="false">
+0
+	</EffectiveStrain>
+	<MaxStrain Enable="false">
+0
+	</MaxStrain>
+	</Failure>
+</Structural>
+</Material>
+<Material name="FR4_4.5">
+	<Dielectric>
+		<Model>
+1.000000e+02 4.500000e+00 1.600000e-02
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.300000e-01 1.900000e+03 1.200000e+03 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+<Structural>
+	<Elasticity>
+2.500000e+01 1.800000e+10 3.000000e-01
+	</Elasticity>
+	<CTE RefTemperature="20">
+2.500000e+01 2.220000e-05
+	</CTE>
+	<Viscoplastic>
+	<Anand Enable="false">
+0 0 0 0 0 0 0 0 0
+	</Anand>
+	<ModifiedAnand Enable="false">
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	</ModifiedAnand>
+	</Viscoplastic>
+	<Fatigue>
+	<Darveaux Enable="false">
+0 0 0 0 0 0 0
+	</Darveaux>
+	<Solomon Enable="false">
+0 0
+	</Solomon>
+	</Fatigue>
+	<Failure>
+	<Tension Enable="false">
+0
+	</Tension>
+	<Compression Enable="false">
+0
+	</Compression>
+	<MaxPressure Enable="false">
+0
+	</MaxPressure>
+	<EffectiveStrain Enable="false">
+0
+	</EffectiveStrain>
+	<MaxStrain Enable="false">
+0
+	</MaxStrain>
+	</Failure>
+</Structural>
+</Material>
+<Material name="FR4_measured">
+	<Dielectric>
+		<Model>
+1.000000e+02 4.600000e+00 1.700000e-02
+5.000000e+02 4.590000e+00 1.800000e-02
+9.000000e+02 4.582000e+00 1.940000e-02
+1.000000e+03 4.580000e+00 1.930000e-02
+2.000000e+03 4.560000e+00 1.900000e-02
+3.000000e+03 4.538000e+00 2.100000e-02
+		</Model>
+	</Dielectric>
+</Material>
+<Material name="Gallium_Arsenide" DefaultThickness="1.2MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil" >
+	<Dielectric>
+		<Model>
+1.000000e+02 1.190000e+01 5.000000e-03
+1.000000e+03 1.190000e+01 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 5.000000e+01 5.316000e+03 3.250000e+02 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+<Structural>
+	<Elasticity>
+2.500000e+01 1.600000e+11 2.300000e-01
+	</Elasticity>
+	<CTE RefTemperature="20">
+2.500000e+01 3.300000e-06
+	</CTE>
+	<Viscoplastic>
+	<Anand Enable="false">
+0 0 0 0 0 0 0 0 0
+	</Anand>
+	<ModifiedAnand Enable="false">
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	</ModifiedAnand>
+	</Viscoplastic>
+	<Fatigue>
+	<Darveaux Enable="false">
+0 0 0 0 0 0 0
+	</Darveaux>
+	<Solomon Enable="false">
+0 0
+	</Solomon>
+	</Fatigue>
+	<Failure>
+	<Tension Enable="false">
+0
+	</Tension>
+	<Compression Enable="false">
+0
+	</Compression>
+	<MaxPressure Enable="false">
+0
+	</MaxPressure>
+	<EffectiveStrain Enable="false">
+0
+	</EffectiveStrain>
+	<MaxStrain Enable="false">
+0
+	</MaxStrain>
+	</Failure>
+</Structural>
+</Material>
+<Material name="GLASS_CERAMICS" DefaultThickness="5MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 5.000000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.500000e+00 2.520000e+03 7.500000e+02 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="GLASS_CORNING" DefaultThickness="5MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 7.500000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.310000e+00 2.200000e+03 7.530000e+02 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="GLASS_EPOXY" DefaultThickness="10MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 4.300000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+</Material>
+<Material name="GREEN_TAPE" DefaultThickness="25.5118MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 4.500000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 4.600000e+00 3.100000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="HDPE" DefaultThickness="10MIL" >
+	<Dielectric>
+		<Model>
+1.000000e+03 3.800000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 4.200000e-01 9.580000e+02 1.900000e+03 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="HeatSinkAttach">
+	<Dielectric>
+		<Model>
+1.000000e+02 3.900000e+00 2.000000e-02
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 7.500000e+00 1.220000e+03 2.000000e+03 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+<Structural>
+	<Elasticity>
+2.500000e+01 1.270000e+10 3.600000e-01
+	</Elasticity>
+	<CTE RefTemperature="20">
+2.500000e+01 3.300000e-05
+	</CTE>
+	<Viscoplastic>
+	<Anand Enable="false">
+0 0 0 0 0 0 0 0 0
+	</Anand>
+	<ModifiedAnand Enable="false">
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	</ModifiedAnand>
+	</Viscoplastic>
+	<Fatigue>
+	<Darveaux Enable="false">
+0 0 0 0 0 0 0
+	</Darveaux>
+	<Solomon Enable="false">
+0 0
+	</Solomon>
+	</Fatigue>
+	<Failure>
+	<Tension Enable="false">
+0
+	</Tension>
+	<Compression Enable="false">
+0
+	</Compression>
+	<MaxPressure Enable="false">
+0
+	</MaxPressure>
+	<EffectiveStrain Enable="false">
+0
+	</EffectiveStrain>
+	<MaxStrain Enable="false">
+0
+	</MaxStrain>
+	</Failure>
+</Structural>
+</Material>
+<Material name="Laird_Slim_TIM_10000">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 5.500000e+00 2.500000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Laird_Tflex_300">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.200000e+00 1.800000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Laird_Tflex_600">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 3.000000e+00 1.300000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Laird_Tflex_B200">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.000000e+00 2.200000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Laird_Tflex_HD300">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.700000e+00 3.100000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Laird_Tflex_HD700">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 5.000000e+00 3.300000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Laird_Tflex_HD80000">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 6.000000e+00 3.300000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Laird_Tflex_HD90000">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 7.500000e+00 3.500000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Laird_Tflex_HR600">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 3.000000e+00 2.500000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Laird_Tflex_P100">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.200000e+00 2.300000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Laird_Tflex_P300">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 3.000000e+00 3.100000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Laird_Tflex_SF800">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 7.800000e+00 3.200000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Laird_Tflex_UT20000">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 3.000000e+00 3.200000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Laird_Tpli_200">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 6.000000e+00 1.400000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Laird_Tputty_403">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.300000e+00 2.480000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Laird_Tputty_502">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 3.000000e+00 1.300000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Laird_Tputty_508">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 3.700000e+00 3.200000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Laird_Tputty_607">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 6.400000e+00 3.450000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Laird_Tputty_CR200">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.000000e+00 2.470000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Laird_Tputty_CR350">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 3.600000e+00 3.200000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="LDPE" DefaultThickness="10MIL" >
+	<Dielectric>
+		<Model>
+1.000000e+03 3.800000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 3.500000e-01 9.100000e+02 2.100000e+03 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="MoldingCompound">
+	<Dielectric>
+		<Model>
+1.000000e+02 3.900000e+00 2.000000e-02
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 6.000000e-01 1.200000e+03 1.000000e+03 9.500000e-01 0.000000e+00
+		</Model>
+	</Thermal>
+<Structural>
+	<Elasticity>
+2.500000e+01 3.000000e+10 3.500000e-01
+	</Elasticity>
+	<CTE RefTemperature="20">
+2.500000e+01 4.400000e-05
+	</CTE>
+	<Viscoplastic>
+	<Anand Enable="false">
+0 0 0 0 0 0 0 0 0
+	</Anand>
+	<ModifiedAnand Enable="false">
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	</ModifiedAnand>
+	</Viscoplastic>
+	<Fatigue>
+	<Darveaux Enable="false">
+0 0 0 0 0 0 0
+	</Darveaux>
+	<Solomon Enable="false">
+0 0
+	</Solomon>
+	</Fatigue>
+	<Failure>
+	<Tension Enable="false">
+0
+	</Tension>
+	<Compression Enable="false">
+0
+	</Compression>
+	<MaxPressure Enable="false">
+0
+	</MaxPressure>
+	<EffectiveStrain Enable="false">
+0
+	</EffectiveStrain>
+	<MaxStrain Enable="false">
+0
+	</MaxStrain>
+	</Failure>
+</Structural>
+</Material>
+<Material name="MOLYBDENUM_HS_BLOCK" DefaultThickness="17.7165MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 4.500000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+</Material>
+<Material name="MULLITE" DefaultThickness="10MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 6.400000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 3.500000e+00 2.800000e+03 9.600000e+02 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="NITROGEN_GAS" DefaultThickness="0">
+	<Dielectric>
+		<Model>
+1.000000e+03 4.500000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.600000e-02 1.145000e+00 1.039000e+03 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="OSP_BENZIMIDAZOLETHIOL" DefaultThickness="0.015748MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 5.450000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+</Material>
+<Material name="OSP_BENZOTRIAZOLE" DefaultThickness="0.00787402MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 4.000000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+</Material>
+<Material name="PHENOLIC" DefaultThickness="5MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 4.500000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 9.400000e-01 1.740000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="PHOTOIMAGABLE_ACRYLIC" DefaultThickness="1.5MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 3.500000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+</Material>
+<Material name="polyimide" DefaultThickness="8MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil">
+	<Dielectric>
+		<Model>
+1.000000e+02 3.500000e+00 4.000000e-03
+1.000000e+03 4.300000e+00 3.500000e-02
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 5.200000e-01 1.400000e+03 1.150000e+03 7.400000e-01 0.000000e+00
+		</Model>
+	</Thermal>
+<Structural>
+	<Elasticity>
+2.500000e+01 2.500000e+09 3.400000e-01
+	</Elasticity>
+	<CTE RefTemperature="20">
+2.500000e+01 3.500000e-05
+	</CTE>
+	<Viscoplastic>
+	<Anand Enable="false">
+0 0 0 0 0 0 0 0 0
+	</Anand>
+	<ModifiedAnand Enable="false">
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	</ModifiedAnand>
+	</Viscoplastic>
+	<Fatigue>
+	<Darveaux Enable="false">
+0 0 0 0 0 0 0
+	</Darveaux>
+	<Solomon Enable="false">
+0 0
+	</Solomon>
+	</Fatigue>
+	<Failure>
+	<Tension Enable="false">
+0
+	</Tension>
+	<Compression Enable="false">
+0
+	</Compression>
+	<MaxPressure Enable="false">
+0
+	</MaxPressure>
+	<EffectiveStrain Enable="false">
+0
+	</EffectiveStrain>
+	<MaxStrain Enable="false">
+0
+	</MaxStrain>
+	</Failure>
+</Structural>
+</Material>
+<Material name="POLYIMIDE_ARAMID" DefaultThickness="2MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 3.600000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.000000e-01 1.370000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="POLYIMIDE_BOND_PLY" DefaultThickness="4MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 3.600000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 4.000000e-01 0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="POLYIMIDE_FILM" DefaultThickness="3MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil">
+	<Dielectric>
+		<Model>
+1.000000e+03 3.500000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 5.200000e-01 1.400000e+03 1.150000e+03 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+<Structural>
+	<Elasticity>
+2.500000e+01 2.500000e+09 3.400000e-01
+	</Elasticity>
+	<CTE RefTemperature="20">
+2.500000e+01 3.500000e-05
+	</CTE>
+	<Viscoplastic>
+	<Anand Enable="false">
+0 0 0 0 0 0 0 0 0
+	</Anand>
+	<ModifiedAnand Enable="false">
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	</ModifiedAnand>
+	</Viscoplastic>
+	<Fatigue>
+	<Darveaux Enable="false">
+0 0 0 0 0 0 0
+	</Darveaux>
+	<Solomon Enable="false">
+0 0
+	</Solomon>
+	</Fatigue>
+	<Failure>
+	<Tension Enable="false">
+0
+	</Tension>
+	<Compression Enable="false">
+0
+	</Compression>
+	<MaxPressure Enable="false">
+0
+	</MaxPressure>
+	<EffectiveStrain Enable="false">
+0
+	</EffectiveStrain>
+	<MaxStrain Enable="false">
+0
+	</MaxStrain>
+	</Failure>
+</Structural>
+</Material>
+<Material name="POLYIMIDE_FILM_1MIL" DefaultThickness="1MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 3.500000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.200000e-01 1.420000e+03 1.090000e+03 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+<Structural>
+	<Elasticity>
+2.500000e+01 2.500000e+09 3.400000e-01
+	</Elasticity>
+	<CTE RefTemperature="20">
+2.500000e+01 2.000000e-05
+	</CTE>
+	<Viscoplastic>
+	<Anand Enable="false">
+0 0 0 0 0 0 0 0 0
+	</Anand>
+	<ModifiedAnand Enable="false">
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	</ModifiedAnand>
+	</Viscoplastic>
+	<Fatigue>
+	<Darveaux Enable="false">
+0 0 0 0 0 0 0
+	</Darveaux>
+	<Solomon Enable="false">
+0 0
+	</Solomon>
+	</Fatigue>
+	<Failure>
+	<Tension Enable="false">
+0
+	</Tension>
+	<Compression Enable="false">
+0
+	</Compression>
+	<MaxPressure Enable="false">
+0
+	</MaxPressure>
+	<EffectiveStrain Enable="false">
+0
+	</EffectiveStrain>
+	<MaxStrain Enable="false">
+0
+	</MaxStrain>
+	</Failure>
+</Structural>
+</Material>
+<Material name="POLYIMIDE_FILM_3MIL" DefaultThickness="3MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil">
+	<Dielectric>
+		<Model>
+1.000000e+03 3.600000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.200000e-01 1.420000e+03 1.090000e+03 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+<Structural>
+	<Elasticity>
+2.500000e+01 2.500000e+09 3.400000e-01
+	</Elasticity>
+	<CTE RefTemperature="20">
+2.500000e+01 2.000000e-05
+	</CTE>
+	<Viscoplastic>
+	<Anand Enable="false">
+0 0 0 0 0 0 0 0 0
+	</Anand>
+	<ModifiedAnand Enable="false">
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	</ModifiedAnand>
+	</Viscoplastic>
+	<Fatigue>
+	<Darveaux Enable="false">
+0 0 0 0 0 0 0
+	</Darveaux>
+	<Solomon Enable="false">
+0 0
+	</Solomon>
+	</Fatigue>
+	<Failure>
+	<Tension Enable="false">
+0
+	</Tension>
+	<Compression Enable="false">
+0
+	</Compression>
+	<MaxPressure Enable="false">
+0
+	</MaxPressure>
+	<EffectiveStrain Enable="false">
+0
+	</EffectiveStrain>
+	<MaxStrain Enable="false">
+0
+	</MaxStrain>
+	</Failure>
+</Structural>
+</Material>
+<Material name="POLYIMIDE_GLASS" DefaultThickness="2MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 4.700000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 3.490000e-01 1.560000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="POLYIMIDE_QUARTZ" DefaultThickness="2MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 4.000000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+</Material>
+<Material name="POLYIMIDE_RIGID_5MIL" DefaultThickness="5MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 3.500000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.200000e-01 1.420000e+03 1.090000e+03 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+<Structural>
+	<Elasticity>
+2.500000e+01 2.500000e+09 3.400000e-01
+	</Elasticity>
+	<CTE RefTemperature="20">
+2.500000e+01 2.000000e-05
+	</CTE>
+	<Viscoplastic>
+	<Anand Enable="false">
+0 0 0 0 0 0 0 0 0
+	</Anand>
+	<ModifiedAnand Enable="false">
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	</ModifiedAnand>
+	</Viscoplastic>
+	<Fatigue>
+	<Darveaux Enable="false">
+0 0 0 0 0 0 0
+	</Darveaux>
+	<Solomon Enable="false">
+0 0
+	</Solomon>
+	</Fatigue>
+	<Failure>
+	<Tension Enable="false">
+0
+	</Tension>
+	<Compression Enable="false">
+0
+	</Compression>
+	<MaxPressure Enable="false">
+0
+	</MaxPressure>
+	<EffectiveStrain Enable="false">
+0
+	</EffectiveStrain>
+	<MaxStrain Enable="false">
+0
+	</MaxStrain>
+	</Failure>
+</Structural>
+</Material>
+<Material name="PS">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 3.500000e-01 1.045000e+03 1.200000e+03 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="PTFE" DefaultThickness="5MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 5.100000e-01 2.105000e+03 1.030000e+03 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="PVC">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.550000e-06 1.390000e+03 1.005000e+03 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="SAPPHIRE" DefaultThickness="10MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 9.000000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 3.730000e+01 3.970000e+03 6.990000e+02 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_CLG-1500">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.500000e+00 2.600000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_CLG-2500">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.900000e+00 2.900000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_CLG-3500">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 3.500000e+00 3.100000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_CLG-4500">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 4.500000e+00 3.200000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_EMI-TC301">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.500000e+00 4.600000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_EMI-TC803">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.500000e+00 4.600000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_G-1000">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.400000e+00 3.040000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_G-747">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 9.000000e-01 2.650000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_G-750">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 3.500000e+00 2.770000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_G-751">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 4.500000e+00 2.510000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_G-775">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 3.600000e+00 3.400000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_G-776">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.300000e+00 2.900000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_G-777">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 3.300000e+00 3.200000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_G-779">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 3.000000e+00 3.200000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_G-781">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.600000e+00 2.930000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_GUV-300">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 3.100000e+00 2.980000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_GUV-500">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 5.100000e+00 3.239000e+04 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_KE-1184AB">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.000000e+00 2.780000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_KE-1861AB">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 8.300000e-01 2.220000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_KE-1862">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 8.000000e-01 2.220000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_KE-1867">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.200000e+00 2.920000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_KE-18698AB">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.200000e+00 2.860000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_KE-1891">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 4.000000e+00 3.060000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_KE-1897AB">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.600000e+00 2.610000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_KE-1898AB">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.200000e+00 2.860000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_KE-3467">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.400000e+00 2.900000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_KE-4916">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 8.200000e-01 1.620000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_KE-4918">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 8.800000e-01 1.680000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_KE-4961">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.600000e+00 2.340000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_KE-4962">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.300000e+00 2.650000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_KE-609">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 7.000000e-01 2.500000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_KS-4967">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.100000e+00 2.450000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_KS-609">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 7.000000e-01 2.500000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_KS-613">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 8.000000e-01 2.360000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_OSR-500">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 3.100000e+00 3.400000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_OSR-603">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 6.000000e+00 2.550000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_PCS-CR-10">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_PCS-LT-30">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 3.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_PCS-PL-30">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.700000e+00 0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_SDP-1030AB">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.100000e+00 2.450000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_SDP-2060AB">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.300000e+00 2.870000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_SDP-3540AB">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 3.500000e+00 3.080000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_SDP-5040AB">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 5.100000e+00 3.270000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_SDP-6560AB">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 6.500000e+00 3.200000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_TC-11K1">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.600000e+00 2.200000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_TC-15TCI">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 6.000000e-01 2.200000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_TC-15TCP">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 6.000000e-01 2.100000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_TC-A_Series">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 8.000000e-01 2.200000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_TC-BG_Series">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 7.300000e+00 1.500000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_TC-CAB-10_Series">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.300000e+00 2.200000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_TC-CAD-10_Series">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 3.200000e+00 3.000000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_TC-CAF-40_Series">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 5.200000e+00 3.300000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_TC-CAS-10_Series">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.800000e+00 1.900000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_TC-CAT-20_Series">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 4.500000e+00 3.200000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_TC-CG_Series">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.700000e+00 2.500000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_TC-EG_Series">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 3.100000e+00 3.100000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_TC-FORS-2_Series">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.900000e+00 3.200000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_TC-SAS-T">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 7.000000e-01 1.900000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_TC-SET4-20">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 4.500000e+00 3.200000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_TC-SP-1.7_Series">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.700000e+00 2.300000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_TC-SPA-3.0_Series">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 3.000000e+00 2.400000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_TC-TA-1_Series">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.000000e+00 1.700000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_TC-TAG-2-AA_Series">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.800000e+00 1.900000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_TC-TAG-2_Series">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.800000e+00 1.900000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_TC-TAG-3-AA_Series">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 3.400000e+00 2.700000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_TC-TAG-3_Series">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 3.400000e+00 2.800000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_TC-TAG-8_Series">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 8.000000e+00 1.600000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_TC-TAP-2-HP_Series">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.800000e+00 2.700000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_TC-TAP-2_Series">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.800000e+00 1.900000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_TC-THE_Series">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.500000e+00 2.900000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_TC-THS_Series">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.500000e+00 2.900000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_TC-TXE_Series">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 5.000000e+00 3.100000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_TC-TXS_Series">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 5.000000e+00 3.100000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_TC-UP8">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 8.000000e+00 3.100000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_X-23-7868-2D">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 6.200000e+00 2.500000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_X-23-7921-5">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 6.000000e+00 2.800000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_X-23-8032">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 3.000000e+00 3.370000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_X-23-8033-1">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 4.000000e+00 3.480000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_X-23-8038">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 4.000000e+00 3.470000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_X-23-8052">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 6.000000e+00 2.980000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Shin-Etsu_X-23-8057">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 7.000000e+00 3.050000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="SILICA" DefaultThickness="10MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 3.800000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+</Material>
+<Material name="Silica_Silicon_Dioxide_SiO2" DefaultThickness="1.2MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil" >
+	<Dielectric>
+		<Model>
+1.000000e+02 1.190000e+01 5.000000e-03
+1.000000e+03 1.190000e+01 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.400000e+00 2.200000e+03 3.850000e+02 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+<Structural>
+	<Elasticity>
+2.500000e+01 1.600000e+11 2.300000e-01
+	</Elasticity>
+	<CTE RefTemperature="20">
+2.500000e+01 3.300000e-06
+	</CTE>
+	<Viscoplastic>
+	<Anand Enable="false">
+0 0 0 0 0 0 0 0 0
+	</Anand>
+	<ModifiedAnand Enable="false">
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	</ModifiedAnand>
+	</Viscoplastic>
+	<Fatigue>
+	<Darveaux Enable="false">
+0 0 0 0 0 0 0
+	</Darveaux>
+	<Solomon Enable="false">
+0 0
+	</Solomon>
+	</Fatigue>
+	<Failure>
+	<Tension Enable="false">
+0
+	</Tension>
+	<Compression Enable="false">
+0
+	</Compression>
+	<MaxPressure Enable="false">
+0
+	</MaxPressure>
+	<EffectiveStrain Enable="false">
+0
+	</EffectiveStrain>
+	<MaxStrain Enable="false">
+0
+	</MaxStrain>
+	</Failure>
+</Structural>
+</Material>
+<Material name="Silicon" DefaultThickness="10MIL">
+	<Dielectric>
+		<Model>
+1.000000e+02 1.190000e+01 5.000000e-03
+1.000000e+03 1.190000e+01 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.500000e+02 2.330000e+03 7.120000e+02 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+<Structural>
+	<Elasticity>
+2.500000e+01 1.600000e+11 2.300000e-01
+	</Elasticity>
+	<CTE RefTemperature="20">
+2.500000e+01 3.300000e-06
+	</CTE>
+	<Viscoplastic>
+	<Anand Enable="false">
+0 0 0 0 0 0 0 0 0
+	</Anand>
+	<ModifiedAnand Enable="false">
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	</ModifiedAnand>
+	</Viscoplastic>
+	<Fatigue>
+	<Darveaux Enable="false">
+0 0 0 0 0 0 0
+	</Darveaux>
+	<Solomon Enable="false">
+0 0
+	</Solomon>
+	</Fatigue>
+	<Failure>
+	<Tension Enable="false">
+0
+	</Tension>
+	<Compression Enable="false">
+0
+	</Compression>
+	<MaxPressure Enable="false">
+0
+	</MaxPressure>
+	<EffectiveStrain Enable="false">
+0
+	</EffectiveStrain>
+	<MaxStrain Enable="false">
+0
+	</MaxStrain>
+	</Failure>
+</Structural>
+</Material>
+<Material name="SILICON_CARBIDE" DefaultThickness="5MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 4.500000e+01 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.200000e+02 3.100000e+03 7.500000e+02 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="SILICON_CHIP" DefaultThickness="11.811MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 4.500000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.500000e+02 2.330000e+03 7.120000e+02 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+<Structural>
+	<Elasticity>
+2.500000e+01 1.600000e+11 2.300000e-01
+	</Elasticity>
+	<CTE RefTemperature="20">
+2.500000e+01 3.300000e-06
+	</CTE>
+	<Viscoplastic>
+	<Anand Enable="false">
+0 0 0 0 0 0 0 0 0
+	</Anand>
+	<ModifiedAnand Enable="false">
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	</ModifiedAnand>
+	</Viscoplastic>
+	<Fatigue>
+	<Darveaux Enable="false">
+0 0 0 0 0 0 0
+	</Darveaux>
+	<Solomon Enable="false">
+0 0
+	</Solomon>
+	</Fatigue>
+	<Failure>
+	<Tension Enable="false">
+0
+	</Tension>
+	<Compression Enable="false">
+0
+	</Compression>
+	<MaxPressure Enable="false">
+0
+	</MaxPressure>
+	<EffectiveStrain Enable="false">
+0
+	</EffectiveStrain>
+	<MaxStrain Enable="false">
+0
+	</MaxStrain>
+	</Failure>
+</Structural>
+</Material>
+<Material name="SILICON_DIOXIDE" DefaultThickness="1MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 4.000000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.400000e+00 2.200000e+03 1.000000e+03 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="SILICON_MONOXIDE" DefaultThickness="1MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 6.000000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+</Material>
+<Material name="SILICON_NITRIDE" DefaultThickness="1MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 6.000000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.650000e+01 2.810000e+03 8.870000e+02 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Solder_Mask" DefaultThickness="10MIL" >
+	<Dielectric>
+		<Model>
+1.000000e+03 3.800000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.100000e-01 1.990000e+03 1.140000e+03 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="SOLDERMASK" DefaultThickness="0.787402MIL" UpperTolerance="0um" LowerTolerance="0um">
+	<Dielectric>
+		<Model>
+1.000000e+03 3.700000e+00 2.200000e-02
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.300000e-01 1.573000e+03 1.140000e+03 9.500000e-01 0.000000e+00
+		</Model>
+	</Thermal>
+<Structural>
+	<Elasticity>
+2.500000e+01 3.000000e+09 4.700000e-01
+	</Elasticity>
+	<CTE RefTemperature="20">
+2.500000e+01 7.000000e-05
+	</CTE>
+	<Viscoplastic>
+	<Anand Enable="false">
+0 0 0 0 0 0 0 0 0
+	</Anand>
+	<ModifiedAnand Enable="false">
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	</ModifiedAnand>
+	</Viscoplastic>
+	<Fatigue>
+	<Darveaux Enable="false">
+0 0 0 0 0 0 0
+	</Darveaux>
+	<Solomon Enable="false">
+0 0
+	</Solomon>
+	</Fatigue>
+	<Failure>
+	<Tension Enable="false">
+0
+	</Tension>
+	<Compression Enable="false">
+0
+	</Compression>
+	<MaxPressure Enable="false">
+0
+	</MaxPressure>
+	<EffectiveStrain Enable="false">
+0
+	</EffectiveStrain>
+	<MaxStrain Enable="false">
+0
+	</MaxStrain>
+	</Failure>
+</Structural>
+</Material>
+<Material name="SOLDERMASK_FLEXIBLE_LPI" DefaultThickness="0.590551MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 3.700000e+00 2.200000e-02
+		</Model>
+	</Dielectric>
+</Material>
+<Material name="SOLDERMASK_FLEXIBLE_UV_CURE" DefaultThickness="0.472441MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 8.200000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+</Material>
+<Material name="STEATITE" DefaultThickness="10MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 6.400000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 3.000000e+00 2.500000e+03 1.000000e+03 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="TANTALUM_PENTOXIDE" DefaultThickness="1MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.600000e+01 0.000000e+00
+		</Model>
+	</Dielectric>
+</Material>
+<Material name="TETRAFUNCTIONAL" DefaultThickness="8MIL" UpperTolerance="0.0mil" LowerTolerance="0.0mil">
+	<Dielectric>
+		<Model>
+1.000000e+03 4.400000e+00 3.500000e-02
+		</Model>
+	</Dielectric>
+</Material>
+<Material name="TITANIA" DefaultThickness="10MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 4.600000e+01 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 8.300000e+00 4.010000e+03 6.900000e+02 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="TITANIUM_DIOXIDE" DefaultThickness="1MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 6.500000e+01 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.170000e+01 4.000000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Wakefield_120_Series">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 7.400000e-01 2.100000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Wakefield_126_Series">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 6.900000e-01 2.930000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Wakefield_Delta_Pads_173-7_Series">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.260000e+00 0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Wakefield_Delta_Pads_173-9_Series">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 1.260000e+00 0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Wakefield_Delta_Pads_174-9_Series">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 4.180000e+00 0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="Wakefield_Delta_Pads_175-6_Series">
+	<Dielectric>
+		<Model>
+1.000000e+03 2.700000e+00 3.000000e-03
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 5.000000e-01 0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="WATER" DefaultThickness="100MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 4.500000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 6.130000e-01 9.997000e+02 4.179000e+03 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="ZIRCON" DefaultThickness="10MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 9.400000e+00 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 3.500000e+00 3.900000e+03 0.000000e+00 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+<Material name="ZIRCONIA" DefaultThickness="10MIL">
+	<Dielectric>
+		<Model>
+1.000000e+03 5.000000e+01 0.000000e+00
+		</Model>
+	</Dielectric>
+	<Thermal>
+		<Model>
+2.500000e+01 2.200000e+00 5.575000e+03 4.800000e+02 0.000000e+00 0.000000e+00
+		</Model>
+	</Thermal>
+</Material>
+</Cadence_Material_Lib>

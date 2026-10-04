@@ -1,0 +1,1902 @@
+<MsgFile>
+
+  <Msg>
+    <Id>1</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_ILLCHAR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal character(s) present in the name or value.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>2</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_BADNAME</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>3</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_TOOLONG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Name is too long.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>4</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_DWGBADOPN</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Failed to open the drawing.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>5</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_DWGBADCLS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Failed to close the drawing.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>6</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_DWGNAME</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter drawing name:
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>7</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_DWG1PROMPT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Existing layout file name:
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>8</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_DWG2PROMPT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Output layout file name:
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>9</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_DWGSAV</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Closing the drawing ... save it (Yes/No)?
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>10</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_ILL_NET</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Possible database problem with net record. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>11</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_ILL_PIN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Possible database problem with pin record.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>12</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_NAMEOPEN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Could not open file '%s' in the current directory.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>13</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_NETPROMPT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Netlist file name [ %0 ]:
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>14</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_PADBADOPN</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Failed to open the padstack.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>15</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_NAMEINUSE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Subclass name already exists. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>16</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_SC_MIS_P</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Schedule missing a pin on the net.  
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>17</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_SC_MIS_C</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Schedule contains an illegal disconnected branch.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>18</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_SC_LOOP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Schedule contains an illegal loop.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>19</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_SC_UNSC</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Net already scheduled ... must unschedule in order to reschedule.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>20</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_SC_ETCH</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot schedule a net with etch.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>21</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_SC_UNPL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot schedule a net with unplaced pins.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>22</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_UU_ILLFORM</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal intermediate conversion format. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>23</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_UU_ILLINPUT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Inconsistent rational format input.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>24</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_UU_ILLSYNTAX</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal input syntax.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>25</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_UU_ERRPARSE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Internal parsing error.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>26</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_UU_INCOMPLETE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Incomplete input.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>27</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_UU_OVERFLOW</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Output buffer overflow.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>28</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_DWGEXT</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cancelling drawing ... are you sure (Yes/No)?
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>29</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_EXEEDR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Value out of range. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>30</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_MINERR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Minimum value greater than the maximum. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>31</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_PF_WINTOOMANY</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Too many windows.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>32</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_PF_RMTOOMANY</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Too many rooms.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>33</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_PF_RMNAME</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Room name exceeds the character limit.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>34</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_PF_STATUS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Status %d
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>35</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_PF_ILLVAL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal value ... try again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>36</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_PICK1ST</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick first point.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>37</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_PICK2ND</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick second point.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>38</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_TOOSMAL</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Window is too small ... pick again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>39</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_ARGSFAIL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error retrieving the command line switches.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>40</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_POUTOFRANGE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Pick is outside the extent of the drawing ... pick again. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>41</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_NOTDRA</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+File selected is not of type Drawing.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>42</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_NOTSYM</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+File selected is not of type Symbol.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>43</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_NOTBRD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+File selected is not of type Layout.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>44</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_BADFILE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid file name: %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>45</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_WRONGEXT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Extension must be '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>46</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_DWGDIFF</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Picked drawing and the active drawing are not the same. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>47</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_UU_MISMATCH</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Mismatched units:%s*%d not %s*%d.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>48</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_UU_ROUNDED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Scaled value has been rounded off.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>49</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_NO_SCMATCH</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+No match found for the subclass name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>50</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_ILLEGAL_START_POINT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+First segment vertex1 does not match the owner.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>51</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_ILLEGAL_END_POINT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Last segment vertex2 does not match the owner.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>52</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_ILLEGAL_ENDPOINTS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Segment 1 vertex2 does not equal segment 2 vertex1.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>53</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_NO_CLASSMATCH</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+No match found for class name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>54</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_ILLEGAL_CLASS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal class number.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>55</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_PF_NOROOM</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Room %s does not currently exist.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>56</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_CONPROMPT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Control file name [ %0 ]:
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>57</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_DRA_PROMPT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Drawing file name [ %0 ]:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>58</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_PSM_O_PROMPT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Output package symbol file name [ %0 ]:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>59</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_BSM_O_PROMPT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Output mechanical symbol file name [ %0 ]:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>60</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_OSM_O_PROMPT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Output format symbol file name [ %0 ]:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>61</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_OPEN_LOG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to open the log file '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>62</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_IDBF_PROMPT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+IDB file name [ %0 ]:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>63</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_SHP_UNFILLED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Unfilled shape found ... ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>64</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_CMD_ABORTED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+CANCEL received ... cancelling %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>65</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_DRC_CLASS_NM</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Need DRC class property name.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>66</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_ECL_BADALC</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Cannot allocate memory for ECL analysis ... no analysis.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>67</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_ECL_NULNET</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Net is NULL ... no ECL analysis is possible.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>68</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_ECL_NOTECL</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Net is not an ECL net. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>69</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_ECL_LOOPS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+ECL net has a loop ... no ECL analysis.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>70</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_ECL_TOO_BIG</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+ECL net has too many (more than 100) pins ... no ECL analysis.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>71</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_ECL_BADSCH</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+ECL net not connected as scheduled ... no length calculated.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>72</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_ADDCMPPINS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Pincount for device '%s' is greater than the actual number of pins ... adding NC pins to compensate.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>73</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_BADDEF_IN_UPDATR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Updating attributes failed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>74</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_BAD_ATTRTYPE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Attribute name is not legal. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>75</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_BAD_ATTRVAL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Attribute value is not legal.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>76</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_BAD_ATTR_ELEMENT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Attribute name is not legal for the specified object.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>77</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_BAD_CLASS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Class must be one of IC, IO, DISCRETE, MECHANICAL, PLATING_BAR or DRIVER_CELL.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>78</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_BAD_FUNCTIONTYPE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Function type name is not legal.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>79</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_BAD_NCPIN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to insert NC pin.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>80</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_BAD_NETNAME</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Net name is not legal.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>81</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_BAD_PACKAGE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Package name has invalid characters or is too long.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>82</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_BAD_PACKAGE_LONG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Package name is too long.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>83</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_BAD_PINNAME</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pin name is not legal.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>84</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_BAD_PINNUMBER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pin number is not legal. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>85</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_BAD_PINUSE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pin use is not one of the legal uses.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>86</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_BAD_PWRGND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to insert power/ground pins.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>87</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_BAD_SLOTNAME</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Slotname is not legal.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>88</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_CLASS_SPECIFIED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Class specified more than once.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>89</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_CMPFAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to insert component pins.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>90</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_DUPCFPIN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Component pin '%s' in device '%s' duplicates a pin in slot '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>91</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_DUPSLOT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Slot name specified more than once.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>92</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_DUP_FUNCTIONTYPE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Function type specified more than once.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>93</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_DUP_PACKAGE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Package name specified more than once.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>94</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_DUP_PINCOUNT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pin count specified more than once.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>95</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_DUP_PINNAME</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pin name specified more than once.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>96</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_DUP_PINNUMBER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pin number specified more than once.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>97</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_FAIL_FUNCTIONTYPE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to insert the function type.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>98</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_FAIL_PACKAGEATTR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to insert the package properties.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>99</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_FAIL_PINNAME</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to insert the pin names.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>100</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_FAIL_PINNUMBER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to insert the pin numbers.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>101</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_FAIL_PINPROP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to insert the pin properties.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>102</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_FAIL_PROP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to insert the function properties.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>103</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_FAIL_SLOT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to insert the slot names.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>104</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_FUNCUNUSED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Function '%s' occurred in a 'PINORDER statement for device '%s' but is not used.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>105</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_MECH_PINTOOBIG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Mechanical device '%s' has a pin count greater than zero.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>106</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_MISSCLASS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Missing a 'CLASS' for device '%s' ... 'IC' is assumed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>107</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_MISSING_NODE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to find pin name in adfncpin.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>108</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_MISSING_SLOT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to find slot name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>109</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_MISSPACKAGE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Missing a JEDEC_TYPE (i.e. PACKAGE) for device '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>110</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_NOPINCOUNT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No pin count has been set for the device '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>111</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_NOT_NUMBER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Alphanumeric pin number found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>112</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_PINTOOBIG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pin number larger than the PINCOUNT.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>113</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_PIN_NOTFOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to find the function pin on the slot.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>114</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_SLOTPTR_NULL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Slot pointer is NULL in adfncpin.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>115</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_SWAPUSE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pin '%s' for function '%s' on device '%s' has a swap/pinuse inconsistency.
+    </Desc>
+    <ExtDesc>
+    Check for consistent pin types with the swapable pins on this function.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>116</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_TOTPINERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Number of component and function pins in device '%s' is more than pin count.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>117</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_LEADBLANK</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Leading spaces.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>118</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_TRAILBLANK</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Trailing spaces.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>119</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_UU_SCALEFAIL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Units conversion failed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>120</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_ALTSYM_PARSE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Encountered an error while parsing the alternate symbol.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>121</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_BAD_PINUSE_PROP</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Unrecognizable PINUSE property value.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>122</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_ACMPMALLOC</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to check the pins for component '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>123</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_FNCPCHK</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to create the NC pins for '%s' with function pin '%s': '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>124</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_CMPPCHK</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to create the NC pins for '%s' with non-function pin '%s': '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>125</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_ACMPINSERT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to insert the pins for component '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>126</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_ACMPPINLARGE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pin '%s' for component '%s' is larger than allowed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>127</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_PAD_OPEN</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Could not find padstack %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>128</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_PAD_LOAD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Could not load padstack '%s': %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>129</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_PAD_READ</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+File data is incorrect for version.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>130</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_PAD_NO_MATCH</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No match found for the Begin or End pad layer in the layout.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>131</Id>
+    <CDNUSR_DEFINE_NAME>UTL_CE_ONE_SWAP</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Pin '%s' for component '%s' has no other swappable pins ... swapping ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>132</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_FIXED_OBJECT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Element is fixed ... cannot change the element.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>133</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_UU_UNITEQUIV</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal units for a coordinate value.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>134</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_UU_BADUNIT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Units not recognized.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>135</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_STR_OVERFLOW</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Input string is too long.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>136</Id>
+    <CDNUSR_DEFINE_NAME>UTL_MSG_BUS_BAD_INT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Illegal integer character in bus bit specification.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>137</Id>
+    <CDNUSR_DEFINE_NAME>UTL_MSG_BUS_BAD_RANGE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Illegal bit range in bus bit specification.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>138</Id>
+    <CDNUSR_DEFINE_NAME>UTL_MSG_BUS_BAD_WIDTH</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Illegal width value in bus bit specification.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>139</Id>
+    <CDNUSR_DEFINE_NAME>UTL_MSG_BUS_BAD_STEP</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Illegal step value in bus bit specification.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>140</Id>
+    <CDNUSR_DEFINE_NAME>UTL_MSG_BAD_BUS_NAME</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Illegal bus bit specification.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>141</Id>
+    <CDNUSR_DEFINE_NAME>UTL_MSG_NOT_BUS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Name is not a bus specification. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>142</Id>
+    <CDNUSR_DEFINE_NAME>UTL_MSG_BUS_NAME_LONG</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Bus name is too long.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>143</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_NO_SUBCLASS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Subclass does not exist in the layout.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>144</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_BAD_ARC</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal arc specification.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>145</Id>
+    <CDNUSR_DEFINE_NAME>UTL_MSG_NE_DIAGS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Diagonals are of unequal length.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>146</Id>
+    <CDNUSR_DEFINE_NAME>UTL_MSG_NE_CTRS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Centers are not equal.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>147</Id>
+    <CDNUSR_DEFINE_NAME>UTL_MSG_NE_OPPS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Opposing segments not the same type.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>148</Id>
+    <CDNUSR_DEFINE_NAME>UTL_MSG_NE_RADII</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Radii are not equal.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>149</Id>
+    <CDNUSR_DEFINE_NAME>UTL_MSG_CTRS_OFF</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Arc centers are not on oblong ends.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>150</Id>
+    <CDNUSR_DEFINE_NAME>UTL_MSG_OPP_DIR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Arc and segment directions are different.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>151</Id>
+    <CDNUSR_DEFINE_NAME>UTL_MSG_MAX_SEGS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Too many segments for the figure.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>152</Id>
+    <CDNUSR_DEFINE_NAME>UTL_MSG_OPEN_LOOP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Path does not form a closed loop.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>153</Id>
+    <CDNUSR_DEFINE_NAME>UTL_MSG_ODD_PDIM</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot convert odd sized pad to a shape ... try increasing accuracy.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>154</Id>
+    <CDNUSR_DEFINE_NAME>UTL_MSG_ODD_SDIM</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot convert odd sized shape to a pad ... try increasing accuracy.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>155</Id>
+    <CDNUSR_DEFINE_NAME>UTL_MSG_SHP2PAD_DISCONN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Shape is no longer connected to a pin/via.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>156</Id>
+    <CDNUSR_DEFINE_NAME>UTL_MSG_NEW_PAD_NAME</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+New padstack %s created.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>157</Id>
+    <CDNUSR_DEFINE_NAME>UTL_MSG_NEW_SSM_NAME</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+New pad shape %s created.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>158</Id>
+    <CDNUSR_DEFINE_NAME>UTL_MSG_PINS_REQUIRED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Package symbols must have at least one connect (numbered) pin.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>159</Id>
+    <CDNUSR_DEFINE_NAME>UTL_MSG_PINS_NOT_UNIQUE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Duplicate pin numbers specified as shown above.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>160</Id>
+    <CDNUSR_DEFINE_NAME>UTL_MSG_PINS_NOT_OK</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Only package symbols may have connect (numbered) pins.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>161</Id>
+    <CDNUSR_DEFINE_NAME>UTL_MSG_NO_MECH_PINS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Mechanical pins are not allowed in package symbols.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>162</Id>
+    <CDNUSR_DEFINE_NAME>UTL_MSG_INDEX_OUT_OF_RANGE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Index must be between 0 and pbuf-&gt;count.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>163</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_NOBANG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+It is not legal to use a '!' in text.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>164</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_TECHFILEIN</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Existing technology file.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>165</Id>
+    <CDNUSR_DEFINE_NAME>UTLMSG_TECHFILEOUT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+New technology file.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>166</Id>
+    <CDNUSR_DEFINE_NAME>UTLCDMSG_ADD_CONN_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Add design link connection failed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>167</Id>
+    <CDNUSR_DEFINE_NAME>UTLCDMSG_DELETE_CONN_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Delete design link connection failed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>168</Id>
+    <CDNUSR_DEFINE_NAME>UTLCDMSG_UPDATE_CONNN_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Update design link connection failed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>169</Id>
+    <CDNUSR_DEFINE_NAME>UTLCDMSG_FUNC_NOT_DEFINED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Product mapped function undefined.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+ <Msg>
+  	<Id>170</Id> 
+  	<CDNUSR_DEFINE_NAME>UTLSNAPMSG_SNAP_FAILED</CDNUSR_DEFINE_NAME> 
+  	<Category>I
+  		<Sub-Category>P</Sub-Category> 
+  	</Category> 
+  	<Desc>
+Could not satisfy the snap condition using '%s' mode.
+	</Desc> 
+  	<Output>C</Output> 
+  </Msg>
+ 
+ <Msg> 
+  	<Id>171</Id> 
+  	<CDNUSR_DEFINE_NAME>UTLSNAPMSG_SNAPPED_OBJECT</CDNUSR_DEFINE_NAME> 
+  	<Category>I
+  		<Sub-Category>P</Sub-Category> 
+  	</Category> 
+  	<Desc>
+Snapped to %s on '%s' using '%s' mode.
+	</Desc> 
+  	<Output>C</Output> 
+  </Msg>
+ 
+ <Msg> 
+  	<Id>172</Id> 
+  	<CDNUSR_DEFINE_NAME>UTLSNAPMSG_SNAPPED_POINT</CDNUSR_DEFINE_NAME> 
+  	<Category>I
+  		<Sub-Category>P</Sub-Category> 
+  	</Category> 
+  	<Desc>
+Snapped to %s using '%s' mode.
+	</Desc> 
+  	<Output>C</Output> 
+  </Msg>
+ 
+  <Msg>
+    <Id>173</Id>
+    <CDNUSR_DEFINE_NAME>UTL_MSG_PINS_NOT_UNIQUE_INFO</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Duplicate pin numbers '%s' specified.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>174</Id>
+    <CDNUSR_DEFINE_NAME>UTL_MSG_POLAR_COORDS</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Polar: %s, %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>175</Id>
+    <CDNUSR_DEFINE_NAME>UTL_MSG_ANGLE_SELECTED</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Angle: %s%s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>176</Id>
+    <CDNUSR_DEFINE_NAME>UTL_MSG_RADIUS_SELECTED</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Radius: %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>177</Id>
+    <CDNUSR_DEFINE_NAME>UTL_MSG_LAST_ANGLE</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+last angle:  %s%s Degrees
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>178</Id>
+    <CDNUSR_DEFINE_NAME>UTL_MSG_LAST_RADIUS</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+last radius: %s ; last angle: %s Degrees
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>179</Id>
+    <CDNUSR_DEFINE_NAME>UTL_MSG_LAST_PICK</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+last pick:  %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+</MsgFile>

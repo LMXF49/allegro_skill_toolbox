@@ -1,0 +1,439 @@
+<MsgFile>
+  <Msg>
+    <Id>1</Id>
+    <CDNUSR_DEFINE_NAME>FSP_PINSWAP_DB_OPEN_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>FSP was unable to open specified database.  Check FSP log file.</Desc>
+    <Output>C</Output>
+  </Msg>
+  <Msg>
+    <Id>2</Id>
+    <CDNUSR_DEFINE_NAME>FSP_STARTING_ENGINE</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>Starting FSP engine...</Desc>
+    <Output>C</Output>
+  </Msg>
+  <Msg>
+    <Id>3</Id>
+    <CDNUSR_DEFINE_NAME>FSP_PINSWAP_SKILL_FILE_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>Unable to load fsp pinswap skill file.</Desc>
+    <Output>C</Output>
+  </Msg>
+  <Msg>
+    <Id>4</Id>
+    <CDNUSR_DEFINE_NAME>FSP_ENGINE_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>Unable to start fsp engine.</Desc>
+    <Output>C</Output>
+  </Msg>
+  <Msg>
+    <Id>5</Id>
+    <CDNUSR_DEFINE_NAME>FSP_PINSWAP_SELECT</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>Select a pin to swap</Desc>
+    <Output>C</Output>
+  </Msg>
+  <Msg>
+    <Id>6</Id>
+    <CDNUSR_DEFINE_NAME>FSP_PINSWAP_NO_PIN_LEGENDS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>Unable to load pin legends.</Desc>
+    <Output>C</Output>
+  </Msg>
+  <Msg>
+    <Id>7</Id>
+    <CDNUSR_DEFINE_NAME>FSP_PINSWAP_NO_SWAPPABLE_PINS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>No swappable pins found.</Desc>
+    <Output>C</Output>
+  </Msg>
+  <Msg>
+    <Id>8</Id>
+    <CDNUSR_DEFINE_NAME>FSP_PINSWAP_NO_SWAPS_FOR_UNDO</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>No swaps left to undo</Desc>
+    <Output>C</Output>
+  </Msg>
+  <Msg>
+    <Id>9</Id>
+    <CDNUSR_DEFINE_NAME>FSP_PINSWAP_SWAP_PIN_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>Error while swapping pins %s.%s %s.%s</Desc>
+    <Output>C</Output>
+  </Msg>
+  <Msg>
+    <Id>10</Id>
+    <CDNUSR_DEFINE_NAME>FSP_XML_ATTR_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>Required XML file attribute not found for %s, %s</Desc>
+    <Output>C</Output>
+  </Msg>
+  <Msg>
+    <Id>11</Id>
+    <CDNUSR_DEFINE_NAME>FSP_PINSWAP_WORKDIR_NOTFOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>Specified fsp_working_dir, %s not found</Desc>
+    <Output>C</Output>
+  </Msg>
+  <Msg>
+    <Id>12</Id>
+    <CDNUSR_DEFINE_NAME>FSP_PINSWAP_WORKDIR_READONLY</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>Specified fsp_working_dir, %s is read only</Desc>
+    <Output>C</Output>
+  </Msg>
+  <Msg>
+    <Id>13</Id>
+    <CDNUSR_DEFINE_NAME>FSP_PINSWAP_WORKDIR_NOTDIR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>Specified fsp_working_dir, %s is not a directory</Desc>
+    <Output>C</Output>
+  </Msg>
+  <Msg>
+    <Id>14</Id>
+    <CDNUSR_DEFINE_NAME>FSP_OPENING_PROJECT</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>Opening FSP project...</Desc>
+    <Output>C</Output>
+  </Msg>
+  <Msg>
+    <Id>15</Id>
+    <CDNUSR_DEFINE_NAME>FSP_VERIFYING_CONNECTIVITY</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>Verifying FPGA connectivity...</Desc>
+    <Output>C</Output>
+  </Msg>
+  <Msg>
+    <Id>16</Id>
+    <CDNUSR_DEFINE_NAME>FSP_16_4_ATTRIBUTES</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>This board was not generated using 16.4 process.  Regenerate schematics from FSP 16.5</Desc>
+    <Output>C</Output>
+  </Msg>
+  <Msg>
+    <Id>17</Id>
+    <CDNUSR_DEFINE_NAME>FSP_CONNECTIVITY_INFO_MESSAGES</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>Connectivity informational messages written to report file...</Desc>
+    <Output>C</Output>
+  </Msg>
+  <Msg>
+    <Id>18</Id>
+    <CDNUSR_DEFINE_NAME>FSP_CONNECTIVITY_WARN_MESSAGES</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>Connectivity warning messages written to report file...</Desc>
+    <Output>C</Output>
+  </Msg>
+  <Msg>
+    <Id>19</Id>
+    <CDNUSR_DEFINE_NAME>FSP_CONNECTIVITY_ERROR_MESSAGES</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>Connectivity error messages written to report file...</Desc>
+    <Output>C</Output>
+  </Msg>
+  <Msg>
+    <Id>20</Id>
+    <CDNUSR_DEFINE_NAME>FSP_PINSWAP_PINS_SWAPPED</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>Swapped pins %s.%s and %s.%s.</Desc>
+    <Output>C</Output>
+  </Msg>
+  <Msg>
+    <Id>21</Id>
+    <CDNUSR_DEFINE_NAME>FSP_PINSWAP_SWAP_FILE_CREATED</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>Swap request file created: %s.</Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>22</Id>
+    <CDNUSR_DEFINE_NAME>FSP_PINSWAP_SWAP_REQUEST_CANCELED</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>Swap request file creation canceled.</Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>23</Id>
+    <CDNUSR_DEFINE_NAME>FSP_PINSWAP_GEN_SWAP_REQUEST</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>Warning: Generation of a swap request file will result in both the FSP database and the current Allegro database being saved in order to insure the two to remain in sync.  Proceed and save? %s</Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>24</Id>
+    <CDNUSR_DEFINE_NAME>FSP_PINSWAP_SELECT_RMB_COMMAND</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>Select command from the right mouse button.</Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>25</Id>
+    <CDNUSR_DEFINE_NAME>FSP_PINSWAP_PICK_DESTINATION</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>Pick destination pin from those highlighted.</Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>26</Id>
+    <CDNUSR_DEFINE_NAME>FSP_ENGINE_RETURN_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>FSP error: %s</Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>27</Id>
+    <CDNUSR_DEFINE_NAME>FSP_COMMAND_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>FSP command response: %s</Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>28</Id>
+    <CDNUSR_DEFINE_NAME>FSP_SAVE_ON_SYS_EXIT</CDNUSR_DEFINE_NAME>
+    <Category>Q</Category>
+    <Desc>Do you want to save the changes you made to %s?</Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>29</Id>
+    <CDNUSR_DEFINE_NAME>FSP_FILE_NO_WRITE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>File %s does not have write access permission.</Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>30</Id>
+    <CDNUSR_DEFINE_NAME>FSP_SYM_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>Symbol %s not found for %s.</Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>31</Id>
+    <CDNUSR_DEFINE_NAME>FSP_SELECT_BUNDLE</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>Select bundle(s) to optimize.</Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>32</Id>
+    <CDNUSR_DEFINE_NAME>FSP_PROJECT_SAVED</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>FSP project saved as %s.</Desc>
+    <Output>C</Output>
+  </Msg>
+
+	<Msg>
+		<Id>32</Id>
+		<CDNUSR_DEFINE_NAME>FSP_PROJECT_SAVED</CDNUSR_DEFINE_NAME>
+		<Category>I</Category>
+		<Desc>FSP project saved as %s.</Desc>
+		<Output>C</Output>
+	</Msg>
+
+	<Msg>
+		<Id>33</Id>
+		<CDNUSR_DEFINE_NAME>FSP_DATABASE_LOADED_SUCCESS</CDNUSR_DEFINE_NAME>
+		<Category>I</Category>
+		<Desc>FSP database has loaded successfully.</Desc>
+		<Output>C</Output>
+	</Msg>
+
+	<Msg>
+		<Id>34</Id>
+		<CDNUSR_DEFINE_NAME>FSP_DATABASE_LOADED_SYNC</CDNUSR_DEFINE_NAME>
+		<Category>W</Category>
+		<Desc>FSP database has loaded successfully, but requires synchronization.</Desc>
+		<Output>C</Output>
+	</Msg>
+
+	<Msg>
+		<Id>35</Id>
+		<CDNUSR_DEFINE_NAME>FSP_DATABASE_LOADED_IRRECONCILABLE</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>FSP database loaded successfully, but has irreconcilable differences.</Desc>
+		<Output>C</Output>
+	</Msg>
+
+	<Msg>
+		<Id>36</Id>
+		<CDNUSR_DEFINE_NAME>FSP_STARTING_FCOMPARE</CDNUSR_DEFINE_NAME>
+		<Category>I</Category>
+		<Desc>Starting FCompare to show differences...</Desc>
+		<Output>C</Output>
+	</Msg>
+
+	<Msg>
+		<Id>37</Id>
+		<CDNUSR_DEFINE_NAME>UPDATING_FSP_PLACEMENT</CDNUSR_DEFINE_NAME>
+		<Category>I</Category>
+		<Desc>Updating FSP placement...</Desc>
+		<Output>C</Output>
+	</Msg>
+
+	<Msg>
+		<Id>38</Id>
+		<CDNUSR_DEFINE_NAME>UPDATING_ALLEGRO_PLACEMENT</CDNUSR_DEFINE_NAME>
+		<Category>I</Category>
+		<Desc>Updating Allegro placement...</Desc>
+		<Output>C</Output>
+	</Msg>
+
+	<Msg>
+		<Id>39</Id>
+		<CDNUSR_DEFINE_NAME>FSP_PLACEMENT_ERROR</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Error updating FSP placement.</Desc>
+		<Output>C</Output>
+	</Msg>
+
+	<Msg>
+		<Id>40</Id>
+		<CDNUSR_DEFINE_NAME>ALLEGRO_PLACEMENT_ERROR</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Error updating Allegro placement.</Desc>
+		<Output>C</Output>
+	</Msg>
+
+	<Msg>
+		<Id>41</Id>
+		<CDNUSR_DEFINE_NAME>UPDATING_PIN_SWAPS</CDNUSR_DEFINE_NAME>
+		<Category>I</Category>
+		<Desc>Synchronizing pin swaps...</Desc>
+		<Output>C</Output>
+	</Msg>
+
+	<Msg>
+		<Id>42</Id>
+		<CDNUSR_DEFINE_NAME>UPDATE_PIN_SWAPS_ERROR</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Error retrieving pin swap synchronization data...</Desc>
+		<Output>C</Output>
+	</Msg>
+
+	<Msg>
+		<Id>43</Id>
+		<CDNUSR_DEFINE_NAME>UPDATING_SCHEDULES</CDNUSR_DEFINE_NAME>
+		<Category>I</Category>
+		<Desc>Synchronizing net schedules...</Desc>
+		<Output>C</Output>
+	</Msg>
+
+	<Msg>
+		<Id>44</Id>
+		<CDNUSR_DEFINE_NAME>UPDATING_REFDES</CDNUSR_DEFINE_NAME>
+		<Category>I</Category>
+		<Desc>Synchronizing reference designators...</Desc>
+		<Output>C</Output>
+	</Msg>
+
+	<Msg>
+		<Id>45</Id>
+		<CDNUSR_DEFINE_NAME>DESIGN_IN_SYNC</CDNUSR_DEFINE_NAME>
+		<Category>I</Category>
+		<Desc>Design is in sync.</Desc>
+		<Output>C</Output>
+	</Msg>
+
+	<Msg>
+		<Id>46</Id>
+		<CDNUSR_DEFINE_NAME>DESIGN_REQUIRES_SYNC</CDNUSR_DEFINE_NAME>
+		<Category>W</Category>
+		<Desc>Design has reconcilable differences remaining.</Desc>
+		<Output>C</Output>
+	</Msg>
+
+	<Msg>
+		<Id>47</Id>
+		<CDNUSR_DEFINE_NAME>DESIGN_CANNOT_SYNC</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Design has irreconcilable differences.</Desc>
+		<Output>C</Output>
+	</Msg>
+
+	<Msg>
+		<Id>48</Id>
+		<CDNUSR_DEFINE_NAME>FSP_ENGINE_CLOSED</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>Error - The FSP engine has closed unexpectedly.</Desc>
+		<Output>C</Output>
+	</Msg>
+
+	<Msg>
+		<Id>49</Id>
+		<CDNUSR_DEFINE_NAME>SCHEDULE_NOT_UPDATED</CDNUSR_DEFINE_NAME>
+		<Category>W</Category>
+		<Desc>Scheduling for net %s is locked. Schedule will not be updated.</Desc>
+		<Output>C</Output>
+	</Msg>
+
+	<Msg>
+		<Id>50</Id>
+		<CDNUSR_DEFINE_NAME>FSP_FILE_ERROR</CDNUSR_DEFINE_NAME>
+		<Category>E</Category>
+		<Desc>FSP error: expected file %s not created.</Desc>
+		<Output>C</Output>
+	</Msg>
+
+	<Msg>
+		<Id>51</Id>
+		<CDNUSR_DEFINE_NAME>FSP_REFDES_NOT_SYNCED</CDNUSR_DEFINE_NAME>
+		<Category>W</Category>
+		<Desc>Reference designators are not synchronized.</Desc>
+		<Output>C</Output>
+	</Msg>
+
+	<Msg>
+		<Id>52</Id>
+		<CDNUSR_DEFINE_NAME>FSP_SCHED_NOT_SYNCED</CDNUSR_DEFINE_NAME>
+		<Category>W</Category>
+		<Desc>Schedules are not synchronized.</Desc>
+		<Output>C</Output>
+	</Msg>
+
+	<Msg>
+		<Id>53</Id>
+		<CDNUSR_DEFINE_NAME>FSP_NOT_ALL_COMPS_SYNCED</CDNUSR_DEFINE_NAME>
+		<Category>W</Category>
+		<Desc>Unable to synchronize all component locations.</Desc>
+		<Output>C</Output>
+	</Msg>
+
+  <Msg>
+    <Id>54</Id>
+    <CDNUSR_DEFINE_NAME>FSP_ENGINE_MODE_ECO</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>FSP database is in ECO mode.  FSP engine will manage pin swaps accordingly.</Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>55</Id>
+    <CDNUSR_DEFINE_NAME>FSP_BUNDLE_PARTIAL_OPTIMIZED</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>Bundle %s is partially routed.  Only the unrouted portion will be optimized.</Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>56</Id>
+    <CDNUSR_DEFINE_NAME>FSP_BUNDLE_ROUTED_NOT_OPTIMIZED</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>Bundle %s is routed and will not be optimized.</Desc>
+    <Output>C</Output>
+  </Msg>
+
+
+</MsgFile>

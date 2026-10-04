@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+java/build/
+java/dist/
+tools/runtime-min/
+tools/installer/Output/
+_staging/
+tools/dist/
+skill_payload/config/astb_debug*.log

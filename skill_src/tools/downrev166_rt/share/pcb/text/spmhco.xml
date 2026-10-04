@@ -1,0 +1,819 @@
+<MsgFile>
+
+  <Msg>
+    <Id>1</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_LOW_MEMORY</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Available memory is insufficient to support this design. Close the application and restart it with a larger swap file, or install additional memory.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>2</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_LOW_MEMORY_D</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Low on available memory. See the command line for details.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>3</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_DIR_NOT_READABLE1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The directory %s is not readable because you lack read permission. Change the permissions on the directory.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>4</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_DIR_NOT_READABLE_D</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Directory is not readable. See the command line for details.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>5</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_DIR_NOT_WRITEABLE_D</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Directory is not writable. See the command line for details.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>6</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_DIR_NOT_WRITEABLE1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The directory %s is not writable because you lack write permission. Change the permissions on the directory.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>7</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_FILE_NOT_READABLE1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The file %s cannot be opened for reading.  Change the permissions on the file to allow it to be read.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>8</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_FILE_NOT_READABLE_D</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The file could not be opened for reading. See the command line for details.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>9</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_FILE_NOT_WRITEABLE_D</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The file could not be opened for writing. See the command line for details.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>10</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_FILE_NOT_WRITEABLE1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The file %s cannot be opened for writing.  Change the permissions on the file to allow it to be written.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>11</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_FILE_NOT_CRTD_DIRRO2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot create the file %s because the directory %s is read-only. Change the permissions on the directory to allow the file to be created.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>12</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_FILE_NOT_CRTD_DIRRO_D</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The file %s could not be created. See the command line for details.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>13</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_ILLEGAL_FILENAME_D1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+A file name is not in proper format. See the command line for details.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>14</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_FILE_DOES_NOT_EXIST_D</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The file does not exist. See the command line for details.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>15</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_ACCR_MATCH3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+The drawing accuracy of %s decimal places was adjusted to match the %s accuracy of %s decimal places.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>16</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_PROCESSING_CANCELED1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+You canceled %s processing.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>17</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_ACCR_MATCH_D1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+The drawing accuracy was adjusted to match the %s accuracy.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>18</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_DR_ACCR_UNTS_MTCH_INPT4</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+The drawing accuracy settings, %s decimal places and %s units, were changed to match the %s settings, %s decimal places and %s units.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>19</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_ACCR_UNTS_MTCH_D</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+The drawing accuracy and units were adjusted to match the %s settings.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>20</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_UNTS_NOT_SUPPORT</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+The %s unit, %s, is not supported.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>21</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_REFDES_NOT_VALID1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Component %s is not a die and therefore cannot be exported.  Select a valid die reference designator. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>22</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_REFDES_NOT_VALID_D</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Component cannot be exported. See the command line for details.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>23</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_BAD_PIN_NAME2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s pin %s could not be added to the die.  The pin name is a duplicate; change it to a unique name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>24</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_SYNTAX_ERR_D</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Incorrect syntax in %s on line %d. See the command line for details.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>25</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_FILE_CREATED_SUCCESS1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+The file %s created successfully
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>26</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_WRITING_FILE1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Writing the file %s...
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>27</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_FILE_RECR_CANCELED1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+You canceled re-creation of the file %s. Original file was left unchanged.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>28</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_FILE_READ_SUCCESS1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+The file %s successfully read.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>29</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_READING_FILE1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Reading the file %s...
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>30</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOM_FILE_NOT_FOUND_D</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+A file was not found. See the command line for details.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>31</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOM_FILE_NOT_FOUND3</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The file %s was not found at %s specified in %s. The file may have been moved. Use the %s to change the path to point to the new location of the file. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>32</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_UPDATING_FILE_D1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Updating of the file %s...
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>33</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_FILE_NOT_CREATED_D</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The file was not created. See the command line for details.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>34</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_FILE_NOT_CREATED1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The file %s was not created. The directory %s is read only. Change the permissions on the directory to allow the file to be created.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>35</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_FINISH_READING_FILE2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Finished reading %s %s.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>36</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_ERROR_D1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+See %s for details.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>37</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_WARNING_D1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+See %s for details.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>38</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_WRITING_COMPLETE1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Writing %s %s has completed.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>39</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_WRITING_UNKNOWN_ERROR1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+There was an unknown error writing the file %s. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>40</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_RECREATED_SUCCESSFULLY1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+The file %s was re-created successfully.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>41</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_PROCESSING_FILE1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Processing the file %s.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>42</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_Q_SAVE_FILE2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%s %s has been modified. Do you want to save the changes?
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>43</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_FILE_UPDATE_SUCCESS1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+The file %s was updated successfully. 
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>44</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_CHANGES_SAVED2FILE2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+You cannot delete the file %s.  This file is read-only. Change the permissions on the file to allow its removal. The changes have been saved in the file %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>45</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_IMPORTING_NETS_DEF1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Importing nets from the file %s.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>46</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_IMPORTING_NETS_OA1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Importing nets from the OpenAccess library %s.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>47</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_IMPORTING_NETS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Importing the nets....
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>48</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_UPDATE_CDSN_DIE_CPT_SYM</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Updating the existing co-design die component and symbol.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>49</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_SIMILAR_DSN_FOUND2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+A similar design name %s was found. The %s Import will add only new components to the design.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>50</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_DIE_CREATED1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+The die %s was successfully created.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>51</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_DIE_NUM_OF_PINS2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+The die %s has %d pins.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>52</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_INFO_D</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+See %s for details.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>53</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_INFO_CMD_LINE_D</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+See the command line for details. 
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>54</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_ERROR_CMD_LINE_D</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+See the command line for details. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>55</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_WARNING_CMD_LINE_D</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+See the command line for details. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>56</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_FILE_DOES_NOT_EXIST1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The file %s does not exist. It could be moved. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>57</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_FINISH_READING_FILE1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Finished reading of the file %s successfully.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>58</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_ILLEGAL_COMPDEF_NAME1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Attempt to create component definition failed because %s is not a valid component definition name.  Try to remove illegal characters from the name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>59</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_ILLEGAL_REFDES1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Attempt to create component failed because %s is not a valid component reference designator.  Try to remove illegal characters from the name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>60</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_STARTING_PROCESS_DATA</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Starting to process the data...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>61</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_PARAM_NAME2</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+%s : %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>62</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_NAME_EMPTY1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+The %s is empty. Add a valid name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>   
+  
+  <Msg>
+    <Id>63</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_NAME_EMPTY</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+The name is empty. Add a valid name. 
+    </Desc>
+    <Output>C</Output>
+  </Msg> 
+  
+  <Msg>
+    <Id>64</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_PROCESSING_CANCELED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+You canceled processing.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>   
+  
+  <Msg>
+    <Id>65</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_PATH_LONGER_THEN_255_CHARS1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+The path %s is longer then 255 characters.    
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>66</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_PATH_LONGER_THEN_255_CHARS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+The path is longer then 255 characters.    
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>67</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_LOGOP_ERROR_1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Error encountered during polygon operation: %s.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>68</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_BETA_FEATURE_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s is currently in beta mode and cannot be run at this time.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>69</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_NOT_THIS_PLAT_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s is not available for the current operating system platform at this time.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>70</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_FILE_EXIST_NOOVER_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The file %s already exists. Overwriting co-design databases in this manner is not supported.  
+    </Desc>
+    <ExtDesc>
+Co-design database files may not be overwritten when adding a new co-design 
+database object. This could result in stale or bad references to the old
+co-design database from this or other package designs. 
+
+Enter a new file name that is not already in use.
+    </ExtDesc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>71</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_FILE_NOEXIST_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The file %s could not be found. Check the spelling and capitalization of the file name.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>72</Id>
+    <CDNUSR_DEFINE_NAME>ICPCOMSG_LIBDEFS_FILENAME</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+The OpenAccess library needs to be named either cds.lib (preferred) or lib.defs. Select a file with this name to be used.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+</MsgFile>

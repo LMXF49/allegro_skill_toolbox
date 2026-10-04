@@ -1,0 +1,10 @@
+<MsgFile>
+  <Msg>
+    <Id>1</Id>
+    <CDNUSR_DEFINE_NAME>PSE_FIXED_LAYER_DELETE_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>Cannot deleted fixed layer, %s</Desc>
+    <Output>C</Output>
+  </Msg>
+
+</MsgFile>

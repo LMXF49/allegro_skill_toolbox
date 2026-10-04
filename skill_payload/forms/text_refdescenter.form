@@ -1,0 +1,82 @@
+#========================================================================
+# 文件名    : text_refdescenter.form
+# 功能      : 字符位置调整参数表单（text_refdescenter.il）
+# 说明      : v2.0 重构：范围(全部/选中) + 层四选一 + 统一字体勾选 +
+#             设置(弹textsetup) + 字号块1-20下拉/手输；按钮 apply/quit；
+#             v2.1 勾选统一字体才可设字号；执行后表单保持打开
+# 编码      : GBK（含中文，必须 GBK 保存）
+#========================================================================
+FILE_TYPE=FORM_DEFN VERSION=2
+FORM
+FIXED
+PORT 36 22
+HEADER "字符位置调整"
+
+POPUP <LAYERPOP> "丝印顶层" "REF DES/SILKSCREEN_TOP", "丝印底层" "REF DES/SILKSCREEN_BOTTOM", "装配顶层" "REF DES/ASSEMBLY_TOP", "装配底层" "REF DES/ASSEMBLY_BOTTOM".
+POPUP <SCOPEPOP> "全部器件" "all", "选中器件" "sel".
+POPUP <BLKPOP> "1" "1", "2" "2", "3" "3", "4" "4", "5" "5", "6" "6", "7" "7", "8" "8", "9" "9", "10" "10", "11" "11", "12" "12", "13" "13", "14" "14", "15" "15", "16" "16", "17" "17", "18" "18", "19" "19", "20" "20".
+
+TILE
+
+TEXT "范围:"
+TLOC 2 1
+ENDTEXT
+
+FIELD scope
+FLOC 8 1
+ENUMSET 12
+POP "SCOPEPOP"
+ENDFIELD
+
+TEXT "字符层:"
+TLOC 2 4
+ENDTEXT
+
+FIELD layer
+FLOC 8 4
+ENUMSET 24
+POP "LAYERPOP"
+ENDFIELD
+
+FIELD unifont
+FLOC 2 7
+CHECKLIST "统一字体"
+ENDFIELD
+
+FIELD setsize
+FLOC 18 7
+MENUBUTTON "设置" 6 1
+ENDFIELD
+
+TEXT "字号:"
+TLOC 2 10
+ENDTEXT
+
+FIELD blk
+FLOC 8 10
+ENUMSET 6
+POP "BLKPOP"
+ENDFIELD
+
+TEXT "(1-20, 可输入)"
+TLOC 16 10
+ENDTEXT
+
+FIELD apply
+FLOC 2 14
+MENUBUTTON "居中" 8 2
+ENDFIELD
+
+FIELD surround
+FLOC 12 14
+MENUBUTTON "摆放四周" 9 2
+ENDFIELD
+
+FIELD quit
+FLOC 24 14
+MENUBUTTON "关闭" 8 2
+ENDFIELD
+
+ENDTILE
+
+ENDFORM

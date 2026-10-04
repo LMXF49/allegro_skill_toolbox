@@ -1,0 +1,100 @@
+F11|zoom out|对PCB界面进行放小
+
+F12|zoom in|对PCB界面进行放大
+
+Esc|done|结束当前命令
+
+ |iangle 90|旋转90度
+
+d|delete|删除命令
+
+s|move|移动命令
+
+f|slide|修线命令
+
+b|rotate|旋转命令
+
+n|mirror|镜像命令
+
+3|copy|复制命令
+
+4|change|改变命令
+
+g|toggle|改变布线方向
+
+m|custom smooth|平滑命令
+
+w|add connect|电气走线命令
+
+h|add line|画非电气属性的线
+
+a|delay tune|蛇形走线等长命令
+
+t|shape add|铺铜命令
+
+r|shape select|选中某个铜皮
+
+v|pop net list|选中铜皮改变铜皮网络
+
+e|shape edit boundary|编辑铜皮边界
+
+u|island_delete|删除孤岛铜皮
+
+p|shape void polygon|任意形状挖空
+
+q|rats net|显示某个网络的飞线
+
+1|unrats net|关闭某个网络的飞线
+
+k|net logic|网络逻辑分配
+
+0|status|PCB设计状态查看
+
+8|show measure|测量命令
+
+F4|show element|查询命令
+
+2|assign color|高亮命令
+
+5|dehilight|低亮命令
+
+7|color192|颜色管理器开关
+
+6|swap components|交换器件
+
+M|ASTB_Route_AutoMatchGroup|创建matchgroup
+
+l|ql|切换到指定层
+
+,|qu|切换到下一层
+
+.|qd|切换到上一层
+
+js|ASTB_Text_RefDesCenter|设置字符位置居中
+
+jt|ASTB_Util_ViewSilkTop|切换到调整丝印顶层
+
+jb|ASTB_Util_ViewSilkBottom|切换到调整丝印底层
+
+jl|ASTB_Text_ImportLogo|调用Logo Skill
+
+/|ASTB_Util_ChooseGrid|选择栅格
+
+?|ASTB_Place_ArrowCopy|方向键等距复制
+
+jv|tvision|时序视觉
+
+F3|drc update|更新DRC
+
+F6|ASTB_Place_Align|打开对齐器件
+
+F7|alnCenterH|水平居中对齐
+
+F8|alnCenterV|垂直居中对齐
+
+c|ASTB_Route_CutLineShape|切线和铜皮
+
+Z|prepopup; pop dyn_option_select 'Snap pick to@:@Segment Vertex'|对齐段顶点
+
+z|astb_place_gatherplace|聚拢摆放
+

@@ -1,0 +1,117 @@
+<MsgFile>
+
+  <Msg>
+    <Id>1</Id>
+    <CDNUSR_DEFINE_NAME>SP_INFOSTRING</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>2</Id>
+    <CDNUSR_DEFINE_NAME>SP_TEXTSTRING</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>3</Id>
+    <CDNUSR_DEFINE_NAME>SP_START_SHAPE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid route keepin - cannot create split plane
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>4</Id>
+    <CDNUSR_DEFINE_NAME>SP_INTERNAL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Internal error %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>5</Id>
+    <CDNUSR_DEFINE_NAME>SP_ONLY_START_SHAPE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Unable to Split start Shape - adding only start shape to split plane
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>6</Id>
+    <CDNUSR_DEFINE_NAME>SP_SHP_TO_SHP</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Possible shape-to-shape constraint violation on split plane
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>7</Id>
+    <CDNUSR_DEFINE_NAME>SHP_INTERNAL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Internal error %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>8</Id>
+    <CDNUSR_DEFINE_NAME>SHP_NO_ANTI_PAD</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No anti-pad definition for pin/via at (%f,%f)
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>9</Id>
+    <CDNUSR_DEFINE_NAME>SHP_USE_REG_PAD</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No anti-pad definition for pin/via at (%f,%f) - using the regular pad definition
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>10</Id>
+    <CDNUSR_DEFINE_NAME>SHP_ISLAND_ERR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to add island to database at (%f,%f)
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>11</Id>
+    <CDNUSR_DEFINE_NAME>SHP_ISLAND_LOC</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Island found at (%f,%f)
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+</MsgFile>

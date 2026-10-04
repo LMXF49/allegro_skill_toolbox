@@ -1,0 +1,732 @@
+<MsgFile>
+    <Msg>
+        <Id>1</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_STRUCT_NAME_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Structure name contains illegal characters. Enter a new name.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>2</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_PADSTACK_NONE</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Padstack '%s' not found.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>3</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_STRUCT_GEN_FAIL</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Failed to generate structure '%s' because of database error.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>4</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_STRUCT_FILE_WRITE_FAIL</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Unable to write the file '%s' because write permissions are not available. Ensure location has write access permissions. 
+        </Desc>
+        <Output>C</Output>
+    </Msg>    
+    <Msg>
+        <Id>5</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_STRUCT_FILE_WRITE_SUCCESS</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+            The file '%s' successfully written to disk.
+        </Desc>
+        <Output>C</Output>
+        <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+    </Msg>
+    <Msg>
+        <Id>6</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_PADSTACK_NOT_VIA</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Padstack '%s' is not a Via, BB Via, Micro via, Through Pin or in a Constraint Manager Via List.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>7</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_STRUCT_NAME_EXIST</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Structure name already exists. Enter a unique name for this structure.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1001</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_LENGTH_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Length set to previous value because entered value is not valid. Value must be a positive number.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1002</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_WIDTH_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Width set to previous value because entered value is not valid. Value must be a positive number.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1003</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_SPACING_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Spacing set to previous value because entered value is not valid. Value must be a positive number.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1004</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_SIG_VIA_VOID_SPACING_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Spacing set to previous value because entered value is not valid. Value must a non-negative number.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1005</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_TRACE_ANGLE_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Angle set to previous value because entered value is not valid. Value must be an integer between 0 through 90.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1006</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_RET_PATH_VIA_ANGLE_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Angle set to previous value because entered value is not valid. Value must be an integer between 0 through 180.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1007</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_ROTATION_ANGLE_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Angle set to previous value because entered value is not valid. Value must be an integer between 0 through 360.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1008</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_ENTRY_TRACE_VIA_OVERLAPPED</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Differential pair pad entry traces overlap return path via. Redefine pad entry traces or return path via.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1009</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_EXIT_TRACE_VIA_OVERLAPPED</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Differential pair pad exit traces overlap return path via. Redefine pad exit traces or return path via.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1010</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_TRACE_VIA_OVERLAPPED</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Differential pair pad entry and exit traces overlap return path via. Redefine pad entry and exit traces or return path via.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1011</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_TRACE_TRACE_OVERLAPPED</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Differential pair pad entry and exit traces overlap each other. Redefine pad entry or exit traces.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1012</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_ENTRY_PAD_NONE</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Cannot enter traces to differential pair pad on selected layer '%s' because pad has no metal in this layer. Select a different layer for pad entry traces.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1013</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_EXIT_PAD_NONE</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Cannot enter traces to differential pair pad on selected layer '%s' because pad has no metal in this layer. Select a different layer for pad exit traces.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1014</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_RET_PATH_VIA_OVERLAPPED</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            A return path via overlaps with another return path via. Redefine return path via.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1015</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_PAD_NONCIRCULAR</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Padstack set to previous value because entered padstack is not valid. Only padstack with circular pads supported by differential pair via structure.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1016</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_RET_PAD_NONE</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Return path via has no pad on layer '%s'. Select a different padstack for return path via.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1017</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_ENTRY_SPACING_BIG</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Spacing between pad entry traces is too big. Input a smaller value.
+        </Desc>
+        <Output>C</Output>
+    </Msg>   
+    <Msg>
+        <Id>1018</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_ENTRY_TRACE_TRACE_OVERLAPPED</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Differential pair pad entry traces overlap each other. Redefine pad entry traces.
+        </Desc>
+        <Output>C</Output>
+    </Msg> 
+    <Msg>
+        <Id>1019</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_EXIT_SPACING_BIG</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Spacing between pad exit traces is too big. Input a smaller value.
+        </Desc>
+        <Output>C</Output>
+    </Msg> 
+    <Msg>
+        <Id>1020</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_EXIT_TRACE_TRACE_OVERLAPPED</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Differential pair pad exit traces overlap each other. Redefine pad exit traces.
+        </Desc>
+        <Output>C</Output>
+    </Msg>    
+    <Msg>
+        <Id>1021</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_VIA_OVERLAPPED</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            A signal via overlaps a return path via. Redefine either the signal via or the return path via.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1022</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_RET_SPACING_SMALL</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Spacing between return path via and signal via is too small. Redefine either the return path via or the signal via.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1023</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_TIGHT_TRACE_ANGLE_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Angle set to previous value because entered value is not valid. Value must be an integer greater than 0 and less than or equal to 90.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1024</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_LOOSE_TRACE_ANGLE_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Angle set to previous value because entered value is not valid. Value must be an integer greater than 0 and less than 90.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1025</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_TANDEM_TRACE_ANGLE_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Angle set to previous value because entered value is not valid. Value must be an integer greater than 0 and less than 90.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1026</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_PITCH_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Pitch set to previous value because entered value is not valid. Value must be greater than the pad size.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1027</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_SELECT_CANVAS_VIA</CDNUSR_DEFINE_NAME>
+        <Category>I</Category>
+        <Desc>
+            Pick vias from canvas.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1028</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_RINGS_RADIUS_TOO_LARGE</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Failed to create keepout because diameter is greater than or equal to the pitch size. Diameter of a ring keepout must be less than the pitch size.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1029</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_RINGS_RADIUS_TOO_SMALL</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Failed to create keepout because diameter is less than the pad size. Diameter of a rings keepout must be no less than the pad size.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1030</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_INVALID_RECTANGLE_W</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Failed to create keepout because W is less than the sum of the pitch and pad sizes. W value of a rectangule keepout must be no less than the sum of the pitch size and the pad size.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1031</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_INVALID_RECTANGLE_H</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Failed to create keepout because H is less than the pad size. H value of a rectangular keepout must be no less than the pad size.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1032</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_INVALID_OWL_R</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Failed to create keepout because R is greater than or equal to half the pitch size. R value of an owl keepout must be less than half the pitch size.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1033</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_OWL_R_TOO_SMALL</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Failed to create keepout because R is less than half the pad size. R value of an owl keepout must be no less than half the pad size.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1034</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_OWL_W_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+           Failed to create keepout because W is greater than or equal to the spacing size. W value of an owl keepout must be less than the spacing size.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1035</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_OWL_H_R_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Failed to create keepout because H is greater than or equal to the R value. H value of an owl keepout must be less than the R value.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1036</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_GOGGLES_R_TOO_SMALL</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Failed to create keepout because R is less than half the pad size. R value of a goggles keepout must be no less than half of the pad size.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1037</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_GOGGLES_R_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Failed to create keepout because R is less than half the pitch size. R value of goggles keepout must be greater than or equal to half the pitch size.
+        </Desc>
+        <Output>C</Output>
+    </Msg>  
+    <Msg>
+        <Id>1038</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_GOGGLES_OWL_NOT_ALLOWED</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Failed to create keepout because pad traces are on different sides. Pad traces must be on the same side for goggles and owl keepouts.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1039</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_GOGGLES_SIDE_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Failed to create keepout because notch and pad trace are on different sides. Notch of a goggles keepout must be on the same side as the pad trace.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1040</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_OWL_SIDE_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+             Failed to create keepout because notch and pad trace are on different sides. Notch of an owl keepout must be on the same side as the pad trace.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1041</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_VIA_SELECTED_NUMBER_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+             Number of vias selected is not valid. No more than two vias can be selected.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1042</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_VIA_SELECTED_FIGURE_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+             Cannot select padstack because pad is not circular. Only padstacks with circular pads are supported.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1043</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_VIAS_NOT_SAME_PADSTACK</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+             The two selected vias have different padstacks.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1044</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_VOID_SHAPE_NONE</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+             Cannot specify keepout shape as NONE because Keepout parameters are set. Ensure keepout shape is set.
+        </Desc>
+        <Output>C</Output>
+    </Msg>  
+     <Msg>
+        <Id>1045</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_OVAL_RADIUS_TOO_LARGE</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Failed to create keepout because diameter is greater than or equal to the pitch size. Diameter of a oval keepout must be less than the pitch size.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1046</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_OVAL_RADIUS_TOO_SMALL</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Failed to create keepout because diameter is less than the pad size. Diameter of a oval keepout must be no less than the pad size.
+        </Desc>
+        <Output>C</Output>
+    </Msg>    
+    <Msg>
+        <Id>1047</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_OWL_S_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Failed to create keepout because the sum of spacing (S) and pad radius is greater than or equal to half the pitch size. The sum of S and pad radius of an owl keepout must be less than half the pitch size.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1048</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_GOGGLES_S_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Failed to create keepout because the sum of spacing (S) and pad radius is greater than half the pitch size. The sum of S and pad radius of a goggles keepout must be less than or equal to half the pitch size.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1049</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_OVAL_S_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Failed to create keepout because the sum of spacing (S) and pad radius is greater than or equal to half the pitch size. The sum of S and pad radius of an oval keepout must be less than half the pitch size.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1050</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_RINGS_S_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Failed to create keepout because the sum of spacing (S) and pad radius is greater than or equal to half the pitch size. The sum of S and pad radius of a rings keepout must be less than half the pitch size.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1051</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_OWL_H_S_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Failed to create keepout because H is greater than the sum of spacing (S) and pad radius. H value of an owl keepout must be less than the sum of S and pad radius.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>1052</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_DPV_RINGS_OVAL_TOO_SMALL</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Need to be deprecated.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>2001</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_HSV_XXX</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Invalid value entered.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>3001</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_LCOMP_XXX</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Invalid value entered.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>4001</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_SERPCOMB_INVALID_WIDTH</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Width set to previous value because entered value is not valid. Value must be a positive number.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>4002</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_SERPCOMB_INVALID_SPACING</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Spacing set to previous value because entered value is not valid. Value must be a positive number.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>4003</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_SERPCOMB_INVALID_HEIGHT</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Height set to previous value because entered value is not valid. Value must be a positive number.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>4004</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_SERPCOMB_INVALID_COUNT</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Count set to previous value because entered value is not valid. Value must be an integer no less than 1.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>4005</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_SERPCOMB_INSUFFICIENT_HEIGHT</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Height is not valid. Height must be greater than or equal to the sum of two times the trace spacing and three time the trace width.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+        <Msg>
+        <Id>4006</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_SERPCOMB_SIZE_TOO_LARGE</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Structure size exceeds the drawing size of %s X %s. Reduce the structure size to be within the drawing size.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>5001</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_SEV_LENGTH_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Length set to previous value because entered value is not valid. Value must be a positive number.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>5002</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_SEV_WIDTH_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Width set to previous value because entered value is not valid. Value must be a positive number.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>5003</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_SEV_SPACING_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Spacing set to previous value because entered value is not valid. Value must be a positive number.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>5004</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_SEV_SIG_VIA_VOID_SPACING_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Spacing set to previous value because entered value is not valid. Value must a non-negative number.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>5005</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_SEV_ANGLE_INVALID</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Angle set to previous value because entered value is not valid. Value must be an integer between 0 through 360.
+        </Desc>
+        <Output>C</Output>
+    </Msg>    
+    <Msg>
+        <Id>5006</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_SEV_ENTRY_TRACE_VIA_OVERLAPPED</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Single ended pad entry trace overlaps return path via. Redefine pad entry trace or return path via.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>5007</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_SEV_EXIT_TRACE_VIA_OVERLAPPED</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Single ended pad exit trace overlaps return path via. Redefine pad exit trace or return path via.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>5008</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_SEV_TRACE_VIA_OVERLAPPED</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Single ended pad entry and exit traces overlap return path via. Redefine pad entry and exit traces or return path via.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>5009</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_SEV_TRACE_TRACE_OVERLAPPED</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Single ended pad entry and exit traces overlap each other. Redefine pad entry or exit trace.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>5010</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_SEV_ENTRY_PAD_NONE</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Cannot enter trace to single ended pad on selected layer '%s' because pad has no metal in this layer. Select a different layer for pad entry trace.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>5011</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_SEV_EXIT_PAD_NONE</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Cannot enter trace to single ended pad on selected layer '%s' because pad has no metal in this layer. Select a different layer for pad exit trace.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>5012</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_SEV_PAD_NONE</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Cannot enter trace to single ended pad on selected layer '%s' and '%s' because pad has no metal in these layers. Select different layers for pad entry and exit traces.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>5013</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_SEV_PAD_NONCIRCULAR</CDNUSR_DEFINE_NAME>
+        <Category>W</Category>
+        <Desc>
+            Padstack set to previous value because entered padstack is not valid. Only padstack with circular pads supported by single ended via structure.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+    <Msg>
+        <Id>6001</Id>
+        <CDNUSR_DEFINE_NAME>STMSG_STDV_XXX</CDNUSR_DEFINE_NAME>
+        <Category>E</Category>
+        <Desc>
+            Invalid value entered.
+        </Desc>
+        <Output>C</Output>
+    </Msg>
+</MsgFile>

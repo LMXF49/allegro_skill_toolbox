@@ -1,0 +1,485 @@
+<MsgFile>
+
+  <Msg>
+    <Id>1</Id>
+    <CDNUSR_DEFINE_NAME>THMSG_FOPENERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+File open problem - unable to proceed
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>2</Id>
+    <CDNUSR_DEFINE_NAME>THMSG_LIMITERR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+High limit must be greater than low limit 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>3</Id>
+    <CDNUSR_DEFINE_NAME>THMSG_MALLOCERR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Memory allocation failure 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>4</Id>
+    <CDNUSR_DEFINE_NAME>THMSG_NODEOFFDRWG</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Isotherms require closed board outline with no other markings
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>5</Id>
+    <CDNUSR_DEFINE_NAME>THMSG_NOINTRCPT</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Isotherm has no unique temperature intercept 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>6</Id>
+    <CDNUSR_DEFINE_NAME>THMSG_NONODETEMPS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to determine node temperatures 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>7</Id>
+    <CDNUSR_DEFINE_NAME>THMSG_NOPCBOTLN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Draw the PCB outline ( rectangle OK ) 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>8</Id>
+    <CDNUSR_DEFINE_NAME>THMSG_ALREADYUSED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Internal error : THMSG_ALREADYUSED 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>9</Id>
+    <CDNUSR_DEFINE_NAME>THMSG_NOTONCONTOUR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Internal error : THMSG_NOTONCONTOUR 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>10</Id>
+    <CDNUSR_DEFINE_NAME>THMSG_NULLGRID</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Internal error : THMSG_NULLGRID 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>11</Id>
+    <CDNUSR_DEFINE_NAME>THMSG_NULLROW</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Internal error : THMSG_NULLROW 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>12</Id>
+    <CDNUSR_DEFINE_NAME>TLMSG_MALLOC_FAILED_STAT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Memory allocation failure
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>13</Id>
+    <CDNUSR_DEFINE_NAME>TLMSG_UNCONN</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Net is not fully connected
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>14</Id>
+    <CDNUSR_DEFINE_NAME>TLMSG_UNOPDLF</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to open Delay File
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>15</Id>
+    <CDNUSR_DEFINE_NAME>TLMSG_UNOPNLS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to Open file containing list of nets
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>16</Id>
+    <CDNUSR_DEFINE_NAME>TLMSG_UNOPFILE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to open file
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>17</Id>
+    <CDNUSR_DEFINE_NAME>TLMSG_UNSTRRVR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to store receiver data
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>18</Id>
+    <CDNUSR_DEFINE_NAME>TLMSG_CANTSHOWELEC</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Unable to show impedance - no shield layer(s)
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>19</Id>
+    <CDNUSR_DEFINE_NAME>TLMSG_DVRISRVR</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Driver and receiver are same
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>20</Id>
+    <CDNUSR_DEFINE_NAME>TLMSG_NULLDVR</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Null Driver data
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>21</Id>
+    <CDNUSR_DEFINE_NAME>TLMSG_NULLRVR</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Null Receiver data
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>22</Id>
+    <CDNUSR_DEFINE_NAME>TLMSG_ZEROIMPEDANCE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+This etch has zero impedance
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>23</Id>
+    <CDNUSR_DEFINE_NAME>TLMSG_ZEROPROPDELAY</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+This etch has zero propagation delay
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>24</Id>
+    <CDNUSR_DEFINE_NAME>TLMSG_BGEO_OUTLINE_NOT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+You need to add a board geometry outline
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>25</Id>
+    <CDNUSR_DEFINE_NAME>TLMSG_EMBLYR</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Embedded Plane
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>26</Id>
+    <CDNUSR_DEFINE_NAME>TLMSG_NOEMBLYR</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Need shield layer(s) in PCB cross section
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>27</Id>
+    <CDNUSR_DEFINE_NAME>TLMSG_UNLAYMEM</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to allocate memory for layer structure
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>28</Id>
+    <CDNUSR_DEFINE_NAME>TLMSG_NONET</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Net '%s' not found
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>29</Id>
+    <CDNUSR_DEFINE_NAME>TLMSG_NODRV</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No drivers found in this net
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>30</Id>
+    <CDNUSR_DEFINE_NAME>TLMSG_NOTPLC</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Device Not Placed
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>31</Id>
+    <CDNUSR_DEFINE_NAME>TLMSG_ZEROSEPARATION</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Layer to layer separation is zero
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>32</Id>
+    <CDNUSR_DEFINE_NAME>TLMSG_WRGLYRVALUES</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Incorrect identification of layers
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>33</Id>
+    <CDNUSR_DEFINE_NAME>TLMSG_ZEROWIDTH</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Etch width is zero
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>34</Id>
+    <CDNUSR_DEFINE_NAME>TLMSG_ILLEGALELM</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No computation can be performed for this element
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>35</Id>
+    <CDNUSR_DEFINE_NAME>TXMSG_MATERUNKNOWN</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+No material properties found for %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>36</Id>
+    <CDNUSR_DEFINE_NAME>SNMSG_NONETVOLT</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Net %s has no VOLTAGE, using %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>37</Id>
+    <CDNUSR_DEFINE_NAME>SNMSG_USERPTFILE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+File %s opened
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>38</Id>
+    <CDNUSR_DEFINE_NAME>SNMSG_USEDATAFILE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Loading signoise data from file %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>39</Id>
+    <CDNUSR_DEFINE_NAME>SNMSG_SELECTALL</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Analyzing all nets
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>40</Id>
+    <CDNUSR_DEFINE_NAME>SNMSG_NONETS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No networks selected for analysis
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>41</Id>
+    <CDNUSR_DEFINE_NAME>SNMSG_USENETFILE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Using list of nets file %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>42</Id>
+    <CDNUSR_DEFINE_NAME>SNMSG_UNCONPIN</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Pin \"%s\" not connected to any net - run Audit
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>43</Id>
+    <CDNUSR_DEFINE_NAME>SNMSG_NOTERMRES</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Terminator resistance unknown for %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>44</Id>
+    <CDNUSR_DEFINE_NAME>SNMSG_OTHERTERMPIN</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cannot find other resistor pin for terminator pin %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>45</Id>
+    <CDNUSR_DEFINE_NAME>SNMSG_XTALKCOUNT</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Incomplete crosstalk for %s - net too complex
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>46</Id>
+    <CDNUSR_DEFINE_NAME>EMCMSG_BADARG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Wrong arguments passed to the predicate. Format: \"%s\"
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>47</Id>
+    <CDNUSR_DEFINE_NAME>EMCMSG_BADLAY</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid layer name. Layer \"%s\" not found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+</MsgFile>

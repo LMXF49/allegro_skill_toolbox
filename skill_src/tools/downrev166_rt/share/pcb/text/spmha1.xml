@@ -1,0 +1,5281 @@
+<MsgFile>
+
+  <Msg>
+    <Id>1</Id>
+    <CDNUSR_DEFINE_NAME>MSG1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+...........................................................
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>2</Id>
+    <CDNUSR_DEFINE_NAME>MSG2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+..................ALLEGRO MESSAGE TEXT FILE................
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>3</Id>
+    <CDNUSR_DEFINE_NAME>MSG3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Warning: Do not delete any line nor change the contents of.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>4</Id>
+    <CDNUSR_DEFINE_NAME>MSG4</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+this file..................................................
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>5</Id>
+    <CDNUSR_DEFINE_NAME>MSG5</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+This is the main text file used for allegro message texts.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>6</Id>
+    <CDNUSR_DEFINE_NAME>MSG6</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+The first 9 lines are reserved for comments and header info
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>7</Id>
+    <CDNUSR_DEFINE_NAME>MSG7</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+The actual message line count starts at line 11............
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>8</Id>
+    <CDNUSR_DEFINE_NAME>MSG8</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+...........................................................
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>9</Id>
+    <CDNUSR_DEFINE_NAME>MSG9</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+...........................................................
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>10</Id>
+    <CDNUSR_DEFINE_NAME>MSG10</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot allocate any more space. Exit program and increase your system swap space.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>11</Id>
+    <CDNUSR_DEFINE_NAME>MSG11</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Bad segments declaration.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>12</Id>
+    <CDNUSR_DEFINE_NAME>MSG12</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Bad branch items declaration.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>13</Id>
+    <CDNUSR_DEFINE_NAME>MSG13</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Bad patches declaration.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>14</Id>
+    <CDNUSR_DEFINE_NAME>MSG14</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Bad text attribute declaration.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>15</Id>
+    <CDNUSR_DEFINE_NAME>MSG15</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal ARC_SEGMENT identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>16</Id>
+    <CDNUSR_DEFINE_NAME>MSG16</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal ATTRIBUTE identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>17</Id>
+    <CDNUSR_DEFINE_NAME>MSG17</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal BRANCH identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>18</Id>
+    <CDNUSR_DEFINE_NAME>MSG18</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal BRANCH item identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>19</Id>
+    <CDNUSR_DEFINE_NAME>MSG19</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal connect line identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>20</Id>
+    <CDNUSR_DEFINE_NAME>MSG20</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal component definition COMPONENT_DEF identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>21</Id>
+    <CDNUSR_DEFINE_NAME>MSG21</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal component instance COMPONENT_INST identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>22</Id>
+    <CDNUSR_DEFINE_NAME>MSG22</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal component identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>23</Id>
+    <CDNUSR_DEFINE_NAME>MSG23</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal component pin definition COMPONENT_PIN_DEF identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>24</Id>
+    <CDNUSR_DEFINE_NAME>MSG24</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal component pin definition COMPONENT_PIN_DEF identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>25</Id>
+    <CDNUSR_DEFINE_NAME>MSG25</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal component to symbol pointer.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>26</Id>
+    <CDNUSR_DEFINE_NAME>MSG26</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal symbol to component pointer.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>27</Id>
+    <CDNUSR_DEFINE_NAME>MSG27</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal database identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>28</Id>
+    <CDNUSR_DEFINE_NAME>MSG28</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal DRC error DRC_ERROR identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>29</Id>
+    <CDNUSR_DEFINE_NAME>MSG29</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal figure identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>30</Id>
+    <CDNUSR_DEFINE_NAME>MSG30</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal fixed pin FIX_PIN identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>31</Id>
+    <CDNUSR_DEFINE_NAME>MSG31</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal filled rectangle FRECTANGLE identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>32</Id>
+    <CDNUSR_DEFINE_NAME>MSG32</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal function definition FUNCTION_DEF identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>33</Id>
+    <CDNUSR_DEFINE_NAME>MSG33</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal function instance FUNCTION_INST identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>34</Id>
+    <CDNUSR_DEFINE_NAME>MSG34</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal function definition FUNCTION_DEF identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>35</Id>
+    <CDNUSR_DEFINE_NAME>MSG35</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal function pin definition FUNCTION_PIN_DEF identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>36</Id>
+    <CDNUSR_DEFINE_NAME>MSG36</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal LINE identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>37</Id>
+    <CDNUSR_DEFINE_NAME>MSG37</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal line segment LINE_SEGMENT_ identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>38</Id>
+    <CDNUSR_DEFINE_NAME>MSG38</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal NET identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>39</Id>
+    <CDNUSR_DEFINE_NAME>MSG39</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Invalid obstacle identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>40</Id>
+    <CDNUSR_DEFINE_NAME>MSG40</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal pad identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>41</Id>
+    <CDNUSR_DEFINE_NAME>MSG41</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal RATSNEST identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>42</Id>
+    <CDNUSR_DEFINE_NAME>MSG42</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal RECTANGLE identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>43</Id>
+    <CDNUSR_DEFINE_NAME>MSG43</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal standard pin STD_PIN identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>44</Id>
+    <CDNUSR_DEFINE_NAME>MSG44</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal symbol identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>45</Id>
+    <CDNUSR_DEFINE_NAME>MSG45</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal symbol instance SYMBOL_INSTANCE identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>46</Id>
+    <CDNUSR_DEFINE_NAME>MSG46</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal symbol definition SYMBOL_DEFINITION identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>47</Id>
+    <CDNUSR_DEFINE_NAME>MSG47</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal SYMVAR pin identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>48</Id>
+    <CDNUSR_DEFINE_NAME>MSG48</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal TEXT identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>49</Id>
+    <CDNUSR_DEFINE_NAME>MSG49</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal TEXT_LINE identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>50</Id>
+    <CDNUSR_DEFINE_NAME>MSG50</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal T identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>51</Id>
+    <CDNUSR_DEFINE_NAME>MSG51</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal T via identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>52</Id>
+    <CDNUSR_DEFINE_NAME>MSG52</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal VIA identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>53</Id>
+    <CDNUSR_DEFINE_NAME>MSG53</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal patch identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>54</Id>
+    <CDNUSR_DEFINE_NAME>MSG54</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal PATCH_SET identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>55</Id>
+    <CDNUSR_DEFINE_NAME>MSG55</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal SHAPE identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>56</Id>
+    <CDNUSR_DEFINE_NAME>MSG56</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal VOID identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>57</Id>
+    <CDNUSR_DEFINE_NAME>MSG57</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal attribute parent.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>58</Id>
+    <CDNUSR_DEFINE_NAME>MSG58</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal branch parent.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>59</Id>
+    <CDNUSR_DEFINE_NAME>MSG59</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal line parent.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>60</Id>
+    <CDNUSR_DEFINE_NAME>MSG60</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal line segment parent.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>61</Id>
+    <CDNUSR_DEFINE_NAME>MSG61</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal obstacle owner.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>62</Id>
+    <CDNUSR_DEFINE_NAME>MSG62</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal parent identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>63</Id>
+    <CDNUSR_DEFINE_NAME>MSG63</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal pin owner.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>64</Id>
+    <CDNUSR_DEFINE_NAME>MSG64</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal rectangle parent.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>65</Id>
+    <CDNUSR_DEFINE_NAME>MSG65</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Arc is outside of the symbol extents.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>66</Id>
+    <CDNUSR_DEFINE_NAME>MSG66</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Arc segment is outside of the extents.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>67</Id>
+    <CDNUSR_DEFINE_NAME>MSG67</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Figure is outside of the extents.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>68</Id>
+    <CDNUSR_DEFINE_NAME>MSG68</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Line segments are outside of the extents.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>69</Id>
+    <CDNUSR_DEFINE_NAME>MSG69</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Line segments are outside of the symbol extents.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>70</Id>
+    <CDNUSR_DEFINE_NAME>MSG70</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pin is outside of the extents.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>71</Id>
+    <CDNUSR_DEFINE_NAME>MSG71</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Rectangle is outside of the extents.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>72</Id>
+    <CDNUSR_DEFINE_NAME>MSG72</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Rectangle is outside of the symbol extents.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>73</Id>
+    <CDNUSR_DEFINE_NAME>MSG73</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Text line is outside of the extents.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>74</Id>
+    <CDNUSR_DEFINE_NAME>MSG74</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Text line is outside of the symbol extents.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>75</Id>
+    <CDNUSR_DEFINE_NAME>MSG75</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+T is outside of the extents.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>76</Id>
+    <CDNUSR_DEFINE_NAME>MSG76</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+DUMMY MESSAGE
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>77</Id>
+    <CDNUSR_DEFINE_NAME>MSG77</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+DUMMY MESSAGE
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>78</Id>
+    <CDNUSR_DEFINE_NAME>MSG78</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Via is outside of the extents.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>79</Id>
+    <CDNUSR_DEFINE_NAME>MSG79</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Branches have different parents.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>80</Id>
+    <CDNUSR_DEFINE_NAME>MSG80</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Branch is not empty.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>81</Id>
+    <CDNUSR_DEFINE_NAME>MSG81</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cannot close the drawing.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>82</Id>
+    <CDNUSR_DEFINE_NAME>MSG82</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cannot edit the symbol definition.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>83</Id>
+    <CDNUSR_DEFINE_NAME>MSG83</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Connect line is not connected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>84</Id>
+    <CDNUSR_DEFINE_NAME>MSG84</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Memory hole is too small.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>85</Id>
+    <CDNUSR_DEFINE_NAME>MSG85</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal arc radius.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>86</Id>
+    <CDNUSR_DEFINE_NAME>MSG86</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal arc width.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>87</Id>
+    <CDNUSR_DEFINE_NAME>MSG87</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal byte length.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>88</Id>
+    <CDNUSR_DEFINE_NAME>MSG88</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal character count.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>89</Id>
+    <CDNUSR_DEFINE_NAME>MSG89</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal component class.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>90</Id>
+    <CDNUSR_DEFINE_NAME>MSG90</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal component reference designator.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>91</Id>
+    <CDNUSR_DEFINE_NAME>MSG91</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal connection.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>92</Id>
+    <CDNUSR_DEFINE_NAME>MSG92</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal device type.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>93</Id>
+    <CDNUSR_DEFINE_NAME>MSG93</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal drill character.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>94</Id>
+    <CDNUSR_DEFINE_NAME>MSG94</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal drill figure.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>95</Id>
+    <CDNUSR_DEFINE_NAME>MSG95</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal drill figure size.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>96</Id>
+    <CDNUSR_DEFINE_NAME>MSG96</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal drill hole size.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>97</Id>
+    <CDNUSR_DEFINE_NAME>MSG97</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal drill plating.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>98</Id>
+    <CDNUSR_DEFINE_NAME>MSG98</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal element class.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>99</Id>
+    <CDNUSR_DEFINE_NAME>MSG99</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal element type.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>100</Id>
+    <CDNUSR_DEFINE_NAME>MSG100</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal figure.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>101</Id>
+    <CDNUSR_DEFINE_NAME>MSG101</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal figure shape.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>102</Id>
+    <CDNUSR_DEFINE_NAME>MSG102</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal figure size.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>103</Id>
+    <CDNUSR_DEFINE_NAME>MSG103</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal fixed data pointer.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>104</Id>
+    <CDNUSR_DEFINE_NAME>MSG104</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal function pin name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>105</Id>
+    <CDNUSR_DEFINE_NAME>MSG105</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal function reference designator.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>106</Id>
+    <CDNUSR_DEFINE_NAME>MSG106</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal function type.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>107</Id>
+    <CDNUSR_DEFINE_NAME>MSG107</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal function pin FIX flag.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>108</Id>
+    <CDNUSR_DEFINE_NAME>MSG108</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal line segment ... end points.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>109</Id>
+    <CDNUSR_DEFINE_NAME>MSG109</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal line segment ... number of vertices.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>110</Id>
+    <CDNUSR_DEFINE_NAME>MSG110</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal line segment ... width.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>111</Id>
+    <CDNUSR_DEFINE_NAME>MSG111</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal line width.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>112</Id>
+    <CDNUSR_DEFINE_NAME>MSG112</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal list identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>113</Id>
+    <CDNUSR_DEFINE_NAME>MSG113</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Net name has illegal characters or is too long ... check documentation.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>114</Id>
+    <CDNUSR_DEFINE_NAME>MSG114</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal net route flag.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>115</Id>
+    <CDNUSR_DEFINE_NAME>MSG115</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Package name is illegal, contains illegal filename characters or is too long, check documentation.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>116</Id>
+    <CDNUSR_DEFINE_NAME>MSG116</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal pad flash name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>117</Id>
+    <CDNUSR_DEFINE_NAME>MSG117</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal pad origin.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>118</Id>
+    <CDNUSR_DEFINE_NAME>MSG118</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Padstack name has illegal characters or is too long ... check documentation.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>119</Id>
+    <CDNUSR_DEFINE_NAME>MSG119</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal pad shape.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>120</Id>
+    <CDNUSR_DEFINE_NAME>MSG120</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal pad size.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>121</Id>
+    <CDNUSR_DEFINE_NAME>MSG121</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal pad name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>122</Id>
+    <CDNUSR_DEFINE_NAME>MSG122</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal pin number.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>123</Id>
+    <CDNUSR_DEFINE_NAME>MSG123</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal pin use code.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>124</Id>
+    <CDNUSR_DEFINE_NAME>MSG124</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal placement FIX flag.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>125</Id>
+    <CDNUSR_DEFINE_NAME>MSG125</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal rectangle size.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>126</Id>
+    <CDNUSR_DEFINE_NAME>MSG126</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal size identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>127</Id>
+    <CDNUSR_DEFINE_NAME>MSG127</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal subclass.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>128</Id>
+    <CDNUSR_DEFINE_NAME>MSG128</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal swap code.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>129</Id>
+    <CDNUSR_DEFINE_NAME>MSG129</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal symbol extents.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>130</Id>
+    <CDNUSR_DEFINE_NAME>MSG130</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal symbol mirror flag.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>131</Id>
+    <CDNUSR_DEFINE_NAME>MSG131</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal symbol name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>132</Id>
+    <CDNUSR_DEFINE_NAME>MSG132</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal symbol package height.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>133</Id>
+    <CDNUSR_DEFINE_NAME>MSG133</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Database is too old to open ... run dbdoctor to uprev it.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>134</Id>
+    <CDNUSR_DEFINE_NAME>MSG134</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal symbol rotation.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>135</Id>
+    <CDNUSR_DEFINE_NAME>MSG135</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal symbol type.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>136</Id>
+    <CDNUSR_DEFINE_NAME>MSG136</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal text height.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>137</Id>
+    <CDNUSR_DEFINE_NAME>MSG137</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Exhausted maximum text blocks. Use env variable preserve_symbol_textblocks or build symbols with a common Text Setup.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>138</Id>
+    <CDNUSR_DEFINE_NAME>MSG138</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal text string.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>139</Id>
+    <CDNUSR_DEFINE_NAME>MSG139</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal text width.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>140</Id>
+    <CDNUSR_DEFINE_NAME>MSG140</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid sector column. Contact Cadence Customer Support with the design file and the steps resulting in the error.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>141</Id>
+    <CDNUSR_DEFINE_NAME>MSG141</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid sector row. Contact Cadence Customer Support with the design file and the steps resulting in the error.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>142</Id>
+    <CDNUSR_DEFINE_NAME>MSG142</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Layer table already exists.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>143</Id>
+    <CDNUSR_DEFINE_NAME>MSG143</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+List is empty.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>144</Id>
+    <CDNUSR_DEFINE_NAME>MSG144</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Character spacing is negative.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>145</Id>
+    <CDNUSR_DEFINE_NAME>MSG145</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Line spacing is negative.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>146</Id>
+    <CDNUSR_DEFINE_NAME>MSG146</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No overlap.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>147</Id>
+    <CDNUSR_DEFINE_NAME>MSG147</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No such child. Contact Cadence Customer Support with the design file and the steps resulting in the error.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>148</Id>
+    <CDNUSR_DEFINE_NAME>MSG148</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No such obstacle.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>149</Id>
+    <CDNUSR_DEFINE_NAME>MSG149</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Overlap.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>150</Id>
+    <CDNUSR_DEFINE_NAME>MSG150</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Symbol does not fit into the drawing ... reposition the symbol.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>151</Id>
+    <CDNUSR_DEFINE_NAME>MSG151</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Symbol extents are greater than the drawing extents ... increase the drawing extents.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>152</Id>
+    <CDNUSR_DEFINE_NAME>MSG152</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Shape has connect lines attached.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>153</Id>
+    <CDNUSR_DEFINE_NAME>MSG153</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+T has connect lines attached.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>154</Id>
+    <CDNUSR_DEFINE_NAME>MSG154</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Via has connect lines attached.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>155</Id>
+    <CDNUSR_DEFINE_NAME>MSG155</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Connect line end is not dangling.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>156</Id>
+    <CDNUSR_DEFINE_NAME>MSG156</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No common vertex.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>157</Id>
+    <CDNUSR_DEFINE_NAME>MSG157</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Segment is not first or last. Contact Cadence Customer Support with the design file and the steps resulting in the error.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>158</Id>
+    <CDNUSR_DEFINE_NAME>MSG158</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot find the supposed hole.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>159</Id>
+    <CDNUSR_DEFINE_NAME>MSG159</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+filler
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>160</Id>
+    <CDNUSR_DEFINE_NAME>MSG160</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot obtain additional memory ... increase your page/swap space.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>161</Id>
+    <CDNUSR_DEFINE_NAME>MSG161</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot open the design because of database problems. Run the dbdoctor command on the design and try to open again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>162</Id>
+    <CDNUSR_DEFINE_NAME>MSG162</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+filler
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>163</Id>
+    <CDNUSR_DEFINE_NAME>MSG163</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The database appears to be truncated. Normally this cannot be fixed but contact Cadence Customer Support with the database file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>164</Id>
+    <CDNUSR_DEFINE_NAME>MSG164</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+filler
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>165</Id>
+    <CDNUSR_DEFINE_NAME>MSG165</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+filler
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>166</Id>
+    <CDNUSR_DEFINE_NAME>MSG166</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+filler
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>167</Id>
+    <CDNUSR_DEFINE_NAME>MSG167</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+filler
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>168</Id>
+    <CDNUSR_DEFINE_NAME>MSG168</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Not enough system memory to open this design ... increase system swap space.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>169</Id>
+    <CDNUSR_DEFINE_NAME>MSG169</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Open drawing has been aborted.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>170</Id>
+    <CDNUSR_DEFINE_NAME>MSG170</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No available buffer identifiers.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>171</Id>
+    <CDNUSR_DEFINE_NAME>MSG171</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No buffer space.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>172</Id>
+    <CDNUSR_DEFINE_NAME>MSG172</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal BMS identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>173</Id>
+    <CDNUSR_DEFINE_NAME>MSG173</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Record is out of the buffer limits.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>174</Id>
+    <CDNUSR_DEFINE_NAME>MSG174</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal BMS record number.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>175</Id>
+    <CDNUSR_DEFINE_NAME>MSG175</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Fixed buffer identifier cannot be feed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>176</Id>
+    <CDNUSR_DEFINE_NAME>MSG176</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+BMS file error.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>177</Id>
+    <CDNUSR_DEFINE_NAME>MSG177</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+BMS read error.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>178</Id>
+    <CDNUSR_DEFINE_NAME>MSG178</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot open the conversion data file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>179</Id>
+    <CDNUSR_DEFINE_NAME>MSG179</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Converter begun ... parameter processing is in progress ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>180</Id>
+    <CDNUSR_DEFINE_NAME>MSG180</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+filler
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>181</Id>
+    <CDNUSR_DEFINE_NAME>MSG181</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+First record was not the parameter record.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>182</Id>
+    <CDNUSR_DEFINE_NAME>MSG182</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error in parameter reading.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>183</Id>
+    <CDNUSR_DEFINE_NAME>MSG183</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Conversion has been aborted.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>184</Id>
+    <CDNUSR_DEFINE_NAME>MSG184</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal record code.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>185</Id>
+    <CDNUSR_DEFINE_NAME>MSG185</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+filler
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>186</Id>
+    <CDNUSR_DEFINE_NAME>MSG186</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+filler
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>187</Id>
+    <CDNUSR_DEFINE_NAME>MSG187</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+filler
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>188</Id>
+    <CDNUSR_DEFINE_NAME>MSG188</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Bad header in the conversion data file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>189</Id>
+    <CDNUSR_DEFINE_NAME>MSG189</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Bad record size in the conversion data file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>190</Id>
+    <CDNUSR_DEFINE_NAME>MSG190</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+filler
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>191</Id>
+    <CDNUSR_DEFINE_NAME>MSG191</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+filler
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>192</Id>
+    <CDNUSR_DEFINE_NAME>MSG192</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+filler
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>193</Id>
+    <CDNUSR_DEFINE_NAME>MSG193</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Component class does not match.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>194</Id>
+    <CDNUSR_DEFINE_NAME>MSG194</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Component package does not match.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>195</Id>
+    <CDNUSR_DEFINE_NAME>MSG195</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Component identifier is
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>196</Id>
+    <CDNUSR_DEFINE_NAME>MSG196</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Net identifier is
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>197</Id>
+    <CDNUSR_DEFINE_NAME>MSG197</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Function identifier is
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>198</Id>
+    <CDNUSR_DEFINE_NAME>MSG198</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Function pin identifier is
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>199</Id>
+    <CDNUSR_DEFINE_NAME>MSG199</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Component pin identifier is
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>200</Id>
+    <CDNUSR_DEFINE_NAME>MSG200</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+There are too many components in the RSX file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>201</Id>
+    <CDNUSR_DEFINE_NAME>MSG201</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Slot name does not match.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>202</Id>
+    <CDNUSR_DEFINE_NAME>MSG202</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+There are too many functions in the RSX file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>203</Id>
+    <CDNUSR_DEFINE_NAME>MSG203</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+There are too many component pins in the RSX file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>204</Id>
+    <CDNUSR_DEFINE_NAME>MSG204</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+There are too many function pins in the RSX file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>205</Id>
+    <CDNUSR_DEFINE_NAME>MSG205</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+There are too many lines in the RSX file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>206</Id>
+    <CDNUSR_DEFINE_NAME>MSG206</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+There are too many arcs in the RSX file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>207</Id>
+    <CDNUSR_DEFINE_NAME>MSG207</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+There are too many rectangles in the RSX file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>208</Id>
+    <CDNUSR_DEFINE_NAME>MSG208</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Symbol database pointer is invalid.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>209</Id>
+    <CDNUSR_DEFINE_NAME>MSG209</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Not enough space to process the convert records.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>210</Id>
+    <CDNUSR_DEFINE_NAME>MSG210</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+BMS get error.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>211</Id>
+    <CDNUSR_DEFINE_NAME>MSG211</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+BMS put error.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>212</Id>
+    <CDNUSR_DEFINE_NAME>MSG212</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+There are too many filled rectangles.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>213</Id>
+    <CDNUSR_DEFINE_NAME>MSG213</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Duplicate pad stack during conversion.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>214</Id>
+    <CDNUSR_DEFINE_NAME>MSG214</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+There are too many vias.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>215</Id>
+    <CDNUSR_DEFINE_NAME>MSG215</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+There are too many T's.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>216</Id>
+    <CDNUSR_DEFINE_NAME>MSG216</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+There are too many pads.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>217</Id>
+    <CDNUSR_DEFINE_NAME>MSG217</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+There are too many figures.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>218</Id>
+    <CDNUSR_DEFINE_NAME>MSG218</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Pin numbers do not match.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>219</Id>
+    <CDNUSR_DEFINE_NAME>MSG219</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+There are too many symbol records.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>220</Id>
+    <CDNUSR_DEFINE_NAME>MSG220</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+There are too many symbol pins.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>221</Id>
+    <CDNUSR_DEFINE_NAME>MSG221</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+There are too many text strings.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>222</Id>
+    <CDNUSR_DEFINE_NAME>MSG222</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+There are too many connect lines.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>223</Id>
+    <CDNUSR_DEFINE_NAME>MSG223</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Duplicate pin during conversion.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>224</Id>
+    <CDNUSR_DEFINE_NAME>MSG224</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No pin match during conversion.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>225</Id>
+    <CDNUSR_DEFINE_NAME>MSG225</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+String is blank.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>226</Id>
+    <CDNUSR_DEFINE_NAME>MSG226</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+String is not alphanumeric.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>227</Id>
+    <CDNUSR_DEFINE_NAME>MSG227</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+String is too long.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>228</Id>
+    <CDNUSR_DEFINE_NAME>MSG228</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Database error.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>229</Id>
+    <CDNUSR_DEFINE_NAME>MSG229</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Pointer error.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>230</Id>
+    <CDNUSR_DEFINE_NAME>MSG230</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Database has a non-recoverable corruption. Contact Cadence Customer Support with the design file and the details of the last steps performed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>231</Id>
+    <CDNUSR_DEFINE_NAME>MSG231</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Obstacle mask error.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>232</Id>
+    <CDNUSR_DEFINE_NAME>MSG232</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Attention bit is set.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>233</Id>
+    <CDNUSR_DEFINE_NAME>MSG233</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Package keepin rectangle already exists.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>234</Id>
+    <CDNUSR_DEFINE_NAME>MSG234</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Connect line has no segments.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>235</Id>
+    <CDNUSR_DEFINE_NAME>MSG235</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Fixed rectangle has connect lines attached.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>236</Id>
+    <CDNUSR_DEFINE_NAME>MSG236</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal assignment FIX flag.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>237</Id>
+    <CDNUSR_DEFINE_NAME>MSG237</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal attribute class.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>238</Id>
+    <CDNUSR_DEFINE_NAME>MSG238</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal branch item.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>239</Id>
+    <CDNUSR_DEFINE_NAME>MSG239</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal component pin definition pointer.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>240</Id>
+    <CDNUSR_DEFINE_NAME>MSG240</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal fixed data pointer.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>241</Id>
+    <CDNUSR_DEFINE_NAME>MSG241</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal FIXED flag.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>242</Id>
+    <CDNUSR_DEFINE_NAME>MSG242</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal function pin definition pointer.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>243</Id>
+    <CDNUSR_DEFINE_NAME>MSG243</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal function definition pointer.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>244</Id>
+    <CDNUSR_DEFINE_NAME>MSG244</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal text justification type.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>245</Id>
+    <CDNUSR_DEFINE_NAME>MSG245</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal line class.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>246</Id>
+    <CDNUSR_DEFINE_NAME>MSG246</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal layer table count.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>247</Id>
+    <CDNUSR_DEFINE_NAME>MSG247</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal mirror flag.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>248</Id>
+    <CDNUSR_DEFINE_NAME>MSG248</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal obstacle pointer.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>249</Id>
+    <CDNUSR_DEFINE_NAME>MSG249</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal pad pointer.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>250</Id>
+    <CDNUSR_DEFINE_NAME>MSG250</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal pad element type.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>251</Id>
+    <CDNUSR_DEFINE_NAME>MSG251</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal RAT display flag.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>252</Id>
+    <CDNUSR_DEFINE_NAME>MSG252</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal RAT flag.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>253</Id>
+    <CDNUSR_DEFINE_NAME>MSG253</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal rotate code.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>254</Id>
+    <CDNUSR_DEFINE_NAME>MSG254</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal segment number.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>255</Id>
+    <CDNUSR_DEFINE_NAME>MSG255</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal slot name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>256</Id>
+    <CDNUSR_DEFINE_NAME>MSG256</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal user display flag.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>257</Id>
+    <CDNUSR_DEFINE_NAME>MSG257</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Invalid connect line pin.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>258</Id>
+    <CDNUSR_DEFINE_NAME>MSG258</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Invalid obstacle size.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>259</Id>
+    <CDNUSR_DEFINE_NAME>MSG259</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Invalid state flag.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>260</Id>
+    <CDNUSR_DEFINE_NAME>MSG260</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Line has no segments.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>261</Id>
+    <CDNUSR_DEFINE_NAME>MSG261</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Net has branches.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>262</Id>
+    <CDNUSR_DEFINE_NAME>MSG262</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Route keepin rectangle already exists.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>263</Id>
+    <CDNUSR_DEFINE_NAME>MSG263</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Sector table already exists.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>264</Id>
+    <CDNUSR_DEFINE_NAME>MSG264</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Sector table is not empty .... use dbdoctor to resolve.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>265</Id>
+    <CDNUSR_DEFINE_NAME>MSG265</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Text string is not NULL terminated.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>266</Id>
+    <CDNUSR_DEFINE_NAME>MSG266</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Text has no text lines.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>267</Id>
+    <CDNUSR_DEFINE_NAME>MSG267</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+There are too many subclasses.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>268</Id>
+    <CDNUSR_DEFINE_NAME>MSG268</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+There are unmatched pin numbers.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>269</Id>
+    <CDNUSR_DEFINE_NAME>MSG269</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Shape has no segments.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>270</Id>
+    <CDNUSR_DEFINE_NAME>MSG270</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Void has no segments.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>271</Id>
+    <CDNUSR_DEFINE_NAME>MSG271</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Find bit is set.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>272</Id>
+    <CDNUSR_DEFINE_NAME>MSG272</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Front not found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>273</Id>
+    <CDNUSR_DEFINE_NAME>MSG273</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Shape intersects with itself.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>274</Id>
+    <CDNUSR_DEFINE_NAME>MSG274</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Shape outline has arcs in it.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>275</Id>
+    <CDNUSR_DEFINE_NAME>MSG275</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Void has too many arcs in it.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>276</Id>
+    <CDNUSR_DEFINE_NAME>MSG276</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal index to the DRC error buffer.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>277</Id>
+    <CDNUSR_DEFINE_NAME>MSG277</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No ratsnest user-defined net.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>278</Id>
+    <CDNUSR_DEFINE_NAME>MSG278</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No ratsnest signal layer net.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>279</Id>
+    <CDNUSR_DEFINE_NAME>MSG279</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal subtask.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>280</Id>
+    <CDNUSR_DEFINE_NAME>MSG280</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+filler
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>281</Id>
+    <CDNUSR_DEFINE_NAME>MSG281</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+filler
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>282</Id>
+    <CDNUSR_DEFINE_NAME>MSG282</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+filler
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>283</Id>
+    <CDNUSR_DEFINE_NAME>MSG283</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+filler
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>284</Id>
+    <CDNUSR_DEFINE_NAME>MSG284</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+filler
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>285</Id>
+    <CDNUSR_DEFINE_NAME>MSG285</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+filler
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>286</Id>
+    <CDNUSR_DEFINE_NAME>MSG286</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+filler
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>287</Id>
+    <CDNUSR_DEFINE_NAME>MSG287</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+filler
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>288</Id>
+    <CDNUSR_DEFINE_NAME>MSG288</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+filler
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>289</Id>
+    <CDNUSR_DEFINE_NAME>MSG289</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+An unexpected error occurred. Install the latest ISR to resolve the error. In case the problem persists, contact Cadence Customer Support with the design file and the steps resulting in the error.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>290</Id>
+    <CDNUSR_DEFINE_NAME>MSG290</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Elements have been converted.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>291</Id>
+    <CDNUSR_DEFINE_NAME>MSG291</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Create symbol has been aborted.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>292</Id>
+    <CDNUSR_DEFINE_NAME>MSG292</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Create symbol completed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>293</Id>
+    <CDNUSR_DEFINE_NAME>MSG293</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot open the create symbol log file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>294</Id>
+    <CDNUSR_DEFINE_NAME>MSG294</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Create symbol name is illegal.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>295</Id>
+    <CDNUSR_DEFINE_NAME>MSG295</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to create the symbol.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>296</Id>
+    <CDNUSR_DEFINE_NAME>MSG296</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Create symbol pin number is too long.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>297</Id>
+    <CDNUSR_DEFINE_NAME>MSG297</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Create symbol illegal element.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>298</Id>
+    <CDNUSR_DEFINE_NAME>MSG298</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Create symbol duplicate pin numbers.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>299</Id>
+    <CDNUSR_DEFINE_NAME>MSG299</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Create symbol multiple text lines are not supported on a single component type subclass.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>300</Id>
+    <CDNUSR_DEFINE_NAME>MSG300</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Create symbol inconsistent pin.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>301</Id>
+    <CDNUSR_DEFINE_NAME>MSG301</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Create symbol DRC errors exist.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>302</Id>
+    <CDNUSR_DEFINE_NAME>MSG302</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Create symbol no pad for pins.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>303</Id>
+    <CDNUSR_DEFINE_NAME>MSG303</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Create symbol started.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>304</Id>
+    <CDNUSR_DEFINE_NAME>MSG304</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Not inside keepin.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>305</Id>
+    <CDNUSR_DEFINE_NAME>MSG305</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Available memory exhausted. Exit program and increase swap space.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>306</Id>
+    <CDNUSR_DEFINE_NAME>MSG306</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Violation.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>307</Id>
+    <CDNUSR_DEFINE_NAME>MSG307</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Error opening file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>308</Id>
+    <CDNUSR_DEFINE_NAME>MSG308</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal line lock.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>309</Id>
+    <CDNUSR_DEFINE_NAME>MSG309</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Buffer is empty.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>310</Id>
+    <CDNUSR_DEFINE_NAME>MSG310</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal segment endpoint.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>311</Id>
+    <CDNUSR_DEFINE_NAME>MSG311</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+T expected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>312</Id>
+    <CDNUSR_DEFINE_NAME>MSG312</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal segment stretch.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>313</Id>
+    <CDNUSR_DEFINE_NAME>MSG313</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Connect record was not found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>314</Id>
+    <CDNUSR_DEFINE_NAME>MSG314</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal event.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>315</Id>
+    <CDNUSR_DEFINE_NAME>MSG315</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal circle.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>316</Id>
+    <CDNUSR_DEFINE_NAME>MSG316</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter drawing name:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>317</Id>
+    <CDNUSR_DEFINE_NAME>MSG317</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter symbol name:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>318</Id>
+    <CDNUSR_DEFINE_NAME>MSG318</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error while saving the drawing.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>319</Id>
+    <CDNUSR_DEFINE_NAME>MSG319</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal window.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>320</Id>
+    <CDNUSR_DEFINE_NAME>MSG320</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal world window.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>321</Id>
+    <CDNUSR_DEFINE_NAME>MSG321</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal scale factor.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>322</Id>
+    <CDNUSR_DEFINE_NAME>MSG322</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cannot display an attribute.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>323</Id>
+    <CDNUSR_DEFINE_NAME>MSG323</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cannot display an element.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>324</Id>
+    <CDNUSR_DEFINE_NAME>MSG324</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal element count.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>325</Id>
+    <CDNUSR_DEFINE_NAME>MSG325</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Main buffer is full.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>326</Id>
+    <CDNUSR_DEFINE_NAME>MSG326</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Local buffer is too small.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>327</Id>
+    <CDNUSR_DEFINE_NAME>MSG327</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal buffer identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>328</Id>
+    <CDNUSR_DEFINE_NAME>MSG328</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Display buffer overflow.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>329</Id>
+    <CDNUSR_DEFINE_NAME>MSG329</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Symbol buffer is full.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>330</Id>
+    <CDNUSR_DEFINE_NAME>MSG330</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+unused
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>331</Id>
+    <CDNUSR_DEFINE_NAME>MSG331</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal symbol child.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>332</Id>
+    <CDNUSR_DEFINE_NAME>MSG332</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal VAR_PIN identifier.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>333</Id>
+    <CDNUSR_DEFINE_NAME>MSG333</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Display buffer is too small.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>334</Id>
+    <CDNUSR_DEFINE_NAME>MSG334</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal line segment number.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>335</Id>
+    <CDNUSR_DEFINE_NAME>MSG335</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal pin rotation.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>336</Id>
+    <CDNUSR_DEFINE_NAME>MSG336</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Invisible.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>337</Id>
+    <CDNUSR_DEFINE_NAME>MSG337</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Illegal message number
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>338</Id>
+    <CDNUSR_DEFINE_NAME>MSG338</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal add connection state.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>339</Id>
+    <CDNUSR_DEFINE_NAME>MSG339</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Pick equals previous pick ... try again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>340</Id>
+    <CDNUSR_DEFINE_NAME>MSG340</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No connection can be made.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>341</Id>
+    <CDNUSR_DEFINE_NAME>MSG341</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal find input.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>342</Id>
+    <CDNUSR_DEFINE_NAME>MSG342</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal add line state.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>343</Id>
+    <CDNUSR_DEFINE_NAME>MSG343</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal add rectangle state.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>344</Id>
+    <CDNUSR_DEFINE_NAME>MSG344</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Active class is not valid.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>345</Id>
+    <CDNUSR_DEFINE_NAME>MSG345</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Active subclass is not valid.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>346</Id>
+    <CDNUSR_DEFINE_NAME>MSG346</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+unused
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>347</Id>
+    <CDNUSR_DEFINE_NAME>MSG347</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Could not open the UI form file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>348</Id>
+    <CDNUSR_DEFINE_NAME>MSG348</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to obtain system memory for use.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>349</Id>
+    <CDNUSR_DEFINE_NAME>MSG349</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Grid origin must be within the drawing.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>350</Id>
+    <CDNUSR_DEFINE_NAME>MSG350</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal grid increment.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>351</Id>
+    <CDNUSR_DEFINE_NAME>MSG351</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unknown line lock type.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>352</Id>
+    <CDNUSR_DEFINE_NAME>MSG352</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unknown rotation angle.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>353</Id>
+    <CDNUSR_DEFINE_NAME>MSG353</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unknown mirror type.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>354</Id>
+    <CDNUSR_DEFINE_NAME>MSG354</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot display the form in the interactive command ... 'Done' the interactive command.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>355</Id>
+    <CDNUSR_DEFINE_NAME>MSG355</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter in lower left X:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>356</Id>
+    <CDNUSR_DEFINE_NAME>MSG356</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter in lower left Y:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>357</Id>
+    <CDNUSR_DEFINE_NAME>MSG357</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter in upper left X:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>358</Id>
+    <CDNUSR_DEFINE_NAME>MSG358</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter in upper left Y:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>359</Id>
+    <CDNUSR_DEFINE_NAME>MSG359</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No net is currently highlighted.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>360</Id>
+    <CDNUSR_DEFINE_NAME>MSG360</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Net does not exist.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>361</Id>
+    <CDNUSR_DEFINE_NAME>MSG361</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter the net name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>362</Id>
+    <CDNUSR_DEFINE_NAME>MSG362</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter the net number.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>363</Id>
+    <CDNUSR_DEFINE_NAME>MSG363</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Out of memory.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>364</Id>
+    <CDNUSR_DEFINE_NAME>MSG364</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter symbol name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>365</Id>
+    <CDNUSR_DEFINE_NAME>MSG365</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Placed Component Report
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>366</Id>
+    <CDNUSR_DEFINE_NAME>MSG366</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Unplaced Component Report
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>367</Id>
+    <CDNUSR_DEFINE_NAME>MSG367</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Drawing Name: %0
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>368</Id>
+    <CDNUSR_DEFINE_NAME>MSG368</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%0%1%2%3%4
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>369</Id>
+    <CDNUSR_DEFINE_NAME>MSG369</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No application is currently active.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>370</Id>
+    <CDNUSR_DEFINE_NAME>MSG370</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%0
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>371</Id>
+    <CDNUSR_DEFINE_NAME>MSG371</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pin number is
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>372</Id>
+    <CDNUSR_DEFINE_NAME>MSG372</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Padstack name is
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>373</Id>
+    <CDNUSR_DEFINE_NAME>MSG373</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Number of pins is
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>374</Id>
+    <CDNUSR_DEFINE_NAME>MSG374</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pin spacing is
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>375</Id>
+    <CDNUSR_DEFINE_NAME>MSG375</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pin number increment is
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>376</Id>
+    <CDNUSR_DEFINE_NAME>MSG376</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter padstack name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>377</Id>
+    <CDNUSR_DEFINE_NAME>MSG377</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Component not found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>378</Id>
+    <CDNUSR_DEFINE_NAME>MSG378</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No reference designator property for the symbol.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>379</Id>
+    <CDNUSR_DEFINE_NAME>MSG379</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+No device property for the symbol.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>380</Id>
+    <CDNUSR_DEFINE_NAME>MSG380</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Add pin error %0
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>381</Id>
+    <CDNUSR_DEFINE_NAME>MSG381</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Step and repeat pin error %0
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>382</Id>
+    <CDNUSR_DEFINE_NAME>MSG382</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Symbol not found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>383</Id>
+    <CDNUSR_DEFINE_NAME>MSG383</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter reference designator.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>384</Id>
+    <CDNUSR_DEFINE_NAME>MSG384</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter device type.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>385</Id>
+    <CDNUSR_DEFINE_NAME>MSG385</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Placing %0 / %1 / %2
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>386</Id>
+    <CDNUSR_DEFINE_NAME>MSG386</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+At least 3 vertices are required for a shape.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>387</Id>
+    <CDNUSR_DEFINE_NAME>MSG387</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Segment crosses the shape ... pick again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>388</Id>
+    <CDNUSR_DEFINE_NAME>MSG388</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Segment is too close to the shape boundary ... pick again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>389</Id>
+    <CDNUSR_DEFINE_NAME>MSG389</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot exit the current application.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>390</Id>
+    <CDNUSR_DEFINE_NAME>MSG390</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot open the log file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>391</Id>
+    <CDNUSR_DEFINE_NAME>MSG391</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal pinuse code detected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>392</Id>
+    <CDNUSR_DEFINE_NAME>MSG392</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Unplaced components detected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>393</Id>
+    <CDNUSR_DEFINE_NAME>MSG393</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Multiple bidirectional pins.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>394</Id>
+    <CDNUSR_DEFINE_NAME>MSG394</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No pinuse code ... assuming LOAD pin.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>395</Id>
+    <CDNUSR_DEFINE_NAME>MSG395</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Nets highlight as they are scheduled.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>396</Id>
+    <CDNUSR_DEFINE_NAME>MSG396</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Schedules complete ... dehighlighting.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>397</Id>
+    <CDNUSR_DEFINE_NAME>MSG397</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pick must be inside the shape ... try again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>398</Id>
+    <CDNUSR_DEFINE_NAME>MSG398</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot add via because no via is defined from the active layer to the alternate layer.  Review Via List in Constraint Manager.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>399</Id>
+    <CDNUSR_DEFINE_NAME>MSG399</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No pad to connect ... no connection made.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>400</Id>
+    <CDNUSR_DEFINE_NAME>MSG400</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Connection not complete ... continuing.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>401</Id>
+    <CDNUSR_DEFINE_NAME>MSG401</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+The reject did not result in any new selection.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>402</Id>
+    <CDNUSR_DEFINE_NAME>MSG402</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Set class to etch.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>403</Id>
+    <CDNUSR_DEFINE_NAME>MSG403</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+YES
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>404</Id>
+    <CDNUSR_DEFINE_NAME>MSG404</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+File '%0' not found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>405</Id>
+    <CDNUSR_DEFINE_NAME>MSG405</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid file specification.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>406</Id>
+    <CDNUSR_DEFINE_NAME>MSG406</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+File '%0' already exists ... overwrite it (yes/no)?
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>407</Id>
+    <CDNUSR_DEFINE_NAME>MSG407</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Usage: netlistin [-d | -s] netlist drawing
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>408</Id>
+    <CDNUSR_DEFINE_NAME>MSG408</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Netlist file name [%0]:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>409</Id>
+    <CDNUSR_DEFINE_NAME>MSG409</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+txt
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>410</Id>
+    <CDNUSR_DEFINE_NAME>MSG410</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Layout file name [%0]:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>411</Id>
+    <CDNUSR_DEFINE_NAME>MSG411</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+brd
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>412</Id>
+    <CDNUSR_DEFINE_NAME>MSG412</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Add arc error %0.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>413</Id>
+    <CDNUSR_DEFINE_NAME>MSG413</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Drawing already exists ... overwrite (yes/no)?
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>414</Id>
+    <CDNUSR_DEFINE_NAME>MSG414</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Drawing does not exist in the specified directory.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>415</Id>
+    <CDNUSR_DEFINE_NAME>MSG415</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Line segments cannot overlap.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>416</Id>
+    <CDNUSR_DEFINE_NAME>MSG416</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Component is already placed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>417</Id>
+    <CDNUSR_DEFINE_NAME>MSG417</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+TEXT:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>418</Id>
+    <CDNUSR_DEFINE_NAME>MSG418</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+INFO:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>419</Id>
+    <CDNUSR_DEFINE_NAME>MSG419</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+WARNING:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>420</Id>
+    <CDNUSR_DEFINE_NAME>MSG420</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+ERROR:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>421</Id>
+    <CDNUSR_DEFINE_NAME>MSG421</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+SYSTEM:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>422</Id>
+    <CDNUSR_DEFINE_NAME>MSG422</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter net name (wildcard *?) for the properties:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>423</Id>
+    <CDNUSR_DEFINE_NAME>MSG423</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter refdes (wildcard *?) for the properties:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>424</Id>
+    <CDNUSR_DEFINE_NAME>MSG424</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter funcdes (wildcard *?) for the properties:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>425</Id>
+    <CDNUSR_DEFINE_NAME>MSG425</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter filename of the list of nets(nets.lst?):
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>426</Id>
+    <CDNUSR_DEFINE_NAME>MSG426</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter filename of the list of refdes (refdes.lst?):
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>427</Id>
+    <CDNUSR_DEFINE_NAME>MSG427</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter filename of the list of funcdes    (fdes.lst?):
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>428</Id>
+    <CDNUSR_DEFINE_NAME>MSG428</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter filename to save the nets(nets.lst?):
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>429</Id>
+    <CDNUSR_DEFINE_NAME>MSG429</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter filename to save refdes (refdes.lst?):
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>430</Id>
+    <CDNUSR_DEFINE_NAME>MSG430</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter filename to save funcdes    (fdes.lst?):
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>431</Id>
+    <CDNUSR_DEFINE_NAME>MSG431</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Could not open filename = %0.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>432</Id>
+    <CDNUSR_DEFINE_NAME>MSG432</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Do you really want to abort the current list? (y/n):
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>433</Id>
+    <CDNUSR_DEFINE_NAME>MSG433</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%0 properties deleted.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>434</Id>
+    <CDNUSR_DEFINE_NAME>MSG434</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%0 properties added.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>435</Id>
+    <CDNUSR_DEFINE_NAME>MSG435</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Property was added to %0 named nets.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>436</Id>
+    <CDNUSR_DEFINE_NAME>MSG436</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Current working list is empty.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>437</Id>
+    <CDNUSR_DEFINE_NAME>MSG437</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Couldn't save the list filename %0.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>438</Id>
+    <CDNUSR_DEFINE_NAME>MSG438</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter reference designator:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>439</Id>
+    <CDNUSR_DEFINE_NAME>MSG439</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter net name:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>440</Id>
+    <CDNUSR_DEFINE_NAME>MSG440</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter filename:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>441</Id>
+    <CDNUSR_DEFINE_NAME>MSG441</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s not found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>442</Id>
+    <CDNUSR_DEFINE_NAME>MSG442</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Property type is too long ... truncated.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>443</Id>
+    <CDNUSR_DEFINE_NAME>MSG443</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Property value is too long ... truncated.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>444</Id>
+    <CDNUSR_DEFINE_NAME>MSG444</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Property value or semicolon expected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>445</Id>
+    <CDNUSR_DEFINE_NAME>MSG445</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Property type expected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>446</Id>
+    <CDNUSR_DEFINE_NAME>MSG446</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pin not previously defined as a component or function pin.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>447</Id>
+    <CDNUSR_DEFINE_NAME>MSG447</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Property target expected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>448</Id>
+    <CDNUSR_DEFINE_NAME>MSG448</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Slot not previously defined in a function statement.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>449</Id>
+    <CDNUSR_DEFINE_NAME>MSG449</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Opening a new padstack library.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>450</Id>
+    <CDNUSR_DEFINE_NAME>MSG450</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Cannot find via padstack %0.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>451</Id>
+    <CDNUSR_DEFINE_NAME>MSG451</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Via padstack %0 not defined for layer %1.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>452</Id>
+    <CDNUSR_DEFINE_NAME>MSG452</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Via padstack %0 already defined.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>453</Id>
+    <CDNUSR_DEFINE_NAME>MSG453</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Re-enter via padstack name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>454</Id>
+    <CDNUSR_DEFINE_NAME>MSG454</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter text string.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>455</Id>
+    <CDNUSR_DEFINE_NAME>MSG455</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick text location.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>456</Id>
+    <CDNUSR_DEFINE_NAME>MSG456</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick an element to attach the text to.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>457</Id>
+    <CDNUSR_DEFINE_NAME>MSG457</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Two picks are required for a circle ... pick again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>458</Id>
+    <CDNUSR_DEFINE_NAME>MSG458</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal to enclose a void within a void ... pick again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>459</Id>
+    <CDNUSR_DEFINE_NAME>MSG459</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Plot file complete.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>460</Id>
+    <CDNUSR_DEFINE_NAME>MSG460</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter starting (unassigned) drawingname:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>461</Id>
+    <CDNUSR_DEFINE_NAME>MSG461</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter resulting (assigned) drawingname:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>462</Id>
+    <CDNUSR_DEFINE_NAME>MSG462</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to open the required temporary file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>463</Id>
+    <CDNUSR_DEFINE_NAME>MSG463</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to open filename %s in the current directory.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>464</Id>
+    <CDNUSR_DEFINE_NAME>MSG464</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to find free swap space for execution.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>465</Id>
+    <CDNUSR_DEFINE_NAME>MSG465</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to find the file '%s' in the directory path '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>466</Id>
+    <CDNUSR_DEFINE_NAME>MSG466</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Drawing file name [%0]
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>467</Id>
+    <CDNUSR_DEFINE_NAME>MSG467</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Plot file name [%0]
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>468</Id>
+    <CDNUSR_DEFINE_NAME>MSG468</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+File already exists ... overwrite it (yes/no)?
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>469</Id>
+    <CDNUSR_DEFINE_NAME>MSG469</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot create file '%0'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>470</Id>
+    <CDNUSR_DEFINE_NAME>MSG470</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pencolor file parsing errors.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>471</Id>
+    <CDNUSR_DEFINE_NAME>MSG471</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unrecognized color.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>472</Id>
+    <CDNUSR_DEFINE_NAME>MSG472</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal pen number (1 to %0 only).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>473</Id>
+    <CDNUSR_DEFINE_NAME>MSG473</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pen number expected but was not found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>474</Id>
+    <CDNUSR_DEFINE_NAME>MSG474</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Create plot file was cancelled.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>475</Id>
+    <CDNUSR_DEFINE_NAME>MSG475</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+No legal element found to attach the text to ... pick again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>476</Id>
+    <CDNUSR_DEFINE_NAME>MSG476</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick text to edit.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>477</Id>
+    <CDNUSR_DEFINE_NAME>MSG477</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Layout save name[%0]:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>478</Id>
+    <CDNUSR_DEFINE_NAME>MSG478</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Top of form.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>479</Id>
+    <CDNUSR_DEFINE_NAME>MSG479</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Bottom of form.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>480</Id>
+    <CDNUSR_DEFINE_NAME>MSG480</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Cannot change the component text ... pick again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>481</Id>
+    <CDNUSR_DEFINE_NAME>MSG481</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Refdes changed from %0 to %1.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>482</Id>
+    <CDNUSR_DEFINE_NAME>MSG482</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Refdes swapped with another component.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>483</Id>
+    <CDNUSR_DEFINE_NAME>MSG483</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Refdes too long ... truncating.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>484</Id>
+    <CDNUSR_DEFINE_NAME>MSG484</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error occurred ... corrupt drawing saved with ext ".SAV".
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>485</Id>
+    <CDNUSR_DEFINE_NAME>MSG485</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error occurred ... clean drawing saved with ext ".SAV".
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>488</Id>
+    <CDNUSR_DEFINE_NAME>MSG488</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot open drawing of the future incompatible revision.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>489</Id>
+    <CDNUSR_DEFINE_NAME>MSG489</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Rotate by window is not available.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>490</Id>
+    <CDNUSR_DEFINE_NAME>MSG490</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal placement window state.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>491</Id>
+    <CDNUSR_DEFINE_NAME>MSG491</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal router window state.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>492</Id>
+    <CDNUSR_DEFINE_NAME>MSG492</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter grid X increment.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>493</Id>
+    <CDNUSR_DEFINE_NAME>MSG493</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter grid Y increment.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>494</Id>
+    <CDNUSR_DEFINE_NAME>MSG494</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter horizontal extent of a standard DIP.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>495</Id>
+    <CDNUSR_DEFINE_NAME>MSG495</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter vertical extent of a standard DIP.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>496</Id>
+    <CDNUSR_DEFINE_NAME>MSG496</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No unplaced components have the PLACE_TAG property.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>497</Id>
+    <CDNUSR_DEFINE_NAME>MSG497</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Package keepin must be defined before set grid.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>498</Id>
+    <CDNUSR_DEFINE_NAME>MSG498</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Status %d.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>499</Id>
+    <CDNUSR_DEFINE_NAME>MSG499</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Start point is outside the keepin.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>500</Id>
+    <CDNUSR_DEFINE_NAME>MSG500</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Too many router windows.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>501</Id>
+    <CDNUSR_DEFINE_NAME>MSG_REFDES_MODIFIED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Refdes has been modified.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>502</Id>
+    <CDNUSR_DEFINE_NAME>MSG_UNASSIGNED_COMP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot change the refdes of an unassigned component.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>503</Id>
+    <CDNUSR_DEFINE_NAME>MSG_ENTER_GRIDPOINT</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter a gridpoint.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>504</Id>
+    <CDNUSR_DEFINE_NAME>MSG_DIMENSION_TEXT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Dimension text cannot be edited with this command. Use the Dimensioning Environment to edit this text.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+	<Msg>
+		<Id>505</Id>
+		<CDNUSR_DEFINE_NAME>MSG_EDIT_TEXT_LENGTH</CDNUSR_DEFINE_NAME>
+		<Category>W</Category>
+		<Desc>
+Text string has exceeded the text block limit, and will be truncated.
+		</Desc>
+		<Output>C</Output>
+	</Msg>
+		
+	<Msg>
+		<Id>506</Id>
+    <CDNUSR_DEFINE_NAME>MSG506_SHAPE_ENGINE_SWITCH</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+Using the %s shape engine.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>507</Id>
+    <CDNUSR_DEFINE_NAME>MSG507_POLYBOOL_ASSERT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+PolyBool has hit an assert.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>508</Id>
+    <CDNUSR_DEFINE_NAME>MSG508</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot add via because no via is defined from the active layer to any working layer.  Review Via List in Constraint Manager.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+</MsgFile>

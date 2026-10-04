@@ -1,0 +1,59 @@
+<MsgFile>
+
+  <Msg>
+    <Id>1</Id>
+    <CDNUSR_DEFINE_NAME>ALGRO3D_MSG_XSECTION_INVALID_UNSUPPORTED_TYPE_3</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>Layer '%s' in stackup '%s' will be ignored for 3D view because the layer type '%s' is not supported.</Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>2</Id>
+    <CDNUSR_DEFINE_NAME>ALGRO3D_MSG_XSECTION_INVALID_UNSUPPORTED_FUNCTION_3</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>Layer '%s' in stackup '%s' will be ignored for 3D view because the function '%s' is not supported.</Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>3</Id>
+    <CDNUSR_DEFINE_NAME>ALGRO3D_MSG_XSECTION_INVALID_EXTERNAL_DIELECTRIC_2</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>Layer '%s' in stackup '%s' will be ignored for 3D view because external dielectric layers are not supported.</Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>4</Id>
+    <CDNUSR_DEFINE_NAME>ALGRO3D_MSG_SYMBOL_PRIMARY_MODEL_NEEDS_REMAPPING_IN_ALLEGRO_1</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>The Primary model of the symbol '%s' needs to be remapped in the layout editor.</Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>5</Id>
+    <CDNUSR_DEFINE_NAME>ALGRO3D_MSG_SYMBOL_ALTERNATE_MODEL_NEEDS_REMAPPING_IN_ALLEGRO_1</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>The Secondary model of the symbol '%s' needs to be remapped in the layout editor.</Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>6</Id>
+    <CDNUSR_DEFINE_NAME>ALGRO3D_MSG_DEVICE_PRIMARY_MODEL_NEEDS_REMAPPING_IN_ALLEGRO_1</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>The Primary model of the device '%s' needs to be remapped in the layout editor.</Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>7</Id>
+    <CDNUSR_DEFINE_NAME>ALGRO3D_MSG_DEVICE_ALTERNATE_MODEL_NEEDS_REMAPPING_IN_ALLEGRO_1</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>The Secondary model of the device '%s' needs to be remapped in the layout editor.</Desc>
+    <Output>C</Output>
+  </Msg>
+
+</MsgFile>

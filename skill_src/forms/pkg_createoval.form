@@ -1,0 +1,104 @@
+#========================================================================
+# 文件名    : pkg_createoval.form
+# 功能      : 创建椭圆散热焊盘（FYCOT）参数表单
+#             替代原 f_* 表单构造库生成的临时表单（该库项目内缺失）
+# 依赖      : modules/package/pkg_createovalflash.il（OblThCallback）
+# 说明      : 按钮用保留名 done/cancel —— 回调按 doneState
+#             （1=确定, 2/3=取消/关闭）分发；H/V 同组 di 互斥单选
+#             右上角 cot.bmp 位图（同 align.form 的 THUMBNAIL 静态位图）
+# 编码      : GBK（含中文，必须 GBK 保存）
+#========================================================================
+FILE_TYPE=FORM_DEFN VERSION=2
+FORM
+FIXED
+PORT 38 24
+HEADER "创建椭圆散热焊盘"
+
+TILE
+
+# 右上角位图（cot.bmp 位于 forms 目录，THUMBNAIL 按名解析）
+FIELD cotbmp
+    THUMBNAIL cot
+    OPTIONS stretch
+    FLOC 29 2
+    FSIZE 8 8
+ENDFIELD
+
+TEXT "外径(A):"
+TLOC 2 2
+ENDTEXT
+
+FIELD A
+FLOC 16 2
+REALFILLIN 10 10
+DECIMAL 4
+ENDFIELD
+
+TEXT "内径(B):"
+TLOC 2 5
+ENDTEXT
+
+FIELD B
+FLOC 16 5
+REALFILLIN 10 10
+DECIMAL 4
+ENDFIELD
+
+TEXT "椭圆长度(D):"
+TLOC 2 8
+ENDTEXT
+
+FIELD D
+FLOC 16 8
+REALFILLIN 10 10
+DECIMAL 4
+ENDFIELD
+
+TEXT "圆形辐条(C):"
+TLOC 2 11
+ENDTEXT
+
+FIELD C
+FLOC 16 11
+REALFILLIN 10 10
+DECIMAL 4
+ENDFIELD
+
+TEXT "椭圆辐条(E):"
+TLOC 2 14
+ENDTEXT
+
+FIELD E
+FLOC 16 14
+REALFILLIN 10 10
+DECIMAL 4
+ENDFIELD
+
+GROUP "方向"
+GLOC 2 16
+GSIZE 30 4
+ENDGROUP
+
+FIELD H
+FLOC 5 18
+CHECKLIST "水平" "di"
+ENDFIELD
+
+FIELD V
+FLOC 20 18
+CHECKLIST "垂直" "di"
+ENDFIELD
+
+FIELD done
+FLOC 5 21
+MENUBUTTON "确定" 10 2
+ENDFIELD
+
+FIELD cancel
+FLOC 22 21
+MENUBUTTON "取消" 10 2
+ENDFIELD
+
+ENDTILE
+
+ENDFORM

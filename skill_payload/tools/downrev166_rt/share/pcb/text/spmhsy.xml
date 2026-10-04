@@ -1,0 +1,514 @@
+<MsgFile>
+
+  <Msg>
+    <Id>1</Id>
+    <CDNUSR_DEFINE_NAME>SYSMSG_INFOSTRING</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>2</Id>
+    <CDNUSR_DEFINE_NAME>SYSMSG_NOSWAP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Not enough free swap space (Kill tasks or reconfigure disk)
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>3</Id>
+    <CDNUSR_DEFINE_NAME>SYSMSG_USERSIGNAL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+User requested program exit.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>4</Id>
+    <CDNUSR_DEFINE_NAME>SYSMSG_ABNORMALSIGNAL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+System error trapped.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>5</Id>
+    <CDNUSR_DEFINE_NAME>SYSMSG_TEXTSTRING</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>6</Id>
+    <CDNUSR_DEFINE_NAME>SYSMSG_QUOTEDTEXTSTRING</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+"%s"
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>7</Id>
+    <CDNUSR_DEFINE_NAME>SYSMSG_PAGE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Page
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>8</Id>
+    <CDNUSR_DEFINE_NAME>SYSMSG_DIMENSION</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+dimensions in %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>9</Id>
+    <CDNUSR_DEFINE_NAME>SYSMSG_NODISK</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed writing file. (Check disk free space or quotas?)
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>10</Id>
+    <CDNUSR_DEFINE_NAME>SYSMSG_NO_DNAM</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No such directory exists:  %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>11</Id>
+    <CDNUSR_DEFINE_NAME>SYSMSG_NO_DIR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Selected directory doesn't exist.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>12</Id>
+    <CDNUSR_DEFINE_NAME>SYSMSG_RONLY_DNAM</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Not authorized to write in directory   %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>13</Id>
+    <CDNUSR_DEFINE_NAME>SYSMSG_RONLY_DIR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Not authorized to write in selected directory.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>14</Id>
+    <CDNUSR_DEFINE_NAME>SYSMSG_RONLY_FNAM</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Not authorized to write into file:  %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>15</Id>
+    <CDNUSR_DEFINE_NAME>SYSMSG_RONLY_FILE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Not authorized to write into selected file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>16</Id>
+    <CDNUSR_DEFINE_NAME>SYSMSG_ERROR_RETURN</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Error already processed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>17</Id>
+    <CDNUSR_DEFINE_NAME>SYSMSG_CANCEL_REQUEST</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+User CANCEL received.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>18</Id>
+    <CDNUSR_DEFINE_NAME>ADS_DIRNOTEXIST</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+"Directory '%s' does not exist."
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>19</Id>
+    <CDNUSR_DEFINE_NAME>ADS_NOTDIR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+"'%s', not a directory."
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>20</Id>
+    <CDNUSR_DEFINE_NAME>ADS_DIRNOTWRITEABLE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+"Directory '%s' not writable."
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>21</Id>
+    <CDNUSR_DEFINE_NAME>ADS_BADFILEOPENTRY</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+"Fileops entry not found."
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>22</Id>
+    <CDNUSR_DEFINE_NAME>ADS_NAMENOTUNIQUE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+"'%s', has multiple matches in search path."
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>23</Id>
+    <CDNUSR_DEFINE_NAME>ADS_ILLEGALCHARS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+"Illegal characters in '%s'."
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>24</Id>
+    <CDNUSR_DEFINE_NAME>ADS_EXPANDFAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+"'%s', not found in search path."
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>25</Id>
+    <CDNUSR_DEFINE_NAME>ADS_FILENOTEXIST</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+"'%s', does not exist."
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>26</Id>
+    <CDNUSR_DEFINE_NAME>ADS_FILENOTWRITABLE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+"'%s', not writable."
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>27</Id>
+    <CDNUSR_DEFINE_NAME>ADS_FILENOTREADABLE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+"'%s', not readable."
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>28</Id>
+    <CDNUSR_DEFINE_NAME>ADS_NOFILEFOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+"No file name specified."
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>29</Id>
+    <CDNUSR_DEFINE_NAME>ADS_OPENFAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+"Failed to open file '%s'."
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>30</Id>
+    <CDNUSR_DEFINE_NAME>ADS_DISKFULL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+"Failed to open file '%s'. Disk Full."
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>31</Id>
+    <CDNUSR_DEFINE_NAME>ADS_NAMETOOLONG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+"'%s', name too long"
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>32</Id>
+    <CDNUSR_DEFINE_NAME>ADS_ILLEGALEXT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+"Illegal file extension in '%s'"
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>33</Id>
+    <CDNUSR_DEFINE_NAME>ADS_DONOTOVERWRITE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+"'%s', no override allowed"
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>34</Id>
+    <CDNUSR_DEFINE_NAME>ADS_NOPROJECT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+"Current DM project not set."
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>35</Id>
+    <CDNUSR_DEFINE_NAME>ADS_NODESIGN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+"Current DM design not set."
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>36</Id>
+    <CDNUSR_DEFINE_NAME>TBOX_WRONGVIEW</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Highlight message view does not match current design
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>37</Id>
+    <CDNUSR_DEFINE_NAME>TBOX_CURRENTVIEW</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%s"%s"
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>38</Id>
+    <CDNUSR_DEFINE_NAME>AXLMSG_MH_BAD_HANDLE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s: invalid message context handle.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>39</Id>
+    <CDNUSR_DEFINE_NAME>LB_GENERIC</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+"%s"
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>40</Id>
+    <CDNUSR_DEFINE_NAME>LB_AXL_NOSUPPORT</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+"%s not supported in Allegro"
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>41</Id>
+    <CDNUSR_DEFINE_NAME>LB_AXL_IN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+"License %s not checked out by Skill"
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>42</Id>
+    <CDNUSR_DEFINE_NAME>LB_AXL_OUT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+"License %s already checked out"
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>43</Id>
+    <CDNUSR_DEFINE_NAME>SYSMSG_ERRORSTRING</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>44</Id>
+    <CDNUSR_DEFINE_NAME>SYSMSG_WARNINGSTRING</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+%s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>45</Id>
+    <CDNUSR_DEFINE_NAME>MHMSG_NO_DETAILED_HELP</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Cadence has not yet provided detailed help for this message; '%s'.
+    </Desc>
+    <ExtDesc>
+Providing detailed help for messages is part of multi-release effort. We have not 
+yet updated this message with detailed information.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>46</Id>
+    <CDNUSR_DEFINE_NAME>MHMSG_INVALID_MODULE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Message module %s is either invalid or not currently active.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>47</Id>
+    <CDNUSR_DEFINE_NAME>MHMSG_BAD_IDENTIFIER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Badly formed message identifier ... must be '&lt;module name&gt;-&lt;message number&gt;'
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>48</Id>
+    <CDNUSR_DEFINE_NAME>MHMSG_INVALID_NUMBER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Message module %s does not have a message number %d.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>49</Id>
+    <CDNUSR_DEFINE_NAME>MHMSG_NUMBER_LOOKS_OLD</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Error message number: %d.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+</MsgFile>

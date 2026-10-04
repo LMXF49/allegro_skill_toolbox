@@ -1,0 +1,553 @@
+<MsgFile>
+
+  <Msg>
+    <Id>1</Id>
+    <CDNUSR_DEFINE_NAME>ACON_NO_ELEMENT</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No other element found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>2</Id>
+    <CDNUSR_DEFINE_NAME>ACON_PICK_ELE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Edit ministatus, then add connection.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>3</Id>
+    <CDNUSR_DEFINE_NAME>ACON_PICK_FIRST</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick first element.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>4</Id>
+    <CDNUSR_DEFINE_NAME>ACON_PICK_SEC</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick second element.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>5</Id>
+    <CDNUSR_DEFINE_NAME>ACON_PICK_FIN</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Add etch or pick COMPLETE to auto route.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>6</Id>
+    <CDNUSR_DEFINE_NAME>ACON_NO_CONN</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+No connection was made.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>7</Id>
+    <CDNUSR_DEFINE_NAME>ACON_PICK_SYM</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick a symbol.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>8</Id>
+    <CDNUSR_DEFINE_NAME>ACON_NO_DRILL</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Active and alternate layers are equal.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>9</Id>
+    <CDNUSR_DEFINE_NAME>ACON_NORAT_NET</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+No rat net, pick second element.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>10</Id>
+    <CDNUSR_DEFINE_NAME>ACON_DUMMY_NET</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick another element on a null net.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>11</Id>
+    <CDNUSR_DEFINE_NAME>ACON_FIN_BRD</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+COMPLETE is not available for this case.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>12</Id>
+    <CDNUSR_DEFINE_NAME>ACON_DIFF_NET</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Element not on same net, pick again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>13</Id>
+    <CDNUSR_DEFINE_NAME>ACON_BAD_START</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No element found on active subclass.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>14</Id>
+    <CDNUSR_DEFINE_NAME>ACON_NUM_DRC</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Connection successful with DRC violations.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>15</Id>
+    <CDNUSR_DEFINE_NAME>ACON_NO_PAD</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No pad found on %s subclass.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>16</Id>
+    <CDNUSR_DEFINE_NAME>ACON_STARTEND</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Target %s is defined from %s to %s.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>17</Id>
+    <CDNUSR_DEFINE_NAME>ACON_STARTEND2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Target %s is defined on %s.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>18</Id>
+    <CDNUSR_DEFINE_NAME>ACON_PADSTACK</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%s used for drill.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>19</Id>
+    <CDNUSR_DEFINE_NAME>ACON_DELAYRULE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Net Delay Rule = %s.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>20</Id>
+    <CDNUSR_DEFINE_NAME>ACON_RTEFAIL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unsuccessful route -- cannot find a path through the obstacles.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>21</Id>
+    <CDNUSR_DEFINE_NAME>ACON_RTECANCEL</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Route cancelled.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>22</Id>
+    <CDNUSR_DEFINE_NAME>ACON_RTESAME</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+The pick was ignored.  It is the same as the previous pick.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>23</Id>
+    <CDNUSR_DEFINE_NAME>ACON_BUSMISS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot group items whose end points are not aligned horizontally or vertically.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>24</Id>
+    <CDNUSR_DEFINE_NAME>ACON_BUSVIA</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Via insertion is not available for group route.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>25</Id>
+    <CDNUSR_DEFINE_NAME>ACON_SAMEPICK</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+This location has been drilled.  Subsequent picks here will be ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>26</Id>
+    <CDNUSR_DEFINE_NAME>ACON_NOETCH</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unsuccessful route -- etch is not allowed on %s; see constraints.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>27</Id>
+    <CDNUSR_DEFINE_NAME>ACON_OUTKI</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unsuccessful route -- points lie outside of the Route Keepin.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>28</Id>
+    <CDNUSR_DEFINE_NAME>ACON_INKO</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unsuccessful route -- points lie inside of the Route Keepout. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>29</Id>
+    <CDNUSR_DEFINE_NAME>ACON_NOTARGETLAYER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unsuccessful route -- target pin not defined on active subclass.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>30</Id>
+    <CDNUSR_DEFINE_NAME>ACON_PASS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Routing Pass %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>31</Id>
+    <CDNUSR_DEFINE_NAME>ACON_BAD_LAYER</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The element from which you are connecting is not on the subclass.  Use "Add Via".
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>32</Id>
+    <CDNUSR_DEFINE_NAME>ACON_PICK_CTRL</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick new control trace.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>33</Id>
+    <CDNUSR_DEFINE_NAME>ACON_NO_WORKING_LAYERS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot Add Via.  Working Layers are not defined.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>34</Id>
+    <CDNUSR_DEFINE_NAME>ACON_VIA_LIST_MISSING_PADSTACKS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Via List (%s%s%sattached to %s) is missing padstack(s) between %s and %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>35</Id>
+    <CDNUSR_DEFINE_NAME>ACON_PADSTACKS_OVERLAP</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Ignoring Padstack %s from Via List (%s%s%sattached to %s).  Layer-Range (%s %s) overlaps higher priority padstack %s (%s %s).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>36</Id>
+    <CDNUSR_DEFINE_NAME>ACON_STACKING_NOT_ALLOWED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot Add Via.  Via Stacking is not allowed between the specified working layers.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>37</Id>
+    <CDNUSR_DEFINE_NAME>ACON_ML_ILLEGAL_QUANTITY</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Quantity must be > 0.  Cannot add multi-lines.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>38</Id>
+    <CDNUSR_DEFINE_NAME>ACON_ML_ILLEGAL_LINE_WIDTH</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Line Width is smaller than the constraint minimum (%s).  Cannot add multi-lines.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>39</Id>
+    <CDNUSR_DEFINE_NAME>ACON_ML_ILLEGAL_LINE_SPACE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Line to Line Space is smaller than the constraint minimum (%s).  Cannot add multi-lines.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>40</Id>
+    <CDNUSR_DEFINE_NAME>ACON_ML_ILLEGAL_PICK_POINT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Multi-Line Route cannot begin on a database object.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>41</Id>
+    <CDNUSR_DEFINE_NAME>ACON_PICK_MULTILINE_ORIGIN</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Waiting for the Multi-Line Route origin pick.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>42</Id>
+    <CDNUSR_DEFINE_NAME>ACON_NO_VISIBLE_CONTOUR_ELEMENT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No visible element found for contouring.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>43</Id>
+    <CDNUSR_DEFINE_NAME>ACON_CONTOUR_BEGIN</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick the contour route start location.  A second pick releases you from contour mode.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>44</Id>
+    <CDNUSR_DEFINE_NAME>CONVERT_CORNER_FAILED_VTX</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+%d of %d corners failed to convert.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>45</Id>
+    <CDNUSR_DEFINE_NAME>ACON_FAILED_DRC</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Connection was not added because it would result in DRC violations.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>46</Id>
+    <CDNUSR_DEFINE_NAME>ACON_INVALID_ELEMENT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pre-selected element cannot be used for Add Connect.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>47</Id>
+    <CDNUSR_DEFINE_NAME>ACON_SCRIBBLE_PATH_DELETED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Scribble path has been deleted. Re-add the path from last pick.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>48</Id>
+    <CDNUSR_DEFINE_NAME>ACON_CONTOUR_PEC_IS_STATE1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Contour Unlocked: Click to lock onto highlighted object
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>49</Id>
+    <CDNUSR_DEFINE_NAME>ACON_CONTOUR_PEC_IS_STATE2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Contour Locked: Click to unlock from contour routing
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>50</Id>
+    <CDNUSR_DEFINE_NAME>ACON_CONTOUR_GAP_TOO_LARGE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Contour gap extends more than half way to the other side of the Route Keepin: unable to contour.  Try a smaller gap to continue.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+</MsgFile>

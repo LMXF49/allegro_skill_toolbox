@@ -1,0 +1,76 @@
+FILE_TYPE=FORM_DEFN VERSION=2
+FORM
+FIXED
+PORT 42 6
+HEADER "Grids"
+TILE
+
+TEXT "mil:"
+TLOC 2 1
+ENDTEXT
+
+TEXT "mm:"
+TLOC 2 3
+ENDTEXT
+FIELD 1_mil
+FLOC 6 1
+FGROUP "displayunit"
+CHECKLIST 1"displayunit"
+ENDFIELD
+FIELD 5_mil
+FLOC 12 1
+FGROUP "displayunit"
+CHECKLIST 5"displayunit"
+ENDFIELD
+FIELD 10_mil
+FLOC 18 1
+FGROUP "displayunit"
+CHECKLIST 10"displayunit"
+ENDFIELD
+FIELD 20_mil
+FLOC 24 1
+FGROUP "displayunit"
+CHECKLIST 20"displayunit"
+ENDFIELD
+FIELD 50_mil
+FLOC 30 1
+FGROUP "displayunit"
+CHECKLIST 50"displayunit"
+ENDFIELD
+FIELD 100_mil
+FLOC 36 1
+FGROUP "displayunit"
+CHECKLIST 100"displayunit"
+ENDFIELD
+FIELD 0.05_mm
+FLOC 6 3
+FGROUP "displayunit"
+CHECKLIST 0.05"displayunit"
+ENDFIELD
+FIELD 0.1_mm
+FLOC 12 3
+FGROUP "displayunit"
+CHECKLIST 0.1"displayunit"
+ENDFIELD
+FIELD 0.25_mm
+FLOC 18 3
+FGROUP "displayunit"
+CHECKLIST 0.25"displayunit"
+ENDFIELD
+FIELD 0.5_mm
+FLOC 24 3
+FGROUP "displayunit"
+CHECKLIST 0.5"displayunit"
+ENDFIELD
+FIELD 1_mm
+FLOC 30 3
+FGROUP "displayunit"
+CHECKLIST 1"displayunit"
+ENDFIELD
+FIELD 2.5_mm
+FLOC 36 3
+FGROUP "displayunit"
+CHECKLIST 2.5"displayunit"
+ENDFIELD
+ENDTILE
+ENDFORM

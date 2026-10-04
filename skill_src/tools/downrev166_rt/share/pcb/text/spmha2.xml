@@ -1,0 +1,1375 @@
+<MsgFile>
+
+  <Msg>
+    <Id>1</Id>
+    <CDNUSR_DEFINE_NAME>MSG592</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Line length overflow (1024 characters maximum) ... rest of line ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>2</Id>
+    <CDNUSR_DEFINE_NAME>MSG663</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Layout file name [ %0 ]:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>3</Id>
+    <CDNUSR_DEFINE_NAME>MSG801</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick a function to swap with from those hilighted ...
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>4</Id>
+    <CDNUSR_DEFINE_NAME>MSG802</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Pin not found ... pick again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>5</Id>
+    <CDNUSR_DEFINE_NAME>MSG803</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick a function you wish to swap.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>6</Id>
+    <CDNUSR_DEFINE_NAME>MSG804</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Pin picked is a power/ground/no-connect pin ... pick again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>7</Id>
+    <CDNUSR_DEFINE_NAME>MSG805</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Pin picked is a common pin ... pick again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>8</Id>
+    <CDNUSR_DEFINE_NAME>MSG806</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+There are swappable functions on unplaced components.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>9</Id>
+    <CDNUSR_DEFINE_NAME>MSG807</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Component is fixed by the FIX_ALL property ... pick again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>10</Id>
+    <CDNUSR_DEFINE_NAME>MSG808</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Component is fixed by the NO_SWAP_GATE property ... pick again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>11</Id>
+    <CDNUSR_DEFINE_NAME>MSG809</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Function is fixed by the NO_SWAP_GATE property ... pick again. Use edit property to remove property from the functions of this component.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>12</Id>
+    <CDNUSR_DEFINE_NAME>MSG810</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Pick NEXT/DONE or pick the first function of the next swap.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>13</Id>
+    <CDNUSR_DEFINE_NAME>MSG811</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Component is fixed by the NO_SWAP_GATE_EXT property ... pick again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>14</Id>
+    <CDNUSR_DEFINE_NAME>MSG812</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Function is fixed by the NO_SWAP_GATE_EXT property ... pick again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>15</Id>
+    <CDNUSR_DEFINE_NAME>MSG813</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+First function can't be swapped outside of the component.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>16</Id>
+    <CDNUSR_DEFINE_NAME>MSG814</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Ineligible as the function types don't match ... pick again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>17</Id>
+    <CDNUSR_DEFINE_NAME>MSG815</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Ineligible as the pin is on a different net.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>18</Id>
+    <CDNUSR_DEFINE_NAME>MSG816</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Ineligible as it is a different device type ... pick again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>19</Id>
+    <CDNUSR_DEFINE_NAME>MSG817</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Ineligible as it is a different component value/tolerance ... pick again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>20</Id>
+    <CDNUSR_DEFINE_NAME>MSG818</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Text offset is
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>21</Id>
+    <CDNUSR_DEFINE_NAME>MSG819</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Grids are drawn %s, %s apart for enhanced viewing.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>22</Id>
+    <CDNUSR_DEFINE_NAME>MSG820</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal amount ... enter again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>23</Id>
+    <CDNUSR_DEFINE_NAME>MSG821</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No functions are swappable with the selected function ... pick again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>24</Id>
+    <CDNUSR_DEFINE_NAME>MSG822</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Waiting for the first pick ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>25</Id>
+    <CDNUSR_DEFINE_NAME>MSG823</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Arc origin is outside the drawing extents ... waiting for the 3rd pick.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>26</Id>
+    <CDNUSR_DEFINE_NAME>MSG824</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+DRC error not found..
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>27</Id>
+    <CDNUSR_DEFINE_NAME>MSG825</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+No element found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>28</Id>
+    <CDNUSR_DEFINE_NAME>MSG826</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Pad does not exist.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>29</Id>
+    <CDNUSR_DEFINE_NAME>MSG827</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal pad name.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>30</Id>
+    <CDNUSR_DEFINE_NAME>MSG828</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal pin number.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>31</Id>
+    <CDNUSR_DEFINE_NAME>MSG829</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Pin is outside the extents.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>32</Id>
+    <CDNUSR_DEFINE_NAME>MSG830</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Maximum pin number.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>33</Id>
+    <CDNUSR_DEFINE_NAME>MSG831</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Pin not found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>34</Id>
+    <CDNUSR_DEFINE_NAME>MSG832</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Pin(s) cannot be placed outside the drawing extents.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>35</Id>
+    <CDNUSR_DEFINE_NAME>MSG833</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Illegal amount.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>36</Id>
+    <CDNUSR_DEFINE_NAME>MSG834</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Amount is too large.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>37</Id>
+    <CDNUSR_DEFINE_NAME>MSG835</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Pin/component not found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>38</Id>
+    <CDNUSR_DEFINE_NAME>MSG836</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+The reject did not result in any new selection.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>39</Id>
+    <CDNUSR_DEFINE_NAME>MSG837</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Make 2 picks to create a circle.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>40</Id>
+    <CDNUSR_DEFINE_NAME>MSG838</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Too many ports are open ... close some of them to continue.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>41</Id>
+    <CDNUSR_DEFINE_NAME>MSG839</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter subclass name :
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>42</Id>
+    <CDNUSR_DEFINE_NAME>MSG840</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Embedded plane? (y/n):
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>43</Id>
+    <CDNUSR_DEFINE_NAME>MSG841</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Drawing must be empty ... except for ROUTE KEEPIN rectangle.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>44</Id>
+    <CDNUSR_DEFINE_NAME>MSG842</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Only top and bottom layers are present ... inserting.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>45</Id>
+    <CDNUSR_DEFINE_NAME>MSG843</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+New layer will be inserted after the selected layer.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>46</Id>
+    <CDNUSR_DEFINE_NAME>MSG844</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Waiting for 2nd pick ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>47</Id>
+    <CDNUSR_DEFINE_NAME>MSG845</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Waiting for 3rd pick ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>48</Id>
+    <CDNUSR_DEFINE_NAME>MSG846</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Arc segment is outside the drawing extents ... pick again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>49</Id>
+    <CDNUSR_DEFINE_NAME>MSG847</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Pick sequence does not form an arc ... pick again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>50</Id>
+    <CDNUSR_DEFINE_NAME>MSG848</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Circle is outside of the drawing extents ... pick again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>51</Id>
+    <CDNUSR_DEFINE_NAME>MSG849</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Pick equals previous pick ... pick again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>52</Id>
+    <CDNUSR_DEFINE_NAME>MSG850</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter text offset location.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>53</Id>
+    <CDNUSR_DEFINE_NAME>MSG851</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter direction.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>54</Id>
+    <CDNUSR_DEFINE_NAME>MSG852</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cannot place outside of the drawing extents.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>55</Id>
+    <CDNUSR_DEFINE_NAME>MSG853</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+New layer will be inserted after the selected layer.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>56</Id>
+    <CDNUSR_DEFINE_NAME>MSG854</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick logical order of layer.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>57</Id>
+    <CDNUSR_DEFINE_NAME>MSG855</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Embedded plane?
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>58</Id>
+    <CDNUSR_DEFINE_NAME>MSG856</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Symbol file out is of date ... symbol must be recreated.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>59</Id>
+    <CDNUSR_DEFINE_NAME>MSG857</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot add symbols outside of the drawing.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>60</Id>
+    <CDNUSR_DEFINE_NAME>MSG858</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot find the symbol or padstack file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>61</Id>
+    <CDNUSR_DEFINE_NAME>MSG859</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Symbol pins do not match.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>62</Id>
+    <CDNUSR_DEFINE_NAME>MSG860</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error in placement ... exiting the command.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>63</Id>
+    <CDNUSR_DEFINE_NAME>MSG861</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot edit the DRC rule ... layout is not empty.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>64</Id>
+    <CDNUSR_DEFINE_NAME>MSG862</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error in add symbol ... exiting the command.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>65</Id>
+    <CDNUSR_DEFINE_NAME>MSG863</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Error %d in the interactive command. Contact Cadence customer support.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>66</Id>
+    <CDNUSR_DEFINE_NAME>MSG864</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot add the element outside the drawing extents.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>67</Id>
+    <CDNUSR_DEFINE_NAME>MSG865</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick two points to define the window.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>68</Id>
+    <CDNUSR_DEFINE_NAME>MSG866</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick element in the group ... COMPLETE when done.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>69</Id>
+    <CDNUSR_DEFINE_NAME>MSG867</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick origin.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>70</Id>
+    <CDNUSR_DEFINE_NAME>MSG868</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+File does not exist.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>71</Id>
+    <CDNUSR_DEFINE_NAME>MSG869</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Cannot pick the bottom layer.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>72</Id>
+    <CDNUSR_DEFINE_NAME>MSG870</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Function swap caused a DRC error.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>73</Id>
+    <CDNUSR_DEFINE_NAME>MSG871</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Enter room name.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>74</Id>
+    <CDNUSR_DEFINE_NAME>MSG872</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Gerber file name [ %0 ]:
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>75</Id>
+    <CDNUSR_DEFINE_NAME>MSG873</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+X,Y must be a multiple of each other for linelock45.	
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>76</Id>
+    <CDNUSR_DEFINE_NAME>MSG526</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+filler
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>77</Id>
+    <CDNUSR_DEFINE_NAME>MSG618</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+...........................................................
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>78</Id>
+    <CDNUSR_DEFINE_NAME>FS_GROUP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Ineligible because GROUP properties don't match ... pick again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>79</Id>
+    <CDNUSR_DEFINE_NAME>FS_SWGROUP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Ineligible because SWAP_GROUP properties don't match ... pick again.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>80</Id>
+    <CDNUSR_DEFINE_NAME>COMMAND_CANCELLED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Command cancelled.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>81</Id>
+    <CDNUSR_DEFINE_NAME>MOMSG_SELECT_ITEMS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select items for the module.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>82</Id>
+    <CDNUSR_DEFINE_NAME>MOMSG_CANT_REJECT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot reject with multiple items selected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>83</Id>
+    <CDNUSR_DEFINE_NAME>GAMSG_ERRORS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Gate assignment had %d errors ... see log file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>84</Id>
+    <CDNUSR_DEFINE_NAME>GAMSG_WARNINGS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Gate assignment had %d warnings ... see log file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>85</Id>
+    <CDNUSR_DEFINE_NAME>GAMSG_CANCEL</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Aborted by cancel.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>86</Id>
+    <CDNUSR_DEFINE_NAME>TF_LOCKED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The database is locked and exports are disabled. To write a techfile from this board exports need to be enabled.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>87</Id>
+    <CDNUSR_DEFINE_NAME>TF_READ_COMPLETE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Techfile read is complete.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>88</Id>
+    <CDNUSR_DEFINE_NAME>TF_WARNINGS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Techfile read is complete with warnings ... see 'techfile.log'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>89</Id>
+    <CDNUSR_DEFINE_NAME>TF_DRC_CHECKS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+DRC checks necessitated by this read are being performed ...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>90</Id>
+    <CDNUSR_DEFINE_NAME>TF_DRC_ERRORS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+DRC checks done ... errors were found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>91</Id>
+    <CDNUSR_DEFINE_NAME>TF_DRC_NO_ERRORS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+DRC checks done ... no errors were found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>92</Id>
+    <CDNUSR_DEFINE_NAME>TF_DRC_NOT_DONE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+DRC checks not done as per user request ... -d switch set.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>93</Id>
+    <CDNUSR_DEFINE_NAME>TF_ERRORS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Techfile read failed with errors ... see 'techfile.log'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>94</Id>
+    <CDNUSR_DEFINE_NAME>TF_NOT_WRITTEN_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Extract file %s was not written.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>95</Id>
+    <CDNUSR_DEFINE_NAME>TF_NOT_WRITTEN_2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Drawing %s was not written.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>96</Id>
+    <CDNUSR_DEFINE_NAME>TF_EXTRACT_WRITTEN</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Extract file %s was written.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>97</Id>
+    <CDNUSR_DEFINE_NAME>TF_WRITE_COMPLETE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Techfile write is complete.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>98</Id>
+    <CDNUSR_DEFINE_NAME>TF_UPREV_COMPLETE_ERRORS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Uprev completed with errors ... see see techfile.log, tf_uprev.log, tf_read.log or tf_write.log.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>99</Id>
+    <CDNUSR_DEFINE_NAME>TF_UPREV_COMPLETE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Uprev completed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>100</Id>
+    <CDNUSR_DEFINE_NAME>TF_READ_WARNINGS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Techfile read completed with warnings ... see 'techfile.log'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>101</Id>
+    <CDNUSR_DEFINE_NAME>TF_READ_ERRORS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Techfile read failed with errors ... see 'techfile.log'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>102</Id>
+    <CDNUSR_DEFINE_NAME>TF_NO_DIFFERENCES</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Techfile compare successful with no differences found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>103</Id>
+    <CDNUSR_DEFINE_NAME>TF_DIFFERENCES</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Techfile compare completed with %d differences found ... see 'techfile.log'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>104</Id>
+    <CDNUSR_DEFINE_NAME>TF_BAD_SWITCHES_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Bad switches ... only one of r, w, u, or c switches may be specified.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>105</Id>
+    <CDNUSR_DEFINE_NAME>TF_BAD_SWITCHES_2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Bad switches ... x switch is only valid when combined with the r switch.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>106</Id>
+    <CDNUSR_DEFINE_NAME>TF_BAD_SWITCHES_3</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Bad switches ... no other switches are valid with the -rx combination.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>107</Id>
+    <CDNUSR_DEFINE_NAME>TF_BAD_SWITCHES_4</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Bad switches ... t switch is only valid when combined with the n or u switch.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>108</Id>
+    <CDNUSR_DEFINE_NAME>TF_REQUIRED_SWITCH</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Missing switch ... one of the r, w, or c switches is required.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>109</Id>
+    <CDNUSR_DEFINE_NAME>UPDMSG_CHOOSE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Choose the modules and/or symbols to be updated.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>110</Id>
+    <CDNUSR_DEFINE_NAME>UPDMSG_UPDATING</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Updating module '%s' instance '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>111</Id>
+    <CDNUSR_DEFINE_NAME>PARM_READ_COMPLETE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Parameter file read is complete.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>112</Id>
+    <CDNUSR_DEFINE_NAME>PARM_WRITE_COMPLETE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Parameter file write is complete.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>113</Id>
+    <CDNUSR_DEFINE_NAME>PARM_READ_ERRORS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Parameter file read failed with errors ... see 'param_read.log'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>114</Id>
+    <CDNUSR_DEFINE_NAME>PARM_READ_WARNINGS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Parameter file read completed with warnings ... see 'param_read.log'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>115</Id>
+    <CDNUSR_DEFINE_NAME>PRTN_ILEGAL_SILKSCREEN_SUBCLASS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The current subclass is not legal in silkscreen partition.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>116</Id>
+    <CDNUSR_DEFINE_NAME>PRTN_ILEGAL_DIMENSION_SUBCLASS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The current subclass is not legal in dimension/draft partition.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>117</Id>
+    <CDNUSR_DEFINE_NAME>UPDMSG_PLCREP_UPDATING</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Updating instances of place replicate module '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+   <Msg>
+    <Id>118</Id>
+    <CDNUSR_DEFINE_NAME>UPREV_BOARD_OUTLINE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+'DESIGN_OUTLINE' and 'CUTOUT' are the preferred subclasses for defining an outline. Use these subclasses instead of the 'OUTLINE' subclass.
+    </Desc>
+    <ExtDesc>
+The 'OUTLINE' subclass has been replaced by the 'DESIGN_OUTLINE' and 'CUTOUT' 
+subclasses. These subclasses used closed shapes to describe the outline of 
+the substrate and of any cut outs in them.
+
+In board databases (*.brd), these subclasses can be found under the 'BOARD GEOMETRY' 
+class. For package layouts (*.mcm, *.sip), these are members of the 
+'SUBSTRATE GEOMETRY' class.
+    </ExtDesc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>119</Id>
+    <CDNUSR_DEFINE_NAME>ANCHOR_3D_NOT_IN_OUTLINE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+      Point needs to be within the design outline.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>120</Id>
+    <CDNUSR_DEFINE_NAME>ANCHOR_3D_INSIDE_BEND</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+      Point cannot be not be inside a bend.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>121</Id>
+    <CDNUSR_DEFINE_NAME>ANCHOR_3D_USING_PT</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      Using %s as anchor for 3D viewing.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>122</Id>
+    <CDNUSR_DEFINE_NAME>ANCHOR_3D_NO_OUTLINE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Design outline not found, exiting.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>123</Id>
+    <CDNUSR_DEFINE_NAME>ANCHOR_3D_PICK_PT</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      Pick a point within the design outline for the 3D anchor.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>124</Id>
+    <CDNUSR_DEFINE_NAME>BEND_AREA_USE_CREATE</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      Use Create to generate a bend area or re-add bend line.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>125</Id>
+    <CDNUSR_DEFINE_NAME>BEND_AREA_NO_OUTLINE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+      Design outline not found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>126</Id>
+    <CDNUSR_DEFINE_NAME>BEND_AREA_INVALID_PICKS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+      Invalid picks for bend line.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>127</Id>
+    <CDNUSR_DEFINE_NAME>BEND_AREA_OVERLAPPING</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Bend area extents overlapping with existing bend.  Not created.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+</MsgFile>

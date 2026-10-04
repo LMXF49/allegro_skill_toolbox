@@ -1,0 +1,717 @@
+<MsgFile>
+
+  <Msg>
+    <Id>1</Id>
+    <CDNUSR_DEFINE_NAME>UNRECOGNIZE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unrecognizable symbol. Line ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>2</Id>
+    <CDNUSR_DEFINE_NAME>PNAMEEXP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Package name expected. Line ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>4</Id>
+    <CDNUSR_DEFINE_NAME>FUNCEXP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Function type expected. Line ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>5</Id>
+    <CDNUSR_DEFINE_NAME>CRLFEXP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+End of line expected. Additional characters found and ignored. Try quoting the string indicated.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>6</Id>
+    <CDNUSR_DEFINE_NAME>SLOTEXP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Slot name expected. Line ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>7</Id>
+    <CDNUSR_DEFINE_NAME>SEMIEXP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Semicolon expected. Line ignored. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>8</Id>
+    <CDNUSR_DEFINE_NAME>GARBAGE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+End of line expected. Additional characters found and ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>9</Id>
+    <CDNUSR_DEFINE_NAME>EOFFILE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Missing 'END' statement.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>10</Id>
+    <CDNUSR_DEFINE_NAME>ENDFOUND</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+'END' statement found. Any following lines will be ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>11</Id>
+    <CDNUSR_DEFINE_NAME>PINTOOSMALL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pincount must be greater than 0.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>12</Id>
+    <CDNUSR_DEFINE_NAME>DUPPINCOUNT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Duplicate 'PINCOUNT' statement.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>13</Id>
+    <CDNUSR_DEFINE_NAME>XPINUSE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+More pinuses than pins have been defined for the function.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>14</Id>
+    <CDNUSR_DEFINE_NAME>FEWPINUSE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Too few pinuses defined for this function.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>15</Id>
+    <CDNUSR_DEFINE_NAME>NODENOTDEFINED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pin name "%0" not defined for this function.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>16</Id>
+    <CDNUSR_DEFINE_NAME>DUPSWAPCODE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pin name "%0" was previously specified in a 'PINSWAP' statement.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>17</Id>
+    <CDNUSR_DEFINE_NAME>XFUNCPIN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+More pins than nodes have been defined for this function.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>18</Id>
+    <CDNUSR_DEFINE_NAME>FEWFUNCPIN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+More pin names than pins have been defined for this function.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>19</Id>
+    <CDNUSR_DEFINE_NAME>SLOTNUNIQUE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Slot name "%0" has been previously defined.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>20</Id>
+    <CDNUSR_DEFINE_NAME>NODENUNIQUE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pin name "%0" has been previously defined.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>21</Id>
+    <CDNUSR_DEFINE_NAME>FUNCNUNIQUE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Function "%0" has been previously defined.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>23</Id>
+    <CDNUSR_DEFINE_NAME>BADPINUSE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pin use must either be IN,OUT,BI,TRI,OCA,OCL,POWER,GROUND.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>24</Id>
+    <CDNUSR_DEFINE_NAME>DUPCLASS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Duplicate 'CLASS' statement.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>25</Id>
+    <CDNUSR_DEFINE_NAME>DUPCMPPIN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Component pin "%0" defined previously.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>26</Id>
+    <CDNUSR_DEFINE_NAME>DUPPACKAGE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Duplicate 'PACKAGE' statement.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>27</Id>
+    <CDNUSR_DEFINE_NAME>LESSTWOSWAP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+At least two pins must be included in a 'PINSWAP' statement.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>28</Id>
+    <CDNUSR_DEFINE_NAME>SWAPUSE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pin "%0" for function "%1" has swap/pinuse inconsistency.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>29</Id>
+    <CDNUSR_DEFINE_NAME>FUNCUNUSED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Function "%0" occurred in a 'PINORDER' statement but not used.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>30</Id>
+    <CDNUSR_DEFINE_NAME>FUNCNOTDEFINED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Function "%0" not defined in a previous 'PINORDER' statement.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>31</Id>
+    <CDNUSR_DEFINE_NAME>MISSCLASS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Missing a 'CLASS' statement, 'IC' is assumed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>32</Id>
+    <CDNUSR_DEFINE_NAME>MISSPACKAGE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Missing a 'PACKAGE' statement.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>33</Id>
+    <CDNUSR_DEFINE_NAME>TOTPINERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Number of component and function pins more than pincount.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>34</Id>
+    <CDNUSR_DEFINE_NAME>DUPCFPIN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Component pin "%0" duplicates a pin in slot "%1".
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>35</Id>
+    <CDNUSR_DEFINE_NAME>MISSNCPINS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Missing no connect pins.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>36</Id>
+    <CDNUSR_DEFINE_NAME>MISSPOWPINS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Missing power pins.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>37</Id>
+    <CDNUSR_DEFINE_NAME>MISSGNDPINS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Missing ground pins.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>38</Id>
+    <CDNUSR_DEFINE_NAME>FPINNUNIQUE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Function pin number "%0" appears previously in same function.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>39</Id>
+    <CDNUSR_DEFINE_NAME>MISSNODES</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Missing nodes.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>40</Id>
+    <CDNUSR_DEFINE_NAME>BADATTRSTART</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Expecting either an property  value or a semicolon. Line ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>41</Id>
+    <CDNUSR_DEFINE_NAME>MISSINGATTR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Attribute type expected. Line ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>42</Id>
+    <CDNUSR_DEFINE_NAME>PINNOTFOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pin "%0" not defined in a 'FUNCTION', 'NC', 'POWER' or 'GROUND' statement.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>43</Id>
+    <CDNUSR_DEFINE_NAME>NOFUNCATTRS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Missing slot names.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>44</Id>
+    <CDNUSR_DEFINE_NAME>NOPINATTRS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Missing pin numbers.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>45</Id>
+    <CDNUSR_DEFINE_NAME>SLOTNOTFOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Slot "%0" has not been defined for this device.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>46</Id>
+    <CDNUSR_DEFINE_NAME>MISSPINCOUNT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Number of pins in device expected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>47</Id>
+    <CDNUSR_DEFINE_NAME>SIGNALEXP</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Net name expected. Line ignored.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>48</Id>
+    <CDNUSR_DEFINE_NAME>BADATTRTYPE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Badly formed property  type "%0": %1. Changed to "%2".
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>49</Id>
+    <CDNUSR_DEFINE_NAME>BADATTRVALUE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Badly formed property  value "%0": %1. Changed to "%2".
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>50</Id>
+    <CDNUSR_DEFINE_NAME>BADSLOT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Badly formed slot name "%0": %1. Changed to "%2".
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>51</Id>
+    <CDNUSR_DEFINE_NAME>BADPACKAGE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Badly formed package name "%0": %1. Changed to "%2".
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>52</Id>
+    <CDNUSR_DEFINE_NAME>BADFUNC</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Badly formed function type "%0": %1, Changed to "%2".
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>53</Id>
+    <CDNUSR_DEFINE_NAME>BADPINNAME</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Badly formed pin name "%0": %1. Changed to "%2".
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>54</Id>
+    <CDNUSR_DEFINE_NAME>BADNET</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Badly formed net name "%0": %1. Changed to "%2".
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>55</Id>
+    <CDNUSR_DEFINE_NAME>BADPIN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Badly formed pin number "%0": %1. Changed to "%2".
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>56</Id>
+    <CDNUSR_DEFINE_NAME>BADALPHAPIN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to automatically generate missing alphanumeric pins.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>57</Id>
+    <CDNUSR_DEFINE_NAME>BADLARGEPIN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Discovered a pin number greater than the pincount.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>58</Id>
+    <CDNUSR_DEFINE_NAME>MANCMPBIG</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+The pincount forced pin larger than allowed in the data base.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>59</Id>
+    <CDNUSR_DEFINE_NAME>ADDCMPPINS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Adding pins to the device not specified in functions.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>60</Id>
+    <CDNUSR_DEFINE_NAME>DFMSG_NOPINCOUNT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No correct PINCOUNT statement was found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>61</Id>
+    <CDNUSR_DEFINE_NAME>DFMSG_CDF_INFO_STARTED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Create_devices started.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>62</Id>
+    <CDNUSR_DEFINE_NAME>DFMSG_CDF_INFO_CHECK</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Checking for multiple devices.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>63</Id>
+    <CDNUSR_DEFINE_NAME>DFMSG_CDF_INFO_ENDED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Create_devices ended: no errors in log file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>64</Id>
+    <CDNUSR_DEFINE_NAME>DFMSG_CDF_INFO_ENDED_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Create_devices terminated ... see log file for errors.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>65</Id>
+    <CDNUSR_DEFINE_NAME>DFMSG_CDF_INFO_ENDED_CHECK</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Create_devices ended: see log file for duplicate device messages.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>66</Id>
+    <CDNUSR_DEFINE_NAME>DFMSG_CDF_NOT_DIR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Directory '%s' not writable. Program terminating.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>67</Id>
+    <CDNUSR_DEFINE_NAME>DFMSG_CDF_MULTIPLE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Device '%s' occurs multiple times - check the device file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>68</Id>
+    <CDNUSR_DEFINE_NAME>DFMSG_CDF_DEVICE_OPEN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Could not open device file '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>69</Id>
+    <CDNUSR_DEFINE_NAME>DFMSG_CDF_DEVICE_OK</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Device file '%s': written successfully.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>70</Id>
+    <CDNUSR_DEFINE_NAME>DFMSG_CDF_DEVICE_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Device file '%s': errors encountered.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>71</Id>
+    <CDNUSR_DEFINE_NAME>DFMSG_PINTOOLARGE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pincount for mechanical device must be zero.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>72</Id>
+    <CDNUSR_DEFINE_NAME>DFMSG_EXTRANODES</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Mechanical device cannot have any function nodes.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+</MsgFile>

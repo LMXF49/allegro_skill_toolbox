@@ -1,0 +1,142 @@
+FILE_TYPE=FORM_DEFN VERSION=2
+FORM
+FIXED
+PORT 67 20
+HEADER "Find Dangling Clines and Dangling Lines"
+
+POPUP <PRINTP>"to File""0","to Printer""1","to Script""2".
+
+
+TILE
+TEXT "*********************************************************************"
+TLOC 0 0
+ENDTEXT
+
+TEXT ""
+TLOC 0 1
+ENDTEXT
+
+TEXT "  This program will locate any Clines or Lines on the                "
+TLOC 0 2
+ENDTEXT
+
+TEXT "  Conductor Class/Subclass that do not have any associated           "
+TLOC 0 3
+ENDTEXT
+
+TEXT "  net name.  Select the Info button for more details.                "
+TLOC 0 4
+ENDTEXT
+
+TEXT ""
+TLOC 0 5
+ENDTEXT
+
+TEXT ""
+TLOC 0 6
+ENDTEXT
+
+TEXT "*********************************************************************"
+TLOC 0 7
+ENDTEXT
+
+TEXT "Dangling Clines"
+TLOC 3 12
+ENDTEXT
+
+TEXT "Dangling Lines"
+TLOC 46 12
+ENDTEXT
+
+TEXT "Found"
+TLOC 1 26
+ENDTEXT
+
+TEXT "Clines"
+TLOC 14 26
+ENDTEXT
+
+TEXT "Found"
+TLOC 44 26
+ENDTEXT
+
+TEXT "Lines"
+TLOC 57 26
+ENDTEXT
+
+FIELD delete_all_clines
+FLOC 1 9
+MENUBUTTON "Delete ALL Clines" 19 3
+ENDFIELD
+
+FIELD delete_all_lines
+FLOC 44 9
+MENUBUTTON "Delete ALL Lines" 18 3
+ENDFIELD
+
+FIELD cline_list
+FLOC 1 14
+LIST "" 20 5
+ENDFIELD
+
+FIELD line_list
+FLOC 44 14
+LIST "" 20 5
+ENDFIELD
+
+FIELD delete_one
+FLOC 21 15
+MENUBUTTON "Delete SELECTED X/Y" 21 3
+ENDFIELD
+
+FIELD total_clines
+FLOC 7 26
+INFO_ONLY
+INTFILLIN 4 4
+ENDFIELD
+
+FIELD total_lines
+FLOC 50 26
+INFO_ONLY
+INTFILLIN 4 4
+ENDFIELD
+
+FIELD find_clines
+FLOC 1 29
+MENUBUTTON "Find Dangling Clines" 22 3
+ENDFIELD
+
+FIELD find_lines
+FLOC 44 29
+MENUBUTTON "Find Dangling Lines" 22 3
+ENDFIELD
+
+FIELD remove_drcs
+FLOC 11 33
+MENUBUTTON "Remove DRCs" 15 3
+ENDFIELD
+
+FIELD remove_hilite
+FLOC 36 33
+MENUBUTTON "UnHilite Errors" 17 3
+ENDFIELD
+
+FIELD done
+FLOC 2 37
+MENUBUTTON "Done" 10 3
+ENDFIELD
+
+FIELD pr_help
+FLOC 40 37
+MENUBUTTON "Info" 10 3
+ENDFIELD
+
+FIELD print
+FLOC 52 37
+MENUBUTTON "Print" 10 3
+POP "PRINTP"
+ENDFIELD
+
+ENDTILE
+
+ENDFORM

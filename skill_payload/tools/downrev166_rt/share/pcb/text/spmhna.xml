@@ -1,0 +1,771 @@
+<MsgFile>
+
+  <Msg>
+    <Id>1</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_INIT_DATABASE_FAIL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to initialize source and destination databases.
+    </Desc>
+    <ExtDesc>
+Failure to initialize the source database is normally a result of the
+file not being readable in the current directory due to access permissions. 
+If the file is accessible, it may be truncated or corrupt. Check access
+permissions and integrity of the file.
+
+If the destination database could not be initialized, the most common cause
+is a lack of write permissions in the specified output directory. Check
+access permissions or select a different directory to write the database to.
+    </ExtDesc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>2</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_ERRWARN_RESULTS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%d %s during SPD2 / NA2 file import.
+    </Desc>
+    <ExtDesc>
+Warnings during import of an database record situations that should be examined 
+before continuing work on the design layout. These items may require some action on
+your part to correct the data before proceeding. 
+
+Errors during import of the same database indicate that one or more design objects
+could not be created. As a result, the database is considered incomplete. In most
+situations, this will require hand editing of the SPD2 / NA2 file to correct.
+    </ExtDesc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>3</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_FAIL_CREATE_DB_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to create new database file %s for writing. Reason to follow...
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>4</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_FAIL_OPEN_DB_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to open source SPD2 / NA2 file %s for reading.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>5</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_BEGIN_SECTION_1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%s import beginning.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>6</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_END_SECTION_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%s import finished. Import %s. 
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>7</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_ITEMS_PROCESSED_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%d %s processed successfully.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>8</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_ITEMS_FAILED_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%d %s objects failed to be created.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>9</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_CANNOT_FILLET_2</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Unable to add fillets to create teardrop from %s to %s. Line width of 0 specified.
+    </Desc>
+    <ExtDesc>
+The NA2 and SPD2 formats permit a teardrop line segment to have a zero line width
+specified at one end. As the Cadence IC Packaging tools create teardrops
+using fillet lines, it is not possible for the tool to reproduce these
+tapered segments.
+
+To correct this issue, run the glossing or add fillet command on the
+pad at the specified location. 
+    </ExtDesc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>10</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_MISSING_DESIGN_START</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to locate top level design section start. File cannot be imported.
+    </Desc>
+    <ExtDesc>
+The top-level token of a NA2 or SPD2 file is the design token. This contains all
+the information about the specific package database. If the design token
+is not present, there is no information in the file which can be imported.
+
+This issue must be corrected by the tool which wrote the source file.
+    </ExtDesc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>11</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_MISSING_SECTION_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+%s section missing from file.
+    </Desc>
+    <ExtDesc>
+This section is considered optional. Depending on the state of the design 
+when it was written to disk, it is possible that no items of this type would 
+yet exist. 
+
+You are being warned of this situation in case you feel this section should be 
+present. If that is the case, re-export the database from the original design.
+    </ExtDesc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>12</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_MISSING_REQ_SECTION_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+%s section missing from file. File cannot be imported without this section.
+    </Desc>
+    <ExtDesc>
+This section is required in order to generate a Cadence MCM or SIP design
+from the source file. Without the information in this section, critical pieces
+of the design intent cannot be determined, and the integrity of the resulting
+database is in question. Re-export the SPD2 / NA2 file from the original design
+and import the new file.
+    </ExtDesc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>13</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_MISSING_RESOLUTION</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Resolution section missing from file. Assuming units match current database settings.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>14</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_MISSING_SETTINGS</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Settings section missing from file. Information such as text block sizes may be inaccurate.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>15</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_VERSION_WARNING_3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Source file version is %.1f, which is %s than the latest version supported (%.1f). The resulting database may be incomplete. Continue?
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+  
+  <Msg>
+    <Id>16</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_VERSION_UNKNOWN</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No Navigator_Data version information found. Compatibility assumed.
+    </Desc>
+    <ExtDesc>
+The Navigator_Data token in an SPD2 / NA2 file specifies the format version
+with which this file was created. If the value for this field is not present,
+the tool will assume that it is ok for processing. However, you should 
+carefully validate the resulting MCM / SIP database for integrity.
+    </ExtDesc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>17</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_UNRECOGNIZED_TOKEN_3</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unrecognized %s token %s seen on line %d.
+    </Desc>
+    <ExtDesc>
+If the format version of this file is higher or lower than the supported
+versions, this token may not be understood. As a result, it will be ignored
+during processing. 
+    </ExtDesc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>18</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_ADDITIONAL_PAREN_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+%d additional closing parentheses were found during file parsing.
+    </Desc>
+    <ExtDesc>
+The file may be incomplete or may have a quoted string missing either the start or 
+end quote. If possible, regenerate the file from the original database. If you continue
+to receive this message with the new file, check for an improperly quoted string.
+    </ExtDesc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+  
+  <Msg>
+    <Id>18</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_MISSING_PAREN_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+%d unmatched opening parentheses were found during file parsing.
+    </Desc>
+    <ExtDesc>
+The file may be incomplete or may have a quoted string missing either the start or 
+end quote. If possible, regenerate the file from the original database. If you continue
+to receive this message with the new file, check for an improperly quoted string.
+    </ExtDesc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>18</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_MISSING_PAREN_LINE_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+The first unmatched opening parenthesis occurs on line line %d.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>19</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_LAYER_MAPPING_3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+- %s mapped to %s/%s
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>20</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_PIN_NOT_ASSIGNED_2</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Unable to find pin %s. Pin not assigned to net %s.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>21</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_MISSING_TOKEN_2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Required token (%s) not defined in Gfmt line for %s section.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>22</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_BAD_FILE_NAME</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Illegal file name specified.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>23</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_CNS_MAPPING_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+(Source) %-25s -&gt; (Dest) %s.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+    
+  <Msg>
+    <Id>24</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_CNS_MAP_DESC1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+The following constraint mappings will be made during this import.    
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>25</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_CNS_MAP_DESC2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+All other Cadence constraints will retain their default values.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>26</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_CNS_MAP_DESC3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Any constraints with a value of 'ignore' will be turned off in the database.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>27</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_CNS_MAP_DESC4</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+The following constraints are defined in the source data file, but have not been mapped. 
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>28</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_DIFFP_DESC1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Note: There is no equivalent constraint in APD/SiP for percentage deviation.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+  
+  <Msg>
+    <Id>29</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_DIFFP_DESC2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+      This value will not be mapped. Use Constraint Manager to set
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>30</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_DIFFP_DESC3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+      deviations based on an absolute length measurement for each net.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>31</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_DIFFP_MISSING_FIELDS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+All required diff pair fields not found in file. Diff pairs not imported.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>32</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_PADTYPE_NOT_SUPP_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Pad type %s not supported.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>33</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_PAD_UNDEF_LAYER_1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+  Ignoring pad on undefined layer %s.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>34</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_PAD_NO_PADS_1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+- %s ignored (no pads on recognized layers).
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>35</Id>
+    <CDNUSR_DEFINE_NAME>NA2MAS_PAD_ORIENT_ADJUST</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+  Pad orientation adjusted from North to East for use as bond finger.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>36</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_PAD_DEFINED_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+- %s defined as %s...
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>37</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_ITEM_FAILED_2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to import %s beginning on line %d.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>38</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_REENTRANT_SHAPE_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Reentrant shape detected at line %d.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>39</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_REENTRANT_SHAPE_RECOVER</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Attempting to generate multiple, non-crossing shape boundaries from this object.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>40</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_BAD_SHAPE_TYPE_2</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Shape type (%s) found on line %d not allowed. Skipping.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>41</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_COMPI_NO_CREATE_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to create component %s.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>42</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_COMPD_NO_CREATE_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Unable to create component definition %s.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>43</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_SYMI_NO_CREATE_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to create symbol instance for %s.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>44</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_SYMD_NO_CREATE_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Unable to create symbol definition for %s.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>45</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_COMPI_NO_DEF_1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to create component instance. Cannot find required definition %s.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>46</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_COMPI_BAD_TYPE_2</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Unrecognized component type %s seen on line %d. Converting to die.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>47</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_DEF_NO_EXTENTS_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Extents missing for %s. Using default based on pin extents.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>48</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_DEF_NO_PINS_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Pin list missing for %s. Creating as a MECHANICAL symbol type.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>49</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_PIN_RENAMED_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+- Pin number %s was changed to %s to keep all pin numbers unique.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>50</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_DEF_NO_POREXT_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Extents and pins missing for %s. Skipping.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>51</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_PAD_MULTI_DIE_LAYER_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Padstack defined on multiple diestack layers. Removing extra pad on %s.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>52</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_CIRCLE_NORADIUS_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Circle on line %d has no radius. Defaults to radius 1 to permit import.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>53</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_COMP_MAPPING_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Component refdes %s renamed to %s to resolve unique uppercase name requirements.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>54</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_CNS_MAP_DESC5</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+If you believe a constraint should be mapped to a Cadence rule, contact Cadence support.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>55</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_CNS_UNMAPPED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+- %s.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>56</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_NONSTD_WIRE_CONNS_1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+One or more bond wires connect directly to %s objects and will be created as a non-standard bond wires.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+  <Msg>
+    <Id>57</Id>
+    <CDNUSR_DEFINE_NAME>NA2MSG_DEF_RENAMED_2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+- Definition %s was renamed to %s to keep device names unique.
+    </Desc>
+    <Output>C</Output>
+    <CDNUSR_OUTPUT>TEXT_LEVEL</CDNUSR_OUTPUT>
+  </Msg>
+
+</MsgFile>

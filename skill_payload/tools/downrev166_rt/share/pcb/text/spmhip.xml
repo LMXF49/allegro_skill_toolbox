@@ -1,0 +1,1810 @@
+<MsgFile>
+
+  <Msg>
+    <Id>1</Id>
+    <CDNUSR_DEFINE_NAME>IPMSG_NO_CODESIGN_OBJECT</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+No codesign object present in the design. Interface Planner Dialog will not be displayed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>2</Id>
+    <CDNUSR_DEFINE_NAME>IPMSG_APPMODE_NOT_ALLOWED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Interfaces present in design but next gen license is not available. Interface Planner App Mode cannot run.      
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>3</Id>
+    <CDNUSR_DEFINE_NAME>BGAABS_EXPORT_FILE1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Exporting BGA Abstract to %s.      
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>4</Id>
+    <CDNUSR_DEFINE_NAME>BGAABS_EXPORT_SUCCESS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+BGA Abstract exported successfully.      
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>5</Id>
+    <CDNUSR_DEFINE_NAME>BGAABS_EXPORT_NOCODESIGN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+BGA Abstract Export failed. No co-design component present in design.      
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>6</Id>
+    <CDNUSR_DEFINE_NAME>BGAABS_EXPORT_OBJ_NOT_FOUND1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+BGA Abstract Export failed. Co-design object %s not found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>7</Id>
+    <CDNUSR_DEFINE_NAME>BGAABS_EXPORT_FILE_NOT_FOUND1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+BGA Abstract Export failed. Unable to write to file %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>8</Id>
+    <CDNUSR_DEFINE_NAME>BGAABS_IMPORT_FILE1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Importing BGA Abstract from %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>9</Id>
+    <CDNUSR_DEFINE_NAME>BGAABS_IMPORT_SUCCESS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+BGA Abstract imported successfully.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>10</Id>
+    <CDNUSR_DEFINE_NAME>BGAABS_IMPORT_NOCODESIGN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+BGA Abstract Import failed. No co-design component present in design.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>11</Id>
+    <CDNUSR_DEFINE_NAME>BGAABS_IMPORT_OBJ_NOT_FOUND1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+BGA Abstract Import failed. Co-design object %s not found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>12</Id>
+    <CDNUSR_DEFINE_NAME>BGAABS_IMPORT_FILE_NOT_FOUND1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+BGA Abstract Import failed. Unable to read file %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>13</Id>
+    <CDNUSR_DEFINE_NAME>BGAABS_SCHEMA_FILE1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Validating BGA Abstract file against schema %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>14</Id>
+    <CDNUSR_DEFINE_NAME>BGAABS_SCHEMA_NOTFOUND1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+BGA Abstract schema file %s not found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>15</Id>
+    <CDNUSR_DEFINE_NAME>BGAABS_PARSE_FAILED1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to parse %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>16</Id>
+    <CDNUSR_DEFINE_NAME>BGAABS_PARSE_ERROR3</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Parser error at Line: %d Col:%d with message: %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>17</Id>
+    <CDNUSR_DEFINE_NAME>BGAABS_PARSE_WARNING3</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Parser warning at Line: %d Col:%d with message: %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>18</Id>
+    <CDNUSR_DEFINE_NAME>BGAABS_UNKNOWN_ELEM1</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+Unknown element %s in BGA Abstract File.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>19</Id>
+    <CDNUSR_DEFINE_NAME>BGAABS_SCHEMA_MISMATCH2</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+BGA Abstract Parser version %s does not match with schema version %s in import file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>20</Id>
+    <CDNUSR_DEFINE_NAME>BGAABS_IMPORT_EDIT_ALLOWED_MESSAGE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+BGA Abstract Import is allowed to create or edit interfaces.      
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>21</Id>
+    <CDNUSR_DEFINE_NAME>BGAABS_IMPORT_EDIT_NOT_ALLOWED_MESSAGE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+BGA Astract Import will only update assignments.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>22</Id>
+    <CDNUSR_DEFINE_NAME>BGAABS_PORT_NOT_FOUND1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Import cannot proceed. Port %s not found in the design.       
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>23</Id>
+    <CDNUSR_DEFINE_NAME>BGAABS_FUNCPIN_NOT_FOUND1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Import cannot proceed. Function pin %s not found in the import file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>24</Id>
+    <CDNUSR_DEFINE_NAME>BGAABS_PIN_NOT_FOUND1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Import cannot proceed. Physical pin %s not found in the design.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>25</Id>
+    <CDNUSR_DEFINE_NAME>BGAABS_VARPIN_NOT_FOUND1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Import cannot proceed. Var pin %s not found in the import file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>26</Id>
+    <CDNUSR_DEFINE_NAME>BGAABS_PORTGROUP_NOT_FOUND1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Import cannot proceed. Portgroup %s not found in the design.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>27</Id>
+    <CDNUSR_DEFINE_NAME>BGAABS_GROUP_NOT_FOUND1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Import cannot proceed. Portgroup %s not found in the import file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>28</Id>
+    <CDNUSR_DEFINE_NAME>BGAABS_GROUP_CREATED1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Created Portgroup %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>29</Id>
+    <CDNUSR_DEFINE_NAME>BGAABS_GROUP_DELETED1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Deleted Portgroup %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>30</Id>
+    <CDNUSR_DEFINE_NAME>BGAABS_PORT_MEMBER2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Import cannot proceed. Port %s is a member of Portgroup %s in database and does not match the import file.      
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>31</Id>
+    <CDNUSR_DEFINE_NAME>BGAABS_PORT_REMOVED2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Port %s removed from Portgroup %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>32</Id>
+    <CDNUSR_DEFINE_NAME>BGAABS_PORT_NOT_MEMBER2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Import cannot proceed. Port %s is not a member of Portgroup %s in database and does not match the import file.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>33</Id>
+    <CDNUSR_DEFINE_NAME>BGAABS_PORT_ADDED2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Port %s added to Portgroup %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>34</Id>
+    <CDNUSR_DEFINE_NAME>BGAABS_PORT_ADD_FAIL2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to add port %s to Portgroup %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>35</Id>
+    <CDNUSR_DEFINE_NAME>BGAABS_PORT_ASSIGN_FAIL2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to assign pin %s to port %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>36</Id>
+    <CDNUSR_DEFINE_NAME>BGAABS_PORT_ASSIGNED2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pin %s assigned to port %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>37</Id>
+    <CDNUSR_DEFINE_NAME>BGAABS_PORT_UNASSIGN_FAIL1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to deassign pin %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>38</Id>
+    <CDNUSR_DEFINE_NAME>IPMSG_OPTIMIZE_ENTRY1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Optimizing pins assigned to portgroup %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>39</Id>
+    <CDNUSR_DEFINE_NAME>IPMSG_OPTIMIZE_PINS2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to optimize. From list has %d pins but to list has only %d pins.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>40</Id>
+    <CDNUSR_DEFINE_NAME>IPMSG_PORTGROUP_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Portgroup not found.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>41</Id>
+    <CDNUSR_DEFINE_NAME>IPMSG_SWAP_GROUP_PICKDONE</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick Done/Next or pick the first portgroup of the next swap. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>42</Id>
+    <CDNUSR_DEFINE_NAME>IPMSG_SWAP_GROUP_PICK_AGAIN</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick again. Selected portgroup cannot be swapped.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>43</Id>
+    <CDNUSR_DEFINE_NAME>IPMSG_SWAP_GROUP_PICK1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick a portgroup to swap.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>44</Id>
+    <CDNUSR_DEFINE_NAME>IPMSG_SWAP_GROUP_PICK2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick a portgroup from the highlighted portgroups to swap.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>45</Id>
+    <CDNUSR_DEFINE_NAME>IPMSG_ASSIGN_COMP_PICKED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Cannot assign pins to component. Select a portgroup or port in the tree to assign.     
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>46</Id>
+    <CDNUSR_DEFINE_NAME>IPMSG_ASSIGN_NOT_ENOUGH_PINS2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No pins available to assign to %s %s. Assign more pins to parent portgroup first.     
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>47</Id>
+    <CDNUSR_DEFINE_NAME>IPMSG_ASSIGN_ENOUGH_PINS3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Portgroup %s requires %d pins. %d pins are already assigned. Select pins to assign from highlighted pins.   
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>48</Id>
+    <CDNUSR_DEFINE_NAME>IPMSG_ASSIGN_NO_PINS2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Portgroup %s requires %d pins. No pins are currently assigned. Select pins to assign from highlighted pins.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>49</Id>
+    <CDNUSR_DEFINE_NAME>IPMSG_ASSIGN_PORT_ALREADY_ASSIGNED2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Port %s is already assigned to pin %s. Deassign pin first.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>50</Id>
+    <CDNUSR_DEFINE_NAME>IPMSG_ASSIGN_PICK_PINS2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pick from highlighted pins to assign to %s %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>51</Id>
+    <CDNUSR_DEFINE_NAME>IPMSG_ASSIGN_NO_PINS_SELECTED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+No pins selected. Select from highlighted pins...
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>52</Id>
+    <CDNUSR_DEFINE_NAME>IPMSG_ASSIGN_NUM_PINS_SELECTED1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+%d pins selected for assign.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>53</Id>
+    <CDNUSR_DEFINE_NAME>IPMSG_ASSIGN_NO_ELIGIBLE_PINS2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Selected %s not eligible for assignment to %s. Select from highlighted pins to assign.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>54</Id>
+    <CDNUSR_DEFINE_NAME>IPMSG_ASSIGN_PIN_FAILED3</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Unable to assign pin %s to %s %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>55</Id>
+    <CDNUSR_DEFINE_NAME>IPMSG_ASSIGN_PIN_SUCCESS3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>    <Desc>
+Assigned pin %s to %s %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>56</Id>
+    <CDNUSR_DEFINE_NAME>IPMSG_ASSIGN_PORTGROUP_SUCCESS2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Assigned %d pins to group %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>57</Id>
+    <CDNUSR_DEFINE_NAME>IPMSG_ASSIGN_ALL_PORTS_ASSIGNED</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+All ports are now assigned. Assignment is complete.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>58</Id>
+    <CDNUSR_DEFINE_NAME>IPMSG_ASSIGN_CMD_FAILED2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to assign pin %s to %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>59</Id>
+    <CDNUSR_DEFINE_NAME>IPMSG_ASSIGN_CMD_NUM_FAILS2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to assign %d pins to %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>60</Id>
+    <CDNUSR_DEFINE_NAME>IPMSG_ASSIGN_CMD_SUCCESS</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Assigned %d pins to %s.      
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>61</Id>
+    <CDNUSR_DEFINE_NAME>IPMSG_NO_GROUPS_TO_SWAP1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+No portgroups can be swapped with %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>62</Id>
+    <CDNUSR_DEFINE_NAME>IPMSG_SWAP_PICK_GROUP1</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select from highlighted groups to swap with %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>63</Id>
+    <CDNUSR_DEFINE_NAME>IPMSG_SWAP_CANNOT_RUN</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Swap portgroups command cannot run on components or ports.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>64</Id>
+    <CDNUSR_DEFINE_NAME>IPMSG_SELECTION_INVALID2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Invalid selection made. Select from highlighted %s to %s.      
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>65</Id>
+    <CDNUSR_DEFINE_NAME>IPMSG_SWAP_SUCCESS2</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Pins of portgroup %s swapped with pins of portgroup %s.      
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>66</Id>
+    <CDNUSR_DEFINE_NAME>IPMSG_UNASSIGN_NO_PINS2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+No more pins to deassign in %s %s.      
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>67</Id>
+    <CDNUSR_DEFINE_NAME>IPMSG_UNASSIGN_MAKE_PICK</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Select from highlighted pins to deassign.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>68</Id>
+    <CDNUSR_DEFINE_NAME>IPMSG_UNASSIGN_PORT_NOT_ASSIGNED1</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Port %s is not assigned.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>69</Id>
+    <CDNUSR_DEFINE_NAME>IPMSG_UNASSIGN_SUCCESS3</CDNUSR_DEFINE_NAME>
+    <Category>I
+      <Sub-Category>P</Sub-Category>
+    </Category>
+    <Desc>
+Deassigned pin %s from %s %s.      
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>70</Id>
+    <CDNUSR_DEFINE_NAME>IPMSG_UNASSIGN_FAIL3</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Failed to deassign pin %s from %s %s.      
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>71</Id>
+    <CDNUSR_DEFINE_NAME>IPMSG_NO_NEXT_GEN_LICENSE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+Interface Planner App Mode cannot run. Next Gen License required to run app mode on design with interfaces.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>72</Id>
+    <CDNUSR_DEFINE_NAME>IPMSG_PIN_ALREADY_ASSIGNED2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Cannot assign pin to net %s. Pin is already assigned to net %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>73</Id>
+    <CDNUSR_DEFINE_NAME>IPMSG_CANNOT_EDIT_LOGIC</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Cannot edit connectivity. Set 'logic_edit_enabled' environment variable to make connectivity changes first.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>74</Id>
+    <CDNUSR_DEFINE_NAME>IPMSG_CODESIGN_CANNOT_RUN_COMMAND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Database has codesign objects. This operation cannot be completed.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>75</Id>
+    <CDNUSR_DEFINE_NAME>BGAABS_POWER_PORT_NOT_MATCHING2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Port %s is on net %s, which is not a power/ground net. 
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>76</Id>
+    <CDNUSR_DEFINE_NAME>IPMSG_CANNOT_CHANGE_DRIVER_PIN_LOGIC</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Cannot change package net assignment on the pin of a driver. Setting 'logic_edit_enabled' will force an update of the die pin.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>77</Id>
+    <CDNUSR_DEFINE_NAME>IPMSG_FUNCTION_PIN_NOT_UNIQUE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Unable to find a unique function pin to assign.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>78</Id>
+    <CDNUSR_DEFINE_NAME>IPMSG_CANNOT_CHANGE_DIE_PIN_NET</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Assignment failed because the package net selected is not associated with any IC signal and there is no IC signal already assigned to the bump for the package net to become associated with. A package net is not allowed to be assigned to a bump of a co-design die if the bump has no signal assignment in the IC design. Specify an IC signal to assign to the bump along with the package net, or assign the package net to an existing bump with an IC signal already assigned.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>79</Id>
+    <CDNUSR_DEFINE_NAME>O2A_DB_CREATE_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Failed to create OrbitIO Database.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>80</Id>
+    <CDNUSR_DEFINE_NAME>O2A_DB_READ_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Failed to read OrbitIO Database from file '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>81</Id>
+    <CDNUSR_DEFINE_NAME>O2A_TOP_DEVICE_NOT_PACKAGE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      The top level OrbitIO Device is not a package.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>82</Id>
+    <CDNUSR_DEFINE_NAME>O2A_DEVICE_NOT_A_DIE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+      OrbitIO device '%s' is not a die.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>83</Id>
+    <CDNUSR_DEFINE_NAME>O2A_DEVICE_PROCESS_FAIL</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+      Failed to process OrbitIO devices.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>84</Id>
+    <CDNUSR_DEFINE_NAME>O2A_READ_GLOBAL_SETTINGS</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      Reading OrbitIO global settings.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>85</Id>
+    <CDNUSR_DEFINE_NAME>O2A_PROCESS_DEVICE</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      Processing OrbitIO device '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>86</Id>
+    <CDNUSR_DEFINE_NAME>O2A_DEVICE_DIE_ABSTRACT_WRITE</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      Writing out die abstract file for OrbitIO device '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>87</Id>
+    <CDNUSR_DEFINE_NAME>O2A_DIE_ABSTRACT_WRITE_OUT_SUCCESS</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      Die abstract file '%s' written out successfully.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>88</Id>
+    <CDNUSR_DEFINE_NAME>O2A_DIE_ABSTRACT_WRITE_OUT_FAIL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Failed to write out die abstract file for device '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>89</Id>
+    <CDNUSR_DEFINE_NAME>O2A_PROCESS_ORBIT_NETS_INFO</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      Processing nets for OrbitIO device '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>90</Id>
+    <CDNUSR_DEFINE_NAME>O2A_PROCESS_ORBIT_NETS_FAIL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Failed to process OrbitIO nets.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>91</Id>
+    <CDNUSR_DEFINE_NAME>O2A_PROCESS_ORBIT_BUNDLES_INFO</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      Processing bundles for OrbitIO device '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>92</Id>
+    <CDNUSR_DEFINE_NAME>O2A_PROCESS_ORBIT_BUNDLES_FAIL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Failed to process OrbitIO bundles.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>93</Id>
+    <CDNUSR_DEFINE_NAME>O2A_PROCESS_ORBIT_DEVICE_INFO</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      Processing OrbitIO device '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>94</Id>
+    <CDNUSR_DEFINE_NAME>O2A_PROCESS_ORBIT_DEVICE_FAIL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Failed to process OrbitIO device.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>95</Id>
+    <CDNUSR_DEFINE_NAME>O2A_PROCESS_ORBIT_PINS_INFO</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      Processing pins of OrbitIO device '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>96</Id>
+    <CDNUSR_DEFINE_NAME>O2A_ENV_VAR_NOT_SET</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Set the environment variable '%s' and point to OrbitIO install location.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>97</Id>
+    <CDNUSR_DEFINE_NAME>O2A_INSTALL_DIR_INFO</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      OrbitIO install directory is %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>98</Id>
+    <CDNUSR_DEFINE_NAME>O2A_INSTALL_DIR_INCORRECT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Invalid OrbitIO install directory '%s' in environment variable '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>99</Id>
+    <CDNUSR_DEFINE_NAME>O2A_PICK_ORBIT_FILE_INFO</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      Pick the OrbitIO file to import.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>100</Id>
+    <CDNUSR_DEFINE_NAME>O2A_ORBIT_FILE_PICKED</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      Importing OrbitIO file '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>101</Id>
+    <CDNUSR_DEFINE_NAME>O2A_ORBIT_FILE_NOT_PICKED</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      No OrbitIO file picked.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>102</Id>
+    <CDNUSR_DEFINE_NAME>O2A_ORBIT_READ_INFO</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      OrbitIO database processed in %d seconds.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>103</Id>
+    <CDNUSR_DEFINE_NAME>O2A_ORBIT_IMPORT_SUCCESS_INFO</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      OrbitIO import command finished successfully. Design updated in %d seconds.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>104</Id>
+    <CDNUSR_DEFINE_NAME>O2A_SIP_CODESIGN_DIE_CREATE</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      Creating co-design die in SiP for OrbitIO device %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>105</Id>
+    <CDNUSR_DEFINE_NAME>O2A_SIP_CODESIGN_DIE_CREATE_SUCCESS</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      Codesign die created in %d seconds.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>106</Id>
+    <CDNUSR_DEFINE_NAME>O2A_SIP_CODESIGN_DIE_CREATE_FAIL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Failed to create co-design die.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>107</Id>
+    <CDNUSR_DEFINE_NAME>O2A_SIP_COMP_DEF_CREATE_INFO</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      Creating Component and Symbol Definitions in SiP for OrbitIO device %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>108</Id>
+    <CDNUSR_DEFINE_NAME>O2A_SIP_COMP_CREATE_SUCCESS</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      Components and Symbols successfully created.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>109</Id>
+    <CDNUSR_DEFINE_NAME>O2A_SIP_COMP_CREATE_FAIL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Failed to create Components and Symbols.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>110</Id>
+    <CDNUSR_DEFINE_NAME>O2A_SIP_NET_CREATE_INFO</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      Creating nets and assigning pins for component '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>111</Id>
+    <CDNUSR_DEFINE_NAME>O2A_SIP_SYM_DEF_CREATE_FAIL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Symbol definition creation for %s failed with message %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>112</Id>
+    <CDNUSR_DEFINE_NAME>O2A_ORBIT_LAYER_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Failed to process layer stackup for OrbitIO device '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>113</Id>
+    <CDNUSR_DEFINE_NAME>O2A_JVM_NOT_FOUND</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Java Virtual Machine is not found in %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>114</Id>
+    <CDNUSR_DEFINE_NAME>O2A_JVM_NOT_LOADED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Unable to load Java Virtual Machine from %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>115</Id>
+    <CDNUSR_DEFINE_NAME>O2A_JVM_LOADED_SUCCESS</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      Loaded Java Virtual Machine from %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>116</Id>
+    <CDNUSR_DEFINE_NAME>O2A_SIP_COMP_UPDATE</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      Updating Allegro component %s from Orbit design.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>117</Id>
+    <CDNUSR_DEFINE_NAME>O2A_SIP_COMP_UPDATE_SUCCESS</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      Updated Allegro component %s from Orbit design successfully.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>118</Id>
+    <CDNUSR_DEFINE_NAME>O2A_SIP_COMP_UPDATE_FAIL</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      Failed to update Allegro component %s from Orbit design.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>119</Id>
+    <CDNUSR_DEFINE_NAME>O2A_PIN_NET_CREATE_UPDATE</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      Created net %s and updated on pin %s.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>120</Id>
+    <CDNUSR_DEFINE_NAME>O2A_ORBIT_VERSION_INFO</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      Using OrbitIO build '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>121</Id>
+    <CDNUSR_DEFINE_NAME>O2A_ORBIT_SELECT_DEVICE</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      Select OrbitIO devices to import using tree view.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>122</Id>
+    <CDNUSR_DEFINE_NAME>O2A_ORBIT_CANNOT_CLICK_NODE</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      %s can be selected / deselected only if parent device is selected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>123</Id>
+    <CDNUSR_DEFINE_NAME>O2A_ORBIT_CANNOT_SELECT_BUNDLE</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      Individual bundles cannot be selected / deselected.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>124</Id>
+    <CDNUSR_DEFINE_NAME>O2A_ORBIT_BUNDLES_SELECTED</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+      Importing Orbit Bundles will delete existing bundles in Allegro.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>125</Id>
+    <CDNUSR_DEFINE_NAME>O2A_NO_DEVICE_IN_DESIGN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      No %s device in Orbit Design.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>126</Id>
+    <CDNUSR_DEFINE_NAME>O2A_PIN_MOVE_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Failed to move pin '%s' to (%d, %d).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>127</Id>
+    <CDNUSR_DEFINE_NAME>O2A_PIN_MOVE_SUCCESS</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      Moved pin '%s' to (%d, %d).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>128</Id>
+    <CDNUSR_DEFINE_NAME>O2A_PIN_DELETE_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Failed to delete pins.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>129</Id>
+    <CDNUSR_DEFINE_NAME>O2A_PIN_DELETE_SUCCESS</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      Pins deleted.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>130</Id>
+    <CDNUSR_DEFINE_NAME>O2A_PIN_TO_BE_DELETED</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      Pin '%s' slated for deletion.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>131</Id>
+    <CDNUSR_DEFINE_NAME>O2A_PIN_ASSIGNMENT_CHANGED</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      Changed pin '%s' assignment from '%s' to '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>132</Id>
+    <CDNUSR_DEFINE_NAME>O2A_PIN_DEASSIGNED</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      Removed assignment from pin '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>133</Id>
+    <CDNUSR_DEFINE_NAME>O2A_CANNOT_CREATE_SYMBOL_WITH_NO_PINS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Cannot create symbol '%s' because it has no pins.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>134</Id>
+    <CDNUSR_DEFINE_NAME>O2A_PIN_ADD_SUCCESS</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      Pin '%s' added to symbol '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>135</Id>
+    <CDNUSR_DEFINE_NAME>O2A_ORBIT_DEVICE_PICK_CANCELLED</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      Orbit Device selection canceled.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>136</Id>
+    <CDNUSR_DEFINE_NAME>O2A_LAYER_MAPPING_CANCELLED</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      Orbit to Allegro layer mapping canceled.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>137</Id>
+    <CDNUSR_DEFINE_NAME>O2A_ORBIT_BUNDLE_NOT_VALID</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+      Bundle '%s' may not be a valid Orbit bundle. It may not be imported correctly into Allegro.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>138</Id>
+    <CDNUSR_DEFINE_NAME>O2A_ORBIT_RATLINE_NOT_ADDED_TO_BUNDLE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      No ratline found between pins '%s' and '%s' and was not added to bundle '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>139</Id>
+    <CDNUSR_DEFINE_NAME>O2A_ORBIT_BUNDLE_NOT_CREATED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Bundle '%s' was not created in Allegro because it contains no ratlines.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>140</Id>
+    <CDNUSR_DEFINE_NAME>O2A_ORBIT_BUNDLE_CREATED_SUCCESS</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      Bundle '%s' created with %d ratlines.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>141</Id>
+    <CDNUSR_DEFINE_NAME>O2A_MULTIPLE_PACKAGES_SELECTED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Only one %s can be imported into Allegro.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>142</Id>
+    <CDNUSR_DEFINE_NAME>O2A_ORBIT_RATLINE_NET_IS_VOLTAGE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      The net on ratline between pins '%s' and '%s' is a voltage net and was not added to bundle '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>143</Id>
+    <CDNUSR_DEFINE_NAME>O2A_MERGED_BUNDLE_ALREADY_EXISTS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Unable to import bundles because bundle '%s' has a previously merged bundle. Either delete existing merged bundles or run command with remove all existing bundles option.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>144</Id>
+    <CDNUSR_DEFINE_NAME>O2A_DUPLICATE_PIN_NUMBERS_IN_ORBIT</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      The OrbitIO design cannot be imported because pin '%s' has a duplicate in device '%s'. Ensure that pin numbers are unique in a device before importing it. Choose Device Template - Matrix Rename Descendant Pins from the pop-up menu of the device in OrbitIO to make pin numbers unique.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>145</Id>
+    <CDNUSR_DEFINE_NAME>IPMSG_NO_IC_NET_FOR_PKG_NET2</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Net assignment for bump '%s' failed because package net '%s' is not associated with any IC Verilog signal.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>146</Id>
+    <CDNUSR_DEFINE_NAME>O2A_ORBIT_OVERRIDE_NET_SCHEDULE</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+	  Update net schedule for net '%s' from pin '%s' to pin '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>147</Id>
+    <CDNUSR_DEFINE_NAME>O2A_ORBIT_BUNDLE_LAYER_IS_PLANE</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+	  Bundle layer '%s' is not imported for bundle '%s' since it is a plane layer.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>148</Id>
+    <CDNUSR_DEFINE_NAME>O2A_ORBIT_CREATE_PADSTACK</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+	  Create padstack '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>149</Id>
+    <CDNUSR_DEFINE_NAME>O2A_ORBIT_REUSE_PADSTACK</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+	  Reuse padstack '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>150</Id>
+    <CDNUSR_DEFINE_NAME>O2A_ORBIT_OVERRIDE_PADSTACK</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+	  Override padstack '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>151</Id>
+    <CDNUSR_DEFINE_NAME>O2A_PIN_SETPSTK_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Failed to set padstack '%s' to pin '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>152</Id>
+    <CDNUSR_DEFINE_NAME>O2A_PIN_SETPSTK_SUCCESS</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      Set padstack '%s' to pin '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>153</Id>
+    <CDNUSR_DEFINE_NAME>O2A_PIN_SETUSE_FAILED</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Failed to set pin use '%s' to pin '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>154</Id>
+    <CDNUSR_DEFINE_NAME>O2A_PIN_SETUSE_SUCCESS</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      Set pin use '%s' to pin '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>155</Id>
+    <CDNUSR_DEFINE_NAME>O2A_SIP_DEL_COMPINST_INFO</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+      Delete redundant component instance '%s'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>156</Id>
+    <CDNUSR_DEFINE_NAME>O2A_PROCESS_ORBIT_OBJECT_FAIL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Cannot import OrbitIO design because parsing '%s' failed due to illegal geometry in design. Fix corresponding layershape in the design and use OrbitIO installed with the Allegro layout editor to translate the design.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>157</Id>
+    <CDNUSR_DEFINE_NAME>O2A_ORBIT_VOID_RECREATE_SUCCESS</CDNUSR_DEFINE_NAME>
+    <Category>I</Category>
+    <Desc>
+	  Successfully recreated void near (%s, %s) for metal (layer:%s, net:%s).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>158</Id>
+    <CDNUSR_DEFINE_NAME>O2A_ORBIT_VOID_CREATE_FAIL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Failed to create void near (%s, %s) for metal (layer:%s net:%s) because of parsing failure due to illegal geometry in the imported OrbitIO design. Fix corresponding layershape in the design.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>159</Id>
+    <CDNUSR_DEFINE_NAME>O2A_ORBIT_METAL_CREATE_FAIL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Failed to create metal (layer:%s net:%s) because of parsing failure due to illegal geometry in the imported OrbitIO design. Fix corresponding layershape in the design.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+  <Msg>
+    <Id>160</Id>
+    <CDNUSR_DEFINE_NAME>O2A_ORBIT_IMPORT_CONSTRAINT_WARNING</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+      Set up necessary constraints for the imported design in Constraint Manager before making any changes.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>161</Id>
+    <CDNUSR_DEFINE_NAME>ALGRO2MWO_LIBRARIAN_LICENSE_CHECKOUT_FAIL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Cannot run Allegro to Unified Library export utility because Allegro Library Authoring license is not available.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+
+  <Msg>
+    <Id>162</Id>
+    <CDNUSR_DEFINE_NAME>ALGRO2MWO_LIBRARIAN_LICENSE_CHECKIN_FAIL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Failed to check in Allegro Library Authoring license.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>163</Id>
+    <CDNUSR_DEFINE_NAME>ALGRO2MWO_UNABLE_TO_OPEN_FILE</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Cannot import because file '%s' is either missing or incorrect.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>164</Id>
+    <CDNUSR_DEFINE_NAME>ALGRO2MWO_UNABLE_TO_OPENACCESS_DESIGN</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+     Cannot open Design Unified Library because one or all of the following are invalid: Library('%s'), Cell('%s'), or View ('%s').
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>165</Id>
+    <CDNUSR_DEFINE_NAME>ALGRO2MWO_OAINSTANCE_DESIGN_NULL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Cannot import because design not found for '%s'. Check the Component Unified Library path in the Design Unified Library (cds.lib).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>166</Id>
+    <CDNUSR_DEFINE_NAME>ALGRO2MWO_OAINSTANCE_SYMBOLINST_NULL</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+	  Cannot place instance '%s' (%s) (Tech:%s) with reference designator '%s' because origin (X:%s  Y:%s) is outside design extents (MinX:%s,MinY:%s,MaxX:%s,MaxY:%s).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>167</Id>
+    <CDNUSR_DEFINE_NAME>ALGRO2MWO_OA_PIN_MISSING</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+      Cannot import because pin '%s' does not match between the files specified in Component Unified Library and Design Unified Library. Check IFF import and run import logic.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>168</Id>
+    <CDNUSR_DEFINE_NAME>ALGRO2MWO_PAD_STACK_MISSING</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Could not find padstack '%s'. Specify path for padpath and psmpath libraries.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>169</Id>
+    <CDNUSR_DEFINE_NAME>ALGRO2MWO_FOOTPRINT_CREATION_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>W</Category>
+    <Desc>
+      Unable to create footprint for instance %s (%s).
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>170</Id>
+    <CDNUSR_DEFINE_NAME>ALGRO2MWO_INVALID_ARGUMENTS</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Terminating program because of invalid arguments. Ensure path does not have spaces.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>171</Id>
+    <CDNUSR_DEFINE_NAME>ALGRO2MWO_COMPONENT_UNIFIED_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Invalid Component Unified Library (cds.lib): %s	  
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>172</Id>
+    <CDNUSR_DEFINE_NAME>ALGRO2MWO_DESIGN_UNIFIED_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Invalid Design Unified Library (cds.lib): %s
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>173</Id>
+    <CDNUSR_DEFINE_NAME>ALGRO2MWO_MISSING_FOOTPRINT_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Footprint '%s' not available for component '%s'. Ensure library paths are correctly specified for 'padpath' and 'psmpath'.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+  
+  <Msg>
+    <Id>174</Id>
+    <CDNUSR_DEFINE_NAME>ALGRO2MWO_UNIFIED_LIBRARY_CREATION_ERROR</CDNUSR_DEFINE_NAME>
+    <Category>E</Category>
+    <Desc>
+      Unable to access Unified Library '%s' from '%s'. Ensure the path is valid and without any spaces.
+    </Desc>
+    <Output>C</Output>
+  </Msg>
+
+</MsgFile>
+

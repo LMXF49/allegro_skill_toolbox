@@ -2,16 +2,18 @@
 ; 文件名    : modules/utilities/util_downrev166.il
 ; 作者      : ASTB Team
 ; 创建日期  : 2026-10-04
-; 版本      : 1.0
+; 版本      : 1.1
 ; 功能描述  : PCB 降版本保存为 16.6（全新重写版，取代 util_downrev17）。
 ;             主路（17.2/17.4 会话）：调用工具箱自带免补丁运行时
 ;             tools/downrev166_rt（allegro_downrev_library.exe +
 ;             自有 DLL，转换时该目录置顶 PATH；DOWNREV_17_TO_16=1
 ;             放开 brd/dra），复制 <板名>_166.brd 副本后原地转
 ;             16.6，原文件不动。
-;             24.x/25.x 会话：两跳——新实例批处理（当前版本
+;             24.x/25.x 会话：三跳——新实例批处理（当前版本
 ;             allegro.exe -s 回放脚本开临时副本，原生 Downrev
-;             对话框选 "Save design to 17.4" 存中间文件）再走主路。
+;             对话框选 "Save design to 17.4" 存 22.1 血统中间文件）
+;             -> 17.4-2019 实例对话框 save6 重存 S019 血统（免补丁
+;             exe 只认 S019, 22.1 血统报 32000016 实测）-> 主路转。
 ;             与旧版(util_downrev17 v3.x)差异：
 ;             1) 拆除会话内宏回放兜底，不再占用用户会话弹对话框
 ;             2) 失败不弹窗：仅命令行留痕，原因留在输出目录同名 .log
@@ -24,9 +26,16 @@
 ;             机制（免补丁运行时+PATH 置顶、临时副本避开 .lck 与空格
 ;             路径、新实例批处理第一跳），拆除会话内回放兜底与数据
 ;             桥死代码；失败路径全部改为命令行留痕不弹窗
+;   2026-10-04 v1.1 ASTB Team 24.x/25.x 链路加 S019 中间跳（用户
+;             实机反馈 24.1 另存后第二跳失败：24.x 对话框存的 17.4
+;             为 22.1 血统, 免补丁 exe 拒转 32000016, 实测仅认 17.4
+;             对话框 save6 的 S019 血统）；未装 SPB_17.4 时降级
+;             为直转并命令行告警
 ; 实机待验证:
 ;   1) 24.1/25.1 新实例批处理第一跳（downrev 对话框 save7 + fillin
 ;      喂路径）：旧版 24.1 S006 验证过，25.1 未回归
+;   2) 17.4-2019 实例中间跳（save6 重存 S019）：旧版 v3.2 实测过,
+;      本重写版未回归
 ;========================================================================
 
 ;------------------------------------------------------------------------
@@ -297,12 +306,123 @@ procedure( _DR166_HopTo174(dir name brd)
 )
 
 ;------------------------------------------------------------------------
+; 函数名  : _DR166_FindMid174Allegro
+; 功能    : 定位 17.4-2019 安装的 allegro.exe（24.x 三跳中间跳用）
+; 返回值  : exe 路径 / nil
+; 备注    : 24.x 原生对话框存出的 17.4 是 22.1 血统，免补丁 exe 不认
+;           (32000016, 实测)；必须经 17.4-2019 对话框 save6 重存为
+;           S019 血统后才转得动
+;------------------------------------------------------------------------
+procedure( _DR166_FindMid174Allegro()
+  prog((roots r cand)
+    roots = nil
+    foreach( d '("D:/Cadence" "C:/Cadence" "E:/Cadence" "F:/Cadence" "G:/Cadence")
+      roots = append1(roots strcat(d "/SPB_17.4"))
+    )
+    foreach( r roots
+      foreach( cand list(
+          strcat(r "/tools/bin/allegro.exe")
+          strcat(r "/tools/pcb/bin/allegro.exe"))
+        when( isFile(cand)
+          return(cand)
+        )
+      )
+    )
+    return(nil)
+  )
+)
+
+;------------------------------------------------------------------------
+; 函数名  : _DR166_MidHop174
+; 功能    : 中间跳：起 17.4-2019 实例回放其 Downrev 对话框 save6
+;           ("Save design to 17.4 (17.4-2019)"), 把 22.1 血统的
+;           17.4 中间文件重存为 S019 血统，免补丁 exe 才认
+; 参数    : dir/name - 工作目录/设计名; brd174 - hop1 产出的 17.4 文件;
+;           aexe - 17.4 实例 allegro.exe 路径
+; 返回值  : S019 血统 17.4 文件路径 / nil(失败)
+; 备注    : 与第一跳同纪律——临时副本避开锁与空格/中文路径, 非阻塞
+;           启动 + 120s 轮询, 超时/失败清理临时件并命令行留痕;
+;           bat 内把 CDSROOT 指到 17.4 根, 避免继承本会话 CDSROOT
+;------------------------------------------------------------------------
+procedure( _DR166_MidHop174(dir name brd174 aexe)
+  prog((pathS tmpIn tmpS scrPath batPath port n ok r174)
+    pathS = _DR166_OutputPath(dir name "174s")
+    tmpIn = strcat(axlTempDirectory() "/" name "_midin.brd")
+    tmpS   = strcat(axlTempDirectory() "/" name "_mids.brd")
+    foreach( f list(tmpIn tmpS)
+      when( isFile(f) errset(deleteFile(f) t) )
+    )
+    ok = errset(axlOSFileCopy(brd174 tmpIn nil) t)
+    unless( and(ok car(ok))
+      axlMsgPut(strcat("Downrev166: 中间跳输入复制失败: " tmpIn))
+      return(nil)
+    )
+    ;; 回放脚本: 17.4 对话框 save6 重存 S019, fillin 喂路径, exit 退出
+    scrPath = strcat(axlTempDirectory() "/dr174_mid.scr")
+    port = outfile(scrPath "w")
+    unless( port
+      axlMsgPut("Downrev166: 无法创建中间跳脚本文件")
+      return(nil)
+    )
+    fprintf(port "scriptmode +i\n")
+    fprintf(port "downrev\n")
+    fprintf(port "setwindow form.downrev\n")
+    fprintf(port "FORM downrev save6\n")
+    fprintf(port "FORM downrev save\n")
+    fprintf(port "fillin \"%s\"\n" tmpS)
+    fprintf(port "exit\n")
+    close(port)
+    ;; 起 17.4 实例前把 CDSROOT 指到 17.4 根(会话 CDSROOT 可能指别版)
+    r174 = aexe
+    when( rexMatchp("/tools/bin/allegro.exe$" r174)
+      r174 = substring(r174 1 strlen(r174) - strlen("/tools/bin/allegro.exe")) )
+    when( rexMatchp("/tools/pcb/bin/allegro.exe$" r174)
+      r174 = substring(r174 1 strlen(r174) - strlen("/tools/pcb/bin/allegro.exe")) )
+    batPath = strcat(axlTempDirectory() "/dr174_mid.bat")
+    port = outfile(batPath "w")
+    unless( port
+      axlMsgPut("Downrev166: 无法创建中间跳 bat 文件")
+      return(nil)
+    )
+    fprintf(port "@echo off\r\n")
+    fprintf(port "set \"CDSROOT=%s\"\r\n" r174)
+    fprintf(port "\"%s\" -s \"%s\" \"%s\"\r\n" aexe scrPath tmpIn)
+    close(port)
+    axlMsgPut("中间跳: 17.4 实例重存 S019 血统(约 1 分钟, 请稍候)...")
+    ASTB_DebugLog(strcat("Downrev166: midhop exe=" aexe " in=" tmpIn))
+    system(strcat("cmd /c start \"\" \"" batPath "\""))
+    n = 0
+    while( and(null(isFile(tmpS)) n < 120)
+      sleep(1)
+      n = n+1
+    )
+    unless( isFile(tmpS)
+      axlMsgPut("Downrev166: 中间跳超时(120s 未出 S019 文件), 已清理临时件")
+      foreach( f list(tmpIn scrPath batPath)
+        errset(deleteFile(f) t)
+      )
+      return(nil)
+    )
+    ok = errset(axlOSFileCopy(tmpS pathS nil) t)
+    unless( and(ok car(ok))
+      axlMsgPut(strcat("Downrev166: S019 文件拷回失败: " pathS))
+      return(nil)
+    )
+    foreach( f list(tmpIn tmpS scrPath batPath)
+      errset(deleteFile(f) t)
+    )
+    axlMsgPut("中间跳完成(S019 血统)。")
+    return(pathS)
+  )
+)
+
+;------------------------------------------------------------------------
 ; 函数名  : _DR166_Main
 ; 功能    : 降版本主流程：校验 -> 确认 -> 保存 -> 17.x 直转 / 24.x 两跳
 ; 返回值  : t 成功 / nil 失败或取消
 ;------------------------------------------------------------------------
 procedure( _DR166_Main()
-    prog((dir name brd exe ver path174)
+    prog((dir name brd exe ver path174 a174 pathS)
         name = axlCurrentDesign()
         dir  = getWorkingDir()
         brd  = strcat(dir "/" name ".brd")
@@ -334,11 +454,22 @@ procedure( _DR166_Main()
             ;; 17.2/17.4 会话：免补丁 exe 直转
             return( _DR166_RunExe(exe dir name brd) )
         else
-            ;; 23.1/24.1/25.1 等会话：新实例批处理存 17.4 中间文件再转
+            ;; 23.1/24.1/25.1 等会话：hop1 存 17.4(22.1 血统)
+            ;; -> 装了 17.4-2019 时中间跳重存 S019 血统
+            ;; -> 免补丁 exe 转 16.6（全程三跳）
             path174 = _DR166_HopTo174(dir name brd)
             unless( path174 return(nil) )
-            axlMsgPut("第二跳: 17.4 -> 16.6 转换中...")
-            return( _DR166_RunExe(exe dir name path174) )
+            a174 = _DR166_FindMid174Allegro()
+            if( a174 then
+                pathS = _DR166_MidHop174(dir name path174 a174)
+                unless( pathS return(nil) )
+            else
+                axlMsgPut("Downrev166: 未找到 SPB_17.4 安装, 跳过 S019 中间跳")
+                axlMsgPut("Downrev166: 22.1 血统的 17.4 可能转换失败(32000016), 失败请改用 17.4 会话执行")
+                pathS = path174
+            )
+            axlMsgPut("最后一跳: 17.4 -> 16.6 转换中...")
+            return( _DR166_RunExe(exe dir name pathS) )
         )
     )
 )

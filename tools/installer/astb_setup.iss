@@ -62,6 +62,7 @@ Source: "{#SkillSrc}\python\*"; DestDir: "{app}\skill\python"; Excludes: "*\__py
 Source: "{#SkillSrc}\tools\*.java"; DestDir: "{app}\skill\tools"; Flags: ignoreversion skipifsourcedoesntexist
 Source: "{#SkillSrc}\tools\*.bat"; DestDir: "{app}\skill\tools"; Flags: ignoreversion skipifsourcedoesntexist
 Source: "{#SkillSrc}\tools\downrev166_rt\*"; DestDir: "{app}\skill\tools\downrev166_rt"; Flags: ignoreversion recursesubdirs skipifsourcedoesntexist
+Source: "{#SkillSrc}\tools\adl_patched.exe"; DestDir: "{app}\skill\tools"; Flags: ignoreversion skipifsourcedoesntexist
 Source: "{#SkillSrc}\AGENTS.md"; DestDir: "{app}\skill"; Flags: ignoreversion skipifsourcedoesntexist
 ; canonical ilinit block template (studio migration wizard reads this at runtime)
 Source: "{#SkillSrc}\core\ilinit_block.il"; DestDir: "{app}\skill\core"; Flags: ignoreversion skipifsourcedoesntexist

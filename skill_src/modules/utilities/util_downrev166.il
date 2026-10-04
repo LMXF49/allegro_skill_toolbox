@@ -2,7 +2,7 @@
 ; 文件名    : modules/utilities/util_downrev166.il
 ; 作者      : ASTB Team
 ; 创建日期  : 2026-10-04
-; 版本      : 1.3
+; 版本      : 1.4
 ; 功能描述  : PCB 降版本保存为 16.6（全新重写版，取代 util_downrev17）。
 ;             主路（17.2/17.4 会话）：调用工具箱自带免补丁运行时
 ;             tools/downrev166_rt（allegro_downrev_library.exe +
@@ -14,13 +14,20 @@
 ;             对话框选 "Save design to 17.4" 存中间文件，再由主路
 ;             exe 直转 16.6。注意：24.x 写出的 17.4 是 dbstat 仍
 ;             显示 17.4 的新修订，2019 时代的免补丁 exe 可能打不
-;             开（32000016, 实测），失败时命令行自动识别并给手工重存指引。
+;             开（32000016, 实测）。
+;             v1.4 起双转换器：主转换器为电路精灵/阿狸狗免补丁构
+;             建（S019 直通、数据干净）；第二跳报 32000016 时自动
+;             回落官方 17.4 adl 补丁版 adl_patched（11 字节补丁可
+;             复现, 配方见 _DR166_FindADLPatched 注释）重转，并警告
+;             其底面贴片引脚层搬家顶部的已知风险，转完需在 16.6
+;             核对底面焊盘。
 ;             与旧版(util_downrev17 v3.x)差异：
 ;             1) 拆除会话内宏回放兜底，不再占用用户会话弹对话框
 ;             2) 失败不弹窗：仅命令行留痕，原因留在输出目录同名 .log
 ;             3) 16.6 会话内直接提示无需转换
 ; 依赖模块  : core/utils.il、core/trans.il；
 ;             tools/downrev166_rt/（免补丁转换运行时 exe+DLL）
+;             tools/adl_patched.exe（可选, 32000016 自动回落兜底）
 ; 编码      : GBK（含中文注释）
 ; 修改记录  :
 ;   2026-10-04 v1.0 ASTB Team 全新重写上线：保留旧版验证过的三个核心
@@ -42,11 +49,19 @@
 ;             两跳直通；删 _DR166_FindMid174Allegro/_DR166_MidHop174;
 ;             第二跳失败时自动识别日志 32000016(24.x 新修订拒转)并
 ;             给手工重存指引，其余失败保持通用提示
+;   2026-10-04 v1.4 ASTB Team 双转换器接线：主转换器 32000016 拒转
+;             时自动回落 tools/adl_patched.exe 重转（需 SPB_17.4
+;             DLL 环境, 警告底面焊盘风险）；破解配方实证可复现：
+;             官方 17.4 allegro_downrev_library.exe 的 file offset
+;             315270 起 5 字节 + 315278 起 6 字节改 0x90(NOP 掉
+;             SYExit 闸门), 产物 md5=90867801dcefb88cdc1de7bf73a1e07e
 ; 实机待验证:
 ;   1) 24.1/25.1 新实例批处理第一跳（downrev 对话框 save7 + fillin
 ;      喂路径）：旧版 24.1 S006 验证过，25.1 未回归
 ;   2) 17.4-2019 实例中间跳（save6 重存 S019）：旧版 v3.2 实测过,
-;      本重写版未回归
+;      本重写版未回归（v1.3 起中间跳已撤, 此条仅存档）
+;   3) adl_patched 回落路径：仅验证过 total converted=1 与日志,
+;      底面焊盘是否翻转须在 16.6 实机核对（RK3588 旧版实测翻过）
 ;========================================================================
 
 ;------------------------------------------------------------------------
@@ -91,6 +106,51 @@ procedure( _DR166_FindExe()
     ASTB_DebugLog("Downrev166: downrev166_rt runtime NOT found")
     return(nil)
   )
+)
+
+;------------------------------------------------------------------------
+; 函数名  : _DR166_FindADLPatched
+; 功能    : 定位官方 17.4 adl 补丁版（tools/adl_patched.exe, 兜底
+;           转换器）
+; 返回值  : exe 路径 / nil
+; 备注    : 主转换器（电路精灵/阿狸狗构建）认不得 24.x 新修订
+;           (32000016) 时回落用；已知风险：底面贴片引脚层可能搬到
+;           顶部（旧版 v3.1 RK3588 实测）, 故只作兜底并强制警告。
+;           破解配方可复现：官方 17.4 allegro_downrev_library.exe
+;           的 file offset 315270 起 5 字节与 315278 起 6 字节改
+;           0x90（NOP 掉 SYExit 闸门调用）, 产物 md5=
+;           90867801dcefb88cdc1de7bf73a1e07e
+;------------------------------------------------------------------------
+procedure( _DR166_FindADLPatched()
+    prog((cand)
+        cand = strcat(ASTB_GLOBAL->ToolboxPath "/tools/adl_patched.exe")
+        when( isFile(cand)
+            ASTB_DebugLog(strcat("Downrev166: adl_patched from toolbox " cand))
+            return(cand)
+        )
+        ASTB_DebugLog("Downrev166: adl_patched NOT found")
+        return(nil)
+    )
+)
+
+;------------------------------------------------------------------------
+; 函数名  : _DR166_FindSPB174Bin
+; 功能    : 定位 SPB_17.4 的 tools/bin（adl_patched 运行所需 DLL 环境）
+; 返回值  : bin 目录 / nil
+;------------------------------------------------------------------------
+procedure( _DR166_FindSPB174Bin()
+    prog((roots r)
+        roots = nil
+        foreach( d '("D:/Cadence" "C:/Cadence" "E:/Cadence" "F:/Cadence" "G:/Cadence")
+            roots = append1(roots strcat(d "/SPB_17.4/tools/bin"))
+        )
+        foreach( r roots
+            when( isDir(r)
+                return(r)
+            )
+        )
+        return(nil)
+    )
 )
 
 ;------------------------------------------------------------------------
@@ -163,8 +223,8 @@ procedure( _DR166_LogHasCode(logPath code)
 ; 备注    : 失败不弹窗：仅命令行留痕；exe 的具体原因写在输出目录
 ;           同名 .log（stdout 只有结论），需人工查看
 ;------------------------------------------------------------------------
-procedure( _DR166_RunExe(exe dir name brd)
-    prog((outPath batPath logPath port ok sideLog)
+procedure( _DR166_RunExe(exe dir name brd @optional (pathPrepend nil))
+    prog((outPath batPath logPath port ok sideLog pp)
         outPath = _DR166_OutputPath(dir name "166")
         ;; 先复制副本，exe 原地转换副本，源文件零风险
         ok = errset(axlOSFileCopy(brd outPath nil) t)
@@ -182,11 +242,16 @@ procedure( _DR166_RunExe(exe dir name brd)
         fprintf(port "@echo off\r\n")
         fprintf(port "set \"DOWNREV_17_TO_16=1\"\r\n")
         ;; 自带运行时必须配自有 DLL 目录置顶 PATH(实测混用 17.4 会话
-        ;; DLL 时 exe 静默退出, 零日志); 外部 exe 环境自管
-        when( rexMatchp("downrev166_rt" exe)
-          fprintf(port "set \"PATH=%s;%%PATH%%\"\r\n"
-                   strcat(ASTB_GLOBAL->ToolboxPath
-                           "/tools/downrev166_rt/tools/bin"))
+        ;; DLL 时 exe 静默退出, 零日志); pathPrepend 显式指定优先
+        pp = pathPrepend
+        unless( pp
+          when( rexMatchp("downrev166_rt" exe)
+            pp = strcat(ASTB_GLOBAL->ToolboxPath
+                         "/tools/downrev166_rt/tools/bin")
+          )
+        )
+        when( pp
+          fprintf(port "set \"PATH=%s;%%PATH%%\"\r\n" pp)
         )
         fprintf(port "\"%s\" \"%s\" > \"%s\" 2>&1\r\n" exe outPath logPath)
         close(port)
@@ -201,17 +266,17 @@ procedure( _DR166_RunExe(exe dir name brd)
         else
             ;; 具体原因在输出同名 .log，失败只命令行留痕不弹窗
             sideLog = strcat(substring(outPath 1 strlen(outPath)-4) ".log")
-            if( and(isFile(sideLog) _DR166_LogHasCode(sideLog "32000016")) then
-                axlMsgPut("降版本失败: 该 17.4 是 24.x 写入的新修订, 本转换器(17.4-2019) 打不开(32000016)")
-                axlMsgPut(strcat("手工处理: 用 17.4 打开 " brd " 经 File>Export>Downrev design 选 17.4(17.4-2019) 重存, 再于 17.4 会话重跑本命令"))
-            else
-                axlMsgPut(strcat("降版本失败: 设计含 16.6 不支持的特性, 详见 " sideLog))
-            )
             ;; 删除未转换的副本（它只是源文件的复制品，非转换产物）
             when( isFile(outPath)
                 errset(deleteFile(outPath) t)
             )
-            return(nil)
+            if( and(isFile(sideLog) _DR166_LogHasCode(sideLog "32000016")) then
+                ;; 24.x 新修订拒转: 交由 _DR166_RunExeSmart 决定回落重转
+                return('revfail)
+            else
+                axlMsgPut(strcat("降版本失败: 设计含 16.6 不支持的特性, 详见 " sideLog))
+                return(nil)
+            )
         )
     )
 )
@@ -344,6 +409,36 @@ procedure( _DR166_HopTo174(dir name brd)
 )
 
 ;------------------------------------------------------------------------
+; 函数名  : _DR166_RunExeSmart
+; 功能    : RunExe 智能包装：主转换器 32000016 拒转(24.x 新修订)
+;           时自动回落官方 17.4 adl 补丁版重转(SPB_17.4 DLL 环境),
+;           并警告其底面焊盘翻转风险; 兜底不可用时给手工指引
+; 参数    : 同 _DR166_RunExe
+; 返回值  : t 成功 / nil 失败
+;------------------------------------------------------------------------
+procedure( _DR166_RunExeSmart(exe dir name brd)
+    prog((r adl bin)
+        r = _DR166_RunExe(exe dir name brd)
+        when( equal(r t) return(t) )
+        unless( r == 'revfail
+            return(nil) )
+        ;; 主转换器认不得 24.x 新修订, 回落 adl 补丁版
+        axlMsgPut("主转换器拒转(32000016, 24.x 新修订), 尝试官方 17.4 adl 补丁版重转...")
+        adl = _DR166_FindADLPatched()
+        unless( adl
+            axlMsgPut("Downrev166: 未找到 tools/adl_patched.exe, 无法自动重转")
+            axlMsgPut(strcat("手工处理: 用 17.4 打开 " brd " 经 File>Export>Downrev design 选 17.4(17.4-2019) 重存, 再于 17.4 会话重跑本命令"))
+            return(nil) )
+        axlMsgPut("注意: adl 补丁版已知风险——底面贴片引脚层可能搬到顶层(实测), 转完请在 16.6 核对底面焊盘")
+        bin = _DR166_FindSPB174Bin()
+        unless( bin
+            axlMsgPut("Downrev166: 未找到 SPB_17.4 安装(DLL 环境), 无法用 adl 补丁版重转")
+            return(nil) )
+        return( _DR166_RunExe(adl dir name brd bin) )
+    )
+)
+
+;------------------------------------------------------------------------
 ; 函数名  : _DR166_Main
 ; 功能    : 降版本主流程：校验 -> 确认 -> 保存 -> 17.x 直转 / 24.x 两跳
 ; 返回值  : t 成功 / nil 失败或取消
@@ -379,14 +474,14 @@ procedure( _DR166_Main()
         ASTB_DebugLog(strcat("Downrev166: ver=" ver " exe=" exe))
         if( and(ver != "" rexMatchp("17" ver)) then
             ;; 17.2/17.4 会话：免补丁 exe 直转
-            return( _DR166_RunExe(exe dir name brd) )
+            return( _DR166_RunExeSmart(exe dir name brd) )
         else
             ;; 23.1/24.1/25.1 等会话：新实例批处理存 17.4 中间文件再转（两跳）
             ;; 24.x 写出的 17.4 是新修订, 第二跳可能 32000016, 失败按命令行指引手工处理
             path174 = _DR166_HopTo174(dir name brd)
             unless( path174 return(nil) )
             axlMsgPut("第二跳: 17.4 -> 16.6 转换中...")
-            return( _DR166_RunExe(exe dir name path174) )
+            return( _DR166_RunExeSmart(exe dir name path174) )
         )
     )
 )

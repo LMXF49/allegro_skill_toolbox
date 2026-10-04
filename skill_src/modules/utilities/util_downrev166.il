@@ -2,7 +2,7 @@
 ; 文件名    : modules/utilities/util_downrev166.il
 ; 作者      : ASTB Team
 ; 创建日期  : 2026-10-04
-; 版本      : 1.1
+; 版本      : 1.2
 ; 功能描述  : PCB 降版本保存为 16.6（全新重写版，取代 util_downrev17）。
 ;             主路（17.2/17.4 会话）：调用工具箱自带免补丁运行时
 ;             tools/downrev166_rt（allegro_downrev_library.exe +
@@ -11,9 +11,10 @@
 ;             16.6，原文件不动。
 ;             24.x/25.x 会话：三跳——新实例批处理（当前版本
 ;             allegro.exe -s 回放脚本开临时副本，原生 Downrev
-;             对话框选 "Save design to 17.4" 存 22.1 血统中间文件）
-;             -> 17.4-2019 实例对话框 save6 重存 S019 血统（免补丁
-;             exe 只认 S019, 22.1 血统报 32000016 实测）-> 主路转。
+;             对话框选 "Save design to 17.4" 存中间文件（dbstat
+;             显示 17.4，实为 24.x/22.1 代码线写入的新修订，
+;             17.4-2019 时代的免补丁 exe 打不开，32000016 实测）
+;             -> 17.4-2019 实例对话框 save6 重存 S019 修订 -> 主路。
 ;             与旧版(util_downrev17 v3.x)差异：
 ;             1) 拆除会话内宏回放兜底，不再占用用户会话弹对话框
 ;             2) 失败不弹窗：仅命令行留痕，原因留在输出目录同名 .log
@@ -28,9 +29,15 @@
 ;             桥死代码；失败路径全部改为命令行留痕不弹窗
 ;   2026-10-04 v1.1 ASTB Team 24.x/25.x 链路加 S019 中间跳（用户
 ;             实机反馈 24.1 另存后第二跳失败：24.x 对话框存的 17.4
-;             为 22.1 血统, 免补丁 exe 拒转 32000016, 实测仅认 17.4
-;             对话框 save6 的 S019 血统）；未装 SPB_17.4 时降级
-;             为直转并命令行告警
+;             为 24.x 写出的 17.4 新修订, 免补丁 exe 拒转 32000016,
+;             实测仅认 17.4 对话框 save6 的 S019 修订）；未装
+;             SPB_17.4 时降级为直转并命令行告警
+;   2026-10-04 v1.2 ASTB Team 术语与实证修正：用户指出 "17.4 (22.1)"
+;             指 22.1 可打开的 17.4、不是 22.1 版本——dbstat 实测
+;             对话框产物确为 17.4, 与 exe 日志抬头 "Downrev rev
+;             17.4 to rev 16.6" 一致；32000016 真因是 24.x 写入
+;             修订新于 17.4-2019(S019), 非版本不符。全文用语同步
+;             改述, 功能逻辑不变
 ; 实机待验证:
 ;   1) 24.1/25.1 新实例批处理第一跳（downrev 对话框 save7 + fillin
 ;      喂路径）：旧版 24.1 S006 验证过，25.1 未回归
@@ -309,9 +316,10 @@ procedure( _DR166_HopTo174(dir name brd)
 ; 函数名  : _DR166_FindMid174Allegro
 ; 功能    : 定位 17.4-2019 安装的 allegro.exe（24.x 三跳中间跳用）
 ; 返回值  : exe 路径 / nil
-; 备注    : 24.x 原生对话框存出的 17.4 是 22.1 血统，免补丁 exe 不认
+; 备注    : 24.x 原生对话框存出的 17.4 为 24.x 写入的新修订（dbstat
+;           仍显示 17.4）, 17.4-2019 时代的免补丁 exe 打不开
 ;           (32000016, 实测)；必须经 17.4-2019 对话框 save6 重存为
-;           S019 血统后才转得动
+;           S019 修订后才转得动
 ;------------------------------------------------------------------------
 procedure( _DR166_FindMid174Allegro()
   prog((roots r cand)
@@ -335,11 +343,11 @@ procedure( _DR166_FindMid174Allegro()
 ;------------------------------------------------------------------------
 ; 函数名  : _DR166_MidHop174
 ; 功能    : 中间跳：起 17.4-2019 实例回放其 Downrev 对话框 save6
-;           ("Save design to 17.4 (17.4-2019)"), 把 22.1 血统的
-;           17.4 中间文件重存为 S019 血统，免补丁 exe 才认
+;           ("Save design to 17.4 (17.4-2019)"), 把 24.x 新修订的
+;           17.4 中间文件重存为 S019 修订，免补丁 exe 才认
 ; 参数    : dir/name - 工作目录/设计名; brd174 - hop1 产出的 17.4 文件;
 ;           aexe - 17.4 实例 allegro.exe 路径
-; 返回值  : S019 血统 17.4 文件路径 / nil(失败)
+; 返回值  : S019 修订 17.4 文件路径 / nil(失败)
 ; 备注    : 与第一跳同纪律——临时副本避开锁与空格/中文路径, 非阻塞
 ;           启动 + 120s 轮询, 超时/失败清理临时件并命令行留痕;
 ;           bat 内把 CDSROOT 指到 17.4 根, 避免继承本会话 CDSROOT
@@ -388,7 +396,7 @@ procedure( _DR166_MidHop174(dir name brd174 aexe)
     fprintf(port "set \"CDSROOT=%s\"\r\n" r174)
     fprintf(port "\"%s\" -s \"%s\" \"%s\"\r\n" aexe scrPath tmpIn)
     close(port)
-    axlMsgPut("中间跳: 17.4 实例重存 S019 血统(约 1 分钟, 请稍候)...")
+    axlMsgPut("中间跳: 17.4 实例重存 S019 修订(约 1 分钟, 请稍候)...")
     ASTB_DebugLog(strcat("Downrev166: midhop exe=" aexe " in=" tmpIn))
     system(strcat("cmd /c start \"\" \"" batPath "\""))
     n = 0
@@ -411,7 +419,7 @@ procedure( _DR166_MidHop174(dir name brd174 aexe)
     foreach( f list(tmpIn tmpS scrPath batPath)
       errset(deleteFile(f) t)
     )
-    axlMsgPut("中间跳完成(S019 血统)。")
+    axlMsgPut("中间跳完成(S019 修订)。")
     return(pathS)
   )
 )
@@ -454,8 +462,8 @@ procedure( _DR166_Main()
             ;; 17.2/17.4 会话：免补丁 exe 直转
             return( _DR166_RunExe(exe dir name brd) )
         else
-            ;; 23.1/24.1/25.1 等会话：hop1 存 17.4(22.1 血统)
-            ;; -> 装了 17.4-2019 时中间跳重存 S019 血统
+            ;; 23.1/24.1/25.1 等会话：hop1 存 17.4(24.x 新修订)
+            ;; -> 装了 17.4-2019 时中间跳重存 S019 修订
             ;; -> 免补丁 exe 转 16.6（全程三跳）
             path174 = _DR166_HopTo174(dir name brd)
             unless( path174 return(nil) )
@@ -465,7 +473,7 @@ procedure( _DR166_Main()
                 unless( pathS return(nil) )
             else
                 axlMsgPut("Downrev166: 未找到 SPB_17.4 安装, 跳过 S019 中间跳")
-                axlMsgPut("Downrev166: 22.1 血统的 17.4 可能转换失败(32000016), 失败请改用 17.4 会话执行")
+                axlMsgPut("Downrev166: 24.x 存出的 17.4(新修订)可能转换失败(32000016), 失败请改用 17.4 会话执行")
                 pathS = path174
             )
             axlMsgPut("最后一跳: 17.4 -> 16.6 转换中...")

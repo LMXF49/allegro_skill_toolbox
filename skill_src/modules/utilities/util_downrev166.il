@@ -2,7 +2,7 @@
 ; 文件名    : modules/utilities/util_downrev166.il
 ; 作者      : ASTB Team
 ; 创建日期  : 2026-10-04
-; 版本      : 1.5
+; 版本      : 1.6
 ; 功能描述  : PCB 降版本保存为 16.6（全新重写版，取代 util_downrev17）。
 ;             主路（17.2/17.4 会话）：调用工具箱自带免补丁运行时
 ;             tools/downrev166_rt（allegro_downrev_library.exe +
@@ -20,13 +20,16 @@
 ;             _DR166_FindADLPatched 注释；24.x 新修订可读, 底面焊盘
 ;             层已实证正确）；adl 失败自动回落电路精灵/阿狸狗免补丁
 ;             构建。ASTB_DOWNREV_EXE 环境变量指定仍最优先。
+;             v1.6: adl_patched 迁入 rt bin 与自带 DLL 同目录,
+;             解除 SPB_17.4 安装依赖(免装 17.4 的机器可用, 已实证)。
 ;             与旧版(util_downrev17 v3.x)差异：
 ;             1) 拆除会话内宏回放兜底，不再占用用户会话弹对话框
 ;             2) 失败不弹窗：仅命令行留痕，原因留在输出目录同名 .log
 ;             3) 16.6 会话内直接提示无需转换
 ; 依赖模块  : core/utils.il、core/trans.il；
 ;             tools/downrev166_rt/（免补丁转换运行时 exe+DLL）
-;             tools/adl_patched.exe（可选, 32000016 自动回落兜底）
+;             tools/downrev166_rt/tools/bin/adl_patched.exe（主升转换器,
+;             与该目录 DLL 自包含, 免装 SPB_17.4）
 ; 编码      : GBK（含中文注释）
 ; 修改记录  :
 ;   2026-10-04 v1.0 ASTB Team 全新重写上线：保留旧版验证过的三个核心
@@ -60,6 +63,11 @@
 ;             17.4 adl 补丁版（读写面宽），电路精灵/阿狸狗免补丁构
 ;             建降为 adl 失败兜底；ASTB_DOWNREV_EXE 环境变量指定仍
 ;             最优先；adl 每次会话首用命令行提示抽查底面焊盘
+;   2026-10-04 v1.6 ASTB Team 解除 SPB_17.4 依赖：实证 adl_patched
+;             只吃 downrev166_rt 自带 DLL 即可转换新修订文件
+;             (D:\Temp\dr_test, total converted 1); adl 迁入
+;             tools/downrev166_rt/tools/bin/ 同目录解析抗 PATH 污染;
+;             删 _DR166_FindSPB174Bin(SPB_17.4 不再是任何前置)
 ; 实机待验证:
 ;   1) 24.1/25.1 新实例批处理第一跳（downrev 对话框 save7 + fillin
 ;      喂路径）：旧版 24.1 S006 验证过，25.1 未回归
@@ -131,32 +139,13 @@ procedure( _DR166_FindExe()
 ;------------------------------------------------------------------------
 procedure( _DR166_FindADLPatched()
     prog((cand)
-        cand = strcat(ASTB_GLOBAL->ToolboxPath "/tools/adl_patched.exe")
+        cand = strcat(ASTB_GLOBAL->ToolboxPath
+                "/tools/downrev166_rt/tools/bin/adl_patched.exe")
         when( isFile(cand)
             ASTB_DebugLog(strcat("Downrev166: adl_patched from toolbox " cand))
             return(cand)
         )
         ASTB_DebugLog("Downrev166: adl_patched NOT found")
-        return(nil)
-    )
-)
-
-;------------------------------------------------------------------------
-; 函数名  : _DR166_FindSPB174Bin
-; 功能    : 定位 SPB_17.4 的 tools/bin（adl_patched 运行所需 DLL 环境）
-; 返回值  : bin 目录 / nil
-;------------------------------------------------------------------------
-procedure( _DR166_FindSPB174Bin()
-    prog((roots r)
-        roots = nil
-        foreach( d '("D:/Cadence" "C:/Cadence" "E:/Cadence" "F:/Cadence" "G:/Cadence")
-            roots = append1(roots strcat(d "/SPB_17.4/tools/bin"))
-        )
-        foreach( r roots
-            when( isDir(r)
-                return(r)
-            )
-        )
         return(nil)
     )
 )
@@ -425,29 +414,27 @@ procedure( _DR166_HopTo174(dir name brd)
 ; 返回值  : t 成功 / nil 失败
 ;------------------------------------------------------------------------
 procedure( _DR166_RunExeSmart(exe dir name brd)
-    prog((r adl bin env)
+    prog((r adl rtbin env)
         ;; 1) 环境变量显式指定: 最优先, 只用它
         env = getShellEnvVar("ASTB_DOWNREV_EXE")
         when( and(env isFile(env))
             return( _DR166_RunExe(exe dir name brd) )
         )
-        ;; 2) 主转换器: 官方 17.4 adl 补丁版(需 SPB_17.4 DLL 环境)
+        ;; 2) 主转换器: 官方 17.4 adl 补丁版(配自带 rt DLL, 免装 SPB_17.4)
         adl = _DR166_FindADLPatched()
-        bin = _DR166_FindSPB174Bin()
-        if( and(adl bin) then
+        if( adl then
             unless( boundp('ASTB_DOWNREV166_ADLWARN) defvar(ASTB_DOWNREV166_ADLWARN nil) )
             unless( ASTB_DOWNREV166_ADLWARN
                 axlMsgPut("提示: 主转换器为官方 17.4 adl 补丁版, 底面贴片焊盘层转后建议在 16.6 抽查")
                 ASTB_DOWNREV166_ADLWARN = t
             )
-            r = _DR166_RunExe(adl dir name brd bin)
+            rtbin = strcat(ASTB_GLOBAL->ToolboxPath
+                    "/tools/downrev166_rt/tools/bin")
+            r = _DR166_RunExe(adl dir name brd rtbin)
             when( equal(r t) return(t) )
             axlMsgPut("Downrev166: adl 补丁版转换失败, 尝试免补丁运行时兜底...")
         else
-            when( null(adl)
-                axlMsgPut("Downrev166: 未找到 tools/adl_patched.exe, 直接用免补丁运行时") )
-            when( and(adl null(bin))
-                axlMsgPut("Downrev166: 未找到 SPB_17.4(DLL 环境), adl 无法运行, 直接用免补丁运行时") )
+            axlMsgPut("Downrev166: 未找到 adl_patched.exe, 直接用免补丁运行时")
         )
         ;; 3) 兜底: 电路精灵/阿狸狗免补丁构建
         r = _DR166_RunExe(exe dir name brd)

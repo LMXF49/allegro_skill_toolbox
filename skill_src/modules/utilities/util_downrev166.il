@@ -2,7 +2,7 @@
 ; 文件名    : modules/utilities/util_downrev166.il
 ; 作者      : ASTB Team
 ; 创建日期  : 2026-10-04
-; 版本      : 1.4
+; 版本      : 1.5
 ; 功能描述  : PCB 降版本保存为 16.6（全新重写版，取代 util_downrev17）。
 ;             主路（17.2/17.4 会话）：调用工具箱自带免补丁运行时
 ;             tools/downrev166_rt（allegro_downrev_library.exe +
@@ -15,12 +15,11 @@
 ;             exe 直转 16.6。注意：24.x 写出的 17.4 是 dbstat 仍
 ;             显示 17.4 的新修订，2019 时代的免补丁 exe 可能打不
 ;             开（32000016, 实测）。
-;             v1.4 起双转换器：主转换器为电路精灵/阿狸狗免补丁构
-;             建（S019 直通、数据干净）；第二跳报 32000016 时自动
-;             回落官方 17.4 adl 补丁版 adl_patched（11 字节补丁可
-;             复现, 配方见 _DR166_FindADLPatched 注释）重转，并警告
-;             其底面贴片引脚层搬家顶部的已知风险，转完需在 16.6
-;             核对底面焊盘。
+;             v1.5 起双转换器（主备互换）：主转换器为官方 17.4 adl
+;             补丁版 adl_patched（11 字节补丁可复现, 配方见
+;             _DR166_FindADLPatched 注释；24.x 新修订可读, 底面焊盘
+;             层已实证正确）；adl 失败自动回落电路精灵/阿狸狗免补丁
+;             构建。ASTB_DOWNREV_EXE 环境变量指定仍最优先。
 ;             与旧版(util_downrev17 v3.x)差异：
 ;             1) 拆除会话内宏回放兜底，不再占用用户会话弹对话框
 ;             2) 失败不弹窗：仅命令行留痕，原因留在输出目录同名 .log
@@ -57,6 +56,10 @@
 ;             SYExit 闸门), 产物 md5=90867801dcefb88cdc1de7bf73a1e07e
 ;             ——2026-10-04 实机验证通过（用户确认：24.1 板两跳
 ;             +adl 回落重转成功出 _166.brd, 底面贴片焊盘层核对正确）
+;   2026-10-04 v1.5 ASTB Team 按用户决策主备互换：主转换器改为官方
+;             17.4 adl 补丁版（读写面宽），电路精灵/阿狸狗免补丁构
+;             建降为 adl 失败兜底；ASTB_DOWNREV_EXE 环境变量指定仍
+;             最优先；adl 每次会话首用命令行提示抽查底面焊盘
 ; 实机待验证:
 ;   1) 24.1/25.1 新实例批处理第一跳（downrev 对话框 save7 + fillin
 ;      喂路径）：旧版 24.1 S006 验证过，25.1 未回归
@@ -65,6 +68,8 @@
 ;   3) adl_patched 回落路径：2026-10-04 实机通过, 底面贴片焊盘层
 ;      用户已于 16.6 核对正确（RK3588 旧版曾实测翻转, 转后抽查
 ;      底面保留为建议习惯）
+;   4) v1.5 主备互换（adl 主升 + rt 兜底）: 2026-10-04 起待实机,
+;      重点看 adl 直接跑 17.x 原生板与 rt 兜底触发场景
 ;========================================================================
 
 ;------------------------------------------------------------------------
@@ -420,24 +425,36 @@ procedure( _DR166_HopTo174(dir name brd)
 ; 返回值  : t 成功 / nil 失败
 ;------------------------------------------------------------------------
 procedure( _DR166_RunExeSmart(exe dir name brd)
-    prog((r adl bin)
+    prog((r adl bin env)
+        ;; 1) 环境变量显式指定: 最优先, 只用它
+        env = getShellEnvVar("ASTB_DOWNREV_EXE")
+        when( and(env isFile(env))
+            return( _DR166_RunExe(exe dir name brd) )
+        )
+        ;; 2) 主转换器: 官方 17.4 adl 补丁版(需 SPB_17.4 DLL 环境)
+        adl = _DR166_FindADLPatched()
+        bin = _DR166_FindSPB174Bin()
+        if( and(adl bin) then
+            unless( boundp('ASTB_DOWNREV166_ADLWARN) defvar(ASTB_DOWNREV166_ADLWARN nil) )
+            unless( ASTB_DOWNREV166_ADLWARN
+                axlMsgPut("提示: 主转换器为官方 17.4 adl 补丁版, 底面贴片焊盘层转后建议在 16.6 抽查")
+                ASTB_DOWNREV166_ADLWARN = t
+            )
+            r = _DR166_RunExe(adl dir name brd bin)
+            when( equal(r t) return(t) )
+            axlMsgPut("Downrev166: adl 补丁版转换失败, 尝试免补丁运行时兜底...")
+        else
+            when( null(adl)
+                axlMsgPut("Downrev166: 未找到 tools/adl_patched.exe, 直接用免补丁运行时") )
+            when( and(adl null(bin))
+                axlMsgPut("Downrev166: 未找到 SPB_17.4(DLL 环境), adl 无法运行, 直接用免补丁运行时") )
+        )
+        ;; 3) 兜底: 电路精灵/阿狸狗免补丁构建
         r = _DR166_RunExe(exe dir name brd)
         when( equal(r t) return(t) )
-        unless( r == 'revfail
-            return(nil) )
-        ;; 主转换器认不得 24.x 新修订, 回落 adl 补丁版
-        axlMsgPut("主转换器拒转(32000016, 24.x 新修订), 尝试官方 17.4 adl 补丁版重转...")
-        adl = _DR166_FindADLPatched()
-        unless( adl
-            axlMsgPut("Downrev166: 未找到 tools/adl_patched.exe, 无法自动重转")
-            axlMsgPut(strcat("手工处理: 用 17.4 打开 " brd " 经 File>Export>Downrev design 选 17.4(17.4-2019) 重存, 再于 17.4 会话重跑本命令"))
-            return(nil) )
-        axlMsgPut("注意: adl 补丁版已知风险——底面贴片引脚层可能搬到顶层(实测), 转完请在 16.6 核对底面焊盘")
-        bin = _DR166_FindSPB174Bin()
-        unless( bin
-            axlMsgPut("Downrev166: 未找到 SPB_17.4 安装(DLL 环境), 无法用 adl 补丁版重转")
-            return(nil) )
-        return( _DR166_RunExe(adl dir name brd bin) )
+        when( r == 'revfail
+            axlMsgPut(strcat("手工处理: 用 17.4 打开 " brd " 经 File>Export>Downrev design 选 17.4(17.4-2019) 重存, 再于 17.4 会话重跑本命令")) )
+        nil
     )
 )
 

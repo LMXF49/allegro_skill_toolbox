@@ -39,7 +39,7 @@ public class BuildAll {
     // = ~150 MB; this set is ~45 MB). jdk.charsets = GBK bridge files,
     // jdk.localedata+zh = Chinese system dialogs.
     static final String JLINK_MODULES = "java.base,java.desktop,jdk.charsets,jdk.localedata";
-    static final String APP_VERSION = "1.1.0";
+    static final String APP_VERSION = "1.2.0";
 
     static Path ROOT, JAVA_DIR, RUNTIME_IMG, ISCC, ISS, OUT;
 

@@ -107,7 +107,7 @@ Shape 网络交互修改；动态铜皮强制更新并恢复 wysiwyg 填充（su
 | PCB 降版本 16.6 | 主转换器 adl_patched（官方 17.4 adl 补丁版）原地转 16.6，失败回落免补丁运行时；24.x 两跳（存 17.4 中间文件再转）；失败原因见输出目录同名 .log |
 | 走线跨平面分割检查 | 两端点不在同一铜皮的 cline 保持高亮 |
 | System/Help 帮助 | 读 help_map.dat 弹文件查看器，按菜单分类显示功能/步骤/实现 |
-| System/Uninstall 卸载 | 剥离全部 allegro.ilinit 的 ASTB 加载块（安装器标记块+手工段均识别，备份 .astb_bak）、清理 env forms 路径、移除当前菜单；重启彻底生效 |
+| System/Uninstall 卸载 | 剥离 allegro.ilinit 的 ASTB 安装器标记块（备份 .astb_bak）、清理 env forms 路径、移除当前菜单；重启彻底生效 |
 | 快捷键批量设置 | 常用命令绑定功能键/字母键/键序列 |
 | 切层与视图 `ql/qu/qd` | 层号切层、多层同显、相邻层循环、丝印/装配预设视图 |
 | 定时另存 | 日期/时间两种后缀模式自动另存设计 |

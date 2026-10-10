@@ -132,7 +132,8 @@ Shape 网络交互修改；动态铜皮强制更新并恢复 wysiwyg 填充（su
   `_stubs`（最前）/ `zz_wrappers`（最后）位次硬约定。
 - **菜单与 i18n**：菜单结构内嵌双语标签（英文/中文同列一行，menu.il
   v4.3 起取代 labels_map.dat）；右键 popup 标签禁 GBK 中文；
-  删除-重建走 dump 验证闸门。
+  删除-重建走 dump 验证闸门；语言切换联动 Allegro 本体界面
+  （Allegro X 写 env 本地化偏好、17.x 写 intl_enabled，重启生效）。
 - **版本适配**：version_adapter 兼容 16.6/17.4/24.1 API 差异。
 - **撤销中枢**：数据库修改统一包 `ASTB_DBTransactionMark`（errset 保护），
   批次栈存定位信息不存 dbid，配套逐批撤销命令。

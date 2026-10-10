@@ -138,6 +138,7 @@ SClass=SClass
 &About=关于(&A)
 &Reload=重新加载(&R)
 &Open Studio=打开外置软件(&O)
+&Uninstall=卸载(&U)
 Switch Language=切换语言
 &Hotkey Setup=快捷键设置(&H)
 Hotkey &Reset=快捷键重置(&R)

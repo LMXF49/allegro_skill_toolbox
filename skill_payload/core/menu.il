@@ -2,13 +2,17 @@
 ; 文件名    : core/menu.il
 ; 作者      : allegro_skill 项目组
 ; 创建日期  : 2026-06-06
-; 版本      : 4.1
+; 版本      : 4.2
 ; 功能描述  : 菜单构建与注入（i18n 中英文支持、运行时语言切换、
 ;             菜单命令统一注册）
 ; 依赖模块  : core/utils.il、core/config.il、core/version_adapter.il、
 ;             core/trans.il、core/labels_map.dat（GBK 中文标签数据，键=标签同行）
 ; 编码      : GBK（含中文注释）
 ; 修改记录  :
+;   2026-10-11 v4.2 ASTB Team System 新增 Uninstall 菜单项
+;                     （配套 modules/utilities/util_uninstall.il 卸载
+;                     命令）；新增 ASTB_UNINSTALLED 会话标志，卸载后
+;                     OnDesignOpen 自愈不再重注入菜单
 ;   2026-10-04 v4.1 ASTB Team 恢复 Downrev to 16.6 菜单项
 ;                     （用户要求重新上线；模块全新重写为
 ;                     util_downrev166.il v1.0 取代 util_downrev17，
@@ -149,6 +153,8 @@ unless(boundp('ASTB_TOP_MENU_ID) defvar(ASTB_TOP_MENU_ID nil))
 ;; 自愈定时器句柄：'open+'menu 双触发时先取消未触发的旧定时器，
 ;; 折叠为单次重注入，防叠菜单
 unless(boundp('ASTB_MENU_TIMER_ID) defvar(ASTB_MENU_TIMER_ID nil))
+;; 卸载会话标志：util_uninstall.il 置位后，本会话菜单自愈不再重注入
+unless(boundp('ASTB_UNINSTALLED) defvar(ASTB_UNINSTALLED nil))
 
 ;; ============================================================
 ;; i18n: Language switch & label lookup
@@ -362,6 +368,7 @@ procedure( ASTB_GetMenuStructure()
     list("&About"   "&About"   "ASTB_About")
     list("&Reload"  "&Reload"  "ASTB_Reload")
     list("&Open Studio" "&Open Studio" "ASTB_OpenStudio")
+    list("&Uninstall"   "&Uninstall"   "ASTB_Uninstall")
     '(separator)
     list('popup "&Language" "&Language")
     list("&English"  "&English"  "ASTB_SetLanguageEnglish")
@@ -593,6 +600,11 @@ procedure( ASTB_InjectMenuLater(@optional window timerId elapsedTime)
 ;------------------------------------------------------------------------
 procedure( ASTB_OnDesignOpen(@rest args)
   prog((tid)
+    ;; 卸载会话内禁止自愈重注入（util_uninstall.il 置位 ASTB_UNINSTALLED）
+    when( ASTB_UNINSTALLED
+      ASTB_LogInfo("Menu self-heal skipped: uninstalled this session")
+      return(t)
+    )
     ASTB_LogInfo("Menu self-heal trigger fired, re-injecting in 500ms")
     ;; 折叠同一事件的 'open+'menu 双触发：取消未触发的旧定时器，
     ;; 否则两个定时器各注入一次，dump 查重窗口期内会叠出双菜单

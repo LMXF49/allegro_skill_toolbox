@@ -2,13 +2,20 @@
 ; 文件名    : core/menu.il
 ; 作者      : allegro_skill 项目组
 ; 创建日期  : 2026-06-06
-; 版本      : 4.2
+; 版本      : 4.3
 ; 功能描述  : 菜单构建与注入（i18n 中英文支持、运行时语言切换、
 ;             菜单命令统一注册）
 ; 依赖模块  : core/utils.il、core/config.il、core/version_adapter.il、
-;             core/trans.il、core/labels_map.dat（GBK 中文标签数据，键=标签同行）
+;             core/trans.il
 ; 编码      : GBK（含中文注释）
 ; 修改记录  :
+;   2026-10-11 v4.3 ASTB Team 菜单标签改内嵌双语（结构行
+;                     （英文标签 中文标签 命令名），popup 行
+;                     （popup 英文 中文））；中文由 sync 八进制
+;                     转义兜底 16.6 reader，运行时字节与原
+;                     labels_map.dat 路径一致，显示效果不变；
+;                     删除 ASTB_LoadChineseLabels/ASTB_ZH_GET/
+;                     ASTB_ZH_LABELS 与 labels_map.dat 外置数据源
 ;   2026-10-11 v4.2 ASTB Team System 新增 Uninstall 菜单项
 ;                     （配套 modules/utilities/util_uninstall.il 卸载
 ;                     命令）；新增 ASTB_UNINSTALLED 会话标志，卸载后
@@ -145,7 +152,6 @@
 ;                   InjectMenuLater 触发后清句柄
 ;========================================================================
 
-defvar(ASTB_ZH_LABELS makeTable('ASTB_ZH_LABELS nil))
 unless(boundp('ASTB_MENU_INJECTED) defvar(ASTB_MENU_INJECTED nil))
 defvar(ASTB_MENU_IDS makeTable('ASTB_MENU_IDS))
 unless(boundp('ASTB_TRIGGERS_SET) defvar(ASTB_TRIGGERS_SET nil))
@@ -159,70 +165,6 @@ unless(boundp('ASTB_UNINSTALLED) defvar(ASTB_UNINSTALLED nil))
 ;; ============================================================
 ;; i18n: Language switch & label lookup
 ;; ============================================================
-
-;------------------------------------------------------------------------
-; 函数名  : ASTB_LoadChineseLabels
-; 功能    : 从 core/labels_map.dat（GBK，每行 "英文键=中文标签"）加载
-;           中文标签写入 ASTB_ZH_LABELS；键与标签同行即单一数据源，
-;           新增菜单键只需在该文件追加一行（取代旧 keys 列表 +
-;           labels_raw.dat 行号双写对齐模式）。文件缺失/不可读时
-;           记 ERROR 并返回 nil（ASTB_ZH_GET 回退英文标签，菜单仍可用）
-; 返回值  : 加载条数；失败返回 nil
-;------------------------------------------------------------------------
-procedure( ASTB_LoadChineseLabels()
-  prog((mapPath port line eqPos key zh idx i)
-    mapPath = strcat(ASTB_GLOBAL->CorePath "/labels_map.dat")
-    printf("[ASTB] Loading Chinese labels from: %s\n" mapPath)
-    unless( isFile(mapPath)
-      printf("[ASTB] ERROR: labels_map.dat not found, menus fall back to English\n")
-      return(nil)
-    )
-    port = infile(mapPath)
-    unless( port
-      printf("[ASTB] ERROR: cannot open labels_map.dat\n")
-      return(nil)
-    )
-    idx = 0
-    while( gets(line port)
-      line = ASTB_StringTrim(line)
-      when( and(strlen(line) > 0
-                not(equal(substring(line 1 1) ";"))
-                not(equal(substring(line 1 1) "#")) )
-        ;; 首个 = 为键值分隔（键内无 =，标签内允许 =）
-        eqPos = nil
-        for( i 1 strlen(line)
-          when( and(null(eqPos) equal(substring(line i 1) "="))
-            eqPos = i
-          )
-        )
-        when( and(eqPos eqPos > 1 eqPos < strlen(line))
-          key = ASTB_StringTrim(substring(line 1 eqPos - 1))
-          zh = ASTB_StringTrim(substring(line eqPos + 1 strlen(line) - eqPos))
-          when( and(strlen(key) > 0 strlen(zh) > 0)
-            ASTB_ZH_LABELS[key] = zh
-            idx = idx + 1
-          )
-        )
-      )
-    )
-    close(port)
-    printf("[ASTB] Chinese labels loaded: %d entries\n" idx)
-    return(idx)
-  )
-)
-
-;------------------------------------------------------------------------
-; 函数名  : ASTB_ZH_GET
-; 功能    : 查英文标签对应的中文标签；未收录时回退英文原文
-; 参数    : enLabel - 英文标签
-; 返回值  : 中文或英文标签字符串
-;------------------------------------------------------------------------
-procedure( ASTB_ZH_GET(enLabel)
-  let((zh)
-    zh = ASTB_ZH_LABELS[enLabel]
-    if(zh then zh else enLabel)
-  )
-)
 
 ;------------------------------------------------------------------------
 ; 函数名  : ASTB_IsLanguageEnglish
@@ -243,136 +185,137 @@ procedure( ASTB_IsLanguageEnglish()
 ; 函数名  : ASTB_GetMenuStructure
 ; 功能    : 返回菜单结构定义（popup/end/separator/命令项）
 ; 返回值  : 菜单结构列表
-; 备注    : 命令项格式 (英文标签 英文标签 命令名)；本结构与 i18n keys
-;           列表是两份手工同步的数据，修改时注意同步
+; 备注    : 命令项格式 (英文标签 中文标签 命令名)，popup 项
+;           (popup 英文标签 中文标签)；v4.3 起中文标签内嵌
+;           本结构（取代 labels_map.dat 外置数据源）
 ;------------------------------------------------------------------------
 procedure( ASTB_GetMenuStructure()
   list(
 
     ;; ====== Top-level toolbox menu ======
-    list('popup "allegro_s&kill_toolbox" "allegro_s&kill_toolbox")
+    list('popup "allegro_s&kill_toolbox" "Allegro Skill\271\244\276\337\317\344(&K)")
 
     ;; ====== Package ======
-    list('popup "&Package" "&Package")
-    list("&Change Origin"       "&Change Origin"       "ASTB_Pkg_ChangeOrigin")
-    list("&Export Footprint"    "&Export Footprint"    "ASTB_Pkg_ExportFootprint")
-    list("E&xport Pad"          "E&xport Pad"          "ASTB_Pkg_ExportPad")
-    list("Create &Device File"  "Create &Device File"  "ASTB_Pkg_CreateDevFile")
-    list("Create &Oval Flash"   "Create &Oval Flash"   "ASTB_Pkg_CreateOvalFlash")
+    list('popup "&Package" "\267\342\327\260(&P)")
+    list("&Change Origin" "\320\336\270\304\324\255\265\343(&C)"       "ASTB_Pkg_ChangeOrigin")
+    list("&Export Footprint" "\265\274\263\366\267\342\327\260(&E)"    "ASTB_Pkg_ExportFootprint")
+    list("E&xport Pad" "\265\274\263\366\272\270\305\314(&x)"          "ASTB_Pkg_ExportPad")
+    list("Create &Device File" "\264\264\275\250\306\367\274\376\316\304\274\376(&D)"  "ASTB_Pkg_CreateDevFile")
+    list("Create &Oval Flash" "\264\264\275\250\315\326\324\262\272\270\305\314(&O)"   "ASTB_Pkg_CreateOvalFlash")
     '(end)
     '(separator)
 
     ;; ====== Placement ======
-    list('popup "P&lacement" "P&lacement")
-    list("GatherPlace"         "GatherPlace"          "ASTB_Place_GatherPlace")
-    list("&Align"              "&Align"               "ASTB_Place_Align")
-    list("&Move to Grid"       "&Move to Grid"        "ASTB_Place_MoveToGrid")
-    list("Move &Screen"        "Move &Screen"         "ASTB_Place_MoveScreen")
-    list("Arro&w Copy"         "Arro&w Copy"          "ASTB_Place_ArrowCopy")
-    list("Pack by &Net"        "Pack by &Net"         "ASTB_Place_PackNet")
+    list('popup "P&lacement" "\262\274\276\326(&l)")
+    list("GatherPlace" "\276\333\302\243\260\332\267\305(&J)"          "ASTB_Place_GatherPlace")
+    list("&Align" "\266\324\306\353(&A)"               "ASTB_Place_Align")
+    list("&Move to Grid" "\322\306\265\275\325\244\270\361(&M)"        "ASTB_Place_MoveToGrid")
+    list("Move &Screen" "\322\306\266\257\306\301\304\273(&S)"         "ASTB_Place_MoveScreen")
+    list("Arro&w Copy" "\267\275\317\362\274\374\265\310\276\340\270\264\326\306(&w)"          "ASTB_Place_ArrowCopy")
+    list("Pack by &Net" "\260\264\315\370\302\347\276\333\302\243\260\332\267\305(&N)"         "ASTB_Place_PackNet")
     '(end)
     '(separator)
 
     ;; ====== Routing ======
-    list('popup "&Routing" "&Routing")
-    list("&Cut Line/Shape"     "&Cut Line/Shape"      "ASTB_Route_CutLineShape")
-    list("C&hange Line Width"  "C&hange Line Width"   "ASTB_Route_ChangeLineWidth")
-    list("&Delete Dangling"    "&Delete Dangling"     "ASTB_Route_DeleteDangling")
-    list("&Short Segments"     "&Short Segments"      "ASTB_Route_ShortSeg")
-    list("Chec&k Cross Split"  "Chec&k Cross Split"   "ASTB_Route_CheckSplit")
-    list("&Line to Shape"      "&Line to Shape"       "ASTB_Route_LineToShape")
-    list("&Auto 10deg Trace"   "&Auto 10deg Trace"    "ASTB_Route_Auto10deg")
-    list("Auto &Match Group"   "Auto &Match Group"    "ASTB_Route_AutoMatchGroup")
-    list("&Pad Layer Void"     "&Pad Layer Void"      "ASTB_Route_PadVoid")
-    list("Cline Layer &Void"   "Cline Layer &Void"    "ASTB_Route_ClineVoid")
+    list('popup "&Routing" "\262\274\317\337(&R)")
+    list("&Cut Line/Shape" "\307\320\317\337/Shape(&C)"      "ASTB_Route_CutLineShape")
+    list("C&hange Line Width" "\320\336\270\304\317\337\277\355(&h)"   "ASTB_Route_ChangeLineWidth")
+    list("&Delete Dangling" "\311\276\263\375\320\374\264\271\317\337(&D)"     "ASTB_Route_DeleteDangling")
+    list("&Short Segments" "\266\314\317\337\266\316(&S)"      "ASTB_Route_ShortSeg")
+    list("Chec&k Cross Split" "\274\354\262\351\275\273\262\346\267\326\270\356(&K)"   "ASTB_Route_CheckSplit")
+    list("&Line to Shape" "\317\337\327\252Shape(&L)"       "ASTB_Route_LineToShape")
+    list("&Auto 10deg Trace" "\327\324\266\25710\266\310\327\337\317\337(&A)"    "ASTB_Route_Auto10deg")
+    list("Auto &Match Group" "\327\324\266\257\264\264\275\250\265\310\263\244\327\351(&M)"    "ASTB_Route_AutoMatchGroup")
+    list("&Pad Layer Void" "\272\270\305\314\321\241\262\343\315\332\277\325(&P)"      "ASTB_Route_PadVoid")
+    list("Cline Layer &Void" "\327\337\317\337\321\241\262\343\315\332\277\325(&V)"    "ASTB_Route_ClineVoid")
     '(end)
     '(separator)
 
     ;; ====== Via ======
-    list('popup "&Via" "&Via")
-    list("&Change Via Net"     "&Change Via Net"      "ASTB_Via_ChangeViaNet")
+    list('popup "&Via" "\271\375\277\327(&V)")
+    list("&Change Via Net" "\320\336\270\304Via\315\370\302\347(&C)"      "ASTB_Via_ChangeViaNet")
     '(end)
     '(separator)
 
     ;; ====== Shape ======
-    list('popup "&Shape" "&Shape")
-    list("&Update Dynamic Shape" "&Update Dynamic Shape" "ASTB_Shape_UpdateDynamic")
-    list("&Change Shape Net"     "&Change Shape Net"     "ASTB_Shape_ChangeNet")
+    list('popup "&Shape" "\315\255\306\244(&S)")
+    list("&Update Dynamic Shape" "\270\374\320\302\266\257\314\254Shape(&U)" "ASTB_Shape_UpdateDynamic")
+    list("&Change Shape Net" "\320\336\270\304Shape\315\370\302\347(&C)"     "ASTB_Shape_ChangeNet")
     '(end)
     '(separator)
 
     ;; ====== Text/Silk ======
-    list('popup "Te&xt/Silk" "Te&xt/Silk")
-    list("&Import Logo"        "&Import Logo"         "ASTB_Text_ImportLogo")
-    list("&Add Chinese"        "&Add Chinese"         "ASTB_Text_AddChinese")
-    list("Check Ref &Orient"   "Check Ref &Orient"    "ASTB_Text_CheckRefOrient")
-    list("Add N&et Name"       "Add N&et Name"        "ASTB_Text_AddNetName")
+    list('popup "Te&xt/Silk" "\316\304\327\326/\313\277\323\241(&x)")
+    list("&Import Logo" "\265\274\310\353Logo(&I)"         "ASTB_Text_ImportLogo")
+    list("&Add Chinese" "\314\355\274\323\326\320\316\304(&A)"         "ASTB_Text_AddChinese")
+    list("Check Ref &Orient" "\274\354\262\351\316\273\272\305\267\275\317\362(&O)"    "ASTB_Text_CheckRefOrient")
+    list("Add N&et Name" "\314\355\274\323\315\370\302\347\303\373(&e)"        "ASTB_Text_AddNetName")
     ;; v1 菜单项必须连 v1 命令 ASTB_Text_CheckOverlap（原错连 v2）
-    list("Check Text O&verlap" "Check Text O&verlap"  "ASTB_Text_CheckOverlap")
-    list("RefDes &Center"      "RefDes &Center"       "ASTB_Text_RefDesCenter")
-    list("&RefDes Rotate"      "&RefDes Rotate"       "ASTB_Text_RefDesRotate")
-    list("Re&name RefDes v2"   "Re&name RefDes v2"    "ASTB_Text_RenameRefDes2")
-    list("&Text Center Rout"   "&Text Center Rout"    "ASTB_Text_TextCenterRout")
+    list("Check Text O&verlap" "\274\354\262\351\316\304\327\326\326\330\265\376(&v)"  "ASTB_Text_CheckOverlap")
+    list("RefDes &Center" "\327\326\267\373\316\273\326\303\265\367\325\373(&C)"       "ASTB_Text_RefDesCenter")
+    list("&RefDes Rotate" "\316\273\272\305\320\375\327\252(&R)"       "ASTB_Text_RefDesRotate")
+    list("Re&name RefDes v2" "\326\330\303\374\303\373\316\273\272\305v2(&n)"    "ASTB_Text_RenameRefDes2")
+    list("&Text Center Rout" "\316\304\327\326\326\320\320\304\302\267\323\311(&T)"    "ASTB_Text_TextCenterRout")
     '(end)
     '(separator)
 
     ;; ====== Check ======
-    list('popup "&Check" "&Check")
-    list("Check &No RefDes"    "Check &No RefDes"     "ASTB_Check_NoRefDes")
-    list("&DRC Walk"           "&DRC Walk"            "ASTB_Check_DRCWalk")
-    list("&Find Orphan Net"    "&Find Orphan Net"     "ASTB_Check_OrphanNet")
-    list("Check &90deg Line"   "Check &90deg Line"    "ASTB_Check_90degLine")
-    list("Run D&bDoctor"       "Run D&bDoctor"        "ASTB_Check_DbDoctor")
-    list("&Pad Count"          "&Pad Count"           "ASTB_Check_PadCount")
-    list("&Spacing Check"      "&Spacing Check"       "ASTB_Check_Spacing")
-    list("&Highlight No Fanout" "&Highlight No Fanout" "ASTB_Check_HilightNoFanout")
-    list("So&lder to Line Check" "So&lder to Line Check" "ASTB_Check_Solder2Line")
+    list('popup "&Check" "\274\354\262\351(&C)")
+    list("Check &No RefDes" "\274\354\262\351\316\336\316\273\272\305(&N)"     "ASTB_Check_NoRefDes")
+    list("&DRC Walk" "DRC\344\257\300\300(&D)"            "ASTB_Check_DRCWalk")
+    list("&Find Orphan Net" "\262\351\325\322\271\302\301\242\315\370\302\347(&F)"     "ASTB_Check_OrphanNet")
+    list("Check &90deg Line" "\274\354\262\35190\266\310\317\337(&9)"    "ASTB_Check_90degLine")
+    list("Run D&bDoctor" "\324\313\320\320DbDoctor(&b)"        "ASTB_Check_DbDoctor")
+    list("&Pad Count" "\272\270\305\314\274\306\312\375(&P)"           "ASTB_Check_PadCount")
+    list("&Spacing Check" "\274\344\276\340\274\354\262\351(&S)"       "ASTB_Check_Spacing")
+    list("&Highlight No Fanout" "\270\337\301\301\316\336\311\310\263\366(&H)" "ASTB_Check_HilightNoFanout")
+    list("So&lder to Line Check" "\272\270\305\314\265\275\317\337\274\354\262\351(&L)" "ASTB_Check_Solder2Line")
     '(end)
     '(separator)
 
     ;; ====== Manufacturing ======
-    list('popup "&Manufacturing" "&Manufacturing")
-    list("&Gerber Setup"       "&Gerber Setup"       "ASTB_Mfg_GerberSetup")
+    list('popup "&Manufacturing" "\326\306\324\354(&M)")
+    list("&Gerber Setup" "\271\342\273\346\312\344\263\366\311\350\326\303(&G)"       "ASTB_Mfg_GerberSetup")
     '(end)
     '(separator)
 
     ;; ====== Utilities ======
-    list('popup "&Utilities" "&Utilities")
-    list("U&nit Convert"       "U&nit Convert"        "ASTB_Util_UnitConvert")
-    list("Color &Power Nets"   "Color &Power Nets"    "ASTB_Util_ColorPowerNets")
-    list("Super Net &Finder v2" "Super Net &Finder v2" "ASTB_Util_SuperNetFinder2")
-    list("Choose &Grid"        "Choose &Grid"         "ASTB_Util_ChooseGrid")
-    list("Layer Sw&itch"       "Layer Sw&itch"       "ASTB_Util_LayerSwitch")
-    list("Layer &Up"           "Layer &Up"           "ASTB_Util_LayerUp")
-    list("Layer &Down"         "Layer &Down"         "ASTB_Util_LayerDown")
-    list("View Silk &Top"      "View Silk &Top"      "ASTB_Util_ViewSilkTop")
-    list("View Silk &Bottom"   "View Silk &Bottom"   "ASTB_Util_ViewSilkBottom")
-    list("View &Assy Top"      "View &Assy Top"      "ASTB_Util_ViewAssyTop")
-    list("View Ass&y Bottom"   "View Ass&y Bottom"   "ASTB_Util_ViewAssyBottom")
-    list("&Color Setting v2"   "&Color Setting v2"    "ASTB_Util_ColorSetting2")
-    list("&Etch Cross Plane"   "&Etch Cross Plane"    "ASTB_Util_EtchCrossPlane")
-    list("Assembly v&2"        "Assembly v&2"         "ASTB_Util_Assembly2")
-    list("&Search Star"        "&Search Star"         "ASTB_Util_SearchStar")
-    list("&Quick Save by Time" "&Quick Save by Time"  "ASTB_Util_QuickSaveByTime")
-    list("&Hotkey Setup"       "&Hotkey Setup"        "ASTB_Util_HotkeySetup")
-    list("Hotkey &Reset"       "Hotkey &Reset"        "ASTB_Util_HotkeyReset")
-    list("Hotkey He&lp"        "Hotkey He&lp"         "ASTB_Util_HotkeyHelp")
-    list("H&otkey Editor"      "H&otkey Editor"       "ASTB_Util_HotkeyEditor")
-    list("Downrev to 1&6.6"    "Downrev to 1&6.6"     "ASTB_Util_Downrev166")
+    list('popup "&Utilities" "\271\244\276\337(&U)")
+    list("U&nit Convert" "\265\245\316\273\273\273\313\343(&n)"        "ASTB_Util_UnitConvert")
+    list("Color &Power Nets" "\265\347\324\264\315\370\302\347\313\242\311\253(&P)"    "ASTB_Util_ColorPowerNets")
+    list("Super Net &Finder v2" "\263\254\274\266\315\370\302\347\262\351\325\322v2(&F)" "ASTB_Util_SuperNetFinder2")
+    list("Choose &Grid" "\321\241\324\361\325\244\270\361(&G)"         "ASTB_Util_ChooseGrid")
+    list("Layer Sw&itch" "\307\320\262\343(\266\340\262\343/\310\253\262\277)(&i)"       "ASTB_Util_LayerSwitch")
+    list("Layer &Up" "\307\320\273\273\311\317\322\273\262\343(&U)"           "ASTB_Util_LayerUp")
+    list("Layer &Down" "\307\320\273\273\317\302\322\273\262\343(&D)"         "ASTB_Util_LayerDown")
+    list("View Silk &Top" "\313\277\323\241\266\245\262\343\312\323\315\274(&T)"      "ASTB_Util_ViewSilkTop")
+    list("View Silk &Bottom" "\313\277\323\241\265\327\262\343\312\323\315\274(&B)"   "ASTB_Util_ViewSilkBottom")
+    list("View &Assy Top" "\327\260\305\344\266\245\262\343\312\323\315\274(&A)"      "ASTB_Util_ViewAssyTop")
+    list("View Ass&y Bottom" "\327\260\305\344\265\327\262\343\312\323\315\274(&y)"   "ASTB_Util_ViewAssyBottom")
+    list("&Color Setting v2" "\321\325\311\253\311\350\326\303v2(&C)"    "ASTB_Util_ColorSetting2")
+    list("&Etch Cross Plane" "\312\264\277\314\275\273\262\346\306\275\303\346(&E)"    "ASTB_Util_EtchCrossPlane")
+    list("Assembly v&2" "\327\260\305\344\315\274v2(&2)"         "ASTB_Util_Assembly2")
+    list("&Search Star" "\313\321\313\367\320\307\261\352(&S)"         "ASTB_Util_SearchStar")
+    list("&Quick Save by Time" "\260\264\312\261\274\344\277\354\313\331\261\243\264\346(&Q)"  "ASTB_Util_QuickSaveByTime")
+    list("&Hotkey Setup" "\277\354\275\335\274\374\311\350\326\303(&H)"        "ASTB_Util_HotkeySetup")
+    list("Hotkey &Reset" "\277\354\275\335\274\374\326\330\326\303(&R)"        "ASTB_Util_HotkeyReset")
+    list("Hotkey He&lp" "\277\354\275\335\274\374\260\357\326\372(&l)"         "ASTB_Util_HotkeyHelp")
+    list("H&otkey Editor" "\277\354\275\335\274\374\261\340\274\255\306\367(&o)"       "ASTB_Util_HotkeyEditor")
+    list("Downrev to 1&6.6" "\275\265\260\346\261\276\265\27516.6(&6)"     "ASTB_Util_Downrev166")
     '(end)
     '(separator)
 
     ;; ====== System ======
-    list('popup "S&ystem" "S&ystem")
-    list("&Help"    "&Help"    "ASTB_Help")
-    list("&About"   "&About"   "ASTB_About")
-    list("&Reload"  "&Reload"  "ASTB_Reload")
-    list("&Open Studio" "&Open Studio" "ASTB_OpenStudio")
-    list("&Uninstall"   "&Uninstall"   "ASTB_Uninstall")
+    list('popup "S&ystem" "\317\265\315\263(&y)")
+    list("&Help" "\260\357\326\372(&H)"    "ASTB_Help")
+    list("&About" "\271\330\323\332(&A)"   "ASTB_About")
+    list("&Reload" "\326\330\320\302\274\323\324\330(&R)"  "ASTB_Reload")
+    list("&Open Studio" "\264\362\277\252\315\342\326\303\310\355\274\376(&O)" "ASTB_OpenStudio")
+    list("&Uninstall" "\320\266\324\330(&U)"   "ASTB_Uninstall")
     '(separator)
-    list('popup "&Language" "&Language")
-    list("&English"  "&English"  "ASTB_SetLanguageEnglish")
-    list("&Chinese"  "&Chinese"  "ASTB_SetLanguageChinese")
+    list('popup "&Language" "\323\357\321\324(&L)")
+    list("&English" "English(&E)"  "ASTB_SetLanguageEnglish")
+    list("&Chinese" "\326\320\316\304(&C)"  "ASTB_SetLanguageChinese")
     '(end)
     '(end)
     '(end)
@@ -411,11 +354,11 @@ procedure( ASTB_MenuIsCommand(item)
 ; 返回值  : 标签字符串
 ;------------------------------------------------------------------------
 procedure( ASTB_MenuGetPopupLabel(item)
-  if( ASTB_IsLanguageEnglish() then cadr(item) else ASTB_ZH_GET(cadr(item)) )
+  if( ASTB_IsLanguageEnglish() then cadr(item) else caddr(item) )
 )
 
 procedure( ASTB_MenuGetCommandLabel(item)
-  if( ASTB_IsLanguageEnglish() then car(item) else ASTB_ZH_GET(car(item)) )
+  if( ASTB_IsLanguageEnglish() then car(item) else cadr(item) )
 )
 
 ;------------------------------------------------------------------------
@@ -440,7 +383,8 @@ procedure( ASTB_MenuAlreadyInjected()
       return(t)
     )
     found = nil
-    zhLabel = ASTB_ZH_GET("allegro_s&kill_toolbox")
+    ;; v4.3：中文标签取自内嵌结构顶层 popup 第三字段
+    zhLabel = caddr(car(ASTB_GetMenuStructure()))
     ;; 注意：不可用 axlUIMenuFind 单参直查（该函数至少需 2 个参数），
     ;; 查重依赖下方 dump 包含匹配（已补 ".*" 前缀）
     ret = errset(
@@ -1022,15 +966,6 @@ procedure( ASTB_SetLanguageEnglish()
 
 procedure( ASTB_SetLanguageChinese()
   ASTB_SetLanguage("zh-CN")
-)
-
-;;=========================================================================
-;; Load Chinese labels at startup
-;;=========================================================================
-when(and(boundp('ASTB_GLOBAL) ASTB_GLOBAL->CorePath)
-  unless(errset(ASTB_LoadChineseLabels() t)
-    printf("[ASTB] ERROR: ASTB_LoadChineseLabels failed\n")
-  )
 )
 
 errset(ASTB_SetupMenuTriggers() t)

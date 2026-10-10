@@ -130,8 +130,9 @@ Shape 网络交互修改；动态铜皮强制更新并恢复 wysiwyg 填充（su
 
 - **加载链**：main.il 防重载守卫 + loader 字母序自动扫描 modules 分类目录，
   `_stubs`（最前）/ `zz_wrappers`（最后）位次硬约定。
-- **菜单与 i18n**：菜单结构、keys 列表、中文标签 `labels_map.dat` 三处同步；
-  菜单/popup 标签禁 GBK 中文；删除-重建走 dump 验证闸门。
+- **菜单与 i18n**：菜单结构内嵌双语标签（英文/中文同列一行，menu.il
+  v4.3 起取代 labels_map.dat）；右键 popup 标签禁 GBK 中文；
+  删除-重建走 dump 验证闸门。
 - **版本适配**：version_adapter 兼容 16.6/17.4/24.1 API 差异。
 - **撤销中枢**：数据库修改统一包 `ASTB_DBTransactionMark`（errset 保护），
   批次栈存定位信息不存 dbid，配套逐批撤销命令。

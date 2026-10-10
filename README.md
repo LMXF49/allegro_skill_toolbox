@@ -23,7 +23,7 @@ G:\ASTB\
 │   ├─ main.il           加载入口（防重载守卫）
 │   ├─ allegro.ilinit    Allegro 启动加载脚本
 │   ├─ core\             loader/utils/config/menu/trans/utf8_loader/
-│   │                    version_adapter/zz_smoke/labels_map.dat 等
+│   │                    version_adapter/zz_smoke 等
 │   ├─ modules\<分类>\   功能模块（pkg_/place_/route_/via_/shape_/
 │   │                    text_/check_/mfg_/util_ 前缀）
 │   ├─ forms\            全部 .form（与模块同名配套）
@@ -131,8 +131,9 @@ skill_payload\tools\AstbBridgeClient.java 是调试客户端（`sessions` /
 - `axlGetParam("artwork:不存在的名")` 返回组记录而非 nil，删除底片
   前必须校验 `rec->name`。
 - 静默 nil 型 API（删除/写参）先补试事务包裹再下"不支持"结论。
-- 菜单/标签单一数据源：`core\labels_map.dat`；菜单/popup 标签禁用
-  GBK 中文（reader 会炸），中文只进 labels_map.dat。
+- 菜单标签内嵌双语（menu.il v4.3 起）：结构行（英文 中文 命令）单一
+  数据源；menubar 中文标签由 sync 八进制转义兜底 16.6 reader，
+  `axlUIPopupDefine` 右键 popup 标签仍禁 GBK 中文。
 
 ## 7. 版本管理约定
 

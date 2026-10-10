@@ -52,13 +52,16 @@
    `skill_src\tools\smoke.bat`（静态）+ Allegro 内 `ASTB_SmokeTest`
    （运行时），全绿再交付。
 
-## 3. 菜单与 i18n（单一数据源）
+## 3. 菜单与 i18n（内嵌双语，menu.il v4.3 起）
 
-- 中文标签唯一数据源：`core/labels_map.dat`（`英文键=中文标签` 每行一条）。
-- 新增菜单项三步：`ASTB_GetMenuStructure` 加行 → keys 列表加键 →
-  `labels_map.dat` 加同行标签，三者同步。
-- 菜单/popup 标签**禁用 GBK 中文**（reader `Invalid character`），
-  中文只进 labels_map.dat。
+- 标签唯一数据源：`core/menu.il` 菜单结构本体——命令行
+  `（英文标签 中文标签 命令名）`，popup 行 `(popup 英文 中文)`；运行时按
+  语言直接取字段，无外部标签库（labels_map.dat 已随 v4.3 删除）。
+- 新增菜单项一步：`ASTB_GetMenuStructure` 加一行（中英同列）。
+- menubar 标签允许中文：含中文字符串由 sync 八进制转义兜底 16.6
+  reader（运行时字节与原 dat 加载路径一致，显示效果不变）；
+  `axlUIPopupDefine` 右键 popup 标签仍**禁 GBK 中文**（实机
+  `Invalid character` 事故，§2.2）。
 - 菜单"删除-重建"走 dump 验证闸门（防叠菜单），id 一律来自 `axlUIMenuFind`。
 
 ## 4. 高频踩坑速查（详见 pitfalls 手册对应条目）

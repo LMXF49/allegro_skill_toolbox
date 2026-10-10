@@ -2,13 +2,13 @@
  * File        : AstbSmoke.java
  * Author      : ASTB Team
  * Created     : 2026-10-03
- * Version     : 2.0
+ * Version     : 2.1
  * Description : ASTB_Reload 前一键冒烟检查（只读，不修改任何文件）。
  *               取代 tools/astb_smoke.py（Python 原版, 本仓已移除）。
  * Usage:
  *   java tools\AstbSmoke.java [项目根目录]
  *   缺省项目根目录 = 依次尝试: 参数 / 当前目录 / 当前目录下 skill_payload\
- *   / skill_src\ (以 core/labels_map.dat 是否存在判定)。
+ *   / skill_src\ (以 core/menu.il 是否存在判定)。
  *   (skill_src\tools\smoke.bat 已包好: 对 bat 所在目录的上一级做检查,
  *    同一文件被 sync 拷贝到 skill_payload\tools\ 后依旧指向 payload 根)
  *
@@ -18,8 +18,9 @@
  *                  深度不归零或中途为负 → FAIL。
  *   2. return 无 prog 审计  每个 procedure( 体内出现 return( 而没有
  *                  prog( → WARN（简化静态扫描，允许误报，人工确认）。
- *   3. labels_map  core/labels_map.dat（单一数据源）每条有效行必须是
- *                  英文键=中文标签；键不可含 =、不可重复，否则 → FAIL。
+ *   3. 内嵌标签    core/menu.il 菜单结构行（v4.3 起内嵌双语）：命令行
+ *                  (英文 中文 命令)、popup 行 (popup 英文 中文)；中文
+ *                  标签缺失/为空/与英文相同 → FAIL。
  *   4. astb.cfg    config/astb.cfg 同一 key 出现多次 → WARN。
  *   5. C 臆造语法  break/continue/getenv → FAIL（SKILL 无这些关键字）。
  *
@@ -27,6 +28,9 @@
  * Encoding: 所有 .il/.dat/.cfg 按 GBK 读取（非法字节替换为 U+FFFD,
  *           同 Python errors=replace）；本文件 UTF-8。
  * Revision history:
+ *   2026-10-11 v2.1 menu.il v4.3 内嵌双语标签适配: 检查 3 由
+ *                  labels_map.dat 格式改为结构行 (英文 中文 命令)
+ *                  完整性校验; 项目根判定标记改 core/menu.il
  *   2026-10-03 v2.0 首版 Java 工具链: 移植 astb_smoke.py, 输出逐字对齐
  * ============================================================================
  */
@@ -97,15 +101,15 @@ public class AstbSmoke {
             System.out.println("  PASS  未发现 return 无 prog 的 procedure");
         }
 
-        // ---- 检查 3：labels_map.dat 格式 ----
-        List<String> fails3 = checkLabelsMap(root);
-        System.out.printf("%n[3] labels_map.dat 单一数据源格式%n");
+        // ---- 检查 3：菜单内嵌双语标签完整性 ----
+        List<String> fails3 = checkInlineLabels(root);
+        System.out.printf("%n[3] 菜单内嵌双语标签完整性（menu.il v4.3 起）%n");
         if (!fails3.isEmpty()) {
             anyFail = true;
             System.out.println("  FAIL:");
             for (String msg : fails3) System.out.println("    - " + msg);
         } else {
-            System.out.printf("  PASS  labels_map.dat 有效条目 = %d%n", countLabels(root));
+            System.out.printf("  PASS  menu.il 内嵌双语标签行 = %d%n", inlineLabelRows);
         }
 
         // ---- 检查 4：astb.cfg 重复键 ----
@@ -131,7 +135,7 @@ public class AstbSmoke {
 
         // ---- 汇总 ----
         System.out.printf("%n" + "=".repeat(64) + "%n");
-        System.out.printf("汇总: [1]括号平衡=%s  [2]return无prog=%s  [3]labels对齐=%s  [4]cfg重复键=%s  [5]C语法=%s%n",
+        System.out.printf("汇总: [1]括号平衡=%s  [2]return无prog=%s  [3]内嵌标签=%s  [4]cfg重复键=%s  [5]C语法=%s%n",
                 fails12.isEmpty() ? "PASS" : "FAIL",
                 warns2.isEmpty() ? "PASS" : "WARN(" + warns2.size() + ")",
                 fails3.isEmpty() ? "PASS" : "FAIL",
@@ -146,12 +150,12 @@ public class AstbSmoke {
 
     static Path defaultRoot() {
         Path cwd = Paths.get("").toAbsolutePath();
-        if (Files.isRegularFile(cwd.resolve("core").resolve("labels_map.dat"))) return cwd;
+        if (Files.isRegularFile(cwd.resolve("core").resolve("menu.il"))) return cwd;
         for (String sub : new String[]{"skill_payload", "skill_src"}) {
             Path cand = cwd.resolve(sub);
-            if (Files.isRegularFile(cand.resolve("core").resolve("labels_map.dat"))) return cand;
+            if (Files.isRegularFile(cand.resolve("core").resolve("menu.il"))) return cand;
         }
-        System.err.println("usage: java tools\\AstbSmoke.java <项目根目录>(含 core/labels_map.dat)");
+        System.err.println("usage: java tools\\AstbSmoke.java <项目根目录>(含 core/menu.il)");
         System.exit(2);
         return null;
     }
@@ -299,46 +303,36 @@ public class AstbSmoke {
         return files;
     }
 
-    static List<String> checkLabelsMap(Path root) throws IOException {
-        Path mapPath = root.resolve("core").resolve("labels_map.dat");
-        if (!Files.isRegularFile(mapPath))
-            return new ArrayList<>(List.of("core/labels_map.dat: 文件不存在（menu.il 已改为单一数据源加载）"));
-        List<String> fails = new ArrayList<>();
-        var seen = new java.util.LinkedHashMap<String, Integer>();
-        int n = 0;
-        String[] lines = readGbk(mapPath).split("\n", -1);
-        for (int no = 1; no <= lines.length; no++) {
-            String t = lines[no - 1].strip();
-            if (t.isEmpty() || t.startsWith(";") || t.startsWith("#")) continue;
-            n += 1;
-            if (!t.contains("=")) {
-                fails.add(String.format("labels_map.dat:%d 缺少 = : %s", no, trunc(t, 30)));
-                continue;
-            }
-            int eq = t.indexOf('=');
-            String key = t.substring(0, eq).strip();
-            String zh = t.substring(eq + 1).strip();
-            if (key.isEmpty() || zh.isEmpty()) {
-                fails.add(String.format("labels_map.dat:%d 键或标签为空: %s", no, trunc(t, 30)));
-            } else if (seen.containsKey(key)) {
-                fails.add(String.format("labels_map.dat:%d 键重复（首见第 %d 行）: %s", no, seen.get(key), key));
-            } else {
-                seen.put(key, no);
-            }
-        }
-        return fails;
-    }
+    static int inlineLabelRows = 0;
 
-    static int countLabels(Path root) throws IOException {
-        Path mapPath = root.resolve("core").resolve("labels_map.dat");
-        if (!Files.isRegularFile(mapPath)) return 0;
-        int n = 0;
-        for (String ln : readGbk(mapPath).split("\n", -1)) {
-            String t = ln.strip();
-            if (t.isEmpty() || t.startsWith(";") || t.startsWith("#")) continue;
-            n += 1;
+    /** 检查 3：menu.il 菜单结构行内嵌双语标签完整性（v4.3 起，取代 labels_map.dat 格式检查）。 */
+    static List<String> checkInlineLabels(Path root) throws IOException {
+        Path menuPath = root.resolve("core").resolve("menu.il");
+        if (!Files.isRegularFile(menuPath))
+            return new ArrayList<>(List.of("core/menu.il: 文件不存在"));
+        List<String> fails = new ArrayList<>();
+        Pattern popup = Pattern.compile("^\\s+list\\('popup \"([^\"]+)\" \"([^\"]*)\"\\)\\s*$");
+        Pattern cmd = Pattern.compile("^\\s+list\\(\"([^\"]+)\" +\"([^\"]*)\" +\"[A-Za-z_0-9]+\"\\)\\s*$");
+        String[] lines = readGbk(menuPath).split("\n", -1);
+        inlineLabelRows = 0;
+        for (int no = 1; no <= lines.length; no++) {
+            String line = lines[no - 1];
+            Matcher m = popup.matcher(line);
+            Matcher c = cmd.matcher(line);
+            String en = null, zh = null;
+            if (m.matches()) { en = m.group(1); zh = m.group(2); }
+            else if (c.matches()) { en = c.group(1); zh = c.group(2); }
+            if (en == null) continue;
+            inlineLabelRows++;
+            if (zh.isBlank()) {
+                fails.add(String.format("menu.il:%d 中文标签为空: %s", no, en));
+            } else if (zh.equals(en)) {
+                fails.add(String.format("menu.il:%d 中文标签与英文键相同: %s", no, en));
+            }
         }
-        return n;
+        if (inlineLabelRows == 0)
+            fails.add("menu.il: 未解析到任何内嵌双语菜单行（结构格式是否被改动？）");
+        return fails;
     }
 
     static List<String> checkCfgDupkeys(Path root) throws IOException {

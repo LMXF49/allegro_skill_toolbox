@@ -2,17 +2,18 @@
 ; 文件名    : core/zz_smoke.il
 ; 作者      : ASTB Team
 ; 创建日期  : 2026-08-01
-; 版本      : 1.0
+; 版本      : 1.1
 ; 功能描述  : 整改后一键冒烟检查（ASTB_SmokeTest 命令）：
 ;             1) 核心函数 fboundp 抽查（防同名覆盖/加载链断裂）
-;             2) labels_map.dat 与菜单结构命令键对齐检查
+;             2) 菜单结构内嵌中文标签完整性检查（v4.3 起标签内嵌）
 ;             3) forms/*.form 全部解析试创建（抓 LIST "" 类语法坑）
 ;             配合 tools/astb_smoke.py（静态检查）使用：python 跑静态，
 ;             本命令跑运行时。只读，不修改任何文件与设计数据。
 ; 依赖模块  : core/menu.il (ASTB_GetMenuStructure / ASTB_MenuIsCommand /
-;             ASTB_MenuGetCommand / ASTB_ZH_LABELS)、core/trans.il
+;             ASTB_MenuGetCommand)、core/trans.il
 ; 编码      : GBK（含中文，必须 GBK 保存）
 ; 修改记录  :
+;   2026-10-11 v1.1 ASTB Team 标签检查适配 menu.il v4.3 内嵌双语
 ;   2026-08-01 v1.0 ASTB Team 初始创建
 ;========================================================================
 
@@ -44,37 +45,31 @@ procedure( ASTB_SmokeCheckFns()
 
 ;------------------------------------------------------------------------
 ; 函数    : ASTB_SmokeCheckLabels
-; 功能    : 菜单结构命令键与 labels_map.dat（ASTB_ZH_LABELS 表）
-;           对齐检查；缺键按 pitfalls 10.1 errset 强制求值模板处理
-; 返回    : 缺标签的键列表（nil = 全部对齐）
+; 功能    : 菜单结构内嵌中文标签完整性检查（v4.3 起标签内嵌结构行，
+;           cadr 即中文标签）；标签非空且不同于英文键才算有效
+; 返回    : 标签异常的英文键列表（nil = 全部通过）
 ;------------------------------------------------------------------------
 procedure( ASTB_SmokeCheckLabels()
-    prog( (menuList item key missing r total)
+    prog( (menuList item key zh missing total)
         missing = nil
         total = 0
         menuList = ASTB_GetMenuStructure()
         foreach( item menuList
             when( ASTB_MenuIsCommand(item)
                 total = total + 1
-                key = cadr(item)
-                ; makeTable 缺键的 unbound 哨兵会传染，读取+求值整体进 errset
-                r = errset(
-                    prog( (v)
-                        v = ASTB_ZH_LABELS[key]
-                        return(v)
-                    )
-                )
-                when( or(null(r) null(car(r)))
+                key = car(item)
+                zh = cadr(item)
+                when( or(null(zh) not(stringp(zh)) equal(zh "") equal(zh key))
                     missing = cons(key missing)
-                    axlUIWPrint(nil "  [WARN] \262\313\265\245\274\374\316\336\326\320\316\304\261\352\307\251: %s" key)
+                    axlUIWPrint(nil "  [WARN] \262\313\265\245\317\356\326\320\316\304\261\352\307\251\310\261\312\247/\316\336\320\247: %s" key)
                 )
             )
         )
         if( missing then
-            axlUIWPrint(nil "  [WARN] \261\352\307\251\266\324\306\353: %d / %d \270\366\274\374\310\261\261\352\307\251"
+            axlUIWPrint(nil "  [WARN] \304\332\307\266\261\352\307\251: %d / %d \270\366\303\374\301\356\317\356\261\352\307\251\322\354\263\243"
                 length(missing) total)
         else
-            axlUIWPrint(nil "  [OK] \261\352\307\251\266\324\306\353: %d \270\366\262\313\265\245\274\374\310\253\262\277\323\320\326\320\316\304\261\352\307\251" total)
+            axlUIWPrint(nil "  [OK] \304\332\307\266\261\352\307\251: %d \270\366\303\374\301\356\317\356\310\253\262\277\264\370\326\320\316\304\261\352\307\251" total)
         )
         return( reverse(missing) )
     )

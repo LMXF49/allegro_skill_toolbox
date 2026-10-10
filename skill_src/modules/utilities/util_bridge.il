@@ -2,7 +2,7 @@
 ; File        : util_bridge.il
 ; Author      : ASTB Team
 ; Created     : 2026-08-22
-; Version     : 1.4
+; Version     : 1.5
 ; Description : ASTB Studio bridge. Polls a file-based job queue under
 ;               the system TEMP dir so an external app (ASTB Studio)
 ;               can trigger SKILL commands inside this Allegro session
@@ -12,7 +12,7 @@
 ;               16.6 / 17.4 / 24.1 and survives the 16.6 reader.
 ; Depends on  : core/utils.il (ASTB_Log*), core/trans.il
 ;               (ASTB_RegisterCommand), core/menu.il
-;               (ASTB_GetMenuStructure / ASTB_MenuIs* / ASTB_ZH_GET)
+;               (ASTB_GetMenuStructure / ASTB_MenuIs*)
 ; Notes       : background service, intentionally NOT added to the
 ;               toolbox menu; control goes through the astbbridge
 ;               command or ASTB_BridgeStart/Stop functions.
@@ -44,6 +44,9 @@
 ;               "executing" instead of offline while an interactive
 ;               command starves the tick timer (enterFun blocks
 ;               axlUIWTimer; cleared by the next normal heartbeat)
+;   2026-10-11 v1.5 menu.il v4.3 inline dual labels: menu tree
+;               export reads zh straight from structure fields;
+;               zh resolver wrapper (ASTB_ZH_GET based) removed
 ;
 ; ------------------------- protocol v1 ---------------------------------
 ; root = <TEMP>/astb_bridge            (backslashes normalized to "/")
@@ -426,14 +429,6 @@ procedure( ASTB_BridgeCleanup()
 ;   ("command"  enLabel zhLabel commandName)
 ;   ("separator")
 ;------------------------------------------------------------------------
-procedure( ASTB_BridgeZhOrSelf(en)
-  prog((r zh)
-    zh = en
-    r = errset(zh = ASTB_ZH_GET(en))
-    unless( and( r stringp(zh) ) zh = en )
-    return(zh)
-  ))
-
 procedure( ASTB_BridgeBuildMenuTree()
   prog((flat stack frame node topNode topKids item)
     flat = ASTB_GetMenuStructure()
@@ -442,7 +437,7 @@ procedure( ASTB_BridgeBuildMenuTree()
     foreach( item flat
       cond(
         ( ASTB_MenuIsPopup(item)
-          node = list("popup" cadr(item) ASTB_BridgeZhOrSelf(cadr(item)))
+          node = list("popup" cadr(item) caddr(item))
           stack = cons(list(node nil) stack)
         )
         ( ASTB_MenuIsEnd(item)
@@ -463,8 +458,7 @@ procedure( ASTB_BridgeBuildMenuTree()
         ( ASTB_MenuIsCommand(item)
           topNode = car(car(stack))
           topKids = cadr(car(stack))
-          node = list("command" car(item) ASTB_BridgeZhOrSelf(car(item))
-                      caddr(item))
+          node = list("command" car(item) cadr(item) caddr(item))
           stack = cons(list(topNode append(topKids list(node)))
                        cdr(stack))
         )

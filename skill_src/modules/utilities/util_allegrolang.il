@@ -2,7 +2,7 @@
 ; 文件名    : modules/utilities/util_allegrolang.il
 ; 作者      : ASTB Team
 ; 创建日期  : 2026-10-11
-; 版本      : 1.3
+; 版本      : 1.4
 ; 功能描述  : Allegro 本体界面语言设置（System->Allegro UI 子菜单
 ;             独立入口，与工具箱菜单语言切换解耦）：
 ;             Allegro X（22.1/23.1/24.1/25.1）写 pcbenv env 偏好
@@ -16,6 +16,9 @@
 ; 依赖模块  : core/version_adapter.il（ASTB_VersionContains）
 ; 编码      : GBK（含中文字符串）
 ; 修改记录  :
+;   2026-10-11 v1.4 ASTB Team 实机卡死修复：ipcWait/ipcGetExitStatus
+;                本机挂住 Allegro（切英文卡死）；改直起进程不等待，
+;                sleep 后 reg query 落 log 回读验证，成败如实返回
 ;   2026-10-11 v1.3 ASTB Team 实机报错修复：errset 返回值是 list，
 ;                cid/rc 先 car 再喂 ipcWait/ipcGetExitStatus（v1.2
 ;                直接传 list 报 type template "oxx"）
@@ -33,40 +36,65 @@
 ;========================================================================
 
 ;------------------------------------------------------------------------
-; 函数名  : _ALG_RunWait / _ALG_Setx / _ALG_RegDelete
-; 功能    : 经 ipcBeginProcess 四件套（ipcWait+退出码+排空输出）写/删
-;           用户级环境变量（HKCU\Environment），同步等待并回读成败
+; 函数名  : _ALG_Spawn / _ALG_RegHas / _ALG_Setx / _ALG_RegDelete
+; 功能    : 写/删用户级环境变量（HKCU\Environment）：ipcBeginProcess
+;           直起进程不等待（v1.3 的 ipcWait/ipcGetExitStatus 实机把
+;           Allegro 卡死），sleep 后用 reg query 落 log 文件回读
+;           验证，成败如实返回
 ; 备注    : 进程级 setShellEnvVar 不持久化且对当前进程已晚，故走
-;           setx/reg；v1.1 异步起进程实机不落盘（17.4 切换无效根因），
-;           v1.2 改四件套同步执行（pitfalls §6.1 标准件）
+;           setx/reg；errset 返回值是 list，cid 要 car（v1.2 教训）
 ;------------------------------------------------------------------------
-procedure( _ALG_RunWait(cmd args)
-    prog((r cid rc)
-        ;; errset 返回值是 list，cid 要 car 出来（v1.2 把 list 直接
-        ;; 喂 ipcWait，实机报 type template "oxx"）
-        r = errset(ipcBeginProcess(cmd args nil nil nil "") t)
+procedure( _ALG_Spawn(cmd args logF)
+    prog((r)
+        r = errset(ipcBeginProcess(cmd args nil nil nil logF) t)
         unless( and(r car(r))
             ASTB_LogWarn(strcat("allegrolang: spawn failed: " cmd " " args))
-            return(nil)
-        )
-        cid = car(r)
-        errset(ipcWait(cid 30 1) t)
-        rc = errset(ipcGetExitStatus(cid) t)
-        errset(ipcReadProcess(cid 1) t)
-        unless( and(rc equal(car(rc) 0))
-            ASTB_LogWarn(sprintf(nil "allegrolang: %s %s rc=%L" cmd args rc))
             return(nil)
         )
         return(t)
     )
 )
 
+procedure( _ALG_RegHas(name)
+    prog((tmp logF port line found)
+        tmp = getShellEnvVar("TEMP")
+        unless( tmp tmp = "C:\\Windows\\Temp" )
+        logF = strcat(tmp "\\astb_alg_regquery.log")
+        when( isFile(logF) deleteFile(logF) )
+        unless( _ALG_Spawn("reg" strcat("query HKCU\\Environment /v " name) logF)
+            return(nil)
+        )
+        sleep(2)
+        found = nil
+        when( isFile(logF)
+            port = infile(logF)
+            when( port
+                while( gets(line port)
+                    when( rexMatchp("REG_SZ" line) found = t )
+                )
+                close(port)
+            )
+        )
+        return(found)
+    )
+)
+
 procedure( _ALG_Setx(name value)
-    _ALG_RunWait("setx" strcat(name " " value))
+    prog((ok)
+        ok = _ALG_Spawn("setx" strcat(name " " value) "")
+        unless( ok return(nil) )
+        sleep(1)
+        return( _ALG_RegHas(name) )
+    )
 )
 
 procedure( _ALG_RegDelete(name)
-    _ALG_RunWait("reg" strcat("delete HKCU\\Environment /v " name " /f"))
+    prog((ok)
+        ok = _ALG_Spawn("reg" strcat("delete HKCU\\Environment /v " name " /f") "")
+        unless( ok return(nil) )
+        sleep(1)
+        return( not(_ALG_RegHas(name)) )
+    )
 )
 
 ;------------------------------------------------------------------------
@@ -146,4 +174,4 @@ procedure( ASTB_SetAllegroLangChinese()
     ASTB_SetAllegroLanguage("zh-CN")
 )
 
-printf("[ASTB] util_allegrolang.il v1.3 loaded\n")
+printf("[ASTB] util_allegrolang.il v1.4 loaded\n")

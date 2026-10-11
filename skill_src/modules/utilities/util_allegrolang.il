@@ -2,7 +2,7 @@
 ; 文件名    : modules/utilities/util_allegrolang.il
 ; 作者      : ASTB Team
 ; 创建日期  : 2026-10-11
-; 版本      : 1.7
+; 版本      : 1.8
 ; 功能描述  : Allegro 本体界面语言设置（System->Allegro UI 子菜单
 ;             独立入口，与工具箱菜单语言切换解耦）：
 ;             Allegro X（22.1/23.1/24.1/25.1）写 pcbenv env 偏好
@@ -15,6 +15,10 @@
 ; 依赖模块  : core/version_adapter.il（ASTB_VersionContains）
 ; 编码      : GBK（含中文字符串）
 ; 修改记录  :
+;   2026-10-11 v1.8 ASTB Team 切英文不生效修复：reg delete 不广播
+;                WM_SETTINGCHANGE，explorer 缓存仍带旧值（新启
+;                Allegro 继承残留）；删除后 outfile 写 ps1 + system
+;                全路径 powershell 补发环境变更广播
 ;   2026-10-11 v1.7 ASTB Team 实机定案：本机 17.4 ipcBeginProcess
 ;                只建通道不执行进程（裸名/全路径同，注册表无变化），
 ;                改 system() 全路径直调 setx/reg（rc=0 实查注册表
@@ -67,6 +71,38 @@ procedure( _ALG_RegDelete(name)
 )
 
 ;------------------------------------------------------------------------
+; 函数名  : _ALG_BroadcastEnv
+; 功能    : 补发 WM_SETTINGCHANGE 环境变更广播（reg delete 不广播，
+;           否则 explorer 缓存环境仍带旧值，新启 Allegro 继承残留）
+; 备注    : outfile 写 ps1 再 system 全路径 powershell 执行，
+;           命令行无引号嵌套（ps1 内容走文件不经命令行）
+;------------------------------------------------------------------------
+procedure( _ALG_BroadcastEnv()
+    prog((tmp ps1 port rc)
+        tmp = getShellEnvVar("TEMP")
+        unless( tmp tmp = "C:\\Windows\\Temp" )
+        ps1 = strcat(tmp "\\astb_alg_bcast.ps1")
+        port = outfile(ps1)
+        unless( port
+            ASTB_LogWarn("allegrolang: cannot write broadcast ps1")
+            return(nil)
+        )
+        fprintf(port "%s\n" "Add-Type -Namespace Win32 -Name NativeMethods -MemberDefinition '[DllImport(\"user32.dll\", SetLastError=true, CharSet=CharSet.Auto)] public static extern IntPtr SendMessageTimeout(IntPtr hWnd, uint Msg, UIntPtr wParam, string lParam, uint fuFlags, uint uTimeout, out UIntPtr lpdwResult);'")
+        fprintf(port "%s\n" "$HWND_BROADCAST = [IntPtr]0xffff")
+        fprintf(port "%s\n" "$WM_SETTINGCHANGE = 0x1A")
+        fprintf(port "%s\n" "$result = [UIntPtr]::Zero")
+        fprintf(port "%s\n" "[void][Win32.NativeMethods]::SendMessageTimeout($HWND_BROADCAST, $WM_SETTINGCHANGE, [UIntPtr]::Zero, \"Environment\", 2, 5000, [ref]$result)")
+        close(port)
+        rc = system(strcat(_ALG_WinExe("WindowsPowerShell\\v1.0\\powershell.exe")
+            " -NoProfile -ExecutionPolicy Bypass -File " ps1))
+        when( rc != 0
+            ASTB_LogWarn(sprintf(nil "allegrolang: broadcast rc=%d" rc))
+        )
+        return( rc == 0 )
+    )
+)
+
+;------------------------------------------------------------------------
 ; 函数名  : ASTB_AllegroLangApply
 ; 功能    : 按目标语言联动 Allegro 本体界面语言（持久化设置，
 ;           重启 Allegro 生效；当前会话界面不变）
@@ -92,6 +128,8 @@ procedure( ASTB_AllegroLangApply(lang)
             errset(axlUnsetVariableFile("allegro_english_menu") t)
             _ALG_RegDelete("intl_enabled")
             _ALG_RegDelete("intl_show_bilingual")
+            ;; reg delete 不广播环境变更，补广播刷新 explorer 缓存
+            _ALG_BroadcastEnv()
             msg = "Allegro 界面语言 -> English（本地化偏好与 intl_enabled 已清除），重启 Allegro 生效"
         )
         ASTB_LogInfo(strcat("allegrolang: applied " lang))
@@ -130,4 +168,4 @@ procedure( ASTB_SetAllegroLangChinese()
     ASTB_SetAllegroLanguage("zh-CN")
 )
 
-printf("[ASTB] util_allegrolang.il v1.7 loaded\n")
+printf("[ASTB] util_allegrolang.il v1.8 loaded\n")

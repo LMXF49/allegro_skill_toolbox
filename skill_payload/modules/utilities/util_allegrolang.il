@@ -2,7 +2,7 @@
 ; 文件名    : modules/utilities/util_allegrolang.il
 ; 作者      : ASTB Team
 ; 创建日期  : 2026-10-11
-; 版本      : 1.4
+; 版本      : 1.6
 ; 功能描述  : Allegro 本体界面语言设置（System->Allegro UI 子菜单
 ;             独立入口，与工具箱菜单语言切换解耦）：
 ;             Allegro X（22.1/23.1/24.1/25.1）写 pcbenv env 偏好
@@ -16,6 +16,13 @@
 ; 依赖模块  : core/version_adapter.il（ASTB_VersionContains）
 ; 编码      : GBK（含中文字符串）
 ; 修改记录  :
+;   2026-10-11 v1.6 ASTB Team 用户决策：写盘回退 v1.0 形式
+;                （ipcBeginProcess 异步直起，不等待不验证，失败仅
+;                记日志）；保留全路径 exe 修正（裸命令名实机不起
+;                进程）；提示附手动兜底命令
+;   2026-10-11 v1.5 ASTB Team 实机不生效修复：裸命令名不起进程
+;                （reg query 连 log 都没生成），改全路径 System32 exe
+;                + cmd.exe /c bat 回退；回读三态杜绝假成功
 ;   2026-10-11 v1.4 ASTB Team 实机卡死修复：ipcWait/ipcGetExitStatus
 ;                本机挂住 Allegro（切英文卡死）；改直起进程不等待，
 ;                sleep 后 reg query 落 log 回读验证，成败如实返回
@@ -36,112 +43,77 @@
 ;========================================================================
 
 ;------------------------------------------------------------------------
-; 函数名  : _ALG_Spawn / _ALG_RegHas / _ALG_Setx / _ALG_RegDelete
-; 功能    : 写/删用户级环境变量（HKCU\Environment）：ipcBeginProcess
-;           直起进程不等待（v1.3 的 ipcWait/ipcGetExitStatus 实机把
-;           Allegro 卡死），sleep 后用 reg query 落 log 文件回读
-;           验证，成败如实返回
+; 函数名  : _ALG_WinExe / _ALG_Setx / _ALG_RegDelete
+; 功能    : 经 ipcBeginProcess 写/删用户级环境变量（HKCU\Environment），
+;           异步不阻塞不等待（v1.0 形式，用户决策回退）；errset
+;           包裹，失败仅记日志
 ; 备注    : 进程级 setShellEnvVar 不持久化且对当前进程已晚，故走
-;           setx/reg；errset 返回值是 list，cid 要 car（v1.2 教训）
+;           setx/reg；exe 用全路径（裸命令名实机不起进程——v1.5
+;           取证：reg query 连 log 文件都没生成）
 ;------------------------------------------------------------------------
-procedure( _ALG_Spawn(cmd args logF)
-    prog((r)
-        r = errset(ipcBeginProcess(cmd args nil nil nil logF) t)
-        unless( and(r car(r))
-            ASTB_LogWarn(strcat("allegrolang: spawn failed: " cmd " " args))
-            return(nil)
-        )
-        return(t)
-    )
-)
-
-procedure( _ALG_RegHas(name)
-    prog((tmp logF port line found)
-        tmp = getShellEnvVar("TEMP")
-        unless( tmp tmp = "C:\\Windows\\Temp" )
-        logF = strcat(tmp "\\astb_alg_regquery.log")
-        when( isFile(logF) deleteFile(logF) )
-        unless( _ALG_Spawn("reg" strcat("query HKCU\\Environment /v " name) logF)
-            return(nil)
-        )
-        sleep(2)
-        found = nil
-        when( isFile(logF)
-            port = infile(logF)
-            when( port
-                while( gets(line port)
-                    when( rexMatchp("REG_SZ" line) found = t )
-                )
-                close(port)
-            )
-        )
-        return(found)
+procedure( _ALG_WinExe(name)
+    prog((root)
+        root = getShellEnvVar("SystemRoot")
+        unless( root root = "C:\\Windows" )
+        return( strcat(root "\\System32\\" name) )
     )
 )
 
 procedure( _ALG_Setx(name value)
-    prog((ok)
-        ok = _ALG_Spawn("setx" strcat(name " " value) "")
-        unless( ok return(nil) )
-        sleep(1)
-        return( _ALG_RegHas(name) )
+    prog((cid)
+        cid = errset(ipcBeginProcess(_ALG_WinExe("setx.exe")
+            strcat(name " " value) nil nil nil "") t)
+        unless( cid
+            ASTB_LogWarn(strcat("allegrolang: setx failed for " name))
+        )
+        return( and(cid t) )
     )
 )
 
 procedure( _ALG_RegDelete(name)
-    prog((ok)
-        ok = _ALG_Spawn("reg" strcat("delete HKCU\\Environment /v " name " /f") "")
-        unless( ok return(nil) )
-        sleep(1)
-        return( not(_ALG_RegHas(name)) )
+    prog((cid)
+        cid = errset(ipcBeginProcess(_ALG_WinExe("reg.exe")
+            strcat("delete HKCU\\Environment /v " name " /f") nil nil nil "") t)
+        unless( cid
+            ASTB_LogWarn(strcat("allegrolang: reg delete failed for " name))
+        )
+        return( and(cid t) )
     )
 )
 
 ;------------------------------------------------------------------------
 ; 函数名  : ASTB_AllegroLangApply
-; 功能    : 设置 Allegro 本体界面语言（持久化设置，
-;           重启 Allegro 生效；当前会话界面不变）
+; 功能    : 设置 Allegro 本体界面语言（持久化设置，重启 Allegro
+;           生效；当前会话界面不变）
 ; 参数    : lang - "zh-CN" / "en"
-; 返回值  : 多行中文结果说明（逐条如实反映各机制写入成败）
-; 备注    :  env 偏好与 intl_enabled 两条机制都写（多版本共用 HOME
-;           与用户环境变量，各自读各自的）；全部 errset 包裹，
-;           单项失败不阻断其余
+; 返回值  : 结果说明（供命令入口弹确认框）
+; 备注    : env 偏好与 intl_enabled 两条机制都写（多版本共用 HOME
+;           与用户环境变量，各自读各自的）；errset 包裹单项失败
+;           不阻断其余
 ;------------------------------------------------------------------------
 procedure( ASTB_AllegroLangApply(lang)
-    prog((zh okX ok17 msg)
+    prog((zh msg)
         zh = equal(lang "zh-CN")
         if( zh then
             ;; Allegro X 系列：env 偏好（EFF_ONRESTART）
             ;; allegro_english_menu 默认 on 会把菜单锁英文，必须一并摘除
-            okX = and( errset(axlSetVariableFile("allegro_enable_localization" t) t)
-                       errset(axlUnsetVariableFile("allegro_english_menu") t) )
+            errset(axlSetVariableFile("allegro_enable_localization" t) t)
+            errset(axlUnsetVariableFile("allegro_english_menu") t)
             ;; 17.2/17.4：用户环境变量（Qt 界面部分汉化）
-            ok17 = _ALG_Setx("intl_enabled" "yes")
-            msg = "Allegro \275\347\303\346\323\357\321\324 -> \326\320\316\304\243\250\326\330\306\364 Allegro \272\363\311\372\320\247\243\251\n"
-            if( okX
-            then msg = strcat(msg "  24.1+: \261\276\265\330\273\257\306\253\272\303\322\321\320\264\310\353 env\n")
-            else msg = strcat(msg "  24.1+: \306\253\272\303\320\264\310\353\312\247\260\334\243\254\307\353\312\326\266\257 Setup->Preferences \271\264\321\241 Use local language\n")
-            )
-            if( ok17
-            then msg = strcat(msg "  17.2/17.4: intl_enabled=yes \322\321\320\264\310\353\243\250Qt \275\347\303\346\262\277\267\326\272\272\273\257\243\251\n")
-            else msg = strcat(msg "  17.x: \320\264\310\353\312\247\260\334\243\254\307\353\312\326\266\257\326\264\320\320 setx intl_enabled yes\n")
-            )
+            _ALG_Setx("intl_enabled" "yes")
+            msg = "Allegro \275\347\303\346\323\357\321\324 -> \326\320\316\304\243\25024.1+ \261\276\265\330\273\257\306\253\272\303\243\25417.x intl_enabled\243\251\243\254\326\330\306\364 Allegro \311\372\320\247"
+            msg = strcat(msg "\n\310\364\326\330\306\364\272\363 17.x \316\264\311\372\320\247\243\254\307\353\312\326\266\257\326\264\320\320: setx intl_enabled yes")
         else
-            okX = and( errset(axlUnsetVariableFile("allegro_enable_localization") t)
-                       errset(axlUnsetVariableFile("allegro_english_menu") t) )
-            ok17 = and( _ALG_RegDelete("intl_enabled")
-                        _ALG_RegDelete("intl_show_bilingual") )
-            msg = "Allegro \275\347\303\346\323\357\321\324 -> English\243\250\326\330\306\364 Allegro \272\363\311\372\320\247\243\251\n"
-            if( okX
-            then msg = strcat(msg "  24.1+: \261\276\265\330\273\257\306\253\272\303\322\321\307\345\263\375\n")
-            else msg = strcat(msg "  24.1+: \306\253\272\303\307\345\263\375\312\247\260\334\243\254\307\353\312\326\266\257 Setup->Preferences \310\241\317\373 Use local language\n")
-            )
-            msg = strcat(msg "  17.x: intl_enabled \322\321\307\345\263\375\n")
+            errset(axlUnsetVariableFile("allegro_enable_localization") t)
+            errset(axlUnsetVariableFile("allegro_english_menu") t)
+            _ALG_RegDelete("intl_enabled")
+            _ALG_RegDelete("intl_show_bilingual")
+            msg = "Allegro \275\347\303\346\323\357\321\324 -> English\243\250\261\276\265\330\273\257\306\253\272\303\323\353 intl_enabled \322\321\307\345\263\375\243\251\243\254\326\330\306\364 Allegro \311\372\320\247"
         )
-        ASTB_LogInfo(sprintf(nil "allegrolang: applied %s okX=%L ok17=%L" lang okX ok17))
+        ASTB_LogInfo(strcat("allegrolang: applied " lang))
         ;; 16.6 无官方汉化机制，附注说明
         when( ASTB_IsVersion166()
-            msg = strcat(msg "  \265\261\307\260 16.6 \316\336\271\331\267\275\272\272\273\257\273\372\326\306\243\254\275\347\303\346\261\243\263\326\323\242\316\304\n")
+            msg = strcat(msg "\243\273\265\261\307\260 16.6 \316\336\271\331\267\275\272\272\273\257\273\372\326\306\243\254\275\347\303\346\261\243\263\326\323\242\316\304")
         )
         return(msg)
     )
@@ -174,4 +146,4 @@ procedure( ASTB_SetAllegroLangChinese()
     ASTB_SetAllegroLanguage("zh-CN")
 )
 
-printf("[ASTB] util_allegrolang.il v1.4 loaded\n")
+printf("[ASTB] util_allegrolang.il v1.6 loaded\n")

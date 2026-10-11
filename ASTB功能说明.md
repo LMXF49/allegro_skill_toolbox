@@ -96,7 +96,7 @@ Shape 网络交互修改；动态铜皮强制更新并恢复 wysiwyg 填充（su
   光绘（默认 RS274X、精度 5.5）/钻孔/坐标复选；按叠层自动创建/更新标准底片清单；
   生成后经 film_control / nctape_full / plctxt 宏通路输出并按底片名自动分类归档。
 
-### Utilities 工具（15 项）
+### Utilities 工具（17 项）
 
 | 功能 | 说明 |
 |------|------|
@@ -108,6 +108,8 @@ Shape 网络交互修改；动态铜皮强制更新并恢复 wysiwyg 填充（su
 | 走线跨平面分割检查 | 两端点不在同一铜皮的 cline 保持高亮 |
 | System/Help 帮助 | 读 help_map.dat 弹文件查看器，按菜单分类显示功能/步骤/实现 |
 | System/Uninstall 卸载 | 剥离 allegro.ilinit 的 ASTB 安装器标记块（备份 .astb_bak）、清理 env forms 路径、移除当前菜单；重启彻底生效 |
+| System/Allegro UI 界面语言 | Allegro X 写 env 本地化偏好（Use local language 同款），17.x 在 env 手改区增删 `set intl_enabled = yes`（Qt 面板部分汉化）；与工具箱菜单语言解耦，重启 Allegro 生效；16.6 无官方机制 |
+| System/Menu CN 菜单汉化 | 16.6 专用：运行期把 Allegro 菜单栏重标签为中文（571 条映射：官方中文 473 条按命令对齐 + 手工 98 条），仅改内存不写文件，重启 Allegro 即还原；动态重建的菜单回弹英文时再点一次即可 |
 | 快捷键批量设置 | 常用命令绑定功能键/字母键/键序列 |
 | 切层与视图 `ql/qu/qd` | 层号切层、多层同显、相邻层循环、丝印/装配预设视图 |
 | 定时另存 | 日期/时间两种后缀模式自动另存设计 |
@@ -134,7 +136,8 @@ Shape 网络交互修改；动态铜皮强制更新并恢复 wysiwyg 填充（su
   v4.3 起取代 labels_map.dat）；右键 popup 标签禁 GBK 中文；
   删除-重建走 dump 验证闸门；Allegro 本体界面语言独立设置
   （System->Allegro UI：Allegro X 写 env 本地化偏好、17.x 在 env
-  手改区增删 intl_enabled 行（Qt 界面部分汉化），重启生效；解耦见 menu.il v4.5）。
+  手改区增删 intl_enabled 行（Qt 界面部分汉化），重启生效；解耦见 menu.il v4.5）；
+  16.6 无官方机制，另由 util_menucn.il 运行期重标签（Menu CN）兜底。
 - **版本适配**：version_adapter 兼容 16.6/17.4/24.1 API 差异。
 - **撤销中枢**：数据库修改统一包 `ASTB_DBTransactionMark`（errset 保护），
   批次栈存定位信息不存 dbid，配套逐批撤销命令。

@@ -2,7 +2,7 @@
 ; 文件名    : modules/utilities/util_menucn.il
 ; 作者      : ASTB Team
 ; 创建日期  : 2026-10-11
-; 版本      : 1.6
+; 版本      : 1.7
 ; 功能描述  : Allegro 菜单栏运行期汉化（主要面向 16.6——其 .men 读取器
 ;             拒绝 GBK 高位字节、也不认八进制转义，文件级汉化实机
 ;             两连证实不可行；机制与网上 ConvertMenuToCn.il 同类）：
@@ -16,6 +16,10 @@
 ; 依赖模块  : core/utils.il（日志）、core/menu.il（ASTB_DumpLeadingSpaces）
 ; 编码      : GBK（含中文字符串）
 ; 修改记录  :
+;   2026-10-11 v1.7 ASTB Team 根因修复：16.6 哈希缺键读返回未绑定
+;                标记且经赋值传染（zh/mcnZh/v 三连报错同因，
+;                menu.il v2.1 早有同款记录），_MCN_MapZh 改
+;                boundp+stringp 双重防御
 ;   2026-10-11 v1.6 ASTB Team 回归 v1.2 结构：删 mcnZh 承接变量
 ;                （v1.5 报错跟名走，实锤承接写法问题），哨兵防御
 ;                收进单变量 helper _MCN_MapZh，prog 变量降回 19 个
@@ -120,13 +124,14 @@ procedure( _MCN_LoadMap()
 ;------------------------------------------------------------------------
 ; 函数名  : _MCN_MapZh
 ; 功能    : 查映射：命中返回中文标签；缺键/'unbound/非字符串返回 nil
-; 备注    : v1.3 的 zh 承接变量在 16.6 触发 unbound variable 报错
-;           （v1.2 无此变量可跑），改 helper 内部单变量 v 隔离
+; 备注    : 16.6 缺键读返回未绑定标记且经赋值传染（v1.3~v1.6
+;           连环报错根因），先 boundp 再读值，双重防御
 ;------------------------------------------------------------------------
 procedure( _MCN_MapZh(lab)
     prog((v)
+        ;; 16.6 缺键读返回未绑定标记且经赋值传染，先 boundp 再读值
         v = and( lab ASTB_MENUCN_MAP[lab] )
-        if( and( v neq(v 'unbound) stringp(v) ) then
+        if( and( boundp('v) stringp(v) ) then
             return( v )
         else
             return( nil )
@@ -289,4 +294,4 @@ procedure( ASTB_MenuEN()
     )
 )
 
-printf("[ASTB] util_menucn.il v1.6 loaded\n")
+printf("[ASTB] util_menucn.il v1.7 loaded\n")

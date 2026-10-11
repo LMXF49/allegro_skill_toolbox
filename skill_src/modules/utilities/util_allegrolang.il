@@ -2,7 +2,7 @@
 ; 文件名    : modules/utilities/util_allegrolang.il
 ; 作者      : ASTB Team
 ; 创建日期  : 2026-10-11
-; 版本      : 1.2
+; 版本      : 1.3
 ; 功能描述  : Allegro 本体界面语言设置（System->Allegro UI 子菜单
 ;             独立入口，与工具箱菜单语言切换解耦）：
 ;             Allegro X（22.1/23.1/24.1/25.1）写 pcbenv env 偏好
@@ -16,6 +16,9 @@
 ; 依赖模块  : core/version_adapter.il（ASTB_VersionContains）
 ; 编码      : GBK（含中文字符串）
 ; 修改记录  :
+;   2026-10-11 v1.3 ASTB Team 实机报错修复：errset 返回值是 list，
+;                cid/rc 先 car 再喂 ipcWait/ipcGetExitStatus（v1.2
+;                直接传 list 报 type template "oxx"）
 ;   2026-10-11 v1.2 ASTB Team 修复 17.x 切换无效：setx/reg 改 ipc
 ;                四件套（ipcWait+退出码校验，v1.1 异步起进程实机
 ;                不落盘）；提示逐条如实反映写入成败；汉化范围勘正
@@ -38,12 +41,15 @@
 ;           v1.2 改四件套同步执行（pitfalls §6.1 标准件）
 ;------------------------------------------------------------------------
 procedure( _ALG_RunWait(cmd args)
-    prog((cid rc)
-        cid = errset(ipcBeginProcess(cmd args nil nil nil "") t)
-        unless( cid
+    prog((r cid rc)
+        ;; errset 返回值是 list，cid 要 car 出来（v1.2 把 list 直接
+        ;; 喂 ipcWait，实机报 type template "oxx"）
+        r = errset(ipcBeginProcess(cmd args nil nil nil "") t)
+        unless( and(r car(r))
             ASTB_LogWarn(strcat("allegrolang: spawn failed: " cmd " " args))
             return(nil)
         )
+        cid = car(r)
         errset(ipcWait(cid 30 1) t)
         rc = errset(ipcGetExitStatus(cid) t)
         errset(ipcReadProcess(cid 1) t)
@@ -140,4 +146,4 @@ procedure( ASTB_SetAllegroLangChinese()
     ASTB_SetAllegroLanguage("zh-CN")
 )
 
-printf("[ASTB] util_allegrolang.il v1.2 loaded\n")
+printf("[ASTB] util_allegrolang.il v1.3 loaded\n")

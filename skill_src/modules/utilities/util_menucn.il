@@ -2,7 +2,7 @@
 ; 文件名    : modules/utilities/util_menucn.il
 ; 作者      : ASTB Team
 ; 创建日期  : 2026-10-11
-; 版本      : 1.3
+; 版本      : 1.4
 ; 功能描述  : Allegro 菜单栏运行期汉化（主要面向 16.6——其 .men 读取器
 ;             拒绝 GBK 高位字节、也不认八进制转义，文件级汉化实机
 ;             两连证实不可行；机制与网上 ConvertMenuToCn.il 同类）：
@@ -16,6 +16,8 @@
 ; 依赖模块  : core/utils.il（日志）、core/menu.il（ASTB_DumpLeadingSpaces）
 ; 编码      : GBK（含中文字符串）
 ; 修改记录  :
+;   2026-10-11 v1.4 ASTB Team 实机报错修复：prog 变量初始未绑定，
+;                循环每轮显式 zh=nil 重置（unbound variable - zh）
 ;   2026-10-11 v1.3 ASTB Team 实机异常修复：SKILL 哈希缺键读得
 ;                'unbound 哨兵（真值），v1.0 守卫失效致全部无映射
 ;                项被改名 unbound；zh 承接 + neq/stringp 双重校验
@@ -85,6 +87,7 @@ procedure( _MCN_LoadMap()
             unless( or(equal(line "") equal(_MCN_Prefix(line 1) "#"))
                 p = 1
                 eng = nil
+                zh = nil
                 while( and( p <= strlen(line) null(eng) )
                     when( equal(substring(line p 1) "|") eng = substring(line 1 p-1) )
                     p = p+1
@@ -142,6 +145,7 @@ procedure( ASTB_MenuCNApply()
             typ = nil
             lab = nil
             cmd = nil
+            zh = nil
             if( equal(_MCN_Prefix(body 5) "POPUP") then
                 typ = 'popup
                 lab = _MCN_NthQuoted(body 1)
@@ -266,4 +270,4 @@ procedure( ASTB_MenuEN()
     )
 )
 
-printf("[ASTB] util_menucn.il v1.3 loaded\n")
+printf("[ASTB] util_menucn.il v1.4 loaded\n")

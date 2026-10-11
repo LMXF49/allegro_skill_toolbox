@@ -2,7 +2,7 @@
 ; 文件名    : modules/utilities/util_menucn.il
 ; 作者      : ASTB Team
 ; 创建日期  : 2026-10-11
-; 版本      : 1.2
+; 版本      : 1.3
 ; 功能描述  : Allegro 菜单栏运行期汉化（主要面向 16.6——其 .men 读取器
 ;             拒绝 GBK 高位字节、也不认八进制转义，文件级汉化实机
 ;             两连证实不可行；机制与网上 ConvertMenuToCn.il 同类）：
@@ -16,6 +16,9 @@
 ; 依赖模块  : core/utils.il（日志）、core/menu.il（ASTB_DumpLeadingSpaces）
 ; 编码      : GBK（含中文字符串）
 ; 修改记录  :
+;   2026-10-11 v1.3 ASTB Team 实机异常修复：SKILL 哈希缺键读得
+;                'unbound 哨兵（真值），v1.0 守卫失效致全部无映射
+;                项被改名 unbound；zh 承接 + neq/stringp 双重校验
 ;   2026-10-11 v1.2 ASTB Team 实机异常修复：整棵跳过 ASTB 自身
 ;                菜单子树（顶层 popup 标签匹配即 'dead），并跳过
 ;                ASTB_ 前缀命令项（&Help 与 Cadence 撞名被误改）
@@ -115,7 +118,7 @@ procedure( _MCN_LoadMap()
 ;           标 'dead 切断其子树，防误改；原标签存 ASTB_MENUCN_ORIG
 ;------------------------------------------------------------------------
 procedure( ASTB_MenuCNApply()
-    prog((tmp r port line ind body typ lab cmd frames frame pos parent
+    prog((tmp r port line ind body typ lab cmd zh frames frame pos parent
           pending q id r2 changed total)
         unless( _MCN_LoadMap()
             axlUIConfirm("菜单汉化数据缺失: config/menucn_zh.dat")
@@ -178,9 +181,10 @@ procedure( ASTB_MenuCNApply()
                         id = and(q car(q))
                         unless( id id = 'dead )
                     )
-                    when( and( id neq(id 'dead) lab ASTB_MENUCN_MAP[lab] )
+                    zh = and( lab ASTB_MENUCN_MAP[lab] )
+                    when( and( id neq(id 'dead) zh neq(zh 'unbound) stringp(zh) )
                         total = total + 1
-                        r2 = errset(axlUIMenuChange(id 'display ASTB_MENUCN_MAP[lab]) t)
+                        r2 = errset(axlUIMenuChange(id 'display zh) t)
                         when( and(r2 car(r2))
                             changed = changed + 1
                             ASTB_MENUCN_ORIG = cons(list(id lab) ASTB_MENUCN_ORIG)
@@ -190,13 +194,14 @@ procedure( ASTB_MenuCNApply()
                 )
                 if( equal(typ 'item) then
                     ;; 命令项按命令名定位（位置无关）
-                    when( and( lab cmd ASTB_MENUCN_MAP[lab]
+                    zh = and( lab cmd ASTB_MENUCN_MAP[lab] )
+                    when( and( zh neq(zh 'unbound) stringp(zh)
                                neq(_MCN_Prefix(cmd 5) "ASTB_") )
                         total = total + 1
                         q = errset(axlUIMenuFind(nil cmd) t)
                         id = and(q car(q))
                         when( id
-                            r2 = errset(axlUIMenuChange(id 'display ASTB_MENUCN_MAP[lab]) t)
+                            r2 = errset(axlUIMenuChange(id 'display zh) t)
                             when( and(r2 car(r2))
                                 changed = changed + 1
                                 ASTB_MENUCN_ORIG = cons(list(id lab) ASTB_MENUCN_ORIG)
@@ -261,4 +266,4 @@ procedure( ASTB_MenuEN()
     )
 )
 
-printf("[ASTB] util_menucn.il v1.2 loaded\n")
+printf("[ASTB] util_menucn.il v1.3 loaded\n")

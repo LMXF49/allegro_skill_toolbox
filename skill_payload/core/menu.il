@@ -2,7 +2,7 @@
 ; 文件名    : core/menu.il
 ; 作者      : allegro_skill 项目组
 ; 创建日期  : 2026-06-06
-; 版本      : 4.5
+; 版本      : 4.6
 ; 功能描述  : 菜单构建与注入（i18n 中英文支持、运行时语言切换、
 ;             菜单命令统一注册）
 ; 依赖模块  : core/utils.il、core/config.il、core/version_adapter.il、
@@ -14,6 +14,9 @@
 ;                     Allegro X 写 env 偏好 allegro_enable_localization/
 ;                     allegro_english_menu，17.x 写 intl_enabled 用户
 ;                     环境变量，均需重启 Allegro 生效；16.6 无机制）
+;   2026-10-11 v4.6 ASTB Team System 新增 Menu CN/Menu EN（配套
+;                     modules/utilities/util_menucn.il：Allegro
+;                     菜单栏运行期汉化/恢复，主要面向 16.6）
 ;   2026-10-11 v4.5 ASTB Team 语言切换拆分：工具箱菜单语言与
 ;                     Allegro 本体界面语言解耦（移除 v4.4 联动钩子）；
 ;                     Allegro 界面语言改由 System->Allegro UI 子菜单
@@ -330,6 +333,9 @@ procedure( ASTB_GetMenuStructure()
     list("&English" "English(&E)"  "ASTB_SetAllegroLangEnglish")
     list("&Chinese" "\326\320\316\304(&C)"  "ASTB_SetAllegroLangChinese")
     '(end)
+    '(separator)
+    list("&Menu CN" "\262\313\265\245\272\272\273\257(&M)"  "ASTB_MenuCN")
+    list("Menu E&N" "\273\326\270\264\323\242\316\304\262\313\265\245(&N)"  "ASTB_MenuEN")
     '(end)
     '(end)
   )

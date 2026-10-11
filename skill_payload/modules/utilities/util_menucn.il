@@ -2,7 +2,7 @@
 ; 文件名    : modules/utilities/util_menucn.il
 ; 作者      : ASTB Team
 ; 创建日期  : 2026-10-11
-; 版本      : 1.1
+; 版本      : 1.2
 ; 功能描述  : Allegro 菜单栏运行期汉化（主要面向 16.6——其 .men 读取器
 ;             拒绝 GBK 高位字节、也不认八进制转义，文件级汉化实机
 ;             两连证实不可行；机制与网上 ConvertMenuToCn.il 同类）：
@@ -16,6 +16,9 @@
 ; 依赖模块  : core/utils.il（日志）、core/menu.il（ASTB_DumpLeadingSpaces）
 ; 编码      : GBK（含中文字符串）
 ; 修改记录  :
+;   2026-10-11 v1.2 ASTB Team 实机异常修复：整棵跳过 ASTB 自身
+;                菜单子树（顶层 popup 标签匹配即 'dead），并跳过
+;                ASTB_ 前缀命令项（&Help 与 Cadence 撞名被误改）
 ;   2026-10-11 v1.1 ASTB Team 实机报错修复：SKILL cons 第二参数
 ;                必须是 list（type template "gl"），原标签记录
 ;                改存二元 list，恢复端 cdr 改 cadr
@@ -164,8 +167,11 @@ procedure( ASTB_MenuCNApply()
                 rplaca(cddr(frame) pos+1)
                 parent = cadr(frame)
                 if( equal(typ 'popup) then
-                    ;; popup 按位置定位（父帧为 'dead 则继承，不查不改）
-                    if( equal(parent 'dead) then
+                    ;; popup 按位置定位（父帧为 'dead 则继承，不查不改；
+                    ;; ASTB 自身顶层 popup 整棵跳过）
+                    if( or( equal(parent 'dead)
+                            equal(lab "allegro_s&kill_toolbox")
+                            equal(lab "Allegro Skill\271\244\276\337\317\344(&K)") ) then
                         id = 'dead
                     else
                         q = errset(axlUIMenuFind(parent pos) t)
@@ -184,7 +190,8 @@ procedure( ASTB_MenuCNApply()
                 )
                 if( equal(typ 'item) then
                     ;; 命令项按命令名定位（位置无关）
-                    when( and( lab cmd ASTB_MENUCN_MAP[lab] )
+                    when( and( lab cmd ASTB_MENUCN_MAP[lab]
+                               neq(_MCN_Prefix(cmd 5) "ASTB_") )
                         total = total + 1
                         q = errset(axlUIMenuFind(nil cmd) t)
                         id = and(q car(q))
@@ -254,4 +261,4 @@ procedure( ASTB_MenuEN()
     )
 )
 
-printf("[ASTB] util_menucn.il v1.1 loaded\n")
+printf("[ASTB] util_menucn.il v1.2 loaded\n")

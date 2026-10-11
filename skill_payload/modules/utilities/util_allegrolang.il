@@ -2,9 +2,9 @@
 ; 文件名    : modules/utilities/util_allegrolang.il
 ; 作者      : ASTB Team
 ; 创建日期  : 2026-10-11
-; 版本      : 1.0
-; 功能描述  : 语言切换联动 Allegro 本体界面语言（System->Language
-;             切工具箱语言时由 core/menu.il ASTB_SetLanguage 调用）：
+; 版本      : 1.1
+; 功能描述  : Allegro 本体界面语言设置（System->Allegro UI 子菜单
+;             独立入口，与工具箱菜单语言切换解耦）：
 ;             Allegro X（22.1/23.1/24.1/25.1）写 pcbenv env 偏好
 ;             allegro_enable_localization（开）/ allegro_english_menu
 ;             （关，其默认 on 会把菜单锁英文）；17.2/17.4 写用户环境
@@ -15,6 +15,9 @@
 ; 依赖模块  : core/version_adapter.il（ASTB_VersionContains）
 ; 编码      : GBK（含中文字符串）
 ; 修改记录  :
+;   2026-10-11 v1.1 ASTB Team 与工具箱菜单语言切换解耦：新增独立
+;                命令入口 ASTB_SetAllegroLangEnglish/Chinese
+;                （menu.il v4.5 起 ASTB_SetLanguage 不再调用本模块）
 ;   2026-10-11 v1.0 ASTB Team 初始创建（用户要求：语言切换联动
 ;                Allegro 本体界面；机制来源：24.1 prfedit/ui.prf 的
 ;                allegro_enable_localization/allegro_english_menu
@@ -86,4 +89,31 @@ procedure( ASTB_AllegroLangApply(lang)
     )
 )
 
-printf("[ASTB] util_allegrolang.il v1.0 loaded\n")
+;------------------------------------------------------------------------
+; 函数名  : ASTB_SetAllegroLanguage
+; 功能    : Allegro 界面语言设置命令入口（System->Allegro UI 子菜单）
+; 参数    : lang - "zh-CN" / "en"
+; 返回值  : t
+;------------------------------------------------------------------------
+procedure( ASTB_SetAllegroLanguage(lang)
+    prog((msg)
+        msg = ASTB_AllegroLangApply(lang)
+        axlUIConfirm(msg)
+        return(t)
+    )
+)
+
+;------------------------------------------------------------------------
+; 函数名  : ASTB_SetAllegroLangEnglish / ASTB_SetAllegroLangChinese
+; 功能    : Allegro 界面语言切换命令入口
+; 返回值  : t
+;------------------------------------------------------------------------
+procedure( ASTB_SetAllegroLangEnglish()
+    ASTB_SetAllegroLanguage("en")
+)
+
+procedure( ASTB_SetAllegroLangChinese()
+    ASTB_SetAllegroLanguage("zh-CN")
+)
+
+printf("[ASTB] util_allegrolang.il v1.1 loaded\n")

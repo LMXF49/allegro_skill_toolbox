@@ -2,7 +2,7 @@
 ; 文件名    : core/menu.il
 ; 作者      : allegro_skill 项目组
 ; 创建日期  : 2026-06-06
-; 版本      : 4.4
+; 版本      : 4.5
 ; 功能描述  : 菜单构建与注入（i18n 中英文支持、运行时语言切换、
 ;             菜单命令统一注册）
 ; 依赖模块  : core/utils.il、core/config.il、core/version_adapter.il、
@@ -14,6 +14,10 @@
 ;                     Allegro X 写 env 偏好 allegro_enable_localization/
 ;                     allegro_english_menu，17.x 写 intl_enabled 用户
 ;                     环境变量，均需重启 Allegro 生效；16.6 无机制）
+;   2026-10-11 v4.5 ASTB Team 语言切换拆分：工具箱菜单语言与
+;                     Allegro 本体界面语言解耦（移除 v4.4 联动钩子）；
+;                     Allegro 界面语言改由 System->Allegro UI 子菜单
+;                     独立设置（util_allegrolang.il v1.1 命令入口）
 ;   2026-10-11 v4.3 ASTB Team 菜单标签改内嵌双语（结构行
 ;                     （英文标签 中文标签 命令名），popup 行
 ;                     （popup 英文 中文））；中文由 sync 八进制
@@ -321,6 +325,10 @@ procedure( ASTB_GetMenuStructure()
     list('popup "&Language" "语言(&L)")
     list("&English" "English(&E)"  "ASTB_SetLanguageEnglish")
     list("&Chinese" "中文(&C)"  "ASTB_SetLanguageChinese")
+    '(end)
+    list('popup "Alle&gro UI" "Allegro界面(&G)")
+    list("&English" "English(&E)"  "ASTB_SetAllegroLangEnglish")
+    list("&Chinese" "中文(&C)"  "ASTB_SetAllegroLangChinese")
     '(end)
     '(end)
     '(end)
@@ -922,7 +930,7 @@ procedure( ASTB_ApplyMenuLanguage()
 ; 返回值  : t
 ;------------------------------------------------------------------------
 procedure( ASTB_SetLanguage(lang)
-  prog((oldLang cfgVal isEn ok msg linkRet)
+  prog((oldLang cfgVal isEn ok msg)
     oldLang = ASTB_GetConfig("language" "zh-CN")
     ASTB_LogInfo(sprintf(nil "SetLanguage: oldLang=%L lang=%L" oldLang lang))
     when( or(null(oldLang) eq(oldLang 'unbound))
@@ -954,13 +962,6 @@ procedure( ASTB_SetLanguage(lang)
       msg = if(isEn
              then "Language set to English.\nRestart Allegro to apply menu changes."
              else "Language set to Chinese.\nRestart Allegro to apply menu changes.")
-    )
-    ;; v4.4: 联动 Allegro 本体界面语言（需重启 Allegro 生效）
-    when( fboundp('ASTB_AllegroLangApply)
-      linkRet = errset(ASTB_AllegroLangApply(lang) t)
-      when( and(linkRet car(linkRet) stringp(car(linkRet)))
-        msg = strcat(msg "\n" car(linkRet))
-      )
     )
     axlUIConfirm(msg)
     return(t)

@@ -13,7 +13,7 @@
 ; ============================================================================
 
 #define AppName "ASTB Toolbox"
-#define AppVersion "1.2.0"
+#define AppVersion "1.2.1"
 #define AppPublisher "ASTB Team"
 
 ; Skill payload source dir. Override from BuildAll.java / command line:
